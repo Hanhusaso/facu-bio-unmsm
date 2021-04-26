@@ -1,0 +1,98 @@
+
+
+.section-principal-home {
+    min-height: 100vh;
+    height: 100vh;
+    position: relative;
+
+    .bg-home-video {
+        position: fixed;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    .wrapper-title-home {
+        width: 100%;
+        position: absolute;
+        // left: 5%;
+        top: 30%;
+        color: $wht;
+
+        .logo-unmsm {
+            width: 110px;
+        }
+        .title-letters {
+            font-size: 50px;
+            line-height: normal;
+            font-weight: 700;
+            position: relative;
+            &::after {
+                content: "";
+                width: 2px;
+                height: 90%;
+                position: absolute;
+                left: -1px;
+                top: 50%;
+                transform: translate(0, -50%);
+                background-color: $wht;
+            }
+            .wrapper-social {
+                font-size: 24px;
+                position: absolute;
+                bottom: 0;
+                transform: translateY(100%);
+                a {
+                    color: $wht;
+                }
+            }
+        }
+    }
+    
+    .wrapper-eventos {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        color: $wht;
+        .pad-extra-left {
+            padding-left: 110px;
+        }
+        .wrapper-just-events {
+            background-color: $gray-dark-75;
+            // padding: 35px 24px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            padding-left: 24px;
+            // padding-right: 120px;
+            padding-right: 12vw;
+            .fecha-evento {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .titulo-evento {
+                font-size: 16px;
+            }
+            .lugar-evento {
+                font-size: 14px;
+                color: $green-bright;
+            }
+        }
+    }
+}
+
+.bg-green-png {
+    background-image: url(/assets/img/background/fondo_verde.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper-carreras {
+    display: flex;
+    > div {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
