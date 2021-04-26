@@ -7,6 +7,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Facultad de Ciencias Biológicas</title>
+        <small>test</small>
         <link rel="icon" href="/favicon.ico" />
         <script src="https://kit.fontawesome.com/c9ebd31bd0.js" crossorigin="anonymous"></script>
       </Head>
