@@ -31,7 +31,6 @@ export default function Home() {
                         <br/>
                         Ciencias Biológicas
                       </p>
-                      <small>test</small>
                       <div className="wrapper-social">
                         <a href="#" className="mr-3">
                           <i className="fab fa-facebook-f"></i>
