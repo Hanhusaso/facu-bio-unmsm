@@ -244,18 +244,27 @@ export default function Home() {
                   <Col md={{ span: 10, offset: 1 }}>
                     <div className="wrapper-carreras">
                       <div>
-                        <a className="d-block" href="#">
+                        <a className="d-block wrapper-caption" href="#">
                           <img className="w-100 img-fluid" src="/assets/img/carreras/home/microbiologia_parasitologia_color.png"></img>
+                          <div className="caption-hover">
+                            <div className="caption text-shadow">EP. Microbiología y Parasitología</div>
+                          </div>
                         </a>
                       </div>
                       <div>
-                        <a className="d-block" href="#">
+                        <a className="d-block wrapper-caption" href="#">
                           <img className="w-100 img-fluid" src="/assets/img/carreras/home/genetica_biotecnologia_color.png"></img>
+                          <div className="caption-hover">
+                            <div className="caption text-shadow">EP. Genética y Biotecnología</div>
+                          </div>
                         </a>
                       </div>
                       <div>
-                        <a className="d-block" href="#">
+                        <a className="d-block wrapper-caption" href="#">
                           <img className="w-100 img-fluid" src="/assets/img/carreras/home/ciencias_biologicas_color.png"></img>
+                          <div className="caption-hover">
+                            <div className="caption text-shadow">EP. Ciencias biológicas</div>
+                          </div>
                         </a>
                       </div>
                     </div>
@@ -274,20 +283,21 @@ export default function Home() {
                     parte 1
                   </Col>
                   <Col md={{ span: 4 }}>
-                    <Carousel fade controls={false}>
+                    <Carousel fade indicators={false} interval="5000" className="text-right carousel-text">
                       <Carousel.Item>
-                        <h3>Nuestra misión</h3>
+                        <h3 className="semi-big-text">Nuestra misión</h3>
                         <p>
                           Formamos profesionales e investigadores líderes en la generación y difusión del conocimiento científico de nuestra diversidad biológica, con valores respetuosos de la diversidad cultural, promotores de la identidad  nacional basada en una cultura de calidad y responsabilidad social para contribuir al desarrollo sostenible del país y la sociedad.
                         </p>
                       </Carousel.Item>
-                      <Carousel>
-                        <h3>Nuestra visión</h3>
+                      <Carousel.Item>
+                        <h3 className="semi-big-text">Nuestra visión</h3>
                         <p>
                           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                         </p>
-                      </Carousel>
+                      </Carousel.Item>
                     </Carousel>
+
                   </Col>
                 </Row>
             </Container>
