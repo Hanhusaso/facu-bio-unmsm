@@ -280,10 +280,24 @@ export default function Home() {
             <Container fluid>
                 <Row>
                   <Col md={{ span: 6, offset: 1 }}>
-                    parte 1
+                    <div className="d-flex align-items-end">
+                      <img src="/assets/img/iconos/microscopio.png" alt="microscopio"/>
+                      <div>
+                        <div className="mb-1">
+                          <span className="big-badge">La</span>
+                        </div>
+                        <div className="mb-1">
+                          <span className="big-badge mr-1">Facultad</span>
+                          <span className="big-badge">en</span>
+                        </div>
+                        <div className="text-right">
+                          <span className="big-badge recolor">números</span>
+                        </div> 
+                      </div>
+                    </div>
                   </Col>
                   <Col md={{ span: 4 }}>
-                    <Carousel fade indicators={false} interval="5000" className="text-right carousel-text">
+                    <Carousel fade indicators={false} controls={false} interval="5000" className="text-right carousel-text">
                       <Carousel.Item>
                         <h3 className="semi-big-text">Nuestra misión</h3>
                         <p>

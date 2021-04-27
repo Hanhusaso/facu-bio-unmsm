@@ -15,3 +15,17 @@
         bottom: 15px;
     }
 }
+
+.big-badge {
+    background-color: $green-dark;
+    color: $wht;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 5px 10px;
+    line-height: 55px;
+    display: inline-block;
+    &.recolor {
+        background-color: $wht;
+        color: $green-bright;
+    }
+}
