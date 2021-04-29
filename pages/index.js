@@ -1,5 +1,6 @@
 import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
+import Footer from "../components/Footer"
 import {Row, Col, Container, Carousel} from 'react-bootstrap'
 
 export default function Home() {
@@ -274,13 +275,13 @@ export default function Home() {
             </div>
           </section>
           <section className="section-proyectos">
-            <h2 className="mb-0">PROYECTOS</h2>
+            <h2 className="bg-dark mb-0">PROYECTOS</h2>
           </section>
           <section className="section-mision-vision">
             <Container fluid>
                 <Row>
                   <Col md={{ span: 6, offset: 1 }}>
-                    <div className="d-flex align-items-end">
+                    <div className="d-flex align-items-end mb-5">
                       <img src="/assets/img/iconos/microscopio.png" alt="microscopio"/>
                       <div>
                         <div className="mb-1">
@@ -294,6 +295,62 @@ export default function Home() {
                           <span className="big-badge recolor">números</span>
                         </div> 
                       </div>
+                    </div>
+                    <div className="text-white text-center">
+                      <Container fluid>
+                        <Row>
+                          <Col></Col>
+                          <Col>
+                            <div className="wrapper-icon">
+                              <img src="/assets/img/iconos/icono_persona_numero.png" alt="persona"/>
+                            </div>
+                            <div>
+                              <span>+</span>
+                              <span>850</span>
+                            </div>
+                            <div>
+                              <span>Alumnos</span>
+                            </div>
+                          </Col>
+                          <Col>
+                            <div className="wrapper-icon">
+                              <img src="/assets/img/iconos/icono_lupa_numeros.png" alt="lupa"/>
+                            </div>
+                            <div>
+                              <span>+</span>
+                              <span>150</span>
+                            </div>
+                            <div>
+                              <span>Docentes investigadores</span>
+                            </div>
+                          </Col>
+                          <Col>
+                            <div className="wrapper-icon">
+                              <img src="/assets/img/iconos/icono_articulos_numeros.png" alt="articulos"/>
+                            </div>
+                            <div>
+                              <span>+</span>
+                              <span>350</span>
+                            </div>
+                            <div>
+                              <span>Artículos publicados</span>
+                            </div>
+                          </Col>
+                          <Col>
+                            <div className="wrapper-icon">
+                              <img src="/assets/img/iconos/icono_tesis_numeros.png" alt="tesis"/>
+                            </div>
+                            <div>
+                              <span>+</span>
+                              <span>850</span>
+                            </div>
+                            <div>
+                              <span>Tesis realizadas</span>
+                            </div>
+                          </Col>
+                          <Col></Col>
+                        </Row>
+                      </Container>
                     </div>
                   </Col>
                   <Col md={{ span: 4 }}>
@@ -318,9 +375,7 @@ export default function Home() {
           </section>
         </div>
       </main>
-      <footer>
-        <h2 className="mb-0">FOOTER</h2>
-      </footer>
+      <Footer></Footer>
 
     </div>
   )

@@ -1,0 +1,17 @@
+.breadcrumb {
+    background-color: initial;
+    margin-top: 1rem;
+    padding: 0;
+    .breadcrumb-item {
+        color: $green-dark !important;
+        a {
+            color: $green-dark !important;
+        }
+        &.active {
+            font-weight: 700;
+        }
+        &::before {
+            color: $green-dark !important;
+        }
+    }
+}

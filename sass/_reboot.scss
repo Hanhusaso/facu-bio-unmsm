@@ -1,5 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
+    font-size: 15px;
     color: $green-dark;
 }
 
@@ -45,8 +46,8 @@ body {
         }
         &::before {
             content: "";
-            width: 50%;
-            height: 25%;
+            width: 100%;
+            height: 100%;
             background: $green-50;
             position: absolute;
             top: 50%;
@@ -58,9 +59,18 @@ body {
     &:hover {
         .caption-hover {
             &::before {
-                width: 100%;
-                height: 100%;
+                width: 50%;
+                height: 25%;
             }
         }
     }
+}
+
+.bg-textura {
+    background-image: url(/assets/img/background/fondo_solo_textura_50.png);
+    background-size: cover;
+}
+
+.block-divider {
+    border-bottom: 1px solid $green-dark-50;
 }
