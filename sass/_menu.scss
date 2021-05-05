@@ -1,0 +1,80 @@
+.navbar-toogle {
+    background-color: $green-bright;
+    color: $wht;
+    font-size: 26px;
+    // float: left;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    button {
+        color: $wht;
+    }
+}
+
+.nav-menu {
+    // float: right;
+    background-color: $wht;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: 550ms;
+    z-index: 999;
+    &.active {
+        transform: translateX(0%);
+    }
+    .icon {
+        font-size: 26px;
+        &.close-icon {
+            color: $wht;
+            font-size: 36px;
+        }
+    }
+
+    .wrapper-navs {
+        height: 100%;
+        overflow: auto;
+    
+
+        .wrapper-sections {
+            background-color: $green-dark;
+            .btn-accordion-nav {
+                width: 100%;
+                text-align: left;
+                color: $wht;
+            }
+
+            .wrapper-collapse {
+                background-color: $wht;
+                
+                .main-sub-navs {
+                    a {
+                        color: $gray-3;
+                    }
+                }
+
+                .interes-links {
+                    a {
+                        color: $green;
+                    }
+                }
+
+            }
+
+        }
+
+        .extra-links {
+            background-color: $wht;
+            // color: $green-dark;
+            a {
+                color: $green-dark;
+            }
+        }
+
+    }
+}

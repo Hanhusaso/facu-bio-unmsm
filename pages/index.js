@@ -1,6 +1,7 @@
 import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
 import Footer from "../components/Footer"
+import Menu from "../components/Menu"
 import {Row, Col, Container, Carousel} from 'react-bootstrap'
 
 export default function Home() {
@@ -9,8 +10,8 @@ export default function Home() {
       <Head>
         <title>Facultad de Ciencias Biológicas</title>
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/c9ebd31bd0.js" crossorigin="anonymous"></script>
       </Head>
+      <Menu/>
 
       <main>
         <section className="section-principal-home section-eventos">

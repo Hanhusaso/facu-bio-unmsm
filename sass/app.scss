@@ -10,6 +10,7 @@
 @import "reboot";
 
 // Componentes
+@import "menu";
 @import "header";
 @import "breadcrumb";
 @import "titles";
@@ -17,10 +18,12 @@
 @import "img";
 @import "carousel";
 
+@import "buttons";
 @import "badge";
 
 // pages
 @import "../pages/index";
+@import "../pages/informacion-academica/syllabus";
 
 // footer
 @import "footer";

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import {Row, Col, Container} from 'react-bootstrap'
+// import Image from 'next/image'
 
 const Header = () => {
     return (
@@ -12,7 +13,7 @@ const Header = () => {
                         <Col>
                             <Link href="/">
                                 <a>
-                                    <img src="assets/img/iconos/logo_unmsm_cabezera.svg" alt=""/>
+                                    <img src="/assets/img/iconos/logo_unmsm_cabezera.svg" alt=""/>
                                 </a>
                             </Link>
                         </Col>
