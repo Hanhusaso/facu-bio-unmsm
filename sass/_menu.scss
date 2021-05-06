@@ -1,3 +1,35 @@
+.menu-open {
+    overflow: hidden;
+    .menu-overlay {
+        right: 250px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition-duration: 750ms,0s,375ms;
+        // transition-timing-function: cubic-bezier(.175,.885,.32,1.14),linear,ease-in-out;
+        transition-timing-function: cubic-bezier(.175,.885,.32,1.14),linear,ease-in-out;
+        transition-delay: 0s,0s,0s;
+    }
+    .nav-menu {
+        // transition-timing-function: ease-in-out;
+        transition-timing-function: cubic-bezier(.175,.885,.32,1.14);
+        transition-duration: 750ms;
+    }
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    z-index: 201;
+    background-color: rgba(83,74,67,0);
+    transition: right,left,background-color;
+    transition-duration: 375ms,0s,375ms;
+    transition-timing-function: ease-in-out,linear,ease-in-out;
+    transition-delay: 0s,375ms,0s;
+}
+
 .navbar-toogle {
     background-color: $green-bright;
     color: $wht;
@@ -11,6 +43,8 @@
     transform: translateX(-100%);
     button {
         color: $wht;
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -23,8 +57,13 @@
     top: 0;
     right: 0;
     transform: translateX(100%);
-    transition: 550ms;
-    z-index: 999;
+    transition: all;
+    // transition-duration: 750ms;
+    transition-duration: 375ms;
+    transition-timing-function: ease-in-out;
+    // transition-timing-function: cubic-bezier(.175,.885,.32,1.14);
+    transition-delay: 0ms;
+    z-index: 900;
     &.active {
         transform: translateX(0%);
     }
@@ -55,12 +94,26 @@
                 .main-sub-navs {
                     a {
                         color: $gray-3;
+                        transition: color;
+                        transition-duration: 375ms;
+                        transition-timing-function: ease;
+                        transition-delay: 0s;
+                        &:hover {
+                            color: $green-bright;
+                        }
                     }
                 }
 
                 .interes-links {
                     a {
                         color: $green;
+                        transition: color;
+                        transition-duration: 375ms;
+                        transition-timing-function: ease;
+                        transition-delay: 0s;
+                        &:hover {
+                            color: $green-bright;
+                        }
                     }
                 }
 
@@ -73,6 +126,19 @@
             // color: $green-dark;
             a {
                 color: $green-dark;
+            }
+        }
+
+        .menu-social-media {
+            font-size: 26px;
+            ul {
+                justify-content: space-around;
+                justify-content: space-evenly;
+                a {
+                    color: $green-dark;
+                    display: block;
+                    padding: 0 .5rem;
+                }
             }
         }
 

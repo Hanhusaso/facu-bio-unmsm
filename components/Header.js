@@ -4,6 +4,26 @@ import {Row, Col, Container} from 'react-bootstrap'
 // import Image from 'next/image'
 
 const Header = () => {
+
+    // const pageHeader = document.querySelector(".header-bio");
+    // // const animatedUl = pageHeader.querySelector(".secondary-menu");
+    // const scrollHeader = "scroll-header";
+    // let targetScroll = window.innerHeight - pageHeader.offsetHeight;
+    
+    // window.addEventListener("scroll", () => {
+    // const scrollY = this.pageYOffset;
+    
+    // if (scrollY > targetScroll) {
+    //     pageHeader.classList.add(scrollHeader);
+    // } else {
+    //     pageHeader.classList.remove(scrollHeader);
+    // }
+    // });
+    
+    // window.addEventListener("resize", () => {
+    // targetScroll = window.innerHeight - pageHeader.offsetHeight;
+    // });
+
     return (
         <>
             <header className="header-bio">

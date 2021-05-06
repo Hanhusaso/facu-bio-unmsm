@@ -2,6 +2,7 @@ import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
 import Footer from "../components/Footer"
 import Menu from "../components/Menu"
+import SocialMedia from "../components/SocialMedia"
 import {Row, Col, Container, Carousel} from 'react-bootstrap'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Menu/>
+      <SocialMedia/>
 
       <main>
         <section className="section-principal-home section-eventos">
