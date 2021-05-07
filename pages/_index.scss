@@ -40,15 +40,6 @@
                 transform: translate(0, -50%);
                 background-color: $wht;
             }
-            .wrapper-social {
-                font-size: 24px;
-                position: absolute;
-                bottom: 0;
-                transform: translateY(100%);
-                a {
-                    color: $wht;
-                }
-            }
         }
     }
     
@@ -87,6 +78,7 @@
     background-image: url(/assets/img/background/fondo_verde.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .wrapper-carreras {
@@ -103,4 +95,28 @@
 
 .wrapper-icon {
     height: 43px;
+}
+
+.txt-noticias-bg {
+    z-index: 0;
+    font-size: 40px;
+    color: $wht;
+    line-height: 44px;
+    margin-left: -15px;
+    top: -50px;
+    position: absolute;
+    &::before {
+        // content: "Enterate de las últimas novedades";
+        content: "";
+        position: absolute;
+        top: -390px;
+        // left: -390px;
+        left: -305px;
+        width: 700px;
+        height: 700px;
+        background-image: url(/assets/img/background/circulo_completo_noticias.png);
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
 }

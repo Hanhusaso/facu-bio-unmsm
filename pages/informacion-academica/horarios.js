@@ -12,7 +12,7 @@ const horarios = () => {
             <Layout title="Horarios 2021">
                 <div>
                     <div>
-                        <Container fluid>
+                        <Container>
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
@@ -37,7 +37,7 @@ const horarios = () => {
                         </Container>
                     </div>
                     <div>
-                        <Container fluid className="mb-3">
+                        <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
@@ -46,7 +46,7 @@ const horarios = () => {
                                 <Col sm="1"></Col>
                             </Row>
                         </Container>
-                        <Container fluid className="mb-3">
+                        <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
@@ -55,7 +55,7 @@ const horarios = () => {
                                 <Col sm="3"></Col>
                             </Row>
                         </Container>
-                        <Container fluid>
+                        <Container>
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col sm="8">
@@ -67,7 +67,7 @@ const horarios = () => {
                                     </div>
                                 </Col>
                                 <Col sm="2">
-                                    <div>
+                                    <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
                                             <a href="#" className="d-inline-block">
@@ -124,7 +124,7 @@ const horarios = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </aside>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>

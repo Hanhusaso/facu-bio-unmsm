@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Layout from "../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
+import { AiFillContainer } from 'react-icons/ai'
 
 export default function FormacionAcademica() {
 
@@ -25,7 +26,7 @@ export default function FormacionAcademica() {
             <Layout title="Información académica">
                 <div>
                     <div>
-                        <Container fluid>
+                        <Container>
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
@@ -45,7 +46,7 @@ export default function FormacionAcademica() {
                         </Container>
                     </div>
                     <div>
-                        <Container fluid className="mb-3">
+                        <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
@@ -54,7 +55,7 @@ export default function FormacionAcademica() {
                                 <Col sm="1"></Col>
                             </Row>
                         </Container>
-                        <Container fluid className="mb-3">
+                        <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
@@ -63,7 +64,7 @@ export default function FormacionAcademica() {
                                 <Col sm="3"></Col>
                             </Row>
                         </Container>
-                        <Container fluid>
+                        <Container>
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col sm="2">
@@ -92,7 +93,7 @@ export default function FormacionAcademica() {
                                     </div>
                                 </Col>
                                 <Col sm="2">
-                                    <div>
+                                    <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
                                             <a href="#" className="d-inline-block">
@@ -149,7 +150,7 @@ export default function FormacionAcademica() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </aside>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>

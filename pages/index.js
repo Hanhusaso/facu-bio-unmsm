@@ -4,6 +4,7 @@ import Footer from "../components/Footer"
 import Menu from "../components/Menu"
 import SocialMedia from "../components/SocialMedia"
 import {Row, Col, Container, Carousel} from 'react-bootstrap'
+import ClampLines from 'react-clamp-lines';
 
 export default function Home() {
   return (
@@ -35,17 +36,6 @@ export default function Home() {
                         <br/>
                         Ciencias Biológicas
                       </p>
-                      <div className="wrapper-social">
-                        <a href="#" className="mr-3">
-                          <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" className="mr-3">
-                          <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                          <i className="fab fa-youtube"></i>
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </Col>
@@ -119,7 +109,7 @@ export default function Home() {
           <section className="section-noticias pt-5 mb-5">
             <div>
               <div className="mb-3">
-                <Container fluid>
+                <Container>
                   <Row>
                     <Col md={{ span: 10, offset: 1 }}>
                       <div className="d-flex justify-content-end">
@@ -132,13 +122,19 @@ export default function Home() {
                   </Row>
                 </Container>
               </div>
-              <Container fluid>
+              <Container>
                 <Row>
-                  <Col md={{ span: 4, offset: 1 }}>
-                    <p className="mb-0">
-                      Entérate de las últimas novedades
+                  <Col md="1"></Col>
+                  {/* <Col className="d-flex flex-column position-relative" md={{ span: 4, offset: 1 }}> */}
+                  <Col className="d-flex flex-column position-relative" md={{ span: 4, offset: 0 }}>
+                    <p className="mb-0 txt-noticias-bg">
+                      Entérate de
+                      <br/>
+                      las últimas
+                      <br/>
+                      novedades
                     </p>
-                    <div className="position-relative box-shadow">
+                    <div className="position-relative box-shadow mt-auto">
                       <div className="position-relative">
                         <img className="w-100 img-fluid" src="/assets/img/noticias/ejemplo_noticia_1.png"></img>
                         <div className="dark-filter"></div>
@@ -148,7 +144,7 @@ export default function Home() {
                       </div>
                     </div>
                   </Col>
-                  <Col>
+                  <Col md="2">
                     <div className="card-bio">
                       <div className="part-img position-relative">
                         <div className="position-relative">
@@ -164,12 +160,19 @@ export default function Home() {
                           Dos científicas ganan el Premio Nobel de Química 2020 por “tijeras genéticas” CRISPR-Cas9
                         </p>
                         <p className="desc-card mb-0">
-                          La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del...
+                          La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN.
                         </p>
+                        {/* <ClampLines
+                          text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
+                          lines={4}
+                          buttons={false}
+                          ellipsis="..."
+                          className="desc-card mb-0"
+                        /> */}
                       </div>
                     </div>
                   </Col>
-                  <Col>
+                  <Col md="2">
                     <div className="card-bio">
                       <div className="part-img position-relative">
                         <div className="position-relative">
@@ -185,12 +188,19 @@ export default function Home() {
                           El objetivo de nuestro proyecto es ir en camino a producir clones de alpacas
                         </p>
                         <p className="desc-card mb-0">
-                          La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca...
+                          La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca mejorar el sistema.
                         </p>
+                        {/* <ClampLines
+                          text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
+                          lines={4}
+                          buttons={false}
+                          ellipsis="..."
+                          className="desc-card mb-0"
+                        /> */}
                       </div>
                     </div>
                   </Col>
-                  <Col>
+                  <Col md="2">
                     <div className="card-bio">
                       <div className="part-img position-relative">
                         <div className="position-relative">
@@ -206,8 +216,15 @@ export default function Home() {
                           ¡La FCB ya cuenta oficialmente con un nuevo y moderno pabellón!
                         </p>
                         <p className="desc-card mb-0">
-                          La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de...
+                          La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de riesgo por parte de él.
                         </p>
+                        {/* <ClampLines
+                          text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
+                          lines={4}
+                          buttons={false}
+                          ellipsis="..."
+                          className="desc-card mb-0"
+                        /> */}
                       </div>
                     </div>
                   </Col>
@@ -218,7 +235,7 @@ export default function Home() {
           </section>
           <section className="section-carreras">
             <div className="mb-2">
-              <Container fluid>
+              <Container>
                 <Row>
                   <Col md={{ span: 10, offset: 1 }}>
                     <div className="big-text text-right">
@@ -229,7 +246,7 @@ export default function Home() {
               </Container>
             </div>
             <div className="mb-4">
-              <Container fluid>
+              <Container>
                 <Row>
                   <Col md={{ span: 10, offset: 1 }}>
                     <div className="d-flex">
@@ -243,7 +260,7 @@ export default function Home() {
               </Container>
             </div>
             <div>
-              <Container fluid>
+              <Container>
                 <Row>
                   <Col md={{ span: 10, offset: 1 }}>
                     <div className="wrapper-carreras">
@@ -281,7 +298,7 @@ export default function Home() {
             <h2 className="bg-dark mb-0">PROYECTOS</h2>
           </section>
           <section className="section-mision-vision">
-            <Container fluid>
+            <Container>
                 <Row>
                   <Col md={{ span: 6, offset: 1 }}>
                     <div className="d-flex align-items-end mb-5">
@@ -300,7 +317,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="text-white text-center">
-                      <Container fluid>
+                      <Container>
                         <Row>
                           <Col></Col>
                           <Col>

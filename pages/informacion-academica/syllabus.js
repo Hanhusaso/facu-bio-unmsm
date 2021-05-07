@@ -12,7 +12,7 @@ const syllabus = () => {
             <Layout title="Syllabus">
                 <div>
                     <div>
-                        <Container fluid>
+                        <Container>
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
@@ -37,7 +37,7 @@ const syllabus = () => {
                         </Container>
                     </div>
                     <div>
-                        <Container fluid className="mb-3">
+                        <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
@@ -46,7 +46,7 @@ const syllabus = () => {
                                 <Col sm="1"></Col>
                             </Row>
                         </Container>
-                        <Container fluid className="mb-3">
+                        <Container className="mb-3">
                             <Row>
                                 <Col sm="3"></Col>
                                 <Col>
@@ -57,7 +57,7 @@ const syllabus = () => {
                                 <Col sm="3"></Col>
                             </Row>
                         </Container>
-                        <Container fluid>
+                        <Container>
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col sm="8">
@@ -74,7 +74,7 @@ const syllabus = () => {
                                     </div>
                                 </Col>
                                 <Col sm="2">
-                                    <div>
+                                    <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
                                             <a href="#" className="d-inline-block">
@@ -131,7 +131,7 @@ const syllabus = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </aside>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
