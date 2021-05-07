@@ -5,7 +5,41 @@
     height: 150px;
     display: flex;
     align-items: center;
-    position: sticky;
+    width: 100%;
+    position: fixed;
     top: 0;
-    z-index: 800;
+    z-index: 700;
+    transition: all;
+    transition-duration: 375ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    .lp-shrink-header {
+        transition: all;
+        transition-duration: 375ms;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+    &.shrink-header {
+        height: 90px;
+        .lp-shrink-header {
+            max-width: 4%;
+        }
+        .img-logo {
+            height: 50px;
+            // margin-left: -60px;
+        }
+    }
+
+    .img-logo {
+        height: 70px;
+        transition: all;
+        transition-duration: 375ms;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+
+}
+
+.below-header {
+    padding-top: 150px;
 }

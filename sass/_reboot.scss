@@ -69,6 +69,7 @@ body {
 .bg-textura {
     background-image: url(/assets/img/background/fondo_solo_textura_50.png);
     background-size: cover;
+    background-repeat: repeat-y;
 }
 
 .block-divider {
@@ -93,7 +94,7 @@ body {
     bottom: 0;
     right: 0;
     background-color: $green-dark;
-    z-index: 800;
+    z-index: 700;
     a {
         color: $wht;
         width: 50px;
