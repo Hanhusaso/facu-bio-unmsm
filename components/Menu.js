@@ -52,7 +52,7 @@ const Menu = () => {
         return (
             <>
                 <div className="d-flex align-items-center justify-content-between text-white nav-link">
-                    <h3 className="mb-0">MENÚ</h3>
+                    <h3 className="title-menu mb-0">MENÚ</h3>
                     <button className="btn-menu-close btn-transparent p-0" onClick={hideSidebar}>
                         <Io5Icons.IoClose className="close-icon icon"/>
                     </button>
@@ -441,7 +441,7 @@ const Menu = () => {
         return (
             <>
                 <div className="d-flex align-items-center justify-content-between text-white nav-link">
-                    <h3 className="mb-0">BÚSQUEDA</h3>
+                    <h3 className="title-menu mb-0">BÚSQUEDA</h3>
                     <button className="btn-search-close btn-transparent p-0" onClick={hideSidebar}>
                         <Io5Icons.IoClose className="close-icon icon"/>
                     </button>
@@ -454,7 +454,7 @@ const Menu = () => {
         return (
             <>
                 <div className="d-flex align-items-center justify-content-between text-white nav-link">
-                    <h3 className="mb-0">INTRANET</h3>
+                    <h3 className="title-menu mb-0">INTRANET</h3>
                     <button className="btn-intranet-close btn-transparent p-0" onClick={hideSidebar}>
                         <Io5Icons.IoClose className="close-icon icon"/>
                     </button>
@@ -490,13 +490,16 @@ const Menu = () => {
             <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                 <div className="navbar-toogle">
                     <button className="menu-bars btn-transparent" onClick={showSectionMenu}>
-                        <FaIcons.FaBars className="icon"/>
+                        {/* <FaIcons.FaBars className="icon"/> */}
+                        <img src="/assets/img/iconos/hamburguesa.png" alt="" />
                     </button>
                     <button className="menu-search btn-transparent" onClick={showSectionSearch}>
-                        <FaIcons.FaSearch className="icon"/>
+                        {/* <FaIcons.FaSearch className="icon"/> */}
+                        <img src="/assets/img/iconos/lupita_buscador.png" alt="" />
                     </button>
                     <button className="menu-user btn-transparent" onClick={showSectionIntranet}>
-                        <FaIcons.FaRegUser className="icon"/>
+                        {/* <FaIcons.FaRegUser className="icon"/> */}
+                        <img src="/assets/img/iconos/intranet.png" alt="" />
                     </button>
                 </div>
 
@@ -513,25 +516,45 @@ const Menu = () => {
                             <li className="nav-item">
                                 {/* <Link href="/tramites-y-procesos"> */}
                                     {/* <a className="nav-link">Trámites y procesos</a> */}
-                                    <a href="/tramites-y-procesos" className="nav-link">Trámites y procesos</a>
+                                    <a href="/tramites-y-procesos" className="d-flex align-items-center nav-link">
+                                        <img className="mr-3" src="/assets/img/iconos/tramites_procesos.svg" alt="" />
+                                        <span>
+                                            Trámites y procesos
+                                        </span>
+                                    </a>
                                 {/* </Link> */}
                             </li>
                             <li className="nav-item">
                                 {/* <Link href="/informacion-academica"> */}
                                     {/* <a className="nav-link">Información académica</a> */}
-                                    <a href="/informacion-academica" className="nav-link">Información académica</a>
+                                    <a href="/informacion-academica" className="d-flex align-items-center nav-link">
+                                        <img className="mr-3" src="/assets/img/iconos/informacion_academica.svg" alt="" />
+                                        <span>
+                                            Información académica
+                                        </span>
+                                    </a>
                                 {/* </Link> */}
                             </li>
                             <li className="nav-item">
                                 {/* <Link href="/revista-peruana-biologia"> */}
                                     {/* <a className="nav-link">Revista Peruana de biología</a> */}
-                                    <a href="/revista-peruana-biologia" className="nav-link">Revista Peruana de biología</a>
+                                    <a href="/revista-peruana-biologia" className="d-flex align-items-center nav-link">
+                                        <img className="mr-3" src="/assets/img/iconos/revista_peruana.svg" alt="" />
+                                        <span>
+                                            Revista Peruana de biología
+                                        </span>
+                                    </a>
                                 {/* </Link> */}
                             </li>
                             <li className="nav-item">
                                 {/* <Link href="/recursos-investigacion"> */}
                                     {/* <a className="nav-link">Recursos de investigación</a> */}
-                                    <a href="/recursos-investigacion" className="nav-link">Recursos de investigación</a>
+                                    <a href="/recursos-investigacion" className="d-flex align-items-center nav-link">
+                                        <img className="mr-3" src="/assets/img/iconos/recursos_investigacion.svg" alt="" />
+                                        <span>
+                                            Recursos de investigación
+                                        </span>
+                                    </a>
                                 {/* </Link> */}
                             </li>
                         </ul>
