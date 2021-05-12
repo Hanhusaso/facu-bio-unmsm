@@ -24,7 +24,7 @@
         margin: 15px;
         overflow: hidden;
         position: relative;
-        &::after {
+        &.filter::after {
             content: "";
             text-align: right;
             position: absolute;
@@ -41,6 +41,10 @@
         }
         .desc-card {
             line-height: 18px;
+        }
+        .author-card {
+            color: $green;
+            font-weight: 700;
         }
     }
 }

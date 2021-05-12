@@ -120,3 +120,55 @@
         z-index: -1;
     }
 }
+
+.txt-proyectos-bg {
+    z-index: 0;
+    font-size: 40px;
+    color: $wht;
+    line-height: 44px;
+    margin-left: -15px;
+    top: -50px;
+    position: absolute;
+    &::before {
+        // content: "Enterate de las últimas novedades";
+        content: "";
+        position: absolute;
+        top: -26px;
+        // left: -390px;
+        left: -124px;
+        width: 534px;
+        height: 263px;
+        background-image: url(/assets/img/background/rectangulo_proyectos.png);
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+.microscopio {
+    z-index: 1;
+}
+
+.txt-numeros-bg {
+    z-index: 0;
+    // font-size: 40px;
+    // color: $wht;
+    // line-height: 44px;
+    // margin-left: -15px;
+    // top: -50px;
+    position: relative;
+    &::before {
+        // content: "Enterate de las últimas novedades";
+        content: "";
+        position: absolute;
+        top: -70px;
+        // left: -390px;
+        right: -240px;
+        width: 900px;
+        height: 900px;
+        background-image: url(/assets/img/background/circulo_completo_numeros.png);
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+}

@@ -155,7 +155,7 @@ export default function Home() {
                           Tecnologia
                         </div>
                       </div>
-                      <div className="part-text">
+                      <div className="part-text filter">
                         <p className="title-card">
                           Dos científicas ganan el Premio Nobel de Química 2020 por “tijeras genéticas” CRISPR-Cas9
                         </p>
@@ -183,7 +183,7 @@ export default function Home() {
                           Ciencia
                         </div>
                       </div>
-                      <div className="part-text">
+                      <div className="part-text filter">
                         <p className="title-card">
                           El objetivo de nuestro proyecto es ir en camino a producir clones de alpacas
                         </p>
@@ -211,7 +211,7 @@ export default function Home() {
                           Facultad
                         </div>
                       </div>
-                      <div className="part-text">
+                      <div className="part-text filter">
                         <p className="title-card">
                           ¡La FCB ya cuenta oficialmente con un nuevo y moderno pabellón!
                         </p>
@@ -233,7 +233,7 @@ export default function Home() {
               </Container>
             </div>
           </section>
-          <section className="section-carreras">
+          <section className="section-carreras mb-4">
             <div className="mb-2">
               <Container>
                 <Row>
@@ -294,16 +294,131 @@ export default function Home() {
               </Container>
             </div>
           </section>
-          <section className="section-proyectos">
-            <h2 className="bg-dark mb-0">PROYECTOS</h2>
+          <section className="section-proyectos pt-5 mb-5">
+            <div>
+              <div className="mb-3">
+                <Container>
+                  <Row>
+                    <Col md={{ span: 10, offset: 1 }}>
+                      <div className="d-flex justify-content-end">
+                        <h2 className="subtitle-green mr-1 mb-0">Proyectos</h2>
+                        <a href="#" className="d-inline-block">
+                          <img src="/assets/img/iconos/boton_vermas.png"/>
+                        </a>
+                      </div>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
+              <Container>
+                <Row>
+                  <Col md="1"></Col>
+                  {/* <Col className="d-flex flex-column position-relative" md={{ span: 4, offset: 1 }}> */}
+                  <Col className="d-flex flex-column position-relative" md={{ span: 4, offset: 0 }}>
+                    <p className="mb-0 txt-proyectos-bg">
+                      Descubre el trabajo
+                      <br/>
+                      de alumnos, docentes
+                      <br/>
+                      y egresados
+                    </p>
+                    <div className="position-relative box-shadow mt-auto">
+                      <div className="position-relative">
+                        <img className="w-100 img-fluid" src="/assets/img/proyectos/proyecto_ejemplo_1.png"></img>
+                        <div className="dark-filter"></div>
+                      </div>
+                      <div className="caption-img">
+                        Max Hidalgo sobre su paso por la FCB: "Aprendí a crear en función de la naturaleza"
+                      </div>
+                    </div>
+                  </Col>
+                  <Col md="2">
+                    <div className="card-bio">
+                      <div className="part-img position-relative">
+                        <div className="position-relative">
+                          <img className="w-100 img-fluid" src="/assets/img/proyectos/proyecto2.png"></img>
+                          <div className="dark-filter"></div>
+                        </div>
+                      </div>
+                      <div className="part-text">
+                        <p className="title-card">
+                          Biodiversidad de las comunidades microbianas del suelo asociadas a cuerpos en descomposición de importancia forense”
+                        </p>
+                        <p className="author-card mb-0">
+                          Mag. María Bermejo
+                        </p>
+                        {/* <ClampLines
+                          text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
+                          lines={4}
+                          buttons={false}
+                          ellipsis="..."
+                          className="desc-card mb-0"
+                        /> */}
+                      </div>
+                    </div>
+                  </Col>
+                  <Col md="2">
+                    <div className="card-bio">
+                      <div className="part-img position-relative">
+                        <div className="position-relative">
+                          <img className="w-100 img-fluid" src="/assets/img/proyectos/proyecto3.png"></img>
+                          <div className="dark-filter"></div>
+                        </div>
+                      </div>
+                      <div className="part-text">
+                        <p className="title-card">
+                          Nanobiofertilizantes: uso de arcillas en la preparación de emulsiones de Pickering para formulados agrícolas a base de biomasa microalgal de Arthrospira máxima
+                        </p>
+                        <p className="author-card mb-0">
+                          Mag. María Bermejo
+                        </p>
+                        {/* <ClampLines
+                          text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
+                          lines={4}
+                          buttons={false}
+                          ellipsis="..."
+                          className="desc-card mb-0"
+                        /> */}
+                      </div>
+                    </div>
+                  </Col>
+                  <Col md="2">
+                    <div className="card-bio">
+                      <div className="part-img position-relative">
+                        <div className="position-relative">
+                          <img className="w-100 img-fluid" src="/assets/img/proyectos/proyecto4.png"></img>
+                          <div className="dark-filter"></div>
+                        </div>
+                      </div>
+                      <div className="part-text">
+                        <p className="title-card">
+                          Caracterización  de  actividad  lipasa  endógena  de  especies  de microalgas y desarrollo de transesterificación in situ para la producción de ésteres etílicos
+                        </p>
+                        <p className="author-card mb-0">
+                          Mag. María Bermejo
+                        </p>
+                        {/* <ClampLines
+                          text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
+                          lines={4}
+                          buttons={false}
+                          ellipsis="..."
+                          className="desc-card mb-0"
+                        /> */}
+                      </div>
+                    </div>
+                  </Col>
+                  <Col md="1"></Col>
+                </Row>
+              </Container>
+            </div>
           </section>
-          <section className="section-mision-vision">
+          <section className="section-mision-vision mb-5">
             <Container>
                 <Row>
                   <Col md={{ span: 6, offset: 1 }}>
                     <div className="d-flex align-items-end mb-5">
-                      <img src="/assets/img/iconos/microscopio.png" alt="microscopio"/>
-                      <div>
+                      <img className="microscopio" src="/assets/img/iconos/microscopio.png" alt="microscopio"/>
+                      <div className="txt-numeros-bg">
                         <div className="mb-1">
                           <span className="big-badge">La</span>
                         </div>
