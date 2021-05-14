@@ -78,7 +78,11 @@
     background-image: url(/assets/img/background/fondo_verde.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     overflow: hidden;
+    @media (min-width: 1400px) {
+        background-image: url(/assets/img/background/fondo_verde_grande.jpg);
+    }
 }
 
 .wrapper-carreras {

@@ -29,7 +29,7 @@ export default function FormacionAcademica() {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -49,7 +49,7 @@ export default function FormacionAcademica() {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width">
                                     <div className="title-page text-center">Información académica</div>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -58,7 +58,7 @@ export default function FormacionAcademica() {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width-l">
                                     Todo lo necesario para cursar el semestre con éxito está aquí: cronograma académica, planes de estudios, mallas curriculares, syllabus, etc.
                                 </Col>
                                 <Col sm="3"></Col>
@@ -67,7 +67,7 @@ export default function FormacionAcademica() {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col sm="2">
+                                <Col className="desktop-extra-width-l" sm="2">
                                     <div>
                                         <div>Recurso:</div>
                                         <div>Horarios</div>
@@ -92,7 +92,7 @@ export default function FormacionAcademica() {
                                         ))}
                                     </div>
                                 </Col>
-                                <Col sm="2">
+                                <Col className="desktop-extra-width-r" sm="2">
                                     <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>

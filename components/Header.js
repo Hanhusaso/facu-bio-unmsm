@@ -59,7 +59,7 @@ const Header = () => {
                 <Container fluid>
                     <Row>
                         <Col className="lp-shrink-header" sm="1"></Col>
-                        <Col>
+                        <Col className="desktop-extra-width">
                             <Link href="/">
                                 <a>
                                     <img className="img-logo" src="/assets/img/iconos/logo_unmsm_cabezera.svg" alt=""/>
