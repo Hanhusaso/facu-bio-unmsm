@@ -25,7 +25,7 @@ const syllabus = () => {
                                         </li>
                                         {/* </Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
-                                            <Link href="/formacion-academica">
+                                            <Link href="/informacion-academica">
                                                 <a role="button">Información académica</a>
                                             </Link>
                                         </li>
@@ -67,7 +67,7 @@ const syllabus = () => {
                                             <p className="mb-3">Docente: Julio Galarza Perez</p>
                                             <div className="wrapper-icon-download">
                                                 <div>
-                                                    <img src="/assets/img/iconos/boton_vermas.png" alt=""/>
+                                                    <img src="/assets/img/iconos/descarga.svg" alt=""/>
                                                 </div>
                                             </div>
                                         </div>

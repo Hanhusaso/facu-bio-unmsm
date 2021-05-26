@@ -32,6 +32,31 @@
 
 .title {
     font-size: 16px;
+    font-weight: 700;
+    color: $green;
+}
+
+.sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: $green;
+}
+
+.title-15 {
+    font-size: 15px;
+    font-weight: 700;
+    color: $green;
+}
+
+.title-dark {
+    font-size: 16px;
+    color: $green-dark;
+    font-weight: 700;
+}
+
+.title-green {
+    font-size: 20px;
+    font-weight: 700;
     color: $green;
 }
 

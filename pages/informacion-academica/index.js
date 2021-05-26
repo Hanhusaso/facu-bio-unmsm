@@ -7,7 +7,7 @@ import Layout from "../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 import { AiFillContainer } from 'react-icons/ai'
 
-export default function FormacionAcademica() {
+export default function InformacionAcademica() {
 
     const [pages, setPages] = useState([
         "pag1",
@@ -97,14 +97,14 @@ export default function FormacionAcademica() {
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
                                             <a href="#" className="d-inline-block">
-                                                <img src="../assets/img/iconos/boton_vermas.png"/>
+                                                <img src="/assets/img/iconos/boton_vermas.png"/>
                                             </a>
                                         </div>
                                         <div>
                                             <div className="card-bio mb-3">
                                                 <div className="part-img position-relative">
                                                     <div className="position-relative">
-                                                        <img className="w-100 img-fluid" src="../assets/img/noticias/noticia2.png"></img>
+                                                        <img className="w-100 img-fluid" src="/assets/img/noticias/noticia2.png"></img>
                                                         <div className="dark-filter"></div>
                                                     </div>
                                                     <div className="badge-tag">

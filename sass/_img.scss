@@ -20,3 +20,28 @@
     padding: 15px;
     font-weight: 700;
 }
+
+.img-fr {
+    width: 200px;
+    float: right;
+    margin: 0px 0px 24px 24px;
+    .caption {
+        background-color: $green-15;
+        text-align: center;
+        padding: 13px 24px;
+        word-break: break-word !important;
+        word-wrap: break-word !important;
+        &>div:nth-child(1) {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &>div:nth-child(2) {
+            font-size: 15px;
+            line-height: 18px;
+        }
+        &>div:nth-child(3) {
+            font-size: 14px;
+            line-height: 16.8px;
+        }
+    }
+}

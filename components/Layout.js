@@ -12,7 +12,7 @@ const Layout = ({title, children}) => {
             </Head>
             <Menu/>
             <Header></Header>
-                <div className="bg-textura below-header">
+                <div className="bg-textura below-header pb-5">
                     {children}
                 </div>
             <Footer></Footer>

@@ -5,17 +5,30 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Layout from "../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
+import { AiFillContainer } from 'react-icons/ai'
 
-const horarios = () => {
+const TramitesProcesos = () => {
+
+    const [pages, setPages] = useState([
+        "pag1",
+        "pag2",
+        "pag3",
+        "pag3",
+        "pag3",
+        "pag3",
+        "pag3",
+        "pag3",
+    ])
+
     return (
         <>
-            <Layout title="Horarios 2021">
+            <Layout title="Trámites y procesos">
                 <div>
                     <div>
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -24,12 +37,7 @@ const horarios = () => {
                                             </Link>
                                         </li>
                                         {/* </Breadcrumb.Item> */}
-                                        <li className="breadcrumb-item">
-                                            <Link href="/informacion-academica">
-                                                <a role="button">Información académica</a>
-                                            </Link>
-                                        </li>
-                                        <Breadcrumb.Item active>Horarios 2021</Breadcrumb.Item>
+                                        <Breadcrumb.Item active>Trámites y procesos</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -40,45 +48,64 @@ const horarios = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
-                                    <div className="title-page text-center">Horarios 2021</div>
+                                <Col className="desktop-extra-width">
+                                    <div className="title-page text-center">Trámites y procesos</div>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
                         </Container>
+
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
-                                    Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.
+                                <Col className="desktop-extra-width">
+                                    <div className="title-page text-center">BUSCADOR</div>
                                 </Col>
-                                <Col sm="3"></Col>
+                                <Col sm="1"></Col>
                             </Row>
                         </Container>
+
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col sm="8">
+                                <Col className="desktop-extra-width-l" sm="2">FILTROS</Col>
+                                <Col sm="6">
                                     <div>
-                                        <div className="">
-                                            <span>Compartir vía: </span>
-                                            <div className="d-inline-block">wasap</div>
-                                        </div>
+                                        {pages.map(post => (
+                                            <div className="block-divider mb-3">
+                                                <h3 className="title">Anulación de matrícula | Pregrado</h3>
+                                                <p className="mb-3">
+                                                    obortis quam placerat lobortis tristique aliquet netus. Bibendum blandit morbi tristique metus.Eu suspendisse cras magna scelerisque penatibus viverra aliquam. Risus morbi in facilisi est leo eget ullamcorper. Amet tempus fringilla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper purus ue aliquet netus. Bibendum blandit morbi tristique metus..
+                                                </p>
+                                            </div>
+                                        ))}
                                     </div>
                                 </Col>
-                                <Col sm="2">
+                                <Col className="desktop-extra-width-r" sm="2">
                                     <aside>
+                                        <div className="block-interest-links mb-4">
+                                            <p className="font-weight-bold mb-2 text-center">
+                                                ¿Tienes dudas sobre algún trámite o no encuentras la información que necesitas?
+                                            </p>
+                                            <ul className="nav flex-column">
+                                                <li className="mb-2 text-center font-weight-bold">
+                                                    <a href="#">
+                                                        Ir a preguntas frecuentes
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
                                             <a href="#" className="d-inline-block">
-                                                <img src="../assets/img/iconos/boton_vermas.png"/>
+                                                <img src="/assets/img/iconos/boton_vermas.png"/>
                                             </a>
                                         </div>
                                         <div>
                                             <div className="card-bio mb-3">
                                                 <div className="part-img position-relative">
                                                     <div className="position-relative">
-                                                        <img className="w-100 img-fluid" src="../assets/img/noticias/noticia2.png"></img>
+                                                        <img className="w-100 img-fluid" src="/assets/img/noticias/noticia2.png"></img>
                                                         <div className="dark-filter"></div>
                                                     </div>
                                                     <div className="badge-tag">
@@ -136,4 +163,4 @@ const horarios = () => {
     )
 }
 
-export default horarios
+export default TramitesProcesos

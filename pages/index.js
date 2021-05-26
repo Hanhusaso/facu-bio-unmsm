@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 // import styles from '../styles/Home.module.css'
 import Footer from "../components/Footer"
 import Menu from "../components/Menu"
@@ -265,28 +266,34 @@ export default function Home() {
                   <Col md={{ span: 10, offset: 1 }}>
                     <div className="wrapper-carreras">
                       <div>
-                        <a className="d-block wrapper-caption" href="#">
-                          <img className="w-100 img-fluid" src="/assets/img/carreras/home/microbiologia_parasitologia_color.png"></img>
-                          <div className="caption-hover">
-                            <div className="caption text-shadow">EP. Microbiología y Parasitología</div>
-                          </div>
-                        </a>
+                        <Link href="/formacion-academica/pregrado/microbiologia-parasitologia">
+                          <a className="d-block wrapper-caption">
+                            <img className="w-100 img-fluid" src="/assets/img/carreras/home/microbiologia_parasitologia_color.png"></img>
+                            <div className="caption-hover">
+                              <div className="caption text-shadow">EP. Microbiología y Parasitología</div>
+                            </div>
+                          </a>
+                        </Link>
                       </div>
                       <div>
-                        <a className="d-block wrapper-caption" href="#">
-                          <img className="w-100 img-fluid" src="/assets/img/carreras/home/genetica_biotecnologia_color.png"></img>
-                          <div className="caption-hover">
-                            <div className="caption text-shadow">EP. Genética y Biotecnología</div>
-                          </div>
-                        </a>
+                        <Link href="/formacion-academica/pregrado/genetica-biotecnologia">
+                          <a className="d-block wrapper-caption">
+                            <img className="w-100 img-fluid" src="/assets/img/carreras/home/genetica_biotecnologia_color.png"></img>
+                            <div className="caption-hover">
+                              <div className="caption text-shadow">EP. Genética y Biotecnología</div>
+                            </div>
+                          </a>
+                        </Link>
                       </div>
                       <div>
-                        <a className="d-block wrapper-caption" href="#">
-                          <img className="w-100 img-fluid" src="/assets/img/carreras/home/ciencias_biologicas_color.png"></img>
-                          <div className="caption-hover">
-                            <div className="caption text-shadow">EP. Ciencias biológicas</div>
-                          </div>
-                        </a>
+                        <Link href="/formacion-academica/pregrado/ciencias-biologicas">
+                          <a className="d-block wrapper-caption">
+                            <img className="w-100 img-fluid" src="/assets/img/carreras/home/ciencias_biologicas_color.png"></img>
+                            <div className="caption-hover">
+                              <div className="caption text-shadow">EP. Ciencias biológicas</div>
+                            </div>
+                          </a>
+                        </Link>
                       </div>
                     </div>
                   </Col>
@@ -412,7 +419,7 @@ export default function Home() {
               </Container>
             </div>
           </section>
-          <section className="section-mision-vision mb-5">
+          <section className="section-mision-numeros mb-5">
             <Container>
                 <Row>
                   <Col md={{ span: 6, offset: 1 }}>
@@ -489,20 +496,22 @@ export default function Home() {
                     </div>
                   </Col>
                   <Col md={{ span: 4 }}>
-                    <Carousel fade indicators={false} controls={false} interval="5000" className="text-right carousel-text">
-                      <Carousel.Item>
-                        <h3 className="semi-big-text">Nuestra misión</h3>
-                        <p>
-                          Formamos profesionales e investigadores líderes en la generación y difusión del conocimiento científico de nuestra diversidad biológica, con valores respetuosos de la diversidad cultural, promotores de la identidad  nacional basada en una cultura de calidad y responsabilidad social para contribuir al desarrollo sostenible del país y la sociedad.
-                        </p>
-                      </Carousel.Item>
-                      <Carousel.Item>
-                        <h3 className="semi-big-text">Nuestra visión</h3>
-                        <p>
-                          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
-                      </Carousel.Item>
-                    </Carousel>
+                    <div className="section-mision">
+                      <Carousel fade indicators={false} controls={false} interval="5000" className="text-right carousel-text">
+                        <Carousel.Item>
+                          <h3 className="semi-big-text">Nuestra misión</h3>
+                          <p>
+                            Formamos profesionales e investigadores líderes en la generación y difusión del conocimiento científico de nuestra diversidad biológica, con valores respetuosos de la diversidad cultural, promotores de la identidad  nacional basada en una cultura de calidad y responsabilidad social para contribuir al desarrollo sostenible del país y la sociedad.
+                          </p>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                          <h3 className="semi-big-text">Nuestra visión</h3>
+                          <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                          </p>
+                        </Carousel.Item>
+                      </Carousel>
+                    </div>
 
                   </Col>
                 </Row>
