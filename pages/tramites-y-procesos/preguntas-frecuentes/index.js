@@ -1,28 +1,13 @@
-import React, { useState } from 'react'
-
-// import Head from "next/head";
-// import Header from "../../components/Header"
-import Link from 'next/link'
-import Layout from "../../components/Layout"
+import React , { useEffect } from 'react'
+import Layout from "../../../components/Layout"
+// import Tabs from "../../../components/Tabs/vanillaTabs"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
-import { AiFillContainer } from 'react-icons/ai'
+import Link from 'next/link'
 
-const TramitesProcesos = () => {
-
-    const [pages, setPages] = useState([
-        "pag1",
-        "pag2",
-        "pag3",
-        "pag3",
-        "pag3",
-        "pag3",
-        "pag3",
-        "pag3",
-    ])
-
+const preguntasFrecuentes = () => {
     return (
         <>
-            <Layout title="Trámites y procesos">
+            <Layout title="Preguntas Frecuentes">
                 <div>
                     <div>
                         <Container>
@@ -37,7 +22,13 @@ const TramitesProcesos = () => {
                                             </Link>
                                         </li>
                                         {/* </Breadcrumb.Item> */}
-                                        <Breadcrumb.Item active>Trámites y procesos</Breadcrumb.Item>
+                                        {/* <Breadcrumb.Item active>Formación académica</Breadcrumb.Item> */}
+                                        <li className="breadcrumb-item">
+                                            <Link href="/tramites-y-procesos">
+                                                <a role="button">Trámites y procesos</a>
+                                            </Link>
+                                        </li>
+                                        <Breadcrumb.Item active>Preguntas frecuentes</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -49,54 +40,26 @@ const TramitesProcesos = () => {
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col className="desktop-extra-width">
-                                    <div className="title-page text-center">Trámites y procesos</div>
+                                    <div className="title-page text-center">Preguntas frecuentes</div>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
                         </Container>
-
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col className="desktop-extra-width">
-                                    <div className="title-page text-center">BUSCADOR</div>
+                                    <div className="title-page text-center mb-3">BUSCADOR</div>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
                         </Container>
-
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width-l" sm="2">FILTROS</Col>
-                                <Col sm="6">
-                                    <div>
-                                        {pages.map(post => (
-                                            <div className="block-divider mb-3">
-                                                <h3 className="title">Anulación de matrícula | Pregrado</h3>
-                                                <p className="mb-3">
-                                                    obortis quam placerat lobortis tristique aliquet netus. Bibendum blandit morbi tristique metus.Eu suspendisse cras magna scelerisque penatibus viverra aliquam. Risus morbi in facilisi est leo eget ullamcorper. Amet tempus fringilla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper purus ue aliquet netus. Bibendum blandit morbi tristique metus..
-                                                </p>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </Col>
-                                <Col className="desktop-extra-width-r" sm="2">
+                                <Col sm="8"></Col>
+                                <Col sm="2">
                                     <aside>
-                                        <div className="block-interest-links mb-4">
-                                            <p className="font-weight-bold mb-2 text-center">
-                                                ¿Tienes dudas sobre algún trámite o no encuentras la información que necesitas?
-                                            </p>
-                                            <ul className="nav flex-column">
-                                                <li className="mb-2 text-center font-weight-bold">
-                                                    <Link href="/tramites-y-procesos/preguntas-frecuentes">
-                                                        <a>
-                                                            Ir a preguntas frecuentes
-                                                        </a>
-                                                    </Link>
-                                                </li>
-                                            </ul>
-                                        </div>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
                                             <a href="#" className="d-inline-block">
@@ -165,4 +128,4 @@ const TramitesProcesos = () => {
     )
 }
 
-export default TramitesProcesos
+export default preguntasFrecuentes

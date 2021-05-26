@@ -96,15 +96,17 @@ const anulacionMatricula = () => {
                                 </Col>
                                 <Col sm="2">
                                     <aside>
-                                    <div className="block-interest-links mb-4">
+                                        <div className="block-interest-links mb-4">
                                             <p className="font-weight-bold mb-2 text-center">
                                                 ¿Tienes dudas sobre algún trámite o no encuentras la información que necesitas?
                                             </p>
                                             <ul className="nav flex-column">
                                                 <li className="mb-2 text-center font-weight-bold">
-                                                    <a href="#">
-                                                        Ir a preguntas frecuentes
-                                                    </a>
+                                                    <Link href="/tramites-y-procesos/preguntas-frecuentes">
+                                                        <a>
+                                                            Ir a preguntas frecuentes
+                                                        </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
