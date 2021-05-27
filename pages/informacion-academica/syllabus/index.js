@@ -3,13 +3,13 @@ import React, { useState } from 'react'
 // import Head from "next/head";
 // import Header from "../../components/Header"
 import Link from 'next/link'
-import Layout from "../../components/Layout"
+import Layout from "../../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 
-const horarios = () => {
+const syllabus = () => {
     return (
         <>
-            <Layout title="Horarios 2021">
+            <Layout title="Syllabus">
                 <div>
                     <div>
                         <Container>
@@ -29,7 +29,7 @@ const horarios = () => {
                                                 <a role="button">Información académica</a>
                                             </Link>
                                         </li>
-                                        <Breadcrumb.Item active>Horarios 2021</Breadcrumb.Item>
+                                        <Breadcrumb.Item active>Syllabus 2021</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -41,16 +41,18 @@ const horarios = () => {
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
-                                    <div className="title-page text-center">Horarios 2021</div>
+                                    <div className="title-page text-center">Syllabus 2021</div>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
                         </Container>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
+                                <Col sm="3"></Col>
                                 <Col>
-                                    Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.
+                                <div className="d-flex align-items-center justify-content-center">
+                                    BUSCADOR
+                                </div>
                                 </Col>
                                 <Col sm="3"></Col>
                             </Row>
@@ -60,23 +62,13 @@ const horarios = () => {
                                 <Col sm="1"></Col>
                                 <Col sm="8">
                                     <div>
-                                        <div className="mb-4">
-                                            <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/>
-                                        </div>
-                                        <div className="section-compartir">
-                                            <div className="d-inline-block font-weight-bold mr-3">
-                                                Compartir vía:
-                                            </div>
-                                            <div className="icons">
-                                                <a href="#" className="d-inline-block">
-                                                    <img src="/assets/img/iconos/email.svg"/>
-                                                </a>
-                                                <a href="#" className="d-inline-block">
-                                                    <img src="/assets/img/iconos/whatsapp.svg"/>
-                                                </a>
-                                                <a href="#" className="d-inline-block">
-                                                    <img src="/assets/img/iconos/facebook.svg"/>
-                                                </a>
+                                        <div className="block-divider mb-3 position-relative">
+                                            <h3 className="title">Biología y parasitología I</h3>
+                                            <p className="mb-3">Docente: Julio Galarza Perez</p>
+                                            <div className="wrapper-icon-download">
+                                                <div>
+                                                    <img src="/assets/img/iconos/descarga.svg" alt=""/>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -151,4 +143,4 @@ const horarios = () => {
     )
 }
 
-export default horarios
+export default syllabus

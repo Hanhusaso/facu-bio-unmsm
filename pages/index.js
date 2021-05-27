@@ -29,14 +29,12 @@ export default function Home() {
                 <Col md={{ span: 11, offset: 1 }}>
                   <div className="d-flex align-items-center">
                     <img className="logo-unmsm mr-2" src="/assets/img/iconos/escudo_sanmarcos.png" />
-                    <div className="title-letters pl-2">
-                      <p className="mb-0">
+                    <div className="title-letters pl-2 mb-0">
                         UNMSM
                         <br/>
                         Facultad de
                         <br/>
                         Ciencias Biológicas
-                      </p>
                     </div>
                   </div>
                 </Col>

@@ -3,13 +3,13 @@ import React, { useState } from 'react'
 // import Head from "next/head";
 // import Header from "../../components/Header"
 import Link from 'next/link'
-import Layout from "../../components/Layout"
+import Layout from "../../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 
-const syllabus = () => {
+const docentes = () => {
     return (
         <>
-            <Layout title="Syllabus">
+            <Layout title="Docentes">
                 <div>
                     <div>
                         <Container>
@@ -29,7 +29,7 @@ const syllabus = () => {
                                                 <a role="button">Información académica</a>
                                             </Link>
                                         </li>
-                                        <Breadcrumb.Item active>Syllabus 2021</Breadcrumb.Item>
+                                        <Breadcrumb.Item active>Información de docentes | Departamento de Biología Celular y Genética</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -41,7 +41,7 @@ const syllabus = () => {
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
-                                    <div className="title-page text-center">Syllabus 2021</div>
+                                    <div className="title-page text-center">Información de docentes | Departamento de Biología Celular y Genética</div>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
@@ -62,14 +62,22 @@ const syllabus = () => {
                                 <Col sm="1"></Col>
                                 <Col sm="8">
                                     <div>
-                                        <div className="block-divider mb-3 position-relative">
-                                            <h3 className="title">Biología y parasitología I</h3>
-                                            <p className="mb-3">Docente: Julio Galarza Perez</p>
-                                            <div className="wrapper-icon-download">
-                                                <div>
-                                                    <img src="/assets/img/iconos/descarga.svg" alt=""/>
-                                                </div>
-                                            </div>
+                                        <div className="block-divider mb-3 pb-2 position-relative">
+                                            <h3 className="title">Mg. Julio  Montero Cáceres | Docente principal   </h3>
+                                            <p className="mb-2">
+                                                <span className="mr-2">Documentación:</span>
+                                                <a href="#" className="d-inline color-inherit mr-2">Resolucion rectoral</a>
+                                                <a href="#" className="d-inline color-inherit mr-2">Hoja de vida</a>
+                                            </p>
+                                            <p className="mb-2">
+                                                <span className="mr-2">Investigación:</span>
+                                                <a href="#" className="d-inline color-inherit mr-2">RAIS</a>
+                                                <a href="#" className="d-inline color-inherit mr-2">SIIS</a>
+                                            </p>
+                                            <p className="mb-2">
+                                                <span className="mr-2">Contacto:</span>
+                                                <span className="text-break">laucastivas@unmsm.edu.pe</span>
+                                            </p>
                                         </div>
                                     </div>
                                 </Col>
@@ -78,14 +86,14 @@ const syllabus = () => {
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
                                             <a href="#" className="d-inline-block">
-                                                <img src="../assets/img/iconos/boton_vermas.png"/>
+                                                <img src="/assets/img/iconos/boton_vermas.png"/>
                                             </a>
                                         </div>
                                         <div>
                                             <div className="card-bio mb-3">
                                                 <div className="part-img position-relative">
                                                     <div className="position-relative">
-                                                        <img className="w-100 img-fluid" src="../assets/img/noticias/noticia2.png"></img>
+                                                        <img className="w-100 img-fluid" src="/assets/img/noticias/noticia2.png"></img>
                                                         <div className="dark-filter"></div>
                                                     </div>
                                                     <div className="badge-tag">
@@ -143,4 +151,4 @@ const syllabus = () => {
     )
 }
 
-export default syllabus
+export default docentes

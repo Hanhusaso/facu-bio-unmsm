@@ -195,7 +195,7 @@ const index = () => {
                                             <div className="divisor"></div>
                                             <div className="grid-img-txt-1">
                                                 <div>
-                                                    <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/mision.png" alt="" />
+                                                    <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/vision.png" alt="" />
                                                 </div>
                                                 <div>
                                                     <p className="title">Visión</p>
@@ -206,7 +206,27 @@ const index = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <p>PDF</p>
+                                            <div>
+                                                <div className="mb-4">
+                                                    <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/>
+                                                </div>
+                                                <div className="section-compartir">
+                                                    <div className="d-inline-block font-weight-bold mr-3">
+                                                        Compartir vía:
+                                                    </div>
+                                                    <div className="icons">
+                                                        <a href="#" className="d-inline-block">
+                                                            <img src="/assets/img/iconos/email.svg"/>
+                                                        </a>
+                                                        <a href="#" className="d-inline-block">
+                                                            <img src="/assets/img/iconos/whatsapp.svg"/>
+                                                        </a>
+                                                        <a href="#" className="d-inline-block">
+                                                            <img src="/assets/img/iconos/facebook.svg"/>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div>
                                             <div className="grid-img-txt-2">

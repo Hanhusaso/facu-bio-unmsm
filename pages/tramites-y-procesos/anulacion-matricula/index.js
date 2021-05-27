@@ -50,33 +50,41 @@ const anulacionMatricula = () => {
                                 <Col sm="1"></Col>
                                 <Col sm="8">
                                     <p>
-                                        Se trata de la Mg. Claudia Villa, egresada de la E.P de Ciencias biológicas, quien en la actualidad se desempeña como gerente senior de Programas, como parte de Cloudpath, una iniciativa de liderazgo rotacional que busca formar a los siguientes líderes de la organización y brindarles los conocimientos necesarios sobre el negocio de la computación en la nube.
+                                        <span className="mr-2 font-weight-bold">Dirigido a:</span>
+                                        <span>Alumnos de posgrado y pegrado</span>
                                     </p>
                                     <p>
-                                        "La profesión que escogí  ha sido nombrada la carrera del futuro. Según El Colombiano "La biología dominará los currículos". Es una ciencia en la que predomina la investigación y EAFIT me ha brindado todas las herramientas necesarias para mi formación como científica; desde varios grupos de investigación y semilleros, hasta una infraestructura que cuenta con los laboratorios mejores dotados, al igual que charlas informátivas de diferentes temas de pertinencia dictadas por extranjeros y nacionales que han enriquecido mi conocimiento. Las oportunidades de intercambio y hacer doble titulación vuelven más atractiva mi hoja de vida. Aparte la universidad tiene una facilidad de pago (debido a  numerosos convenios que tiene) que me permitió seguir estudiando, y debido a mi promedio, pude alcanzar mi mayor ánhelo: la Beca de Honor Pregrado por el primer semestre. Son éstas clases de estímulos que fomentan el buen estudio. Por eso y mucho más adoro Mi universidad, me siento orgullosa de decir que soy y seré EAFITENSE".​
+                                        <span className="mr-2 font-weight-bold">Descripción:</span>
+                                        <span>
+                                            La anulación procede para quitar tu matrícula, luego de hacer este trámite Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur velit convallis enim, in orci vestibulum mauris. Duis arcu arcu adipiscing urna pulvinar congue nisi, maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.
+                                        </span>
                                     </p>
                                     <p>
-                                        Todo esto de la mano de su capacidad de visión de futuro, la construcción participativa, el trabajo en equipo, la curiosidad constante y la disciplina, cualidades que han sido diferenciadoras en el desempeño de este eafitense desde que cursaba sus estudios de pregrado, y que ahora imprime en cada uno de los desafíos que emprende en Amazon Web Services.
+                                        <span className="mr-2 font-weight-bold">Este trámite tiene fecha límite:</span>
+                                        <span>Del 02 de abril hasta el 15 de marzo</span>
                                     </p>
-                                    <div className="title mb-3">Aportar al país, su mayor sentido de responsabilidad</div>
-                                    <p>
-                                        Desde lo profesional, todas las herramientas para ser más analítico y diseñar modelos simples para el manejo de las finanzas y otros procesos; las matemáticas, la estadística y los temas de control y mejora. Y, desde lo profesional, los amigos con los que aún entabla conversaciones, la amplitud para ver el mundo en su diversidad, el emprendimiento y las ganas de aportar al desarrollo y progreso del país.
-                                    </p>
-                                    <p>
-                                        Son muchos los recuerdos, aprendizajes y anécdotas que este egresado conserva de su época de estudiante del pregrado en Ingeniería de Producción y de la maestría en Finanzas. Por eso no es raro que destaque algunos momentos como la pasantía que realizó en la Universidad Macquarie (Australia), cuando estaba cursando el pregrado en Ingeniería de Producción, o las clases con el profesor Ricardo Uribe Marín, hoy decano de la Escuela de Administración, y a quien recuerda con especial afecto.
+                                    <p className="font-weight-bold">
+                                        Proceso:
                                     </p>
                                     <p>
-                                        “El tema de aportar al país siempre ha sido parte de mi sentido de responsabilidad. Me lo inculcaron en mi familia y en el colegio, pero EAFIT me lo reforzó y me entregó las herramientas. La Universidad y sus profesores siempre hicieron énfasis en utilizar los conocimientos para devolverle a la sociedad, me mostraron cómo a través de los negocios se podía aportar, y cómo hacer negocios responsables para devolverle crecimiento y oportunidades a Colombia”, recuerda.
+                                        <ul className="nav flex-column">
+                                            <li className="font-weight-bold mb-2">1. Completa los siguientes requisitos</li>
+                                            <ul className="chevron-green-dark mb-3">
+                                                <li className="mb-2">Recibo de Pago	de S/. 67.00 al Banco Pichincha. Concepto de pago: Código de escuela + 005 <a href="#">Pagar</a></li>
+                                                <li className="mb-2">Último Reporte de Matrícula	(Puedes descargarlo desde tu cuenta en el <a href="#">SUM</a>)</li>
+                                                <li className="mb-2">Copia de Constancia de Ingreso de la Escuela a donde se trasladó (si fuera el caso).</li>
+                                                <li className="mb-2">Solicitud simple (Firmada): Indicando el motivo de la anulación.</li>
+                                            </ul>
+                                            <li className="font-weight-bold mb-2">2. Ingresa tu solicitud en el Módulo de atención de trámites (MAT) <a href="#">Ver tutorial</a></li>
+                                            <ul className="chevron-green-dark mb-3">
+                                                <li className="mb-2">Inicia sesión en el <a href="#">MAT</a></li>
+                                            </ul>
+                                            <li className="font-weight-bold mb-2">3. Realiza el seguimiento de tu trámite</li>
+                                            <ul className="chevron-green-dark mb-3">
+                                                <li className="mb-2">Ingresa tu número de expediente <a href="#">aquí</a></li>
+                                            </ul>
+                                        </ul>
                                     </p>
-                                    <p>
-                                        En la actualidad, y aunque se encuentra residiendo en el exterior, Daniel señala que le encanta visitar la Institución cuando tiene oportunidad y no descarta la posibilidad de poner sus conocimientos al servicio de esta, ya sea como conferencista o como integrante de algún proyecto. “Creo firmemente en la educación como motor de desarrollo y creo que EAFIT, como institución, va en ese camino”.
-                                    </p>
-                                    <div className="title mb-3">Logros</div>
-                                    <ul className="chevron-green mb-3">
-                                        <li>Ser galardonada como la primera mujer bióloga peruana en trabajar para la NASA.</li>
-                                        <li>Realizar más 150 publicaciones en área de la genética</li>
-                                        <li>Asumir el cargo de direccora en el Gentics Lab</li>
-                                    </ul>
                                     <div className="section-compartir">
                                         <div className="d-inline-block font-weight-bold mr-3">
                                             Compartir vía:

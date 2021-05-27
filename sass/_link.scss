@@ -1,4 +1,8 @@
 a {
+    color: $green-bright;
+    &.color-inherit {
+        color: inherit;
+    }
     &:hover {
         text-decoration: none;
         color: $green-bright;

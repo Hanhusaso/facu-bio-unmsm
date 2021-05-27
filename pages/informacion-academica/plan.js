@@ -6,10 +6,10 @@ import Link from 'next/link'
 import Layout from "../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 
-const horarios = () => {
+const plan = () => {
     return (
         <>
-            <Layout title="Horarios 2021">
+            <Layout title="Plan de estudios">
                 <div>
                     <div>
                         <Container>
@@ -29,7 +29,7 @@ const horarios = () => {
                                                 <a role="button">Información académica</a>
                                             </Link>
                                         </li>
-                                        <Breadcrumb.Item active>Horarios 2021</Breadcrumb.Item>
+                                        <Breadcrumb.Item active>Plan de estudios 2018 y Malla curricular | Ciencias Biológicas</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -41,7 +41,7 @@ const horarios = () => {
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
-                                    <div className="title-page text-center">Horarios 2021</div>
+                                    <div className="title-page text-center">Plan de estudios y malla curricular 2018 | Ciencias Biológicas</div>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
@@ -50,7 +50,7 @@ const horarios = () => {
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
-                                    Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.
+                                    Plan de estudios actualizado el 23/04/16.
                                 </Col>
                                 <Col sm="3"></Col>
                             </Row>
@@ -151,4 +151,4 @@ const horarios = () => {
     )
 }
 
-export default horarios
+export default plan

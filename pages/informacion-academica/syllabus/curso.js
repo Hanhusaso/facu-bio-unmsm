@@ -3,13 +3,13 @@ import React, { useState } from 'react'
 // import Head from "next/head";
 // import Header from "../../components/Header"
 import Link from 'next/link'
-import Layout from "../../components/Layout"
+import Layout from "../../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 
-const horarios = () => {
+const curso = () => {
     return (
         <>
-            <Layout title="Horarios 2021">
+            <Layout title="Biología y parisotología I">
                 <div>
                     <div>
                         <Container>
@@ -29,7 +29,12 @@ const horarios = () => {
                                                 <a role="button">Información académica</a>
                                             </Link>
                                         </li>
-                                        <Breadcrumb.Item active>Horarios 2021</Breadcrumb.Item>
+                                        <li className="breadcrumb-item">
+                                            <Link href="/informacion-academica/syllabus">
+                                                <a role="button">Syllabus</a>
+                                            </Link>
+                                        </li>
+                                        <Breadcrumb.Item active>Biología y parisotología I</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -41,7 +46,7 @@ const horarios = () => {
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
-                                    <div className="title-page text-center">Horarios 2021</div>
+                                    <div className="title-page text-center">Plan de estudios y malla curricular 2018 | Ciencias Biológicas</div>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
@@ -50,7 +55,9 @@ const horarios = () => {
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col>
-                                    Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.
+                                <p className="mb-0">
+                                    Docente: Julio Galarza Perez
+                                </p>
                                 </Col>
                                 <Col sm="3"></Col>
                             </Row>
@@ -151,4 +158,4 @@ const horarios = () => {
     )
 }
 
-export default horarios
+export default curso
