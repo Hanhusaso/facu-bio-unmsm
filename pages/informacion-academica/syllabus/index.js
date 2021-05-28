@@ -15,7 +15,7 @@ const syllabus = () => {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -29,7 +29,7 @@ const syllabus = () => {
                                                 <a role="button">Información académica</a>
                                             </Link>
                                         </li>
-                                        <Breadcrumb.Item active>Syllabus 2021</Breadcrumb.Item>
+                                        <Breadcrumb.Item active>Syllabus | Ciencias Biológicas</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -40,19 +40,19 @@ const syllabus = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
-                                    <div className="title-page text-center">Syllabus 2021</div>
+                                <Col className="desktop-extra-width">
+                                    <div className="title-page text-center">Syllabus | Ciencias Biológicas</div>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
                         </Container>
-                        <Container className="mb-3">
+                        <Container className="mb-4">
                             <Row>
                                 <Col sm="3"></Col>
-                                <Col>
-                                <div className="d-flex align-items-center justify-content-center">
-                                    BUSCADOR
-                                </div>
+                                <Col sm="6">
+                                    <div>
+                                        <input className="search-input" placeholder="Busca por un curso o docente" type="text" />
+                                    </div>
                                 </Col>
                                 <Col sm="3"></Col>
                             </Row>

@@ -15,7 +15,7 @@ const docentes = () => {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -40,19 +40,19 @@ const docentes = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width">
                                     <div className="title-page text-center">Información de docentes | Departamento de Biología Celular y Genética</div>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
                         </Container>
-                        <Container className="mb-3">
+                        <Container className="mb-4">
                             <Row>
                                 <Col sm="3"></Col>
                                 <Col>
-                                <div className="d-flex align-items-center justify-content-center">
-                                    BUSCADOR
-                                </div>
+                                    <div>
+                                        <input className="search-input" placeholder="Busca por un docente por nombre" type="text" />
+                                    </div>
                                 </Col>
                                 <Col sm="3"></Col>
                             </Row>

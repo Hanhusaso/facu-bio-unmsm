@@ -55,25 +55,74 @@ const TramitesProcesos = () => {
                             </Row>
                         </Container>
 
-                        <Container className="mb-3">
+                        <Container className="mb-4">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
-                                    <div className="title-page text-center">BUSCADOR</div>
+                                <Col sm="3"></Col>
+                                <Col sm="6" className="">
+                                    <div>
+                                        <input className="search-input" placeholder="Matrícula, bachiller, sustentación de tesis, etc..." type="text" />
+                                    </div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col sm="3"></Col>
                             </Row>
                         </Container>
 
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width-l" sm="2">FILTROS</Col>
+                                <Col sm="2">
+                                    <div className="filters-wrapper">
+                                        <div className="mb-3">
+                                            <div className="font-weight-bold mb-2">Dirigido a:</div>
+                                            <div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="dirigido-ingresantes" name="dirigido-ingresantes" value="ingresantes"/>
+                                                    <label className="mb-0" for="dirigido-ingresantes"><span class="checkmark"></span> Ingresantes</label>
+                                                </div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="dirigido-pregrado" name="dirigido-pregrado" value="pregrado"/>
+                                                    <label className="mb-0" for="dirigido-pregrado"><span class="checkmark"></span> Pregrado</label>
+                                                </div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="dirigido-posgrado" name="dirigido-posgrado" value="posgrado"/>
+                                                    <label className="mb-0" for="dirigido-posgrado"><span class="checkmark"></span> Posgrado</label>
+                                                </div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="dirigido-egresados" name="dirigido-egresados" value="egresados"/>
+                                                    <label className="mb-0" for="dirigido-egresados"><span class="checkmark"></span> Egresados</label>
+                                                </div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="dirigido-docentes" name="dirigido-docentes" value="docentes"/>
+                                                    <label className="mb-0" for="dirigido-docentes"><span class="checkmark"></span> Docentes</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className="font-weight-bold mb-2">Frecuentes:</div>
+                                            <div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="frecuentes-matricula" name="frecuentes-matricula" value="matricula"/>
+                                                    <label className="mb-0" for="frecuentes-matricula"><span class="checkmark"></span> Matrícula</label>
+                                                </div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="frecuentes-titulos-grados" name="frecuentes-titulos-grados" value="titulos y grados"/>
+                                                    <label className="mb-0" for="frecuentes-titulos-grados"><span class="checkmark"></span> Títulos y grados</label>
+                                                </div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="frecuentes-constancias" name="frecuentes-constancias" value="constancias"/>
+                                                    <label className="mb-0" for="frecuentes-constancias"><span class="checkmark"></span> Constancias</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Col>
                                 <Col sm="6">
                                     <div>
                                         {pages.map(post => (
                                             <div className="block-divider mb-3">
-                                                <h3 className="title">Anulación de matrícula | Pregrado</h3>
+                                                <Link href="/tramites-y-procesos/anulacion-matricula">
+                                                    <a className="title">Anulación de matrícula | Pregrado</a>
+                                                </Link>
                                                 <p className="mb-3">
                                                     obortis quam placerat lobortis tristique aliquet netus. Bibendum blandit morbi tristique metus.Eu suspendisse cras magna scelerisque penatibus viverra aliquam. Risus morbi in facilisi est leo eget ullamcorper. Amet tempus fringilla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper purus ue aliquet netus. Bibendum blandit morbi tristique metus..
                                                 </p>
@@ -81,7 +130,7 @@ const TramitesProcesos = () => {
                                         ))}
                                     </div>
                                 </Col>
-                                <Col className="desktop-extra-width-r" sm="2">
+                                <Col sm="2">
                                     <aside>
                                         <div className="block-interest-links mb-4">
                                             <p className="font-weight-bold mb-2 text-center">

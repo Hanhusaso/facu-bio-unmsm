@@ -114,24 +114,32 @@ const index = () => {
                                         <p className="font-weight-bold mb-2">Información académica</p>
                                         <ul className="nav flex-column">
                                             <li className="mb-2">
-                                                <a href="#">
-                                                    Plan de estudios
-                                                </a>
+                                                <Link href="/informacion-academica/plan">
+                                                    <a>
+                                                        Plan de estudios
+                                                    </a>
+                                                </Link>
                                             </li>
                                             <li className="mb-2">
-                                                <a href="#">
-                                                    Plana docente
-                                                </a>
+                                                <Link href="/informacion-academica/docentes">
+                                                    <a>
+                                                        Plana docente
+                                                    </a>
+                                                </Link>
                                             </li>
                                             <li className="mb-2">
-                                                <a href="#">
-                                                    Syllabus
-                                                </a>
+                                                <Link href="/informacion-academica/syllabus">
+                                                    <a>
+                                                        Syllabus
+                                                    </a>
+                                                </Link>
                                             </li>
                                             <li className="mb-0">
-                                                <a href="#">
-                                                    Horarios
-                                                </a>
+                                                <Link href="/informacion-academica/horarios">
+                                                    <a>
+                                                        Horarios
+                                                    </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -231,10 +239,21 @@ const index = () => {
                                         <div>
                                             <div className="grid-img-txt-2">
                                                 <div>
-                                                    <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado1.png" alt="" />
+                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
+                                                        <a>
+                                                            <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado1.png" alt="" />
+                                                        </a>
+                                                    </Link>
                                                 </div>
                                                 <div>
-                                                    <p className="title">Bach. María Cárdenas López </p>
+                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
+                                                        <a className="title">
+                                                            <p>
+                                                                Bach. María Cárdenas López
+                                                            </p>
+                                                        </a>
+                                                    </Link>
+                                                    {/* <p className="title">Bach. María Cárdenas López </p> */}
                                                     <p className="mb-0">
                                                         "La profesión que escogí  ha sido nombrada la carrera del futuro. Según El Colombiano "La biología dominará los currículos". Es una ciencia en la que predomina la investigación y EAFIT me ha brindado todas las herramientas necesarias para mi formación como científica; desde varios grupos de investigación y semilleros, hasta una infraestructura que cuenta con los laboratorios mejores dotados, al igual que charlas informátivas de diferentes temas de pertinencia dictadas por extranjeros y nacionales que han enriquecido mi conocimiento. 
                                                     </p>
@@ -243,10 +262,20 @@ const index = () => {
                                             <div className="divisor"></div>
                                             <div className="grid-img-txt-2">
                                                 <div>
-                                                    <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado2.png" alt="" />
+                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
+                                                        <a>
+                                                            <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado2.png" alt="" />
+                                                        </a>
+                                                    </Link>
                                                 </div>
                                                 <div>
-                                                    <p className="title">Bach. Carlos Palacios Hernandez | Practicante  Instituto de Investigaciones de la Amazonía Peruana</p>
+                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
+                                                        <a className="title">
+                                                            <p>
+                                                                Bach. Carlos Palacios Hernandez | Practicante  Instituto de Investigaciones de la Amazonía Peruana
+                                                            </p>
+                                                        </a>
+                                                    </Link>
                                                     <p className="mb-0">
                                                         Las oportunidades de intercambio y hacer doble titulación vuelven más atractiva mi hoja de vida. Aparte la universidad tiene una facilidad de pago (debido a  numerosos convenios que tiene) que me permitió seguir estudiando, y debido a mi promedio, pude alcanzar mi mayor ánhelo: la Beca de Honor Pregrado por el primer semestre. Son éstas clases de estímulos que fomentan el buen estudio. Por eso y mucho más adoro Mi universidad, me siento orgullosa de decir que soy y seré sanmarquino.
                                                     </p>
@@ -255,10 +284,20 @@ const index = () => {
                                             <div className="divisor"></div>
                                             <div className="grid-img-txt-2">
                                                 <div>
-                                                    <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado3.png" alt="" />
+                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
+                                                        <a>
+                                                            <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado3.png" alt="" />
+                                                        </a>
+                                                    </Link>
                                                 </div>
                                                 <div>
-                                                    <p className="title">Mg. Claudia Villa Vargas - Directora del Genetics Lab</p>
+                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
+                                                        <a className="title">
+                                                            <p>
+                                                                Mg. Claudia Villa Vargas - Directora del Genetics Lab
+                                                            </p>
+                                                        </a>
+                                                    </Link>
                                                     <p className="mb-0">
                                                         Mi interés de investigación son las interacciones biológicas entre distintos componentes del plancton. Durante mi tesis de pregrado en Biología Marina estudié la potencial interacción entre hongos y huevos de copépodos y en mi tesis de Magister en Ciencias c/m en Oceanografía investigué el microbioma gastro-intestinal del zooplancton (microorganismos asociados a copépodos y eufáusidos) en la zona norte y centro sur de Chile. Durante mis estudios de doctorado profundizaré en otros aspectos de la interacción entre microorganismos y copépodos
                                                     </p>
@@ -267,10 +306,20 @@ const index = () => {
                                             <div className="divisor"></div>
                                             <div className="grid-img-txt-2">
                                                 <div>
-                                                    <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado4.png" alt="" />
+                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
+                                                        <a>
+                                                            <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado4.png" alt="" />
+                                                        </a>
+                                                    </Link>
                                                 </div>
                                                 <div>
-                                                    <p className="title">Dr. Luis Jimenez Hidalgo - Docente principal de la Universidad Los Andes de Colombia</p>
+                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
+                                                        <a className="title">
+                                                            <p>
+                                                                Dr. Luis Jimenez Hidalgo - Docente principal de la Universidad Los Andes de Colombia
+                                                            </p>
+                                                        </a>
+                                                    </Link>
                                                     <p className="mb-0">
                                                         Estudie biología, actualmente soy gerente de inocuidad y certificaciones en la empresa Antigua Processors en Guatemala, recuerdo que cuando estaba en la época de colegio visite la Universidad y me llamaron la atención los laboratorios y áreas verdes, aprendí a cómo cultivar plantas sin sustrato como la tierra, y conocí granjas de animales y también plantas prehistóricas aquí en la UNMSM, sabía que quería estudiar aquí.
                                                     </p>

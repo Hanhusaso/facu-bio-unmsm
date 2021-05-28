@@ -15,7 +15,7 @@ const plan = () => {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -40,7 +40,7 @@ const plan = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width">
                                     <div className="title-page text-center">Plan de estudios y malla curricular 2018 | Ciencias Biológicas</div>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -49,7 +49,7 @@ const plan = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width-l">
                                     Plan de estudios actualizado el 23/04/16.
                                 </Col>
                                 <Col sm="3"></Col>

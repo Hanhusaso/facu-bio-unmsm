@@ -446,6 +446,9 @@ const Menu = () => {
                         <Io5Icons.IoClose className="close-icon icon"/>
                     </button>
                 </div>
+                <div className="nav-link">
+                    <input className="search-input" placeholder="Buscar por palabra clave" type="text" />
+                </div>
             </>
         )
     }

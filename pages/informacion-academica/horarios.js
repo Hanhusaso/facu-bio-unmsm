@@ -15,7 +15,7 @@ const horarios = () => {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -29,7 +29,7 @@ const horarios = () => {
                                                 <a role="button">Información académica</a>
                                             </Link>
                                         </li>
-                                        <Breadcrumb.Item active>Horarios 2021</Breadcrumb.Item>
+                                        <Breadcrumb.Item active>Horarios 2021-II | Ciencias Biológicas</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -40,8 +40,8 @@ const horarios = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
-                                    <div className="title-page text-center">Horarios 2021</div>
+                                <Col className="desktop-extra-width">
+                                    <div className="title-page text-center">Horarios 2021-II | Ciencias Biológicas</div>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
@@ -49,7 +49,7 @@ const horarios = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col>
+                                <Col className="desktop-extra-width-l">
                                     Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.
                                 </Col>
                                 <Col sm="3"></Col>

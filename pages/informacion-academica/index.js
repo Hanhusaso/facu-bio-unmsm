@@ -68,28 +68,73 @@ export default function InformacionAcademica() {
                             <Row>
                                 <Col sm="1"></Col>
                                 <Col className="desktop-extra-width-l" sm="2">
-                                    <div>
-                                        <div>Recurso:</div>
-                                        <div>Horarios</div>
-                                        <div>Malla curricular</div>
-                                        <div>Syllabus</div>
-                                        <div>Información de docentes</div>
-                                    </div>
-                                    <div>
-                                        <div>Escuelas</div>
-                                        <div>Ciencias Biológicas</div>
-                                        <div>Microbiología y parasitología</div>
-                                        <div>Genética y biotecnología</div>
+                                    <div className="filters-wrapper">
+                                        <div className="mb-3">
+                                            <div className="font-weight-bold mb-2">Recurso:</div>
+                                            <div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="recurso-horarios" name="recurso-horarios" value="horarios"/>
+                                                    <label className="mb-0" for="recurso-horarios"><span class="checkmark"></span> Horarios</label>
+                                                </div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="recurso-malla" name="recurso-malla" value="malla"/>
+                                                    <label className="mb-0" for="recurso-malla"><span class="checkmark"></span> Malla curricular y plan de estudios</label>
+                                                </div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="recurso-syllabus" name="recurso-syllabus" value="syllabus"/>
+                                                    <label className="mb-0" for="recurso-syllabus"><span class="checkmark"></span> Syllabus</label>
+                                                </div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="recurso-docentes" name="recurso-docentes" value="docentes"/>
+                                                    <label className="mb-0" for="recurso-docentes"><span class="checkmark"></span> Información de docentes</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className="font-weight-bold mb-2">Escuelas:</div>
+                                            <div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="escuelas-ciencias-biologicas" name="escuelas-ciencias-biologicas" value="ciencias-biologicas"/>
+                                                    <label className="mb-0" for="escuelas-ciencias-biologicas"><span class="checkmark"></span> Ciencias Biológicas</label>
+                                                </div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="escuelas-microbiologia" name="escuelas-microbiologia" value="microbiologia"/>
+                                                    <label className="mb-0" for="escuelas-microbiologia"><span class="checkmark"></span> Microbiología y parasitología</label>
+                                                </div>
+                                                <div className="input-group mb-1">
+                                                    <input type="checkbox" id="escuelas-genetica" name="escuelas-genetica" value="genetica"/>
+                                                    <label className="mb-0" for="escuelas-genetica"><span class="checkmark"></span> Genética y biotecnología</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </Col>
                                 <Col sm="6">
                                     <div>
-                                        {pages.map(post => (
-                                            <div className="block-divider mb-3">
-                                                <h3 className="title">Cronograma académico 2021</h3>
-                                                <p className="mb-3">Mira el cronograma completo para el semestre y el ciclo anual</p>
-                                            </div>
-                                        ))}
+                                        <div className="block-divider mb-3">
+                                            <Link href="/informacion-academica/horarios">
+                                                <a className="title">Horarios 2021-II | Ciencias Biológicas</a>
+                                            </Link>
+                                            <p className="mb-3">Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.</p>
+                                        </div>
+                                        <div className="block-divider mb-3">
+                                            <Link href="/informacion-academica/syllabus">
+                                                <a className="title">Syllabus | Ciencias Biológicas</a>
+                                            </Link>
+                                            <p className="mb-3">Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.</p>
+                                        </div>
+                                        <div className="block-divider mb-3">
+                                            <Link href="/informacion-academica/plan">
+                                                <a className="title">Malla curricular y plan de estudios 2018 | Ciencias Biológicas</a>
+                                            </Link>
+                                            <p className="mb-3">Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.</p>
+                                        </div>
+                                        <div className="block-divider mb-3">
+                                            <Link href="/informacion-academica/docentes">
+                                                <a className="title">Información de docentes | Departamento de Biología celular y Genética</a>
+                                            </Link>
+                                            <p className="mb-3">Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.</p>
+                                        </div>
                                     </div>
                                 </Col>
                                 <Col className="desktop-extra-width-r" sm="2">

@@ -1,0 +1,78 @@
+.search-input {
+    width: 100%;
+    padding: 12px 21px;
+    box-shadow: $box-shadow;
+    border: none;
+    outline: 1px solid transparent;
+    transition: outline .5s ease, box-shadow .5s ease;
+    &:focus {
+        outline: 1px solid $green;
+        box-shadow: $box-shadow-green;
+    }
+}
+
+.filters-wrapper {
+    background-color: $wht;
+    padding: 17px 23px;
+    box-shadow: $box-shadow;
+}
+
+// TYPE CHECKBOX CUSTOM
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: $wht;
+    border-radius: 3px;
+    border: 1px solid $green;
+    transition: background-color .25s ease;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group label {
+    padding-left: 23px;
+}
+
+.input-group:hover input[type="checkbox"] ~ label>.checkmark {
+    background-color: #dedede;
+}
+
+.input-group input[type="checkbox"]:checked ~ label>.checkmark {
+    background-color: $green;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.input-group input[type="checkbox"]:checked ~ label>.checkmark:after {
+    display: block;
+}
+
+.input-group .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 6px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

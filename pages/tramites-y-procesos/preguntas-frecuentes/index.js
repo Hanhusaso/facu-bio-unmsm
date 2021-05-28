@@ -47,11 +47,13 @@ const preguntasFrecuentes = () => {
                         </Container>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
-                                    <div className="title-page text-center mb-3">BUSCADOR</div>
+                                <Col sm="3"></Col>
+                                <Col sm="6" className="desktop-extra-width">
+                                    <div>
+                                        <input className="search-input" placeholder="Busca por palabra clave" type="text" />
+                                    </div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col sm="3"></Col>
                             </Row>
                         </Container>
                         <Container>
