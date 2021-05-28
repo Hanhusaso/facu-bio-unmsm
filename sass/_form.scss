@@ -48,7 +48,8 @@ input[type="checkbox"] {
 }
 
 .input-group:hover input[type="checkbox"] ~ label>.checkmark {
-    background-color: #dedede;
+    // background-color: #dedede;
+    background-color: $green;
 }
 
 .input-group input[type="checkbox"]:checked ~ label>.checkmark {
