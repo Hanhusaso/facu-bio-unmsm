@@ -57,7 +57,7 @@ const egresado = () => {
                                 <Col sm="1"></Col>
                                 <Col sm="8">
                                     <div className="d-flex justify-content-center mb-4">
-                                        <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado3.png" alt="" />
+                                        <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/testimonio_desarrollo.png" alt="" />
                                     </div>
                                     <p>
                                         Se trata de la Mg. Claudia Villa, egresada de la E.P de Ciencias biológicas, quien en la actualidad se desempeña como gerente senior de Programas, como parte de Cloudpath, una iniciativa de liderazgo rotacional que busca formar a los siguientes líderes de la organización y brindarles los conocimientos necesarios sobre el negocio de la computación en la nube.
