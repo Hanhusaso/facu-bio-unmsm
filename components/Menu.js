@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Accordion from 'react-bootstrap/Accordion'
 // import { IconName } from "react-icons/fa";
@@ -24,11 +24,15 @@ const Menu = () => {
 
     const showSidebar = () => {
         setSidebar(true)
-        document.body.classList.add('menu-open');
+        // document.body.classList.add('menu-open');
     }
     const hideSidebar = () => {
         setSidebar(false)
-        document.body.classList.remove('menu-open');
+        // document.body.classList.remove('menu-open');
+    }
+    const toogleSidebar = () => {
+        setSidebar(!sidebar)
+        setSectionSideBar("SectionMenu")
     }
 
     const showSectionMenu = () => {
@@ -46,6 +50,14 @@ const Menu = () => {
         setSectionSideBar("SectionIntranet")
     }
 
+    useEffect(() => {
+        if (sidebar) {
+            document.body.classList.add('menu-open');
+        } else {
+            document.body.classList.remove('menu-open');
+        }
+    },[sidebar]);
+
     // Componentes - secciones del sidebar
 
     const SectionMenu = () => {
@@ -56,6 +68,9 @@ const Menu = () => {
                     <button className="btn-menu-close btn-transparent p-0" onClick={hideSidebar}>
                         <Io5Icons.IoClose className="close-icon icon"/>
                     </button>
+                </div>
+                <div className="nav-link search-responsive">
+                    <input className="search-input" placeholder="Buscar por palabra clave" type="text" />
                 </div>
                 <div>
                     <Accordion>
@@ -490,6 +505,13 @@ const Menu = () => {
 
     return (
         <div className="">
+            <div className="pos-toogle-btn">
+                <button className={sidebar ? "toogle-btn-menu open menu-bars btn-transparent" : "toogle-btn-menu menu-bars btn-transparent"} onClick={toogleSidebar}>
+                    {/* <FaIcons.FaBars className="icon"/> */}
+                    {/* <img src="/assets/img/iconos/hamburguesa.png" alt="" /> */}
+                    <div className="menu-btn-bars"></div>
+                </button>
+            </div>
             <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                 <div className="navbar-toogle">
                     <button className="menu-bars btn-transparent" onClick={showSectionMenu}>
@@ -514,8 +536,8 @@ const Menu = () => {
                         {sectionSideBar === "SectionIntranet" && <SectionIntranet />}
                     </div>
 
-                    <div>
-                        <ul className="nav flex-column extra-links">
+                    <div className="extra-links">
+                        <ul className="nav flex-column">
                             <li className="nav-item">
                                 {/* <Link href="/tramites-y-procesos"> */}
                                     {/* <a className="nav-link">Trámites y procesos</a> */}
@@ -559,6 +581,20 @@ const Menu = () => {
                                         </span>
                                     </a>
                                 {/* </Link> */}
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="intranet-responsive">
+                        <ul className="nav flex-column">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Correo institucional</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Sistema único de matrícula (SUM)</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Aula Virtual (OEV)</a>
                             </li>
                         </ul>
                     </div>

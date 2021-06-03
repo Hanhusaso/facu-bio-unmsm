@@ -13,6 +13,9 @@
     transition-duration: 375ms;
     transition-timing-function: ease;
     transition-delay: 0s;
+    @include media-breakpoint-down(sm) {
+        height: 102px;
+    }
     .lp-shrink-header {
         transition: all;
         transition-duration: 375ms;
@@ -21,12 +24,20 @@
     }
     &.shrink-header {
         height: 90px;
+        @include media-breakpoint-down(sm) {
+            height: 102px;
+        }
         .lp-shrink-header {
             max-width: 4%;
+            @include media-breakpoint-down(sm) {
+                max-width: none;
+            }
         }
         .img-logo {
             height: 50px;
-            // margin-left: -60px;
+            @include media-breakpoint-down(sm) {
+                height: 42px;
+            }
         }
     }
 
@@ -36,10 +47,16 @@
         transition-duration: 375ms;
         transition-timing-function: ease;
         transition-delay: 0s;
+        @include media-breakpoint-down(sm) {
+            height: 42px;
+        }
     }
 
 }
 
 .below-header {
     padding-top: 162px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 102px;
+    }
 }

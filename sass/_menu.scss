@@ -4,15 +4,78 @@
         right: 250px;
         left: 0;
         background-color: rgba(0, 0, 0, 0.3);
-        transition-duration: 750ms,0s,375ms;
+        // transition-duration: 750ms,0s,375ms;
+        transition-duration: 375ms,0s,375ms;
         // transition-timing-function: cubic-bezier(.175,.885,.32,1.14),linear,ease-in-out;
-        transition-timing-function: cubic-bezier(.175,.885,.32,1.14),linear,ease-in-out;
+        // transition-timing-function: ease-in-out,linear,ease-in-out;
+        transition-timing-function: ease-in-out,ease-in-out,ease-in-out;
         transition-delay: 0s,0s,0s;
     }
     .nav-menu {
-        // transition-timing-function: ease-in-out;
-        transition-timing-function: cubic-bezier(.175,.885,.32,1.14);
-        transition-duration: 750ms;
+        transition-timing-function: ease-in-out;
+        // transition-timing-function: cubic-bezier(.175,.885,.32,1.14);
+        // transition-duration: 750ms;
+        transition-duration: 375ms;
+    }
+}
+
+.btn-menu-close {
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
+.pos-toogle-btn {
+    background-color: $green-bright;
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    top: 25px;
+    display: none;
+    @include media-breakpoint-down(sm) {
+        display: block;
+    }
+    .toogle-btn-menu {
+        overflow: hidden;
+        color: $wht;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s ease-in-out;
+        .menu-btn-bars {
+            width: 25px;
+            height: 5px;
+            background-color: $wht;
+            transition: all .5s ease-in-out;
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                width: 25px;
+                height: 5px;
+                background-color: $wht;
+                transition: all .5s ease-in-out;
+            }
+            &::before {
+                transform: translate(-12px ,-7px);
+            }
+            &::after {
+                transform: translate(-12px ,7px);
+            }
+        }
+        &.open {
+            .menu-btn-bars {
+                transform: translateX(-50px);
+                background-color: transparent;
+                &::before {
+                    transform: rotate(45deg) translate(27px, -27px)
+                }
+                &::after {
+                    transform: rotate(-45deg) translate(27px, 27px)
+                }
+            }
+        }
     }
 }
 
@@ -27,6 +90,7 @@
     transition: right,left,background-color;
     transition-duration: 375ms,0s,375ms;
     transition-timing-function: ease-in-out,linear,ease-in-out;
+    // transition-delay: 0s,375ms,0s;
     transition-delay: 0s,375ms,0s;
 }
 
@@ -42,6 +106,9 @@
     top: 0;
     left: 0;
     transform: translateX(-100%);
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
     button {
         color: $wht;
         width: 50px;
@@ -68,6 +135,9 @@
     // transition-timing-function: cubic-bezier(.175,.885,.32,1.14);
     transition-delay: 0ms;
     z-index: 900;
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
     &.active {
         transform: translateX(0%);
     }
@@ -88,6 +158,9 @@
             background-color: $green-dark;
             padding-top: 5px;
             padding-bottom: 24px;
+            @include media-breakpoint-down(sm) {
+                padding-top: 25px;
+            }
             .btn-accordion-nav {
                 width: 100%;
                 text-align: left;
@@ -127,10 +200,36 @@
 
         }
 
+        .search-responsive {
+            display: none;
+            @include media-breakpoint-down(sm) {
+                display: block;
+            }
+        }
+        
+        .intranet-responsive {
+            display: none;
+            padding: 0px 0px;
+            text-align: center;
+            @include media-breakpoint-down(sm) {
+                display: block;
+            }
+            .nav-item {
+                border-bottom: 1px solid $green-dark-50;
+                a {
+                    color: $green;
+                }
+            }
+        }
+
         .extra-links {
             background-color: $wht;
-            padding-top: 14px;
+            padding: 14px 0px 0px;
             // color: $green-dark;
+            @include media-breakpoint-down(sm) {
+                border-bottom: 1px solid $green-dark-50;
+                padding: 10px 0px 10px;
+            }
             a {
                 color: $green-dark;
             }

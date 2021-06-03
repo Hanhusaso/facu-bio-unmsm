@@ -12,7 +12,7 @@ const formacionAcademica = () => {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -34,7 +34,7 @@ const formacionAcademica = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <div className="title-page text-center">Formación académica</div>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -43,7 +43,7 @@ const formacionAcademica = () => {
                         <Container className="mb-4">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width-l">
+                                <Col className="">
                                     <p className="mb-0">
                                         Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias biológicas con especial énfasis en la flora, fauna y ecosistemas amazónicos así como en la microbiología y parasitología; desarrollando campos como la taxonomía, fisiología, bioquímica, genética, patología y biología molecular, aplicándose en propuestas para el desarrollo sostenible de la región, como por ejemplo zoocriaderos, piscicultura, manejo de ecosistemas y recursos naturales, así como en las áreas relacionadas con la salud del hombre, animales y plantas; iniciándose además alternativas innovadoras a través de la biotecnología.
                                     </p>
@@ -57,7 +57,7 @@ const formacionAcademica = () => {
                                 <Col sm="4">
                                 <Link href="/formacion-academica/pregrado/ciencias-biologicas">
                                     <a>
-                                        <img src="/assets/img/carreras/cienciasbiologicas.png" alt="" />
+                                        <img className="img-fluid" src="/assets/img/carreras/cienciasbiologicas.png" alt="" />
                                     </a>
                                 </Link>
                                 </Col>
@@ -99,7 +99,7 @@ const formacionAcademica = () => {
                                 <Col sm="4">
                                 <Link href="/formacion-academica/pregrado/genetica-biotecnologia">
                                     <a>
-                                        <img src="/assets/img/carreras/genetica.png" alt="" />
+                                        <img className="img-fluid" src="/assets/img/carreras/genetica.png" alt="" />
                                     </a>
                                 </Link>
                                 </Col>
@@ -112,7 +112,7 @@ const formacionAcademica = () => {
                                 <Col sm="4">
                                 <Link href="/formacion-academica/pregrado/microbiologia-parasitologia">
                                     <a>
-                                        <img src="/assets/img/carreras/microbiologia.png" alt="" />
+                                        <img className="img-fluid" src="/assets/img/carreras/microbiologia.png" alt="" />
                                     </a>
                                 </Link>
                                 </Col>
