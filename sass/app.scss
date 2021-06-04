@@ -1,5 +1,5 @@
-@import "custom-bootstrap";
 @import "~bootstrap/scss/bootstrap";
+@import "custom-bootstrap";
 
 @import "variables";
 
@@ -34,6 +34,7 @@
 // pages
 @import "../pages/index";
 @import "../pages/informacion-academica/syllabus/syllabus";
+@import "../pages/formacion-academica/pregrado/index";
 
 // footer
 @import "footer";

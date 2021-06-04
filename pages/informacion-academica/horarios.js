@@ -61,9 +61,15 @@ const horarios = () => {
                                 <Col sm="8">
                                     <div>
                                         <div className="mb-4">
-                                            <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/>
+                                            {/* <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/> */}
+                                            <object data="/assets/archivos/malla_curricular_2020.pdf" type="application/pdf" width="100%" height="700px"> 
+                                                <a href="/assets/archivos/malla_curricular_2020.pdf">
+                                                    <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
+                                                    <span className="sub-title-dark">Descargar</span>
+                                                </a>
+                                            </object>
                                         </div>
-                                        <div className="section-compartir">
+                                        <div className="section-compartir d-none d-sm-block">
                                             <div className="d-inline-block font-weight-bold mr-3">
                                                 Compartir vía:
                                             </div>

@@ -77,23 +77,23 @@ const TramitesProcesos = () => {
                                             <div>
                                                 <div className="input-group mb-1">
                                                     <input type="checkbox" id="dirigido-ingresantes" name="dirigido-ingresantes" value="ingresantes"/>
-                                                    <label className="mb-0" for="dirigido-ingresantes"><span class="checkmark"></span> Ingresantes</label>
+                                                    <label className="mb-0" for="dirigido-ingresantes"><span className="checkmark"></span> Ingresantes</label>
                                                 </div>
                                                 <div className="input-group mb-1">
                                                     <input type="checkbox" id="dirigido-pregrado" name="dirigido-pregrado" value="pregrado"/>
-                                                    <label className="mb-0" for="dirigido-pregrado"><span class="checkmark"></span> Pregrado</label>
+                                                    <label className="mb-0" for="dirigido-pregrado"><span className="checkmark"></span> Pregrado</label>
                                                 </div>
                                                 <div className="input-group mb-1">
                                                     <input type="checkbox" id="dirigido-posgrado" name="dirigido-posgrado" value="posgrado"/>
-                                                    <label className="mb-0" for="dirigido-posgrado"><span class="checkmark"></span> Posgrado</label>
+                                                    <label className="mb-0" for="dirigido-posgrado"><span className="checkmark"></span> Posgrado</label>
                                                 </div>
                                                 <div className="input-group mb-1">
                                                     <input type="checkbox" id="dirigido-egresados" name="dirigido-egresados" value="egresados"/>
-                                                    <label className="mb-0" for="dirigido-egresados"><span class="checkmark"></span> Egresados</label>
+                                                    <label className="mb-0" for="dirigido-egresados"><span className="checkmark"></span> Egresados</label>
                                                 </div>
                                                 <div className="input-group mb-1">
                                                     <input type="checkbox" id="dirigido-docentes" name="dirigido-docentes" value="docentes"/>
-                                                    <label className="mb-0" for="dirigido-docentes"><span class="checkmark"></span> Docentes</label>
+                                                    <label className="mb-0" for="dirigido-docentes"><span className="checkmark"></span> Docentes</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -102,15 +102,15 @@ const TramitesProcesos = () => {
                                             <div>
                                                 <div className="input-group mb-1">
                                                     <input type="checkbox" id="frecuentes-matricula" name="frecuentes-matricula" value="matricula"/>
-                                                    <label className="mb-0" for="frecuentes-matricula"><span class="checkmark"></span> Matrícula</label>
+                                                    <label className="mb-0" for="frecuentes-matricula"><span className="checkmark"></span> Matrícula</label>
                                                 </div>
                                                 <div className="input-group mb-1">
                                                     <input type="checkbox" id="frecuentes-titulos-grados" name="frecuentes-titulos-grados" value="titulos y grados"/>
-                                                    <label className="mb-0" for="frecuentes-titulos-grados"><span class="checkmark"></span> Títulos y grados</label>
+                                                    <label className="mb-0" for="frecuentes-titulos-grados"><span className="checkmark"></span> Títulos y grados</label>
                                                 </div>
                                                 <div className="input-group mb-1">
                                                     <input type="checkbox" id="frecuentes-constancias" name="frecuentes-constancias" value="constancias"/>
-                                                    <label className="mb-0" for="frecuentes-constancias"><span class="checkmark"></span> Constancias</label>
+                                                    <label className="mb-0" for="frecuentes-constancias"><span className="checkmark"></span> Constancias</label>
                                                 </div>
                                             </div>
                                         </div>

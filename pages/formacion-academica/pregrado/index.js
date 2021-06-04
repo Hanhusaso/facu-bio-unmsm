@@ -51,17 +51,17 @@ const formacionAcademica = () => {
                                 <Col sm="1"></Col>
                             </Row>
                         </Container>
-                        <Container className="mb-5">
-                            <Row>
-                                <Col sm="2"></Col>
-                                <Col sm="4">
-                                <Link href="/formacion-academica/pregrado/ciencias-biologicas">
-                                    <a>
-                                        <img className="img-fluid" src="/assets/img/carreras/cienciasbiologicas.png" alt="" />
-                                    </a>
-                                </Link>
+                        <Container className="mb-4 mb-md-5">
+                            <Row className="reverse-responsive">
+                                <Col md="2"></Col>
+                                <Col md="4" className="text-center">
+                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas">
+                                        <a>
+                                            <img className="img-fluid" src="/assets/img/carreras/cienciasbiologicas.png" alt="" />
+                                        </a>
+                                    </Link>
                                 </Col>
-                                <Col className="d-flex flex-column justify-content-center" sm="4">
+                                <Col className="d-flex flex-column justify-content-center mb-3 mb-md-0" md="4">
                                     <div className="text-center">
                                         <Link href="/formacion-academica/pregrado/ciencias-biologicas">
                                             <a className="title-green">
@@ -69,19 +69,19 @@ const formacionAcademica = () => {
                                             </a>
                                         </Link>
                                     </div>
-                                    <div>
+                                    <div className="d-none d-md-block">
                                         <p className="mb-0">
                                             Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias biológicas con especial énfasis en la flora, fauna y ecosistemas Nuestro primer compromiso como institución Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias biológicas con especial énfasis en la flora, fauna y ecosistemas Nuestro primer compromiso como institución. Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias.
                                         </p>
                                     </div>
                                 </Col>
-                                <Col sm="2"></Col>
+                                <Col md="2"></Col>
                             </Row>
                         </Container>
-                        <Container className="mb-5">
+                        <Container className="mb-4 mb-md-5">
                             <Row>
-                                <Col sm="2"></Col>
-                                <Col className="d-flex flex-column justify-content-center" sm="4">
+                                <Col md="2"></Col>
+                                <Col className="d-flex flex-column justify-content-center mb-3 mb-md-0" md="4">
                                     <div className="text-center">
                                         <Link href="/formacion-academica/pregrado/genetica-biotecnologia">
                                             <a className="title-green">
@@ -90,33 +90,33 @@ const formacionAcademica = () => {
                                         </Link>
                                     </div>
                                     {/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
-                                    <div>
+                                    <div className="d-none d-md-block">
                                         <p className="mb-0">
                                             Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias biológicas con especial énfasis en la flora, fauna y ecosistemas Nuestro primer compromiso como institución Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias biológicas con especial énfasis en la flora, fauna y ecosistemas Nuestro primer compromiso como institución. Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias.
                                         </p>
                                     </div>
                                 </Col>
-                                <Col sm="4">
-                                <Link href="/formacion-academica/pregrado/genetica-biotecnologia">
-                                    <a>
-                                        <img className="img-fluid" src="/assets/img/carreras/genetica.png" alt="" />
-                                    </a>
-                                </Link>
+                                <Col md="4" className="text-center">
+                                    <Link href="/formacion-academica/pregrado/genetica-biotecnologia">
+                                        <a>
+                                            <img className="img-fluid" src="/assets/img/carreras/genetica.png" alt="" />
+                                        </a>
+                                    </Link>
                                 </Col>
-                                <Col sm="2"></Col>
+                                <Col md="2"></Col>
                             </Row>
                         </Container>
                         <Container>
-                            <Row>
-                                <Col sm="2"></Col>
-                                <Col sm="4">
-                                <Link href="/formacion-academica/pregrado/microbiologia-parasitologia">
-                                    <a>
-                                        <img className="img-fluid" src="/assets/img/carreras/microbiologia.png" alt="" />
-                                    </a>
-                                </Link>
+                            <Row className="reverse-responsive">
+                                <Col md="2"></Col>
+                                <Col md="4" className="text-center">
+                                    <Link href="/formacion-academica/pregrado/microbiologia-parasitologia">
+                                        <a>
+                                            <img className="img-fluid" src="/assets/img/carreras/microbiologia.png" alt="" />
+                                        </a>
+                                    </Link>
                                 </Col>
-                                <Col className="d-flex flex-column justify-content-center" sm="4">
+                                <Col className="d-flex flex-column justify-content-center mb-3 mb-md-0" md="4">
                                     <div className="text-center">
                                         <Link href="/formacion-academica/pregrado/microbiologia-parasitologia">
                                             <a className="title-green">
@@ -125,13 +125,13 @@ const formacionAcademica = () => {
                                         </Link>
                                     </div>
                                     {/* <div className="title-green text-center">E.P Microbiología y Parasitología</div> */}
-                                    <div>
+                                    <div className="d-none d-md-block">
                                         <p className="mb-0">
                                             Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias biológicas con especial énfasis en la flora, fauna y ecosistemas Nuestro primer compromiso como institución Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias biológicas con especial énfasis en la flora, fauna y ecosistemas Nuestro primer compromiso como institución. Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias.
                                         </p>
                                     </div>
                                 </Col>
-                                <Col sm="2"></Col>
+                                <Col md="2"></Col>
                             </Row>
                         </Container>
                     </div>
