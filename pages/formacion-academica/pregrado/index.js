@@ -3,15 +3,15 @@ import Layout from "../../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 import Link from 'next/link'
 
-const formacionAcademica = () => {
+const pregrado = () => {
     return (
         <>
-            <Layout title="Formación académica">
+            <Layout title="Pregrado - Formación académica">
                 <div>
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                                 <Col className="">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
@@ -26,29 +26,29 @@ const formacionAcademica = () => {
                                         <Breadcrumb.Item active>Carreras de pregrado</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                                 <Col className="">
-                                    <div className="title-page text-center">Formación académica</div>
+                                    <div className="title-page text-center">Carreras de pregrado</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container className="mb-4">
                             <Row>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                                 <Col className="">
                                     <p className="mb-0">
                                         Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias biológicas con especial énfasis en la flora, fauna y ecosistemas amazónicos así como en la microbiología y parasitología; desarrollando campos como la taxonomía, fisiología, bioquímica, genética, patología y biología molecular, aplicándose en propuestas para el desarrollo sostenible de la región, como por ejemplo zoocriaderos, piscicultura, manejo de ecosistemas y recursos naturales, así como en las áreas relacionadas con la salud del hombre, animales y plantas; iniciándose además alternativas innovadoras a través de la biotecnología.
                                     </p>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container className="mb-4 mb-md-5">
@@ -141,4 +141,4 @@ const formacionAcademica = () => {
     )
 }
 
-export default formacionAcademica
+export default pregrado

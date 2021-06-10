@@ -1,18 +1,17 @@
 import React , { useEffect } from 'react'
 import Layout from "../../../components/Layout"
-// import Tabs from "../../../components/Tabs/vanillaTabs"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 import Link from 'next/link'
 
-const anulacionMatricula = () => {
+const evento = () => {
     return (
         <>
-            <Layout title="Anulación de Matricula">
+            <Layout title="Evento">
                 <div>
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                                 <Col className="">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
@@ -24,67 +23,67 @@ const anulacionMatricula = () => {
                                         {/* </Breadcrumb.Item> */}
                                         {/* <Breadcrumb.Item active>Formación académica</Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
-                                            <Link href="/tramites-y-procesos">
-                                                <a role="button">Trámites y procesos</a>
+                                            <Link href="/noticias">
+                                                <a role="button">Eventos</a>
                                             </Link>
                                         </li>
-                                        <Breadcrumb.Item active>Anulación de matrícula</Breadcrumb.Item>
+                                        <Breadcrumb.Item active>Evento</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
-                                    <div className="title-page text-center mb-3">Anulación de matrícula</div>
+                                <Col md="1"></Col>
+                                <Col md="8" className="">
+                                    <div className="title-page mb-2">Charla | Estudio y análisis de la fauna microscópica en medios terrestres y acuáticos</div>
+                                    {/* <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div> */}
+                                    <div className="d-flex justify-content-start">
+                                        <div className="date mr-4">
+                                            <span>
+                                                <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
+                                            </span>
+                                            <span>7 de abril de 2021</span>
+                                        </div>
+                                        <div className="date mr-4">
+                                            <span>
+                                                <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
+                                            </span>
+                                            <span>5:00 pm</span>
+                                        </div>
+                                        <div className="date">
+                                            <span>
+                                                <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
+                                            </span>
+                                            <span>Zoom meetings</span>
+                                        </div>
+                                    </div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="2"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="8">
+                                <Col md="1"></Col>
+                                <Col md="8">
+                                    <div className="d-flex justify-content-center mb-4">
+                                        <img className="img-fluid" src="/assets/img/eventos/eventos_desarrollo.png" alt="" />
+                                    </div>
                                     <p>
-                                        <span className="mr-2 font-weight-bold">Dirigido a:</span>
-                                        <span>Alumnos de posgrado y pegrado</span>
-                                    </p>
-                                    <p>
-                                        <span className="mr-2 font-weight-bold">Descripción:</span>
-                                        <span>
-                                            La anulación procede para quitar tu matrícula, luego de hacer este trámite Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur velit convallis enim, in orci vestibulum mauris. Duis arcu arcu adipiscing urna pulvinar congue nisi, maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.
-                                        </span>
+                                        El litoral peruano posee una riqueza que es ampliamente conocida y el mar de Tumbes, en especial, reserva todo un tesoro gracias a la confluencia de la corriente fría del sur y la corriente cálida del norte. ¿Te imaginas bucear y ver un caballito de mar, o navegar mar adentro y encontrarte con una enorme ballena jorobada?
                                     </p>
                                     <p>
-                                        <span className="mr-2 font-weight-bold">Este trámite tiene fecha límite:</span>
-                                        <span>Del 02 de abril hasta el 15 de marzo</span>
+                                        En Tumbes encontrarás muchas alternativas que te permitirán conocer y disfrutar de la gran biodiversidad de uno de los mares más generosos del planeta.​
                                     </p>
-                                    <p className="font-weight-bold">
-                                        Proceso:
-                                    </p>
-                                    <p>
-                                        <ul className="nav flex-column">
-                                            <li className="font-weight-bold mb-2">1. Completa los siguientes requisitos</li>
-                                            <ul className="chevron-green-dark mb-3">
-                                                <li className="mb-2">Recibo de Pago	de S/. 67.00 al Banco Pichincha. Concepto de pago: Código de escuela + 005 <a href="#">Pagar</a></li>
-                                                <li className="mb-2">Último Reporte de Matrícula	(Puedes descargarlo desde tu cuenta en el <a href="#">SUM</a>)</li>
-                                                <li className="mb-2">Copia de Constancia de Ingreso de la Escuela a donde se trasladó (si fuera el caso).</li>
-                                                <li className="mb-2">Solicitud simple (Firmada): Indicando el motivo de la anulación.</li>
-                                            </ul>
-                                            <li className="font-weight-bold mb-2">2. Ingresa tu solicitud en el Módulo de atención de trámites (MAT) <a href="#">Ver tutorial</a></li>
-                                            <ul className="chevron-green-dark mb-3">
-                                                <li className="mb-2">Inicia sesión en el <a href="#">MAT</a></li>
-                                            </ul>
-                                            <li className="font-weight-bold mb-2">3. Realiza el seguimiento de tu trámite</li>
-                                            <ul className="chevron-green-dark mb-3">
-                                                <li className="mb-2">Ingresa tu número de expediente <a href="#">aquí</a></li>
-                                            </ul>
-                                        </ul>
-                                    </p>
+                                    <div className="mb-3">
+                                        <a className="btn-green-bright" href="">
+                                            Inscripciones
+                                        </a>
+                                    </div>
                                     <div className="section-compartir">
                                         <div className="d-inline-block font-weight-bold mr-3">
                                             Compartir vía:
@@ -102,22 +101,8 @@ const anulacionMatricula = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col sm="2">
+                                <Col md="2">
                                     <aside>
-                                        <div className="block-interest-links mb-4">
-                                            <p className="font-weight-bold mb-2 text-center">
-                                                ¿Tienes dudas sobre algún trámite o no encuentras la información que necesitas?
-                                            </p>
-                                            <ul className="nav flex-column">
-                                                <li className="mb-2 text-center font-weight-bold">
-                                                    <Link href="/tramites-y-procesos/preguntas-frecuentes">
-                                                        <a>
-                                                            Ir a preguntas frecuentes
-                                                        </a>
-                                                    </Link>
-                                                </li>
-                                            </ul>
-                                        </div>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
                                             <a href="#" className="d-inline-block">
@@ -176,7 +161,7 @@ const anulacionMatricula = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
@@ -186,4 +171,4 @@ const anulacionMatricula = () => {
     )
 }
 
-export default anulacionMatricula
+export default evento

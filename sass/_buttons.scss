@@ -6,3 +6,14 @@
     border: none;
     outline: none;
 }
+
+.btn-green-bright {
+    background-color: $green-bright;
+    color: $wht;
+    padding: 5px 10px;
+    border-radius: 4.18px;
+    box-shadow: $box-shadow;
+    &:hover {
+        color: $wht;
+    }
+}

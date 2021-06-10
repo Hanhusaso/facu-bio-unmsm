@@ -176,7 +176,7 @@ const Menu = () => {
                                         <li className="nav-item">
                                             {/* <Link href="/investigacion/revista-peruana-biología"> */}
                                                 {/* <a className="nav-link">Revista peruana de Biología</a> */}
-                                                <a href="/investigacion/revista-peruana-biología" className="nav-link">Revista peruana de Biología</a>
+                                                <a href="/investigacion/revista-peruana-biologia" className="nav-link">Revista peruana de Biología</a>
                                             {/* </Link> */}
                                         </li>
                                         <li className="nav-item">
@@ -236,19 +236,19 @@ const Menu = () => {
                                         <li className="nav-item">
                                             {/* <Link href="/noticias-y-eventos/noticias"> */}
                                                 {/* <a className="nav-link">Noticias</a> */}
-                                                <a href="/noticias-y-eventos/noticias" className="nav-link">Noticias</a>
+                                                <a href="/noticias" className="nav-link">Noticias</a>
                                             {/* </Link> */}
                                         </li>
                                         <li className="nav-item">
-                                            {/* <Link href="/noticias-y-eventos/eventos"> */}
+                                            {/* <Link href="/eventos"> */}
                                                 {/* <a className="nav-link">Eventos</a> */}
-                                                <a href="/noticias-y-eventos/eventos" className="nav-link">Eventos</a>
+                                                <a href="/eventos" className="nav-link">Eventos</a>
                                             {/* </Link> */}
                                         </li>
                                         <li className="nav-item">
-                                            {/* <Link href="/noticias-y-eventos/articulos"> */}
+                                            {/* <Link href="/articulos"> */}
                                                 {/* <a className="nav-link">Artículos</a> */}
-                                                <a href="/noticias-y-eventos/articulos" className="nav-link">Artículos</a>
+                                                <a href="/articulos" className="nav-link">Artículos</a>
                                             {/* </Link> */}
                                         </li>
                                     </ul>
@@ -563,7 +563,7 @@ const Menu = () => {
                             <li className="nav-item">
                                 {/* <Link href="/revista-peruana-biologia"> */}
                                     {/* <a className="nav-link">Revista Peruana de biología</a> */}
-                                    <a href="/revista-peruana-biologia" className="d-flex align-items-center nav-link">
+                                    <a href="/investigacion/revista-peruana-biologia" className="d-flex align-items-center nav-link">
                                         <img className="mr-3" src="/assets/img/iconos/revista_peruana.svg" alt="" />
                                         <span>
                                             Revista Peruana de biología

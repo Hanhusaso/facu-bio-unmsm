@@ -1,18 +1,17 @@
 import React , { useEffect } from 'react'
-import Layout from "../../../../../components/Layout"
-// import Tabs from "../../../../../components/Tabs/vanillaTabs"
+import Layout from "../../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 import Link from 'next/link'
 
-const egresado = () => {
+const noticia = () => {
     return (
         <>
-            <Layout title="Egresados">
+            <Layout title="Noticia">
                 <div>
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                                 <Col className="">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
@@ -23,69 +22,76 @@ const egresado = () => {
                                         </li>
                                         {/* </Breadcrumb.Item> */}
                                         {/* <Breadcrumb.Item active>Formación académica</Breadcrumb.Item> */}
-                                        <li className="breadcrumb-item">Formación académica</li>
                                         <li className="breadcrumb-item">
-                                            <Link href="/formacion-academica/pregrado">
-                                                <a role="button">Carreras de pregrado</a>
+                                            <Link href="/noticias">
+                                                <a role="button">Noticias</a>
                                             </Link>
                                         </li>
-                                        <li className="breadcrumb-item">
-                                            <Link href="/formacion-academica/pregrado/ciencias-biologicas">
-                                                <a role="button">E.P Ciencias Biológicas</a>
-                                            </Link>
-                                        </li>
-                                        <Breadcrumb.Item active>Seguimiento al egresado</Breadcrumb.Item>
+                                        <Breadcrumb.Item active>Noticia</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
-                                    <div className="title-page text-center mb-1">Mg. Claudia Villa Vargas - Directora del Genetics Lab. María Cárdenas López</div>
-                                    <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div>
+                                <Col md="1"></Col>
+                                <Col md="8" className="">
+                                    <div className="title-page mb-2">En Latinoamérica, la mejor manera de avanzar es sumándonos a las buenas cosas que se vienen haciendo</div>
+                                    {/* <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div> */}
+                                    <div className="d-flex justify-content-between">
+                                        <div className="date">
+                                            <span>
+                                                <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
+                                            </span>
+                                            <span>23 de marzo de 2021</span>
+                                        </div>
+                                        <div className="date">
+                                            <span>
+                                                <img width="22px" className="mr-2" src="/assets/img/iconos/vistas.svg" alt="" />
+                                            </span>
+                                            <span>135 vistas</span>
+                                        </div>
+                                    </div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="2"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="8">
+                                <Col md="1"></Col>
+                                <Col md="8">
                                     <div className="d-flex justify-content-center mb-4">
-                                        <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/testimonio_desarrollo.png" alt="" />
+                                        <img className="img-fluid" src="/assets/img/noticias/noticia_desarrollo.png" alt="" />
                                     </div>
                                     <p>
-                                        Se trata de la Mg. Claudia Villa, egresada de la E.P de Ciencias biológicas, quien en la actualidad se desempeña como gerente senior de Programas, como parte de Cloudpath, una iniciativa de liderazgo rotacional que busca formar a los siguientes líderes de la organización y brindarles los conocimientos necesarios sobre el negocio de la computación en la nube.
+                                        Una comitiva de investigadores en neurociencias cognitivas de Bolivia visitó la tarde de este martes 22 de octubre, la escuela profesional de Genética y Biotecnología de la Facultad de Ciencias Biológicas (FCB) de la UNMSM, para conocer los proyectos que se vienen realizando en los laboratorios relacionados a Genética Humana.
                                     </p>
                                     <p>
-                                        "La profesión que escogí  ha sido nombrada la carrera del futuro. Según El Colombiano "La biología dominará los currículos". Es una ciencia en la que predomina la investigación y EAFIT me ha brindado todas las herramientas necesarias para mi formación como científica; desde varios grupos de investigación y semilleros, hasta una infraestructura que cuenta con los laboratorios mejores dotados, al igual que charlas informátivas de diferentes temas de pertinencia dictadas por extranjeros y nacionales que han enriquecido mi conocimiento. Las oportunidades de intercambio y hacer doble titulación vuelven más atractiva mi hoja de vida. Aparte la universidad tiene una facilidad de pago (debido a  numerosos convenios que tiene) que me permitió seguir estudiando, y debido a mi promedio, pude alcanzar mi mayor ánhelo: la Beca de Honor Pregrado por el primer semestre. Son éstas clases de estímulos que fomentan el buen estudio. Por eso y mucho más adoro Mi universidad, me siento orgullosa de decir que soy y seré EAFITENSE".​
+                                        La Dra. Ninoska Ocampo Barba, directora del Instituto de Neurociencias Cognitivas de la Universidad Autónoma Gabriel René Moreno de Bolivia presidió dicha comitiva integrada por más de 30 profesionales e investigadores.​
                                     </p>
                                     <p>
-                                        Todo esto de la mano de su capacidad de visión de futuro, la construcción participativa, el trabajo en equipo, la curiosidad constante y la disciplina, cualidades que han sido diferenciadoras en el desempeño de este eafitense desde que cursaba sus estudios de pregrado, y que ahora imprime en cada uno de los desafíos que emprende en Amazon Web Services.
-                                    </p>
-                                    <div className="title mb-3">Aportar al país, su mayor sentido de responsabilidad</div>
-                                    <p>
-                                        Desde lo profesional, todas las herramientas para ser más analítico y diseñar modelos simples para el manejo de las finanzas y otros procesos; las matemáticas, la estadística y los temas de control y mejora. Y, desde lo profesional, los amigos con los que aún entabla conversaciones, la amplitud para ver el mundo en su diversidad, el emprendimiento y las ganas de aportar al desarrollo y progreso del país.
+                                        “Estamos muy interesados en la parte de la genética humana porque las neurociencias no van a desarrollar si nosotros solo nos ocupamos de la parte visible que es el comportamiento y dejamos de lado la parte dura que es la ciencia fundamental y tiene que ver con la biología del ser humano”, manifestó Ocampo Barba, tras precisar que en Bolivia no existe una carrera de Genética, solo una mención en ella desde la carrera de Bioquímica de la Universidad Mayor de San Andrés (La Paz).
                                     </p>
                                     <p>
-                                        Son muchos los recuerdos, aprendizajes y anécdotas que este egresado conserva de su época de estudiante del pregrado en Ingeniería de Producción y de la maestría en Finanzas. Por eso no es raro que destaque algunos momentos como la pasantía que realizó en la Universidad Macquarie (Australia), cuando estaba cursando el pregrado en Ingeniería de Producción, o las clases con el profesor Ricardo Uribe Marín, hoy decano de la Escuela de Administración, y a quien recuerda con especial afecto.
+                                        La doctora Ninoska señaló que tenían una férrea intención de conocer lo que se viene realizando en la escuela de Genética de nuestra facultad, “consideramos que la mejor manera en Latinoamérica de avanzar es aplaudiendo, imitando y sumándonos a las buenas cosas que ya se están haciendo para que nuestra mirada sea primero al vecino más próximo y de una manera fortalecida comenzar a mirar más allá de América Latina”, acotó.
                                     </p>
                                     <p>
-                                        “El tema de aportar al país siempre ha sido parte de mi sentido de responsabilidad. Me lo inculcaron en mi familia y en el colegio, pero EAFIT me lo reforzó y me entregó las herramientas. La Universidad y sus profesores siempre hicieron énfasis en utilizar los conocimientos para devolverle a la sociedad, me mostraron cómo a través de los negocios se podía aportar, y cómo hacer negocios responsables para devolverle crecimiento y oportunidades a Colombia”, recuerda.
+                                        De otro lado, dijo que América Latina tiene mucha potencialidad porque aquí hay posibilidades aún de hacer estudios vírgenes, ya que en el Viejo Mundo hay muy poco que se pueda hacer por primera vez. Ello luego de explicar una reunión de decanos que tuvo en su país con representantes de universidades españolas.
                                     </p>
                                     <p>
-                                        En la actualidad, y aunque se encuentra residiendo en el exterior, Daniel señala que le encanta visitar la Institución cuando tiene oportunidad y no descarta la posibilidad de poner sus conocimientos al servicio de esta, ya sea como conferencista o como integrante de algún proyecto. “Creo firmemente en la educación como motor de desarrollo y creo que EAFIT, como institución, va en ese camino”.
+                                        “Hoy los latinoamericanos tenemos la gran posibilidad de comenzar a realizar cosas innovadoras y este es el propósito de esta visita a su prestigiosa Facultad, imitar todas esas cosas buenas que ustedes vienen haciendo para tener la posibilidad de realizar un trabajo en conjunto”, precisó.
                                     </p>
-                                    <div className="title mb-3">Logros</div>
+                                    <p>
+                                        Por su parte, el profesor Alberto López Sotomayor, director (e) de la Escuela Profesional de Genética y Biotecnología, expresó su agradecimiento a los investigadores bolivianos por haber elegido la escuela de nuestra Facultad para llevar a cabo esta visita académica.
+                                    </p>
+                                    <div className="title mb-3">Datos</div>
                                     <ul className="chevron-green mb-3">
-                                        <li>Ser galardonada como la primera mujer bióloga peruana en trabajar para la NASA.</li>
-                                        <li>Realizar más 150 publicaciones en área de la genética</li>
-                                        <li>Asumir el cargo de direccora en el Gentics Lab</li>
+                                        <li>El 4 de octubre último, la Facultad de Ciencias Biológicas de la UNMSM superó con éxito el proceso de auditoría externa con Bureau Veritas, quedando expedita para su acreditación internacional con ABET.</li>
+                                        <li>El alcance de la certificación es: planificación, enseñanza, formación, evaluación, promoción de la investigación y de la responsabilidad social en pregrado para otorgar el título como Biólogo con mención en Botánica, Hidrobiología y Pesquería, Zoología; Biólogo Genetista y Biotecnólogo y Biólogo Microbiólogo Parasitólogo.</li>
                                     </ul>
                                     <div className="section-compartir">
                                         <div className="d-inline-block font-weight-bold mr-3">
@@ -104,33 +110,8 @@ const egresado = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col sm="2">
+                                <Col md="2">
                                     <aside>
-                                        <div className="block-interest-links mb-4">
-                                            <p className="font-weight-bold mb-2 text-center">Enlaces de interés</p>
-                                            <ul className="nav flex-column">
-                                                <li className="mb-2">
-                                                    <a href="#">
-                                                        Plan de estudios
-                                                    </a>
-                                                </li>
-                                                <li className="mb-2">
-                                                    <a href="#">
-                                                        Admisión
-                                                    </a>
-                                                </li>
-                                                <li className="mb-2">
-                                                    <a href="#">
-                                                        Estudios de Posgrados
-                                                    </a>
-                                                </li>
-                                                <li className="mb-0">
-                                                    <a href="#">
-                                                        Educación continua
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
                                             <a href="#" className="d-inline-block">
@@ -189,7 +170,7 @@ const egresado = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
@@ -199,4 +180,4 @@ const egresado = () => {
     )
 }
 
-export default egresado
+export default noticia

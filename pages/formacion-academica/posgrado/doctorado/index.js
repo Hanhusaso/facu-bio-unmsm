@@ -22,12 +22,12 @@ const index = () => {
 
     return (
         <>
-            <Layout title="Ciencias biológicas">
+            <Layout title="Doctorado">
                 <div>
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                                 <Col className="">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
@@ -41,30 +41,30 @@ const index = () => {
                                         <li className="breadcrumb-item">Formación académica</li>
                                         <li className="breadcrumb-item">
                                             <Link href="/formacion-academica/pregrado">
-                                                <a role="button">Carreras de pregrado</a>
+                                                <a role="button">Posgrado</a>
                                             </Link>
                                         </li>
-                                        <Breadcrumb.Item active>E.P Ciencias Biológicas</Breadcrumb.Item>
+                                        <Breadcrumb.Item active>Doctorado en Ciencias Biológicas</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                                 <Col className="">
-                                    <div className="title-page text-center">E.P Ciencias Biológicas</div>
+                                    <div className="title-page text-center">Doctorado en Ciencias Biológicas</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     {/* IMAGE */}
                     <div className="mb-4">
-                        <img className="w-100" src="/assets/img/carreras/banner_ciecias biologicas.png" alt="" />
+                        <img className="w-100" src="/assets/img/posgrado/doctorado_desarrollo.png" alt="" />
                     </div>
 
                     
@@ -89,12 +89,13 @@ const index = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="2">
+                                <Col md="1"></Col>
+                                <Col md="2">
                                     <div className="mb-4">
                                         <ul className="nav flex-column tabs-wrapper">
                                             <li className="tab">Presentación</li>
-                                            <li className="tab">Misión y visión</li>
+                                            <li className="tab">Admisión</li>
+                                            <li className="tab">Plana docente</li>
                                             <li className="tab">Malla curricular</li>
                                             <li className="tab">Seguimiento de egresados</li>
                                         </ul>
@@ -107,111 +108,93 @@ const index = () => {
                                         <div className="mb-2">
                                             epcb.biologia@unmsm.edu.pe
                                         </div>
-                                        <p className="font-weight-bold mb-1">Horario de atención:</p>
-                                        <p className="mb-0">8:00 a.m. - 5:00 p.m.</p>
-                                    </div>
-                                    <div className="block-interest-links">
-                                        <p className="font-weight-bold mb-2">Información académica</p>
-                                        <ul className="nav flex-column">
-                                            <li className="mb-2">
-                                                <Link href="/informacion-academica/plan">
-                                                    <a>
-                                                        Plan de estudios
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li className="mb-2">
-                                                <Link href="/informacion-academica/docentes">
-                                                    <a>
-                                                        Plana docente
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li className="mb-2">
-                                                <Link href="/informacion-academica/syllabus">
-                                                    <a>
-                                                        Syllabus
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li className="mb-0">
-                                                <Link href="/informacion-academica/horarios">
-                                                    <a>
-                                                        Horarios
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
+                                        {/* <p className="font-weight-bold mb-1">Horario de atención:</p>
+                                        <p className="mb-0">8:00 a.m. - 5:00 p.m.</p> */}
                                     </div>
                                 </Col>
-                                <Col sm="8">
+                                <Col md="8">
                                     <div>
                                         <div>
-                                            <div className="img-fr">
-                                                <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/director.png" alt="" />
-                                                <div className="caption">
-                                                    <div className="mb-2 font-weight-bold">Director</div>
-                                                    <div className="mb-1">Dr. Mauro Mariano Astocondor</div>
-                                                    <div className="mb-0">mmarianoa@unmsm.edu.pe</div>
-                                                </div>
-                                            </div>
                                             <p>
-                                                La Escuela Profesional de Ciencias Biológicas de la Universidad Nacional Mayor de San Marcos, les da la más cordial bienvenida a su portal, con el fin de brindarles información sobre la Escuela y ofrecer un mejor servicio e información a docentes, estudiantes y público en general.
+                                                La Unidad de Posgrado de la Facultad de Ciencias Biológicas viene formando masa crítica en investigación, mediante su programa de Doctorado en Ciencias Biológicas, enfocado en la gran biodiversidad del Perú. Las líneas de investigación desarrolladas contemplan aspectos como: sistemática evolutiva y taxonomía, biogeografía, entomología, ornitología, malacología, microbiología, parasitología, virología, biología de la reproducción, biología molecular y genética, florística, ecología vegetal, ecología acuática, limnología, acuicultura, bioprospección, manejo y gestión de la biodiversidad, etnobiología, biotecnología, contaminación biológica, entre otros.
                                             </p>
                                             <p>
-                                                Nuestra Escuela forma profesionales, que impactan en el desarrollo socio económico del país, al solucionar problemas nacionales dentro de la competencia del Profesional Biólogo con mención en:
+                                                El programa de Doctorado en Ciencias Biológicas es escolarizado desde el año 2000, que fue de cuatro semestres. El año 2011 se planteó el currículo del Doctorado en Ciencias Biológicas con una duración de seis semestres académicos, lo que posteriormente en el 2014 lo indicó la nueva Ley Universitaria, Nº30220.
+                                            </p>
+                                            <p>
+                                                El presente currículo ha sido elaborado para adecuarse a las normas presentes en el Reglamento General de Estudios de Posgrado aprobado con Resolución Rectoral 04790-R-18.
+                                            </p>
+                                            <div className="mb-3">
+                                                <p className="title-dark mb-1">
+                                                    1. Fecha de creación del Programa
+                                                </p>
+                                                <ul className="nav flex-column ml-3">
+                                                    <li>01 de marzo de 2000, R.R. N° 02069-R-00.</li>
+                                                    <li>04 de noviembre de 1999, R.D. N° 4078-D-FCB-99</li>
+                                                </ul>
+                                            </div>
+                                            <div className="mb-3">
+                                                <p className="title-dark mb-1">
+                                                    2. Fecha de modificación del programa:
+                                                </p>
+                                                <ul className="nav flex-column ml-3">
+                                                    <li>03 de noviembre del 2017, R.R. N° 06658-R-17.</li>
+                                                    <li>30 de mayo de 2017, R.D. N° 229-D-FCB-2017.</li>
+                                                    <li>02 de junio del 2020, R.R. N° 01329-R-20.</li>
+                                                </ul>
+                                            </div>
+
+                                            <p className="title-dark">
+                                                Sumilla del Programa
+                                            </p>
+                                            <p>
+                                                El Doctorado en Ciencias Biológicas forma especialistas de los más altos niveles capaces de evaluar e investigar la problemática nacional en las diversas áreas del conocimiento biológico, con especial énfasis en los campos de la biodiversidad y biología molecular.
+                                            </p>
+
+                                            <p className="title-dark">
+                                                Grado que se otorga:
+                                            </p>
+                                            <p>
+                                                Doctor en Ciencias Biológicas
+                                            </p>
+
+                                            <p className="title-dark">
+                                                Dirigido a:
+                                            </p>
+                                            <p>
+                                                Profesionales que hayan concluido los estudios de Maestría o estén en posesión del Grado de Magíster en áreas de las Ciencias Biológicas o en disciplinas afines, otorgados por universidades nacionales o extranjeras que aseguren una formación acorde a los fines del Programa.
+                                            </p>
+
+                                            <p className="title-dark">
+                                                Duración:
+                                            </p>
+                                            <p>
+                                                3 años (6 semestres)
+                                            </p>
+                                            
+                                            <p className="title-dark">
+                                                Perfil del graduado:
                                             </p>
                                             <ul className="chevron-green-dark">
-                                                <li>Botánica</li>
-                                                <li>Hidrobiología y Pesquería</li>
-                                                <li>Zoología</li>
+                                                <li>
+                                                    Generar nuevos conocimientos científicos y técnicos en las Ciencias Biológicas a través de la realización de trabajos originales. Estará capacitado para manejar y aplicar las metodologías que permitan resolver problemas de investigación en las diversas áreas del conocimiento biológico con especial énfasis en los campos de la biodiversidad y biología molecular.
+                                                </li>
+                                                <li>
+                                                    Desarrollar nuevas tecnologías para resolver problemas, detectar necesidades y oportunidades inherentes a su área de investigación. En particular, conocer y utilizar aproximaciones estadísticas contemporáneas
+                                                </li>
+                                                <li>
+                                                    Formular, gestionar y liderar proyectos de investigación, trabajando en equipo y en redes interdisciplinarias. Como consecuencia, será capaz de plantear y ejecutar hipótesis de trabajo, describir e interpretar resultados experimentales y analizar de forma crítica los descubrimientos presentados en las publicaciones científicas.
+                                                </li>
+                                                <li>
+                                                    Manejar nuevas tecnologías de información y comunicaciones que le permitan difundir en forma eficiente sus investigaciones y resultados en revistas de la especialidad, círculos especializados y la comunidad social con el fin de participar satisfactoriamente en la educación superior y de posgrado a través de la experiencia adquirida en las actividades académicas del doctorado.
+                                                </li>
+                                                <li>
+                                                    Asesorar los trabajos de investigación de estudiantes de pre y posgrado.
+                                                </li>
                                             </ul>
-                                            <p>
-                                                La Facultad de Ciencias Biológicas cuenta con la infraestructura adecuada para desarrollar sus diferentes actividades académicas, para lo cual posee un pabellón de docencia con aulas de teoría, laboratorios de práctica, laboratorios de informática debidamente equipadas, posee además recursos humanos altamente calificados. La mayoría de nuestros docentes cuentan con grados de doctor y maestrÍa que aseguran un nivel de enseñanza de excelencia.
-                                            </p>
-                                            <div>
-                                                <p className="title-dark">Grado:</p>
-                                                <p>Bachiller en Ciencias Biológicas</p>
-                                            </div>
-                                            <div>
-                                                <p className="title-dark">Título:</p>
-                                                <p>Biólogo con mención en una de las tres orientaciones: Botánica, Hidrobiología y Pesquería y Zoología.</p>
-                                            </div>
-                                            <div>
-                                                <p className="title-dark">Duración:</p>
-                                                <p>5 años</p>
-                                            </div>
-                                            <div>
-                                                <p className="title-dark">Perfil del egresado:</p>
-                                                <p>
-                                                    El graduado aplica métodos estandarizados y actualizados, demuestra liderazgo y capacidad de trabajo colaborativo con actitud de responsabilidad social, ética, integridad y pensamiento crítico. Conoce, identifica y valora los conceptos de las Ciencias Biológicas basados en principios científicos. Evalúa la diversidad biológica y genera información considerando enfoques organísmicos, ecológicos y evolutivos. Promueve el cuidado y gestión del ambiente, la conservación y el uso sostenible de la diversidad biológica, entre otros.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className="grid-img-txt-1">
-                                                <div>
-                                                    <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/mision.png" alt="" />
-                                                </div>
-                                                <div>
-                                                    <p className="title">Misión</p>
-                                                    <p className="mb-0">
-                                                        La Escuela Profesional de Ciencias Biológicas es una comunidad académica de la Facultad de Ciencias Biológicas de la Universidad Nacional Mayor de San Marcos, dedicada a la formación integral de académicos y profesionales calificados, líderes en las áreas de Botánica, Hidrobiología y Pesquería y Zoología; y generadora de conocimiento que contribuye al desarrollo sostenible del país y al impulso de la ciencia y la tecnología
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="divisor"></div>
-                                            <div className="grid-img-txt-1">
-                                                <div>
-                                                    <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/vision.png" alt="" />
-                                                </div>
-                                                <div>
-                                                    <p className="title">Visión</p>
-                                                    <p className="mb-0">
-                                                        La Escuela Profesional de Ciencias Biológicas mantendrá el liderazgo en la formación de Biólogos con mención en Botánica, Hidrobiología y Pesquería y Zoología, altamente competitivos a nivel nacional e internacional, actores activos en la evaluación, conservación y aprovechamiento sustentable de la biodiversidad nacional y mundial, reconocidos por su participación en investigación científica y tecnológica, innovación y el desarrollo del país.
-                                                    </p>
-                                                </div>
-                                            </div>
+                                            <a className="btn-green-bright" href="">
+                                                Inscripciones
+                                            </a>
                                         </div>
                                         <div>
                                             <div>
@@ -249,7 +232,7 @@ const index = () => {
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a className="title">
                                                             <p>
-                                                                Bach. María Cárdenas López
+                                                                Dra. María Cárdenas López|  Coordinadora general de proyectos ganadores CONCYTEC
                                                             </p>
                                                         </a>
                                                     </Link>
@@ -272,7 +255,7 @@ const index = () => {
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a className="title">
                                                             <p>
-                                                                Bach. Carlos Palacios Hernandez | Practicante  Instituto de Investigaciones de la Amazonía Peruana
+                                                                Dr. Carlos Palacios Hernandez | Becario de la OEA en la Maestría en Ciencias
                                                             </p>
                                                         </a>
                                                     </Link>
@@ -294,7 +277,7 @@ const index = () => {
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a className="title">
                                                             <p>
-                                                                Mg. Claudia Villa Vargas - Directora del Genetics Lab
+                                                                Dra. Claudia Villa Vargas | Jefe Laboratorio de Proteómica y Biomedicina Molecular IPICYT-México 
                                                             </p>
                                                         </a>
                                                     </Link>
@@ -316,7 +299,7 @@ const index = () => {
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a className="title">
                                                             <p>
-                                                                Dr. Luis Jimenez Hidalgo - Docente principal de la Universidad Los Andes de Colombia
+                                                                Dr. Luis Jimenez Hidalgo | Director del CENAN
                                                             </p>
                                                         </a>
                                                     </Link>
@@ -328,7 +311,7 @@ const index = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>

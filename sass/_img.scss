@@ -45,3 +45,15 @@
         }
     }
 }
+
+.book-hover {
+    position: relative;
+    display: block;
+    .caption-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $wht;
+        text-align: center;
+    }
+}
