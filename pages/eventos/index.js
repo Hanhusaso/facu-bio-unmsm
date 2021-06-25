@@ -102,7 +102,7 @@ const eventos = () => {
                                         <div className="grid-img-txt-2">
                                             <a href="eventos/evento">
                                                 <div className="part-img position-relative">
-                                                    <img className="img-fluid" src="/assets/img/eventos/eventos1.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/eventos/eventos1.png" alt="" />
                                                     {/* <div class="badge-tag">Comunidad</div> */}
                                                 </div>
                                             </a>
@@ -141,7 +141,7 @@ const eventos = () => {
                                         <div className="grid-img-txt-2">
                                             <a href="#">
                                                 <div className="part-img position-relative">
-                                                    <img className="img-fluid" src="/assets/img/eventos/eventos2.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/eventos/eventos2.png" alt="" />
                                                     {/* <div class="badge-tag">Comunidad</div> */}
                                                 </div>
                                             </a>
@@ -180,7 +180,7 @@ const eventos = () => {
                                         <div className="grid-img-txt-2">
                                             <a href="#">
                                                 <div className="part-img position-relative">
-                                                    <img className="img-fluid" src="/assets/img/eventos/eventos3.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/eventos/eventos3.png" alt="" />
                                                     {/* <div class="badge-tag">Opinión</div> */}
                                                 </div>
                                             </a>
@@ -219,7 +219,7 @@ const eventos = () => {
                                         <div className="grid-img-txt-2">
                                             <a href="#">
                                                 <div className="part-img position-relative">
-                                                    <img className="img-fluid" src="/assets/img/eventos/eventos4.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/eventos/eventos4.png" alt="" />
                                                     {/* <div class="badge-tag">Editorial</div> */}
                                                 </div>
                                             </a>
@@ -258,7 +258,7 @@ const eventos = () => {
                                         <div className="grid-img-txt-2">
                                             <a href="#">
                                                 <div className="part-img position-relative">
-                                                    <img className="img-fluid" src="/assets/img/eventos/eventos5.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/eventos/eventos5.png" alt="" />
                                                     {/* <div class="badge-tag">Institucional</div> */}
                                                 </div>
                                             </a>

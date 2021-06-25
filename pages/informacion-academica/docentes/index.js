@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Layout from "../../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
+import * as HiIcons from "react-icons/hi";
 
 const docentes = () => {
     return (
@@ -66,16 +67,29 @@ const docentes = () => {
                                             <h3 className="title">Mg. Julio  Montero Cáceres | Docente principal   </h3>
                                             <p className="mb-2">
                                                 <span className="mr-2">Documentación:</span>
-                                                <a href="#" className="d-inline color-inherit mr-2">Resolucion rectoral</a>
-                                                <a href="#" className="d-inline color-inherit mr-2">Hoja de vida</a>
+                                                <a href="#" className="d-inline color-inherit mr-3">
+                                                    <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                    <span className="">Resolución rectoral</span>
+                                                </a>
+                                                <a href="#" className="d-inline color-inherit mr-3">
+                                                    <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                    <span className="">Hoja de vida</span>
+                                                </a>
                                             </p>
                                             <p className="mb-2">
                                                 <span className="mr-2">Investigación:</span>
-                                                <a href="#" className="d-inline color-inherit mr-2">RAIS</a>
-                                                <a href="#" className="d-inline color-inherit mr-2">SIIS</a>
+                                                <a href="#" className="d-inline color-inherit mr-2">
+                                                    <span className="mr-1">RAIS</span>
+                                                    <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                </a>
+                                                <a href="#" className="d-inline color-inherit mr-2">
+                                                    <span className="mr-1">SIIS</span>
+                                                    <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                </a>
                                             </p>
                                             <p className="mb-2">
                                                 <span className="mr-2">Contacto:</span>
+                                                <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
                                                 <span className="text-break">laucastivas@unmsm.edu.pe</span>
                                             </p>
                                         </div>

@@ -27,8 +27,8 @@ const TramitesProcesos = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col md="1"></Col>
+                                <Col className="">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -40,37 +40,37 @@ const TramitesProcesos = () => {
                                         <Breadcrumb.Item active>Trámites y procesos</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col md="1"></Col>
+                                <Col className="">
                                     <div className="title-page text-center">Trámites y procesos</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
 
                         <Container className="mb-4">
                             <Row>
-                                <Col sm="3"></Col>
-                                <Col sm="6" className="">
+                                <Col md="3"></Col>
+                                <Col md="6" className="">
                                     <div>
                                         <input className="search-input" placeholder="Matrícula, bachiller, sustentación de tesis, etc..." type="text" />
                                     </div>
                                 </Col>
-                                <Col sm="3"></Col>
+                                <Col md="3"></Col>
                             </Row>
                         </Container>
 
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="2">
+                                <Col md="1"></Col>
+                                <Col md="2">
                                     <div className="filters-wrapper">
                                         <div className="mb-3">
                                             <div className="font-weight-bold mb-2">Dirigido a:</div>
@@ -116,7 +116,7 @@ const TramitesProcesos = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col sm="6">
+                                <Col md="6">
                                     <div>
                                         {pages.map(post => (
                                             <div className="block-divider mb-3">
@@ -130,7 +130,7 @@ const TramitesProcesos = () => {
                                         ))}
                                     </div>
                                 </Col>
-                                <Col sm="2">
+                                <Col md="2">
                                     <aside>
                                         <div className="block-interest-links mb-4">
                                             <p className="font-weight-bold mb-2 text-center">
@@ -204,7 +204,7 @@ const TramitesProcesos = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>

@@ -22,8 +22,8 @@ const pregrado = () => {
                                         </li>
                                         {/* </Breadcrumb.Item> */}
                                         {/* <Breadcrumb.Item active>Formación académica</Breadcrumb.Item> */}
-                                        <li className="breadcrumb-item">Investigación</li>
-                                        <Breadcrumb.Item active>Revista peruana de Biología</Breadcrumb.Item>
+                                        {/* <li className="breadcrumb-item">Investigación</li> */}
+                                        <Breadcrumb.Item active>Investigación: Revista peruana de Biología</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -58,10 +58,10 @@ const pregrado = () => {
                                     <div className="grid-custom">
                                         <div>
                                             <a href="#" className="book-hover">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
                                                 <div className="caption-hover">
                                                     <div>
-                                                        <div>
+                                                        <div className="font-weight-bold mb-2">
                                                             Revista Peruana de Biología Vol. 23
                                                         </div>
                                                         <div>
@@ -72,58 +72,168 @@ const pregrado = () => {
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="#">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                            <a href="#" className="book-hover">
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <div className="caption-hover">
+                                                    <div>
+                                                        <div className="font-weight-bold mb-2">
+                                                            Revista Peruana de Biología Vol. 23
+                                                        </div>
+                                                        <div>
+                                                            Agosto 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="#">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                            <a href="#" className="book-hover">
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <div className="caption-hover">
+                                                    <div>
+                                                        <div className="font-weight-bold mb-2">
+                                                            Revista Peruana de Biología Vol. 23
+                                                        </div>
+                                                        <div>
+                                                            Agosto 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="#">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                            <a href="#" className="book-hover">
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <div className="caption-hover">
+                                                    <div>
+                                                        <div className="font-weight-bold mb-2">
+                                                            Revista Peruana de Biología Vol. 23
+                                                        </div>
+                                                        <div>
+                                                            Agosto 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="#">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                            <a href="#" className="book-hover">
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <div className="caption-hover">
+                                                    <div>
+                                                        <div className="font-weight-bold mb-2">
+                                                            Revista Peruana de Biología Vol. 23
+                                                        </div>
+                                                        <div>
+                                                            Agosto 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="#">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                            <a href="#" className="book-hover">
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <div className="caption-hover">
+                                                    <div>
+                                                        <div className="font-weight-bold mb-2">
+                                                            Revista Peruana de Biología Vol. 23
+                                                        </div>
+                                                        <div>
+                                                            Agosto 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="#">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                            <a href="#" className="book-hover">
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <div className="caption-hover">
+                                                    <div>
+                                                        <div className="font-weight-bold mb-2">
+                                                            Revista Peruana de Biología Vol. 23
+                                                        </div>
+                                                        <div>
+                                                            Agosto 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="#">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                            <a href="#" className="book-hover">
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <div className="caption-hover">
+                                                    <div>
+                                                        <div className="font-weight-bold mb-2">
+                                                            Revista Peruana de Biología Vol. 23
+                                                        </div>
+                                                        <div>
+                                                            Agosto 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="#">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                            <a href="#" className="book-hover">
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <div className="caption-hover">
+                                                    <div>
+                                                        <div className="font-weight-bold mb-2">
+                                                            Revista Peruana de Biología Vol. 23
+                                                        </div>
+                                                        <div>
+                                                            Agosto 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="#">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                            <a href="#" className="book-hover">
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <div className="caption-hover">
+                                                    <div>
+                                                        <div className="font-weight-bold mb-2">
+                                                            Revista Peruana de Biología Vol. 23
+                                                        </div>
+                                                        <div>
+                                                            Agosto 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="#">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                            <a href="#" className="book-hover">
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <div className="caption-hover">
+                                                    <div>
+                                                        <div className="font-weight-bold mb-2">
+                                                            Revista Peruana de Biología Vol. 23
+                                                        </div>
+                                                        <div>
+                                                            Agosto 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="#">
-                                                <img src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                            <a href="#" className="book-hover">
+                                                <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />
+                                                <div className="caption-hover">
+                                                    <div>
+                                                        <div className="font-weight-bold mb-2">
+                                                            Revista Peruana de Biología Vol. 23
+                                                        </div>
+                                                        <div>
+                                                            Agosto 2020
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </div>
                                     </div>

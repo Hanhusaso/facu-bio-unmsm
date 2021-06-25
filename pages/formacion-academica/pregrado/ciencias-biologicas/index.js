@@ -101,11 +101,25 @@ const index = () => {
                                     </div>
                                     <div className="contacto-wrapper mb-3">
                                         <p className="title-dark mb-2">Contacto:</p>
-                                        <div>
-                                            +(51) 619 7000 anexo 1507
+                                        <div className="grid-contacto">
+                                            <div>
+                                                <img className="icon mr-2" src="/assets/img/iconos/telefono.svg" alt=""/>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    +(51) 619 7000 anexo 1507
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div className="mb-2">
-                                            epcb.biologia@unmsm.edu.pe
+                                        <div className="mb-2 grid-contacto">
+                                            <div>
+                                                <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    epcb.biologia@unmsm.edu.pe
+                                                </span>
+                                            </div>
                                         </div>
                                         <p className="font-weight-bold mb-1">Horario de atención:</p>
                                         <p className="mb-0">8:00 a.m. - 5:00 p.m.</p>
@@ -191,7 +205,7 @@ const index = () => {
                                         <div>
                                             <div className="grid-img-txt-1">
                                                 <div>
-                                                    <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/mision.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/mision.png" alt="" />
                                                 </div>
                                                 <div>
                                                     <p className="title">Misión</p>
@@ -203,7 +217,7 @@ const index = () => {
                                             <div className="divisor"></div>
                                             <div className="grid-img-txt-1">
                                                 <div>
-                                                    <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/vision.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/vision.png" alt="" />
                                                 </div>
                                                 <div>
                                                     <p className="title">Visión</p>
@@ -241,7 +255,7 @@ const index = () => {
                                                 <div>
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a>
-                                                            <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado1.png" alt="" />
+                                                            <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado1.png" alt="" />
                                                         </a>
                                                     </Link>
                                                 </div>
@@ -264,7 +278,7 @@ const index = () => {
                                                 <div>
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a>
-                                                            <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado2.png" alt="" />
+                                                            <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado2.png" alt="" />
                                                         </a>
                                                     </Link>
                                                 </div>
@@ -286,7 +300,7 @@ const index = () => {
                                                 <div>
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a>
-                                                            <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado3.png" alt="" />
+                                                            <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado3.png" alt="" />
                                                         </a>
                                                     </Link>
                                                 </div>
@@ -308,7 +322,7 @@ const index = () => {
                                                 <div>
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a>
-                                                            <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado4.png" alt="" />
+                                                            <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado4.png" alt="" />
                                                         </a>
                                                     </Link>
                                                 </div>

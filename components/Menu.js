@@ -368,7 +368,7 @@ const Menu = () => {
                                         <li className="nav-item">
                                             {/* <Link href="/nosotros/autoridades-y-organos-de-gobierno"> */}
                                                 {/* <a className="nav-link">Autoridades y órganos de gobierno</a> */}
-                                                <a href="/nosotros/autoridades-y-organos-de-gobierno" className="nav-link">Autoridades y órganos de gobierno</a>
+                                                <a href="/nosotros/autoridades" className="nav-link">Autoridades y órganos de gobierno</a>
                                             {/* </Link> */}
                                         </li>
                                         <li className="nav-item">

@@ -2,6 +2,9 @@ a {
     color: $green-bright;
     &.color-inherit {
         color: inherit;
+        .icon {
+            color: $green-bright;
+        }
     }
     &:hover {
         text-decoration: none;

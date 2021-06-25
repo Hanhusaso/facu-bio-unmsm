@@ -118,7 +118,7 @@ const noticias = () => {
                                         <div className="grid-img-txt-2">
                                             <a href="noticias/noticia">
                                                 <div className="part-img position-relative">
-                                                    <img className="img-fluid" src="/assets/img/noticias/noticias_page_1.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/noticias/noticias_page_1.png" alt="" />
                                                     <div class="badge-tag">Comunidad</div>
                                                 </div>
                                             </a>
@@ -143,7 +143,7 @@ const noticias = () => {
                                         <div className="grid-img-txt-2">
                                             <a href="#">
                                                 <div className="part-img position-relative">
-                                                    <img className="img-fluid" src="/assets/img/noticias/noticias_page_2.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/noticias/noticias_page_2.png" alt="" />
                                                     <div class="badge-tag">Comunidad</div>
                                                 </div>
                                             </a>
@@ -168,7 +168,7 @@ const noticias = () => {
                                         <div className="grid-img-txt-2">
                                             <a href="#">
                                                 <div className="part-img position-relative">
-                                                    <img className="img-fluid" src="/assets/img/noticias/noticias_page_3.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/noticias/noticias_page_3.png" alt="" />
                                                     <div class="badge-tag">Opinión</div>
                                                 </div>
                                             </a>
@@ -193,7 +193,7 @@ const noticias = () => {
                                         <div className="grid-img-txt-2">
                                             <a href="#">
                                                 <div className="part-img position-relative">
-                                                    <img className="img-fluid" src="/assets/img/noticias/noticias_page_4.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/noticias/noticias_page_4.png" alt="" />
                                                     <div class="badge-tag">Editorial</div>
                                                 </div>
                                             </a>
@@ -218,7 +218,7 @@ const noticias = () => {
                                         <div className="grid-img-txt-2">
                                             <a href="#">
                                                 <div className="part-img position-relative">
-                                                    <img className="img-fluid" src="/assets/img/noticias/noticias_page_5.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/noticias/noticias_page_5.png" alt="" />
                                                     <div class="badge-tag">Institucional</div>
                                                 </div>
                                             </a>
