@@ -1,7 +1,7 @@
 import React , { useEffect } from 'react'
 import Layout from "../../../components/Layout"
 // import Tabs from "../../../components/Tabs/vanillaTabs"
-import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
+import {Row, Col, Container, Breadcrumb, Accordion } from 'react-bootstrap'
 import Link from 'next/link'
 
 const preguntasFrecuentes = () => {
@@ -13,7 +13,7 @@ const preguntasFrecuentes = () => {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -39,16 +39,16 @@ const preguntasFrecuentes = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <div className="title-page text-center">Preguntas frecuentes</div>
                                 </Col>
                                 <Col sm="1"></Col>
                             </Row>
                         </Container>
-                        <Container className="mb-3">
+                        <Container className="mb-4">
                             <Row>
                                 <Col sm="3"></Col>
-                                <Col sm="6" className="desktop-extra-width">
+                                <Col sm="6" className="">
                                     <div>
                                         <input className="search-input" placeholder="Busca por palabra clave" type="text" />
                                     </div>
@@ -59,7 +59,34 @@ const preguntasFrecuentes = () => {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col sm="8"></Col>
+                                <Col sm="8">
+                                    <Accordion>
+                                        <div className="mb-3">
+                                            <Accordion.Toggle className="toggle-accordion" eventKey="0">
+                                                ¿Qué puedo hacer si mi solicitud en el MAT no avanza?
+                                            </Accordion.Toggle>
+                                            <Accordion.Collapse eventKey="0">
+                                                <div className="pt-3">
+                                                    <p className="mb-0">
+                                                        Hello! I'm the body
+                                                    </p>
+                                                </div>
+                                            </Accordion.Collapse>
+                                        </div>
+                                        <div className="mb-3">
+                                            <Accordion.Toggle className="toggle-accordion" eventKey="1">
+                                                ¿Hasta cuando tiempo después del inicio de clases puedo anular mi matrícula?
+                                            </Accordion.Toggle>
+                                            <Accordion.Collapse eventKey="1">
+                                                <div className="pt-3">
+                                                    <p className="mb-0">
+                                                        La anulación procede para quitar tu matrícula, luego de hacer este trámite Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur velit convallis enim, in orci vestibulum mauris. Duis arcu arcu adipiscing urna pulvinar congue nisi, maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.maecenas. Malesuada et, in faucibus dignissim leo. Rhoncus scelerisque sed tempor porttitor at vel eu eget.
+                                                    </p>
+                                                </div>
+                                            </Accordion.Collapse>
+                                        </div>
+                                    </Accordion>
+                                </Col>
                                 <Col sm="2">
                                     <aside>
                                         <div className="d-flex mb-3">

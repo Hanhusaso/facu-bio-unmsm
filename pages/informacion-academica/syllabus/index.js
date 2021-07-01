@@ -15,7 +15,7 @@ const syllabus = () => {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -40,7 +40,7 @@ const syllabus = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <div className="title-page text-center">Syllabus | Ciencias Biológicas</div>
                                 </Col>
                                 <Col sm="1"></Col>

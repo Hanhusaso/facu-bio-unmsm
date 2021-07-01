@@ -15,7 +15,7 @@ const horarios = () => {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -40,7 +40,7 @@ const horarios = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <div className="title-page text-center">Horarios 2021-II | Ciencias Biológicas</div>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -49,7 +49,7 @@ const horarios = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width-l">
+                                <Col className="">
                                     Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.
                                 </Col>
                                 <Col sm="3"></Col>

@@ -16,7 +16,7 @@ const docentes = () => {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -41,7 +41,7 @@ const docentes = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <div className="title-page text-center">Información de docentes | Departamento de Biología Celular y Genética</div>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -63,26 +63,27 @@ const docentes = () => {
                                 <Col sm="1"></Col>
                                 <Col sm="8">
                                     <div>
+                                        <div className="divisor my-3"></div>
                                         <div className="block-divider mb-3 pb-2 position-relative">
                                             <h3 className="title">Mg. Julio  Montero Cáceres | Docente principal   </h3>
                                             <p className="mb-2">
                                                 <span className="mr-2">Documentación:</span>
-                                                <a href="#" className="d-inline color-inherit mr-3">
+                                                <a href="#" className="d-inline-block color-inherit mr-3">
                                                     <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                     <span className="">Resolución rectoral</span>
                                                 </a>
-                                                <a href="#" className="d-inline color-inherit mr-3">
+                                                <a href="#" className="d-inline-block color-inherit mr-3">
                                                     <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                     <span className="">Hoja de vida</span>
                                                 </a>
                                             </p>
                                             <p className="mb-2">
                                                 <span className="mr-2">Investigación:</span>
-                                                <a href="#" className="d-inline color-inherit mr-2">
+                                                <a href="#" className="d-inline-block color-inherit mr-2">
                                                     <span className="mr-1">RAIS</span>
                                                     <HiIcons.HiExternalLink  className="mb-1 icon"/>
                                                 </a>
-                                                <a href="#" className="d-inline color-inherit mr-2">
+                                                <a href="#" className="d-inline-block color-inherit mr-2">
                                                     <span className="mr-1">SIIS</span>
                                                     <HiIcons.HiExternalLink  className="mb-1 icon"/>
                                                 </a>

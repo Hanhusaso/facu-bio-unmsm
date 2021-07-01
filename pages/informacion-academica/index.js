@@ -111,6 +111,7 @@ export default function InformacionAcademica() {
                                 </Col>
                                 <Col md="6">
                                     <div>
+                                        <div className="divisor my-3"></div>
                                         <div className="block-divider mb-3">
                                             <Link href="/informacion-academica/horarios">
                                                 <a className="title">Horarios 2021-II | Ciencias Biológicas</a>

@@ -15,7 +15,7 @@ const plan = () => {
                         <Container>
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -40,7 +40,7 @@ const plan = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col className="">
                                     <div className="title-page text-center">Plan de estudios y malla curricular 2018 | Ciencias Biológicas</div>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -49,7 +49,7 @@ const plan = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col sm="1"></Col>
-                                <Col className="desktop-extra-width-l">
+                                <Col className="">
                                     Plan de estudios actualizado el 23/04/16.
                                 </Col>
                                 <Col sm="3"></Col>
@@ -61,9 +61,15 @@ const plan = () => {
                                 <Col sm="8">
                                     <div>
                                         <div className="mb-4">
-                                            <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/>
+                                            {/* <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/> */}
+                                            <object data="/assets/archivos/malla_curricular_2020.pdf" type="application/pdf" width="100%" height="700px"> 
+                                                <a href="/assets/archivos/malla_curricular_2020.pdf">
+                                                    <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
+                                                    <span className="sub-title-dark">Descargar</span>
+                                                </a>
+                                            </object>
                                         </div>
-                                        <div className="section-compartir">
+                                        <div className="section-compartir d-none d-sm-block">
                                             <div className="d-inline-block font-weight-bold mr-3">
                                                 Compartir vía:
                                             </div>
