@@ -48,7 +48,7 @@ const TramitesProcesos = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <div className="title-page text-center">Trámites y procesos</div>
                                 </Col>
                                 <Col md="1"></Col>
@@ -58,7 +58,7 @@ const TramitesProcesos = () => {
                         <Container className="mb-4">
                             <Row>
                                 <Col md="3"></Col>
-                                <Col md="6" className="">
+                                <Col md="6">
                                     <div>
                                         <input className="search-input" placeholder="Matrícula, bachiller, sustentación de tesis, etc..." type="text" />
                                     </div>
@@ -69,8 +69,8 @@ const TramitesProcesos = () => {
 
                         <Container>
                             <Row>
-                                <Col md="1"></Col>
-                                <Col md="2">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="3" lg="2">
                                     <div className="filters-wrapper">
                                         <div className="mb-3">
                                             <div className="font-weight-bold mb-2">Dirigido a:</div>
@@ -116,8 +116,9 @@ const TramitesProcesos = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md="6">
+                                <Col md="4" lg="6">
                                     <div>
+                                        <div className="divisor my-3"></div>
                                         {pages.map(post => (
                                             <div className="block-divider mb-3">
                                                 <Link href="/tramites-y-procesos/anulacion-matricula">
@@ -130,7 +131,7 @@ const TramitesProcesos = () => {
                                         ))}
                                     </div>
                                 </Col>
-                                <Col md="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="block-interest-links mb-4">
                                             <p className="font-weight-bold mb-2 text-center">
@@ -204,7 +205,7 @@ const TramitesProcesos = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col md="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

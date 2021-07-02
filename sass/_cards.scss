@@ -52,7 +52,7 @@
 aside {
     .card-bio {
         height: auto;
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(sm) {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
@@ -60,7 +60,7 @@ aside {
             &::after {
                 content: none;
             }
-            @include media-breakpoint-down(xs) {
+            @include media-breakpoint-down(sm) {
                 margin: auto 15px;
                 display: -webkit-box;
                 -webkit-line-clamp: 4;

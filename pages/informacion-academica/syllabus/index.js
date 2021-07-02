@@ -14,8 +14,8 @@ const syllabus = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -32,36 +32,37 @@ const syllabus = () => {
                                         <Breadcrumb.Item active>Syllabus | Ciencias Biológicas</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <div className="title-page text-center">Syllabus | Ciencias Biológicas</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container className="mb-4">
                             <Row>
-                                <Col sm="3"></Col>
-                                <Col sm="6">
+                                <Col md="3"></Col>
+                                <Col md="6">
                                     <div>
                                         <input className="search-input" placeholder="Busca por un curso o docente" type="text" />
                                     </div>
                                 </Col>
-                                <Col sm="3"></Col>
+                                <Col md="3"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="8">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <div>
+                                        <div className="divisor my-3"></div>
                                         <div className="block-divider mb-3 position-relative">
                                             <h3 className="title">Biología y parasitología I</h3>
                                             <p className="mb-3">Docente: Julio Galarza Perez</p>
@@ -73,7 +74,7 @@ const syllabus = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col sm="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
@@ -133,7 +134,7 @@ const syllabus = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

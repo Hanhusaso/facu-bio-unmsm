@@ -12,8 +12,8 @@ const anulacionMatricula = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -31,24 +31,24 @@ const anulacionMatricula = () => {
                                         <Breadcrumb.Item active>Anulación de matrícula</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <div className="title-page text-center mb-3">Anulación de matrícula</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="8">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <p>
                                         <span className="mr-2 font-weight-bold">Dirigido a:</span>
                                         <span>Alumnos de posgrado y pegrado</span>
@@ -85,7 +85,7 @@ const anulacionMatricula = () => {
                                             </ul>
                                         </ul>
                                     </p>
-                                    <div className="section-compartir">
+                                    <div className="section-compartir mb-3">
                                         <div className="d-inline-block font-weight-bold mr-3">
                                             Compartir vía:
                                         </div>
@@ -102,7 +102,7 @@ const anulacionMatricula = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col sm="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="block-interest-links mb-4">
                                             <p className="font-weight-bold mb-2 text-center">
@@ -176,7 +176,7 @@ const anulacionMatricula = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

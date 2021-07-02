@@ -28,8 +28,8 @@ export default function InformacionAcademica() {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -41,7 +41,7 @@ export default function InformacionAcademica() {
                                         <Breadcrumb.Item active>Información académica</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
@@ -49,7 +49,7 @@ export default function InformacionAcademica() {
                         <Container className="mb-3">
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <div className="title-page text-center">Información académica</div>
                                 </Col>
                                 <Col md="1"></Col>
@@ -57,17 +57,17 @@ export default function InformacionAcademica() {
                         </Container>
                         <Container className="mb-3">
                             <Row>
-                                <Col md="1"></Col>
-                                <Col className="">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     Todo lo necesario para cursar el semestre con éxito está aquí: cronograma académica, planes de estudios, mallas curriculares, syllabus, etc.
                                 </Col>
-                                <Col md="3"></Col>
+                                <Col md="4" lg="3"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col md="1"></Col>
-                                <Col className="" md="2">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="3" lg="2">
                                     <div className="filters-wrapper">
                                         <div className="mb-3">
                                             <div className="font-weight-bold mb-2">Recurso:</div>
@@ -109,7 +109,7 @@ export default function InformacionAcademica() {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md="6">
+                                <Col md="4" lg="6">
                                     <div>
                                         <div className="divisor my-3"></div>
                                         <div className="block-divider mb-3">
@@ -138,7 +138,7 @@ export default function InformacionAcademica() {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col className="" md="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
@@ -198,7 +198,7 @@ export default function InformacionAcademica() {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col md="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

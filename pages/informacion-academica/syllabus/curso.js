@@ -14,7 +14,7 @@ const curso = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                                 <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
@@ -37,40 +37,46 @@ const curso = () => {
                                         <Breadcrumb.Item active>Biología y parisotología I</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                                 <Col>
                                     <div className="title-page text-center">Plan de estudios y malla curricular 2018 | Ciencias Biológicas</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col>
-                                <p className="mb-0">
-                                    Docente: Julio Galarza Perez
-                                </p>
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
+                                    <p className="mb-0">
+                                        Docente: Julio Galarza Perez
+                                    </p>
                                 </Col>
-                                <Col sm="3"></Col>
+                                <Col md="4" lg="3"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="8">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <div>
                                         <div className="mb-4">
-                                            <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/>
+                                            {/* <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/> */}
+                                            <object data="/assets/archivos/malla_curricular_2020.pdf" type="application/pdf" width="100%" height="700px"> 
+                                                <a href="/assets/archivos/malla_curricular_2020.pdf">
+                                                    <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
+                                                    <span className="sub-title-dark">Descargar</span>
+                                                </a>
+                                            </object>
                                         </div>
-                                        <div className="section-compartir">
+                                        <div className="section-compartir d-none d-sm-block mb-3">
                                             <div className="d-inline-block font-weight-bold mr-3">
                                                 Compartir vía:
                                             </div>
@@ -88,7 +94,7 @@ const curso = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col sm="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
@@ -148,7 +154,7 @@ const curso = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

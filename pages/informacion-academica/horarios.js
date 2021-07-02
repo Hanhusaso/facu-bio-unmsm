@@ -14,8 +14,8 @@ const horarios = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -32,33 +32,33 @@ const horarios = () => {
                                         <Breadcrumb.Item active>Horarios 2021-II | Ciencias Biológicas</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <div className="title-page text-center">Horarios 2021-II | Ciencias Biológicas</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.
                                 </Col>
-                                <Col sm="3"></Col>
+                                <Col md="4" lg="3"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="8">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <div>
                                         <div className="mb-4">
                                             {/* <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/> */}
@@ -69,7 +69,7 @@ const horarios = () => {
                                                 </a>
                                             </object>
                                         </div>
-                                        <div className="section-compartir d-none d-sm-block">
+                                        <div className="section-compartir d-none d-sm-block mb-3">
                                             <div className="d-inline-block font-weight-bold mr-3">
                                                 Compartir vía:
                                             </div>
@@ -87,7 +87,7 @@ const horarios = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col sm="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
@@ -147,7 +147,7 @@ const horarios = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

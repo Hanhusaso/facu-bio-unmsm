@@ -12,8 +12,8 @@ const preguntasFrecuentes = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -31,35 +31,35 @@ const preguntasFrecuentes = () => {
                                         <Breadcrumb.Item active>Preguntas frecuentes</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <div className="title-page text-center">Preguntas frecuentes</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container className="mb-4">
                             <Row>
-                                <Col sm="3"></Col>
-                                <Col sm="6" className="">
+                                <Col md="3"></Col>
+                                <Col md="6" className="">
                                     <div>
                                         <input className="search-input" placeholder="Busca por palabra clave" type="text" />
                                     </div>
                                 </Col>
-                                <Col sm="3"></Col>
+                                <Col md="3"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="8">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <Accordion>
                                         <div className="mb-3">
                                             <Accordion.Toggle className="toggle-accordion" eventKey="0">
@@ -87,7 +87,7 @@ const preguntasFrecuentes = () => {
                                         </div>
                                     </Accordion>
                                 </Col>
-                                <Col sm="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
@@ -147,7 +147,7 @@ const preguntasFrecuentes = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>
