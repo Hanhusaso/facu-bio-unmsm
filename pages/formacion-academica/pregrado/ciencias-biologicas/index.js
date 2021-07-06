@@ -4,7 +4,11 @@ import Layout from "../../../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 import Link from 'next/link'
 
+import { useWindowSize } from '../../../../utils/useWindowSize'
+
 const index = () => {
+
+    const { width, height } = useWindowSize();
 
     // useEffect(() => {
     //     document.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +24,74 @@ const index = () => {
 	// 	});
     // }, []); // Solo se vuelve a ejecutar si count cambia
 
+    const Contacto = () => {
+        return (
+            <div className="contacto-wrapper mb-3">
+                <p className="title-dark mb-2">Contacto:</p>
+                <div className="grid-contacto">
+                    <div>
+                        <img className="icon mr-2" src="/assets/img/iconos/telefono.svg" alt=""/>
+                    </div>
+                    <div>
+                        <span>
+                            +(51) 619 7000 anexo 1507
+                        </span>
+                    </div>
+                </div>
+                <div className="mb-2 grid-contacto">
+                    <div>
+                        <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                    </div>
+                    <div>
+                        <span>
+                            epcb.biologia@unmsm.edu.pe
+                        </span>
+                    </div>
+                </div>
+                <p className="font-weight-bold mb-1">Horario de atención:</p>
+                <p className="mb-0">8:00 a.m. - 5:00 p.m.</p>
+            </div>
+        )
+    }
+
+    const Interest = () => {
+        return (
+            <div className="block-interest-links mb-3">
+                <p className="font-weight-bold mb-2">Información académica</p>
+                <ul className="nav flex-column">
+                    <li className="mb-2">
+                        <Link href="/informacion-academica/plan">
+                            <a>
+                                Plan de estudios
+                            </a>
+                        </Link>
+                    </li>
+                    <li className="mb-2">
+                        <Link href="/informacion-academica/docentes">
+                            <a>
+                                Plana docente
+                            </a>
+                        </Link>
+                    </li>
+                    <li className="mb-2">
+                        <Link href="/informacion-academica/syllabus">
+                            <a>
+                                Syllabus
+                            </a>
+                        </Link>
+                    </li>
+                    <li className="mb-0">
+                        <Link href="/informacion-academica/horarios">
+                            <a>
+                                Horarios
+                            </a>
+                        </Link>
+                    </li>
+                </ul>
+            </div>
+        )
+    }
+
     return (
         <>
             <Layout title="Ciencias biológicas">
@@ -27,8 +99,8 @@ const index = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -47,18 +119,18 @@ const index = () => {
                                         <Breadcrumb.Item active>E.P Ciencias Biológicas</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <div className="title-page text-center">E.P Ciencias Biológicas</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
@@ -67,30 +139,11 @@ const index = () => {
                         <img className="w-100" src="/assets/img/carreras/banner_ciecias biologicas.png" alt="" />
                     </div>
 
-                    
-
-                    {/* <div>
-                        <ul id="tabs-v" class="tabs">
-                            <li data-title="First tab">
-                                <h2>Some heading 1</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus lobortis sapien, ut rhoncus dui sagittis vel. Donec rhoncus convallis justo, in placerat nibh auctor ut. Aliquam erat volutpat. Morbi finibus velit et erat vehicula, facilisis viverra magna euismod. Nullam consequat a justo id luctus. Sed vitae maximus massa. Integer ligula ligula, semper ac feugiat vel, viverra sed nisi. In commodo lacus non orci faucibus mollis. Maecenas sit amet gravida leo, non ornare nisl. Etiam rhoncus dui vitae magna pulvinar, eu semper ex porttitor. Nulla facilisi. Donec ac tortor arcu. Nulla pharetra suscipit nulla. Ut maximus justo vitae libero fermentum efficitur. Aliquam mattis quam erat, eget varius tortor cursus eget.</p>
-                            </li>
-                            <li data-title="Second tab">
-                                <h2>Some heading 2</h2>
-                                <p>Pellentesque non felis sed nibh ultrices molestie in id ante. Aenean sollicitudin, lorem sed malesuada tempor, erat odio imperdiet mi, condimentum sagittis arcu leo sed erat. Nam sed ex lectus. Praesent efficitur ex vel nunc tempus aliquet. Nullam sit amet ligula enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti.</p>
-                            </li>
-                            <li data-title="Third tab">
-                                <h2>Some heading 3</h2>
-                                <p>Nullam quis eleifend massa. Nullam ut ex libero. Donec ac enim in ipsum interdum laoreet quis vestibulum risus. Curabitur pharetra dictum cursus. Praesent suscipit ultrices massa, ullamcorper ullamcorper leo tristique id. Praesent lobortis, mauris at placerat tempus, diam ex auctor quam, a posuere metus purus non nibh. Nunc sagittis dui lectus, non euismod dolor consequat nec. Proin non ipsum tempus, accumsan eros vel, mollis neque. Mauris sit amet justo non turpis porttitor luctus sed sed metus. Duis viverra sapien enim, non placerat erat feugiat maximus. Ut semper id mi id convallis.</p>
-                            </li>
-                        </ul>
-                    </div> */}
-
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="2">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="3" lg="2">
                                     <div className="mb-4">
                                         <ul className="nav flex-column tabs-wrapper">
                                             <li className="tab">Presentación</li>
@@ -99,68 +152,16 @@ const index = () => {
                                             <li className="tab">Seguimiento de egresados</li>
                                         </ul>
                                     </div>
-                                    <div className="contacto-wrapper mb-3">
-                                        <p className="title-dark mb-2">Contacto:</p>
-                                        <div className="grid-contacto">
-                                            <div>
-                                                <img className="icon mr-2" src="/assets/img/iconos/telefono.svg" alt=""/>
-                                            </div>
-                                            <div>
-                                                <span>
-                                                    +(51) 619 7000 anexo 1507
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="mb-2 grid-contacto">
-                                            <div>
-                                                <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                            </div>
-                                            <div>
-                                                <span>
-                                                    epcb.biologia@unmsm.edu.pe
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <p className="font-weight-bold mb-1">Horario de atención:</p>
-                                        <p className="mb-0">8:00 a.m. - 5:00 p.m.</p>
-                                    </div>
-                                    <div className="block-interest-links">
-                                        <p className="font-weight-bold mb-2">Información académica</p>
-                                        <ul className="nav flex-column">
-                                            <li className="mb-2">
-                                                <Link href="/informacion-academica/plan">
-                                                    <a>
-                                                        Plan de estudios
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li className="mb-2">
-                                                <Link href="/informacion-academica/docentes">
-                                                    <a>
-                                                        Plana docente
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li className="mb-2">
-                                                <Link href="/informacion-academica/syllabus">
-                                                    <a>
-                                                        Syllabus
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li className="mb-0">
-                                                <Link href="/informacion-academica/horarios">
-                                                    <a>
-                                                        Horarios
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    {width >= 768 && (
+                                        <>
+                                        <Contacto />
+                                        <Interest />
+                                        </>
+                                    )}
                                 </Col>
-                                <Col sm="8">
-                                    <div>
-                                        <div>
+                                <Col md="7" lg="8">
+                                    <div className="mb-3">
+                                        <div className="wrapper-img-fr mb-3">
                                             <div className="img-fr">
                                                 <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/director.png" alt="" />
                                                 <div className="caption">
@@ -202,12 +203,12 @@ const index = () => {
                                                 </p>
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className="mb-3">
                                             <div className="grid-img-txt-1">
                                                 <div>
                                                     <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/mision.png" alt="" />
                                                 </div>
-                                                <div>
+                                                <div className="mb-3 mb-md-0">
                                                     <p className="title">Misión</p>
                                                     <p className="mb-0">
                                                         La Escuela Profesional de Ciencias Biológicas es una comunidad académica de la Facultad de Ciencias Biológicas de la Universidad Nacional Mayor de San Marcos, dedicada a la formación integral de académicos y profesionales calificados, líderes en las áreas de Botánica, Hidrobiología y Pesquería y Zoología; y generadora de conocimiento que contribuye al desarrollo sostenible del país y al impulso de la ciencia y la tecnología
@@ -219,7 +220,7 @@ const index = () => {
                                                 <div>
                                                     <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/vision.png" alt="" />
                                                 </div>
-                                                <div>
+                                                <div className="mb-3 mb-md-0">
                                                     <p className="title">Visión</p>
                                                     <p className="mb-0">
                                                         La Escuela Profesional de Ciencias Biológicas mantendrá el liderazgo en la formación de Biólogos con mención en Botánica, Hidrobiología y Pesquería y Zoología, altamente competitivos a nivel nacional e internacional, actores activos en la evaluación, conservación y aprovechamiento sustentable de la biodiversidad nacional y mundial, reconocidos por su participación en investigación científica y tecnológica, innovación y el desarrollo del país.
@@ -227,12 +228,18 @@ const index = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className="mb-3">
                                             <div>
                                                 <div className="mb-4">
-                                                    <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/>
+                                                    {/* <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/> */}
+                                                    <object data="/assets/archivos/malla_curricular_2020.pdf" type="application/pdf" width="100%" height="700px"> 
+                                                        <a href="/assets/archivos/malla_curricular_2020.pdf">
+                                                            <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
+                                                            <span className="sub-title-dark">Descargar</span>
+                                                        </a>
+                                                    </object>
                                                 </div>
-                                                <div className="section-compartir">
+                                                <div className="section-compartir d-none d-sm-block mb-3">
                                                     <div className="d-inline-block font-weight-bold mr-3">
                                                         Compartir vía:
                                                     </div>
@@ -250,16 +257,16 @@ const index = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className="mb-3">
                                             <div className="grid-img-txt-2">
-                                                <div>
+                                                <div className="mx-5 mx-md-0">
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a>
                                                             <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado1.png" alt="" />
                                                         </a>
                                                     </Link>
                                                 </div>
-                                                <div>
+                                                <div className="mb-3 mb-md-0">
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a className="title">
                                                             <p>
@@ -275,14 +282,14 @@ const index = () => {
                                             </div>
                                             <div className="divisor"></div>
                                             <div className="grid-img-txt-2">
-                                                <div>
+                                                <div className="mx-5 mx-md-0">
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a>
                                                             <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado2.png" alt="" />
                                                         </a>
                                                     </Link>
                                                 </div>
-                                                <div>
+                                                <div className="mb-3 mb-md-0">
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a className="title">
                                                             <p>
@@ -297,14 +304,14 @@ const index = () => {
                                             </div>
                                             <div className="divisor"></div>
                                             <div className="grid-img-txt-2">
-                                                <div>
+                                                <div className="mx-5 mx-md-0">
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a>
                                                             <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado3.png" alt="" />
                                                         </a>
                                                     </Link>
                                                 </div>
-                                                <div>
+                                                <div className="mb-3 mb-md-0">
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a className="title">
                                                             <p>
@@ -319,14 +326,14 @@ const index = () => {
                                             </div>
                                             <div className="divisor"></div>
                                             <div className="grid-img-txt-2">
-                                                <div>
+                                                <div className="mx-5 mx-md-0">
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a>
                                                             <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado4.png" alt="" />
                                                         </a>
                                                     </Link>
                                                 </div>
-                                                <div>
+                                                <div className="mb-3 mb-md-0">
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
                                                         <a className="title">
                                                             <p>
@@ -341,8 +348,14 @@ const index = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    {width < 768 && (
+                                        <>
+                                        <Contacto />
+                                        <Interest />
+                                        </>
+                                    )}
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

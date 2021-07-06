@@ -21,10 +21,22 @@
     font-weight: 700;
 }
 
+.wrapper-img-fr {
+    @include media-breakpoint-down(sm) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .img-fr {
     width: 200px;
     float: right;
     margin: 0px 0px 24px 24px;
+    @include media-breakpoint-down(sm) {
+        order: 99;
+        align-self: center;
+        margin: 0;
+    }
     .caption {
         background-color: $green-15;
         text-align: center;

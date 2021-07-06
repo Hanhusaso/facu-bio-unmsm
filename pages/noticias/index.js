@@ -28,7 +28,7 @@ const noticias = () => {
                         <Container>
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -48,7 +48,7 @@ const noticias = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="desktop-extra-width">
+                                <Col>
                                     <div className="title-page text-center">Noticias</div>
                                 </Col>
                                 <Col md="1"></Col>
@@ -58,7 +58,7 @@ const noticias = () => {
                         <Container className="mb-4">
                             <Row>
                                 <Col md="3"></Col>
-                                <Col md="6" className="">
+                                <Col md="6">
                                     <div>
                                         <input className="search-input" placeholder="Buscar por palabra clave" type="text" />
                                     </div>
@@ -69,8 +69,8 @@ const noticias = () => {
 
                         <Container>
                             <Row>
-                                <Col md="1"></Col>
-                                <Col md="2">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="3" lg="2">
                                     <div className="filters-wrapper">
                                         <div className="">
                                             <div className="font-weight-bold mb-2">Categorías</div>
@@ -111,12 +111,12 @@ const noticias = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md="8">
+                                <Col md="7" lg="8">
                                     <div>
                                         <div className="divisor mt-0"></div>
 
-                                        <div className="grid-img-txt-2">
-                                            <a href="noticias/noticia">
+                                        <div className="grid-img-txt-2 no-reverse">
+                                            <a className="mb-2 mb-md-0" href="noticias/noticia">
                                                 <div className="part-img position-relative">
                                                     <img className="w-100 img-fluid" src="/assets/img/noticias/noticias_page_1.png" alt="" />
                                                     <div class="badge-tag">Comunidad</div>
@@ -140,8 +140,8 @@ const noticias = () => {
 
                                         <div className="divisor"></div>
 
-                                        <div className="grid-img-txt-2">
-                                            <a href="#">
+                                        <div className="grid-img-txt-2 no-reverse">
+                                            <a className="mb-2 mb-md-0" href="#">
                                                 <div className="part-img position-relative">
                                                     <img className="w-100 img-fluid" src="/assets/img/noticias/noticias_page_2.png" alt="" />
                                                     <div class="badge-tag">Comunidad</div>
@@ -165,8 +165,8 @@ const noticias = () => {
 
                                         <div className="divisor"></div>
 
-                                        <div className="grid-img-txt-2">
-                                            <a href="#">
+                                        <div className="grid-img-txt-2 no-reverse">
+                                            <a className="mb-2 mb-md-0" href="#">
                                                 <div className="part-img position-relative">
                                                     <img className="w-100 img-fluid" src="/assets/img/noticias/noticias_page_3.png" alt="" />
                                                     <div class="badge-tag">Opinión</div>
@@ -190,8 +190,8 @@ const noticias = () => {
 
                                         <div className="divisor"></div>
 
-                                        <div className="grid-img-txt-2">
-                                            <a href="#">
+                                        <div className="grid-img-txt-2 no-reverse">
+                                            <a className="mb-2 mb-md-0" href="#">
                                                 <div className="part-img position-relative">
                                                     <img className="w-100 img-fluid" src="/assets/img/noticias/noticias_page_4.png" alt="" />
                                                     <div class="badge-tag">Editorial</div>
@@ -215,8 +215,8 @@ const noticias = () => {
 
                                         <div className="divisor"></div>
 
-                                        <div className="grid-img-txt-2">
-                                            <a href="#">
+                                        <div className="grid-img-txt-2 no-reverse">
+                                            <a className="mb-2 mb-md-0" href="#">
                                                 <div className="part-img position-relative">
                                                     <img className="w-100 img-fluid" src="/assets/img/noticias/noticias_page_5.png" alt="" />
                                                     <div class="badge-tag">Institucional</div>
@@ -242,7 +242,7 @@ const noticias = () => {
 
                                     </div>
                                 </Col>
-                                <Col md="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

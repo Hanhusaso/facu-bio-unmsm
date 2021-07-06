@@ -12,8 +12,8 @@ const egresado = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -37,25 +37,25 @@ const egresado = () => {
                                         <Breadcrumb.Item active>Seguimiento al egresado</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <div className="title-page text-center mb-1">Mg. Claudia Villa Vargas - Directora del Genetics Lab. María Cárdenas López</div>
                                     <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="8">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <div className="d-flex justify-content-center mb-4">
                                         <img className="img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/testimonio_desarrollo.png" alt="" />
                                     </div>
@@ -87,7 +87,7 @@ const egresado = () => {
                                         <li>Realizar más 150 publicaciones en área de la genética</li>
                                         <li>Asumir el cargo de direccora en el Gentics Lab</li>
                                     </ul>
-                                    <div className="section-compartir">
+                                    <div className="section-compartir mb-3">
                                         <div className="d-inline-block font-weight-bold mr-3">
                                             Compartir vía:
                                         </div>
@@ -104,7 +104,7 @@ const egresado = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col sm="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="block-interest-links mb-4">
                                             <p className="font-weight-bold mb-2 text-center">Enlaces de interés</p>
@@ -189,7 +189,7 @@ const egresado = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>
