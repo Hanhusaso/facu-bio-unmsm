@@ -12,7 +12,7 @@ const recursosInvestigacion = () => {
                         <Container>
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -38,7 +38,7 @@ const recursosInvestigacion = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col md="1"></Col>
-                                <Col md="10" className="">
+                                <Col md="10">
                                     <div className="title-page mb-2 text-center">Recursos para la investigación</div>
                                     {/* <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div> */}
                                 </Col>
@@ -48,7 +48,7 @@ const recursosInvestigacion = () => {
                         <Container className="mb-4">
                             <Row>
                                 <Col md="3"></Col>
-                                <Col md="6" className="">
+                                <Col md="6">
                                     <div>
                                         <input className="search-input" placeholder="Buscar por palabra clave" type="text" />
                                     </div>
@@ -58,14 +58,14 @@ const recursosInvestigacion = () => {
                         </Container>
                         <Container>
                             <Row>
-                                <Col md="1"></Col>
-                                <Col md="8">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <div className="divisor"></div>
                                     <div className="grid-img-txt-3">
                                         <div>
                                             <img className="w-100 img-fluid" src="/assets/img/investigacion/recursos/recursos.jpg" alt="" />
                                         </div>
-                                        <div>
+                                        <div className="mb-3 mb-md-0">
                                             <div className="title">Repositorios y portales</div>
                                             <Tabs defaultActiveKey="cybertesis" id="repositorios-tab">
                                                 <Tab className="pt-2" eventKey="cybertesis" title="Cybertesis">
@@ -104,7 +104,7 @@ const recursosInvestigacion = () => {
                                         <div>
                                             <img className="w-100 img-fluid" src="/assets/img/investigacion/recursos/bd.jpg" alt="" />
                                         </div>
-                                        <div>
+                                        <div className="mb-3 mb-md-0">
                                             <div className="title">Bases de datos</div>
                                             <Tabs defaultActiveKey="multi" id="bd-tab">
                                                 <Tab className="pt-2" eventKey="multi" title="Multidisciplinarias">
@@ -149,7 +149,7 @@ const recursosInvestigacion = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="block-interest-links mb-3">
                                             <p className="font-weight-bold mb-2 text-center">
@@ -214,7 +214,7 @@ const recursosInvestigacion = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col md="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

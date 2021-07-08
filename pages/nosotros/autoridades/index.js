@@ -28,8 +28,8 @@ const index = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -48,18 +48,18 @@ const index = () => {
                                         <Breadcrumb.Item active>Nosotros: Autoridades y órganos de gobierno</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <div className="title-page text-center">Autoridades y órganos de gobierno</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
@@ -90,8 +90,8 @@ const index = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="2">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="3" lg="2">
                                     <div className="mb-4">
                                         <ul className="nav flex-column tabs-wrapper">
                                             <li className="tab">Decanato</li>
@@ -101,12 +101,12 @@ const index = () => {
                                         </ul>
                                     </div>
                                 </Col>
-                                <Col sm="8">
+                                <Col md="7" lg="8">
                                     <div>
                                         <div>
                                             <Container>
                                                 <Row>
-                                                    <Col sm="9" className="pl-0">
+                                                    <Col md="9" className="pl-0">
                                                         <p>
                                                             <span className="title-dark">Dr. Pablo Sergio Ramirez Roca</span>
                                                             <span className="divisor-text-green mx-2"></span>
@@ -116,17 +116,17 @@ const index = () => {
                                                             Biólogo Microbiólogo - Parasitólogo en la UNMSM y Doctor en Ciencias mención Microbiología en la Universidad de Chile (2002) obtenido mediante una beca de la Cooperación Alemana (DAAD), y Profesor Principal de la Universidad Nacional Mayor de San Marcos en la Facultad de Ciencias Biológicas, Departamento de Microbiología y Parasitología. Mis investigaciones se orientan al estudio de microorganismos extremófilos que participan en procesos de biolixiviación de minerales de interés comercial, así como proteínas recombinantes, resistencia metales en bacterias y levaduras, genómica y proteómica estructural de microorganismos oxidadores de hierro y azufre. Asimismo, en biodegradación de xenobióticos tales como PETN y TNT, y biodegradación de colorantes textiles, entre otros. He recibido fondos concursables PROCyT, Coordinador general de proyecto FINCYT, FIDECOM, FINCyT-PITEI, Cienciactiva 2017, Fondecyt y varios fondos concursables de la UNMSM. Director de la Unidad de Posgrado de la Facultad de Ciencias Biológicas (2010-2013), Presidente del Consejo Superior de Investigaciones del Vicerrectorado de Investigación y Posgrado (VRIP) de la UNMSM (2014-2017), Director General de Investigación y Transferencia Tecnológica de VRIP de la UNMSM desde febrero del 2017 hasta octubre de 2020 y actual Decano de la Facultad de Ciencias Biológicas de la UNMSM.
                                                         </p>
                                                         <div>
-                                                            <a href="#" className="d-inline color-inherit mr-3">
+                                                            <a href="#" className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
                                                                 <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                                 <span className="">Resolución rectoral</span>
                                                             </a>
-                                                            <a href="#" className="d-inline color-inherit mr-3">
+                                                            <a href="#" className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
                                                                 <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                                 <span className="">Hoja de vida</span>
                                                             </a>
                                                         </div>
                                                     </Col>
-                                                    <Col sm="3" className="pr-0">
+                                                    <Col md="3" className="pr-0">
                                                         <div className="mb-3">
                                                             <img className="img-fluid w-100" src="/assets/img/nosotros/autoridades/decano.png" alt="decano" />
                                                         </div>
@@ -150,7 +150,7 @@ const index = () => {
                                             <div className="divisor my-3"></div>
                                             <Container>
                                                 <Row>
-                                                    <Col sm="9" className="pl-0">
+                                                    <Col md="9" className="pl-0">
                                                         <p>
                                                             Al asumir el gobierno de la facultad reafirmamos nuestro compromiso de realizar un trabajo con responsabilidad, equidad y transparencia; de tal manera que podamos alcanzar objetivos académicos, administrativos, de investigación y de proyección social, con la finalidad de colaborar con el progreso del país dentro del marco del desarrollo sostenible.
                                                         </p>
@@ -168,7 +168,7 @@ const index = () => {
                                                             <li>Representar a la facultad.</li>
                                                         </ul>
                                                     </Col>
-                                                    <Col sm="3" className="pr-0">
+                                                    <Col md="3" className="pr-0">
                                                         <div className="contacto-wrapper mb-3">
                                                             <p className="title-dark mb-2">Contacto:</p>
                                                             <div className="grid-contacto">
@@ -227,7 +227,7 @@ const index = () => {
                                         <div>
                                             <Container>
                                                 <Row>
-                                                    <Col sm="9" className="pl-0">
+                                                    <Col md="9" className="pl-0">
                                                         <p>
                                                             <span className="title-dark">Mg. Ruth Hortensia García de la Guarda</span>
                                                             <span className="divisor-text-green mx-2"></span>
@@ -237,17 +237,17 @@ const index = () => {
                                                             Biólogo Microbiólogo - Parasitólogo en la UNMSM y Doctor en Ciencias mención Microbiología en la Universidad de Chile (2002) obtenido mediante una beca de la Cooperación Alemana (DAAD), y Profesor Principal de la Universidad Nacional Mayor de San Marcos en la Facultad de Ciencias Biológicas, Departamento de Microbiología y Parasitología. Mis investigaciones se orientan al estudio de microorganismos extremófilos que participan en procesos de biolixiviación de minerales de interés comercial, así como proteínas recombinantes, resistencia metales en bacterias y levaduras, genómica y proteómica estructural de microorganismos oxidadores de hierro y azufre. Asimismo, en biodegradación de xenobióticos tales como PETN y TNT, y biodegradación de colorantes textiles, entre otros. He recibido fondos concursables PROCyT, Coordinador general de proyecto FINCYT, FIDECOM, FINCyT-PITEI, Cienciactiva 2017, Fondecyt y varios fondos concursables de la UNMSM. Director de la Unidad de Posgrado de la Facultad de Ciencias Biológicas (2010-2013), Presidente del Consejo Superior de Investigaciones del Vicerrectorado de Investigación y Posgrado (VRIP) de la UNMSM (2014-2017), Director General de Investigación y Transferencia Tecnológica de VRIP de la UNMSM desde febrero del 2017 hasta octubre de 2020 y actual Decano de la Facultad de Ciencias Biológicas de la UNMSM.
                                                         </p>
                                                         <div>
-                                                            <a href="#" className="d-inline color-inherit mr-3">
+                                                            <a href="#" className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
                                                                 <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                                 <span className="">Resolución rectoral</span>
                                                             </a>
-                                                            <a href="#" className="d-inline color-inherit mr-3">
+                                                            <a href="#" className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
                                                                 <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                                 <span className="">Hoja de vida</span>
                                                             </a>
                                                         </div>
                                                     </Col>
-                                                    <Col sm="3" className="pr-0">
+                                                    <Col md="3" className="pr-0">
                                                         <div className="mb-3">
                                                             <img className="img-fluid w-100" src="/assets/img/nosotros/autoridades/vicedecana-academica.png" alt="vicedecana" />
                                                         </div>
@@ -271,7 +271,7 @@ const index = () => {
                                             <div className="divisor my-3"></div>
                                             <Container>
                                                 <Row>
-                                                    <Col sm="9" className="pl-0">
+                                                    <Col md="9" className="pl-0">
                                                         <p>
                                                             La Dirección Académica es el órgano de apoyo de la Facultad de Ciencias Biológicas, encargado de prestar los servicios académicos que requieran los estudiantes y profesores de la Facultad, así como el apoyo que se hace extensivo al personal docente.
                                                         </p>
@@ -310,7 +310,7 @@ const index = () => {
                                                             <li>La Dirección Académica coordina sus funciones con el Vice Rectorado Académico, la Secretaría General, el Sistemas de Bibliotecas Central, la Oficina General de Bienestar Universitario y el Sistema Único de Matrícula.</li>
                                                         </ul>
                                                     </Col>
-                                                    <Col sm="3" className="pr-0">
+                                                    <Col md="3" className="pr-0">
                                                         <div className="contacto-wrapper mb-3">
                                                             <p className="title-dark mb-2">Contacto:</p>
                                                             <div className="grid-contacto">
@@ -369,7 +369,7 @@ const index = () => {
                                         <div>
                                             <Container>
                                                 <Row>
-                                                    <Col sm="9" className="pl-0">
+                                                    <Col md="9" className="pl-0">
                                                         <p>
                                                             <span className="title-dark">Dra. Martha Esther Valdivia Cuya</span>
                                                             <span className="divisor-text-green mx-2"></span>
@@ -379,17 +379,17 @@ const index = () => {
                                                             Biólogo Microbiólogo - Parasitólogo en la UNMSM y Doctor en Ciencias mención Microbiología en la Universidad de Chile (2002) obtenido mediante una beca de la Cooperación Alemana (DAAD), y Profesor Principal de la Universidad Nacional Mayor de San Marcos en la Facultad de Ciencias Biológicas, Departamento de Microbiología y Parasitología. Mis investigaciones se orientan al estudio de microorganismos extremófilos que participan en procesos de biolixiviación de minerales de interés comercial, así como proteínas recombinantes, resistencia metales en bacterias y levaduras, genómica y proteómica estructural de microorganismos oxidadores de hierro y azufre. Asimismo, en biodegradación de xenobióticos tales como PETN y TNT, y biodegradación de colorantes textiles, entre otros. He recibido fondos concursables PROCyT, Coordinador general de proyecto FINCYT, FIDECOM, FINCyT-PITEI, Cienciactiva 2017, Fondecyt y varios fondos concursables de la UNMSM. Director de la Unidad de Posgrado de la Facultad de Ciencias Biológicas (2010-2013), Presidente del Consejo Superior de Investigaciones del Vicerrectorado de Investigación y Posgrado (VRIP) de la UNMSM (2014-2017), Director General de Investigación y Transferencia Tecnológica de VRIP de la UNMSM desde febrero del 2017 hasta octubre de 2020 y actual Decano de la Facultad de Ciencias Biológicas de la UNMSM.
                                                         </p>
                                                         <div>
-                                                            <a href="#" className="d-inline color-inherit mr-3">
+                                                            <a href="#" className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
                                                                 <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                                 <span className="">Resolución rectoral</span>
                                                             </a>
-                                                            <a href="#" className="d-inline color-inherit mr-3">
+                                                            <a href="#" className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
                                                                 <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                                 <span className="">Hoja de vida</span>
                                                             </a>
                                                         </div>
                                                     </Col>
-                                                    <Col sm="3" className="pr-0">
+                                                    <Col md="3" className="pr-0">
                                                         <div className="mb-3">
                                                             <img className="img-fluid w-100" src="/assets/img/nosotros/autoridades/vicedecana-posgrado.png" alt="vicedecana" />
                                                         </div>
@@ -413,7 +413,7 @@ const index = () => {
                                             <div className="divisor my-3"></div>
                                             <Container>
                                                 <Row>
-                                                    <Col sm="9" className="pl-0">
+                                                    <Col md="9" className="text-break pl-0">
                                                         <p>
                                                             La Unidad de Posgrado de la Facultad de Ciencias Biológicas viene formando masa crítica en investigación, mediante programas de Doctorado y Maestrías, en base a la gran biodiversidad del Perú. Las líneas de investigación fomentadas por los programas de posgrado de nuestra unidad contemplan aspectos como: taxonomía y sistemática, florística, bioprospección, ecología vegetal ecología acuática, limnología, acuicultura, sistemática evolutiva, biogeografía, entomología, ornitología, malacología, biología de la reproducción, manejo y gestión de la biodiversidad, etnobiología, microbiología, parasitología, virología, biotecnología, contaminación biológica, biología molecular y genética.
                                                         </p>
@@ -464,7 +464,7 @@ const index = () => {
                                                             <li>Maestría en Biodiversidad y Gestión de Ecosistemas</li>
                                                         </ul>
                                                     </Col>
-                                                    <Col sm="3" className="pr-0">
+                                                    <Col md="3" className="pr-0">
                                                         <div className="contacto-wrapper mb-3">
                                                             <p className="title-dark mb-2">Contacto:</p>
                                                             <div className="grid-contacto">
@@ -524,6 +524,7 @@ const index = () => {
                                             </Container>
                                         </div>
                                         <div>
+                                            <div className="divisor mt-0"></div>
                                             <div className="grid-img-txt-2">
                                                 <div>
                                                     <img className="w-100 img-fluid" src="/assets/img/nosotros/autoridades/director-ciencias-biologicas.jpg" alt="" />
@@ -536,20 +537,22 @@ const index = () => {
                                                         Biólogo Microbiólogo - Parasitólogo en la UNMSM y Doctor en Ciencias mención Microbiología en la Universidad de Chile (2002) obtenido mediante una beca de la Cooperación Alemana (DAAD), y Profesor Principal de la Universidad Nacional Mayor de San Marcos en la Facultad de Ciencias Biológicas, Departamento de Microbiología y Parasitología. 
                                                     </p>
                                                     <p className="mb-2">
-                                                        <span className="mr-2">Documentación:</span>
-                                                        <a href="#" className="d-inline color-inherit mr-3">
+                                                        <span className="d-block d-md-inline mr-2 mb-3 mb-md-0">Documentación:</span>
+                                                        <a href="#" className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
                                                             <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                             <span className="">Resolución rectoral</span>
                                                         </a>
-                                                        <a href="#" className="d-inline color-inherit mr-3">
+                                                        <a href="#" className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
                                                             <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                             <span className="">Hoja de vida</span>
                                                         </a>
                                                     </p>
                                                     <p className="mb-0">
-                                                        <span className="mr-2">Contacto:</span>
-                                                        <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                        <span className="text-break">laucastivas@unmsm.edu.pe</span>
+                                                        <span className="d-block d-md-inline mr-2 mb-3 mb-md-0">Contacto:</span>
+                                                        <div className="d-block d-md-inline mb-3 mb-md-0">
+                                                            <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                                                            <span className="text-break">laucastivas@unmsm.edu.pe</span>
+                                                        </div>
                                                     </p>
                                                 </div>
                                             </div>
@@ -566,27 +569,29 @@ const index = () => {
                                                         Biólogo Microbiólogo - Parasitólogo en la UNMSM y Doctor en Ciencias mención Microbiología en la Universidad de Chile (2002) obtenido mediante una beca de la Cooperación Alemana (DAAD), y Profesor Principal de la Universidad Nacional Mayor de San Marcos en la Facultad de Ciencias Biológicas, Departamento de Microbiología y Parasitología. 
                                                     </p>
                                                     <p className="mb-2">
-                                                        <span className="mr-2">Documentación:</span>
-                                                        <a href="#" className="d-inline color-inherit mr-3">
+                                                        <span className="d-block d-md-inline mr-2 mb-3 mb-md-0">Documentación:</span>
+                                                        <a href="#" className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
                                                             <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                             <span className="">Resolución rectoral</span>
                                                         </a>
-                                                        <a href="#" className="d-inline color-inherit mr-3">
+                                                        <a href="#" className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
                                                             <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
                                                             <span className="">Hoja de vida</span>
                                                         </a>
                                                     </p>
                                                     <p className="mb-0">
-                                                        <span className="mr-2">Contacto:</span>
-                                                        <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                        <span className="text-break">laucastivas@unmsm.edu.pe</span>
+                                                        <span className="d-block d-md-inline mr-2 mb-3 mb-md-0">Contacto:</span>
+                                                        <div className="d-block d-md-inline mb-3 mb-md-0">
+                                                            <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                                                            <span className="text-break">laucastivas@unmsm.edu.pe</span>
+                                                        </div>
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

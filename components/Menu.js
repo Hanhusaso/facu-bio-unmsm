@@ -185,6 +185,12 @@ const Menu = () => {
                                                 <a href="/investigacion/instituto-investigaciones-biologicas" className="nav-link">Instituto de investigaciones biológicas</a>
                                             {/* </Link> */}
                                         </li>
+                                        <li className="nav-item">
+                                            {/* <Link href="/investigacion/instituto-investigaciones-biologicas"> */}
+                                                {/* <a className="nav-link">Instituto de investigaciones biológicas</a> */}
+                                                <a href="/investigacion/antonio-raimondi" className="nav-link">Instituto de Investigación de Ciencias Biológicas "Antonio Raimondi" - ICBAR</a>
+                                            {/* </Link> */}
+                                        </li>
                                     </ul>
                                     <div className="divider-green mx-3"></div>
                                     <div className="interes-links">

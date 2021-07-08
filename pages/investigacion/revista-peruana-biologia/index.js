@@ -55,7 +55,7 @@ const pregrado = () => {
                                             Visitar en el portal de revistas UNMSM
                                         </a>
                                     </div>
-                                    <div className="grid-custom">
+                                    <div className="grid-custom mb-3">
                                         <div>
                                             <a href="#" className="book-hover">
                                                 <img className="w-100 img-fluid" src="/assets/img/investigacion/revista/libro1.png" alt="" />

@@ -12,7 +12,7 @@ const antonioRaimondi = () => {
                         <Container>
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -38,7 +38,7 @@ const antonioRaimondi = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col md="1"></Col>
-                                <Col md="10" className="">
+                                <Col md="10">
                                     <div className="title-page mb-2 text-center">Instituto de Investigación de Ciencias Biológicas "Antonio Raimondi" - ICBAR</div>
                                     {/* <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div> */}
                                 </Col>
@@ -47,8 +47,8 @@ const antonioRaimondi = () => {
                         </Container>
                         <Container>
                             <Row>
-                                <Col md="1"></Col>
-                                <Col md="8">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <div className="mb-4">
                                         <p>
                                             El Instituto de Investigación de Ciencias Biológicas Antonio Raimondi (ICBAR) es la unidad académica de la Facultad de Ciencias Biológicas encargada de la promoción, ordenamiento y desarrollo de la investigación científica y tecnológica. Su objetivo fundamental es la generación del conocimiento científico en las líneas de investigación sobre la biodiversidad y ecología, biotecnología, salud y sanidad, producción y manejo de recursos biológicos, así como su difusión, preservación, utilización y transferencia tecnológica dentro de las normas que rigen la vida académica de la universidad.
@@ -70,7 +70,7 @@ const antonioRaimondi = () => {
                                     <p className="mb-5">
                                         Dra. Martha Esther Valdivia Cuya
                                     </p>
-                                    <div>
+                                    <div className="mb-3">
                                         <table className="m-auto">
                                             <thead>
                                                 <tr>
@@ -102,7 +102,7 @@ const antonioRaimondi = () => {
                                         </table>
                                     </div>
                                 </Col>
-                                <Col md="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="contacto-wrapper mb-3">
                                             <p className="title-dark mb-2">Contacto:</p>
@@ -199,7 +199,7 @@ const antonioRaimondi = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col md="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

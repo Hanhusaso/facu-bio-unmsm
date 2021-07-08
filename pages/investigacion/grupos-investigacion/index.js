@@ -13,7 +13,7 @@ const gruposInvestigacion = () => {
                         <Container>
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -39,7 +39,7 @@ const gruposInvestigacion = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col md="1"></Col>
-                                <Col md="10" className="">
+                                <Col md="10">
                                     <div className="title-page mb-2 text-center">Grupos de investigación</div>
                                     {/* <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div> */}
                                 </Col>
@@ -48,8 +48,8 @@ const gruposInvestigacion = () => {
                         </Container>
                         <Container>
                             <Row>
-                                <Col md="1"></Col>
-                                <Col md="8">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <div className="mb-3">
                                         <p>
                                         Se discute en este trabajo el desarrollo histórico, significado y valor heurístico de la Historia Natural en la reflexión teórica y generación de hipótesis en biología. Sobre esta base se fundamenta la validez de una metodología propia en el dominio de las ciencias naturales históricas, en general.
@@ -125,7 +125,7 @@ const gruposInvestigacion = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
@@ -185,7 +185,7 @@ const gruposInvestigacion = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col md="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

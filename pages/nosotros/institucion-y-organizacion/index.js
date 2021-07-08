@@ -28,8 +28,8 @@ const index = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -48,18 +48,18 @@ const index = () => {
                                         <Breadcrumb.Item active>Nosotros: Institución y organización</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <div className="title-page text-center">Institución y organización</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
@@ -90,8 +90,8 @@ const index = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col sm="2">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="3" lg="2">
                                     <div className="mb-4">
                                         <ul className="nav flex-column tabs-wrapper">
                                             <li className="tab">Misión y visión</li>
@@ -100,11 +100,11 @@ const index = () => {
                                         </ul>
                                     </div>
                                 </Col>
-                                <Col sm="8">
+                                <Col md="7" lg="8">
                                     <div>
                                         <div>
-                                            <div className="grid-img-txt-2">
-                                                <div>
+                                            <div className="grid-img-txt-2 no-reverse">
+                                                <div className="mb-3 mb-md-0">
                                                     <img className="w-100 img-fluid" src="/assets/img/nosotros/institucion/mision-vision.jpg" alt="" />
                                                 </div>
                                                 <div>
@@ -126,7 +126,13 @@ const index = () => {
                                         <div>
                                             <div>
                                                 <div className="mb-4">
-                                                    <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/>
+                                                    {/* <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/> */}
+                                                    <object data="/assets/archivos/malla_curricular_2020.pdf" type="application/pdf" width="100%" height="700px"> 
+                                                        <a href="/assets/archivos/malla_curricular_2020.pdf">
+                                                            <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
+                                                            <span className="sub-title-dark">Descargar</span>
+                                                        </a>
+                                                    </object>
                                                 </div>
                                                 <div className="section-compartir">
                                                     <div className="d-inline-block font-weight-bold mr-3">
@@ -148,7 +154,7 @@ const index = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>
