@@ -4,7 +4,11 @@ import Layout from "../../../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 import Link from 'next/link'
 
+import { useWindowSize } from '../../../../utils/useWindowSize'
+
 const index = () => {
+
+    const { width, height } = useWindowSize();
 
     // useEffect(() => {
     //     document.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +24,36 @@ const index = () => {
 	// 	});
     // }, []); // Solo se vuelve a ejecutar si count cambia
 
+    const Contact = () => {
+        return (
+            <div className="contacto-wrapper mb-3">
+                <p className="title-dark mb-2">Contacto:</p>
+                <div className="grid-contacto">
+                    <div>
+                        <img className="icon mr-2" src="/assets/img/iconos/telefono.svg" alt=""/>
+                    </div>
+                    <div>
+                        <span>
+                            +(51) 619 7000 anexo 1507
+                        </span>
+                    </div>
+                </div>
+                <div className="mb-0 grid-contacto">
+                    <div>
+                        <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                    </div>
+                    <div>
+                        <span>
+                            epcb.biologia@unmsm.edu.pe
+                        </span>
+                    </div>
+                </div>
+                {/* <p className="font-weight-bold mb-1">Horario de atención:</p>
+                <p className="mb-0">8:00 a.m. - 5:00 p.m.</p> */}
+            </div>
+        )
+    }
+
     return (
         <>
             <Layout title="Doctorado">
@@ -28,7 +62,7 @@ const index = () => {
                         <Container>
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -55,7 +89,7 @@ const index = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <div className="title-page text-center">Doctorado en Ciencias Biológicas</div>
                                 </Col>
                                 <Col md="1"></Col>
@@ -89,8 +123,8 @@ const index = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col md="1"></Col>
-                                <Col md="2">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="3" lg="2">
                                     <div className="mb-4">
                                         <ul className="nav flex-column tabs-wrapper">
                                             <li className="tab">Presentación</li>
@@ -100,33 +134,13 @@ const index = () => {
                                             <li className="tab">Seguimiento de egresados</li>
                                         </ul>
                                     </div>
-                                    <div className="contacto-wrapper mb-3">
-                                        <p className="title-dark mb-2">Contacto:</p>
-                                        <div className="grid-contacto">
-                                            <div>
-                                                <img className="icon mr-2" src="/assets/img/iconos/telefono.svg" alt=""/>
-                                            </div>
-                                            <div>
-                                                <span>
-                                                    +(51) 619 7000 anexo 1507
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="mb-0 grid-contacto">
-                                            <div>
-                                                <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                            </div>
-                                            <div>
-                                                <span>
-                                                    epcb.biologia@unmsm.edu.pe
-                                                </span>
-                                            </div>
-                                        </div>
-                                        {/* <p className="font-weight-bold mb-1">Horario de atención:</p>
-                                        <p className="mb-0">8:00 a.m. - 5:00 p.m.</p> */}
-                                    </div>
+                                    {width >= 768 && (
+                                        <>
+                                        <Contact />
+                                        </>
+                                    )}
                                 </Col>
-                                <Col md="8">
+                                <Col md="7" lg="8">
                                     <div>
                                         <div>
                                             <p>
@@ -324,8 +338,13 @@ const index = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    {width < 768 && (
+                                        <>
+                                        <Contact />
+                                        </>
+                                    )}
                                 </Col>
-                                <Col md="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

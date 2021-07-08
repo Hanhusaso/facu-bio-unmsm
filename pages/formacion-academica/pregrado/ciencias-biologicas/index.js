@@ -24,7 +24,7 @@ const index = () => {
 	// 	});
     // }, []); // Solo se vuelve a ejecutar si count cambia
 
-    const Contacto = () => {
+    const Contact = () => {
         return (
             <div className="contacto-wrapper mb-3">
                 <p className="title-dark mb-2">Contacto:</p>
@@ -154,7 +154,7 @@ const index = () => {
                                     </div>
                                     {width >= 768 && (
                                         <>
-                                        <Contacto />
+                                        <Contact />
                                         <Interest />
                                         </>
                                     )}
@@ -350,7 +350,7 @@ const index = () => {
                                     </div>
                                     {width < 768 && (
                                         <>
-                                        <Contacto />
+                                        <Contact />
                                         <Interest />
                                         </>
                                     )}

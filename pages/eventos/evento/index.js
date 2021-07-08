@@ -12,7 +12,7 @@ const evento = () => {
                         <Container>
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -37,24 +37,24 @@ const evento = () => {
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col md="1"></Col>
-                                <Col md="8" className="">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <div className="title-page mb-2">Charla | Estudio y análisis de la fauna microscópica en medios terrestres y acuáticos</div>
                                     {/* <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div> */}
-                                    <div className="d-flex justify-content-start">
-                                        <div className="date mr-4">
+                                    <div className="d-block d-md-flex justify-content-start">
+                                        <div className="date mr-4 mb-1">
                                             <span>
                                                 <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
                                             </span>
                                             <span>7 de abril de 2021</span>
                                         </div>
-                                        <div className="date mr-4">
+                                        <div className="date mr-4 mb-1">
                                             <span>
                                                 <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
                                             </span>
                                             <span>5:00 pm</span>
                                         </div>
-                                        <div className="date">
+                                        <div className="date mb-1">
                                             <span>
                                                 <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
                                             </span>
@@ -62,15 +62,15 @@ const evento = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md="2"></Col>
-                                <Col md="1"></Col>
+                                <Col md="3" lg="2"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col md="1"></Col>
-                                <Col md="8">
-                                    <div className="d-flex justify-content-center mb-4">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
+                                    <div className="d-flex justify-content-center mb-3 mb-md-4">
                                         <img className="img-fluid" src="/assets/img/eventos/eventos_desarrollo.png" alt="" />
                                     </div>
                                     <p>
@@ -84,7 +84,7 @@ const evento = () => {
                                             Inscripciones
                                         </a>
                                     </div>
-                                    <div className="section-compartir">
+                                    <div className="section-compartir mb-3">
                                         <div className="d-inline-block font-weight-bold mr-3">
                                             Compartir vía:
                                         </div>
@@ -101,67 +101,118 @@ const evento = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="d-flex mb-3">
-                                            <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
-                                            <a href="#" className="d-inline-block">
+                                            <h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
+                                            <a href="/eventos" className="d-inline-block">
                                                 <img src="/assets/img/iconos/boton_vermas.png"/>
                                             </a>
                                         </div>
                                         <div>
-                                            <div className="card-bio mb-3">
-                                                <div className="part-img position-relative">
+                                            <div className="card-bio no-grid mb-3">
+                                                <div className="part-img position-relative d-none d-md-block">
                                                     <div className="position-relative">
                                                         <img className="w-100 img-fluid" src="/assets/img/noticias/noticia2.png"></img>
                                                         <div className="dark-filter"></div>
                                                     </div>
-                                                    <div className="badge-tag">
-                                                        Tecnologia
-                                                    </div>
                                                 </div>
                                                 <div className="part-text">
-                                                    <p className="title-card mb-0">
+                                                    <p className="title-card title mb-0">
                                                         Dos científicas ganan el Premio Nobel de Química 2020 por “tijeras genéticas” CRISPR-Cas9
                                                     </p>
                                                 </div>
+                                                <div className="part-info">
+                                                    <div className="date mb-1">
+                                                        <span>
+                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
+                                                        </span>
+                                                        <span>7 de abril de 2021</span>
+                                                    </div>
+                                                    <div className="date mb-1">
+                                                        <span>
+                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
+                                                        </span>
+                                                        <span>5:00 pm</span>
+                                                    </div>
+                                                    <div className="date mb-1">
+                                                        <span>
+                                                            <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
+                                                        </span>
+                                                        <span>Zoom meetings</span>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className="card-bio mb-3">
-                                                <div className="part-img position-relative">
+                                            <div className="card-bio no-grid mb-3">
+                                                <div className="part-img position-relative d-none d-md-block">
                                                     <div className="position-relative">
                                                         <img className="w-100 img-fluid" src="/assets/img/noticias/noticia3.png"></img>
                                                         <div className="dark-filter"></div>
                                                     </div>
-                                                    <div className="badge-tag">
-                                                        Ciencia
-                                                    </div>
                                                 </div>
                                                 <div className="part-text">
-                                                    <p className="title-card mb-0">
+                                                    <p className="title-card title mb-0">
                                                         El objetivo de nuestro proyecto es ir en camino a producir clones de alpacas
                                                     </p>
                                                 </div>
+                                                <div className="part-info">
+                                                    <div className="date mb-1">
+                                                        <span>
+                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
+                                                        </span>
+                                                        <span>7 de abril de 2021</span>
+                                                    </div>
+                                                    <div className="date mb-1">
+                                                        <span>
+                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
+                                                        </span>
+                                                        <span>5:00 pm</span>
+                                                    </div>
+                                                    <div className="date mb-1">
+                                                        <span>
+                                                            <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
+                                                        </span>
+                                                        <span>Zoom meetings</span>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className="card-bio mb-3">
-                                                <div className="part-img position-relative">
+                                            <div className="card-bio no-grid mb-3">
+                                                <div className="part-img position-relative d-none d-md-block">
                                                     <div className="position-relative">
                                                         <img className="w-100 img-fluid" src="/assets/img/noticias/noticia4.png"></img>
                                                         <div className="dark-filter"></div>
                                                     </div>
-                                                    <div className="badge-tag">
-                                                        Facultad
-                                                    </div>
                                                 </div>
                                                 <div className="part-text">
-                                                    <p className="title-card mb-0">
+                                                    <p className="title-card title mb-0">
                                                         ¡La FCB ya cuenta oficialmente con un nuevo y moderno pabellón!
                                                     </p>
+                                                </div>
+                                                <div className="part-info">
+                                                    <div className="date mb-1">
+                                                        <span>
+                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
+                                                        </span>
+                                                        <span>7 de abril de 2021</span>
+                                                    </div>
+                                                    <div className="date mb-1">
+                                                        <span>
+                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
+                                                        </span>
+                                                        <span>5:00 pm</span>
+                                                    </div>
+                                                    <div className="date mb-1">
+                                                        <span>
+                                                            <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
+                                                        </span>
+                                                        <span>Zoom meetings</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col md="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

@@ -12,7 +12,7 @@ const noticia = () => {
                         <Container>
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -37,8 +37,8 @@ const noticia = () => {
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col md="1"></Col>
-                                <Col md="8" className="">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <div className="title-page mb-2">En Latinoamérica, la mejor manera de avanzar es sumándonos a las buenas cosas que se vienen haciendo</div>
                                     {/* <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div> */}
                                     <div className="d-flex justify-content-between">
@@ -56,14 +56,14 @@ const noticia = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md="2"></Col>
-                                <Col md="1"></Col>
+                                <Col md="3" lg="2"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col md="1"></Col>
-                                <Col md="8">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <div className="d-flex justify-content-center mb-4">
                                         <img className="img-fluid" src="/assets/img/noticias/noticia_desarrollo.png" alt="" />
                                     </div>
@@ -93,7 +93,7 @@ const noticia = () => {
                                         <li>El 4 de octubre último, la Facultad de Ciencias Biológicas de la UNMSM superó con éxito el proceso de auditoría externa con Bureau Veritas, quedando expedita para su acreditación internacional con ABET.</li>
                                         <li>El alcance de la certificación es: planificación, enseñanza, formación, evaluación, promoción de la investigación y de la responsabilidad social en pregrado para otorgar el título como Biólogo con mención en Botánica, Hidrobiología y Pesquería, Zoología; Biólogo Genetista y Biotecnólogo y Biólogo Microbiólogo Parasitólogo.</li>
                                     </ul>
-                                    <div className="section-compartir">
+                                    <div className="section-compartir mb-3">
                                         <div className="d-inline-block font-weight-bold mr-3">
                                             Compartir vía:
                                         </div>
@@ -110,11 +110,11 @@ const noticia = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
-                                            <a href="#" className="d-inline-block">
+                                            <a href="/noticias" className="d-inline-block">
                                                 <img src="/assets/img/iconos/boton_vermas.png"/>
                                             </a>
                                         </div>
@@ -170,7 +170,7 @@ const noticia = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col md="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

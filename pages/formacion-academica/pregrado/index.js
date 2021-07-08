@@ -12,7 +12,7 @@ const pregrado = () => {
                         <Container>
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -34,7 +34,7 @@ const pregrado = () => {
                         <Container className="mb-3">
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <div className="title-page text-center">Carreras de pregrado</div>
                                 </Col>
                                 <Col md="1"></Col>
@@ -43,7 +43,7 @@ const pregrado = () => {
                         <Container className="mb-4">
                             <Row>
                                 <Col md="1"></Col>
-                                <Col className="">
+                                <Col>
                                     <p className="mb-0">
                                         Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias biológicas con especial énfasis en la flora, fauna y ecosistemas amazónicos así como en la microbiología y parasitología; desarrollando campos como la taxonomía, fisiología, bioquímica, genética, patología y biología molecular, aplicándose en propuestas para el desarrollo sostenible de la región, como por ejemplo zoocriaderos, piscicultura, manejo de ecosistemas y recursos naturales, así como en las áreas relacionadas con la salud del hombre, animales y plantas; iniciándose además alternativas innovadoras a través de la biotecnología.
                                     </p>

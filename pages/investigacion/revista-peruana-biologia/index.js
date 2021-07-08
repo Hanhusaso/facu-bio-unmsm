@@ -11,8 +11,8 @@ const pregrado = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -26,24 +26,24 @@ const pregrado = () => {
                                         <Breadcrumb.Item active>Investigación: Revista peruana de Biología</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <div className="title-page text-center">Revista peruana de Biología</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container>
                             <Row>
-                                <Col md="1"></Col>
-                                <Col md="8">
+                                <Col md="1" lg="1"></Col>
+                                <Col md="7" lg="8">
                                     <div className="mb-4">
                                         <p>
                                             La REVISTA PERUANA DE BIOLOGÍA es una publicación científica arbitrada producida por el Instituto de Investigaciones de Ciencias Biológicas Antonio Raimondi, Facultad de Ciencias Biológicas, Universidad Nacional Mayor de San Marcos, Lima, Perú; es publicada en febrero, mayo, agosto y noviembre, en su versión Online.
@@ -238,7 +238,7 @@ const pregrado = () => {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md="2">
+                                <Col md="3" lg="2">
                                     <aside>
                                         <div className="d-flex mb-3">
                                             <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
@@ -298,7 +298,7 @@ const pregrado = () => {
                                         </div>
                                     </aside>
                                 </Col>
-                                <Col md="1"></Col>
+                                <Col md="1" lg="1"></Col>
                             </Row>
                         </Container>
                     </div>

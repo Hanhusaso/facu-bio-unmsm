@@ -113,7 +113,7 @@ const noticias = () => {
                                 </Col>
                                 <Col md="7" lg="8">
                                     <div>
-                                        <div className="divisor mt-0"></div>
+                                        <div className="divisor my-3 mt-md-0"></div>
 
                                         <div className="grid-img-txt-2 no-reverse">
                                             <a className="mb-2 mb-md-0" href="noticias/noticia">

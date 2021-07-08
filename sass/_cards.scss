@@ -20,6 +20,9 @@
     //     height: 1.2em;
     //     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
     // }
+    .part-info {
+        margin: 0px 15px 15px;
+    }
     .part-text {
         margin: 15px;
         overflow: hidden;
@@ -55,6 +58,17 @@ aside {
         @include media-breakpoint-down(sm) {
             display: grid;
             grid-template-columns: 1fr 1fr;
+        }
+        &.no-grid {
+            @include media-breakpoint-down(sm) {
+                display: flex;
+                // grid-template-columns: 1fr 1fr;
+            }
+            .part-text {
+                @include media-breakpoint-down(sm) {
+                    margin: 15px;
+                }
+            }
         }
         .part-text {
             &::after {

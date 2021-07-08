@@ -11,8 +11,8 @@ const posgrado = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <Breadcrumb>
                                         {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
@@ -26,18 +26,18 @@ const posgrado = () => {
                                         <Breadcrumb.Item active>Posgrado</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                     </div>
                     <div>
                         <Container className="mb-3">
                             <Row>
-                                <Col sm="1"></Col>
-                                <Col className="">
+                                <Col md="1"></Col>
+                                <Col>
                                     <div className="title-page text-center">Posgrado</div>
                                 </Col>
-                                <Col sm="1"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container className="mb-4">
