@@ -71,7 +71,7 @@ const antonioRaimondi = () => {
                                         Dra. Martha Esther Valdivia Cuya
                                     </p>
                                     <div className="mb-3">
-                                        <table className="m-auto">
+                                        <table className="striped m-auto">
                                             <thead>
                                                 <tr>
                                                     <th colSpan="2" className="text-center">Comité directivo</th>

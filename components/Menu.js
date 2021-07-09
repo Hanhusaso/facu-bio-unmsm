@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Accordion from 'react-bootstrap/Accordion'
 // import { IconName } from "react-icons/fa";
 import * as FaIcons from "react-icons/fa";
+import * as FiIcons from "react-icons/fi";
 import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
 import * as MdIcons from "react-icons/md";
@@ -150,9 +151,9 @@ const Menu = () => {
                                 <div>
                                     <ul className="nav flex-column main-sub-navs">
                                         <li className="nav-item">
-                                            {/* <Link href="/investigacion/proyectos-investigacion"> */}
+                                            {/* <Link href="/investigacion/proyectos"> */}
                                                 {/* <a className="nav-link">Proyectos de la investigación</a> */}
-                                                <a href="/investigacion/proyectos-investigacion" className="nav-link">Proyectos de la investigación</a>
+                                                <a href="/investigacion/proyectos" className="nav-link">Proyectos de la investigación</a>
                                             {/* </Link> */}
                                         </li>
                                         <li className="nav-item">
@@ -578,12 +579,24 @@ const Menu = () => {
                                 {/* </Link> */}
                             </li>
                             <li className="nav-item">
-                                {/* <Link href="/recursos-investigacion"> */}
+                                {/* <Link href="/investigacion/recursos-investigacion"> */}
                                     {/* <a className="nav-link">Recursos de investigación</a> */}
-                                    <a href="/recursos-investigacion" className="d-flex align-items-center nav-link">
+                                    <a href="/investigacion/recursos-investigacion" className="d-flex align-items-center nav-link">
                                         <img className="mr-3" src="/assets/img/iconos/recursos_investigacion.svg" alt="" />
                                         <span>
                                             Recursos de investigación
+                                        </span>
+                                    </a>
+                                {/* </Link> */}
+                            </li>
+                            <li className="nav-item">
+                                {/* <Link href="/recursos-investigacion"> */}
+                                    {/* <a className="nav-link">Recursos de investigación</a> */}
+                                    <a href="/directorio" className="d-flex align-items-center nav-link">
+                                        {/* <img className="mr-3" src="/assets/img/iconos/directorio.svg" alt="" /> */}
+                                        <FiIcons.FiPhone className="icon mr-3" />
+                                        <span>
+                                            Directorio
                                         </span>
                                     </a>
                                 {/* </Link> */}
@@ -627,7 +640,7 @@ const Menu = () => {
 
                 </div>
             </nav>
-            <div className="menu-overlay"></div>
+            <div className="menu-overlay" onClick={hideSidebar}></div>
         </div>
     )
 }

@@ -1,8 +1,11 @@
 import React , { useEffect } from 'react'
 import Layout from "../../../../components/Layout"
 // import Tabs from "../../../../components/Tabs/vanillaTabs"
-import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
+import {Row, Col, Container, Breadcrumb, Tabs, Tab} from 'react-bootstrap'
 import Link from 'next/link'
+
+import * as AiIcons from "react-icons/ai";
+import * as HiIcons from "react-icons/hi";
 
 import { useWindowSize } from '../../../../utils/useWindowSize'
 
@@ -223,6 +226,391 @@ const index = () => {
                                             <a className="btn-green-bright" href="">
                                                 Inscripciones
                                             </a>
+                                        </div>
+                                        <div>
+                                            <Tabs defaultActiveKey="cronogramas" id="admision-tab">
+                                                <Tab className="pt-3" eventKey="cronogramas" title="Cronogramas">
+                                                    <div>
+                                                        <p className="title-dark">Cronograma de Admisión 2021 - I</p>
+                                                        <div className="table-responsive mb-3">
+                                                            <table className="striped m-auto">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th className="text-center">Actividad</th>
+                                                                        <th className="text-center">Fechas 2021</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Inscripción de postulantes y envío de expediente</td>
+                                                                        <td>Del 02 de enero al 14 de marzo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Evaluación del expediente</td>
+                                                                        <td>Del 15 al 17 de marzo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Entrevista personal (solo maestría)</td>
+                                                                        <td>18 y 19 de marzo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Examen de aptitud virtual (solo maestría)</td>
+                                                                        <td>20 de marzo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Sustentación del proyecto de investigación (solo doctorado)</td>
+                                                                        <td>20 y 21 de marzo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Publicación de resultados</td>
+                                                                        <td>23 de marzo</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <p>
+                                                            <span className="title-dark">Vacantes: </span>
+                                                            <span>Número</span>
+                                                        </p>
+                                                        <p className="title-dark">Cronograma de actividades académicas 2021 - I</p>
+                                                        <div className="table-responsive mb-3">
+                                                            <table className="striped m-auto">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th className="text-center">Actividad</th>
+                                                                        <th className="text-center">Fechas 2021</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Matrícula ingresantes (Maestría o Doctorado)</td>
+                                                                        <td>Del 29 de marzo al 02 de abril</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Matrícula regular (ingresantes 2021 y anteriores)</td>
+                                                                        <td>Del 22 al 26 de marzo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Clases</td>
+                                                                        <td>
+                                                                            Inicio: 05 de abril
+                                                                            <br/>
+                                                                            Término: 24 de julio
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <p className="title-dark">Inversión por estudios de Posgrado</p>
+                                                        <div className="table-responsive mb-3">
+                                                            <table className="striped m-auto">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th className="text-center">Programa</th>
+                                                                        <th className="text-center">Descripción</th>
+                                                                        <th className="text-center">Importe</th>
+                                                                        <th className="text-center">Requisitos</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>Doctorado (6 semestres)</th>
+                                                                        <td>Matrícula perfeccionamiento</td>
+                                                                        <td>
+                                                                            S/. 310.00
+                                                                            <br/>
+                                                                            S/. 3400.00
+                                                                        </td>
+                                                                        <td>Cubrir vacante</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </Tab>
+                                                <Tab className="pt-3" eventKey="inscripcion" title="Pago de inscripción">
+                                                    <div>
+                                                        <div className="d-flex">
+                                                            <AiIcons.AiFillInfoCircle className="icon mr-1"/>
+                                                            <p>
+                                                                <b>Observación:</b> Recuerde que antes de realizar el pago por derecho de inscripción debe verificar que el programa de interés cuente con vacantes disponibles y estar dentro del cronograma establecido en el presente proceso de admisión
+                                                            </p>
+                                                        </div>
+                                                        <p className="title">
+                                                            Banco de Crédito del Perú
+                                                        </p>
+                                                        <p>
+                                                            A continuación detallamos en número de Cuenta Corriente de la UNMSM en el Banco de Crédito del Perú, para depósitos en ventanilla, cajero, agente o transferencia interbancaria:
+                                                        </p>
+                                                        <p className="font-weight-bold text-center">
+                                                            Cta. Cte. n.° 191-0215772014 | CCI n.° 002-191-00021577201451
+                                                        </p>
+                                                        <div className="table-responsive mb-3">
+                                                            <table className="last-green bordered m-auto">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Magíster UNMSM, personal administrativo de la UNMSM, docente de Universidades nacionales y Magisterio Nacionales
+                                                                        </td>
+                                                                        <td className="font-weight-bold text-center">
+                                                                            S/.&nbsp;400.00
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Otros postulantes (Graduados de otras universidades)
+                                                                        </td>
+                                                                        <td className="font-weight-bold text-center">
+                                                                            S/.&nbsp;500.00
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <p className="title">
+                                                            Banco de la Nación
+                                                        </p>
+                                                        <p>
+                                                            Debe indicar  que realizará un depósito al n.° de TRANSACCIÓN 9650 + el código que corresponda; así como el n.° DNI, carné de extranjería o pasaporte del postulante.
+                                                        </p>
+                                                        <div className="table-responsive mb-3">
+                                                            <table className="last-green bordered m-auto">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Magíster UNMSM, personal administrativo de la UNMSM, docente de Universidades nacionales y Magisterio Nacionales
+                                                                        </td>
+                                                                        <td className="font-weight-bold text-center">
+                                                                            S/.&nbsp;400.00
+                                                                            <br/>
+                                                                            <span className="title">Transacción: 9650 + código: 9702</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            Otros postulantes (Graduados de otras universidades)
+                                                                        </td>
+                                                                        <td className="font-weight-bold text-center">
+                                                                            S/.&nbsp;500.00
+                                                                            <br/>
+                                                                            <span className="title">Transacción: 9650 + código: 9703</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </Tab>
+                                                <Tab className="pt-3" eventKey="requisitos" title="Requisitos para el Doctorado">
+                                                    <div>
+                                                        <p>
+                                                            El postulante deberá enviar (en un solo archivo pdf) mediante la plataforma de mesa de partes <span className="sub-title-15">(mesadepartes.biologia@unmsm.edu.pe)</span> el expediente completo a la Unidad de Posgrado de la Facultad, con los siguientes documentos:
+                                                        </p>
+                                                        <ul className="chevron-green-dark">
+                                                            <li>Resumen de la hoja de vida del postulante (documentado, foliado y ordenado de acuerdo a los rubros del formato)</li>
+                                                            <li>Constancia de inscripción en línea del grado de Maestro o Doctor emitido por SUNEDU o la copia del diploma de grado de Maestro o Doctor fedateado por la universidad de procedencia (*).</li>
+                                                            <li>Copia del documento de identidad (DNI, carné de extranjería o pasaporte).</li>
+                                                            <li>Recibo de pago por derecho de inscripción efectuado en el Banco de Crédito del Perú o en el Banco de la Nación.</li>
+                                                            <li>Proyecto de investigación.</li>
+                                                            <li>Otro documento que la Unidad de Posgrado considere con relación al perfil de ingreso al programa que postula. Revisar requisitos a través de la página web de la Facultad – Posgrado.</li>
+                                                        </ul>
+                                                        <p>
+                                                            (*) Los postulantes que obtuvieron el grado de Maestro o Doctor en la Universidad Nacional Mayor de San Marcos solo presentan copia simple.
+                                                        </p>
+                                                        <p>
+                                                            En el caso de graduados en el extranjero, los grados y títulos deberán estar revalidados o reconocidos según las normas vigentes.
+                                                        </p>
+                                                    </div>
+                                                </Tab>
+                                            </Tabs>
+                                        </div>
+                                        <div>
+                                            <div className="divisor my-3"></div>
+                                            <div className="block-divider mb-3 pb-2 position-relative">
+                                                <h3 className="title">Mg. Anthonny Flores Carrasco | Docente principal</h3>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Documentación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Resolución rectoral</span>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Hoja de vida</span>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Investigación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">RAIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">SIIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Contacto:</span>
+                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
+                                                </p>
+                                            </div>
+                                            {/* <div className="divisor"></div> */}
+                                            <div className="block-divider mb-3 pb-2 position-relative">
+                                                <h3 className="title">Dra. Kelly Sánchez Ortega</h3>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Documentación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Resolución rectoral</span>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Hoja de vida</span>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Investigación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">RAIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">SIIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Contacto:</span>
+                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
+                                                </p>
+                                            </div>
+                                            {/* <div className="divisor"></div> */}
+                                            <div className="block-divider mb-3 pb-2 position-relative">
+                                                <h3 className="title">Dra. Claudia Veramendi Gomez</h3>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Documentación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Resolución rectoral</span>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Hoja de vida</span>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Investigación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">RAIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">SIIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Contacto:</span>
+                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
+                                                </p>
+                                            </div>
+                                            {/* <div className="divisor"></div> */}
+                                            <div className="block-divider mb-3 pb-2 position-relative">
+                                                <h3 className="title">Mg. Ricarfo Gonzales Fernandez | Docente principal</h3>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Documentación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Resolución rectoral</span>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Hoja de vida</span>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Investigación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">RAIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">SIIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Contacto:</span>
+                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
+                                                </p>
+                                            </div>
+                                            {/* <div className="divisor"></div> */}
+                                            <div className="block-divider mb-3 pb-2 position-relative">
+                                                <h3 className="title">Mg. Mariela Fátima Carranza Díaz | Docente principal</h3>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Documentación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Resolución rectoral</span>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Hoja de vida</span>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Investigación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">RAIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">SIIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Contacto:</span>
+                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
+                                                </p>
+                                            </div>
+                                            {/* <div className="divisor"></div> */}
+                                            <div className="block-divider mb-3 pb-2 position-relative">
+                                                <h3 className="title">Mg.Karla Gutierrez Benitez | Docente principal</h3>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Documentación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Resolución rectoral</span>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-3">
+                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                        <span className="">Hoja de vida</span>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Investigación:</span>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">RAIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                    <a href="#" className="d-inline-block color-inherit mr-2">
+                                                        <span className="mr-1">SIIS</span>
+                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                    </a>
+                                                </p>
+                                                <p className="mb-2">
+                                                    <span className="mr-2">Contacto:</span>
+                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
+                                                </p>
+                                            </div>
                                         </div>
                                         <div>
                                             <div>

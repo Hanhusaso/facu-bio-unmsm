@@ -2,17 +2,40 @@ table {
     th, td {
         border-right: 1px solid $green-dark;
         padding: 10px 20px;
-        &:last-of-type {
+        &:last-child {
             border-right: none;
         }
     }
     thead {
         background-color: $green;
         color: $wht;
+        th {
+            border: none;
+        }
     }
-    tbody {
-        tr:nth-of-type(odd) {
-            background-color: $green-15;
+    &.striped {
+        tbody {
+            tr:nth-of-type(odd) {
+                background-color: $green-15;
+            }
+        }
+    }
+    &.last-green {
+        td {
+            padding: 20px 30px;
+            &:last-child {
+                // padding: 20px 30px;
+                background-color: $green-15;
+                width: 40%;
+                @include media-breakpoint-down(sm) {
+                    width: auto;
+                }
+            }
+        }
+    }
+    &.bordered {
+        th, td {
+            border: 1px solid $green-dark-50;
         }
     }
 }
