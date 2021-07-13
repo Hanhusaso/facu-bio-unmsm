@@ -1,0 +1,62 @@
+.header-bio {
+    background-image: url(/assets/img/background/fondo_cabezera.png);
+    background-position: center;
+    background-size: cover;
+    height: 162px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 700;
+    transition: all;
+    transition-duration: 375ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    @include media-breakpoint-down(sm) {
+        height: 102px;
+    }
+    .lp-shrink-header {
+        transition: all;
+        transition-duration: 375ms;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+    &.shrink-header {
+        height: 90px;
+        @include media-breakpoint-down(sm) {
+            height: 102px;
+        }
+        .lp-shrink-header {
+            max-width: 4%;
+            @include media-breakpoint-down(sm) {
+                max-width: none;
+            }
+        }
+        .img-logo {
+            height: 50px;
+            @include media-breakpoint-down(sm) {
+                height: 42px;
+            }
+        }
+    }
+
+    .img-logo {
+        height: 70px;
+        transition: all;
+        transition-duration: 375ms;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        @include media-breakpoint-down(sm) {
+            height: 42px;
+        }
+    }
+
+}
+
+.below-header {
+    padding-top: 162px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 102px;
+    }
+}

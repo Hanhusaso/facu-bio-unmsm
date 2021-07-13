@@ -1,0 +1,35 @@
+.btn-transparent {
+    background-color: transparent;
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.btn-green-bright {
+    display: inline-block;
+    background-color: $green-bright;
+    color: $wht;
+    padding: 5px 10px;
+    border-radius: 4.18px;
+    box-shadow: $box-shadow;
+    &:hover {
+        color: $wht;
+    }
+}
+
+.btn-square-green {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: $green-bright;
+    color: $wht;
+    &:hover {
+        color: $wht;
+    }
+    .icon {
+        margin-bottom: -2px;
+    }
+}

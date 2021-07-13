@@ -1,8 +1,8 @@
+@import "custom-bootstrap";
 @import "~bootstrap/scss/bootstrap";
 
 @import "variables";
 
-@import "custom-bootstrap";
 
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
@@ -10,15 +10,33 @@
 @import "reboot";
 
 // Componentes
+@import "menu";
+@import "header";
+@import "breadcrumb";
 @import "titles";
 @import "cards";
 @import "img";
 @import "carousel";
+@import "contacto";
+@import "interest-links";
+@import "compartir";
 
+@import "buttons";
 @import "badge";
+@import "tabs";
+@import "link";
+@import "grid";
+@import "form";
+@import "table";
+@import "accordion";
+
+
+// @import "vanillaTabs";
 
 // pages
 @import "../pages/index";
+@import "../pages/informacion-academica/syllabus/syllabus";
+@import "../pages/formacion-academica/pregrado/index";
 
 // footer
 @import "footer";

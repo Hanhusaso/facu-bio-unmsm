@@ -1,0 +1,21 @@
+a {
+    color: $green-bright;
+    &.color-inherit {
+        color: inherit;
+        .icon {
+            color: $green-bright;
+        }
+    }
+    &:hover {
+        text-decoration: none;
+        color: $green-bright;
+        transition: color .3s ease;
+    }
+}
+
+// .link-hover {
+//     &:hover {
+//         text-decoration: none;
+//         color: $green-bright;
+//     }
+// }

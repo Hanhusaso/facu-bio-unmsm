@@ -40,15 +40,6 @@
                 transform: translate(0, -50%);
                 background-color: $wht;
             }
-            .wrapper-social {
-                font-size: 24px;
-                position: absolute;
-                bottom: 0;
-                transform: translateY(100%);
-                a {
-                    color: $wht;
-                }
-            }
         }
     }
     
@@ -87,6 +78,11 @@
     background-image: url(/assets/img/background/fondo_verde.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    @media (min-width: 1400px) {
+        background-image: url(/assets/img/background/fondo_verde_grande.jpg);
+    }
 }
 
 .wrapper-carreras {
@@ -97,6 +93,92 @@
     }
 }
 
-.section-mision-vision {
+.section-mision-numeros {
     font-size: 20px;
+}
+
+.section-mision {
+    p {
+        line-height: 24px;
+    }
+}
+
+.wrapper-icon {
+    height: 43px;
+}
+
+.txt-noticias-bg {
+    z-index: 0;
+    font-size: 40px;
+    color: $wht;
+    line-height: 44px;
+    margin-left: -15px;
+    top: -50px;
+    position: absolute;
+    &::before {
+        // content: "Enterate de las últimas novedades";
+        content: "";
+        position: absolute;
+        top: -390px;
+        // left: -390px;
+        left: -305px;
+        width: 700px;
+        height: 700px;
+        background-image: url(/assets/img/background/circulo_completo_noticias.png);
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+.txt-proyectos-bg {
+    z-index: 0;
+    font-size: 40px;
+    color: $wht;
+    line-height: 44px;
+    margin-left: -15px;
+    top: -50px;
+    position: absolute;
+    &::before {
+        // content: "Enterate de las últimas novedades";
+        content: "";
+        position: absolute;
+        top: -26px;
+        // left: -390px;
+        left: -124px;
+        width: 534px;
+        height: 263px;
+        background-image: url(/assets/img/background/rectangulo_proyectos.png);
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+.microscopio {
+    z-index: 1;
+}
+
+.txt-numeros-bg {
+    z-index: 0;
+    // font-size: 40px;
+    // color: $wht;
+    // line-height: 44px;
+    // margin-left: -15px;
+    // top: -50px;
+    position: relative;
+    &::before {
+        // content: "Enterate de las últimas novedades";
+        content: "";
+        position: absolute;
+        top: -70px;
+        // left: -390px;
+        right: -240px;
+        width: 900px;
+        height: 900px;
+        background-image: url(/assets/img/background/circulo_completo_numeros.png);
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
 }
