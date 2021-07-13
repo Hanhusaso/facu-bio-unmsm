@@ -20,7 +20,7 @@ export default function Home() {
       <main>
         <section className="section-principal-home section-eventos">
           <video className="bg-home-video" loop autoplay="true" muted>
-            <source src="/assets/video/Prueba1.mp4" type="video/mp4"/>
+            <source src="/assets/video/Prueba1_1.mp4" type="video/mp4"/>
           </video>
           <div className="wrapper-title-home">
             <Container fluid>
