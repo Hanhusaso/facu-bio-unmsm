@@ -6,8 +6,11 @@ import Menu from "../components/Menu";
 import SocialMedia from "../components/SocialMedia";
 import { Row, Col, Container, Carousel } from "react-bootstrap";
 import ClampLines from "react-clamp-lines";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 export default function Home() {
+	const { scrollYProgress } = useViewportScroll();
+	const x = useTransform(scrollYProgress, [0, 0.8], [0, 800]);
 	return (
 		<div>
 			<Head>
@@ -48,7 +51,7 @@ export default function Home() {
 						<Container fluid>
 							<Row>
 								<Col md={{ span: 11, offset: 1 }} className="pr-0">
-									<div className="ml-2 pad-extra-left">
+									<motion.div style={{ x }} className="ml-2 pad-extra-left">
 										<div className="d-flex">
 											<h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
 											<a href="#" className="d-inline-block">
@@ -103,7 +106,7 @@ export default function Home() {
 												</Row>
 											</Container>
 										</div>
-									</div>
+									</motion.div>
 								</Col>
 							</Row>
 						</Container>
