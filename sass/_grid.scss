@@ -50,3 +50,36 @@
         font-size: 22px;
     }
 }
+
+.grid-img-hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-breakpoint-down(sm) {
+        display: block;
+    }
+    .wrapper-img {
+        transition: all .3s ease;
+        width: 30%;
+        transform: scale(1);
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+        &:hover {
+            transform: scale(1.15);
+            @include media-breakpoint-down(sm) {
+                transform: scale(1);
+            }
+            .name-img {
+                opacity: 1;
+            }
+        }
+        .name-img {
+            transition: all .3s ease;
+            opacity: 0;
+            @include media-breakpoint-down(sm) {
+                opacity: 1;
+            }
+        }
+    }
+}

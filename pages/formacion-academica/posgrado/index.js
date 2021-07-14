@@ -22,8 +22,8 @@ const posgrado = () => {
                                         </li>
                                         {/* </Breadcrumb.Item> */}
                                         {/* <Breadcrumb.Item active>Formación académica</Breadcrumb.Item> */}
-                                        <li className="breadcrumb-item">Formación académica</li>
-                                        <Breadcrumb.Item active>Posgrado</Breadcrumb.Item>
+                                        {/* <li className="breadcrumb-item">Formación académica</li> */}
+                                        <Breadcrumb.Item active>Formación académica: Posgrado</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col md="1"></Col>

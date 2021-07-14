@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div>
       {noticias.length != 0 && noticiasSubcategorias.length != 0 ?
-        <div>
+      <div>
         <Head>
           <title>Facultad de Ciencias Biológicas</title>
           <link rel="icon" href="/favicon.ico" />

@@ -75,10 +75,10 @@ const index = () => {
                                         </li>
                                         {/* </Breadcrumb.Item> */}
                                         {/* <Breadcrumb.Item active>Formación académica</Breadcrumb.Item> */}
-                                        <li className="breadcrumb-item">Formación académica</li>
+                                        {/* <li className="breadcrumb-item">Formación académica</li> */}
                                         <li className="breadcrumb-item">
                                             <Link href="/formacion-academica/pregrado">
-                                                <a role="button">Posgrado</a>
+                                                <a role="button">Formación académica: Posgrado</a>
                                             </Link>
                                         </li>
                                         <Breadcrumb.Item active>Doctorado en Ciencias Biológicas</Breadcrumb.Item>

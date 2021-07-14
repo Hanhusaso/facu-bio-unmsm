@@ -83,3 +83,17 @@
         opacity: 1;
     }
 }
+
+.img-float-left {
+    width: 48%;
+    float: left;
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        float: none;
+    }
+}
+
+.img-info {
+    color: $green;
+    font-style: italic;
+}
