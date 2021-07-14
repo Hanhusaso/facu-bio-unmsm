@@ -57,11 +57,11 @@ export default function Proyectos() {
                         </Container>
                         <Container className="mb-3">
                             <Row>
-                                <Col md="1" lg="1"></Col>
-                                <Col md="7" lg="8">
-                                    Todo lo necesario para cursar el semestre con éxito está aquí: cronograma académica, planes de estudios, mallas curriculares, syllabus, etc.
+                                <Col md="1"></Col>
+                                <Col>
+                                    Estamos orgullos del trabajo que hacen nuestros estudiantes, docentes y egresados de la facultad para generar conocimiento e impacto en la sociedad. Ponemos a disposición el resultado de su esfuerzo, esperando visibilizar soluciones a los problemas actuales y motivar a futuros investigadores. Puedes publicar tu proyecto o saber más sobre los grupos de investigación.
                                 </Col>
-                                <Col md="4" lg="3"></Col>
+                                <Col md="1"></Col>
                             </Row>
                         </Container>
                         <Container>

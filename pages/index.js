@@ -23,7 +23,7 @@ export default function Home() {
 			<main>
 				<section className="section-principal-home section-eventos">
 					<video className="bg-home-video" loop autoplay="true" muted>
-						<source src="/assets/video/flower.mp4" type="video/mp4" />
+						<source src="/assets/video/Prueba1_1.mp4" type="video/mp4" />
 					</video>
 					<div className="wrapper-title-home">
 						<Container fluid>
@@ -51,7 +51,7 @@ export default function Home() {
 						<Container fluid>
 							<Row>
 								<Col md={{ span: 11, offset: 1 }} className="pr-0">
-									<motion.div style={{ x }} className="ml-2 pad-extra-left">
+									<div className="ml-2 pad-extra-left">
 										<div className="d-flex">
 											<h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
 											<a href="#" className="d-inline-block">
@@ -106,7 +106,7 @@ export default function Home() {
 												</Row>
 											</Container>
 										</div>
-									</motion.div>
+									</div>
 								</Col>
 							</Row>
 						</Container>
