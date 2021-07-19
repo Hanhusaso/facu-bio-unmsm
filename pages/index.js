@@ -10,6 +10,7 @@ import {Row, Col, Container, Carousel} from 'react-bootstrap'
 import ClampLines from 'react-clamp-lines';
 import { BASE_PATH_S3 } from "../utils/constants";
 import {getNoticiasHomeApi, getNoticiasSubcategoriasApi} from './api/noticias';
+import {getEventosHomeApi} from './api/eventos';
 
 export default function Home() {
 
@@ -17,6 +18,20 @@ export default function Home() {
 
   const [noticias, setNoticias] = useState([]);
   const [noticiasSubcategorias, setNoticiasSubcategorias] = useState([]);
+  const [eventos, setEventos] = useState([]);
+
+  const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+
+  function formatAMPM(date) {
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'p.m.' : 'a.m.';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return strTime;
+}
 
   useEffect(() => {
 
@@ -29,12 +44,14 @@ export default function Home() {
       const response_subcategorias = await getNoticiasSubcategoriasApi();
       setNoticias(response_noticias);
       setNoticiasSubcategorias(response_subcategorias);
+      const response_eventos = await getEventosHomeApi();
+      setEventos(response_eventos);
     })();
   }, [loadingPage]);
 
   return (
     <div>
-      {noticias.length != 0 && noticiasSubcategorias.length != 0 && !loadingPage ?
+      {noticias.length != 0 && noticiasSubcategorias.length != 0 && eventos.length != 0 && !loadingPage ?
       <div>
         <Head>
           <title>Facultad de Ciencias Biológicas</title>
@@ -83,18 +100,57 @@ export default function Home() {
                           <Row>
                             <Col>
                               <p className="fecha-evento">
-                                <span>03 marzo</span>
+                                <span>{new Date(eventos[0]?.fechaInicio).getDate() < 10 ? "0"+new Date(eventos[0]?.fechaInicio).getDate() : new Date(eventos[0]?.fechaInicio).getDate()} {months[new Date(eventos[0]?.fechaInicio).getMonth()]}</span>
                                 <span className="divisor-text mx-2"></span>
-                                <span>3 p.m.</span>
+                                <span>{formatAMPM(new Date(eventos[0].fechaInicio))}</span>
                               </p>
                               <p className="titulo-evento">
-                                Conferencia “Microrganismos de la selva central del Perú, un estudio de descubrimiento”
+                                {eventos[0]?.nombre}
                               </p>
                               <p className="lugar-evento mb-0">
-                                Auditorio Tomas Romero-Facultad 3 piso
+                                {eventos[0]?.lugar}
                               </p>
                             </Col>
                             <Col>
+                              <p className="fecha-evento">
+                                <span>{new Date(eventos[1]?.fechaInicio).getDate() < 10 ? "0"+new Date(eventos[1]?.fechaInicio).getDate() : new Date(eventos[1]?.fechaInicio).getDate()} {months[new Date(eventos[1]?.fechaInicio).getMonth()]}</span>
+                                <span className="divisor-text mx-2"></span>
+                                <span>{formatAMPM(new Date(eventos[1].fechaInicio))}</span>
+                              </p>
+                              <p className="titulo-evento">
+                                {eventos[1]?.nombre}
+                              </p>
+                              <p className="lugar-evento mb-0">
+                                {eventos[1]?.lugar}
+                              </p>
+                            </Col>
+                            <Col>
+                              <p className="fecha-evento">
+                                <span>{new Date(eventos[2]?.fechaInicio).getDate() < 10 ? "0"+new Date(eventos[2]?.fechaInicio).getDate() : new Date(eventos[2]?.fechaInicio).getDate()} {months[new Date(eventos[2]?.fechaInicio).getMonth()]}</span>
+                                <span className="divisor-text mx-2"></span>
+                                <span>{formatAMPM(new Date(eventos[2].fechaInicio))}</span>
+                              </p>
+                              <p className="titulo-evento">
+                                {eventos[2]?.nombre}
+                              </p>
+                              <p className="lugar-evento mb-0">
+                                {eventos[2]?.lugar}
+                              </p>
+                            </Col>
+                            <Col>
+                              <p className="fecha-evento">
+                                <span>{new Date(eventos[3]?.fechaInicio).getDate() < 10 ? "0"+new Date(eventos[3]?.fechaInicio).getDate() : new Date(eventos[3]?.fechaInicio).getDate()} {months[new Date(eventos[3]?.fechaInicio).getMonth()]}</span>
+                                <span className="divisor-text mx-2"></span>
+                                <span>{formatAMPM(new Date(eventos[3].fechaInicio))}</span>
+                              </p>
+                              <p className="titulo-evento">
+                                {eventos[3]?.nombre}
+                              </p>
+                              <p className="lugar-evento mb-0">
+                                {eventos[3]?.lugar}
+                              </p>
+                            </Col>
+                            {/* <Col>
                               <p className="fecha-evento">
                                 <span>03 marzo</span>
                                 <span className="divisor-text mx-2"></span>
@@ -106,20 +162,7 @@ export default function Home() {
                               <p className="lugar-evento mb-0">
                                 Auditorio Tomas Romero-Facultad 3 piso
                               </p>
-                            </Col>
-                            <Col>
-                              <p className="fecha-evento">
-                                <span>03 marzo</span>
-                                <span className="divisor-text mx-2"></span>
-                                <span>3 p.m.</span>
-                              </p>
-                              <p className="titulo-evento">
-                                Conferencia “Microrganismos de la selva central del Perú, un estudio de descubrimiento”
-                              </p>
-                              <p className="lugar-evento mb-0">
-                                Auditorio Tomas Romero-Facultad 3 piso
-                              </p>
-                            </Col>
+                            </Col> */}
                           </Row>
                         </Container>
                       </div>

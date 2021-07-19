@@ -59,6 +59,8 @@ const noticia = () => {
             // setSinResultados(false);
           }
 
+        //   const response_noticias_ultimas = await getNoticiasUltimasApi();
+
           window.scrollTo(0, 0);
         })();
     }, [query]);

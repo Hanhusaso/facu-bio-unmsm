@@ -112,18 +112,34 @@ const noticias = () => {
         (async () => {
           setLoading(true);
           setSinResultados(false);
-          const response = await getNoticiasApi(limitPerPage, page, palabra, categorias, startDate);
-          setNoticias(response);
-          const response_subcategorias = await getNoticiasSubcategoriasApi();
-          setNoticiasSubcategorias(response_subcategorias);
-          setLoading(false);
-          if(size(response) == 0){
-            setSinResultados(true);
+          if(palabra == ''){
+            const response = await getNoticiasApi(limitPerPage, page, palabra, categorias, startDate);
+            setNoticias(response);
+            const response_subcategorias = await getNoticiasSubcategoriasApi();
+            setNoticiasSubcategorias(response_subcategorias);
+            setLoading(false);
+            if(size(response) == 0){
+              setSinResultados(true);
+            }
+            else{
+              setSinResultados(false);
+            }
+            window.scrollTo(0, 0);
           }
           else{
-            setSinResultados(false);
+            const response = await getNoticiasApi(limitPerPage, page, palabra, [], '');
+            setNoticias(response);
+            const response_subcategorias = await getNoticiasSubcategoriasApi();
+            setNoticiasSubcategorias(response_subcategorias);
+            setLoading(false);
+            if(size(response) == 0){
+              setSinResultados(true);
+            }
+            else{
+              setSinResultados(false);
+            }
+            window.scrollTo(0, 0);
           }
-          window.scrollTo(0, 0);
         })();
         $(function(){
             $('#datepicker').datepicker({
