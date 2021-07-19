@@ -2,7 +2,7 @@ import React , { useState , useEffect } from 'react'
 import { Loader } from 'semantic-ui-react'
 import { useRouter } from "next/router";
 import Layout from "../../../components/Layout"
-import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
+import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import Link from 'next/link';
 import { size } from "lodash";
 import {getNoticiaByUrlApi, updateVisitasNoticiaApi} from '../../api/noticias';
@@ -67,21 +67,29 @@ const noticia = () => {
         <>
             <Layout title="Noticia">
             {loading ? (
-                    <Loader
-                        active
-                        inline="centered"
-                        style={{
-                            color: "#39556f",
-                            fontFamily: "Calibri",
-                            fontWeight: "bold",
-                            fontSize: "15px",
-                            marginTop: "30rem",
-                            marginLeft: "80rem",
-                        }}
-                        className="mt-5"
-                    >
-                        Buscando formación...
-                    </Loader>
+                    // <Loader
+                    //     active
+                    //     inline="centered"
+                    //     style={{
+                    //         color: "#39556f",
+                    //         fontFamily: "Calibri",
+                    //         fontWeight: "bold",
+                    //         fontSize: "15px",
+                    //         marginTop: "30rem",
+                    //         marginLeft: "80rem",
+                    //     }}
+                    //     className="mt-5"
+                    // >
+                    //     Buscando formación...
+                    // </Loader>
+                    <>
+                    <div className="d-flex align-items-center justify-content-center my-5">
+                        <div className="d-inline-flex flex-column justify-content-center align-items-center">
+                            <Spinner animation="border" role="status" className="mb-2"/>
+                            <span>Buscando formación...</span>
+                        </div>
+                    </div>
+                    </>
                 ) : !sinResultados ? (
                     <div>
                         <div>

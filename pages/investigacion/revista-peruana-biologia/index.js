@@ -51,7 +51,7 @@ const pregrado = () => {
                                         <p>
                                             La REVISTA PERUANA DE BIOLOGÍA publica artículos completos, originales e inéditos que contribuyan al conocimiento científico en los temas de biodiversidad, biotecnología, ecología, manejo ambiental elaborados según las normas indicadas en las siguientes normas para envio.
                                         </p>
-                                        <a className="btn-green-bright" href="">
+                                        <a className="btn-green-bright" href="https://revistasinvestigacion.unmsm.edu.pe/index.php/rpb" target="_blank">
                                             Visitar en el portal de revistas UNMSM
                                         </a>
                                     </div>

@@ -65,7 +65,7 @@ const directorio = () => {
                                                 </span>
                                             </div>
                                             <div>
-                                                <a href="#" className="btn-green-bright">
+                                                <a href="https://vicus.unmsm.edu.pe/" target="_blank" className="btn-green-bright">
                                                     Directorio general
                                                 </a>
                                             </div>

@@ -10,20 +10,6 @@ const index = () => {
 
     const { width, height } = useWindowSize();
 
-    // useEffect(() => {
-    //     document.addEventListener('DOMContentLoaded', () => {
-
-	// 		// create vertical tabs
-	// 		new VanillaTabs({
-	// 			'selector': '#tabs-v',	// default is ".tabs"
-	// 			'type': 'vertical', 		// can be horizontal / vertical / accordion
-	// 			'responsiveBreak': 840,	// tabs become accordion on this device width
-	// 			'activeIndex' : 1				// active tab index (starts from 0 ). Can be -1 for accordions.
-	// 		});
-
-	// 	});
-    // }, []); // Solo se vuelve a ejecutar si count cambia
-
     const Contact = () => {
         return (
             <div className="contacto-wrapper mb-3">
@@ -88,6 +74,53 @@ const index = () => {
                         </Link>
                     </li>
                 </ul>
+            </div>
+        )
+    }
+
+    const Presentacion = () => {
+        return (
+            <div className="wrapper-img-fr mb-3">
+                <div className="img-fr">
+                    <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/director.png" alt="" />
+                    <div className="caption">
+                        <div className="mb-2 font-weight-bold">Director</div>
+                        <div className="mb-1">Dr. Mauro Mariano Astocondor</div>
+                        <div className="mb-0">mmarianoa@unmsm.edu.pe</div>
+                    </div>
+                </div>
+                <p>
+                    La Escuela Profesional de Ciencias Biológicas de la Universidad Nacional Mayor de San Marcos, les da la más cordial bienvenida a su portal, con el fin de brindarles información sobre la Escuela y ofrecer un mejor servicio e información a docentes, estudiantes y público en general.
+                </p>
+                <p>
+                    Nuestra Escuela forma profesionales, que impactan en el desarrollo socio económico del país, al solucionar problemas nacionales dentro de la competencia del Profesional Biólogo con mención en:
+                </p>
+                <ul className="chevron-green-dark">
+                    <li>Botánica</li>
+                    <li>Hidrobiología y Pesquería</li>
+                    <li>Zoología</li>
+                </ul>
+                <p>
+                    La Facultad de Ciencias Biológicas cuenta con la infraestructura adecuada para desarrollar sus diferentes actividades académicas, para lo cual posee un pabellón de docencia con aulas de teoría, laboratorios de práctica, laboratorios de informática debidamente equipadas, posee además recursos humanos altamente calificados. La mayoría de nuestros docentes cuentan con grados de doctor y maestrÍa que aseguran un nivel de enseñanza de excelencia.
+                </p>
+                <div>
+                    <p className="title-dark">Grado:</p>
+                    <p>Bachiller en Ciencias Biológicas</p>
+                </div>
+                <div>
+                    <p className="title-dark">Título:</p>
+                    <p>Biólogo con mención en una de las tres orientaciones: Botánica, Hidrobiología y Pesquería y Zoología.</p>
+                </div>
+                <div>
+                    <p className="title-dark">Duración:</p>
+                    <p>5 años</p>
+                </div>
+                <div>
+                    <p className="title-dark">Perfil del egresado:</p>
+                    <p>
+                        El graduado aplica métodos estandarizados y actualizados, demuestra liderazgo y capacidad de trabajo colaborativo con actitud de responsabilidad social, ética, integridad y pensamiento crítico. Conoce, identifica y valora los conceptos de las Ciencias Biológicas basados en principios científicos. Evalúa la diversidad biológica y genera información considerando enfoques organísmicos, ecológicos y evolutivos. Promueve el cuidado y gestión del ambiente, la conservación y el uso sostenible de la diversidad biológica, entre otros.
+                    </p>
+                </div>
             </div>
         )
     }
