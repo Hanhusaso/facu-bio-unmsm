@@ -9,7 +9,7 @@ import { Pagination, Loader } from 'semantic-ui-react'
 // import Header from "../../components/Header"
 import Link from 'next/link'
 import Layout from "../../components/Layout"
-import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
+import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import { AiFillContainer } from 'react-icons/ai'
 import { size } from "lodash";
 import { BASE_PATH_S3 } from "../../utils/constants";
@@ -408,20 +408,28 @@ const noticias = () => {
                                 </Col>
                                 <Col md="7" lg="8">
                                         {loading ? (
-                                            <Loader
-                                                active
-                                                inline="centered"
-                                                style={{
-                                                    color: "#39556f",
-                                                    fontFamily: "Calibri",
-                                                    fontWeight: "bold",
-                                                    fontSize: "15px",
-                                                    marginTop: "3rem",
-                                                }}
-                                                className="mt-5"
-                                            >
-                                                Buscando registros...
-                                            </Loader>
+                                            // <Loader
+                                            //     active
+                                            //     inline="centered"
+                                            //     style={{
+                                            //         color: "#39556f",
+                                            //         fontFamily: "Calibri",
+                                            //         fontWeight: "bold",
+                                            //         fontSize: "15px",
+                                            //         marginTop: "3rem",
+                                            //     }}
+                                            //     className="mt-5"
+                                            // >
+                                            //     Buscando registros...
+                                            // </Loader>
+                                            <>
+                                            <div className="d-flex align-items-center justify-content-center my-5">
+                                                <div className="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <Spinner animation="border" role="status" className="mb-2"/>
+                                                    <span>Buscando registros...</span>
+                                                </div>
+                                            </div>
+                                            </>
                                         ) : !sinResultados ? (
                                             <div>
                                                 <div className="divisor my-3 mt-md-0"></div>
@@ -454,15 +462,15 @@ const noticias = () => {
                                                         <div className="divisor"></div>
                                                     </div>
                                                 ))}
+                                                {paginador}
                                             </div>
                                         ) : (
                                             // <SinResultados />
                                             'No se encontraron registros'
-                                        )}
+                                            )}
                                 </Col>
                                 <Col md="1" lg="1"></Col>
                             </Row>
-                            {paginador}
                         </Container>
                     </div>
                 </div>

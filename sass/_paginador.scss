@@ -1,0 +1,28 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        &.item {
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            margin: 0 2px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &[type="firstItem"], &[type="lastItem"], &[type="prevItem"], &[type="nextItem"] {
+            color: $green;
+            padding-bottom: 3px;
+        }
+        &[type="pageItem"] {
+            color: $green-dark;
+            &.active {
+                color: $wht;
+                background-color: $green;
+            }
+        }
+    }
+}
