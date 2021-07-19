@@ -1,34 +1,22 @@
 import { BASE_PATH } from "../../utils/constants";
 
-export async function getNoticiasHomeApi(){
+export async function getEventosHomeApi(){
   try {
-      const url = `${BASE_PATH}/noticias?_limit=4&_sort=fecha:DESC`;
+      const url = `${BASE_PATH}/eventos?_limit=4&fechaInicio_gte=2021-07-19&_sort=fechaInicio:ASC`;
       const response = await fetch(url);
       const result = await response.json();
-      var noticias = [];
+      var eventos = [];
       for(var i=0; i<result.length; i++){
-        noticias.push(result[i]);
+        eventos.push(result[i]);
       }
-      return noticias;
+      return eventos;
   } catch (error) {
       console.log(error);
       return [];
   }
 }
 
-export async function getNoticiasSubcategoriasApi(){
-    try {
-        const url = `${BASE_PATH}/noticias-subcategorias`;
-        const response = await fetch(url);
-        const result = await response.json();
-        return result;
-    } catch (error) {
-        console.log(error);
-        return [];
-    }
-}
-
-export async function getNoticiasApi(limit, start, palabra, categorias, date){
+export async function getEventosApi(limit, start, palabra, tipos, date){
     try {
         const limitItems = `_limit=${limit}`;
         const startItems = `_start=${start}`;
@@ -36,12 +24,12 @@ export async function getNoticiasApi(limit, start, palabra, categorias, date){
 
         if(palabra != ""){
             // query = query + `&_where[_or][0][nombre_contains]=${palabra}&_where[_or][1][fk_centro_de_estudios.centro_contains]=${palabra}`
-            query = query + `&titulo_contains=${palabra}`;
+            query = query + `&nombre_contains=${palabra}`;
         }
 
-        if(categorias.length != 0){
-            for(var i=0; i<categorias.length; i++){
-                query = query + `&_where[_or][0][id_categoria_subcategoria.id_categoria]=${categorias[i]}`;
+        if(tipos.length != 0){
+            for(var i=0; i<tipos.length; i++){
+                query = query + `&_where[_or][0][tipo]=${tipos[i]}`;
             }
         }
 
@@ -49,7 +37,7 @@ export async function getNoticiasApi(limit, start, palabra, categorias, date){
             query = query + `&fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
         }
 
-        const url = `${BASE_PATH}/noticias?_sort=fecha:DESC&${limitItems}&${startItems}${query}`;
+        const url = `${BASE_PATH}/eventos?_sort=fechaInicio:DESC&${limitItems}&${startItems}${query}`;
         const response = await fetch(url);
         const result = await response.json();
         return result;
@@ -59,26 +47,26 @@ export async function getNoticiasApi(limit, start, palabra, categorias, date){
     }
 }
 
-export async function countNoticiasApi(palabra, categorias, date){
+export async function countEventosApi(palabra, tipos, date){
     try {
         var query = '';
 
         if(palabra != ""){
             if(query != ''){
-                query = query + `&titulo_contains=${palabra}`;
+                query = query + `&nombre_contains=${palabra}`;
             }
             else{
-                query = query + `?titulo_contains=${palabra}`;
+                query = query + `?nombre_contains=${palabra}`;
             }
         }
 
-        if(categorias.length != 0){
-            for(var i=0; i<categorias.length; i++){
+        if(tipos.length != 0){
+            for(var i=0; i<tipos.length; i++){
                 if(query != ''){
-                    query = query + `&_where[_or][0][id_categoria_subcategoria.id_categoria]=${categorias[i]}`;
+                    query = query + `&_where[_or][0][tipo]=${tipos[i]}`;
                 }
                 else{
-                    query = query + `?_where[_or][0][id_categoria_subcategoria.id_categoria]=${categorias[i]}`;
+                    query = query + `?_where[_or][0][tipo]=${tipos[i]}`;
                 }
             }
         }
@@ -92,7 +80,7 @@ export async function countNoticiasApi(palabra, categorias, date){
             }
         }
 
-        const url = `${BASE_PATH}/noticias/count${query}`;
+        const url = `${BASE_PATH}/eventos/count${query}`;
         const response = await fetch(url);
         const result = await response.json();
         return result;
@@ -102,9 +90,9 @@ export async function countNoticiasApi(palabra, categorias, date){
     }
 }
 
-export async function getNoticiaByUrlApi(url_noticia){
+export async function getEventoByUrlApi(url_evento){
     try {
-        const url = `${BASE_PATH}/noticias/?url_titulo=${url_noticia}`;
+        const url = `${BASE_PATH}/eventos/?url_nombre=${url_evento}`;
         const response = await fetch(url);
         const result = await response.json();
         return result;
@@ -114,9 +102,9 @@ export async function getNoticiaByUrlApi(url_noticia){
     }
 }
 
-export async function updateVisitasNoticiaApi(id_noticia, visitas){
+export async function updateVisitasEventoApi(id_evento, visitas){
     try {
-        const url = `${BASE_PATH}/noticias/${id_noticia}`;
+        const url = `${BASE_PATH}/eventos/${id_evento}`;
         const params = {
         method: "PUT",
         headers: {
@@ -132,9 +120,9 @@ export async function updateVisitasNoticiaApi(id_noticia, visitas){
     }
 }
 
-export async function getNoticiasUltimasApi(){
+export async function getEventosUltimasApi(){
     try {
-        const url = `${BASE_PATH}/noticias/?`;
+        const url = `${BASE_PATH}/eventos/?`;
         const response = await fetch(url);
         const result = await response.json();
         return result;
@@ -143,4 +131,3 @@ export async function getNoticiasUltimasApi(){
         return [];
     }
 }
-  
