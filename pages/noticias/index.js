@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Pagination, Loader } from 'semantic-ui-react'
+// import DatePicker from 'react-datepicker'
+// import 'react-datepicker/dist/react-datepicker.css'
+// import { registerLocale } from "react-datepicker";
+// import es from "date-fns/locale/es"; // the locale you want
+// registerLocale("es", es); // register it with the name you want
 // import Head from "next/head";
 // import Header from "../../components/Header"
 import Link from 'next/link'
@@ -9,6 +14,8 @@ import { AiFillContainer } from 'react-icons/ai'
 import { size } from "lodash";
 import { BASE_PATH_S3 } from "../../utils/constants";
 import {countNoticiasApi, getNoticiasApi, getNoticiasSubcategoriasApi} from '../api/noticias';
+// import $ from "jquery";
+// import 'jquery-ui';
 
 const limitPerPage = 5;
 
@@ -38,6 +45,27 @@ const noticias = () => {
     const [noticiasSubcategorias, setNoticiasSubcategorias] = useState([]);
 
     const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+
+    const [startDate, setStartDate] = useState("");
+
+    var dia_seleccionado = "";
+    var anio = "";
+    var mes = "";
+    var dia = "";
+    var anio2 = "";
+    var mes2 = "";
+    var dia2 = "";
+
+    // const months1 = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+    // const days = ['L', 'M', 'M', 'J', 'V', 'S', 'D']
+    // const locale = {
+    //     localize: {
+    //       month: n => months[n],
+    //       day: n => days[n]
+    //     },
+    //     formatLong: {}
+    //   }
+    //   registerLocale ( 'es' ,  es );
 
     function removeItemFromArr ( arr, item ) {
         var i = arr.indexOf( item );
@@ -77,14 +105,14 @@ const noticias = () => {
 
     useEffect(() => {
         (async () => {
-            const response1 = await countNoticiasApi(palabra, categorias);
+            const response1 = await countNoticiasApi(palabra, categorias, startDate);
             setPaginador('');
-            setPaginador(<Pagination defaultActivePage={numberPage} totalPages={response1/5} onPageChange={onPageChange} />); 
-          })();
+            setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />); 
+        })();
         (async () => {
           setLoading(true);
           setSinResultados(false);
-          const response = await getNoticiasApi(limitPerPage, page, palabra, categorias);
+          const response = await getNoticiasApi(limitPerPage, page, palabra, categorias, startDate);
           setNoticias(response);
           const response_subcategorias = await getNoticiasSubcategoriasApi();
           setNoticiasSubcategorias(response_subcategorias);
@@ -97,7 +125,134 @@ const noticias = () => {
           }
           window.scrollTo(0, 0);
         })();
-    }, [page, palabra, categoria]);
+        $(function(){
+            $('#datepicker').datepicker({
+              inline: true,
+              firstDay: 1,
+              maxDate: new Date(),
+              dateFormat: "yy-mm-dd",
+              showOtherMonths: false,
+              dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+              monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ],
+              onSelect: function(dateText) {
+                // sombrearDiasSinEventos();
+                console.log("Selected date: " + dateText + "; input's current value: " + this.value);
+                if(dia_seleccionado != this.value){
+                    dia_seleccionado = this.value;
+                    var hoy_1 = new Date();
+                    var anio_1; var mes_1; var dia_1;
+                    anio_1 = hoy_1.getFullYear();
+                    mes_1 = hoy_1.getMonth()+1;
+                    dia_1 = hoy_1.getDate();
+                    if(mes_1 < 10){
+                        mes_1 = '0' + mes_1;
+                    }
+                    if(dia_1 < 10){
+                        dia_1 = '0' + dia_1;
+                    }
+                    var fecha_1 = anio_1 + "-" + mes_1 + "-" +dia_1;
+                    if(dia_seleccionado == fecha_1){
+                        $("style#calendar").append(`
+                            a.ui-state-active{
+                                border: none !important;
+                                background: #48DC57 !important;
+                                opacity: 80% !important;
+                                font-weight: normal !important;
+                                color: #ffffff !important;
+                                text-align: center !important;
+                            }
+                            
+                            .ui-state-default{
+                                border: none !important;
+                                background: none !important;
+                                text-align: center !important;
+                                color: #454545 !important;
+                            }
+                            .ui-state-hover{
+                                border: 0px solid #cccccc !important;
+                                background: #ededed !important;
+                                color: #2b2b2b !important;
+                                text-align: center !important;
+                            }
+                        `);
+                    }
+                    else{
+                        $("style#calendar").append(`
+                            a.ui-state-active{
+                                border: none !important;
+                                background: #48DC57 !important;
+                                opacity: 80% !important;
+                                font-weight: normal !important;
+                                color: #ffffff !important;
+                                text-align: center !important;
+                            }
+                            
+                            .ui-state-default{
+                                border: none !important;
+                                background: none !important;
+                                text-align: center !important;
+                                color: #454545 !important;
+                            }
+                            .ui-state-hover{
+                                border: 0px solid #cccccc !important;
+                                background: #ededed !important;
+                                color: #2b2b2b !important;
+                                text-align: center !important;
+                            }
+                            .ui-state-highlight{
+                                border: 1px solid #48DC57 !important;
+                                border-radius: 6px;
+                                background: none !important;
+                                opacity: 80% !important;
+                                font-weight: normal !important;
+                                color: #454545 !important;
+                                text-align: center !important;
+                            }
+                        `);
+                    }
+                    anio = this.value.split("-")[0];
+                    mes = this.value.split("-")[1];
+                    dia = this.value.split("-")[2];
+                }
+                else{
+                    //console.log($(".ui-state-active")[0]);
+                    //$(".ui-state-active")[0].className = '';
+                    $("style#calendar").append(`
+                        a.ui-state-active{
+                            border: 1px solid #48DC57 !important;
+                            border-radius: 6px;
+                            background: none !important;
+                            opacity: 80% !important;
+                            font-weight: normal !important;
+                            color: #454545 !important;
+                            text-align: center !important;
+                        }
+                    
+                        .ui-state-default{
+                            border: none !important;
+                            background: none !important;
+                            text-align: center !important;
+                            color: #454545 !important;
+                        }
+                        .ui-state-hover{
+                            border: 0px solid #cccccc !important;
+                            background: #ededed !important;
+                            color: #2b2b2b !important;
+                            text-align: center !important;
+                        }
+                    `);
+                    $('#datepicker').datepicker('setDate', null);
+                    anio = ""; mes = ""; dia = ""; dia_seleccionado = "";
+                }
+    
+                // buscarEventosPorFiltros(tipo, area, dirigidoA, tipo_otros);
+                anio2 = anio; mes2 = mes; dia2 = dia;
+                // sombrearDiasSinEventos();
+              }
+            });
+            // $('#datepicker').attr("style", "display: none");
+        });
+    }, [page, palabra, categoria, startDate]);
 
     return (
         <>
@@ -150,6 +305,51 @@ const noticias = () => {
                             <Row>
                                 <Col md="1" lg="1"></Col>
                                 <Col md="3" lg="2">
+                                <div id="datepicker" class="mb-4"></div>
+                                    {/* <DatePicker
+                                        selected={startDate}
+                                        formatWeekDay={nameOfDay => nameOfDay.substr(0,1).toLocaleUpperCase()}
+                                        maxDate={new Date()}
+                                        onChange={(date) => {setStartDate(date)}}
+                                        inline
+                                        locale="es"
+                                    /> */}
+                                    {/* <style>
+                                        {`
+                                            a.ui-state-active{
+                                                border: 1px solid #48DC57 !important;
+                                                border-radius: 6px;
+                                                background: none !important;
+                                                opacity: 80% !important;
+                                                font-weight: normal !important;
+                                                color: #454545 !important;
+                                                text-align: center !important;
+                                            }
+                                            
+                                            .ui-state-default{
+                                                border: none !important;
+                                                background: none !important;
+                                                text-align: center !important;
+                                            }
+                                            .ui-state-hover{
+                                                border: 0px solid #cccccc !important;
+                                                background: #ededed !important;
+                                                color: #2b2b2b !important;
+                                                text-align: center !important;
+                                            }
+                                            .ui-datepicker-inline{
+                                                width: 100% !important;
+                                            }
+                                            thead{
+                                                color: #56756B !important;
+                                                background: #ffffff !important;
+                                            }
+                                            .ui-datepicker-title{
+                                                color: #56756B !important;
+                                            }
+                                        `}
+                                    </style> */}
+                                    
                                     <div className="filters-wrapper">
                                         <div className="">
                                             <div className="font-weight-bold mb-2">Categorías</div>
@@ -224,7 +424,7 @@ const noticias = () => {
                                                                     <span>
                                                                         <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
                                                                     </span>
-                                                                    <span>{new Date(noticia.fecha).getDate()} de {months[new Date(noticia.fecha).getMonth()]} de {new Date(noticia.fecha).getFullYear()}</span>
+                                                                    <span>{new Date(noticia.fecha).getDate()+1} de {months[new Date(noticia.fecha).getMonth()]} de {new Date(noticia.fecha).getFullYear()}</span>
                                                                 </p>
                                                                 <a href={`noticias/noticia?titulo=${noticia.url_titulo}`} className="mb-1 title line-clamp-2">
                                                                     {noticia?.titulo}

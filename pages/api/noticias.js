@@ -28,7 +28,7 @@ export async function getNoticiasSubcategoriasApi(){
     }
 }
 
-export async function getNoticiasApi(limit, start, palabra, categorias){
+export async function getNoticiasApi(limit, start, palabra, categorias, date){
     try {
         const limitItems = `_limit=${limit}`;
         const startItems = `_start=${start}`;
@@ -45,6 +45,10 @@ export async function getNoticiasApi(limit, start, palabra, categorias){
             }
         }
 
+        if(date != ""){
+            query = query + `&fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+        }
+
         const url = `${BASE_PATH}/noticias?_sort=fecha:DESC&${limitItems}&${startItems}${query}`;
         const response = await fetch(url);
         const result = await response.json();
@@ -55,7 +59,7 @@ export async function getNoticiasApi(limit, start, palabra, categorias){
     }
 }
 
-export async function countNoticiasApi(palabra, categorias){
+export async function countNoticiasApi(palabra, categorias, date){
     try {
         var query = '';
 
@@ -79,6 +83,15 @@ export async function countNoticiasApi(palabra, categorias){
             }
         }
 
+        if(date != ""){
+            if(query != ''){
+                query = query + `&fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+            }
+            else{
+                query = query + `?fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+            }
+        }
+
         const url = `${BASE_PATH}/noticias/count${query}`;
         const response = await fetch(url);
         const result = await response.json();
@@ -98,6 +111,24 @@ export async function getNoticiaByUrlApi(url_noticia){
     } catch (error) {
         console.log(error);
         return [];
+    }
+}
+
+export async function updateVisitasNoticiaApi(id_noticia, visitas){
+    try {
+        const url = `${BASE_PATH}/noticias/${id_noticia}`;
+        const params = {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ visitas: Number(visitas)+1 }),
+        };
+        const result = await fetch(url, params);
+        return result;
+    } catch (error) {
+        console.log(error);
+        return null;
     }
 }
   

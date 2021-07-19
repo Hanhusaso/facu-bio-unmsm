@@ -5,7 +5,7 @@ import Layout from "../../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 import Link from 'next/link';
 import { size } from "lodash";
-import {getNoticiaByUrlApi} from '../../api/noticias';
+import {getNoticiaByUrlApi, updateVisitasNoticiaApi} from '../../api/noticias';
 import { BASE_PATH_S3 } from "../../../utils/constants";
 
 const noticia = () => {
@@ -18,6 +18,23 @@ const noticia = () => {
     const [noticia, setNoticia] = useState(false);
 
     const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        // console.log(document.cookie);
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+    }
 
     useEffect(() => {
         if (!query) {
@@ -32,6 +49,12 @@ const noticia = () => {
           }
           else{
             setNoticia(response[0]);
+            var cnoticia = getCookie("noticia"+response[0].id);
+
+            if(cnoticia == ""){
+                document.cookie = "noticia"+response[0].id+"="+response[0].id;
+                const response_update_visitas = await updateVisitasNoticiaApi(response[0].id, response[0].visitas);
+            }
             setLoading(false);
             // setSinResultados(false);
           }
@@ -99,13 +122,13 @@ const noticia = () => {
                                                 <span>
                                                     <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
                                                 </span>
-                                                <span>{new Date(noticia.fecha).getDate()} de {months[new Date(noticia.fecha).getMonth()]} de {new Date(noticia.fecha).getFullYear()}</span>
+                                                <span>{new Date(noticia.fecha).getDate()+1} de {months[new Date(noticia.fecha).getMonth()]} de {new Date(noticia.fecha).getFullYear()}</span>
                                             </div>
                                             <div className="date">
                                                 <span>
                                                     <img width="22px" className="mr-2" src="/assets/img/iconos/vistas.svg" alt="" />
                                                 </span>
-                                                <span>{noticia.visitas}</span>
+                                                <span>{noticia.visitas} vistas</span>
                                             </div>
                                         </div>
                                     </Col>
