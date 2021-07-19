@@ -303,7 +303,7 @@ const Menu = () => {
                                         <li className="nav-item">
                                             {/* <Link href="/comunidad/cerseus"> */}
                                                 {/* <a className="nav-link">Cerseus</a> */}
-                                                <a href="/comunidad/cerseus" className="nav-link">Cerseus</a>
+                                                <a href="/comunidad/cerseu" className="nav-link">Cerseu</a>
                                             {/* </Link> */}
                                         </li>
                                         <li className="nav-item">

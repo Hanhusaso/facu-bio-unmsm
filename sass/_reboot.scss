@@ -172,6 +172,16 @@ ul.chevron-green-dark {
     max-width: 1400px !important;
 }
 
+.wrapper-loader-page {
+    background-image: url(/assets/img/fondo-carga/Fondo_carga.png);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    display: grid;
+    place-items: center;
+}
+
 .nav-link {
     padding: 10px 24px;
 }

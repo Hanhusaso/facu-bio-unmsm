@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Head from 'next/head'
 import Link from 'next/link'
 // import styles from '../styles/Home.module.css'
+import LoaderPage from "../components/LoaderPage";
 import Footer from "../components/Footer"
 import Menu from "../components/Menu"
 import SocialMedia from "../components/SocialMedia"
@@ -12,21 +13,28 @@ import {getNoticiasHomeApi, getNoticiasSubcategoriasApi} from './api/noticias';
 
 export default function Home() {
 
+  const [loadingPage, setLoadingPage] = useState(true)
+
   const [noticias, setNoticias] = useState([]);
   const [noticiasSubcategorias, setNoticiasSubcategorias] = useState([]);
 
   useEffect(() => {
+
+    setTimeout(() => {
+      setLoadingPage(false)
+    }, 800);
+
     (async () => {
       const response_noticias = await getNoticiasHomeApi();
       const response_subcategorias = await getNoticiasSubcategoriasApi();
       setNoticias(response_noticias);
       setNoticiasSubcategorias(response_subcategorias);
     })();
-  }, []);
+  }, [loadingPage]);
 
   return (
     <div>
-      {noticias.length != 0 && noticiasSubcategorias.length != 0 ?
+      {noticias.length != 0 && noticiasSubcategorias.length != 0 && !loadingPage ?
       <div>
         <Head>
           <title>Facultad de Ciencias Biológicas</title>
@@ -37,7 +45,7 @@ export default function Home() {
         <main>
           <section className="section-principal-home section-eventos">
             <video className="bg-home-video" loop autoplay="true" muted>
-              <source src="/assets/video/flower.mp4" type="video/mp4"/>
+              <source src="/assets/video/facu_bio.mp4" type="video/mp4"/>
             </video>
             <div className="wrapper-title-home">
               <Container fluid>
@@ -536,7 +544,7 @@ export default function Home() {
         <Footer></Footer>
       </div>
       : 
-      ''
+      <LoaderPage/>
       }
     </div>
   )
