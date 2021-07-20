@@ -91,7 +91,7 @@ export default function Home() {
                     <div className="ml-2 pad-extra-left">
                       <div className="d-flex">
                         <h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
-                        <a href="#" className="d-inline-block">
+                        <a href="/eventos" className="d-inline-block">
                           <img src="/assets/img/iconos/boton_vermas.png"/>
                         </a>
                       </div>
@@ -181,7 +181,7 @@ export default function Home() {
                       <Col md={{ span: 10, offset: 1 }}>
                         <div className="d-flex justify-content-end">
                           <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
-                          <a href="#" className="d-inline-block">
+                          <a href="/noticias" className="d-inline-block">
                             <img src="/assets/img/iconos/boton_vermas.png"/>
                           </a>
                         </div>
@@ -318,7 +318,7 @@ export default function Home() {
                     <Col md={{ span: 10, offset: 1 }}>
                       <div className="d-flex">
                         <h2 className="subtitle-green mr-1 mb-0">Carreras</h2>
-                        <a href="#" className="d-inline-block">
+                        <a href="/formacion-academica/pregrado" className="d-inline-block">
                           <img src="/assets/img/iconos/boton_vermas.png"/>
                         </a>
                       </div>
