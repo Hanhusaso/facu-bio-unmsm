@@ -14,7 +14,7 @@ import { AiFillContainer } from 'react-icons/ai'
 import { size } from "lodash";
 import { BASE_PATH_S3 } from "../../utils/constants";
 import {countNoticiasApi, getNoticiasApi, getNoticiasSubcategoriasApi} from '../api/noticias';
-// import $ from "jquery";
+import j from "jquery";
 // import 'jquery-ui';
 
 const limitPerPage = 5;
@@ -102,12 +102,24 @@ const noticias = () => {
         setNumberPage(1);
     };
 
+    useEffect(() => {
+        setTimeout(function(){ 
+            j("input[type=checkbox]").prop("checked", false);
+        }, 10);
+    }, [])
 
     useEffect(() => {
         (async () => {
-            const response1 = await countNoticiasApi(palabra, categorias, startDate);
-            setPaginador('');
-            setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />); 
+            if(palabra == ''){
+                const response1 = await countNoticiasApi(palabra, categorias, startDate);
+                setPaginador('');
+                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />); 
+            }
+            else{
+                const response1 = await countNoticiasApi(palabra, [], '');
+                setPaginador('');
+                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />);
+            }
         })();
         (async () => {
           setLoading(true);
@@ -408,20 +420,6 @@ const noticias = () => {
                                 </Col>
                                 <Col md="7" lg="8">
                                         {loading ? (
-                                            // <Loader
-                                            //     active
-                                            //     inline="centered"
-                                            //     style={{
-                                            //         color: "#39556f",
-                                            //         fontFamily: "Calibri",
-                                            //         fontWeight: "bold",
-                                            //         fontSize: "15px",
-                                            //         marginTop: "3rem",
-                                            //     }}
-                                            //     className="mt-5"
-                                            // >
-                                            //     Buscando registros...
-                                            // </Loader>
                                             <>
                                             <div className="d-flex align-items-center justify-content-center my-5">
                                                 <div className="d-inline-flex flex-column justify-content-center align-items-center">
@@ -448,7 +446,7 @@ const noticias = () => {
                                                                     <span>
                                                                         <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
                                                                     </span>
-                                                                    <span>{new Date(noticia.fecha).getDate()+1} de {months[new Date(noticia.fecha).getMonth()]} de {new Date(noticia.fecha).getFullYear()}</span>
+                                                                    <span>{new Date(noticia.fecha).getDate()} de {months[new Date(noticia.fecha).getMonth()]} de {new Date(noticia.fecha).getFullYear()}</span>
                                                                 </p>
                                                                 <a href={`noticias/noticia?titulo=${noticia.url_titulo}`} className="mb-1 title line-clamp-2">
                                                                     {noticia?.titulo}
@@ -467,7 +465,8 @@ const noticias = () => {
                                         ) : (
                                             // <SinResultados />
                                             'No se encontraron registros'
-                                            )}
+                                            )
+                                        }
                                 </Col>
                                 <Col md="1" lg="1"></Col>
                             </Row>

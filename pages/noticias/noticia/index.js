@@ -69,21 +69,6 @@ const noticia = () => {
         <>
             <Layout title="Noticia">
             {loading ? (
-                    // <Loader
-                    //     active
-                    //     inline="centered"
-                    //     style={{
-                    //         color: "#39556f",
-                    //         fontFamily: "Calibri",
-                    //         fontWeight: "bold",
-                    //         fontSize: "15px",
-                    //         marginTop: "30rem",
-                    //         marginLeft: "80rem",
-                    //     }}
-                    //     className="mt-5"
-                    // >
-                    //     Buscando formación...
-                    // </Loader>
                     <>
                     <div className="d-flex align-items-center justify-content-center my-5">
                         <div className="d-inline-flex flex-column justify-content-center align-items-center">
@@ -132,7 +117,7 @@ const noticia = () => {
                                                 <span>
                                                     <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
                                                 </span>
-                                                <span>{new Date(noticia.fecha).getDate()+1} de {months[new Date(noticia.fecha).getMonth()]} de {new Date(noticia.fecha).getFullYear()}</span>
+                                                <span>{new Date(noticia.fecha).getDate()} de {months[new Date(noticia.fecha).getMonth()]} de {new Date(noticia.fecha).getFullYear()}</span>
                                             </div>
                                             <div className="date">
                                                 <span>

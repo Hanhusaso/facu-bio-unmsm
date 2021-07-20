@@ -31,7 +31,7 @@ export default function Home() {
     minutes = minutes < 10 ? '0'+minutes : minutes;
     var strTime = hours + ':' + minutes + ' ' + ampm;
     return strTime;
-}
+  }
 
   useEffect(() => {
 
