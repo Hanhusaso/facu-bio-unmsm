@@ -10,7 +10,11 @@ import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 export default function Home() {
 	const { scrollYProgress } = useViewportScroll();
-	const x = useTransform(scrollYProgress, [0, 0.8], [0, 800]);
+	const yScroll = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+	const yScroll2 = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
+	const scroll = useTransform(scrollYProgress, [0, 0.2], [100, 0]);
+	const scroll2 = useTransform(scrollYProgress, [0, 0.2], [300, 0]);
+	const scroll3 = useTransform(scrollYProgress, [0, 0.2], [500, 0]);
 	return (
 		<div>
 			<Head>
@@ -51,7 +55,7 @@ export default function Home() {
 						<Container fluid>
 							<Row>
 								<Col md={{ span: 11, offset: 1 }} className="pr-0">
-									<div className="ml-2 pad-extra-left">
+									<motion.div style={{ opacity: yScroll }} className="ml-2 pad-extra-left">
 										<div className="d-flex">
 											<h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
 											<a href="#" className="d-inline-block">
@@ -106,7 +110,7 @@ export default function Home() {
 												</Row>
 											</Container>
 										</div>
-									</div>
+									</motion.div>
 								</Col>
 							</Row>
 						</Container>
@@ -156,7 +160,7 @@ export default function Home() {
 										</div>
 									</Col>
 									<Col md="2">
-										<div className="card-bio">
+										<motion.div style={{ y: scroll, opacity: yScroll2 }} className="card-bio">
 											<div className="part-img position-relative">
 												<div className="position-relative">
 													<img
@@ -184,10 +188,10 @@ export default function Home() {
                           className="desc-card mb-0"
                         /> */}
 											</div>
-										</div>
+										</motion.div>
 									</Col>
 									<Col md="2">
-										<div className="card-bio">
+										<motion.div style={{ y: scroll2, opacity: yScroll2 }} className="card-bio">
 											<div className="part-img position-relative">
 												<div className="position-relative">
 													<img
@@ -216,10 +220,10 @@ export default function Home() {
                           className="desc-card mb-0"
                         /> */}
 											</div>
-										</div>
+										</motion.div>
 									</Col>
 									<Col md="2">
-										<div className="card-bio">
+										<motion.div style={{ y: scroll3, opacity: yScroll2 }} className="card-bio">
 											<div className="part-img position-relative">
 												<div className="position-relative">
 													<img
@@ -247,7 +251,7 @@ export default function Home() {
                           className="desc-card mb-0"
                         /> */}
 											</div>
-										</div>
+										</motion.div>
 									</Col>
 									<Col md="1"></Col>
 								</Row>
