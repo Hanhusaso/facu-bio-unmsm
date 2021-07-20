@@ -42,23 +42,33 @@ const Footer = () => {
                         </Col>
                         <Col sm="3">
                             <ul className="nav flex-column">
-                                <li className="mb-3">Trámites y procesos</li>
-                                <li className="mb-3">Información académica</li>
-                                <li className="mb-3">Revista peruana de Biología</li>
-                                <li className="mb-3">Recursos de Investigación</li>
+                                <li className="mb-3">
+                                    <a href="/tramites-y-procesos">Trámites y procesos</a>
+                                </li>
+                                <li className="mb-3">
+                                    <a href="/informacion-academica">Información académica</a>
+                                </li>
+                                <li className="mb-3">
+                                    <a href="/investigacion/revista-peruana-biologia">Revista peruana de Biología</a>
+                                </li>
+                                <li className="mb-3">
+                                    <a href="/investigacion/recursos-investigacion">Recursos de Investigación</a>
+                                </li>
                             </ul>
                         </Col>
                         <Col sm="2">
                             <ul className="nav flex-column">
-                                <li className="mb-3">Formación académica</li>
-                                <li className="mb-3">Investigación</li>
-                                <li className="mb-3">Noticias y eventos</li>
-                                <li className="mb-3">Comunidad</li>
-                                <li className="mb-3">Nosotros</li>
+                                {/* <li className="mb-3">Formación académica</li> */}
+                                {/* <li className="mb-3">Investigación</li> */}
+                                {/* <li className="mb-3">Noticias y eventos</li> */}
+                                {/* <li className="mb-3">Comunidad</li> */}
+                                {/* <li className="mb-3">Nosotros</li> */}
                             </ul>
                         </Col>
                         <Col sm="2" className="d-flex align-items-start justify-content-end">
-                            <img className="img-logo" src="/assets/img/iconos/escudo_sanmarcos.png" alt=""/>
+                            <a href="https://www.unmsm.edu.pe/" target="_blank">
+                                <img className="img-logo" src="/assets/img/iconos/escudo_sanmarcos.png" alt=""/>
+                            </a>
                         </Col>
                         <Col sm="1"></Col>
                     </Row>

@@ -2,6 +2,9 @@ footer {
     background: $gray-dark;
     color: $wht;
     font-weight: 700;
+    a {
+        color: $wht;
+    }
     .footer-left {
         font-size: 14px;
         font-weight: 400;

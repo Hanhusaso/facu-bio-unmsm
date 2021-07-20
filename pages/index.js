@@ -375,9 +375,9 @@ export default function Home() {
                       <Col md={{ span: 10, offset: 1 }}>
                         <div className="d-flex justify-content-end">
                           <h2 className="subtitle-green mr-1 mb-0">Producción científica</h2>
-                          <a href="#" className="d-inline-block">
+                          {/* <a href="#" className="d-inline-block">
                             <img src="/assets/img/iconos/boton_vermas.png"/>
-                          </a>
+                          </a> */}
                         </div>
                       </Col>
                     </Row>

@@ -87,7 +87,10 @@ const Menu = () => {
                                         <li className="nav-item">
                                             {/* <Link href="/formacion-academica/admision"> */}
                                                 {/* <a className="nav-link">Admisión</a> */}
-                                                <a href="/formacion-academica/admision" className="nav-link">Admisión</a>
+                                                <a href="https://www.unmsm.edu.pe/formacion-academica/admision" target="_blank" className="nav-link d-flex align-items-center">
+                                                    <span className="mr-1">Admisión</span>
+                                                    <HiIcons.HiExternalLink />
+                                                </a>
                                             {/* </Link> */}
                                         </li>
                                         <li className="nav-item">
@@ -105,7 +108,10 @@ const Menu = () => {
                                         <li className="nav-item">
                                             {/* <Link href="/formacion-academica/educacion-continua"> */}
                                                 {/* <a className="nav-link">Eduación continua</a> */}
-                                                <a href="/formacion-academica/educacion-continua" className="nav-link">Eduación continua</a>
+                                                <a href=" https://www.unmsm.edu.pe/formacion-academica/educacion-continua" target="_blank" className="nav-link d-flex align-items-center">
+                                                    <span className="mr-1">Eduación continua</span>
+                                                    <HiIcons.HiExternalLink />
+                                                </a>
                                             {/* </Link> */}
                                         </li>
                                     </ul>
@@ -121,19 +127,19 @@ const Menu = () => {
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">SUM</a> */}
-                                                    <a href="#" className="nav-link">SUM</a>
+                                                    <a href="https://sum.unmsm.edu.pe/" target="_blank" className="nav-link">SUM</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Sistema de bibliotecas</a> */}
-                                                    <a href="#" className="nav-link">Sistema de bibliotecas</a>
+                                                    <a href="https://sisbib.unmsm.edu.pe/" target="_blank" className="nav-link">Sistema de bibliotecas</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Concytec</a> */}
-                                                    <a href="#" className="nav-link">Concytec</a>
+                                                    <a href="https://www.gob.pe/concytec" target="_blank" className="nav-link">Concytec</a>
                                                 {/* </Link> */}
                                             </li>
                                         </ul>
@@ -150,12 +156,9 @@ const Menu = () => {
                             <Accordion.Collapse className="wrapper-collapse" eventKey="1">
                                 <div>
                                     <ul className="nav flex-column main-sub-navs">
-                                        <li className="nav-item">
-                                            {/* <Link href="/investigacion/proyectos"> */}
-                                                {/* <a className="nav-link">Proyectos de la investigación</a> */}
-                                                <a href="/investigacion/proyectos" className="nav-link">Proyectos de la investigación</a>
-                                            {/* </Link> */}
-                                        </li>
+                                        {/* <li className="nav-item">
+                                            <a href="/investigacion/proyectos" className="nav-link">Proyectos de la investigación</a>
+                                        </li> */}
                                         <li className="nav-item">
                                             {/* <Link href="/investigacion/recursos-investigacion"> */}
                                                 {/* <a className="nav-link">Recursos para la investigación</a> */}
@@ -180,12 +183,9 @@ const Menu = () => {
                                                 <a href="/investigacion/revista-peruana-biologia" className="nav-link">Revista peruana de Biología</a>
                                             {/* </Link> */}
                                         </li>
-                                        <li className="nav-item">
-                                            {/* <Link href="/investigacion/instituto-investigaciones-biologicas"> */}
-                                                {/* <a className="nav-link">Instituto de investigaciones biológicas</a> */}
-                                                <a href="/investigacion/instituto-investigaciones-biologicas" className="nav-link">Instituto de investigaciones biológicas</a>
-                                            {/* </Link> */}
-                                        </li>
+                                        {/* <li className="nav-item">
+                                            <a href="/investigacion/instituto-investigaciones-biologicas" className="nav-link">Instituto de investigaciones biológicas</a>
+                                        </li> */}
                                         <li className="nav-item">
                                             {/* <Link href="/investigacion/instituto-investigaciones-biologicas"> */}
                                                 {/* <a className="nav-link">Instituto de investigaciones biológicas</a> */}
@@ -205,25 +205,25 @@ const Menu = () => {
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Registro de actividades de investigación de San Marcos (RAIS)</a> */}
-                                                    <a href="#" className="nav-link">Registro de actividades de investigación de San Marcos (RAIS)</a>
+                                                    <a href="https://rais.unmsm.edu.pe/user/login" target="_blank" className="nav-link">Registro de actividades de investigación de San Marcos (RAIS)</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Sistema de información de la investigación en San Marcos (SII)</a> */}
-                                                    <a href="#" className="nav-link">Sistema de información de la investigación en San Marcos (SII)</a>
+                                                    <a href="https://siis.unmsm.edu.pe/" target="_blank" className="nav-link">Sistema de información de la investigación en San Marcos (SII)</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Vicerrectorado de investigación de Posgrado</a> */}
-                                                    <a href="#" className="nav-link">Vicerrectorado de investigación de Posgrado</a>
+                                                    <a href="https://vrip.unmsm.edu.pe/" target="blank" className="nav-link">Vicerrectorado de investigación de Posgrado</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Museo de Historia Natural UNMSM</a> */}
-                                                    <a href="#" className="nav-link">Museo de Historia Natural UNMSM</a>
+                                                    <a href="https://museohn.unmsm.edu.pe/" target="_blank" className="nav-link">Museo de Historia Natural UNMSM</a>
                                                 {/* </Link> */}
                                             </li>
                                         </ul>
@@ -252,12 +252,9 @@ const Menu = () => {
                                                 <a href="/eventos" className="nav-link">Eventos</a>
                                             {/* </Link> */}
                                         </li>
-                                        <li className="nav-item">
-                                            {/* <Link href="/articulos"> */}
-                                                {/* <a className="nav-link">Artículos</a> */}
-                                                <a href="/articulos" className="nav-link">Artículos</a>
-                                            {/* </Link> */}
-                                        </li>
+                                        {/* <li className="nav-item">
+                                            <a href="/articulos" className="nav-link">Artículos</a>
+                                        </li> */}
                                     </ul>
                                     <div className="divider-green mx-3"></div>
                                     <div className="interes-links">
@@ -271,15 +268,12 @@ const Menu = () => {
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">RTV San Marcos</a> */}
-                                                    <a href="#" className="nav-link">RTV San Marcos</a>
+                                                    <a href="https://rtvsanmarcos.unmsm.edu.pe/" target="_blank" className="nav-link">RTV San Marcos</a>
                                                 {/* </Link> */}
                                             </li>
-                                            <li className="nav-item">
-                                                {/* <Link href="#"> */}
-                                                    {/* <a className="nav-link">San Marcos al Día</a> */}
-                                                    <a href="#" className="nav-link">San Marcos al Día</a>
-                                                {/* </Link> */}
-                                            </li>
+                                            {/* <li className="nav-item">
+                                                <a href="#" className="nav-link">San Marcos al Día</a>
+                                            </li> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -306,18 +300,12 @@ const Menu = () => {
                                                 <a href="/comunidad/cerseu" className="nav-link">Cerseu</a>
                                             {/* </Link> */}
                                         </li>
-                                        <li className="nav-item">
-                                            {/* <Link href="/comunidad/testimonios"> */}
-                                                {/* <a className="nav-link">Testimonios</a> */}
-                                                <a href="/comunidad/testimonios" className="nav-link">Testimonios</a>
-                                            {/* </Link> */}
-                                        </li>
-                                        <li className="nav-item">
-                                            {/* <Link href="/comunidad/proyectos"> */}
-                                                {/* <a className="nav-link">Proyectos de la comunidad</a> */}
-                                                <a href="/comunidad/proyectos" className="nav-link">Proyectos de la comunidad</a>
-                                            {/* </Link> */}
-                                        </li>
+                                        {/* <li className="nav-item">
+                                            <a href="/comunidad/testimonios" className="nav-link">Testimonios</a>
+                                        </li> */}
+                                        {/* <li className="nav-item">
+                                            <a href="/comunidad/proyectos" className="nav-link">Proyectos de la comunidad</a>
+                                        </li> */}
                                     </ul>
                                     <div className="divider-green mx-3"></div>
                                     <div className="interes-links">
@@ -331,25 +319,25 @@ const Menu = () => {
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Comunidad UNMSM</a> */}
-                                                    <a href="#" className="nav-link">Comunidad UNMSM</a>
+                                                    <a href="https://www.unmsm.edu.pe/comunidad" target="_blank" className="nav-link">Comunidad UNMSM</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Dirección General de Responsabilidad social</a> */}
-                                                    <a href="#" className="nav-link">Dirección General de Responsabilidad social</a>
+                                                    <a href="https://dgrs.unmsm.edu.pe/inicio/" target="_blank" className="nav-link">Dirección General de Responsabilidad social</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Oficina General de Bienestar universitaria</a> */}
-                                                    <a href="#" className="nav-link">Oficina General de Bienestar universitaria</a>
+                                                    <a href="https://ogbu.unmsm.edu.pe/" target="_blank" className="nav-link">Oficina General de Bienestar universitaria</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Centro de Producción Editorial e Imprenta (CEPREDIM)</a> */}
-                                                    <a href="#" className="nav-link">Centro de Producción Editorial e Imprenta (CEPREDIM)</a>
+                                                    <a href="https://ceprim.unmsm.edu.pe/" target="_blank" className="nav-link">Centro de Producción Editorial e Imprenta (CEPREDIM)</a>
                                                 {/* </Link> */}
                                             </li>
                                         </ul>
@@ -384,24 +372,18 @@ const Menu = () => {
                                                 <a href="/nosotros/institucion-y-organizacion" className="nav-link">Institución y organización</a>
                                             {/* </Link> */}
                                         </li>
-                                        <li className="nav-item">
-                                            {/* <Link href="/nosotros/oficinas"> */}
-                                                {/* <a className="nav-link">Oficinas</a> */}
-                                                <a href="/nosotros/oficinas" className="nav-link">Oficinas</a>
-                                            {/* </Link> */}
-                                        </li>
+                                        {/* <li className="nav-item">
+                                            <a href="/nosotros/oficinas" className="nav-link">Oficinas</a>
+                                        </li> */}
                                         <li className="nav-item">
                                             {/* <Link href="/nosotros/consejo-de-facultad"> */}
                                                 {/* <a className="nav-link">Consejo de facultad</a> */}
                                                 <a href="/nosotros/consejo-de-facultad" className="nav-link">Consejo de facultad</a>
                                             {/* </Link> */}
                                         </li>
-                                        <li className="nav-item">
-                                            {/* <Link href="/nosotros/normativa"> */}
-                                                {/* <a className="nav-link">Normativa y documentos de interés</a> */}
-                                                <a href="/nosotros/normativa" className="nav-link">Normativa y documentos de interés</a>
-                                            {/* </Link> */}
-                                        </li>
+                                        {/* <li className="nav-item">
+                                            <a href="/nosotros/normativa" className="nav-link">Normativa y documentos de interés</a>
+                                        </li> */}
                                         <li className="nav-item">
                                             {/* <Link href="/nosotros/transparencia"> */}
                                                 {/* <a className="nav-link">Transparencia</a> */}
@@ -421,31 +403,31 @@ const Menu = () => {
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Oficina Central de la calidad académica y acreditación</a> */}
-                                                    <a href="#" className="nav-link">Oficina Central de la calidad académica y acreditación</a>
+                                                    <a href="https://occaa.unmsm.edu.pe/" target="_blank" className="nav-link">Oficina Central de la calidad académica y acreditación</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Secretaría general</a> */}
-                                                    <a href="#" className="nav-link">Secretaría general</a>
+                                                    <a href="https://secgen.unmsm.edu.pe/wordpress/" target="_blank" className="nav-link">Secretaría general</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Comisión revisora del estatuto</a> */}
-                                                    <a href="#" className="nav-link">Comisión revisora del estatuto</a>
+                                                    <a href="https://comisionestatuto.unmsm.edu.pe/" target="_blank" className="nav-link">Comisión revisora del estatuto</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Comité electoral</a> */}
-                                                    <a href="#" className="nav-link">Comité electoral</a>
+                                                    <a href="https://celectoral1.unmsm.edu.pe/" target="_blank" className="nav-link">Comité electoral</a>
                                                 {/* </Link> */}
                                             </li>
                                             <li className="nav-item">
                                                 {/* <Link href="#"> */}
                                                     {/* <a className="nav-link">Sistema de Control interno</a> */}
-                                                    <a href="#" className="nav-link">Sistema de Control interno</a>
+                                                    <a href="https://sistcontrolinterno.unmsm.edu.pe/" target="_blank" className="nav-link">Sistema de Control interno</a>
                                                 {/* </Link> */}
                                             </li>
                                         </ul>
@@ -489,19 +471,19 @@ const Menu = () => {
                         <li className="nav-item">
                             {/* <Link href="#"> */}
                                 {/* <a className="nav-link btn-accordion-nav">Correo institucional</a> */}
-                                <a href="#" className="nav-link btn-accordion-nav">Correo institucional</a>
+                                <a href="https://webmail.unmsm.edu.pe/" target="_blank" className="nav-link btn-accordion-nav">Correo institucional</a>
                             {/* </Link> */}
                         </li>
                         <li className="nav-item">
                             {/* <Link href="#"> */}
                                 {/* <a className="nav-link btn-accordion-nav">Sistema único de matrícula (SUM)</a> */}
-                                <a href="#" className="nav-link btn-accordion-nav">Sistema único de matrícula (SUM)</a>
+                                <a href="https://sum.unmsm.edu.pe/" target="_blank" className="nav-link btn-accordion-nav">Sistema único de matrícula (SUM)</a>
                             {/* </Link> */}
                         </li>
                         <li className="nav-item">
                             {/* <Link href="#"> */}
                                 {/* <a className="nav-link btn-accordion-nav">Aula Virtual (OEV)</a> */}
-                                <a href="#" className="nav-link btn-accordion-nav">Aula Virtual (OEV)</a>
+                                <a href="http://oev.unmsm.edu.pe/" target="_blank" className="nav-link btn-accordion-nav">Aula Virtual (OEV)</a>
                             {/* </Link> */}
                         </li>
                     </ul>
@@ -514,23 +496,18 @@ const Menu = () => {
         <div className="">
             <div className="pos-toogle-btn">
                 <button className={sidebar ? "toogle-btn-menu open menu-bars btn-transparent" : "toogle-btn-menu menu-bars btn-transparent"} onClick={toogleSidebar}>
-                    {/* <FaIcons.FaBars className="icon"/> */}
-                    {/* <img src="/assets/img/iconos/hamburguesa.png" alt="" /> */}
                     <div className="menu-btn-bars"></div>
                 </button>
             </div>
             <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                 <div className="navbar-toogle">
                     <button className="menu-bars btn-transparent" onClick={showSectionMenu}>
-                        {/* <FaIcons.FaBars className="icon"/> */}
                         <img src="/assets/img/iconos/hamburguesa.png" alt="" />
                     </button>
-                    <button className="menu-search btn-transparent" onClick={showSectionSearch}>
-                        {/* <FaIcons.FaSearch className="icon"/> */}
+                    {/* <button className="menu-search btn-transparent" onClick={showSectionSearch}>
                         <img src="/assets/img/iconos/lupita_buscador.png" alt="" />
-                    </button>
+                    </button> */}
                     <button className="menu-user btn-transparent" onClick={showSectionIntranet}>
-                        {/* <FaIcons.FaRegUser className="icon"/> */}
                         <img src="/assets/img/iconos/intranet.png" alt="" />
                     </button>
                 </div>
@@ -539,7 +516,7 @@ const Menu = () => {
 
                     <div className="wrapper-sections">
                         {sectionSideBar === "SectionMenu" && <SectionMenu />}
-                        {sectionSideBar === "SectionSearch" && <SectionSearch />}
+                        {/* {sectionSideBar === "SectionSearch" && <SectionSearch />} */}
                         {sectionSideBar === "SectionIntranet" && <SectionIntranet />}
                     </div>
 
@@ -607,13 +584,13 @@ const Menu = () => {
                     <div className="intranet-responsive">
                         <ul className="nav flex-column">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Correo institucional</a>
+                                <a className="nav-link" href="https://webmail.unmsm.edu.pe/" target="_blank">Correo institucional</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Sistema único de matrícula (SUM)</a>
+                                <a className="nav-link" href="https://sum.unmsm.edu.pe/" target="_blank">Sistema único de matrícula (SUM)</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Aula Virtual (OEV)</a>
+                                <a className="nav-link" href="http://oev.unmsm.edu.pe/" target="_blank">Aula Virtual (OEV)</a>
                             </li>
                         </ul>
                     </div>
