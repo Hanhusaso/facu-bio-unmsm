@@ -12,7 +12,6 @@ import Layout from "../../components/Layout"
 import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import { AiFillContainer } from 'react-icons/ai'
 import { size } from "lodash";
-import { BASE_PATH_S3 } from "../../utils/constants";
 import {countNoticiasApi, getNoticiasApi, getNoticiasSubcategoriasApi} from '../api/noticias';
 import j from "jquery";
 // import 'jquery-ui';
@@ -437,7 +436,7 @@ const noticias = () => {
                                                         <div className="grid-img-txt-2 no-reverse">
                                                             <a className="mb-2 mb-md-0" href={`noticias/noticia?titulo=${noticia.url_titulo}`}>
                                                                 <div className="part-img position-relative">
-                                                                    <img className="w-100 img-fluid" src={BASE_PATH_S3+noticia?.imagen_previsualizacion[0].url} alt="" />
+                                                                    <img className="w-100 img-fluid" src={noticia?.imagen_previsualizacion[0].url} alt="" />
                                                                     <div className="badge-tag">{noticiasSubcategorias[noticia?.id_categoria_subcategoria.id_subcategoria-1].nombre}</div>
                                                                 </div>
                                                             </a>

@@ -242,7 +242,7 @@ const TramitesProcesos = () => {
                                     </div>
                                 </Col>
                                 <Col md="4" lg="6">
-                                {loading ? (
+                                    {loading ? (
                                             <>
                                             <div className="d-flex align-items-center justify-content-center my-5">
                                                 <div className="d-inline-flex flex-column justify-content-center align-items-center">

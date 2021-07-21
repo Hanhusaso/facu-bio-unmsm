@@ -8,7 +8,6 @@ import Menu from "../components/Menu"
 import SocialMedia from "../components/SocialMedia"
 import {Row, Col, Container, Carousel} from 'react-bootstrap'
 import ClampLines from 'react-clamp-lines';
-import { BASE_PATH_S3 } from "../utils/constants";
 import {getNoticiasHomeApi, getNoticiasSubcategoriasApi} from './api/noticias';
 import {getEventosHomeApi} from './api/eventos';
 
@@ -203,7 +202,7 @@ export default function Home() {
                       </p>
                       <div className="position-relative box-shadow mt-auto">
                         <div className="position-relative">
-                          <img className="w-100 img-fluid" src={BASE_PATH_S3+noticias[0]?.imagen_banner[0].url}></img>
+                          <img className="w-100 img-fluid" src={noticias[0]?.imagen_banner[0].url}></img>
                           <div className="dark-filter"></div>
                         </div>
                         <div className="caption-img">
@@ -215,7 +214,7 @@ export default function Home() {
                       <div className="card-bio">
                         <div className="part-img position-relative">
                           <div className="position-relative">
-                            <img className="w-100 img-fluid" src={BASE_PATH_S3+noticias[1]?.imagen_previsualizacion[0].url}></img>
+                            <img className="w-100 img-fluid" src={noticias[1]?.imagen_previsualizacion[0].url}></img>
                             <div className="dark-filter"></div>
                           </div>
                           <div className="badge-tag">
@@ -243,7 +242,7 @@ export default function Home() {
                       <div className="card-bio">
                         <div className="part-img position-relative">
                           <div className="position-relative">
-                            <img className="w-100 img-fluid" src={BASE_PATH_S3+noticias[2]?.imagen_previsualizacion[0].url}></img>
+                            <img className="w-100 img-fluid" src={noticias[2]?.imagen_previsualizacion[0].url}></img>
                             <div className="dark-filter"></div>
                           </div>
                           <div className="badge-tag">
@@ -271,7 +270,7 @@ export default function Home() {
                       <div className="card-bio">
                         <div className="part-img position-relative">
                           <div className="position-relative">
-                            <img className="w-100 img-fluid" src={BASE_PATH_S3+noticias[3]?.imagen_previsualizacion[0].url}></img>
+                            <img className="w-100 img-fluid" src={noticias[3]?.imagen_previsualizacion[0].url}></img>
                             <div className="dark-filter"></div>
                           </div>
                           <div className="badge-tag">

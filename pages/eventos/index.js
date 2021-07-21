@@ -8,7 +8,6 @@ import Layout from "../../components/Layout"
 import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import { AiFillContainer } from 'react-icons/ai'
 import { size } from "lodash";
-import { BASE_PATH_S3 } from "../../utils/constants";
 import {countEventosApi, getEventosApi} from '../api/eventos';
 import j from "jquery";
 
@@ -369,7 +368,7 @@ const eventos = () => {
                                                             </a>
                                                             <a href={`eventos/evento?nombre=${evento?.url_nombre}`}>
                                                                 <div className="part-img position-relative mb-2 mb-md-0">
-                                                                    <img className="w-100 img-fluid" src={BASE_PATH_S3+evento?.imagen[0].url} alt="" />
+                                                                    <img className="w-100 img-fluid" src={evento?.imagen[0].url} alt="" />
                                                                 </div>
                                                             </a>
                                                             <div>

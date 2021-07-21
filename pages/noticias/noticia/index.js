@@ -6,7 +6,6 @@ import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import Link from 'next/link';
 import { size } from "lodash";
 import {getNoticiaByUrlApi, updateVisitasNoticiaApi} from '../../api/noticias';
-import { BASE_PATH_S3 } from "../../../utils/constants";
 
 const noticia = () => {
 
@@ -136,7 +135,7 @@ const noticia = () => {
                                     <Col md="1" lg="1"></Col>
                                     <Col md="7" lg="8">
                                         <div className="d-flex justify-content-center mb-4">
-                                            <img className="img-fluid" src={BASE_PATH_S3+noticia.imagen_detalle[0].url} alt="" />
+                                            <img className="img-fluid" src={noticia.imagen_detalle[0].url} alt="" />
                                         </div>
                                         
                                         <div dangerouslySetInnerHTML={{ __html: noticia.cuerpo }} />

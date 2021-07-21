@@ -6,7 +6,6 @@ import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import Link from 'next/link';
 import { size } from "lodash";
 import {getEventoByUrlApi,updateVisitasEventoApi} from '../../api/eventos';
-import { BASE_PATH_S3 } from "../../../utils/constants";
 
 const evento = () => {
 
@@ -159,7 +158,7 @@ const evento = () => {
                                     <Col md="1" lg="1"></Col>
                                     <Col md="7" lg="8">
                                         <div className="d-flex justify-content-center mb-3 mb-md-4">
-                                            <img className="img-fluid" src={BASE_PATH_S3+evento.imagen[0].url} alt="" />
+                                            <img className="img-fluid" src={evento.imagen[0].url} alt="" />
                                         </div>
                                         <div dangerouslySetInnerHTML={{ __html: evento.descripcion }} />
 
