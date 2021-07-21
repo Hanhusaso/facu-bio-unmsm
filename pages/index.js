@@ -202,7 +202,7 @@ export default function Home() {
                       </p>
                       <div className="position-relative box-shadow mt-auto">
                         <div className="position-relative">
-                          <img className="w-100 img-fluid" src={noticias[0]?.imagen_banner[0].url}></img>
+                          <img className="w-100 img-fluid" src={noticias[0].imagen_banner ? noticias[0].imagen_banner[0].url : ''}></img>
                           <div className="dark-filter"></div>
                         </div>
                         <div className="caption-img">
@@ -214,7 +214,7 @@ export default function Home() {
                       <div className="card-bio">
                         <div className="part-img position-relative">
                           <div className="position-relative">
-                            <img className="w-100 img-fluid" src={noticias[1]?.imagen_previsualizacion[0].url}></img>
+                            <img className="w-100 img-fluid" src={noticias[1].imagen_previsualizacion ? noticias[1].imagen_previsualizacion[0].url : ''}></img>
                             <div className="dark-filter"></div>
                           </div>
                           <div className="badge-tag">
@@ -242,7 +242,7 @@ export default function Home() {
                       <div className="card-bio">
                         <div className="part-img position-relative">
                           <div className="position-relative">
-                            <img className="w-100 img-fluid" src={noticias[2]?.imagen_previsualizacion[0].url}></img>
+                            <img className="w-100 img-fluid" src={noticias[2].imagen_previsualizacion ? noticias[2].imagen_previsualizacion[0].url : ''}></img>
                             <div className="dark-filter"></div>
                           </div>
                           <div className="badge-tag">
@@ -270,7 +270,7 @@ export default function Home() {
                       <div className="card-bio">
                         <div className="part-img position-relative">
                           <div className="position-relative">
-                            <img className="w-100 img-fluid" src={noticias[3]?.imagen_previsualizacion[0].url}></img>
+                            <img className="w-100 img-fluid" src={noticias[3].imagen_previsualizacion ? noticias[3].imagen_previsualizacion[0].url : ''}></img>
                             <div className="dark-filter"></div>
                           </div>
                           <div className="badge-tag">

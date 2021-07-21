@@ -24,6 +24,16 @@ const Layout = ({title, children}) => {
                         color: #454545 !important;
                         text-align: center !important;
                     }
+
+                    .ui-state-highlight{
+                        border: 1px solid #48DC57 !important;
+                        border-radius: 6px;
+                        background: none !important;
+                        opacity: 80% !important;
+                        font-weight: normal !important;
+                        color: #454545 !important;
+                        text-align: center !important;
+                    }
                     
                     .ui-state-default{
                         border: none !important;

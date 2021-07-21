@@ -8,7 +8,7 @@ import Link from 'next/link'
 import { size } from "lodash";
 import {getTramiteProcesoByUrlApi} from '../../api/tramites-procesos';
 
-const anulacionMatricula = () => {
+const tramiteProceso = () => {
 
     const { query } = useRouter();
 
@@ -93,7 +93,9 @@ const anulacionMatricula = () => {
                                         <Col md="7" lg="8">
                                             <p>
                                                 <span className="mr-2 font-weight-bold">Dirigido a:</span>
-                                                <span>Alumnos de posgrado y pegrado</span>
+                                                <span>{tramiteProceso.dirigido_a.split(" || ").map((dirigido_a, index) => (
+                                                    index != tramiteProceso.dirigido_a.split(" || ").length - 1 ? dirigido_a + " y " : dirigido_a
+                                                ))}</span>
                                             </p>
                                             <p>
                                                 <span className="mr-2 font-weight-bold">Descripción:</span>
@@ -229,4 +231,4 @@ const anulacionMatricula = () => {
     )
 }
 
-export default anulacionMatricula
+export default tramiteProceso

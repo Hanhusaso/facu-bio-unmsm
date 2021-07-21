@@ -197,8 +197,8 @@ export default function InformacionAcademica() {
                                     ) : !sinResultados ? (
                                         <div>
                                             <div className="divisor my-3"></div>
-                                                {informacionesAcademicas.map(informacion_academica => (
-                                                    <div className="block-divider mb-3">
+                                                {informacionesAcademicas.map((informacion_academica, index) => (
+                                                    <div key={index} className="block-divider mb-3">
                                                         <Link href={`/informacion-academica/${informacion_academica.recurso == 'horarios' ? 'horarios' : informacion_academica.recurso == 'malla curricular' ? 'plan' : informacion_academica.recurso == 'syllabus' ? 'syllabus' : informacion_academica.recurso == 'docentes' ? 'docentes' : ''}/?nombre=${informacion_academica.url_nombre}`}>
                                                             <a className="title">{informacion_academica.nombre}</a>
                                                         </Link>
