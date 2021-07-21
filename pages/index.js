@@ -228,10 +228,7 @@ export default function Home() {
 													className="position-relative box-shadow mt-auto"
 												>
 													<div className="position-relative">
-														<img
-															className="w-100 img-fluid"
-															src={noticias[0]?.imagen_banner[0].url}
-														></img>
+                            <img className="w-100 img-fluid" src={noticias[0].imagen_banner ? noticias[0].imagen_banner[0].url : ''}></img>
 														<div className="dark-filter"></div>
 													</div>
 													<div className="caption-img">{noticias[0]?.titulo}</div>
@@ -242,11 +239,11 @@ export default function Home() {
                           <div className="card-bio">
                             <div className="part-img position-relative">
                               <div className="position-relative">
-                                <img
-                                  className="w-100 img-fluid"
-                                  src={noticias[1]?.imagen_previsualizacion[0].url}
-                                ></img>
+                                <img className="w-100 img-fluid" src={noticias[1].imagen_previsualizacion ? noticias[1].imagen_previsualizacion[0].url : ''}></img>
                                 <div className="dark-filter"></div>
+                              </div>
+                              <div className="badge-tag">
+                                {noticiasSubcategorias[noticias[1]?.id_categoria_subcategoria.id_subcategoria-1].nombre}
                               </div>
                             </div>
                             <div className="part-text filter">
@@ -268,11 +265,11 @@ export default function Home() {
                           <div className="card-bio">
                             <div className="part-img position-relative">
                               <div className="position-relative">
-                                <img
-                                  className="w-100 img-fluid"
-                                  src={noticias[2]?.imagen_previsualizacion[0].url}
-                                ></img>
+                                <img className="w-100 img-fluid" src={noticias[2].imagen_previsualizacion ? noticias[2].imagen_previsualizacion[0].url : ''}></img>
                                 <div className="dark-filter"></div>
+                              </div>
+                              <div className="badge-tag">
+                                {noticiasSubcategorias[noticias[2]?.id_categoria_subcategoria.id_subcategoria-1].nombre}
                               </div>
                             </div>
                             <div className="part-text filter">
@@ -294,11 +291,11 @@ export default function Home() {
                           <div className="card-bio">
                             <div className="part-img position-relative">
                               <div className="position-relative">
-                                <img
-                                  className="w-100 img-fluid"
-                                  src={noticias[3]?.imagen_previsualizacion[0].url}
-                                ></img>
+                                <img className="w-100 img-fluid" src={noticias[3].imagen_previsualizacion ? noticias[3].imagen_previsualizacion[0].url : ''}></img>
                                 <div className="dark-filter"></div>
+                              </div>
+                              <div className="badge-tag">
+                                {noticiasSubcategorias[noticias[3]?.id_categoria_subcategoria.id_subcategoria-1].nombre}
                               </div>
                             </div>
                             <div className="part-text filter">

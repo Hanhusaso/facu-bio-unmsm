@@ -45,7 +45,7 @@ const noticias = () => {
 
     const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
-    const [startDate, setStartDate] = useState("");
+    const [date, setDate] = useState("");
 
     var dia_seleccionado = "";
     var anio = "";
@@ -110,7 +110,7 @@ const noticias = () => {
     useEffect(() => {
         (async () => {
             if(palabra == ''){
-                const response1 = await countNoticiasApi(palabra, categorias, startDate);
+                const response1 = await countNoticiasApi(palabra, categorias, date);
                 setPaginador('');
                 setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />); 
             }
@@ -124,7 +124,7 @@ const noticias = () => {
           setLoading(true);
           setSinResultados(false);
           if(palabra == ''){
-            const response = await getNoticiasApi(limitPerPage, page, palabra, categorias, startDate);
+            const response = await getNoticiasApi(limitPerPage, page, palabra, categorias, date);
             setNoticias(response);
             const response_subcategorias = await getNoticiasSubcategoriasApi();
             setNoticiasSubcategorias(response_subcategorias);
@@ -152,6 +152,9 @@ const noticias = () => {
             window.scrollTo(0, 0);
           }
         })();
+    }, [page, palabra, categoria, date]);
+
+    useEffect(() => {
         $(function(){
             $('#datepicker').datepicker({
               inline: true,
@@ -237,6 +240,7 @@ const noticias = () => {
                             }
                         `);
                     }
+                    setDate(this.value);
                     anio = this.value.split("-")[0];
                     mes = this.value.split("-")[1];
                     dia = this.value.split("-")[2];
@@ -270,6 +274,7 @@ const noticias = () => {
                     `);
                     $('#datepicker').datepicker('setDate', null);
                     anio = ""; mes = ""; dia = ""; dia_seleccionado = "";
+                    setDate("");
                 }
     
                 // buscarEventosPorFiltros(tipo, area, dirigidoA, tipo_otros);
@@ -279,7 +284,7 @@ const noticias = () => {
             });
             // $('#datepicker').attr("style", "display: none");
         });
-    }, [page, palabra, categoria, startDate]);
+    }, []);
 
     return (
         <>
@@ -436,7 +441,7 @@ const noticias = () => {
                                                         <div className="grid-img-txt-2 no-reverse">
                                                             <a className="mb-2 mb-md-0" href={`noticias/noticia?titulo=${noticia.url_titulo}`}>
                                                                 <div className="part-img position-relative">
-                                                                    <img className="w-100 img-fluid" src={noticia?.imagen_previsualizacion[0].url} alt="" />
+                                                                    <img className="w-100 img-fluid" src={noticia.imagen_previsualizacion ? noticia.imagen_previsualizacion[0].url : ''} alt="" />
                                                                     <div className="badge-tag">{noticiasSubcategorias[noticia?.id_categoria_subcategoria.id_subcategoria-1].nombre}</div>
                                                                 </div>
                                                             </a>

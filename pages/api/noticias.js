@@ -46,7 +46,8 @@ export async function getNoticiasApi(limit, start, palabra, categorias, date){
         }
 
         if(date != ""){
-            query = query + `&fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+            // query = query + `&fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+            query = query + `&fecha_gte=${date}T00:00:00.000Z&fecha_lte=${date}T23:59:59.000Z`;
         }
 
         const url = `${BASE_PATH}/noticias?_sort=fecha:DESC&${limitItems}&${startItems}${query}`;
@@ -85,10 +86,12 @@ export async function countNoticiasApi(palabra, categorias, date){
 
         if(date != ""){
             if(query != ''){
-                query = query + `&fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+                // query = query + `&fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+                query = query + `&fecha_gte=${date}T00:00:00.000Z&fecha_lte=${date}T23:59:59.000Z`;
             }
             else{
-                query = query + `?fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+                // query = query + `?fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+                query = query + `?fecha_gte=${date}T00:00:00.000Z&fecha_lte=${date}T23:59:59.000Z`;
             }
         }
 

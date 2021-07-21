@@ -135,7 +135,7 @@ const noticia = () => {
                                     <Col md="1" lg="1"></Col>
                                     <Col md="7" lg="8">
                                         <div className="d-flex justify-content-center mb-4">
-                                            <img className="img-fluid" src={noticia.imagen_detalle[0].url} alt="" />
+                                            <img className="img-fluid" src={noticia.imagen_detalle ? noticia.imagen_detalle[0].url : ''} alt="" />
                                         </div>
                                         
                                         <div dangerouslySetInnerHTML={{ __html: noticia.cuerpo }} />

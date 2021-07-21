@@ -48,7 +48,7 @@ const TramitesProcesos = () => {
     }
 
     const onPageChange = (event, data) => {
-        setPage((data.activePage-1)*5);
+        setPage((data.activePage-1)*6);
         setNumberPage(data.activePage);
     };
 
@@ -254,19 +254,19 @@ const TramitesProcesos = () => {
                                     ) : !sinResultados ? (
                                         <div>
                                             <div className="divisor my-3"></div>
-                                                {tramitesProcesos.map(tramites_procesos => (
-                                                    <div className="block-divider mb-3">
+                                                {tramitesProcesos.map((tramites_procesos, index) => (
+                                                    <div key={index} className="block-divider mb-3">
                                                         <Link href={`/tramites-y-procesos/tramite-proceso/?nombre=${tramites_procesos.url_tramite}`}>
                                                             <a className="title">{tramites_procesos.nombre_tramite} 
-                                                                {tramites_procesos.dirigido_a.split(" || ").map(dirigido_a => (
-                                                                    <span style={{color: '#56756B'}}> | {capitalizarPrimeraLetra(dirigido_a)}</span>
+                                                                {tramites_procesos.dirigido_a.split(" || ").map((dirigido_a, index) => (
+                                                                    <span key={index} style={{color: '#56756B'}}> | {capitalizarPrimeraLetra(dirigido_a)}</span>
                                                                 ))}
                                                             </a>
                                                         </Link>
                                                         <p className="mb-3">
                                                             {tramites_procesos.descripcion}
                                                         </p>
-                                                </div>
+                                                    </div>
                                                 ))}
                                                 {paginador}
                                             </div>

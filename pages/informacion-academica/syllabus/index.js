@@ -1,12 +1,56 @@
-import React, { useState } from 'react'
-
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 // import Head from "next/head";
 // import Header from "../../components/Header"
 import Link from 'next/link'
 import Layout from "../../../components/Layout"
-import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
+import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
+import { size } from "lodash";
+import {getSyllabusByIdInformacionAcademicaApi, getInformacionAcademicaByUrlApi} from '../../api/informacion-academica';
 
 const syllabus = () => {
+
+    const { query } = useRouter();
+
+    const currentUrlInformacionAcademica = query.nombre;
+    const [syllabus, setSyllabus] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [sinResultados, setSinResultados] = useState(false);
+    const [informacionAcademica, setInformacionAcademica] = useState(false);
+    const [palabra, setPalabra] = useState("");
+
+    const onChangePalabra = (event) => {
+        setPalabra(event.target.value);
+    };
+
+    useEffect(() => {
+        if (!query) {
+            return;
+        }
+        (async () => {
+          setLoading(true);
+          setSinResultados(false);
+          const response = await getInformacionAcademicaByUrlApi(currentUrlInformacionAcademica);
+          if(size(response) == 0){
+            // setSinResultados(true);
+          }
+          else{
+            setInformacionAcademica(response[0]);
+            const response1 = await getSyllabusByIdInformacionAcademicaApi(response[0].id, palabra);
+            setSyllabus(response1);
+            setLoading(false);
+            if(size(response1) == 0){
+              setSinResultados(true);
+            }
+            else{
+              setSinResultados(false);
+            }
+          }
+          window.scrollTo(0, 0);
+        })();
+    }, [query, palabra]);
+
+
     return (
         <>
             <Layout title="Syllabus">
@@ -29,7 +73,7 @@ const syllabus = () => {
                                                 <a role="button">Información académica</a>
                                             </Link>
                                         </li>
-                                        <Breadcrumb.Item active>Syllabus | Ciencias Biológicas</Breadcrumb.Item>
+                                        <Breadcrumb.Item active>{informacionAcademica.nombre}</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col md="1"></Col>
@@ -41,7 +85,7 @@ const syllabus = () => {
                             <Row>
                                 <Col md="1"></Col>
                                 <Col>
-                                    <div className="title-page text-center">Syllabus | Ciencias Biológicas</div>
+                                    <div className="title-page text-center">{informacionAcademica.nombre}</div>
                                 </Col>
                                 <Col md="1"></Col>
                             </Row>
@@ -51,7 +95,7 @@ const syllabus = () => {
                                 <Col md="3"></Col>
                                 <Col md="6">
                                     <div>
-                                        <input className="search-input" placeholder="Busca por un curso o docente" type="text" />
+                                        <input className="search-input" placeholder="Busca por un curso o docente" type="text" onChange={onChangePalabra} />
                                     </div>
                                 </Col>
                                 <Col md="3"></Col>
@@ -61,7 +105,45 @@ const syllabus = () => {
                             <Row>
                                 <Col md="1" lg="1"></Col>
                                 <Col md="7" lg="8">
-                                    <div>
+                                    {loading ? (
+                                            <>
+                                            <div className="d-flex align-items-center justify-content-center my-5">
+                                                <div className="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <Spinner animation="border" role="status" className="mb-2"/>
+                                                    <span>Buscando registros...</span>
+                                                </div>
+                                            </div>
+                                            </>
+                                    ) : !sinResultados ? (
+                                        <div>
+                                            <div className="divisor my-3"></div>
+                                                {syllabus.map((syllabu, index) => (
+                                                    <div key={index} className="block-divider mb-3 position-relative">
+                                                        <Link href={`/informacion-academica/syllabus/curso/?nombre=${syllabu.url_nombre}`}>
+                                                            <a>
+                                                                <h3 className="title">{syllabu.nombre}</h3>
+                                                            </a>
+                                                        </Link>
+                                                        
+                                                        <p className="mb-3">Docente: {syllabu.docente}</p>
+                                                        <div className="wrapper-icon-download">
+                                                            <div>
+                                                                <Link href={syllabu.url_documento}>
+                                                                    <a target="_blank">
+                                                                        <img src="/assets/img/iconos/descarga.svg" alt=""/>
+                                                                    </a>
+                                                                </Link>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        ) : (
+                                            // <SinResultados />
+                                            'No se encontraron registros'
+                                            )
+                                    }
+                                    {/* <div>
                                         <div className="divisor my-3"></div>
                                         <div className="block-divider mb-3 position-relative">
                                             <h3 className="title">Biología y parasitología I</h3>
@@ -72,7 +154,7 @@ const syllabus = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </Col>
                                 <Col md="3" lg="2">
                                     <aside>
