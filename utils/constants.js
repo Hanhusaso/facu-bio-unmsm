@@ -1,2 +1,2 @@
-export const BASE_PATH = "http://localhost:1337";
-export const BASE_PATH_S3 = "http://localhost:1337";
+// export const BASE_PATH = "http://localhost:1337";
+export const BASE_PATH = process.env.NODE_ENV==="development"?"http://localhost:1337":"http://118.116.174.43:1337";

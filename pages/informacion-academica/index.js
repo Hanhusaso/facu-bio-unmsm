@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from "react";
 
 // import Head from "next/head";
 // import Header from "../../components/Header"
 import Link from 'next/link'
 import Layout from "../../components/Layout"
-import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
+import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import { AiFillContainer } from 'react-icons/ai'
+import { size } from "lodash";
+import {getInformacionesAcademicasApi} from '../api/informacion-academica';
+import j from "jquery";
 
 export default function InformacionAcademica() {
 
@@ -19,6 +22,78 @@ export default function InformacionAcademica() {
         "pag3",
         "pag3",
     ])
+
+    const [informacionesAcademicas, setInformacionesAcademicas] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [sinResultados, setSinResultados] = useState(false);
+    const [recursos, setRecursos] = useState([]);
+    const [recurso, setRecurso] = useState("");
+    const [escuelas, setEscuelas] = useState([]);
+    const [escuela, setEscuela] = useState("");
+
+    function removeItemFromArr ( arr, item ) {
+        var i = arr.indexOf( item );
+        arr.splice( i, 1 );
+    }
+
+    const onChangeRecurso = (event) => {
+        var encontrado = false;
+        for(var i=0; i<recursos.length; i++){
+            if(recursos[i] == event.target.value){
+                encontrado = true;
+            }
+        }
+        if(encontrado){
+            removeItemFromArr(recursos, event.target.value);
+        }
+        else{
+            recursos.push(event.target.value);
+        }
+        
+        setRecurso(Math.random());
+    };
+
+    const onChangeEscuela = (event) => {
+        var encontrado = false;
+        for(var i=0; i<escuelas.length; i++){
+            if(escuelas[i] == event.target.value){
+                encontrado = true;
+            }
+        }
+        if(encontrado){
+            removeItemFromArr(escuelas, event.target.value);
+        }
+        else{
+            escuelas.push(event.target.value);
+        }
+        
+        setEscuela(Math.random());
+    };
+
+    useEffect(() => {
+        setTimeout(function(){ 
+            j("input[type=checkbox]").prop("checked", false);
+        }, 10);
+    }, [])
+
+    useEffect(() => {
+        (async () => {
+            setLoading(true);
+            setSinResultados(false);
+         
+            const response = await getInformacionesAcademicasApi(recursos, escuelas);
+            setInformacionesAcademicas(response);
+            setLoading(false);
+            if(size(response) == 0){
+                setSinResultados(true);
+            }
+            else{
+                setSinResultados(false);
+            }
+            window.scrollTo(0, 0);
+          
+        })();
+    }, [recurso, escuela]);
 
     return (
         <>
@@ -73,19 +148,19 @@ export default function InformacionAcademica() {
                                             <div className="font-weight-bold mb-2">Recurso:</div>
                                             <div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="recurso-horarios" name="recurso-horarios" value="horarios"/>
+                                                    <input type="checkbox" id="recurso-horarios" name="recurso-horarios" value="horarios" onChange={onChangeRecurso} />
                                                     <label className="mb-0" for="recurso-horarios"><span className="checkmark"></span> Horarios</label>
                                                 </div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="recurso-malla" name="recurso-malla" value="malla"/>
+                                                    <input type="checkbox" id="recurso-malla" name="recurso-malla" value="malla curricular" onChange={onChangeRecurso} />
                                                     <label className="mb-0" for="recurso-malla"><span className="checkmark"></span> Malla curricular y plan de estudios</label>
                                                 </div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="recurso-syllabus" name="recurso-syllabus" value="syllabus"/>
+                                                    <input type="checkbox" id="recurso-syllabus" name="recurso-syllabus" value="syllabus" onChange={onChangeRecurso} />
                                                     <label className="mb-0" for="recurso-syllabus"><span className="checkmark"></span> Syllabus</label>
                                                 </div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="recurso-docentes" name="recurso-docentes" value="docentes"/>
+                                                    <input type="checkbox" id="recurso-docentes" name="recurso-docentes" value="docentes" onChange={onChangeRecurso} />
                                                     <label className="mb-0" for="recurso-docentes"><span className="checkmark"></span> Información de docentes</label>
                                                 </div>
                                             </div>
@@ -94,15 +169,15 @@ export default function InformacionAcademica() {
                                             <div className="font-weight-bold mb-2">Escuelas:</div>
                                             <div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="escuelas-ciencias-biologicas" name="escuelas-ciencias-biologicas" value="ciencias-biologicas"/>
+                                                    <input type="checkbox" id="escuelas-ciencias-biologicas" name="escuelas-ciencias-biologicas" value="ciencias biologicas" onChange={onChangeEscuela} />
                                                     <label className="mb-0" for="escuelas-ciencias-biologicas"><span className="checkmark"></span> Ciencias Biológicas</label>
                                                 </div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="escuelas-microbiologia" name="escuelas-microbiologia" value="microbiologia"/>
+                                                    <input type="checkbox" id="escuelas-microbiologia" name="escuelas-microbiologia" value="microbiologia y parasitologia" onChange={onChangeEscuela} />
                                                     <label className="mb-0" for="escuelas-microbiologia"><span className="checkmark"></span> Microbiología y parasitología</label>
                                                 </div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="escuelas-genetica" name="escuelas-genetica" value="genetica"/>
+                                                    <input type="checkbox" id="escuelas-genetica" name="escuelas-genetica" value="genetica y biotecnologia" onChange={onChangeEscuela} />
                                                     <label className="mb-0" for="escuelas-genetica"><span className="checkmark"></span> Genética y biotecnología</label>
                                                 </div>
                                             </div>
@@ -110,7 +185,45 @@ export default function InformacionAcademica() {
                                     </div>
                                 </Col>
                                 <Col md="4" lg="6">
-                                    <div>
+                                    {loading ? (
+                                            <>
+                                            <div className="d-flex align-items-center justify-content-center my-5">
+                                                <div className="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <Spinner animation="border" role="status" className="mb-2"/>
+                                                    <span>Buscando registros...</span>
+                                                </div>
+                                            </div>
+                                            </>
+                                    ) : !sinResultados ? (
+                                        <div>
+                                            <div className="divisor my-3"></div>
+                                                {informacionesAcademicas.map(informacion_academica => (
+                                                    <div className="block-divider mb-3">
+                                                        <Link href={`/informacion-academica/${informacion_academica.recurso == 'horarios' ? 'horarios' : informacion_academica.recurso == 'malla curricular' ? 'plan' : informacion_academica.recurso == 'syllabus' ? 'syllabus' : informacion_academica.recurso == 'docentes' ? 'docentes' : ''}/?nombre=${informacion_academica.url_nombre}`}>
+                                                            <a className="title">{informacion_academica.nombre}</a>
+                                                        </Link>
+                                                        <p className="mb-3">{informacion_academica.descripcion}</p>
+                                                    </div>
+                                                    // <div className="block-divider mb-3">
+                                                    //     <Link href={`/tramites-y-procesos/tramite-proceso/?nombre=${tramites_procesos.url_tramite}`}>
+                                                    //         <a className="title">{tramites_procesos.nombre_tramite} 
+                                                    //             {tramites_procesos.dirigido_a.split(" || ").map(dirigido_a => (
+                                                    //                 <span style={{color: '#56756B'}}> | {capitalizarPrimeraLetra(dirigido_a)}</span>
+                                                    //             ))}
+                                                    //         </a>
+                                                    //     </Link>
+                                                    //     <p className="mb-3">
+                                                    //         {tramites_procesos.descripcion}
+                                                    //     </p>
+                                                    // </div>
+                                                ))}
+                                            </div>
+                                        ) : (
+                                            // <SinResultados />
+                                            'No se encontraron registros'
+                                            )
+                                    }
+                                    {/* <div>
                                         <div className="divisor my-3"></div>
                                         <div className="block-divider mb-3">
                                             <Link href="/informacion-academica/horarios">
@@ -136,7 +249,7 @@ export default function InformacionAcademica() {
                                             </Link>
                                             <p className="mb-3">Todos los cursos electivos y obligatorios. Horario actualizado el 23/04/16.</p>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </Col>
                                 <Col md="3" lg="2">
                                     <aside>
