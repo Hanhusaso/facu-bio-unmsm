@@ -238,76 +238,82 @@ export default function Home() {
 												</a>
 											</Col>
 											<Col md="2">
-												<div className="card-bio">
-													<div className="part-img position-relative">
-														<div className="position-relative">
-															<img
-																className="w-100 img-fluid"
-																src={noticias[1]?.imagen_previsualizacion[0].url}
-															></img>
-															<div className="dark-filter"></div>
-														</div>
-														<div className="part-text filter">
-															<p className="title-card">{noticias[1]?.titulo}</p>
-															<p className="desc-card mb-0">{noticias[1]?.sintesis}</p>
-															{/* <ClampLines
+                        <a className="color-inherit" href={`noticias/noticia?titulo=${noticias[1].url_titulo}`}>
+                          <div className="card-bio">
+                            <div className="part-img position-relative">
+                              <div className="position-relative">
+                                <img
+                                  className="w-100 img-fluid"
+                                  src={noticias[1]?.imagen_previsualizacion[0].url}
+                                ></img>
+                                <div className="dark-filter"></div>
+                              </div>
+                            </div>
+                            <div className="part-text filter">
+                              <p className="title-card">{noticias[1]?.titulo}</p>
+                              <p className="desc-card mb-0">{noticias[1]?.sintesis}</p>
+                              {/* <ClampLines
                               text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
                               lines={4}
                               buttons={false}
                               ellipsis="..."
                               className="desc-card mb-0"
                             /> */}
-														</div>
-													</div>
-												</div>
+                            </div>
+                          </div>
+                        </a>
 											</Col>
 											<Col md="2">
-												<div className="card-bio">
-													<div className="part-img position-relative">
-														<div className="position-relative">
-															<img
-																className="w-100 img-fluid"
-																src={noticias[2]?.imagen_previsualizacion[0].url}
-															></img>
-															<div className="dark-filter"></div>
-														</div>
-														<div className="part-text filter">
-															<p className="title-card">{noticias[2]?.titulo}</p>
-															<p className="desc-card mb-0">{noticias[2]?.sintesis}</p>
-															{/* <ClampLines
+                        <a className="color-inherit" href={`noticias/noticia?titulo=${noticias[2].url_titulo}`}>
+                          <div className="card-bio">
+                            <div className="part-img position-relative">
+                              <div className="position-relative">
+                                <img
+                                  className="w-100 img-fluid"
+                                  src={noticias[2]?.imagen_previsualizacion[0].url}
+                                ></img>
+                                <div className="dark-filter"></div>
+                              </div>
+                            </div>
+                            <div className="part-text filter">
+                              <p className="title-card">{noticias[2]?.titulo}</p>
+                              <p className="desc-card mb-0">{noticias[2]?.sintesis}</p>
+                              {/* <ClampLines
                               text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
                               lines={4}
                               buttons={false}
                               ellipsis="..."
                               className="desc-card mb-0"
                             /> */}
-														</div>
-													</div>
-												</div>
+                            </div>
+                          </div>
+                        </a>
 											</Col>
 											<Col md="2">
-												<div className="card-bio">
-													<div className="part-img position-relative">
-														<div className="position-relative">
-															<img
-																className="w-100 img-fluid"
-																src={noticias[3]?.imagen_previsualizacion[0].url}
-															></img>
-															<div className="dark-filter"></div>
-														</div>
-														<div className="part-text filter">
-															<p className="title-card">{noticias[3]?.titulo}</p>
-															<p className="desc-card mb-0">{noticias[3]?.sintesis}</p>
-															{/* <ClampLines
+                        <a className="color-inherit" href={`noticias/noticia?titulo=${noticias[3].url_titulo}`}>
+                          <div className="card-bio">
+                            <div className="part-img position-relative">
+                              <div className="position-relative">
+                                <img
+                                  className="w-100 img-fluid"
+                                  src={noticias[3]?.imagen_previsualizacion[0].url}
+                                ></img>
+                                <div className="dark-filter"></div>
+                              </div>
+                            </div>
+                            <div className="part-text filter">
+                              <p className="title-card">{noticias[3]?.titulo}</p>
+                              <p className="desc-card mb-0">{noticias[3]?.sintesis}</p>
+                              {/* <ClampLines
                               text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
                               lines={4}
                               buttons={false}
                               ellipsis="..."
                               className="desc-card mb-0"
                             /> */}
-														</div>
-													</div>
-												</div>
+                            </div>
+                          </div>
+                        </a>
 											</Col>
 											<Col md="1"></Col>
 										</Row>
