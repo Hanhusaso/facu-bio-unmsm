@@ -35,7 +35,7 @@ const index = () => {
                     </div>
                 </div>
                 <p className="font-weight-bold mb-1">Horario de atención:</p>
-                <p className="mb-0">8:00 a.m. - 5:00 p.m.</p>
+                <p className="mb-0">8:30 a.m. - 4:30 p.m.</p>
             </div>
         )
     }
@@ -74,53 +74,6 @@ const index = () => {
                         </Link>
                     </li>
                 </ul>
-            </div>
-        )
-    }
-
-    const Presentacion = () => {
-        return (
-            <div className="wrapper-img-fr mb-3">
-                <div className="img-fr">
-                    <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/director.png" alt="" />
-                    <div className="caption">
-                        <div className="mb-2 font-weight-bold">Director</div>
-                        <div className="mb-1">Dr. Enoc Jara Peña</div>
-                        <div className="mb-0">ejarap@unmsm.edu.pe</div>
-                    </div>
-                </div>
-                <p>
-                    La Escuela Profesional de Ciencias Biológicas de la Universidad Nacional Mayor de San Marcos, les da la más cordial bienvenida a su portal, con el fin de brindarles información sobre la Escuela y ofrecer un mejor servicio e información a docentes, estudiantes y público en general.
-                </p>
-                <p>
-                    Nuestra Escuela forma profesionales, que impactan en el desarrollo socio económico del país, al solucionar problemas nacionales dentro de la competencia del Profesional Biólogo con mención en:
-                </p>
-                <ul className="chevron-green-dark">
-                    <li>Botánica</li>
-                    <li>Hidrobiología y Pesquería</li>
-                    <li>Zoología</li>
-                </ul>
-                <p>
-                    La Facultad de Ciencias Biológicas cuenta con la infraestructura adecuada para desarrollar sus diferentes actividades académicas, para lo cual posee un pabellón de docencia con aulas de teoría, laboratorios de práctica, laboratorios de informática debidamente equipadas, posee además recursos humanos altamente calificados. La mayoría de nuestros docentes cuentan con grados de doctor y maestrÍa que aseguran un nivel de enseñanza de excelencia.
-                </p>
-                <div>
-                    <p className="title-dark">Grado:</p>
-                    <p>Bachiller en Ciencias Biológicas</p>
-                </div>
-                <div>
-                    <p className="title-dark">Título:</p>
-                    <p>Biólogo con mención en una de las tres orientaciones: Botánica, Hidrobiología y Pesquería y Zoología.</p>
-                </div>
-                <div>
-                    <p className="title-dark">Duración:</p>
-                    <p>5 años</p>
-                </div>
-                <div>
-                    <p className="title-dark">Perfil del egresado:</p>
-                    <p>
-                        El graduado aplica métodos estandarizados y actualizados, demuestra liderazgo y capacidad de trabajo colaborativo con actitud de responsabilidad social, ética, integridad y pensamiento crítico. Conoce, identifica y valora los conceptos de las Ciencias Biológicas basados en principios científicos. Evalúa la diversidad biológica y genera información considerando enfoques organísmicos, ecológicos y evolutivos. Promueve el cuidado y gestión del ambiente, la conservación y el uso sostenible de la diversidad biológica, entre otros.
-                    </p>
-                </div>
             </div>
         )
     }
@@ -169,7 +122,7 @@ const index = () => {
                     </div>
                     {/* IMAGE */}
                     <div className="mb-4">
-                        <img className="w-100" src="/assets/img/carreras/banner_ciecias biologicas.png" alt="" />
+                        <img className="w-100" src="/assets/img/carreras/ciencias biologicas/banner_ciencias biologicas.png" alt="" />
                     </div>
 
                     <div>
@@ -224,12 +177,12 @@ const index = () => {
                                                 </a>
                                             {/* </li> */}
                                             {/* <li className="tab"> */}
-                                                <a className="tab d-flex" id="v-pills-egresados-tab" data-toggle="pill" href="#v-pills-egresados" role="tab" aria-controls="v-pills-egresados" aria-selected="false">
+                                                {/* <a className="tab d-flex" id="v-pills-egresados-tab" data-toggle="pill" href="#v-pills-egresados" role="tab" aria-controls="v-pills-egresados" aria-selected="false">
                                                     <svg width="18" height="25" viewBox="0 0 18 25" className="icon mr-3" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M2.00803e-07 23.252V3.00195C2.00803e-07 2.2063 0.316071 1.44324 0.87868 0.880633C1.44129 0.318024 2.20435 0.00195313 3 0.00195313L15 0.00195312C15.7956 0.00195313 16.5587 0.318024 17.1213 0.880633C17.6839 1.44324 18 2.2063 18 3.00195V23.252C18.0001 23.3822 17.9663 23.5102 17.9019 23.6234C17.8375 23.7366 17.7447 23.8311 17.6327 23.8975C17.5207 23.964 17.3933 24.0001 17.263 24.0024C17.1328 24.0047 17.0043 23.973 16.89 23.9105L9 19.6055L1.11 23.9105C0.995744 23.973 0.867178 24.0047 0.736957 24.0024C0.606737 24.0001 0.47935 23.964 0.367338 23.8975C0.255325 23.8311 0.162547 23.7366 0.0981369 23.6234C0.0337268 23.5102 -9.50907e-05 23.3822 2.00803e-07 23.252ZM9.24 6.15195C9.21807 6.10697 9.18394 6.06906 9.14151 6.04254C9.09907 6.01602 9.05004 6.00195 9 6.00195C8.94996 6.00195 8.90092 6.01602 8.85849 6.04254C8.81606 6.06906 8.78193 6.10697 8.76 6.15195L7.809 8.07945C7.78996 8.11844 7.76171 8.15221 7.72669 8.17782C7.69166 8.20343 7.65093 8.22013 7.608 8.22645L5.478 8.53545C5.42897 8.54289 5.38297 8.56385 5.34518 8.59596C5.30738 8.62807 5.27928 8.67008 5.26401 8.71727C5.24875 8.76445 5.24693 8.81496 5.25877 8.86313C5.2706 8.91129 5.29561 8.95521 5.331 8.98995L6.87 10.4915C6.933 10.553 6.9615 10.6415 6.9465 10.7285L6.585 12.8495C6.57685 12.8984 6.58251 12.9487 6.60136 12.9946C6.6202 13.0406 6.65148 13.0803 6.69168 13.1095C6.73188 13.1386 6.77941 13.156 6.82893 13.1596C6.87845 13.1632 6.92799 13.1529 6.972 13.13L8.877 12.128C8.91519 12.108 8.95765 12.0975 9.00075 12.0975C9.04385 12.0975 9.08631 12.108 9.1245 12.128L11.0295 13.13C11.0735 13.1525 11.1228 13.1625 11.1721 13.1587C11.2214 13.1548 11.2686 13.1374 11.3086 13.1083C11.3485 13.0793 11.3796 13.0397 11.3984 12.994C11.4172 12.9483 11.423 12.8982 11.415 12.8495L11.052 10.727C11.0443 10.6843 11.0472 10.6405 11.0602 10.5992C11.0733 10.5579 11.0962 10.5204 11.127 10.49L12.669 8.98845C12.7044 8.95371 12.7294 8.90979 12.7412 8.86163C12.7531 8.81346 12.7512 8.76295 12.736 8.71577C12.7207 8.66858 12.6926 8.62657 12.6548 8.59446C12.617 8.56234 12.571 8.54139 12.522 8.53395L10.392 8.22495C10.3491 8.21863 10.3083 8.20193 10.2733 8.17632C10.2383 8.15071 10.21 8.11694 10.191 8.07795L9.24 6.15195Z"/>
                                                     </svg>
                                                     <span>Seguimiento de egresados</span>
-                                                </a>
+                                                </a> */}
                                             {/* </li> */}
                                         </div>
                                     </div>
@@ -250,8 +203,8 @@ const index = () => {
                                                     <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/director.png" alt="" />
                                                     <div className="caption">
                                                         <div className="mb-2 font-weight-bold">Director</div>
-                                                        <div className="mb-1">Dr. Mauro Mariano Astocondor</div>
-                                                        <div className="mb-0">mmarianoa@unmsm.edu.pe</div>
+                                                        <div className="mb-1">Dr. Enoc Jara Peña</div>
+                                                        <div className="mb-0">ejarap@unmsm.edu.pe</div>
                                                     </div>
                                                 </div>
                                                 <p>
@@ -292,19 +245,19 @@ const index = () => {
                                         <div className="mb-3 tab-pane fade" id="v-pills-mision" role="tabpanel" aria-labelledby="v-pills-mision-tab">
                                             <div className="grid-img-txt-1">
                                                 <div>
-                                                    <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/mision.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/carreras/mision.png" alt="" />
                                                 </div>
                                                 <div className="mb-3 mb-md-0">
                                                     <p className="title">Misión</p>
                                                     <p className="mb-0">
-                                                        La Escuela Profesional de Ciencias Biológicas es una comunidad académica de la Facultad de Ciencias Biológicas de la Universidad Nacional Mayor de San Marcos, dedicada a la formación integral de académicos y profesionales calificados, líderes en las áreas de Botánica, Hidrobiología y Pesquería y Zoología; y generadora de conocimiento que contribuye al desarrollo sostenible del país y al impulso de la ciencia y la tecnología
+                                                        La Escuela Profesional de Ciencias Biológicas es una comunidad académica de la Facultad de Ciencias Biológicas de la Universidad Nacional Mayor de San Marcos, dedicada a la formación integral de académicos y profesionales calificados, líderes en las áreas de Botánica, Hidrobiología y Pesquería y Zoología; y generadora de conocimiento que contribuye al desarrollo sostenible del país y al impulso de la ciencia y la tecnología.
                                                     </p>
                                                 </div>
                                             </div>
                                             <div className="divisor"></div>
                                             <div className="grid-img-txt-1">
                                                 <div>
-                                                    <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/vision.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/carreras/vision.png" alt="" />
                                                 </div>
                                                 <div className="mb-3 mb-md-0">
                                                     <p className="title">Visión</p>
@@ -326,7 +279,7 @@ const index = () => {
                                                         </a>
                                                     </object>
                                                 </div>
-                                                <div className="section-compartir d-none d-sm-block mb-3">
+                                                {/* <div className="section-compartir d-none d-sm-block mb-3">
                                                     <div className="d-inline-block font-weight-bold mr-3">
                                                         Compartir vía:
                                                     </div>
@@ -341,11 +294,11 @@ const index = () => {
                                                             <img src="/assets/img/iconos/facebook.svg"/>
                                                         </a>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         {/* <div className="mb-3"> */}
-                                        <div className="mb-3 tab-pane fade" id="v-pills-egresados" role="tabpanel" aria-labelledby="v-pills-egresados-tab">
+                                        {/* <div className="mb-3 tab-pane fade" id="v-pills-egresados" role="tabpanel" aria-labelledby="v-pills-egresados-tab">
                                             <div className="grid-img-txt-2">
                                                 <div className="mx-5 mx-md-0">
                                                     <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
@@ -362,7 +315,6 @@ const index = () => {
                                                             </p>
                                                         </a>
                                                     </Link>
-                                                    {/* <p className="title">Bach. María Cárdenas López </p> */}
                                                     <p className="mb-0">
                                                         "La profesión que escogí  ha sido nombrada la carrera del futuro. Según El Colombiano "La biología dominará los currículos". Es una ciencia en la que predomina la investigación y EAFIT me ha brindado todas las herramientas necesarias para mi formación como científica; desde varios grupos de investigación y semilleros, hasta una infraestructura que cuenta con los laboratorios mejores dotados, al igual que charlas informátivas de diferentes temas de pertinencia dictadas por extranjeros y nacionales que han enriquecido mi conocimiento. 
                                                     </p>
@@ -434,7 +386,7 @@ const index = () => {
                                                     </p>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     {width < 768 && (
                                         <>

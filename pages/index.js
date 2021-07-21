@@ -407,8 +407,9 @@ export default function Home() {
 													<div className="d-flex justify-content-end">
 														<h2 className="subtitle-green mr-1 mb-0">Producción científica</h2>
 														{/* <a href="#" className="d-inline-block">
-                            <img src="/assets/img/iconos/boton_vermas.png"/>
-                          </a> */}
+                              <img src="/assets/img/iconos/boton_vermas.png"/>
+                            </a> */}
+                            <img className="d-inline-block" src="/assets/img/iconos/boton_vermas.png"/>
 													</div>
 												</Col>
 											</Row>
