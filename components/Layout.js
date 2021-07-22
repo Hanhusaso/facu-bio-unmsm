@@ -49,7 +49,7 @@ const Layout = ({title, children}) => {
                     .ui-datepicker-inline{
                         width: 100% !important;
                     }
-                    thead{
+                    .ui-datepicker-calendar thead{
                         color: #56756B !important;
                         background: #ffffff !important;
                     }
