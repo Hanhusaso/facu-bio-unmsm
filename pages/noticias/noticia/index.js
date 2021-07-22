@@ -5,7 +5,7 @@ import Layout from "../../../components/Layout"
 import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import Link from 'next/link';
 import { size } from "lodash";
-import {getNoticiaByUrlApi, updateVisitasNoticiaApi} from '../../api/noticias';
+import {getNoticiaByUrlApi, updateVisitasNoticiaApi, getNoticiasUltimasApi, getNoticiasSubcategoriasApi} from '../../api/noticias';
 
 const noticia = () => {
 
@@ -15,6 +15,9 @@ const noticia = () => {
     const [loading, setLoading] = useState(true);
     const [sinResultados, setSinResultados] = useState(false);
     const [noticia, setNoticia] = useState(false);
+    const [noticiasUltimas, setNoticiasUltimas] = useState([]);
+
+    const [noticiasSubcategorias, setNoticiasSubcategorias] = useState([]);
 
     const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
@@ -54,6 +57,10 @@ const noticia = () => {
                 document.cookie = "noticia"+response[0].id+"="+response[0].id;
                 const response_update_visitas = await updateVisitasNoticiaApi(response[0].id, response[0].visitas);
             }
+            const response_subcategorias = await getNoticiasSubcategoriasApi();
+            setNoticiasSubcategorias(response_subcategorias);
+            const response_noticias_ultimas = await getNoticiasUltimasApi(response[0].id);
+            setNoticiasUltimas(response_noticias_ultimas);
             setLoading(false);
             // setSinResultados(false);
           }
@@ -193,54 +200,26 @@ const noticia = () => {
                                                 </a>
                                             </div>
                                             <div>
-                                                <div className="card-bio mb-3">
-                                                    <div className="part-img position-relative">
-                                                        <div className="position-relative">
-                                                            <img className="w-100 img-fluid" src="/assets/img/noticias/noticia2.png"></img>
-                                                            <div className="dark-filter"></div>
-                                                        </div>
-                                                        <div className="badge-tag">
-                                                            Tecnologia
-                                                        </div>
-                                                    </div>
-                                                    <div className="part-text">
-                                                        <p className="title-card mb-0">
-                                                            Dos científicas ganan el Premio Nobel de Química 2020 por “tijeras genéticas” CRISPR-Cas9
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div className="card-bio mb-3">
-                                                    <div className="part-img position-relative">
-                                                        <div className="position-relative">
-                                                            <img className="w-100 img-fluid" src="/assets/img/noticias/noticia3.png"></img>
-                                                            <div className="dark-filter"></div>
-                                                        </div>
-                                                        <div className="badge-tag">
-                                                            Ciencia
-                                                        </div>
-                                                    </div>
-                                                    <div className="part-text">
-                                                        <p className="title-card mb-0">
-                                                            El objetivo de nuestro proyecto es ir en camino a producir clones de alpacas
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div className="card-bio mb-3">
-                                                    <div className="part-img position-relative">
-                                                        <div className="position-relative">
-                                                            <img className="w-100 img-fluid" src="/assets/img/noticias/noticia4.png"></img>
-                                                            <div className="dark-filter"></div>
-                                                        </div>
-                                                        <div className="badge-tag">
-                                                            Facultad
-                                                        </div>
-                                                    </div>
-                                                    <div className="part-text">
-                                                        <p className="title-card mb-0">
-                                                            ¡La FCB ya cuenta oficialmente con un nuevo y moderno pabellón!
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                {noticiasUltimas.map((noticia_ultima, index) =>(
+                                                    <div key={index} className="card-bio mb-3">
+                                                        <a href={`/noticias/noticia?titulo=${noticia_ultima.url_titulo}`} style={{color: '#56756B'}}>
+                                                            <div className="part-img position-relative">
+                                                                <div className="position-relative">
+                                                                    <img className="w-100 img-fluid" src={noticia_ultima.imagen_previsualizacion ? noticia_ultima.imagen_previsualizacion[0].url : ''}></img>
+                                                                    <div className="dark-filter"></div>
+                                                                </div>
+                                                                <div className="badge-tag">
+                                                                {noticiasSubcategorias[noticia_ultima.id_categoria_subcategoria.id_subcategoria-1].nombre}
+                                                                </div>
+                                                            </div>
+                                                            <div className="part-text">
+                                                                <p className="title-card mb-0">
+                                                                    {noticia_ultima.titulo}
+                                                                </p>
+                                                            </div>
+                                                        </a>
+                                                    </div> 
+                                                ))}
                                             </div>
                                         </aside>
                                     </Col>

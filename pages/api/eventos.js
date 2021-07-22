@@ -27,9 +27,7 @@ export async function getEventosApi(limit, start, palabra, tipos, date){
             // query = query + `&_where[_or][0][nombre_contains]=${palabra}&_where[_or][1][fk_centro_de_estudios.centro_contains]=${palabra}`
             query = query + `&nombre_contains=${palabra}`;
         }
-        else{
-            fechas_posteriores = fechas_posteriores + `&fechaInicio_gte=${(String(new Date().getFullYear()))+"-"+(new Date().getMonth()+1 < 10 ? "0"+String(new Date().getMonth()+1) : String(new Date().getMonth()+1))+"-"+(new Date().getDate() < 10 ? "0"+String(new Date().getDate()) : String(new Date().getDate()))}`;
-        }
+
         if(tipos.length != 0){
             for(var i=0; i<tipos.length; i++){
                 if(tipos[i] != 'otros'){
@@ -43,7 +41,12 @@ export async function getEventosApi(limit, start, palabra, tipos, date){
         }
 
         if(date != ""){
-            query = query + `&fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+            // query = query + `&fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+            query = query + `&fechaInicio_gte=${date}T00:00:00.000Z&fechaInicio_lte=${date}T23:59:59.000Z`;
+        }
+
+        if(palabra == "" && date == ""){
+            fechas_posteriores = fechas_posteriores + `&fechaInicio_gte=${(String(new Date().getFullYear()))+"-"+(new Date().getMonth()+1 < 10 ? "0"+String(new Date().getMonth()+1) : String(new Date().getMonth()+1))+"-"+(new Date().getDate() < 10 ? "0"+String(new Date().getDate()) : String(new Date().getDate()))}`;
         }
 
         const url = `${BASE_PATH}/eventos?_sort=fechaInicio:ASC&${limitItems}&${startItems}${query}${fechas_posteriores}`;
@@ -67,13 +70,6 @@ export async function countEventosApi(palabra, tipos, date){
             }
             else{
                 query = query + `?nombre_contains=${palabra}`;
-            }
-        }else{
-            if(query != ''){
-                fechas_posteriores = fechas_posteriores + `&fechaInicio_gte=${(String(new Date().getFullYear()))+"-"+(new Date().getMonth()+1 < 10 ? "0"+String(new Date().getMonth()+1) : String(new Date().getMonth()+1))+"-"+(new Date().getDate() < 10 ? "0"+String(new Date().getDate()) : String(new Date().getDate()))}`;
-            }
-            else{
-                fechas_posteriores = fechas_posteriores + `?fechaInicio_gte=${(String(new Date().getFullYear()))+"-"+(new Date().getMonth()+1 < 10 ? "0"+String(new Date().getMonth()+1) : String(new Date().getMonth()+1))+"-"+(new Date().getDate() < 10 ? "0"+String(new Date().getDate()) : String(new Date().getDate()))}`;
             }
         }
 
@@ -101,10 +97,21 @@ export async function countEventosApi(palabra, tipos, date){
 
         if(date != ""){
             if(query != ''){
-                query = query + `&fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+                // query = query + `&fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+                query = query + `&fechaInicio_gte=${date}T00:00:00.000Z&fechaInicio_lte=${date}T23:59:59.000Z`;
             }
             else{
-                query = query + `?fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+                // query = query + `?fecha=${new Date(date).getFullYear()+"-"+(new Date(date).getMonth()+1 < 10 ? "0"+(new Date(date).getMonth()+1) : new Date(date).getMonth()+1)+"-"+(new Date(date).getDate() < 10 ? "0"+new Date(date).getDate() : new Date(date).getDate())}`;
+                query = query + `?fechaInicio_gte=${date}T00:00:00.000Z&fechaInicio_lte=${date}T23:59:59.000Z`;
+            }
+        }
+
+        if(palabra == "" && date == ""){
+            if(query != ''){
+                fechas_posteriores = fechas_posteriores + `&fechaInicio_gte=${(String(new Date().getFullYear()))+"-"+(new Date().getMonth()+1 < 10 ? "0"+String(new Date().getMonth()+1) : String(new Date().getMonth()+1))+"-"+(new Date().getDate() < 10 ? "0"+String(new Date().getDate()) : String(new Date().getDate()))}`;
+            }
+            else{
+                fechas_posteriores = fechas_posteriores + `?fechaInicio_gte=${(String(new Date().getFullYear()))+"-"+(new Date().getMonth()+1 < 10 ? "0"+String(new Date().getMonth()+1) : String(new Date().getMonth()+1))+"-"+(new Date().getDate() < 10 ? "0"+String(new Date().getDate()) : String(new Date().getDate()))}`;
             }
         }
 
@@ -148,9 +155,9 @@ export async function updateVisitasEventoApi(id_evento, visitas){
     }
 }
 
-export async function getEventosUltimosApi(){
+export async function getEventosProximosApi(id_evento){
     try {
-        const url = `${BASE_PATH}/eventos/?`;
+        const url = `${BASE_PATH}/eventos/?_sort=fechaInicio:ASC&_limit=3&fechaInicio_gte=${(String(new Date().getFullYear()))+"-"+(new Date().getMonth()+1 < 10 ? "0"+String(new Date().getMonth()+1) : String(new Date().getMonth()+1))+"-"+(new Date().getDate() < 10 ? "0"+String(new Date().getDate()) : String(new Date().getDate()))}&id_ne=${id_evento}`;
         const response = await fetch(url);
         const result = await response.json();
         return result;

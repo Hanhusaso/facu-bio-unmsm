@@ -145,14 +145,13 @@ const eventos = () => {
             $('#datepicker').datepicker({
               inline: true,
               firstDay: 1,
-              maxDate: new Date(),
               dateFormat: "yy-mm-dd",
               showOtherMonths: false,
               dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
               monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ],
               onSelect: function(dateText) {
                 // sombrearDiasSinEventos();
-                console.log("Selected date: " + dateText + "; input's current value: " + this.value);
+                // console.log("Selected date: " + dateText + "; input's current value: " + this.value);
                 if(dia_seleccionado != this.value){
                     dia_seleccionado = this.value;
                     var hoy_1 = new Date();
@@ -226,6 +225,7 @@ const eventos = () => {
                             }
                         `);
                     }
+                    setStartDate(this.value);
                     anio = this.value.split("-")[0];
                     mes = this.value.split("-")[1];
                     dia = this.value.split("-")[2];
@@ -259,6 +259,7 @@ const eventos = () => {
                     `);
                     $('#datepicker').datepicker('setDate', null);
                     anio = ""; mes = ""; dia = ""; dia_seleccionado = "";
+                    setStartDate("");
                 }
     
                 // buscarEventosPorFiltros(tipo, area, dirigidoA, tipo_otros);
@@ -272,6 +273,51 @@ const eventos = () => {
 
     return (
         <>
+            <style id="calendar">
+                {`
+                    a.ui-state-active{
+                        border: 1px solid #48DC57 !important;
+                        border-radius: 6px;
+                        background: none !important;
+                        opacity: 80% !important;
+                        font-weight: normal !important;
+                        color: #454545 !important;
+                        text-align: center !important;
+                    }
+
+                    .ui-state-highlight{
+                        border: 1px solid #48DC57 !important;
+                        border-radius: 6px;
+                        background: none !important;
+                        opacity: 80% !important;
+                        font-weight: normal !important;
+                        color: #454545 !important;
+                        text-align: center !important;
+                    }
+                    
+                    .ui-state-default{
+                        border: none !important;
+                        background: none !important;
+                        text-align: center !important;
+                    }
+                    .ui-state-hover{
+                        border: 0px solid #cccccc !important;
+                        background: #ededed !important;
+                        color: #2b2b2b !important;
+                        text-align: center !important;
+                    }
+                    .ui-datepicker-inline{
+                        width: 100% !important;
+                    }
+                    thead{
+                        color: #56756B !important;
+                        background: #ffffff !important;
+                    }
+                    .ui-datepicker-title{
+                        color: #56756B !important;
+                    }
+                `}
+            </style>
             <Layout title="Eventos">
                 <div>
                     <div>
