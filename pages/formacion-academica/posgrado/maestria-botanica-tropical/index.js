@@ -46,7 +46,7 @@ const index = () => {
 
     return (
         <>
-            <Layout title="Doctorado en Ciencias Biológicas">
+            <Layout title="Maestría en Botánica Tropical">
                 <div>
                     <div>
                         <Container>
@@ -68,7 +68,7 @@ const index = () => {
                                                 <a role="button">Formación académica: Posgrado</a>
                                             </Link>
                                         </li>
-                                        <Breadcrumb.Item active>Doctorado en Ciencias Biológicas</Breadcrumb.Item>
+                                        <Breadcrumb.Item active>Maestría en Botánica Tropical</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col md="1"></Col>
@@ -80,7 +80,7 @@ const index = () => {
                             <Row>
                                 <Col md="1"></Col>
                                 <Col>
-                                    <div className="title-page text-center">Doctorado en Ciencias Biológicas</div>
+                                    <div className="title-page text-center">Maestría en Botánica Tropical</div>
                                 </Col>
                                 <Col md="1"></Col>
                             </Row>
@@ -88,7 +88,7 @@ const index = () => {
                     </div>
                     {/* IMAGE */}
                     <div className="mb-4">
-                        <img className="w-100" src="/assets/img/posgrado/doctorado ciencias biologicas/banner-doctorado-ciencias-biologicas-unmsm.png" alt="" />
+                        <img className="w-100" src="/assets/img/posgrado/maestria botanica tropical/banner-maestria-botanica-tropical-unmsm.png" alt="" />
                     </div>
 
                     <div>
