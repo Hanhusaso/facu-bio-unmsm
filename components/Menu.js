@@ -168,7 +168,7 @@ const Menu = () => {
                                         <li className="nav-item">
                                             {/* <Link href="/investigacion/biblioteca"> */}
                                                 {/* <a className="nav-link">Biblioteca</a> */}
-                                                <a href="/investigacion/biblioteca" className="nav-link">Biblioteca</a>
+                                                <a href="/investigacion/bibliotecas" className="nav-link">Bibliotecas</a>
                                             {/* </Link> */}
                                         </li>
                                         <li className="nav-item">
