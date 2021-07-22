@@ -61,8 +61,8 @@ const pregrado = () => {
                                         </a>
                                     </Link>
                                 </Col>
-                                <Col className="d-flex flex-column justify-content-center mb-3 mb-md-0" md="4">
-                                    <div className="text-center">
+                                <Col className="d-flex flex-column justify-content-center" md="4">
+                                    <div className="text-center mb-3">
                                         <Link href="/formacion-academica/pregrado/ciencias-biologicas">
                                             <a className="title-green">
                                                 E.P. Ciencias Biológicas
@@ -81,8 +81,8 @@ const pregrado = () => {
                         <Container className="mb-4 mb-md-5">
                             <Row>
                                 <Col md="2"></Col>
-                                <Col className="d-flex flex-column justify-content-center mb-3 mb-md-0" md="4">
-                                    <div className="text-center">
+                                <Col className="d-flex flex-column justify-content-center" md="4">
+                                    <div className="text-center mb-3">
                                         <Link href="/formacion-academica/pregrado/genetica-biotecnologia">
                                             <a className="title-green">
                                                 E.P Genética y Biotecnología
@@ -116,8 +116,8 @@ const pregrado = () => {
                                         </a>
                                     </Link>
                                 </Col>
-                                <Col className="d-flex flex-column justify-content-center mb-3 mb-md-0" md="4">
-                                    <div className="text-center">
+                                <Col className="d-flex flex-column justify-content-center" md="4">
+                                    <div className="text-center mb-3">
                                         <Link href="/formacion-academica/pregrado/microbiologia-parasitologia">
                                             <a className="title-green">
                                                 E.P Microbiología y Parasitología
