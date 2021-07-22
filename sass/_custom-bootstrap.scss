@@ -1,7 +1,8 @@
 $breadcrumb-divider: quote(">");
 
 body {
-    min-height: 100vh;
+	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 // .d-sm-none {

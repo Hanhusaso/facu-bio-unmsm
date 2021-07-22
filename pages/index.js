@@ -10,10 +10,11 @@ import { Row, Col, Container, Carousel } from "react-bootstrap";
 import ClampLines from "react-clamp-lines";
 import { getNoticiasHomeApi, getNoticiasSubcategoriasApi } from "./api/noticias";
 import { getEventosHomeApi } from "./api/eventos";
+import { motion } from "framer-motion";
 
 export default function Home() {
 	const [loadingPage, setLoadingPage] = useState(true);
-
+	console.log("Renderizo el home");
 	const [noticias, setNoticias] = useState([]);
 	const [noticiasSubcategorias, setNoticiasSubcategorias] = useState([]);
 	const [eventos, setEventos] = useState([]);
@@ -48,7 +49,17 @@ export default function Home() {
 		setTimeout(() => {
 			setLoadingPage(false);
 		}, 800);
-
+	}, []);
+	useEffect(() => {
+		// const consultas = async () => {
+		// 	const response_noticias = await getNoticiasHomeApi();
+		// 	const response_subcategorias = await getNoticiasSubcategoriasApi();
+		// 	setNoticias(response_noticias);
+		// 	setNoticiasSubcategorias(response_subcategorias);
+		// 	const response_eventos = await getEventosHomeApi();
+		// 	setEventos(response_eventos);
+		// };
+		// consultas();
 		(async () => {
 			const response_noticias = await getNoticiasHomeApi();
 			const response_subcategorias = await getNoticiasSubcategoriasApi();
@@ -57,7 +68,7 @@ export default function Home() {
 			const response_eventos = await getEventosHomeApi();
 			setEventos(response_eventos);
 		})();
-	}, [loadingPage]);
+	}, []);
 
 	return (
 		<div>
@@ -74,10 +85,15 @@ export default function Home() {
 					<SocialMedia />
 					<main>
 						<section className="section-principal-home section-eventos">
-							<video className="bg-home-video" loop autoplay="true" muted>
+							<video className="bg-home-video" loop autoPlay={true} muted>
 								<source src="/assets/video/facu_bio.mp4" type="video/mp4" />
 							</video>
-							<div className="wrapper-title-home">
+							<motion.div
+								className="wrapper-title-home"
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{ duration: 2, delay: 3 }}
+							>
 								<Container fluid>
 									<Row>
 										{/* <Col></Col> */}
@@ -98,17 +114,26 @@ export default function Home() {
 										</Col>
 									</Row>
 								</Container>
-							</div>
-							<div className="wrapper-eventos">
+							</motion.div>
+							<motion.div
+								className="wrapper-eventos"
+								initial={{ left: "100vw", opacity: 0 }}
+								animate={{ left: 0, opacity: 1 }}
+								transition={{ delay: 1.5, duration: 1.5 }}
+							>
 								<Container fluid>
 									<Row>
 										<Col md={{ span: 11, offset: 1 }} className="pr-0">
 											<div className="ml-2 pad-extra-left">
 												<div className="d-flex">
 													<h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
-													<a href="/eventos" className="d-inline-block">
+													<motion.a
+														href="/eventos"
+														className="d-inline-block"
+														whileHover={{ scale: 1.1 }}
+													>
 														<img src="/assets/img/iconos/boton_vermas.png" />
-													</a>
+													</motion.a>
 												</div>
 												<div className="wrapper-just-events">
 													<Container fluid className="px-0">
@@ -170,18 +195,18 @@ export default function Home() {
 																<p className="lugar-evento mb-0">{eventos[3]?.lugar}</p>
 															</Col>
 															{/* <Col>
-                              <p className="fecha-evento">
-                                <span>03 marzo</span>
-                                <span className="divisor-text mx-2"></span>
-                                <span>3 p.m.</span>
-                              </p>
-                              <p className="titulo-evento">
-                                Conferencia “Microrganismos de la selva central del Perú, un estudio de descubrimiento”
-                              </p>
-                              <p className="lugar-evento mb-0">
-                                Auditorio Tomas Romero-Facultad 3 piso
-                              </p>
-                            </Col> */}
+											<p className="fecha-evento">
+											  <span>03 marzo</span>
+											  <span className="divisor-text mx-2"></span>
+											  <span>3 p.m.</span>
+											</p>
+											<p className="titulo-evento">
+											  Conferencia “Microrganismos de la selva central del Perú, un estudio de descubrimiento”
+											</p>
+											<p className="lugar-evento mb-0">
+											  Auditorio Tomas Romero-Facultad 3 piso
+											</p>
+										  </Col> */}
 														</Row>
 													</Container>
 												</div>
@@ -189,7 +214,7 @@ export default function Home() {
 										</Col>
 									</Row>
 								</Container>
-							</div>
+							</motion.div>
 						</section>
 						<div className="bg-green-png">
 							<section className="section-noticias pt-5 mb-5">
@@ -228,89 +253,136 @@ export default function Home() {
 													className="position-relative box-shadow mt-auto"
 												>
 													<div className="position-relative">
-                            <img className="w-100 img-fluid" src={noticias[0].imagen_banner ? noticias[0].imagen_banner[0].url : ''}></img>
+														<img
+															className="w-100 img-fluid"
+															src={
+																noticias[0].imagen_banner ? noticias[0].imagen_banner[0].url : ""
+															}
+														></img>
 														<div className="dark-filter"></div>
 													</div>
 													<div className="caption-img">{noticias[0]?.titulo}</div>
 												</a>
 											</Col>
 											<Col md="2">
-                        <a className="color-inherit" href={`noticias/noticia?titulo=${noticias[1].url_titulo}`}>
-                          <div className="card-bio">
-                            <div className="part-img position-relative">
-                              <div className="position-relative">
-                                <img className="w-100 img-fluid" src={noticias[1].imagen_previsualizacion ? noticias[1].imagen_previsualizacion[0].url : ''}></img>
-                                <div className="dark-filter"></div>
-                              </div>
-                              <div className="badge-tag">
-                                {noticiasSubcategorias[noticias[1]?.id_categoria_subcategoria.id_subcategoria-1].nombre}
-                              </div>
-                            </div>
-                            <div className="part-text filter">
-                              <p className="title-card">{noticias[1]?.titulo}</p>
-                              <p className="desc-card mb-0">{noticias[1]?.sintesis}</p>
-                              {/* <ClampLines
-                              text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
-                              lines={4}
-                              buttons={false}
-                              ellipsis="..."
-                              className="desc-card mb-0"
-                            /> */}
-                            </div>
-                          </div>
-                        </a>
+												<a
+													className="color-inherit"
+													href={`noticias/noticia?titulo=${noticias[1].url_titulo}`}
+												>
+													<div className="card-bio">
+														<div className="part-img position-relative">
+															<div className="position-relative">
+																<img
+																	className="w-100 img-fluid"
+																	src={
+																		noticias[1].imagen_previsualizacion
+																			? noticias[1].imagen_previsualizacion[0].url
+																			: ""
+																	}
+																></img>
+																<div className="dark-filter"></div>
+															</div>
+															<div className="badge-tag">
+																{
+																	noticiasSubcategorias[
+																		noticias[1]?.id_categoria_subcategoria.id_subcategoria - 1
+																	].nombre
+																}
+															</div>
+														</div>
+														<div className="part-text filter">
+															<p className="title-card">{noticias[1]?.titulo}</p>
+															<p className="desc-card mb-0">{noticias[1]?.sintesis}</p>
+															{/* <ClampLines
+											text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
+											lines={4}
+											buttons={false}
+											ellipsis="..."
+											className="desc-card mb-0"
+										  /> */}
+														</div>
+													</div>
+												</a>
 											</Col>
 											<Col md="2">
-                        <a className="color-inherit" href={`noticias/noticia?titulo=${noticias[2].url_titulo}`}>
-                          <div className="card-bio">
-                            <div className="part-img position-relative">
-                              <div className="position-relative">
-                                <img className="w-100 img-fluid" src={noticias[2].imagen_previsualizacion ? noticias[2].imagen_previsualizacion[0].url : ''}></img>
-                                <div className="dark-filter"></div>
-                              </div>
-                              <div className="badge-tag">
-                                {noticiasSubcategorias[noticias[2]?.id_categoria_subcategoria.id_subcategoria-1].nombre}
-                              </div>
-                            </div>
-                            <div className="part-text filter">
-                              <p className="title-card">{noticias[2]?.titulo}</p>
-                              <p className="desc-card mb-0">{noticias[2]?.sintesis}</p>
-                              {/* <ClampLines
-                              text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
-                              lines={4}
-                              buttons={false}
-                              ellipsis="..."
-                              className="desc-card mb-0"
-                            /> */}
-                            </div>
-                          </div>
-                        </a>
+												<a
+													className="color-inherit"
+													href={`noticias/noticia?titulo=${noticias[2].url_titulo}`}
+												>
+													<div className="card-bio">
+														<div className="part-img position-relative">
+															<div className="position-relative">
+																<img
+																	className="w-100 img-fluid"
+																	src={
+																		noticias[2].imagen_previsualizacion
+																			? noticias[2].imagen_previsualizacion[0].url
+																			: ""
+																	}
+																></img>
+																<div className="dark-filter"></div>
+															</div>
+															<div className="badge-tag">
+																{
+																	noticiasSubcategorias[
+																		noticias[2]?.id_categoria_subcategoria.id_subcategoria - 1
+																	].nombre
+																}
+															</div>
+														</div>
+														<div className="part-text filter">
+															<p className="title-card">{noticias[2]?.titulo}</p>
+															<p className="desc-card mb-0">{noticias[2]?.sintesis}</p>
+															{/* <ClampLines
+											text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
+											lines={4}
+											buttons={false}
+											ellipsis="..."
+											className="desc-card mb-0"
+										  /> */}
+														</div>
+													</div>
+												</a>
 											</Col>
 											<Col md="2">
-                        <a className="color-inherit" href={`noticias/noticia?titulo=${noticias[3].url_titulo}`}>
-                          <div className="card-bio">
-                            <div className="part-img position-relative">
-                              <div className="position-relative">
-                                <img className="w-100 img-fluid" src={noticias[3].imagen_previsualizacion ? noticias[3].imagen_previsualizacion[0].url : ''}></img>
-                                <div className="dark-filter"></div>
-                              </div>
-                              <div className="badge-tag">
-                                {noticiasSubcategorias[noticias[3]?.id_categoria_subcategoria.id_subcategoria-1].nombre}
-                              </div>
-                            </div>
-                            <div className="part-text filter">
-                              <p className="title-card">{noticias[3]?.titulo}</p>
-                              <p className="desc-card mb-0">{noticias[3]?.sintesis}</p>
-                              {/* <ClampLines
-                              text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
-                              lines={4}
-                              buttons={false}
-                              ellipsis="..."
-                              className="desc-card mb-0"
-                            /> */}
-                            </div>
-                          </div>
-                        </a>
+												<a
+													className="color-inherit"
+													href={`noticias/noticia?titulo=${noticias[3].url_titulo}`}
+												>
+													<div className="card-bio">
+														<div className="part-img position-relative">
+															<div className="position-relative">
+																<img
+																	className="w-100 img-fluid"
+																	src={
+																		noticias[3].imagen_previsualizacion
+																			? noticias[3].imagen_previsualizacion[0].url
+																			: ""
+																	}
+																></img>
+																<div className="dark-filter"></div>
+															</div>
+															<div className="badge-tag">
+																{
+																	noticiasSubcategorias[
+																		noticias[3]?.id_categoria_subcategoria.id_subcategoria - 1
+																	].nombre
+																}
+															</div>
+														</div>
+														<div className="part-text filter">
+															<p className="title-card">{noticias[3]?.titulo}</p>
+															<p className="desc-card mb-0">{noticias[3]?.sintesis}</p>
+															{/* <ClampLines
+											text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
+											lines={4}
+											buttons={false}
+											ellipsis="..."
+											className="desc-card mb-0"
+										  /> */}
+														</div>
+													</div>
+												</a>
 											</Col>
 											<Col md="1"></Col>
 										</Row>
@@ -404,9 +476,12 @@ export default function Home() {
 													<div className="d-flex justify-content-end">
 														<h2 className="subtitle-green mr-1 mb-0">Producción científica</h2>
 														{/* <a href="#" className="d-inline-block">
-                              <img src="/assets/img/iconos/boton_vermas.png"/>
-                            </a> */}
-                            <img className="d-inline-block" src="/assets/img/iconos/boton_vermas.png"/>
+											<img src="/assets/img/iconos/boton_vermas.png"/>
+										  </a> */}
+														<img
+															className="d-inline-block"
+															src="/assets/img/iconos/boton_vermas.png"
+														/>
 													</div>
 												</Col>
 											</Row>
@@ -458,12 +533,12 @@ export default function Home() {
 														</p>
 														<p className="author-card mb-0">Mag. María Bermejo</p>
 														{/* <ClampLines
-                            text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
-                            lines={4}
-                            buttons={false}
-                            ellipsis="..."
-                            className="desc-card mb-0"
-                          /> */}
+										  text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
+										  lines={4}
+										  buttons={false}
+										  ellipsis="..."
+										  className="desc-card mb-0"
+										/> */}
 													</div>
 												</div>
 											</Col>
@@ -486,12 +561,12 @@ export default function Home() {
 														</p>
 														<p className="author-card mb-0">Mag. María Bermejo</p>
 														{/* <ClampLines
-                            text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
-                            lines={4}
-                            buttons={false}
-                            ellipsis="..."
-                            className="desc-card mb-0"
-                          /> */}
+										  text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
+										  lines={4}
+										  buttons={false}
+										  ellipsis="..."
+										  className="desc-card mb-0"
+										/> */}
 													</div>
 												</div>
 											</Col>
@@ -514,12 +589,12 @@ export default function Home() {
 														</p>
 														<p className="author-card mb-0">Mag. María Bermejo</p>
 														{/* <ClampLines
-                            text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
-                            lines={4}
-                            buttons={false}
-                            ellipsis="..."
-                            className="desc-card mb-0"
-                          /> */}
+										  text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
+										  lines={4}
+										  buttons={false}
+										  ellipsis="..."
+										  className="desc-card mb-0"
+										/> */}
 													</div>
 												</div>
 											</Col>
