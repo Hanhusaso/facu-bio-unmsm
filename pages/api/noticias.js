@@ -135,9 +135,21 @@ export async function updateVisitasNoticiaApi(id_noticia, visitas){
     }
 }
 
-export async function getNoticiasUltimasApi(){
+export async function getNoticiasUltimasApi(id_noticia){
     try {
-        const url = `${BASE_PATH}/noticias/?`;
+        const url = `${BASE_PATH}/noticias/?_sort=fecha:DESC&_limit=3&id_ne=${id_noticia}`;
+        const response = await fetch(url);
+        const result = await response.json();
+        return result;
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}
+
+export async function getNoticiasUltimas2Api(){
+    try {
+        const url = `${BASE_PATH}/noticias/?_sort=fecha:DESC&_limit=3`;
         const response = await fetch(url);
         const result = await response.json();
         return result;

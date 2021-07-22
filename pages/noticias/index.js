@@ -166,7 +166,7 @@ const noticias = () => {
               monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ],
               onSelect: function(dateText) {
                 // sombrearDiasSinEventos();
-                console.log("Selected date: " + dateText + "; input's current value: " + this.value);
+                // console.log("Selected date: " + dateText + "; input's current value: " + this.value);
                 if(dia_seleccionado != this.value){
                     dia_seleccionado = this.value;
                     var hoy_1 = new Date();
@@ -288,6 +288,51 @@ const noticias = () => {
 
     return (
         <>
+            <style id="calendar">
+                {`
+                    a.ui-state-active{
+                        border: 1px solid #48DC57 !important;
+                        border-radius: 6px;
+                        background: none !important;
+                        opacity: 80% !important;
+                        font-weight: normal !important;
+                        color: #454545 !important;
+                        text-align: center !important;
+                    }
+
+                    .ui-state-highlight{
+                        border: 1px solid #48DC57 !important;
+                        border-radius: 6px;
+                        background: none !important;
+                        opacity: 80% !important;
+                        font-weight: normal !important;
+                        color: #454545 !important;
+                        text-align: center !important;
+                    }
+                    
+                    .ui-state-default{
+                        border: none !important;
+                        background: none !important;
+                        text-align: center !important;
+                    }
+                    .ui-state-hover{
+                        border: 0px solid #cccccc !important;
+                        background: #ededed !important;
+                        color: #2b2b2b !important;
+                        text-align: center !important;
+                    }
+                    .ui-datepicker-inline{
+                        width: 100% !important;
+                    }
+                    thead{
+                        color: #56756B !important;
+                        background: #ffffff !important;
+                    }
+                    .ui-datepicker-title{
+                        color: #56756B !important;
+                    }
+                `}
+            </style>
             <Layout title="Noticias">
                 <div>
                     <div>
@@ -436,7 +481,7 @@ const noticias = () => {
                                             <div>
                                                 <div className="divisor my-3 mt-md-0"></div>
 
-                                                { noticias.map((noticia, index) =>(
+                                                {noticias.map((noticia, index) =>(
                                                     <div key={index}>
                                                         <div className="grid-img-txt-2 no-reverse">
                                                             <a className="mb-2 mb-md-0" href={`noticias/noticia?titulo=${noticia.url_titulo}`}>

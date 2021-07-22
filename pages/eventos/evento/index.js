@@ -5,7 +5,7 @@ import Layout from "../../../components/Layout"
 import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import Link from 'next/link';
 import { size } from "lodash";
-import {getEventoByUrlApi,updateVisitasEventoApi} from '../../api/eventos';
+import {getEventoByUrlApi,updateVisitasEventoApi, getEventosProximosApi} from '../../api/eventos';
 
 const evento = () => {
 
@@ -15,6 +15,7 @@ const evento = () => {
     const [loading, setLoading] = useState(true);
     const [sinResultados, setSinResultados] = useState(false);
     const [evento, setEvento] = useState(false);
+    const [eventosProximos, setEventosProximos] = useState([]);
 
     const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
@@ -65,6 +66,8 @@ const evento = () => {
                 document.cookie = "evento"+response[0].id+"="+response[0].id;
                 const response_update_visitas = await updateVisitasEventoApi(response[0].id, response[0].visitas);
             }
+            const response_eventos_proximos = await getEventosProximosApi(response[0].id);
+            setEventosProximos(response_eventos_proximos);
             setLoading(false);
             // setSinResultados(false);
           }
@@ -203,105 +206,43 @@ const evento = () => {
                                                 </a>
                                             </div>
                                             <div>
-                                                <div className="card-bio no-grid mb-3">
-                                                    <div className="part-img position-relative d-none d-md-block">
-                                                        <div className="position-relative">
-                                                            <img className="w-100 img-fluid" src="/assets/img/noticias/noticia2.png"></img>
-                                                            <div className="dark-filter"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="part-text">
-                                                        <p className="title-card title mb-0">
-                                                            Dos científicas ganan el Premio Nobel de Química 2020 por “tijeras genéticas” CRISPR-Cas9
-                                                        </p>
-                                                    </div>
-                                                    <div className="part-info">
-                                                        <div className="date mb-1">
-                                                            <span>
-                                                                <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
-                                                            </span>
-                                                            <span>7 de abril de 2021</span>
-                                                        </div>
-                                                        <div className="date mb-1">
-                                                            <span>
-                                                                <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
-                                                            </span>
-                                                            <span>5:00 pm</span>
-                                                        </div>
-                                                        <div className="date mb-1">
-                                                            <span>
-                                                                <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
-                                                            </span>
-                                                            <span>Zoom meetings</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="card-bio no-grid mb-3">
-                                                    <div className="part-img position-relative d-none d-md-block">
-                                                        <div className="position-relative">
-                                                            <img className="w-100 img-fluid" src="/assets/img/noticias/noticia3.png"></img>
-                                                            <div className="dark-filter"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="part-text">
-                                                        <p className="title-card title mb-0">
-                                                            El objetivo de nuestro proyecto es ir en camino a producir clones de alpacas
-                                                        </p>
-                                                    </div>
-                                                    <div className="part-info">
-                                                        <div className="date mb-1">
-                                                            <span>
-                                                                <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
-                                                            </span>
-                                                            <span>7 de abril de 2021</span>
-                                                        </div>
-                                                        <div className="date mb-1">
-                                                            <span>
-                                                                <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
-                                                            </span>
-                                                            <span>5:00 pm</span>
-                                                        </div>
-                                                        <div className="date mb-1">
-                                                            <span>
-                                                                <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
-                                                            </span>
-                                                            <span>Zoom meetings</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="card-bio no-grid mb-3">
-                                                    <div className="part-img position-relative d-none d-md-block">
-                                                        <div className="position-relative">
-                                                            <img className="w-100 img-fluid" src="/assets/img/noticias/noticia4.png"></img>
-                                                            <div className="dark-filter"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="part-text">
-                                                        <p className="title-card title mb-0">
-                                                            ¡La FCB ya cuenta oficialmente con un nuevo y moderno pabellón!
-                                                        </p>
-                                                    </div>
-                                                    <div className="part-info">
-                                                        <div className="date mb-1">
-                                                            <span>
-                                                                <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
-                                                            </span>
-                                                            <span>7 de abril de 2021</span>
-                                                        </div>
-                                                        <div className="date mb-1">
-                                                            <span>
-                                                                <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
-                                                            </span>
-                                                            <span>5:00 pm</span>
-                                                        </div>
-                                                        <div className="date mb-1">
-                                                            <span>
-                                                                <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
-                                                            </span>
-                                                            <span>Zoom meetings</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                {eventosProximos.map((evento_proximo, index) =>(
+                                                    <div key={index} className="card-bio no-grid mb-3">
+                                                        <a href={`/eventos/evento?nombre=${evento_proximo.url_nombre}`} style={{color: '#56756B'}}>
+                                                            <div className="part-img position-relative d-none d-md-block">
+                                                                <div className="position-relative">
+                                                                    <img className="w-100 img-fluid" src={evento_proximo.imagen ? evento_proximo.imagen[0].url : ''}></img>
+                                                                    <div className="dark-filter"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="part-text">
+                                                                <p className="title-card title mb-0">
+                                                                    {evento_proximo.nombre}
+                                                                </p>
+                                                            </div>
+                                                            <div className="part-info">
+                                                                <div className="date mb-1">
+                                                                    <span>
+                                                                        <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
+                                                                    </span>
+                                                                    <span>{new Date(evento_proximo.fechaInicio).getDate()} de {months[new Date(evento_proximo.fechaInicio).getMonth()]} de {new Date(evento_proximo.fechaInicio).getFullYear()}</span>
+                                                                </div>
+                                                                <div className="date mb-1">
+                                                                    <span>
+                                                                        <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
+                                                                    </span>
+                                                                    <span>{formatAMPM(new Date(evento_proximo.fechaInicio))}</span>
+                                                                </div>
+                                                                <div className="date mb-1">
+                                                                    <span>
+                                                                        <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
+                                                                    </span>
+                                                                    <span>{evento_proximo.lugar}</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div> 
+                                                ))}
                                             </div>
                                         </aside>
                                     </Col>

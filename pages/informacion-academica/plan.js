@@ -9,6 +9,7 @@ import Layout from "../../components/Layout"
 import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import { size } from "lodash";
 import {getInformacionAcademicaByUrlApi, getPlanEstudiosByIdInformacionAcademicaApi} from '../api/informacion-academica';
+import {getNoticiasUltimas2Api, getNoticiasSubcategoriasApi} from '../api/noticias';
 
 const plan = () => {
 
@@ -19,6 +20,9 @@ const plan = () => {
     const [sinResultados, setSinResultados] = useState(false);
     const [informacionAcademica, setInformacionAcademica] = useState(false);
     const [planEstudio, setPlanEstudio] = useState(false);
+    const [noticiasUltimas, setNoticiasUltimas] = useState([]);
+    const [noticiasSubcategorias, setNoticiasSubcategorias] = useState([]);
+
 
     useEffect(() => {
         if (!query) {
@@ -35,6 +39,10 @@ const plan = () => {
             setInformacionAcademica(response[0]);
             const response1 = await getPlanEstudiosByIdInformacionAcademicaApi(response[0].id);
             setPlanEstudio(response1[0]);
+            const response_subcategorias = await getNoticiasSubcategoriasApi();
+            setNoticiasSubcategorias(response_subcategorias);
+            const response_noticias_ultimas = await getNoticiasUltimas2Api();
+            setNoticiasUltimas(response_noticias_ultimas);
             setLoading(false);
             // setSinResultados(false);
           }
@@ -136,59 +144,31 @@ const plan = () => {
                                             <aside>
                                                 <div className="d-flex mb-3">
                                                     <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
-                                                    <a href="#" className="d-inline-block">
+                                                    <a href="/noticias" className="d-inline-block">
                                                         <img src="/assets/img/iconos/boton_vermas.png"/>
                                                     </a>
                                                 </div>
                                                 <div>
-                                                    <div className="card-bio mb-3">
-                                                        <div className="part-img position-relative">
-                                                            <div className="position-relative">
-                                                                <img className="w-100 img-fluid" src="/assets/img/noticias/noticia2.png"></img>
-                                                                <div className="dark-filter"></div>
-                                                            </div>
-                                                            <div className="badge-tag">
-                                                                Tecnologia
-                                                            </div>
-                                                        </div>
-                                                        <div className="part-text">
-                                                            <p className="title-card mb-0">
-                                                                Dos científicas ganan el Premio Nobel de Química 2020 por “tijeras genéticas” CRISPR-Cas9
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className="card-bio mb-3">
-                                                        <div className="part-img position-relative">
-                                                            <div className="position-relative">
-                                                                <img className="w-100 img-fluid" src="/assets/img/noticias/noticia3.png"></img>
-                                                                <div className="dark-filter"></div>
-                                                            </div>
-                                                            <div className="badge-tag">
-                                                                Ciencia
-                                                            </div>
-                                                        </div>
-                                                        <div className="part-text">
-                                                            <p className="title-card mb-0">
-                                                                El objetivo de nuestro proyecto es ir en camino a producir clones de alpacas
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className="card-bio mb-3">
-                                                        <div className="part-img position-relative">
-                                                            <div className="position-relative">
-                                                                <img className="w-100 img-fluid" src="/assets/img/noticias/noticia4.png"></img>
-                                                                <div className="dark-filter"></div>
-                                                            </div>
-                                                            <div className="badge-tag">
-                                                                Facultad
-                                                            </div>
-                                                        </div>
-                                                        <div className="part-text">
-                                                            <p className="title-card mb-0">
-                                                                ¡La FCB ya cuenta oficialmente con un nuevo y moderno pabellón!
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                                    {noticiasUltimas.map((noticia_ultima, index) =>(
+                                                        <div key={index} className="card-bio mb-3">
+                                                            <a href={`/noticias/noticia?titulo=${noticia_ultima.url_titulo}`} style={{color: '#56756B'}}>
+                                                                <div className="part-img position-relative">
+                                                                    <div className="position-relative">
+                                                                        <img className="w-100 img-fluid" src={noticia_ultima.imagen_previsualizacion ? noticia_ultima.imagen_previsualizacion[0].url : ''}></img>
+                                                                        <div className="dark-filter"></div>
+                                                                    </div>
+                                                                    <div className="badge-tag">
+                                                                    {noticiasSubcategorias[noticia_ultima.id_categoria_subcategoria.id_subcategoria-1].nombre}
+                                                                    </div>
+                                                                </div>
+                                                                <div className="part-text">
+                                                                    <p className="title-card mb-0">
+                                                                        {noticia_ultima.titulo}
+                                                                    </p>
+                                                                </div>
+                                                            </a>
+                                                        </div> 
+                                                    ))}
                                                 </div>
                                             </aside>
                                         </Col>
