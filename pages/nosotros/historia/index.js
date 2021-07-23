@@ -53,7 +53,7 @@ const pregrado = () => {
                                         </p>
                                     </div>
 
-                                    <p className="title-dark mb-4">
+                                    {/* <p className="title-dark mb-4">
                                         Galería
                                     </p>
 
@@ -76,7 +76,7 @@ const pregrado = () => {
                                                 Galería 3
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </Col>
                                 <Col md="3" lg="2">
                                     <aside>
@@ -111,7 +111,7 @@ const pregrado = () => {
                                             </p>
                                             <ul className="nav flex-column">
                                                 <li className="mb-2 text-center font-weight-bold">
-                                                    <Link href="#">
+                                                    <Link href="/investigacion/grupos-investigacion">
                                                         <a>
                                                             Infórmate aquí
                                                         </a>

@@ -176,8 +176,8 @@ const index = () => {
                                             </p>
                                             <ul className="nav flex-column">
                                                 <li className="mb-2 text-center font-weight-bold">
-                                                    <Link href="/tramites-y-procesos/preguntas-frecuentes">
-                                                        <a>
+                                                    <Link href="https://sisbib.unmsm.edu.pe/">
+                                                        <a target="_blank">
                                                             Pregúntale al bibliotecario
                                                         </a>
                                                     </Link>

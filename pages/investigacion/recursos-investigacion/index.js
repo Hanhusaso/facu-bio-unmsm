@@ -157,8 +157,8 @@ const recursosInvestigacion = () => {
                                             </p>
                                             <ul className="nav flex-column">
                                                 <li className="mb-2 text-center font-weight-bold">
-                                                    <Link href="#">
-                                                        <a>
+                                                    <Link href="https://sisbib.unmsm.edu.pe/">
+                                                        <a target="_blank">
                                                             Pregúntale al bibliotecario
                                                         </a>
                                                     </Link>
