@@ -559,19 +559,20 @@ export default function Home() {
 													de alumnos, docentes
 													<br />y egresados
 												</p>
-												<div className="position-relative box-shadow mt-auto">
+												<a href="/investigacion/proyectos/proyecto-fondecyt" className="position-relative box-shadow mt-auto">
 													<div className="position-relative">
-														<img
-															className="w-100 img-fluid"
-															src="/assets/img/proyectos/proyecto_ejemplo_1.png"
-														></img>
-														<div className="dark-filter"></div>
+														<div className="position-relative">
+															<img
+																className="w-100 img-fluid"
+																src="/assets/img/investigacion/proyectos/proyecto-1-proteasas-ofidicas-accion-migrastatica-cancer-mama-detalle.png"
+															></img>
+															<div className="dark-filter"></div>
+														</div>
+														<div className="caption-img">
+															Proyecto FONDECYT: Proteasas ofídicas con acción migrastática sobre líneas celulares de cáncer de mama triple negativo: hacia una mejor comprensión de la metástasis
+														</div>
 													</div>
-													<div className="caption-img">
-														Max Hidalgo sobre su paso por la FCB: "Aprendí a crear en función de la
-														naturaleza"
-													</div>
-												</div>
+												</a>
 											</Col>
 											<Col md="2">
 												<div className="card-bio">

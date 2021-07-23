@@ -16,20 +16,18 @@ const index = () => {
                                 <Col md="1"></Col>
                                 <Col>
                                     <Breadcrumb>
-                                        {/* <Breadcrumb.Item> */}
                                         <li className="breadcrumb-item">
                                             <Link href="/">
                                                 <a role="button">Inicio</a>
                                             </Link>
                                         </li>
-                                        {/* </Breadcrumb.Item> */}
-                                        {/* <Breadcrumb.Item active>Formación académica</Breadcrumb.Item> */}
-                                        <li className="breadcrumb-item">
+                                        {/* <li className="breadcrumb-item">
                                             <Link href="/investigacion/proyectos">
                                                 <a role="button">Investigación: Producción científica de la facultad</a>
                                             </Link>
-                                        </li>
-                                        <Breadcrumb.Item active>Nuestros Nanobiofertilizantes...</Breadcrumb.Item>
+                                        </li> */}
+                                        <li className="breadcrumb-item">Investigación: Producción científica de la facultad</li>
+                                        <Breadcrumb.Item active>Proyecto FONDECYT: Proteasas...</Breadcrumb.Item>
                                     </Breadcrumb>
                                 </Col>
                                 <Col md="1"></Col>
@@ -42,7 +40,7 @@ const index = () => {
                                 <Col md="1" lg="1"></Col>
                                 <Col md="7" lg="8">
                                     <div className="title-page mb-2">
-                                        Nuestros Nanobiofertilizantes: uso de arcillas en la preparación de emulsiones de Pickering para formulados agrícolas a base de biomasa microalgal de Arthrospira máxima
+                                        Proyecto FONDECYT: Proteasas ofídicas con acción migrastática sobre líneas celulares de cáncer de mama triple negativo: hacia una mejor comprensión de la metástasis
                                     </div>
                                 </Col>
                                 <Col md="3" lg="2"></Col>
@@ -53,11 +51,11 @@ const index = () => {
                             <Row>
                                 <Col md="1" lg="1"></Col>
                                 <Col md="7" lg="8">
+                                    <p className="img-info">Responsable: Dr. Dan Vivas</p>
                                     <div className="img-float-left mb-3 mr-3">
-                                        <p className="img-info">Genómica funcional de microorganismos y biorremediación</p>
-                                        <img className="w-100 img-fluid" src="/assets/img/investigacion/proyectos/proyecto_desarrollo.png" alt="" />
+                                        <img className="w-100 img-fluid" src="/assets/img/investigacion/proyectos/proyecto-1-proteasas-ofidicas-accion-migrastatica-cancer-mama-detalle.png" alt="" />
                                     </div>
-                                    <p>
+                                    {/* <p>
                                         Se discute en este trabajo el desarrollo histórico, significado y valor heurístico de la Historia Natural en la reflexión teórica y generación de hipótesis en biología. Sobre esta base se fundamenta la validez de una metodología propia en el dominio de las ciencias naturales históricas, en general.
                                     </p>
                                     <p>
@@ -71,8 +69,11 @@ const index = () => {
                                     </p>
                                     <p>
                                         En este contexto, es crucial el giro que conlleva el pensamiento evolutivo de Lamark y Darwin, quienes reemplazan la doctrina fijista de las especies, dominante en su época, por una concepción que reconoce sus transformaciones como producto de la historia. La teoría evolutiva −fundamentada en la integración y discusión de evidencias empíricas procedentes de la Historia Natural de la época (sistemática, anatomía comparada, desarrollo, distribución geográfica, geología y paleontología)− se plasma en El Origen de las Especies (1859), la obra cumbre de Darwin, que transforma radicalmente el modo de entender las relaciones entre los organismos e introduce una perspectiva histórica en el estudio de la vida. Así la Historia Natural se abre hacia la comprensión de los seres vivos como agentes de su propia historia. El tiempo irrumpe en el ordenado espacio de la clasificación de la modernidad, centrada en la búsqueda de una mathesis cualitativa para el ordenamiento de los seres vivos; ella cede paso a una nueva "Historia Natural", centrada ahora en el origen y transformación histórica de los mismos.
+                                    </p> */}
+                                    <p>
+                                        En el 2020, el Laboratorio de Biología Molecular de la Facultad de Ciencias Biológicas en colaboración con el Laboratorio de Bioenergética y Plasticidad Metabólica de la Facultad de Medicina de la Universidad de Chile (UDC) dieron a conocer a la comunidad científica el efecto migrastático (inhibición de la migración) de la pictobina sobre las líneas tumorales de cáncer de mama y de pulmón (https://doi.org/10.1016/j.ijbiomac.2020.03.055). En esta investigación, los autores descubrieron que este importante efecto está relacionado con la alteración funcional y estructural de las mitocondrias en las células neoplásicas. Ahora, sumado a la colaboración del Dr. Frey Romero del Laboratorio de Bioquímica y Biología Molecular de la Universidad Nacional San Agustín de Arequipa (UNSA) y del Dr. Félix Urra (UDC), el grupo TOXIVEN de la UNMSM, liderados en esta oportunidad por el Dr. Dan Vivas, pondrán en marcha el proyecto titulado: “Proteasas ofídicas con acción migrastática sobre líneas celulares de cáncer de mama triple negativo: hacia una mejor comprensión de la metástasis”, el cuál ha sido uno de los proyectos seleccionados para su financiación con el monto de S/ 500 000 soles por parte del FONDECYT. En dicha propuesta se estudiará los aspectos genético-moleculares y celulares por el cual las proteasas de las serpientes Bothrops atrox y Bothrops pictus desarrollan su efecto inhibitorio de la migración tumoral y el compromiso mitocondrial. Como parte del desarrollo de este proyecto, se financiarán directamente 2 tesis de posgrado y una de pregrado y fortalecerá los lazos de investigación interinstitucional entre la UNMSM-UNSA-UDC en el marco de la red <a href="http://snake-research.com/" target="_blank">http://snake-research.com/</a>
                                     </p>
-                                    <div className="title-dark mb-3">Bibliografía</div>
+                                    {/* <div className="title-dark mb-3">Bibliografía</div>
                                     <div>
                                         <p>
                                             ALVAREZ, L.W., W. ALVAREZ, F. ASARO & H.V. MICHEL. 1980. Extraterrestrial Cause for the Cretaceous Tertiary Extinction. Science 208: 1095-1108. 
@@ -80,8 +81,8 @@ const index = () => {
                                         <p>
                                             ARIEW, A. 2007. Teleology. In D. Hull & M. Ruse (eds.), Cambridge Companion to Philosophy of Biology, pp. 160-181. Cambridge. Cambridge University Press. <a href="#">[ Links ]</a>
                                         </p>
-                                    </div>
-                                    <div className="section-compartir mb-3">
+                                    </div> */}
+                                    {/* <div className="section-compartir mb-3">
                                         <div className="d-inline-block font-weight-bold mr-3">
                                             Compartir vía:
                                         </div>
@@ -96,7 +97,7 @@ const index = () => {
                                                 <img src="/assets/img/iconos/facebook.svg"/>
                                             </a>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </Col>
                                 <Col md="3" lg="2">
                                     <aside>
