@@ -647,8 +647,7 @@ const Menu = () => {
 					className="navbar-toogle"
 					initial={{ top: "-25vh" }}
 					animate={{ top: 0 }}
-					transition={{ duration: 1.5 }}
-					// whileHover={{ scale: 1.1 }}
+					transition={{ duration: 0.5 }}
 				>
 					<button className="menu-bars btn-transparent" onClick={showSectionMenu}>
 						<img src="/assets/img/iconos/hamburguesa.png" alt="" />

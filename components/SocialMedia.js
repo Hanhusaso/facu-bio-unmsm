@@ -14,7 +14,7 @@ const SocialMedia = () => {
 			className="wrapper-social-media"
 			initial={{ bottom: "-25vh" }}
 			animate={{ bottom: 0 }}
-			transition={{ duration: 1.5 }}
+			transition={{ duration: 0.5 }}
 			whileHover={{ scale: 1.1 }}
 		>
 			<ul className="nav flex-column">

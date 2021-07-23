@@ -10,7 +10,7 @@ import { Row, Col, Container, Carousel } from "react-bootstrap";
 import ClampLines from "react-clamp-lines";
 import { getNoticiasHomeApi, getNoticiasSubcategoriasApi } from "./api/noticias";
 import { getEventosHomeApi } from "./api/eventos";
-import { motion } from "framer-motion";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 export default function Home() {
 	const [loadingPage, setLoadingPage] = useState(true);
@@ -18,6 +18,14 @@ export default function Home() {
 	const [noticias, setNoticias] = useState([]);
 	const [noticiasSubcategorias, setNoticiasSubcategorias] = useState([]);
 	const [eventos, setEventos] = useState([]);
+	const { scrollYProgress } = useViewportScroll();
+	const intro_noticias = useTransform(scrollYProgress, [0, 0.2], [0.2, 1]);
+	const noticia_uno = useTransform(scrollYProgress, [0, 0.2], [-200, 0]);
+	const noticia_dos = useTransform(scrollYProgress, [0, 0.2], [200, 0]);
+	const noticia_tres = useTransform(scrollYProgress, [0, 0.2], [400, 0]);
+	const noticia_cuatro = useTransform(scrollYProgress, [0, 0.2], [600, 0]);
+	const intro_carreras = useTransform(scrollYProgress, [0.2, 0.4], [0.2, 1]);
+	const microscopio = useTransform(scrollYProgress, [0.5, 0.8], [0.3, 1]);
 
 	const months = [
 		"enero",
@@ -48,7 +56,7 @@ export default function Home() {
 	useEffect(() => {
 		setTimeout(() => {
 			setLoadingPage(false);
-		}, 800);
+		}, 300);
 	}, []);
 	useEffect(() => {
 		// const consultas = async () => {
@@ -92,7 +100,7 @@ export default function Home() {
 								className="wrapper-title-home"
 								initial={{ opacity: 0 }}
 								animate={{ opacity: 1 }}
-								transition={{ duration: 2, delay: 3 }}
+								transition={{ duration: 2.5 }}
 							>
 								<Container fluid>
 									<Row>
@@ -119,7 +127,7 @@ export default function Home() {
 								className="wrapper-eventos"
 								initial={{ left: "100vw", opacity: 0 }}
 								animate={{ left: 0, opacity: 1 }}
-								transition={{ delay: 1.5, duration: 1.5 }}
+								transition={{ duration: 1.5 }}
 							>
 								<Container fluid>
 									<Row>
@@ -241,16 +249,24 @@ export default function Home() {
 												className="d-flex flex-column position-relative"
 												md={{ span: 4, offset: 0 }}
 											>
-												<p className="mb-0 txt-noticias-bg">
+												<motion.p
+													className="mb-0 txt-noticias-bg"
+													style={{
+														opacity: intro_noticias,
+													}}
+												>
 													Entérate de
 													<br />
 													las últimas
 													<br />
 													novedades
-												</p>
-												<a
+												</motion.p>
+												<motion.a
+													style={{ x: noticia_uno }}
 													href={`noticias/noticia?titulo=${noticias[0].url_titulo}`}
 													className="position-relative box-shadow mt-auto"
+													whileHover={{ scale: 1.05 }}
+													transition={{ duration: 0.2 }}
 												>
 													<div className="position-relative">
 														<img
@@ -262,14 +278,19 @@ export default function Home() {
 														<div className="dark-filter"></div>
 													</div>
 													<div className="caption-img">{noticias[0]?.titulo}</div>
-												</a>
+												</motion.a>
 											</Col>
 											<Col md="2">
 												<a
 													className="color-inherit"
 													href={`noticias/noticia?titulo=${noticias[1].url_titulo}`}
 												>
-													<div className="card-bio">
+													<motion.div
+														style={{ y: noticia_dos }}
+														className="card-bio"
+														whileHover={{ scale: 1.05 }}
+														transition={{ duration: 0.2 }}
+													>
 														<div className="part-img position-relative">
 															<div className="position-relative">
 																<img
@@ -301,7 +322,7 @@ export default function Home() {
 											className="desc-card mb-0"
 										  /> */}
 														</div>
-													</div>
+													</motion.div>
 												</a>
 											</Col>
 											<Col md="2">
@@ -309,7 +330,12 @@ export default function Home() {
 													className="color-inherit"
 													href={`noticias/noticia?titulo=${noticias[2].url_titulo}`}
 												>
-													<div className="card-bio">
+													<motion.div
+														style={{ y: noticia_tres }}
+														className="card-bio"
+														whileHover={{ scale: 1.05 }}
+														transition={{ duration: 0.2 }}
+													>
 														<div className="part-img position-relative">
 															<div className="position-relative">
 																<img
@@ -341,7 +367,7 @@ export default function Home() {
 											className="desc-card mb-0"
 										  /> */}
 														</div>
-													</div>
+													</motion.div>
 												</a>
 											</Col>
 											<Col md="2">
@@ -349,7 +375,12 @@ export default function Home() {
 													className="color-inherit"
 													href={`noticias/noticia?titulo=${noticias[3].url_titulo}`}
 												>
-													<div className="card-bio">
+													<motion.div
+														style={{ y: noticia_cuatro }}
+														whileHover={{ scale: 1.05 }}
+														transition={{ duration: 0.2 }}
+														className="card-bio"
+													>
 														<div className="part-img position-relative">
 															<div className="position-relative">
 																<img
@@ -381,7 +412,7 @@ export default function Home() {
 											className="desc-card mb-0"
 										  /> */}
 														</div>
-													</div>
+													</motion.div>
 												</a>
 											</Col>
 											<Col md="1"></Col>
@@ -394,7 +425,12 @@ export default function Home() {
 									<Container>
 										<Row>
 											<Col md={{ span: 10, offset: 1 }}>
-												<div className="big-text text-right">Encuentra tu vocación</div>
+												<motion.div
+													style={{ opacity: intro_carreras }}
+													className="big-text text-right"
+												>
+													Encuentra tu vocación
+												</motion.div>
 											</Col>
 										</Row>
 									</Container>
@@ -608,8 +644,9 @@ export default function Home() {
 									<Row>
 										<Col md={{ span: 6, offset: 1 }}>
 											<div className="d-flex align-items-end mb-5">
-												<img
+												<motion.img
 													className="microscopio"
+													style={{ scale: microscopio }}
 													src="/assets/img/iconos/microscopio.png"
 													alt="microscopio"
 												/>
