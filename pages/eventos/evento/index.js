@@ -5,7 +5,8 @@ import Layout from "../../../components/Layout"
 import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import Link from 'next/link';
 import { size } from "lodash";
-import {getEventoByUrlApi,updateVisitasEventoApi, getEventosProximosApi} from '../../api/eventos';
+import {getEventoByUrlApi,updateVisitasEventoApi} from '../../api/eventos';
+import EventosExtra from "../../../components/EventosExtra"
 
 const evento = () => {
 
@@ -15,7 +16,6 @@ const evento = () => {
     const [loading, setLoading] = useState(true);
     const [sinResultados, setSinResultados] = useState(false);
     const [evento, setEvento] = useState(false);
-    const [eventosProximos, setEventosProximos] = useState([]);
 
     const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
@@ -66,8 +66,6 @@ const evento = () => {
                 document.cookie = "evento"+response[0].id+"="+response[0].id;
                 const response_update_visitas = await updateVisitasEventoApi(response[0].id, response[0].visitas);
             }
-            const response_eventos_proximos = await getEventosProximosApi(response[0].id);
-            setEventosProximos(response_eventos_proximos);
             setLoading(false);
             // setSinResultados(false);
           }
@@ -199,51 +197,9 @@ const evento = () => {
                                     </Col>
                                     <Col md="3" lg="2">
                                         <aside>
-                                            <div className="d-flex mb-3">
-                                                <h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
-                                                <a href="/eventos" className="d-inline-block">
-                                                    <img src="/assets/img/iconos/boton_vermas.png"/>
-                                                </a>
-                                            </div>
-                                            <div>
-                                                {eventosProximos.map((evento_proximo, index) =>(
-                                                    <div key={index} className="card-bio no-grid mb-3">
-                                                        <a href={`/eventos/evento?nombre=${evento_proximo.url_nombre}`} style={{color: '#56756B'}}>
-                                                            <div className="part-img position-relative d-none d-md-block">
-                                                                <div className="position-relative">
-                                                                    <img className="w-100 img-fluid" src={evento_proximo.imagen ? evento_proximo.imagen[0].url : ''}></img>
-                                                                    <div className="dark-filter"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="part-text">
-                                                                <p className="title-card title mb-0">
-                                                                    {evento_proximo.nombre}
-                                                                </p>
-                                                            </div>
-                                                            <div className="part-info">
-                                                                <div className="date mb-1">
-                                                                    <span>
-                                                                        <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
-                                                                    </span>
-                                                                    <span>{new Date(evento_proximo.fechaInicio).getDate()} de {months[new Date(evento_proximo.fechaInicio).getMonth()]} de {new Date(evento_proximo.fechaInicio).getFullYear()}</span>
-                                                                </div>
-                                                                <div className="date mb-1">
-                                                                    <span>
-                                                                        <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
-                                                                    </span>
-                                                                    <span>{formatAMPM(new Date(evento_proximo.fechaInicio))}</span>
-                                                                </div>
-                                                                <div className="date mb-1">
-                                                                    <span>
-                                                                        <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
-                                                                    </span>
-                                                                    <span>{evento_proximo.lugar}</span>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </div> 
-                                                ))}
-                                            </div>
+                                            <EventosExtra 
+                                                idEventoDetalle = {evento.id} 
+                                            />
                                         </aside>
                                     </Col>
                                     <Col md="1" lg="1"></Col>

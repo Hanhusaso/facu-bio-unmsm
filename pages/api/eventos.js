@@ -157,7 +157,14 @@ export async function updateVisitasEventoApi(id_evento, visitas){
 
 export async function getEventosProximosApi(id_evento){
     try {
-        const url = `${BASE_PATH}/eventos/?_sort=fechaInicio:ASC&_limit=3&fechaInicio_gte=${(String(new Date().getFullYear()))+"-"+(new Date().getMonth()+1 < 10 ? "0"+String(new Date().getMonth()+1) : String(new Date().getMonth()+1))+"-"+(new Date().getDate() < 10 ? "0"+String(new Date().getDate()) : String(new Date().getDate()))}&id_ne=${id_evento}`;
+
+        var query = '';
+
+        if(id_evento != ""){
+            query = query + `&id_ne=${id_evento}`;
+        }
+
+        const url = `${BASE_PATH}/eventos/?_sort=fechaInicio:ASC&_limit=3&fechaInicio_gte=${(String(new Date().getFullYear()))+"-"+(new Date().getMonth()+1 < 10 ? "0"+String(new Date().getMonth()+1) : String(new Date().getMonth()+1))+"-"+(new Date().getDate() < 10 ? "0"+String(new Date().getDate()) : String(new Date().getDate()))}${query}`;
         const response = await fetch(url);
         const result = await response.json();
         return result;

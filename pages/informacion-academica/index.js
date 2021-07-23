@@ -8,7 +8,7 @@ import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
 import { AiFillContainer } from 'react-icons/ai'
 import { size } from "lodash";
 import {getInformacionesAcademicasApi} from '../api/informacion-academica';
-import {getNoticiasUltimas2Api, getNoticiasSubcategoriasApi} from '../api/noticias';
+import NoticiasExtra from "../../components/NoticiasExtra"
 import j from "jquery";
 
 export default function InformacionAcademica() {
@@ -31,8 +31,6 @@ export default function InformacionAcademica() {
     const [recurso, setRecurso] = useState("");
     const [escuelas, setEscuelas] = useState([]);
     const [escuela, setEscuela] = useState("");
-    const [noticiasUltimas, setNoticiasUltimas] = useState([]);
-    const [noticiasSubcategorias, setNoticiasSubcategorias] = useState([]);
 
     function removeItemFromArr ( arr, item ) {
         var i = arr.indexOf( item );
@@ -86,10 +84,6 @@ export default function InformacionAcademica() {
          
             const response = await getInformacionesAcademicasApi(recursos, escuelas);
             setInformacionesAcademicas(response);
-            const response_subcategorias = await getNoticiasSubcategoriasApi();
-            setNoticiasSubcategorias(response_subcategorias);
-            const response_noticias_ultimas = await getNoticiasUltimas2Api();
-            setNoticiasUltimas(response_noticias_ultimas);
             setLoading(false);
             if(size(response) == 0){
                 setSinResultados(true);
@@ -207,8 +201,8 @@ export default function InformacionAcademica() {
                                                 {informacionesAcademicas.map((informacion_academica, index) => (
                                                     <div key={index} className="block-divider mb-3">
                                                         {/* <Link href={`/informacion-academica/${informacion_academica.recurso == 'horarios' ? 'horarios' : informacion_academica.recurso == 'malla curricular' ? 'plan' : informacion_academica.recurso == 'syllabus' ? 'syllabus' : informacion_academica.recurso == 'docentes' ? 'docentes' : ''}/?nombre=${informacion_academica.url_nombre}`}> */}
-                                                        <Link href={informacion_academica.link != '' && informacion_academica.link != null ? informacion_academica.link : '#'}>
-                                                            <a target="_blank" className="title">{informacion_academica.nombre}</a>
+                                                        <Link href={informacion_academica.recurso == 'docentes' ?  `/informacion-academica/docentes/?nombre=${informacion_academica.url_nombre}` : (informacion_academica.link != '' && informacion_academica.link != null ? informacion_academica.link : '#')}>
+                                                            <a target={informacion_academica.recurso == 'docentes' ? '' : '_blank'} className="title">{informacion_academica.nombre}</a>
                                                         </Link>
                                                         <p className="mb-3">{informacion_academica.descripcion}</p>
                                                     </div>
@@ -261,34 +255,9 @@ export default function InformacionAcademica() {
                                 </Col>
                                 <Col md="3" lg="2">
                                     <aside>
-                                        <div className="d-flex mb-3">
-                                            <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
-                                            <a href="/noticias" className="d-inline-block">
-                                                <img src="/assets/img/iconos/boton_vermas.png"/>
-                                            </a>
-                                        </div>
-                                        <div>
-                                            {noticiasUltimas.map((noticia_ultima, index) =>(
-                                                <div key={index} className="card-bio mb-3">
-                                                    <a href={`/noticias/noticia?titulo=${noticia_ultima.url_titulo}`} style={{color: '#56756B'}}>
-                                                        <div className="part-img position-relative">
-                                                            <div className="position-relative">
-                                                                <img className="w-100 img-fluid" src={noticia_ultima.imagen_previsualizacion ? noticia_ultima.imagen_previsualizacion[0].url : ''}></img>
-                                                                <div className="dark-filter"></div>
-                                                            </div>
-                                                            <div className="badge-tag">
-                                                            {noticiasSubcategorias[noticia_ultima.id_categoria_subcategoria.id_subcategoria-1].nombre}
-                                                            </div>
-                                                        </div>
-                                                        <div className="part-text">
-                                                            <p className="title-card mb-0">
-                                                                {noticia_ultima.titulo}
-                                                            </p>
-                                                        </div>
-                                                    </a>
-                                                </div> 
-                                            ))}
-                                        </div>
+                                        <NoticiasExtra 
+                                            idNoticiaDetalle = {""} 
+                                        />
                                     </aside>
                                 </Col>
                                 <Col md="1" lg="1"></Col>
