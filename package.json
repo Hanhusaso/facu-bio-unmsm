@@ -10,6 +10,7 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "date-fns": "^2.22.1",
+    "framer-motion": "^4.1.17",
     "jquery": "^3.6.0",
     "jquery-ui": "^1.12.1",
     "next": "10.1.3",

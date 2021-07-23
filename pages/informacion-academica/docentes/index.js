@@ -30,6 +30,7 @@ const docentes = () => {
     const onPageChange = (event, data) => {
         setPage((data.activePage-1)*10);
         setNumberPage(data.activePage);
+        window.scrollTo(0, 0);
     };
 
     const onChangePalabra = (event) => {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { useRouter } from "next/router";
 // import Head from "next/head";
 // import Header from "../../components/Header"
 import Link from 'next/link'
@@ -23,6 +23,8 @@ export default function InformacionAcademica() {
         "pag3",
         "pag3",
     ])
+
+    const { query } = useRouter();
 
     const [informacionesAcademicas, setInformacionesAcademicas] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -74,8 +76,14 @@ export default function InformacionAcademica() {
     useEffect(() => {
         setTimeout(function(){ 
             j("input[type=checkbox]").prop("checked", false);
-        }, 10);
-    }, [])
+            console.log(query)
+            if(query.recurso == "informacion-de-docentes"){
+                j("#recurso-docentes").prop("checked", true);
+                setRecursos(["docentes"]);
+                setRecurso(Math.random());
+            }
+        }, 500);
+    }, [query])
 
     useEffect(() => {
         (async () => {
