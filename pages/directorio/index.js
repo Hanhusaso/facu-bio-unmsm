@@ -40,7 +40,9 @@ const directorio = () => {
                             </Row>
                         </Container>
 
-                        <Container className="mb-4">
+                        {/* BUSCADOR */}
+
+                        {/* <Container className="mb-4">
                             <Row>
                                 <Col md="3"></Col>
                                 <Col md="6" className="">
@@ -50,7 +52,7 @@ const directorio = () => {
                                 </Col>
                                 <Col md="3"></Col>
                             </Row>
-                        </Container>
+                        </Container> */}
 
                         <Container>
                             <Row>
@@ -70,9 +72,9 @@ const directorio = () => {
                                                 </a>
                                             </div>
                                         </div>
-                                        <div className="mb-3">
+                                        {/* <div className="mb-3">
                                             3 resultados
-                                        </div>
+                                        </div> */}
                                         <div className="table-responsive">
                                             <table className="striped w-100">
                                                 <thead>
