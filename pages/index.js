@@ -68,7 +68,7 @@ export default function Home() {
 				<div>
 					<Head>
 						<title>Facultad de Ciencias Biológicas</title>
-						<link rel="icon" href="/favicon.ico" />
+						<link rel="icon" href="/assets/img/favicon/logo.ico" />
 					</Head>
 					<Menu />
 					<SocialMedia />

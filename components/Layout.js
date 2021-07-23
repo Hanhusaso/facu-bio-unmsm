@@ -8,7 +8,7 @@ const Layout = ({title, children}) => {
         <div>
             <Head>
                 <title>{title} | Facultad de Ciencias Biológicas</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/assets/img/favicon/logo.ico" />
                 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css " />
                 <link rel="stylesheet" href="/resources/demos/style.css" />
                 <script src="https://code.jquery.com/jquery-1.12.4.js" />

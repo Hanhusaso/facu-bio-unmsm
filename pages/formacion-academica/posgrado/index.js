@@ -230,7 +230,7 @@ const posgrado = () => {
                                 <Col md="2"></Col>
                             </Row>
                         </Container>
-                        <Container className="mb-4 mb-md-5">
+                        <Container>
                             <Row className="reverse-responsive">
                                 <Col md="2"></Col>
                                 <Col md="4" className="text-center">
@@ -254,34 +254,6 @@ const posgrado = () => {
                                             El objetivo general de la Maestría de Investigación en Biodiversidad y Gestión de Ecosistemas es formar recursos humanos con la capacidad de generar conocimientos. Promover y gestionar la conservación en relación a la biodiversidad dentro de los enfoques del desarrollo sustentable y ecosistémico en las distintas regiones del país.
                                         </p>
                                     </div>
-                                </Col>
-                                <Col md="2"></Col>
-                            </Row>
-                        </Container>
-                        <Container className="">
-                            <Row>
-                                <Col md="2"></Col>
-                                <Col className="d-flex flex-column justify-content-center mb-3 mb-md-0" md="4">
-                                    <div className="text-center">
-                                        <Link href="">
-                                            <a className="title-green">
-                                                Segunda especialidad en Parasitología en Animales Silvestres y Acuáticos
-                                            </a>
-                                        </Link>
-                                    </div>
-                                    {/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
-                                    <div className="d-none d-md-block">
-                                        <p className="mb-0">
-                                            Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias biológicas con especial énfasis en la flora, fauna y ecosistemas Nuestro primer compromiso como institución Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias biológicas con especial énfasis en la flora, fauna y ecosistemas Nuestro primer compromiso como institución. Nuestro primer compromiso como institución académica es el avance del conocimiento de las ciencias.
-                                        </p>
-                                    </div>
-                                </Col>
-                                <Col md="4" className="text-center">
-                                    <Link href="#">
-                                        <a>
-                                            <img className="img-fluid" src="/assets/img/carreras/genetica.png" alt="" />
-                                        </a>
-                                    </Link>
                                 </Col>
                                 <Col md="2"></Col>
                             </Row>

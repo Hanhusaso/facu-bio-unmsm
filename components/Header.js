@@ -11,19 +11,6 @@ const Header = () => {
 
     useEffect(() => {
 
-        // When the user scrolls down 50px from the top of the document, resize the header's font size
-
-        // window.onscroll = function() {scrollFunction()};
-
-
-        // function scrollFunction() {
-        //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        //         header.current.classList.add('shrink-header');
-        //     } else {
-        //         header.current.classList.remove('shrink-header');
-        //     }
-        // }
-
         const handler = () => {
             setShrunk((isShrunk) => {
               if (
