@@ -137,19 +137,14 @@ export async function updateVisitasNoticiaApi(id_noticia, visitas){
 
 export async function getNoticiasUltimasApi(id_noticia){
     try {
-        const url = `${BASE_PATH}/noticias/?_sort=fecha:DESC&_limit=3&id_ne=${id_noticia}`;
-        const response = await fetch(url);
-        const result = await response.json();
-        return result;
-    } catch (error) {
-        console.log(error);
-        return [];
-    }
-}
 
-export async function getNoticiasUltimas2Api(){
-    try {
-        const url = `${BASE_PATH}/noticias/?_sort=fecha:DESC&_limit=3`;
+        var query = '';
+
+        if(id_noticia != ""){
+            query = query + `&id_ne=${id_noticia}`;
+        }
+
+        const url = `${BASE_PATH}/noticias/?_sort=fecha:DESC&_limit=3${query}`;
         const response = await fetch(url);
         const result = await response.json();
         return result;
