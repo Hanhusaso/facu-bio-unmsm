@@ -12,17 +12,17 @@ const SocialMedia = () => {
         <div className="wrapper-social-media">
             <ul className="nav flex-column">
                 <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/FacultadCienciasBiologicasUNMSM/" target="_blank">
                         <FaIcons.FaFacebookF />
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://twitter.com/biounmsm" target="_blank">
                         <FaIcons.FaTwitter />
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.youtube.com/channel/UCXVV5vV4Bsc9BOWO3V47uwQ" target="_blank">
                         <FaIcons.FaYoutube />
                     </a>
                 </li>
