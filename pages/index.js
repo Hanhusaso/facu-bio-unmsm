@@ -113,62 +113,78 @@ export default function Home() {
 												<div className="wrapper-just-events">
 													<Container fluid className="px-0">
 														<Row>
-															<Col>
-																<p className="fecha-evento">
-																	<span>
-																		{new Date(eventos[0]?.fechaInicio).getDate() < 10
-																			? "0" + new Date(eventos[0]?.fechaInicio).getDate()
-																			: new Date(eventos[0]?.fechaInicio).getDate()}{" "}
-																		{months[new Date(eventos[0]?.fechaInicio).getMonth()]}
-																	</span>
-																	<span className="divisor-text mx-2"></span>
-																	<span>{formatAMPM(new Date(eventos[0].fechaInicio))}</span>
-																</p>
-																<p className="titulo-evento">{eventos[0]?.nombre}</p>
-																<p className="lugar-evento mb-0">{eventos[0]?.lugar}</p>
-															</Col>
-															<Col>
-																<p className="fecha-evento">
-																	<span>
-																		{new Date(eventos[1]?.fechaInicio).getDate() < 10
-																			? "0" + new Date(eventos[1]?.fechaInicio).getDate()
-																			: new Date(eventos[1]?.fechaInicio).getDate()}{" "}
-																		{months[new Date(eventos[1]?.fechaInicio).getMonth()]}
-																	</span>
-																	<span className="divisor-text mx-2"></span>
-																	<span>{formatAMPM(new Date(eventos[1].fechaInicio))}</span>
-																</p>
-																<p className="titulo-evento">{eventos[1]?.nombre}</p>
-																<p className="lugar-evento mb-0">{eventos[1]?.lugar}</p>
-															</Col>
-															<Col>
-																<p className="fecha-evento">
-																	<span>
-																		{new Date(eventos[2]?.fechaInicio).getDate() < 10
-																			? "0" + new Date(eventos[2]?.fechaInicio).getDate()
-																			: new Date(eventos[2]?.fechaInicio).getDate()}{" "}
-																		{months[new Date(eventos[2]?.fechaInicio).getMonth()]}
-																	</span>
-																	<span className="divisor-text mx-2"></span>
-																	<span>{formatAMPM(new Date(eventos[2].fechaInicio))}</span>
-																</p>
-																<p className="titulo-evento">{eventos[2]?.nombre}</p>
-																<p className="lugar-evento mb-0">{eventos[2]?.lugar}</p>
-															</Col>
-															<Col>
-																<p className="fecha-evento">
-																	<span>
-																		{new Date(eventos[3]?.fechaInicio).getDate() < 10
-																			? "0" + new Date(eventos[3]?.fechaInicio).getDate()
-																			: new Date(eventos[3]?.fechaInicio).getDate()}{" "}
-																		{months[new Date(eventos[3]?.fechaInicio).getMonth()]}
-																	</span>
-																	<span className="divisor-text mx-2"></span>
-																	<span>{formatAMPM(new Date(eventos[3].fechaInicio))}</span>
-																</p>
-																<p className="titulo-evento">{eventos[3]?.nombre}</p>
-																<p className="lugar-evento mb-0">{eventos[3]?.lugar}</p>
-															</Col>
+															{eventos[0] ?
+																<Col>
+																	<p className="fecha-evento">
+																		<span>
+																			{new Date(eventos[0]?.fechaInicio).getDate() < 10
+																				? "0" + new Date(eventos[0]?.fechaInicio).getDate()
+																				: new Date(eventos[0]?.fechaInicio).getDate()}{" "}
+																			{months[new Date(eventos[0]?.fechaInicio).getMonth()]}
+																		</span>
+																		<span className="divisor-text mx-2"></span>
+																		<span>{formatAMPM(new Date(eventos[0].fechaInicio))}</span>
+																	</p>
+																	<p className="titulo-evento">{eventos[0]?.nombre}</p>
+																	<p className="lugar-evento mb-0">{eventos[0]?.lugar}</p>
+																</Col>
+															:
+																''
+															}
+															{eventos[1] ?
+																<Col>
+																	<p className="fecha-evento">
+																		<span>
+																			{new Date(eventos[1]?.fechaInicio).getDate() < 10
+																				? "0" + new Date(eventos[1]?.fechaInicio).getDate()
+																				: new Date(eventos[1]?.fechaInicio).getDate()}{" "}
+																			{months[new Date(eventos[1]?.fechaInicio).getMonth()]}
+																		</span>
+																		<span className="divisor-text mx-2"></span>
+																		<span>{formatAMPM(new Date(eventos[1].fechaInicio))}</span>
+																	</p>
+																	<p className="titulo-evento">{eventos[1]?.nombre}</p>
+																	<p className="lugar-evento mb-0">{eventos[1]?.lugar}</p>
+																</Col>
+															:
+																''
+															}
+															{eventos[2] ?
+																<Col>
+																	<p className="fecha-evento">
+																		<span>
+																			{new Date(eventos[2]?.fechaInicio).getDate() < 10
+																				? "0" + new Date(eventos[2]?.fechaInicio).getDate()
+																				: new Date(eventos[2]?.fechaInicio).getDate()}{" "}
+																			{months[new Date(eventos[2]?.fechaInicio).getMonth()]}
+																		</span>
+																		<span className="divisor-text mx-2"></span>
+																		<span>{formatAMPM(new Date(eventos[2].fechaInicio))}</span>
+																	</p>
+																	<p className="titulo-evento">{eventos[2]?.nombre}</p>
+																	<p className="lugar-evento mb-0">{eventos[2]?.lugar}</p>
+																</Col>
+															:
+																''
+															}
+															{eventos[3] ?
+																<Col>
+																	<p className="fecha-evento">
+																		<span>
+																			{new Date(eventos[3]?.fechaInicio).getDate() < 10
+																				? "0" + new Date(eventos[3]?.fechaInicio).getDate()
+																				: new Date(eventos[3]?.fechaInicio).getDate()}{" "}
+																			{months[new Date(eventos[3]?.fechaInicio).getMonth()]}
+																		</span>
+																		<span className="divisor-text mx-2"></span>
+																		<span>{formatAMPM(new Date(eventos[3].fechaInicio))}</span>
+																	</p>
+																	<p className="titulo-evento">{eventos[3]?.nombre}</p>
+																	<p className="lugar-evento mb-0">{eventos[3]?.lugar}</p>
+																</Col>
+															:
+																''
+															}
 															{/* <Col>
                               <p className="fecha-evento">
                                 <span>03 marzo</span>
