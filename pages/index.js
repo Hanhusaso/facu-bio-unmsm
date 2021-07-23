@@ -10,6 +10,7 @@ import { Row, Col, Container, Carousel } from "react-bootstrap";
 import ClampLines from "react-clamp-lines";
 import { getNoticiasHomeApi, getNoticiasSubcategoriasApi } from "./api/noticias";
 import { getEventosHomeApi } from "./api/eventos";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 export default function Home() {
 	const [loadingPage, setLoadingPage] = useState(true);
@@ -17,6 +18,14 @@ export default function Home() {
 	const [noticias, setNoticias] = useState([]);
 	const [noticiasSubcategorias, setNoticiasSubcategorias] = useState([]);
 	const [eventos, setEventos] = useState([]);
+	const { scrollYProgress } = useViewportScroll();
+	const intro_noticias = useTransform(scrollYProgress, [0, 0.2], [0.2, 1]);
+	const noticia_uno = useTransform(scrollYProgress, [0, 0.2], [-200, 0]);
+	const noticia_dos = useTransform(scrollYProgress, [0, 0.2], [200, 0]);
+	const noticia_tres = useTransform(scrollYProgress, [0, 0.2], [400, 0]);
+	const noticia_cuatro = useTransform(scrollYProgress, [0, 0.2], [600, 0]);
+	const intro_carreras = useTransform(scrollYProgress, [0.2, 0.4], [0.2, 1]);
+	const microscopio = useTransform(scrollYProgress, [0.5, 0.8], [0.3, 1]);
 
 	const months = [
 		"enero",
@@ -44,11 +53,27 @@ export default function Home() {
 		return strTime;
 	}
 
+	// useEffect(() => {
+	// 	setTimeout(() => {
+	// 		setLoadingPage(false);
+	// 	}, 800);
+
+	// 	(async () => {
+	// 		const response_noticias = await getNoticiasHomeApi();
+	// 		const response_subcategorias = await getNoticiasSubcategoriasApi();
+	// 		setNoticias(response_noticias);
+	// 		setNoticiasSubcategorias(response_subcategorias);
+	// 		const response_eventos = await getEventosHomeApi();
+	// 		setEventos(response_eventos);
+	// 	})();
+	// }, [loadingPage]);
 	useEffect(() => {
 		setTimeout(() => {
 			setLoadingPage(false);
-		}, 800);
+		}, 300);
+	}, []);
 
+	useEffect(() => {
 		(async () => {
 			const response_noticias = await getNoticiasHomeApi();
 			const response_subcategorias = await getNoticiasSubcategoriasApi();
@@ -57,7 +82,7 @@ export default function Home() {
 			const response_eventos = await getEventosHomeApi();
 			setEventos(response_eventos);
 		})();
-	}, [loadingPage]);
+	}, []);
 
 	return (
 		<div>
@@ -77,7 +102,12 @@ export default function Home() {
 							<video className="bg-home-video" loop autoplay="true" muted>
 								<source src="/assets/video/facu_bio.mp4" type="video/mp4" />
 							</video>
-							<div className="wrapper-title-home">
+							<motion.div
+								className="wrapper-title-home"
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{ duration: 2.5 }}
+							>
 								<Container fluid>
 									<Row>
 										{/* <Col></Col> */}
@@ -98,22 +128,31 @@ export default function Home() {
 										</Col>
 									</Row>
 								</Container>
-							</div>
-							<div className="wrapper-eventos">
+							</motion.div>
+							<motion.div
+								className="wrapper-eventos"
+								initial={{ left: "100vw", opacity: 0 }}
+								animate={{ left: 0, opacity: 1 }}
+								transition={{ duration: 1.5 }}
+							>
 								<Container fluid>
 									<Row>
 										<Col md={{ span: 11, offset: 1 }} className="pr-0">
 											<div className="ml-2 pad-extra-left">
 												<div className="d-flex">
 													<h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
-													<a href="/eventos" className="d-inline-block">
+													<motion.a
+														href="/eventos"
+														whileHover={{ scale: 1.1 }}
+														className="d-inline-block"
+													>
 														<img src="/assets/img/iconos/boton_vermas.png" />
-													</a>
+													</motion.a>
 												</div>
 												<div className="wrapper-just-events">
 													<Container fluid className="px-0">
 														<Row>
-															{eventos[0] ?
+															{eventos[0] ? (
 																<Col>
 																	<p className="fecha-evento">
 																		<span>
@@ -128,10 +167,10 @@ export default function Home() {
 																	<p className="titulo-evento">{eventos[0]?.nombre}</p>
 																	<p className="lugar-evento mb-0">{eventos[0]?.lugar}</p>
 																</Col>
-															:
-																''
-															}
-															{eventos[1] ?
+															) : (
+																""
+															)}
+															{eventos[1] ? (
 																<Col>
 																	<p className="fecha-evento">
 																		<span>
@@ -146,10 +185,10 @@ export default function Home() {
 																	<p className="titulo-evento">{eventos[1]?.nombre}</p>
 																	<p className="lugar-evento mb-0">{eventos[1]?.lugar}</p>
 																</Col>
-															:
-																''
-															}
-															{eventos[2] ?
+															) : (
+																""
+															)}
+															{eventos[2] ? (
 																<Col>
 																	<p className="fecha-evento">
 																		<span>
@@ -164,10 +203,10 @@ export default function Home() {
 																	<p className="titulo-evento">{eventos[2]?.nombre}</p>
 																	<p className="lugar-evento mb-0">{eventos[2]?.lugar}</p>
 																</Col>
-															:
-																''
-															}
-															{eventos[3] ?
+															) : (
+																""
+															)}
+															{eventos[3] ? (
 																<Col>
 																	<p className="fecha-evento">
 																		<span>
@@ -182,9 +221,9 @@ export default function Home() {
 																	<p className="titulo-evento">{eventos[3]?.nombre}</p>
 																	<p className="lugar-evento mb-0">{eventos[3]?.lugar}</p>
 																</Col>
-															:
-																''
-															}
+															) : (
+																""
+															)}
 															{/* <Col>
                               <p className="fecha-evento">
                                 <span>03 marzo</span>
@@ -205,7 +244,7 @@ export default function Home() {
 										</Col>
 									</Row>
 								</Container>
-							</div>
+							</motion.div>
 						</section>
 						<div className="bg-green-png">
 							<section className="section-noticias pt-5 mb-5">
@@ -232,101 +271,171 @@ export default function Home() {
 												className="d-flex flex-column position-relative"
 												md={{ span: 4, offset: 0 }}
 											>
-												<p className="mb-0 txt-noticias-bg">
+												<motion.p
+													className="mb-0 txt-noticias-bg"
+													style={{
+														opacity: intro_noticias,
+													}}
+												>
 													Entérate de
 													<br />
 													las últimas
 													<br />
 													novedades
-												</p>
-												<a
+												</motion.p>
+												<motion.a
+													style={{ x: noticia_uno }}
+													whileHover={{ scale: 1.05 }}
+													transition={{ duration: 0.2 }}
 													href={`noticias/noticia?titulo=${noticias[0].url_titulo}`}
 													className="position-relative box-shadow mt-auto"
 												>
 													<div className="position-relative">
-                            <img className="w-100 img-fluid" src={noticias[0].imagen_banner ? noticias[0].imagen_banner[0].url : ''}></img>
+														<img
+															className="w-100 img-fluid"
+															src={
+																noticias[0].imagen_banner ? noticias[0].imagen_banner[0].url : ""
+															}
+														></img>
 														<div className="dark-filter"></div>
 													</div>
 													<div className="caption-img">{noticias[0]?.titulo}</div>
-												</a>
+												</motion.a>
 											</Col>
 											<Col md="2">
-                        <a className="color-inherit" href={`noticias/noticia?titulo=${noticias[1].url_titulo}`}>
-                          <div className="card-bio">
-                            <div className="part-img position-relative">
-                              <div className="position-relative">
-                                <img className="w-100 img-fluid" src={noticias[1].imagen_previsualizacion ? noticias[1].imagen_previsualizacion[0].url : ''}></img>
-                                <div className="dark-filter"></div>
-                              </div>
-                              <div className="badge-tag">
-                                {noticiasSubcategorias[noticias[1]?.id_categoria_subcategoria.id_subcategoria-1].nombre}
-                              </div>
-                            </div>
-                            <div className="part-text filter">
-                              <p className="title-card">{noticias[1]?.titulo}</p>
-                              <p className="desc-card mb-0">{noticias[1]?.sintesis}</p>
-                              {/* <ClampLines
+												<a
+													className="color-inherit"
+													href={`noticias/noticia?titulo=${noticias[1].url_titulo}`}
+												>
+													<motion.div
+														style={{ y: noticia_dos }}
+														className="card-bio"
+														whileHover={{ scale: 1.05 }}
+														transition={{ duration: 0.2 }}
+													>
+														<div className="part-img position-relative">
+															<div className="position-relative">
+																<img
+																	className="w-100 img-fluid"
+																	src={
+																		noticias[1].imagen_previsualizacion
+																			? noticias[1].imagen_previsualizacion[0].url
+																			: ""
+																	}
+																></img>
+																<div className="dark-filter"></div>
+															</div>
+															<div className="badge-tag">
+																{
+																	noticiasSubcategorias[
+																		noticias[1]?.id_categoria_subcategoria.id_subcategoria - 1
+																	].nombre
+																}
+															</div>
+														</div>
+														<div className="part-text filter">
+															<p className="title-card">{noticias[1]?.titulo}</p>
+															<p className="desc-card mb-0">{noticias[1]?.sintesis}</p>
+															{/* <ClampLines
                               text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
                               lines={4}
                               buttons={false}
                               ellipsis="..."
                               className="desc-card mb-0"
                             /> */}
-                            </div>
-                          </div>
-                        </a>
+														</div>
+													</motion.div>
+												</a>
 											</Col>
 											<Col md="2">
-                        <a className="color-inherit" href={`noticias/noticia?titulo=${noticias[2].url_titulo}`}>
-                          <div className="card-bio">
-                            <div className="part-img position-relative">
-                              <div className="position-relative">
-                                <img className="w-100 img-fluid" src={noticias[2].imagen_previsualizacion ? noticias[2].imagen_previsualizacion[0].url : ''}></img>
-                                <div className="dark-filter"></div>
-                              </div>
-                              <div className="badge-tag">
-                                {noticiasSubcategorias[noticias[2]?.id_categoria_subcategoria.id_subcategoria-1].nombre}
-                              </div>
-                            </div>
-                            <div className="part-text filter">
-                              <p className="title-card">{noticias[2]?.titulo}</p>
-                              <p className="desc-card mb-0">{noticias[2]?.sintesis}</p>
-                              {/* <ClampLines
+												<a
+													className="color-inherit"
+													href={`noticias/noticia?titulo=${noticias[2].url_titulo}`}
+												>
+													<motion.div
+														style={{ y: noticia_tres }}
+														className="card-bio"
+														whileHover={{ scale: 1.05 }}
+														transition={{ duration: 0.2 }}
+													>
+														<div className="part-img position-relative">
+															<div className="position-relative">
+																<img
+																	className="w-100 img-fluid"
+																	src={
+																		noticias[2].imagen_previsualizacion
+																			? noticias[2].imagen_previsualizacion[0].url
+																			: ""
+																	}
+																></img>
+																<div className="dark-filter"></div>
+															</div>
+															<div className="badge-tag">
+																{
+																	noticiasSubcategorias[
+																		noticias[2]?.id_categoria_subcategoria.id_subcategoria - 1
+																	].nombre
+																}
+															</div>
+														</div>
+														<div className="part-text filter">
+															<p className="title-card">{noticias[2]?.titulo}</p>
+															<p className="desc-card mb-0">{noticias[2]?.sintesis}</p>
+															{/* <ClampLines
                               text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
                               lines={4}
                               buttons={false}
                               ellipsis="..."
                               className="desc-card mb-0"
                             /> */}
-                            </div>
-                          </div>
-                        </a>
+														</div>
+													</motion.div>
+												</a>
 											</Col>
 											<Col md="2">
-                        <a className="color-inherit" href={`noticias/noticia?titulo=${noticias[3].url_titulo}`}>
-                          <div className="card-bio">
-                            <div className="part-img position-relative">
-                              <div className="position-relative">
-                                <img className="w-100 img-fluid" src={noticias[3].imagen_previsualizacion ? noticias[3].imagen_previsualizacion[0].url : ''}></img>
-                                <div className="dark-filter"></div>
-                              </div>
-                              <div className="badge-tag">
-                                {noticiasSubcategorias[noticias[3]?.id_categoria_subcategoria.id_subcategoria-1].nombre}
-                              </div>
-                            </div>
-                            <div className="part-text filter">
-                              <p className="title-card">{noticias[3]?.titulo}</p>
-                              <p className="desc-card mb-0">{noticias[3]?.sintesis}</p>
-                              {/* <ClampLines
+												<a
+													className="color-inherit"
+													href={`noticias/noticia?titulo=${noticias[3].url_titulo}`}
+												>
+													<motion.div
+														style={{ y: noticia_cuatro }}
+														whileHover={{ scale: 1.05 }}
+														transition={{ duration: 0.2 }}
+														className="card-bio"
+													>
+														<div className="part-img position-relative">
+															<div className="position-relative">
+																<img
+																	className="w-100 img-fluid"
+																	src={
+																		noticias[3].imagen_previsualizacion
+																			? noticias[3].imagen_previsualizacion[0].url
+																			: ""
+																	}
+																></img>
+																<div className="dark-filter"></div>
+															</div>
+															<div className="badge-tag">
+																{
+																	noticiasSubcategorias[
+																		noticias[3]?.id_categoria_subcategoria.id_subcategoria - 1
+																	].nombre
+																}
+															</div>
+														</div>
+														<div className="part-text filter">
+															<p className="title-card">{noticias[3]?.titulo}</p>
+															<p className="desc-card mb-0">{noticias[3]?.sintesis}</p>
+															{/* <ClampLines
                               text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
                               lines={4}
                               buttons={false}
                               ellipsis="..."
                               className="desc-card mb-0"
                             /> */}
-                            </div>
-                          </div>
-                        </a>
+														</div>
+													</motion.div>
+												</a>
 											</Col>
 											<Col md="1"></Col>
 										</Row>
@@ -338,7 +447,12 @@ export default function Home() {
 									<Container>
 										<Row>
 											<Col md={{ span: 10, offset: 1 }}>
-												<div className="big-text text-right">Encuentra tu vocación</div>
+												<motion.div
+													style={{ opacity: intro_carreras }}
+													className="big-text text-right"
+												>
+													Encuentra tu vocación
+												</motion.div>
 											</Col>
 										</Row>
 									</Container>
@@ -422,7 +536,10 @@ export default function Home() {
 														{/* <a href="#" className="d-inline-block">
                               <img src="/assets/img/iconos/boton_vermas.png"/>
                             </a> */}
-                            <img className="d-inline-block" src="/assets/img/iconos/boton_vermas.png"/>
+														<img
+															className="d-inline-block"
+															src="/assets/img/iconos/boton_vermas.png"
+														/>
 													</div>
 												</Col>
 											</Row>
@@ -549,8 +666,9 @@ export default function Home() {
 									<Row>
 										<Col md={{ span: 6, offset: 1 }}>
 											<div className="d-flex align-items-end mb-5">
-												<img
+												<motion.img
 													className="microscopio"
+													style={{ scale: microscopio }}
 													src="/assets/img/iconos/microscopio.png"
 													alt="microscopio"
 												/>
