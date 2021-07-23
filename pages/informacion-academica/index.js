@@ -201,7 +201,7 @@ export default function InformacionAcademica() {
                                                 {informacionesAcademicas.map((informacion_academica, index) => (
                                                     <div key={index} className="block-divider mb-3">
                                                         {/* <Link href={`/informacion-academica/${informacion_academica.recurso == 'horarios' ? 'horarios' : informacion_academica.recurso == 'malla curricular' ? 'plan' : informacion_academica.recurso == 'syllabus' ? 'syllabus' : informacion_academica.recurso == 'docentes' ? 'docentes' : ''}/?nombre=${informacion_academica.url_nombre}`}> */}
-                                                        <Link href={informacion_academica.recurso == 'docentes' ?  `/informacion-academica/docentes/?nombre=${informacion_academica.url_nombre}` : informacion_academica.link != '' && informacion_academica.link != null ? informacion_academica.link : '#'}>
+                                                        <Link href={informacion_academica.recurso == 'docentes' ?  `/informacion-academica/docentes/?nombre=${informacion_academica.url_nombre}` : (informacion_academica.link != '' && informacion_academica.link != null ? informacion_academica.link : '#')}>
                                                             <a target={informacion_academica.recurso == 'docentes' ? '' : '_blank'} className="title">{informacion_academica.nombre}</a>
                                                         </Link>
                                                         <p className="mb-3">{informacion_academica.descripcion}</p>

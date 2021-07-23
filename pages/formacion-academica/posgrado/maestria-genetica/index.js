@@ -1,8 +1,9 @@
-import React , { useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 import Layout from "../../../../components/Layout"
 // import Tabs from "../../../../components/Tabs/vanillaTabs"
 import {Row, Col, Container, Breadcrumb, Tabs, Tab} from 'react-bootstrap'
 import Link from 'next/link'
+import {getDocenteByIdInformacionAcademicaApi} from '../../../api/formacion-academica';
 
 import * as AiIcons from "react-icons/ai";
 import * as HiIcons from "react-icons/hi";
@@ -12,6 +13,14 @@ import { useWindowSize } from '../../../../utils/useWindowSize'
 const index = () => {
 
     const { width, height } = useWindowSize();
+    const [docentes, setDocentes] = useState([]);
+
+    useEffect(() => {
+        (async () => {
+          const response = await getDocenteByIdInformacionAcademicaApi("maestria_en_genetica");
+          setDocentes(response);
+        })();
+    }, []);
 
     const Contact = () => {
         return (
@@ -479,191 +488,38 @@ const index = () => {
                                         </div>
                                         <div className="mb-3 tab-pane fade" id="v-pills-docente" role="tabpanel" aria-labelledby="v-pills-docente-tab">
                                             <div className="divisor my-3"></div>
-                                            <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Mg. Anthonny Flores Carrasco | Docente principal</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div>
-                                            {/* <div className="divisor"></div> */}
-                                            <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Dra. Kelly Sánchez Ortega</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div>
-                                            {/* <div className="divisor"></div> */}
-                                            <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Dra. Claudia Veramendi Gomez</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div>
-                                            {/* <div className="divisor"></div> */}
-                                            <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Mg. Ricarfo Gonzales Fernandez | Docente principal</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div>
-                                            {/* <div className="divisor"></div> */}
-                                            <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Mg. Mariela Fátima Carranza Díaz | Docente principal</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div>
-                                            {/* <div className="divisor"></div> */}
-                                            <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Mg.Karla Gutierrez Benitez | Docente principal</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div>
+                                            {docentes.map((docente, index) => (
+                                                <div key={index} className="block-divider mb-3 pb-2 position-relative">
+                                                    <h3 className="title">{docente.nombre}</h3>
+                                                    <p className="mb-2">
+                                                        <span className="mr-2">Documentación:</span>
+                                                        <a href={docente.link_resolucion_rectoral} target="_blank" className="d-inline-block color-inherit mr-3">
+                                                            <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                            <span className="">Resolución rectoral</span>
+                                                        </a>
+                                                        <a href={docente.link_hoja_vida} target="_blank" className="d-inline-block color-inherit mr-3">
+                                                            <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
+                                                            <span className="">Hoja de vida</span>
+                                                        </a>
+                                                    </p>
+                                                    <p className="mb-2">
+                                                        <span className="mr-2">Investigación:</span>
+                                                        <a href={docente.link_rais} target="_blank" className="d-inline-block color-inherit mr-2">
+                                                            <span className="mr-1">RAIS</span>
+                                                            <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                        </a>
+                                                        <a href={docente.link_siis} target="_blank" className="d-inline-block color-inherit mr-2">
+                                                            <span className="mr-1">SIIS</span>
+                                                            <HiIcons.HiExternalLink  className="mb-1 icon"/>
+                                                        </a>
+                                                    </p>
+                                                    <p className="mb-2">
+                                                        <span className="mr-2">Contacto:</span>
+                                                        <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
+                                                        <span className="text-break">{docente.contacto}</span>
+                                                    </p>
+                                                </div>
+                                            ))}
                                         </div>
                                         <div className="mb-3 tab-pane fade" id="v-pills-malla" role="tabpanel" aria-labelledby="v-pills-malla-tab">
                                             <div>
