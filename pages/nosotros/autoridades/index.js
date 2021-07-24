@@ -419,29 +419,9 @@ const index = () => {
 															<span className="divisor-text-green mx-2"></span>
 															<span className="title">Vicedecana académica</span>
 														</p>
-														<p>
-															Biólogo Microbiólogo - Parasitólogo en la UNMSM y Doctor en Ciencias
-															mención Microbiología en la Universidad de Chile (2002) obtenido
-															mediante una beca de la Cooperación Alemana (DAAD), y Profesor
-															Principal de la Universidad Nacional Mayor de San Marcos en la
-															Facultad de Ciencias Biológicas, Departamento de Microbiología y
-															Parasitología. Mis investigaciones se orientan al estudio de
-															microorganismos extremófilos que participan en procesos de
-															biolixiviación de minerales de interés comercial, así como proteínas
-															recombinantes, resistencia metales en bacterias y levaduras, genómica
-															y proteómica estructural de microorganismos oxidadores de hierro y
-															azufre. Asimismo, en biodegradación de xenobióticos tales como PETN y
-															TNT, y biodegradación de colorantes textiles, entre otros. He recibido
-															fondos concursables PROCyT, Coordinador general de proyecto FINCYT,
-															FIDECOM, FINCyT-PITEI, Cienciactiva 2017, Fondecyt y varios fondos
-															concursables de la UNMSM. Director de la Unidad de Posgrado de la
-															Facultad de Ciencias Biológicas (2010-2013), Presidente del Consejo
-															Superior de Investigaciones del Vicerrectorado de Investigación y
-															Posgrado (VRIP) de la UNMSM (2014-2017), Director General de
-															Investigación y Transferencia Tecnológica de VRIP de la UNMSM desde
-															febrero del 2017 hasta octubre de 2020 y actual Decano de la Facultad
-															de Ciencias Biológicas de la UNMSM.
-														</p>
+														{/* <p>
+															introducción para vicedecana académica
+														</p> */}
 														<div>
 															<a
 																target="_blank"
@@ -490,7 +470,7 @@ const index = () => {
 											<Container>
 												<Row>
 													<Col md="9" className="pl-0">
-														<p>
+														{/* <p>
 															La Dirección Académica es el órgano de apoyo de la Facultad de
 															Ciencias Biológicas, encargado de prestar los servicios académicos que
 															requieran los estudiantes y profesores de la Facultad, así como el
@@ -606,12 +586,12 @@ const index = () => {
 																Central, la Oficina General de Bienestar Universitario y el Sistema
 																Único de Matrícula.
 															</li>
-														</ul>
+														</ul> */}
 													</Col>
 													<Col md="3" className="pr-0">
 														<div className="contacto-wrapper mb-3">
 															<p className="title-dark mb-2">Contacto:</p>
-															<div className="grid-contacto">
+															{/* <div className="grid-contacto">
 																<div>
 																	<img
 																		className="icon mr-2"
@@ -636,7 +616,7 @@ const index = () => {
 																</div>
 															</div>
 															<p className="font-weight-bold mb-1">Horario de atención:</p>
-															<p className="mb-0">8:00 a.m. - 5:00 p.m.</p>
+															<p className="mb-0">8:00 a.m. - 5:00 p.m.</p> */}
 														</div>
 														<div className="block-interest-links">
 															<p className="font-weight-bold mb-2">Información académica</p>
