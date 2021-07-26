@@ -111,9 +111,9 @@ const directorio = () => {
                                                     </a>
                                                 </div>
                                             </div>
-                                            {/* <div className="mb-3">
-                                                3 resultados
-                                            </div> */}
+                                            <div className="mb-3">
+                                                {directorios.length} {directorios.length == 1 ? 'resultado' : 'resultados'}
+                                            </div>
                                             <div className="table-responsive">
                                                 <table className="striped w-100">
                                                     <thead>

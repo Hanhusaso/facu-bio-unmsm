@@ -35,6 +35,7 @@ const noticias = () => {
     const [page, setPage] = useState(0);
     const [numberPage, setNumberPage] = useState(1);
     const [noticias, setNoticias] = useState([]);
+    const [countNoticias, setCountNoticias] = useState(0);
     const [loading, setLoading] = useState(true);
     const [sinResultados, setSinResultados] = useState(false);
     const [palabra, setPalabra] = useState("");
@@ -115,6 +116,7 @@ const noticias = () => {
         (async () => {
             if(palabra == ''){
                 const response1 = await countNoticiasApi(palabra, categorias, date);
+                setCountNoticias(response1);
                 setPaginador('');
                 setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />);
                 setLoading(true);
@@ -138,6 +140,7 @@ const noticias = () => {
             }
             else{
                 const response1 = await countNoticiasApi(palabra, [], '');
+                setCountNoticias(response1);
                 setPaginador('');
                 setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />);
                 setLoading(true);
@@ -539,6 +542,7 @@ const noticias = () => {
                                             </>
                                         ) : !sinResultados ? (
                                             <div>
+                                                <div className="mb-2">{countNoticias} {countNoticias == 1 ? 'resultado' : 'resultados'}</div> 
                                                 <div className="divisor my-3 mt-md-0"></div>
 
                                                 {noticias.map((noticia, index) =>(

@@ -22,6 +22,7 @@ const docentes = () => {
     const [page, setPage] = useState(0);
     const [numberPage, setNumberPage] = useState(1);
     const [docentes, setDocentes] = useState([]);
+    const [countDocentes, setCountDocentes] = useState(0);
     const [loading, setLoading] = useState(true);
     const [sinResultados, setSinResultados] = useState(false);
     const [informacionAcademica, setInformacionAcademica] = useState(false);
@@ -61,6 +62,7 @@ const docentes = () => {
         }
         (async () => {
             const response1 = await countDocenteByIdInformacionAcademicaApi(informacionAcademica.id, palabra);
+            setCountDocentes(response1);
             setPaginador('');
             setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/10.0)} onPageChange={onPageChange} />);
             setLoading(true);
@@ -143,6 +145,7 @@ const docentes = () => {
                                             </>
                                     ) : !sinResultados ? (
                                         <div>
+                                            <div className="mb-2">{countDocentes} {countDocentes == 1 ? 'resultado' : 'resultados'}</div>
                                             <div className="divisor my-3"></div>
                                                 {docentes.map((docente, index) => (
                                                     <div key={index} className="block-divider mb-3 pb-2 position-relative">

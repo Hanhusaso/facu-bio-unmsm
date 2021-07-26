@@ -30,6 +30,7 @@ const eventos = () => {
     const [page, setPage] = useState(0);
     const [numberPage, setNumberPage] = useState(1);
     const [eventos, setEventos] = useState([]);
+    const [countEventos, setCountEventos] = useState(0);
     const [loading, setLoading] = useState(true);
     const [sinResultados, setSinResultados] = useState(false);
     const [palabra, setPalabra] = useState("");
@@ -104,6 +105,7 @@ const eventos = () => {
         (async () => {
             if(palabra == ''){
                 const response1 = await countEventosApi(palabra, tipos, startDate);
+                setCountEventos(response1);
                 setPaginador('');
                 setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />);
                 setLoading(true);
@@ -127,6 +129,7 @@ const eventos = () => {
             }
             else{
                 const response1 = await countEventosApi(palabra, [], '');
+                setCountEventos(response1);
                 setPaginador('');
                 setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />);
                 setLoading(true);
@@ -412,6 +415,7 @@ const eventos = () => {
                                             </>
                                     ) : !sinResultados ? (
                                             <div>
+                                                <div className="mb-2">{countEventos} {countEventos == 1 ? 'resultado' : 'resultados'}</div> 
                                                 <div className="divisor my-3 mt-md-0"></div>
 
                                                 {eventos.map((evento, index) => (
