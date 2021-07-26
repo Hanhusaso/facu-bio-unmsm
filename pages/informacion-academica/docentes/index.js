@@ -40,43 +40,43 @@ const docentes = () => {
     };
 
     useEffect(() => {
-        if (!query) {
+        if (query.nombre == undefined) {
             return;
         }
         (async () => {
-            const response3 = await getInformacionAcademicaByUrlApi(currentUrlInformacionAcademica);
-            if(size(response3) == 0){
-                // setSinResultados(true);
-                setPaginador('');
+            const response = await getInformacionAcademicaByUrlApi(currentUrlInformacionAcademica);
+            if(size(response) == 0){
+                setLoading(false);
+                setSinResultados(true);
             }
             else{
-                const response1 = await countDocenteByIdInformacionAcademicaApi(response3[0].id, palabra);
-                setPaginador('');
-                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/10.0)} onPageChange={onPageChange} />);   
-            }    
+                setInformacionAcademica(response[0]);
+            }
         })();
+    }, [query])
+
+    useEffect(() => {
+        if (!query || !informacionAcademica) {
+            return;
+        }
         (async () => {
-          setLoading(true);
-          setSinResultados(false);
-          const response = await getInformacionAcademicaByUrlApi(currentUrlInformacionAcademica);
-          if(size(response) == 0){
-            // setSinResultados(true);
-          }
-          else{
-            setInformacionAcademica(response[0]);
-            const response2 = await getDocenteByIdInformacionAcademicaApi(limitPerPage, page, response[0].id, palabra);
-            setDocentes(response2);
-            setLoading(false);
-            if(size(response2) == 0){
-              setSinResultados(true);
+            const response1 = await countDocenteByIdInformacionAcademicaApi(informacionAcademica.id, palabra);
+            setPaginador('');
+            setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/10.0)} onPageChange={onPageChange} />);
+            setLoading(true);
+            setSinResultados(false);
+            if(response1 != 0){
+                const response2 = await getDocenteByIdInformacionAcademicaApi(limitPerPage, page, informacionAcademica.id, palabra);
+                setDocentes(response2);
+                setLoading(false);
             }
             else{
-              setSinResultados(false);
+                setLoading(false);
+                setSinResultados(true);
             }
-          }
-          window.scrollTo(0, 0);
+            window.scrollTo(0, 0);     
         })();
-    }, [page, query, palabra]);
+    }, [page, query, palabra, informacionAcademica]);
 
     return (
         <>

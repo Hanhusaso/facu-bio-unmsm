@@ -105,41 +105,49 @@ const eventos = () => {
             if(palabra == ''){
                 const response1 = await countEventosApi(palabra, tipos, startDate);
                 setPaginador('');
-                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />); 
+                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />);
+                setLoading(true);
+                setSinResultados(false);
+                if(response1 != 0){
+                    if(palabra == ''){
+                        const response = await getEventosApi(limitPerPage, page, palabra, tipos, startDate);
+                        setEventos(response);
+                    }
+                    else{
+                    const response = await getEventosApi(limitPerPage, page, palabra, [], '');
+                    setEventos(response);
+                    }
+                    setLoading(false);
+                }
+                else{
+                    setLoading(false);
+                    setSinResultados(true);
+                }
+                window.scrollTo(0, 0);
             }
             else{
                 const response1 = await countEventosApi(palabra, [], '');
                 setPaginador('');
                 setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />);
+                setLoading(true);
+                setSinResultados(false);
+                if(response1 != 0){
+                    if(palabra == ''){
+                        const response = await getEventosApi(limitPerPage, page, palabra, tipos, startDate);
+                        setEventos(response);
+                    }
+                    else{
+                    const response = await getEventosApi(limitPerPage, page, palabra, [], '');
+                    setEventos(response);
+                    }
+                    setLoading(false);
+                }
+                else{
+                    setLoading(false);
+                    setSinResultados(true);
+                }
+                window.scrollTo(0, 0);
             }
-        })();
-        (async () => {
-          setLoading(true);
-          setSinResultados(false);
-          if(palabra == ''){
-            const response = await getEventosApi(limitPerPage, page, palabra, tipos, startDate);
-            setEventos(response);
-            setLoading(false);
-            if(size(response) == 0){
-              setSinResultados(true);
-            }
-            else{
-              setSinResultados(false);
-            }
-            window.scrollTo(0, 0);
-          }
-          else{
-            const response = await getEventosApi(limitPerPage, page, palabra, [], '');
-            setEventos(response);
-            setLoading(false);
-            if(size(response) == 0){
-              setSinResultados(true);
-            }
-            else{
-              setSinResultados(false);
-            }
-            window.scrollTo(0, 0);
-          }
         })();
         $(function(){
             $('#datepicker').datepicker({

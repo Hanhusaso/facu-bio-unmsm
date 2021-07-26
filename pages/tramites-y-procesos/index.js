@@ -108,41 +108,49 @@ const TramitesProcesos = () => {
             if(palabra == ''){
                 const response1 = await countTramitesProcesosApi(palabra, dirigidosA, frecuentes);
                 setPaginador('');
-                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/6.0)} onPageChange={onPageChange} />); 
+                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/6.0)} onPageChange={onPageChange} />);
+                setLoading(true);
+                setSinResultados(false);
+                if(response1 != 0){
+                    if(palabra == ''){
+                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, dirigidosA, frecuentes);
+                        setTramitesProcesos(response);
+                    }
+                    else{
+                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, [], []);
+                        setTramitesProcesos(response);
+                    }
+                    setLoading(false);
+                }
+                else{
+                    setLoading(false);
+                    setSinResultados(true);
+                }
+                window.scrollTo(0, 0); 
             }
             else{
                 const response1 = await countTramitesProcesosApi(palabra, [], []);
                 setPaginador('');
                 setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/6.0)} onPageChange={onPageChange} />);
+                setLoading(true);
+                setSinResultados(false);
+                if(response1 != 0){
+                    if(palabra == ''){
+                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, dirigidosA, frecuentes);
+                        setTramitesProcesos(response);
+                    }
+                    else{
+                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, [], []);
+                        setTramitesProcesos(response);
+                    }
+                    setLoading(false);
+                }
+                else{
+                    setLoading(false);
+                    setSinResultados(true);
+                }
+                window.scrollTo(0, 0); 
             }
-        })();
-        (async () => {
-          setLoading(true);
-          setSinResultados(false);
-          if(palabra == ''){
-            const response = await getTramitesProcesosApi(limitPerPage, page, palabra, dirigidosA, frecuentes);
-            setTramitesProcesos(response);
-            setLoading(false);
-            if(size(response) == 0){
-              setSinResultados(true);
-            }
-            else{
-              setSinResultados(false);
-            }
-            window.scrollTo(0, 0);
-          }
-          else{
-            const response = await getTramitesProcesosApi(limitPerPage, page, palabra, [], []);
-            setTramitesProcesos(response);
-            setLoading(false);
-            if(size(response) == 0){
-              setSinResultados(true);
-            }
-            else{
-              setSinResultados(false);
-            }
-            window.scrollTo(0, 0);
-          }
         })();
     }, [page, palabra, dirigidoA, frecuente]);
 
