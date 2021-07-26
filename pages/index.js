@@ -25,7 +25,7 @@ export default function Home() {
 	const noticia_tres = useTransform(scrollYProgress, [0, 0.2], [400, 0]);
 	const noticia_cuatro = useTransform(scrollYProgress, [0, 0.2], [600, 0]);
 	const intro_carreras = useTransform(scrollYProgress, [0.2, 0.4], [0.2, 1]);
-	const microscopio = useTransform(scrollYProgress, [0.5, 0.8], [0.3, 1]);
+	const microscopio = useTransform(scrollYProgress, [0.7, 0.85], [0.3, 1]);
 
 	const months = [
 		"enero",
@@ -559,7 +559,10 @@ export default function Home() {
 													de alumnos, docentes
 													<br />y egresados
 												</p>
-												<a href="/investigacion/proyectos/proyecto-fondecyt" className="position-relative box-shadow mt-auto">
+												<a
+													href="/investigacion/proyectos/proyecto-fondecyt"
+													className="position-relative box-shadow mt-auto"
+												>
 													<div className="position-relative">
 														<div className="position-relative">
 															<img
@@ -569,7 +572,9 @@ export default function Home() {
 															<div className="dark-filter"></div>
 														</div>
 														<div className="caption-img">
-															Proyecto FONDECYT: Proteasas ofídicas con acción migrastática sobre líneas celulares de cáncer de mama triple negativo: hacia una mejor comprensión de la metástasis
+															Proyecto FONDECYT: Proteasas ofídicas con acción migrastática sobre
+															líneas celulares de cáncer de mama triple negativo: hacia una mejor
+															comprensión de la metástasis
 														</div>
 													</div>
 												</a>
