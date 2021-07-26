@@ -205,6 +205,9 @@ export default function InformacionAcademica() {
                                             </>
                                     ) : !sinResultados ? (
                                         <div>
+                                            <div className="mb-2">
+                                                {informacionesAcademicas.length} {informacionesAcademicas.length == 1 ? 'resultado' : 'resultados'}
+                                            </div>
                                             <div className="divisor my-3"></div>
                                                 {informacionesAcademicas.map((informacion_academica, index) => (
                                                     <div key={index} className="block-divider mb-3">

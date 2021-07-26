@@ -1,9 +1,38 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from "react"
 import Link from 'next/link'
 import Layout from "../../components/Layout"
-import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
+import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
+import { size } from "lodash"
+import { getDirectoriosApi } from '../api/directorio'
 
 const directorio = () => {
+
+    const [directorios, setDirectorios] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [sinResultados, setSinResultados] = useState(false);
+    const [palabra, setPalabra] = useState("");
+
+    const onChangePalabra = (event) => {
+        setPalabra(event.target.value);
+    };
+
+    useEffect(() => {
+        (async () => {
+            setLoading(true);
+            setSinResultados(false);
+          
+            const response = await getDirectoriosApi(palabra);
+            setDirectorios(response);
+            setLoading(false);
+            if(size(response) == 0){
+                setSinResultados(true);
+            }
+            else{
+                setSinResultados(false);
+            }
+          window.scrollTo(0, 0);
+        })();
+    }, [palabra]);
 
     return (
         <>
@@ -42,188 +71,79 @@ const directorio = () => {
 
                         {/* BUSCADOR */}
 
-                        {/* <Container className="mb-4">
+                        <Container className="mb-4">
                             <Row>
                                 <Col md="3"></Col>
                                 <Col md="6" className="">
                                     <div>
-                                        <input className="search-input" placeholder="Buscar por palabra clave" type="text" />
+                                        <input className="search-input" placeholder="Buscar por palabra clave" type="text" onChange={onChangePalabra} />
                                     </div>
                                 </Col>
                                 <Col md="3"></Col>
                             </Row>
-                        </Container> */}
+                        </Container>
 
                         <Container>
                             <Row>
                                 <Col md="1"></Col>
                                 <Col md="10">
-                                    <div>
-                                        <div className="d-block d-md-flex align-items-center justify-content-between mb-3">
-                                            <div className="mb-2 mb-md-0">
-                                                <img className="icon mr-2 mb-1" src="/assets/img/iconos/telefono.svg" alt=""/>
-                                                <span>
-                                                    <b>UNMSM Central</b>: +(51) 619 7000
-                                                </span>
+                                    {loading ? (
+                                            <>
+                                            <div className="d-flex align-items-center justify-content-center my-5">
+                                                <div className="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <Spinner animation="border" role="status" className="mb-2"/>
+                                                    <span>Buscando registros...</span>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <a href="https://vicus.unmsm.edu.pe/" target="_blank" className="btn-green-bright">
-                                                    Directorio general
-                                                </a>
+                                            </>
+                                    ) : !sinResultados ? (
+                                        <div>
+                                            <div className="d-block d-md-flex align-items-center justify-content-between mb-3">
+                                                <div className="mb-2 mb-md-0">
+                                                    <img className="icon mr-2 mb-1" src="/assets/img/iconos/telefono.svg" alt=""/>
+                                                    <span>
+                                                        <b>UNMSM Central</b>: +(51) 619 7000
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <a href="https://vicus.unmsm.edu.pe/" target="_blank" className="btn-green-bright">
+                                                        Directorio general
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div className="mb-3">
+                                                {directorios.length} {directorios.length == 1 ? 'resultado' : 'resultados'}
+                                            </div>
+                                            <div className="table-responsive">
+                                                <table className="striped w-100">
+                                                    <thead>
+                                                        <tr>
+                                                            <th className="text-center">Unidad</th>
+                                                            <th className="text-center">Cargo</th>
+                                                            <th className="text-center">Nombre</th>
+                                                            <th className="text-center">Anexo</th>
+                                                            <th className="text-center">Email</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {directorios.map((directorio, index) => (
+                                                            <tr key={index}>
+                                                                <td>{directorio.unidad}</td>
+                                                                <td>{directorio.cargo}</td>
+                                                                <td>{directorio.nombre}</td>
+                                                                <td>{directorio.anexo}</td>
+                                                                <td dangerouslySetInnerHTML={{ __html: directorio.email }}></td>
+                                                            </tr>
+                                                        ))}  
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
-                                        {/* <div className="mb-3">
-                                            3 resultados
-                                        </div> */}
-                                        <div className="table-responsive">
-                                            <table className="striped w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th className="text-center">Unidad</th>
-                                                        <th className="text-center">Cargo</th>
-                                                        <th className="text-center">Nombre</th>
-                                                        <th className="text-center">Anexo</th>
-                                                        <th className="text-center">Email</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Decanato</td>
-                                                        <td>Decano</td>
-                                                        <td>Pablo Sergio Ramirez Roca</td>
-                                                        <td>1501</td>
-                                                        <td>decanobio@unmsm.edu.pe<br/>pramirezr@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Decanato</td>
-                                                        <td>Secretaria</td>
-                                                        <td>Carito Silvia Paredes Martínez</td>
-                                                        <td>1502</td>
-                                                        <td>decanobio@unmsm.edu.pe<br/>cparedesm_at@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Decanato</td>
-                                                        <td>Asistente Secretaria de Decanato</td>
-                                                        <td>Selene Belapatiño Quiroz</td>
-                                                        <td>1509</td>
-                                                        <td>asistentedecano.fcb@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td>Mesa de Partes - Teléfono IP Virtual</td>
-                                                        <td>Irma Huamán del Águila</td>
-                                                        <td>410</td>
-                                                        <td>mesadepartes.biologia@unmsm.edu.pe<br/>ihuamand@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dirección Administrativa</td>
-                                                        <td>Directora</td>
-                                                        <td>Liz Fabiola Elias Rolando</td>
-                                                        <td>1532</td>
-                                                        <td>dadaministrativa.biologia@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Direccion Administrativa</td>
-                                                        <td>Secretaria</td>
-                                                        <td>Natalia Aguado Méndez</td>
-                                                        <td>1504</td>
-                                                        <td>asistentediradministrativa.biologia@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Unidad de Posgrado</td>
-                                                        <td>Director</td>
-                                                        <td>César Augusto Aguilar Puntriano</td>
-                                                        <td>1503</td>
-                                                        <td>upg.biologia@unmsm.edu.pe<br/>caguilarp@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Unidad de Posgrado</td>
-                                                        <td>Secretaria</td>
-                                                        <td>Dora Aguilar Chávez</td>
-                                                        <td>1510</td>
-                                                        <td>upg.biologia@unmsm.edu.pe<br/>daguilarc_af@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td>Mesa de Partes Virtual</td>
-                                                        <td>Posgrado</td>
-                                                        <td></td>
-                                                        <td>mesadepartesupg.biologia@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Instituto de Investigación ICBAR</td>
-                                                        <td>Directora</td>
-                                                        <td>Irma Huamán del Águila</td>
-                                                        <td>410</td>
-                                                        <td>mesadepartes.biologia@unmsm.edu.pe<br/>ihuamand@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Instituto de Investigación ICBAR</td>
-                                                        <td>Secretaría</td>
-                                                        <td>Gisella Gonzáles Delgado</td>
-                                                        <td>1506</td>
-                                                        <td>dadaministrativa.biologia@unmsm.edu.pe<br/>dadaministrativa.biologia@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Unidad de Posgrado</td>
-                                                        <td>Secretaría</td>
-                                                        <td>Dora Aguilar Chávez</td>
-                                                        <td>1510</td>
-                                                        <td>upg.biologia@unmsm.edu.pe<br/>daguilarc_af@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Unidad de Servicios Generales, Operaciones y Mantenimiento</td>
-                                                        <td>Jefa</td>
-                                                        <td>Diana Beraún Mora</td>
-                                                        <td>1533</td>
-                                                        <td>dadaministrativa.biologia@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dirección Administrativa</td>
-                                                        <td>Directora</td>
-                                                        <td>Liz Fabiola Elias Rolando</td>
-                                                        <td>1532</td>
-                                                        <td>leliasr@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dirección Administrativa</td>
-                                                        <td>Secretaria</td>
-                                                        <td>Natalia Aguado Méndez</td>
-                                                        <td>1504</td>
-                                                        <td>asistentediradministrativa.biologia@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Unidad de Posgrado</td>
-                                                        <td>Director</td>
-                                                        <td>César Augusto Aguilar Puntriano</td>
-                                                        <td>1503</td>
-                                                        <td>upg.biologia@unmsm.edu.pe<br/>caguilarp@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Unidad de Posgrado</td>
-                                                        <td>Secretaria</td>
-                                                        <td>Dora Aguilar Chávez</td>
-                                                        <td>1510</td>
-                                                        <td>upg.biologia@unmsm.edu.pe<br/>daguilarc_af@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td>Mesa de Partes Virtual</td>
-                                                        <td>Posgrado</td>
-                                                        <td>1510</td>
-                                                        <td>mesadepartesupg.biologia@unmsm.edu.pe</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Unidad de Servicios Generales, Operaciones y Mantenimiento	</td>
-                                                        <td>Jefa</td>
-                                                        <td>Diana Beraún Mora</td>
-                                                        <td>1533</td>
-                                                        <td>dadaministrativa.biologia@unmsm.edu.pe</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                                        ) : (
+                                            // <SinResultados />
+                                            'No se encontraron registros'
+                                            )
+                                    }
                                 </Col>
                                 <Col md="1"></Col>
                             </Row>

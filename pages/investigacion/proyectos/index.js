@@ -85,20 +85,20 @@ export default function Proyectos() {
                                             <div className="font-weight-bold mb-2">Grupos de investigación</div>
                                             <div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="recurso-horarios" name="recurso-horarios" value="horarios"/>
-                                                    <label className="mb-0" for="recurso-horarios"><span className="checkmark"></span>Biología molecular y biotecnología (35)</label>
+                                                    <input type="checkbox" id="biologia_molecular_y_biotecnologia" name="biologia_molecular_y_biotecnologia" value="biologia_molecular_y_biotecnologia"/>
+                                                    <label className="mb-0" for="biologia_molecular_y_biotecnologia"><span className="checkmark"></span>Biología molecular y biotecnología (35)</label>
                                                 </div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="recurso-malla" name="recurso-malla" value="malla"/>
-                                                    <label className="mb-0" for="recurso-malla"><span className="checkmark"></span>Biotecnología para la remediación (28)</label>
+                                                    <input type="checkbox" id="biotecnologia_para_la_remediacion" name="biotecnologia_para_la_remediacion" value="biotecnologia_para_la_remediacion"/>
+                                                    <label className="mb-0" for="biotecnologia_para_la_remediacion"><span className="checkmark"></span>Biotecnología para la remediación (28)</label>
                                                 </div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="recurso-syllabus" name="recurso-syllabus" value="syllabus"/>
-                                                    <label className="mb-0" for="recurso-syllabus"><span className="checkmark"></span>Reproducción, biología del desarrollo y ecotoxicología (23)</label>
+                                                    <input type="checkbox" id="reproduccion_biologia_del_desarrollo_y_ecotoxicologias" name="reproduccion_biologia_del_desarrollo_y_ecotoxicologia" value="reproduccion_biologia_del_desarrollo_y_ecotoxicologia"/>
+                                                    <label className="mb-0" for="reproduccion_biologia_del_desarrollo_y_ecotoxicologia"><span className="checkmark"></span>Reproducción, biología del desarrollo y ecotoxicología (23)</label>
                                                 </div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="recurso-docentes" name="recurso-docentes" value="docentes"/>
-                                                    <label className="mb-0" for="recurso-docentes"><span className="checkmark"></span>Citogenética y sistemas modelo de drosophila (17)</label>
+                                                    <input type="checkbox" id="citogenetica_y_sistemas_modelo_de_drosophila" name="citogenetica_y_sistemas_modelo_de_drosophila" value="citogenetica_y_sistemas_modelo_de_drosophila"/>
+                                                    <label className="mb-0" for="citogenetica_y_sistemas_modelo_de_drosophila"><span className="checkmark"></span>Citogenética y sistemas modelo de drosophila (17)</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -106,16 +106,16 @@ export default function Proyectos() {
                                             <div className="font-weight-bold mb-2">Tipo</div>
                                             <div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="escuelas-ciencias-biologicas" name="escuelas-ciencias-biologicas" value="ciencias-biologicas"/>
-                                                    <label className="mb-0" for="escuelas-ciencias-biologicas"><span className="checkmark"></span>Tesis</label>
+                                                    <input type="checkbox" id="tesis" name="tesis" value="tesis"/>
+                                                    <label className="mb-0" for="tesis"><span className="checkmark"></span>Tesis</label>
                                                 </div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="escuelas-microbiologia" name="escuelas-microbiologia" value="microbiologia"/>
-                                                    <label className="mb-0" for="escuelas-microbiologia"><span className="checkmark"></span>Patentes</label>
+                                                    <input type="checkbox" id="patentes" name="patentes" value="patentes"/>
+                                                    <label className="mb-0" for="patentes"><span className="checkmark"></span>Patentes</label>
                                                 </div>
                                                 <div className="input-group mb-1">
-                                                    <input type="checkbox" id="escuelas-genetica" name="escuelas-genetica" value="genetica"/>
-                                                    <label className="mb-0" for="escuelas-genetica"><span className="checkmark"></span>Artículos científicos</label>
+                                                    <input type="checkbox" id="articulos_cientificos" name="articulos_cientificos" value="articulos_cientificos"/>
+                                                    <label className="mb-0" for="articulos_cientificos"><span className="checkmark"></span>Artículos científicos</label>
                                                 </div>
                                             </div>
                                         </div>

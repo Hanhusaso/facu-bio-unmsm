@@ -31,6 +31,7 @@ const TramitesProcesos = () => {
     const [page, setPage] = useState(0);
     const [numberPage, setNumberPage] = useState(1);
     const [tramitesProcesos, setTramitesProcesos] = useState([]);
+    const [countTramitesProcesos, setCountTramitesProcesos] = useState(0);
     const [loading, setLoading] = useState(true);
     const [sinResultados, setSinResultados] = useState(false);
     const [palabra, setPalabra] = useState("");
@@ -107,42 +108,52 @@ const TramitesProcesos = () => {
         (async () => {
             if(palabra == ''){
                 const response1 = await countTramitesProcesosApi(palabra, dirigidosA, frecuentes);
+                setCountTramitesProcesos(response1);
                 setPaginador('');
-                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/6.0)} onPageChange={onPageChange} />); 
+                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/6.0)} onPageChange={onPageChange} />);
+                setLoading(true);
+                setSinResultados(false);
+                if(response1 != 0){
+                    if(palabra == ''){
+                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, dirigidosA, frecuentes);
+                        setTramitesProcesos(response);
+                    }
+                    else{
+                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, [], []);
+                        setTramitesProcesos(response);
+                    }
+                    setLoading(false);
+                }
+                else{
+                    setLoading(false);
+                    setSinResultados(true);
+                }
+                window.scrollTo(0, 0); 
             }
             else{
                 const response1 = await countTramitesProcesosApi(palabra, [], []);
+                setCountTramitesProcesos(response1);
                 setPaginador('');
                 setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/6.0)} onPageChange={onPageChange} />);
+                setLoading(true);
+                setSinResultados(false);
+                if(response1 != 0){
+                    if(palabra == ''){
+                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, dirigidosA, frecuentes);
+                        setTramitesProcesos(response);
+                    }
+                    else{
+                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, [], []);
+                        setTramitesProcesos(response);
+                    }
+                    setLoading(false);
+                }
+                else{
+                    setLoading(false);
+                    setSinResultados(true);
+                }
+                window.scrollTo(0, 0); 
             }
-        })();
-        (async () => {
-          setLoading(true);
-          setSinResultados(false);
-          if(palabra == ''){
-            const response = await getTramitesProcesosApi(limitPerPage, page, palabra, dirigidosA, frecuentes);
-            setTramitesProcesos(response);
-            setLoading(false);
-            if(size(response) == 0){
-              setSinResultados(true);
-            }
-            else{
-              setSinResultados(false);
-            }
-            window.scrollTo(0, 0);
-          }
-          else{
-            const response = await getTramitesProcesosApi(limitPerPage, page, palabra, [], []);
-            setTramitesProcesos(response);
-            setLoading(false);
-            if(size(response) == 0){
-              setSinResultados(true);
-            }
-            else{
-              setSinResultados(false);
-            }
-            window.scrollTo(0, 0);
-          }
         })();
     }, [page, palabra, dirigidoA, frecuente]);
 
@@ -254,6 +265,7 @@ const TramitesProcesos = () => {
                                             </>
                                     ) : !sinResultados ? (
                                         <div>
+                                            <div className="mb-2">{countTramitesProcesos} {countTramitesProcesos == 1 ? 'resultado' : 'resultados'}</div> 
                                             <div className="divisor my-3"></div>
                                                 {tramitesProcesos.map((tramites_procesos, index) => (
                                                     <div key={index} className="block-divider mb-3">

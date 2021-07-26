@@ -30,6 +30,7 @@ const eventos = () => {
     const [page, setPage] = useState(0);
     const [numberPage, setNumberPage] = useState(1);
     const [eventos, setEventos] = useState([]);
+    const [countEventos, setCountEventos] = useState(0);
     const [loading, setLoading] = useState(true);
     const [sinResultados, setSinResultados] = useState(false);
     const [palabra, setPalabra] = useState("");
@@ -104,42 +105,52 @@ const eventos = () => {
         (async () => {
             if(palabra == ''){
                 const response1 = await countEventosApi(palabra, tipos, startDate);
+                setCountEventos(response1);
                 setPaginador('');
-                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />); 
+                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />);
+                setLoading(true);
+                setSinResultados(false);
+                if(response1 != 0){
+                    if(palabra == ''){
+                        const response = await getEventosApi(limitPerPage, page, palabra, tipos, startDate);
+                        setEventos(response);
+                    }
+                    else{
+                    const response = await getEventosApi(limitPerPage, page, palabra, [], '');
+                    setEventos(response);
+                    }
+                    setLoading(false);
+                }
+                else{
+                    setLoading(false);
+                    setSinResultados(true);
+                }
+                window.scrollTo(0, 0);
             }
             else{
                 const response1 = await countEventosApi(palabra, [], '');
+                setCountEventos(response1);
                 setPaginador('');
                 setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />);
+                setLoading(true);
+                setSinResultados(false);
+                if(response1 != 0){
+                    if(palabra == ''){
+                        const response = await getEventosApi(limitPerPage, page, palabra, tipos, startDate);
+                        setEventos(response);
+                    }
+                    else{
+                    const response = await getEventosApi(limitPerPage, page, palabra, [], '');
+                    setEventos(response);
+                    }
+                    setLoading(false);
+                }
+                else{
+                    setLoading(false);
+                    setSinResultados(true);
+                }
+                window.scrollTo(0, 0);
             }
-        })();
-        (async () => {
-          setLoading(true);
-          setSinResultados(false);
-          if(palabra == ''){
-            const response = await getEventosApi(limitPerPage, page, palabra, tipos, startDate);
-            setEventos(response);
-            setLoading(false);
-            if(size(response) == 0){
-              setSinResultados(true);
-            }
-            else{
-              setSinResultados(false);
-            }
-            window.scrollTo(0, 0);
-          }
-          else{
-            const response = await getEventosApi(limitPerPage, page, palabra, [], '');
-            setEventos(response);
-            setLoading(false);
-            if(size(response) == 0){
-              setSinResultados(true);
-            }
-            else{
-              setSinResultados(false);
-            }
-            window.scrollTo(0, 0);
-          }
         })();
         $(function(){
             $('#datepicker').datepicker({
@@ -404,6 +415,7 @@ const eventos = () => {
                                             </>
                                     ) : !sinResultados ? (
                                             <div>
+                                                <div className="mb-2">{countEventos} {countEventos == 1 ? 'resultado' : 'resultados'}</div> 
                                                 <div className="divisor my-3 mt-md-0"></div>
 
                                                 {eventos.map((evento, index) => (
