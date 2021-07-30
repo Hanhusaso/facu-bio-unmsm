@@ -111,14 +111,8 @@ const eventos = () => {
                 setLoading(true);
                 setSinResultados(false);
                 if(response1 != 0){
-                    if(palabra == ''){
-                        const response = await getEventosApi(limitPerPage, page, palabra, tipos, startDate);
-                        setEventos(response);
-                    }
-                    else{
-                    const response = await getEventosApi(limitPerPage, page, palabra, [], '');
+                    const response = await getEventosApi(limitPerPage, page, palabra, tipos, startDate);
                     setEventos(response);
-                    }
                     setLoading(false);
                 }
                 else{
@@ -135,14 +129,8 @@ const eventos = () => {
                 setLoading(true);
                 setSinResultados(false);
                 if(response1 != 0){
-                    if(palabra == ''){
-                        const response = await getEventosApi(limitPerPage, page, palabra, tipos, startDate);
-                        setEventos(response);
-                    }
-                    else{
                     const response = await getEventosApi(limitPerPage, page, palabra, [], '');
                     setEventos(response);
-                    }
                     setLoading(false);
                 }
                 else{

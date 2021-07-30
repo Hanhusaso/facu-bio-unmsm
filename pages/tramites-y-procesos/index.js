@@ -114,14 +114,8 @@ const TramitesProcesos = () => {
                 setLoading(true);
                 setSinResultados(false);
                 if(response1 != 0){
-                    if(palabra == ''){
-                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, dirigidosA, frecuentes);
-                        setTramitesProcesos(response);
-                    }
-                    else{
-                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, [], []);
-                        setTramitesProcesos(response);
-                    }
+                    const response = await getTramitesProcesosApi(limitPerPage, page, palabra, dirigidosA, frecuentes);
+                    setTramitesProcesos(response);
                     setLoading(false);
                 }
                 else{
@@ -138,14 +132,8 @@ const TramitesProcesos = () => {
                 setLoading(true);
                 setSinResultados(false);
                 if(response1 != 0){
-                    if(palabra == ''){
-                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, dirigidosA, frecuentes);
-                        setTramitesProcesos(response);
-                    }
-                    else{
-                        const response = await getTramitesProcesosApi(limitPerPage, page, palabra, [], []);
-                        setTramitesProcesos(response);
-                    }
+                    const response = await getTramitesProcesosApi(limitPerPage, page, palabra, [], []);
+                    setTramitesProcesos(response);
                     setLoading(false);
                 }
                 else{

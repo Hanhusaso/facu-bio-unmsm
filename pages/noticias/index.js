@@ -122,14 +122,8 @@ const noticias = () => {
                 setLoading(true);
                 setSinResultados(false);
                 if(response1 != 0){
-                    if(palabra == ''){
-                        const response = await getNoticiasApi(limitPerPage, page, palabra, categorias, date);
-                        setNoticias(response);
-                    }
-                    else{
-                        const response = await getNoticiasApi(limitPerPage, page, palabra, [], '');
-                        setNoticias(response);
-                    }
+                    const response = await getNoticiasApi(limitPerPage, page, palabra, categorias, date);
+                    setNoticias(response);
                     setLoading(false);
                 }
                 else{
@@ -146,34 +140,8 @@ const noticias = () => {
                 setLoading(true);
                 setSinResultados(false);
                 if(response1 != 0){
-                    if(palabra == ''){
-                        const response = await getNoticiasApi(limitPerPage, page, palabra, categorias, date);
-                        setNoticias(response);
-                        // const response_subcategorias = await getNoticiasSubcategoriasApi();
-                        // setNoticiasSubcategorias(response_subcategorias);
-                        // setLoading(false);
-                        // if(size(response) == 0){
-                        //   setSinResultados(true);
-                        // }
-                        // else{
-                        //   setSinResultados(false);
-                        // }
-                        // window.scrollTo(0, 0);
-                    }
-                    else{
-                        const response = await getNoticiasApi(limitPerPage, page, palabra, [], '');
-                        setNoticias(response);
-                        // const response_subcategorias = await getNoticiasSubcategoriasApi();
-                        // setNoticiasSubcategorias(response_subcategorias);
-                        // setLoading(false);
-                        // if(size(response) == 0){
-                        //   setSinResultados(true);
-                        // }
-                        // else{
-                        //   setSinResultados(false);
-                        // }
-                        // window.scrollTo(0, 0);
-                    }
+                    const response = await getNoticiasApi(limitPerPage, page, palabra, [], '');
+                    setNoticias(response);
                     setLoading(false);
                 }
                 else{
@@ -183,38 +151,6 @@ const noticias = () => {
                 window.scrollTo(0, 0);
             }
         })();
-        // (async () => {
-        //   setLoading(true);
-        //   setSinResultados(false);
-        //   if(palabra == ''){
-        //     const response = await getNoticiasApi(limitPerPage, page, palabra, categorias, date);
-        //     setNoticias(response);
-        //     // const response_subcategorias = await getNoticiasSubcategoriasApi();
-        //     // setNoticiasSubcategorias(response_subcategorias);
-        //     setLoading(false);
-        //     if(size(response) == 0){
-        //       setSinResultados(true);
-        //     }
-        //     else{
-        //       setSinResultados(false);
-        //     }
-        //     window.scrollTo(0, 0);
-        //   }
-        //   else{
-        //     const response = await getNoticiasApi(limitPerPage, page, palabra, [], '');
-        //     setNoticias(response);
-        //     // const response_subcategorias = await getNoticiasSubcategoriasApi();
-        //     // setNoticiasSubcategorias(response_subcategorias);
-        //     setLoading(false);
-        //     if(size(response) == 0){
-        //       setSinResultados(true);
-        //     }
-        //     else{
-        //       setSinResultados(false);
-        //     }
-        //     window.scrollTo(0, 0);
-        //   }
-        // })();
     }, [page, palabra, categoria, date]);
 
     useEffect(() => {
