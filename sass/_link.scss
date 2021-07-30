@@ -1,5 +1,6 @@
 a {
     color: $green-bright;
+    transition: color .3s ease;
     &.color-inherit {
         color: inherit;
         .icon {
@@ -9,7 +10,7 @@ a {
     &:hover {
         text-decoration: none;
         color: $green-bright;
-        transition: color .3s ease;
+        // transition: color .3s ease;
     }
     .icon {
         fill: currentColor;

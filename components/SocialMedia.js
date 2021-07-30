@@ -11,8 +11,7 @@ import { motion } from "framer-motion";
 const SocialMedia = () => {
 	return (
 		<motion.div
-			className="wrapper-social-media"
-			className="wrapper-social-media"
+			className="wrapper-social-media d-none d-md-block"
 			initial={{ bottom: "-25vh" }}
 			animate={{ bottom: 0 }}
 			transition={{ duration: 0.5 }}

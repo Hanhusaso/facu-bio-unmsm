@@ -11,9 +11,12 @@ import ClampLines from "react-clamp-lines";
 import { getNoticiasHomeApi, getNoticiasSubcategoriasApi } from "./api/noticias";
 import { getEventosHomeApi } from "./api/eventos";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { useWindowSize } from "../utils/useWindowSize";
 
 export default function Home() {
 	const [loadingPage, setLoadingPage] = useState(true);
+
+	const { width, height } = useWindowSize();
 
 	const [noticias, setNoticias] = useState([]);
 	const [noticiasSubcategorias, setNoticiasSubcategorias] = useState([]);
@@ -26,6 +29,7 @@ export default function Home() {
 	const noticia_cuatro = useTransform(scrollYProgress, [0, 0.2], [600, 0]);
 	const intro_carreras = useTransform(scrollYProgress, [0.2, 0.4], [0.2, 1]);
 	const microscopio = useTransform(scrollYProgress, [0.7, 0.85], [0.3, 1]);
+	
 
 	const months = [
 		"enero",
@@ -97,11 +101,21 @@ export default function Home() {
 					</Head>
 					<Menu />
 					<SocialMedia />
-					<main>
+					<main className={width < 768 ? "bg-green-png" : ""}>
 						<section className="section-principal-home section-eventos">
-							<video className="bg-home-video" loop autoplay="true" muted>
-								<source src="/assets/video/facu_bio.mp4" type="video/mp4" />
-							</video>
+							{width >= 768 && (
+								<>
+								<video className="bg-home-video" loop autoPlay={true} muted>
+									<source src="/assets/video/facu_bio.mp4" type="video/mp4" />
+								</video>
+								</>
+							)}
+							{width < 768 && (
+								<>
+								<img className="w-100 img-fluid mb-2 mb-md-0" src="/assets/img/home/home-ciencias-biologicas-unmsm.png"/>
+								</>
+							)}
+							
 							<motion.div
 								className="wrapper-title-home"
 								initial={{ opacity: 0 }}
@@ -137,9 +151,9 @@ export default function Home() {
 							>
 								<Container fluid>
 									<Row>
-										<Col md={{ span: 11, offset: 1 }} className="pr-0">
-											<div className="ml-2 pad-extra-left">
-												<div className="d-flex">
+										<Col md={{ span: 11, offset: 1 }} className="p-0">
+											<div className="ml-0 ml-md-2 pad-extra-left">
+												<div className="d-flex mb-2 mb-md-0">
 													<h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
 													<motion.a
 														href="/eventos"
@@ -153,7 +167,8 @@ export default function Home() {
 													<Container fluid className="px-0">
 														<Row>
 															{eventos[0] ? (
-																<Col>
+																<Col className="col-12 col-md mb-3 mb-md-0">
+																<a className="color-inherit" href={`eventos/evento?nombre=${eventos[0]?.url_nombre}`}>
 																	<p className="fecha-evento">
 																		<span>
 																			{new Date(eventos[0]?.fechaInicio).getDate() < 10
@@ -166,12 +181,14 @@ export default function Home() {
 																	</p>
 																	<p className="titulo-evento">{eventos[0]?.nombre}</p>
 																	<p className="lugar-evento mb-0">{eventos[0]?.lugar}</p>
+																</a>
 																</Col>
 															) : (
 																""
 															)}
 															{eventos[1] ? (
-																<Col>
+																<Col className="col-12 col-md mb-3 mb-md-0">
+																<a className="color-inherit" href={`eventos/evento?nombre=${eventos[1]?.url_nombre}`}>
 																	<p className="fecha-evento">
 																		<span>
 																			{new Date(eventos[1]?.fechaInicio).getDate() < 10
@@ -184,12 +201,14 @@ export default function Home() {
 																	</p>
 																	<p className="titulo-evento">{eventos[1]?.nombre}</p>
 																	<p className="lugar-evento mb-0">{eventos[1]?.lugar}</p>
+																</a>
 																</Col>
 															) : (
 																""
 															)}
 															{eventos[2] ? (
-																<Col>
+																<Col className="col-12 col-md mb-3 mb-md-0">
+																<a className="color-inherit" href={`eventos/evento?nombre=${eventos[2]?.url_nombre}`}>
 																	<p className="fecha-evento">
 																		<span>
 																			{new Date(eventos[2]?.fechaInicio).getDate() < 10
@@ -202,12 +221,14 @@ export default function Home() {
 																	</p>
 																	<p className="titulo-evento">{eventos[2]?.nombre}</p>
 																	<p className="lugar-evento mb-0">{eventos[2]?.lugar}</p>
+																</a>
 																</Col>
 															) : (
 																""
 															)}
 															{eventos[3] ? (
-																<Col>
+																<Col className="col-12 col-md mb-3 mb-md-0">
+																<a className="color-inherit" href={`eventos/evento?nombre=${eventos[3]?.url_nombre}`}>
 																	<p className="fecha-evento">
 																		<span>
 																			{new Date(eventos[3]?.fechaInicio).getDate() < 10
@@ -220,6 +241,7 @@ export default function Home() {
 																	</p>
 																	<p className="titulo-evento">{eventos[3]?.nombre}</p>
 																	<p className="lugar-evento mb-0">{eventos[3]?.lugar}</p>
+																</a>
 																</Col>
 															) : (
 																""
@@ -246,14 +268,14 @@ export default function Home() {
 								</Container>
 							</motion.div>
 						</section>
-						<div className="bg-green-png">
-							<section className="section-noticias pt-5 mb-5">
+						<div className={width >= 768 ? "bg-green-png" : ""}>
+							<section className="section-noticias pt-2 pt-md-5 mb-2 mb-md-5">
 								<div>
 									<div className="mb-3">
 										<Container>
 											<Row>
-												<Col md={{ span: 10, offset: 1 }}>
-													<div className="d-flex justify-content-end">
+												<Col className={width < 768 ? "p-0" : ""} md={{ span: 10, offset: 1 }}>
+													<div className="d-flex justify-content-start justify-content-md-end">
 														<h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
 														<a href="/noticias" className="d-inline-block">
 															<img src="/assets/img/iconos/boton_vermas.png" />
@@ -268,11 +290,11 @@ export default function Home() {
 											<Col md="1"></Col>
 											{/* <Col className="d-flex flex-column position-relative" md={{ span: 4, offset: 1 }}> */}
 											<Col
-												className="d-flex flex-column position-relative"
+												className="d-flex flex-column position-relative mb-2 mb-md-0"
 												md={{ span: 4, offset: 0 }}
 											>
 												<motion.p
-													className="mb-0 txt-noticias-bg"
+													className="d-none d-md-block mb-0 txt-noticias-bg"
 													style={{
 														opacity: intro_noticias,
 													}}
@@ -302,7 +324,7 @@ export default function Home() {
 													<div className="caption-img">{noticias[0]?.titulo}</div>
 												</motion.a>
 											</Col>
-											<Col md="2">
+											<Col className="mb-2 mb-md-0" md="2">
 												<a
 													className="color-inherit"
 													href={`noticias/noticia?titulo=${noticias[1].url_titulo}`}
@@ -347,7 +369,7 @@ export default function Home() {
 													</motion.div>
 												</a>
 											</Col>
-											<Col md="2">
+											<Col className="mb-2 mb-md-0" md="2">
 												<a
 													className="color-inherit"
 													href={`noticias/noticia?titulo=${noticias[2].url_titulo}`}
@@ -392,7 +414,7 @@ export default function Home() {
 													</motion.div>
 												</a>
 											</Col>
-											<Col md="2">
+											<Col className="mb-2 mb-md-0" md="2">
 												<a
 													className="color-inherit"
 													href={`noticias/noticia?titulo=${noticias[3].url_titulo}`}
@@ -442,8 +464,8 @@ export default function Home() {
 									</Container>
 								</div>
 							</section>
-							<section className="section-carreras mb-4">
-								<div className="mb-2">
+							<section className="section-carreras mb-2 mb-md-4">
+								<div className="mb-2 d-none d-md-block">
 									<Container>
 										<Row>
 											<Col md={{ span: 10, offset: 1 }}>
@@ -460,7 +482,7 @@ export default function Home() {
 								<div className="mb-4">
 									<Container>
 										<Row>
-											<Col md={{ span: 10, offset: 1 }}>
+											<Col className={width < 768 ? "p-0" : ""} md={{ span: 10, offset: 1 }}>
 												<div className="d-flex">
 													<h2 className="subtitle-green mr-1 mb-0">Carreras</h2>
 													<a href="/formacion-academica/pregrado" className="d-inline-block">
@@ -476,7 +498,7 @@ export default function Home() {
 										<Row>
 											<Col md={{ span: 10, offset: 1 }}>
 												<div className="wrapper-carreras">
-													<div>
+													<div className="mb-2 mb-md-0">
 														<Link href="/formacion-academica/pregrado/microbiologia-parasitologia">
 															<a className="d-block wrapper-caption">
 																<img
@@ -491,7 +513,7 @@ export default function Home() {
 															</a>
 														</Link>
 													</div>
-													<div>
+													<div className="mb-2 mb-md-0">
 														<Link href="/formacion-academica/pregrado/genetica-biotecnologia">
 															<a className="d-block wrapper-caption">
 																<img
@@ -506,7 +528,7 @@ export default function Home() {
 															</a>
 														</Link>
 													</div>
-													<div>
+													<div className="mb-2 mb-md-0">
 														<Link href="/formacion-academica/pregrado/ciencias-biologicas">
 															<a className="d-block wrapper-caption">
 																<img
@@ -525,13 +547,13 @@ export default function Home() {
 									</Container>
 								</div>
 							</section>
-							<section className="section-proyectos pt-5 mb-5">
+							<section className="section-proyectos pt-0 pt-md-5 mb-2 mb-md-5">
 								<div>
 									<div className="mb-3">
 										<Container>
 											<Row>
-												<Col md={{ span: 10, offset: 1 }}>
-													<div className="d-flex justify-content-end">
+												<Col className={width < 768 ? "p-0" : ""} md={{ span: 10, offset: 1 }}>
+													<div className="d-flex justify-content-start justify-content-md-end">
 														<h2 className="subtitle-green mr-1 mb-0">Producción científica</h2>
 														{/* <a href="#" className="d-inline-block">
                               <img src="/assets/img/iconos/boton_vermas.png"/>
@@ -550,15 +572,25 @@ export default function Home() {
 											<Col md="1"></Col>
 											{/* <Col className="d-flex flex-column position-relative" md={{ span: 4, offset: 1 }}> */}
 											<Col
-												className="d-flex flex-column position-relative"
+												className="d-flex flex-column position-relative mb-2 mb-md-0"
 												md={{ span: 4, offset: 0 }}
 											>
-												<p className="mb-0 txt-proyectos-bg">
-													Descubre el trabajo
-													<br />
-													de alumnos, docentes
-													<br />y egresados
-												</p>
+												
+												{width >= 768 && (
+													<>
+													<p className="mb-0 txt-proyectos-bg">
+														Descubre el trabajo
+														<br />
+														de alumnos, docentes
+														<br />y egresados
+													</p>
+													</>
+												)}
+												{width < 768 && (
+													<>
+													<p>Descubre el trabajo de alumnos, docentes y egresados</p>
+													</>
+												)}
 												<a
 													href="/investigacion/proyectos/proyecto-fondecyt"
 													className="position-relative box-shadow mt-auto"
@@ -579,7 +611,7 @@ export default function Home() {
 													</div>
 												</a>
 											</Col>
-											<Col md="2">
+											<Col className="mb-2 mb-md-0" md="2">
 												<div className="card-bio">
 													<div className="part-img position-relative">
 														<div className="position-relative">
@@ -596,17 +628,10 @@ export default function Home() {
 															cuerpos en descomposición de importancia forense”
 														</p>
 														<p className="author-card mb-0">Mag. María Bermejo</p>
-														{/* <ClampLines
-                            text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
-                            lines={4}
-                            buttons={false}
-                            ellipsis="..."
-                            className="desc-card mb-0"
-                          /> */}
 													</div>
 												</div>
 											</Col>
-											<Col md="2">
+											<Col className="mb-2 mb-md-0" md="2">
 												<div className="card-bio">
 													<div className="part-img position-relative">
 														<div className="position-relative">
@@ -624,17 +649,10 @@ export default function Home() {
 															Arthrospira máxima
 														</p>
 														<p className="author-card mb-0">Mag. María Bermejo</p>
-														{/* <ClampLines
-                            text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
-                            lines={4}
-                            buttons={false}
-                            ellipsis="..."
-                            className="desc-card mb-0"
-                          /> */}
 													</div>
 												</div>
 											</Col>
-											<Col md="2">
+											<Col className="mb-2 mb-md-0" md="2">
 												<div className="card-bio">
 													<div className="part-img position-relative">
 														<div className="position-relative">
@@ -652,13 +670,6 @@ export default function Home() {
 															ésteres etílicos
 														</p>
 														<p className="author-card mb-0">Mag. María Bermejo</p>
-														{/* <ClampLines
-                            text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
-                            lines={4}
-                            buttons={false}
-                            ellipsis="..."
-                            className="desc-card mb-0"
-                          /> */}
 													</div>
 												</div>
 											</Col>
@@ -669,9 +680,9 @@ export default function Home() {
 							</section>
 							<section className="section-mision-numeros mb-5">
 								<Container>
-									<Row>
+									<Row className="flex-column-reverse flex-md-row">
 										<Col md={{ span: 6, offset: 1 }}>
-											<div className="d-flex align-items-end mb-5">
+											<div className="d-flex align-items-end mb-5 position-relative">
 												<motion.img
 													className="microscopio"
 													style={{ scale: microscopio }}
@@ -694,7 +705,7 @@ export default function Home() {
 											<div className="text-white text-center">
 												<Container>
 													<Row>
-														<Col></Col>
+														<Col md="0"></Col>
 														<Col>
 															<div className="wrapper-icon">
 																<img
@@ -707,7 +718,7 @@ export default function Home() {
 																<span>900</span>
 															</div>
 															<div>
-																<span>Alumnos</span>
+																<span className="name-number">Alumnos</span>
 															</div>
 														</Col>
 														<Col>
@@ -719,7 +730,7 @@ export default function Home() {
 																<span>132</span>
 															</div>
 															<div>
-																<span>Docentes investigadores</span>
+																<span className="name-number">Docentes investigadores</span>
 															</div>
 														</Col>
 														<Col>
@@ -734,7 +745,7 @@ export default function Home() {
 																<span>56</span>
 															</div>
 															<div>
-																<span>Artículos publicados</span>
+																<span className="name-number">Artículos publicados</span>
 															</div>
 														</Col>
 														<Col>
@@ -746,21 +757,21 @@ export default function Home() {
 																<span>773</span>
 															</div>
 															<div>
-																<span>Tesis realizadas</span>
+																<span className="name-number">Tesis realizadas</span>
 															</div>
 														</Col>
-														<Col></Col>
+														<Col md="0"></Col>
 													</Row>
 												</Container>
 											</div>
 										</Col>
-										<Col md={{ span: 4 }}>
+										<Col className="mb-5 mb-md-0" md={{ span: 4 }}>
 											<div className="section-mision">
 												<Carousel
 													fade
 													indicators={false}
 													controls={false}
-													interval="5000"
+													interval={5000}
 													className="text-right carousel-text"
 												>
 													<Carousel.Item>
