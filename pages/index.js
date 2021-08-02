@@ -687,7 +687,7 @@ export default function Home() {
 															</div>
 														</div>
 														<div className="part-text">
-															<p className="title-card">
+															<p className="title-card line-clamp-4">
 																{proyectos[1].nombre}
 															</p>
 															<p className="author-card mb-0">{proyectos[1].responsable == null || proyectos[1].responsable == '' ? obtenerNombreGrupoInvestigacion(proyectos[1].grupo_investigacion) : proyectos[1].responsable}</p>
@@ -731,7 +731,7 @@ export default function Home() {
 															</div>
 														</div>
 														<div className="part-text">
-															<p className="title-card">
+															<p className="title-card line-clamp-4">
 																{proyectos[2].nombre}
 															</p>
 															<p className="author-card mb-0">{proyectos[2].responsable == null || proyectos[2].responsable == '' ? obtenerNombreGrupoInvestigacion(proyectos[2].grupo_investigacion) : proyectos[2].responsable}</p>
@@ -775,7 +775,7 @@ export default function Home() {
 															</div>
 														</div>
 														<div className="part-text">
-															<p className="title-card">
+															<p className="title-card line-clamp-4">
 																{proyectos[3].nombre}
 															</p>
 															<p className="author-card mb-0">{proyectos[3].responsable == null || proyectos[3].responsable == '' ? obtenerNombreGrupoInvestigacion(proyectos[3].grupo_investigacion) : proyectos[3].responsable}</p>
