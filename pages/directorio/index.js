@@ -128,10 +128,10 @@ const directorio = () => {
                                                     <tbody>
                                                         {directorios.map((directorio, index) => (
                                                             <tr key={index}>
-                                                                <td>{directorio.unidad}</td>
-                                                                <td>{directorio.cargo}</td>
-                                                                <td>{directorio.nombre}</td>
-                                                                <td>{directorio.anexo}</td>
+                                                                <td dangerouslySetInnerHTML={{ __html: directorio.unidad }}></td>
+                                                                <td dangerouslySetInnerHTML={{ __html: directorio.cargo }}></td>
+                                                                <td dangerouslySetInnerHTML={{ __html: directorio.nombre }}></td>
+                                                                <td dangerouslySetInnerHTML={{ __html: directorio.anexo }}></td>
                                                                 <td dangerouslySetInnerHTML={{ __html: directorio.email }}></td>
                                                             </tr>
                                                         ))}  
