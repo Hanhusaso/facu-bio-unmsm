@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Pagination, Loader, Modal, Button } from 'semantic-ui-react'
+import { Pagination, Loader } from 'semantic-ui-react'
+import * as Io5Icons from "react-icons/io5";
 // import 'semantic-ui-css/semantic.min.css';
 
 // import Head from "next/head";
 // import Header from "../../components/Header"
 import Link from 'next/link'
 import Layout from '../../../components/Layout'
-import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
+import {Row, Col, Container, Breadcrumb, Spinner, Modal} from 'react-bootstrap'
 import { AiFillContainer } from 'react-icons/ai'
 import {countProyectosApi, getProyectosApi, countProyectosByGrupoInvestigacionApi} from '../../api/proyectos';
 import j from "jquery";
@@ -441,44 +442,10 @@ export default function Proyectos() {
                 </div>
             </Layout>
 
-            <Modal className="basic-modal" open={showModal}  dimmer='blurring' size='large' onClose={() => setShowModal(false)} >
-                    <style>
-                        {`
-                            // .modals {
-                            //     padding-bottom: 130px !important;
-                            // }
-                            .modal {
-                                left: 20% !important;
-                                top: 70px;
-                            }
-                            .ui.large.modal {
-                                width: 1080px !important;
-                                height: 870px !important;
-                                margin: 0;
-                            }
-                        `}
-                    </style> 
-                    <Modal.Header>
-                        <style>
-                            {`
-                                .header {
-                                    border-radius: 15px !important;
-                                    padding: 0rem !important;
-                            `}
-                        </style> 
-                            <div className="position-relative">
-                                    
-                            </div>
-                        </Modal.Header>           
-                    <style>
-                        {/* {`
-                            .basic-modal {
-                                border-radius: 15px !important;
-                            }
-                        `} */}
-                    </style>
-                <Modal.Content>
-                    <Button 
+            <Modal centered size="lg" show={showModal} onHide={() => setShowModal(false)} >
+                <Modal.Body>
+                    <div className="text-right">
+                    <button 
                         onClick={() => {
                             setShowModal(false);
                             setTimeout(
@@ -493,10 +460,14 @@ export default function Proyectos() {
                                 }, 
                             50);
                         }}
+                        className="btn-modal-close btn-transparent p-0"
                     >
-                    Cerrar</Button>
+                    <Io5Icons.IoClose className="close-icon icon" />
+                    </button>
+                    </div>
                     <div>
-                        <div className="text-center" style={{fontSize: "16px", color: "#56756B", fontWeight: "bold"}}>Grupos de Investigación</div>
+                        <div className="text-center title-dark mb-4">Grupos de Investigación</div>
+                        <div className="grid-inputs-modal">
                         <div className="input-group mb-1">
                             <input type="checkbox" id="aplicacion_clinica_de_recursos_naturales" name="aplicacion_clinica_de_recursos_naturales" value="aplicacion_clinica_de_recursos_naturales" onChange={onChangeGrupoInvestigacion} />
                             <label className="mb-0" for="aplicacion_clinica_de_recursos_naturales"><span className="checkmark"></span>Aplicación clínica de recursos naturales</label>
@@ -633,32 +604,10 @@ export default function Proyectos() {
                             <input type="checkbox" id="biota_acuatica" name="biota_acuatica" value="biota_acuatica" onChange={onChangeGrupoInvestigacion} />
                             <label className="mb-0" for="biota_acuatica"><span className="checkmark"></span>Biota acuática</label>
                         </div>
+                        </div>
                     </div>
-                    {/* <style>
-                        {`
-                            .modals > .modal > .content {
-                                height: 537px;
-                                width: 100% !important;
-                                padding-top: 50px !important;
-                                border-radius: 15px !important;
-                            }
-                            // .scrolling .content {
-                            //     height: 537px;
-                            //     width: 100% !important;
-                            //     padding-top: 50px !important;
-                            //     border-radius: 15px !important;
-                            // }
-                            // ::-webkit-scrollbar-track {
-                            //     margin-top: 35px;
-                            //     margin-bottom: 35px;
-                            //     margin-right: 200px !important;
-                            // }
-                        `}
                     
-                    </style> */}
-                    
-        
-                </Modal.Content>
+                </Modal.Body>
             </Modal>
 
         </>
