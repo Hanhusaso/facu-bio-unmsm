@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Pagination, Loader, Modal, Button } from 'semantic-ui-react'
-import 'semantic-ui-css/semantic.min.css';
+// import 'semantic-ui-css/semantic.min.css';
 
 // import Head from "next/head";
 // import Header from "../../components/Header"
