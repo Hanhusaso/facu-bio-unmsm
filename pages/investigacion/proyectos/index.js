@@ -281,7 +281,7 @@ export default function Proyectos() {
                             <Row>
                                 <Col md="1" lg="1"></Col>
                                 <Col md="3" lg="2">
-                                    <div className="filters-wrapper">
+                                    <div className="filters-wrapper mb-3">
                                         <div className="mb-3">
                                             <div className="font-weight-bold mb-2">Grupos de investigación</div>
                                             <div>
@@ -378,7 +378,7 @@ export default function Proyectos() {
                                             </div>
                                             </>
                                     ) : !sinResultados ? (
-                                        <div>                                   
+                                        <div className="mb-3">                                   
                                             <div className="mb-2">
                                                 {countProyectos} {countProyectos == 1 ? 'resultado' : 'resultados'}
                                             </div>
