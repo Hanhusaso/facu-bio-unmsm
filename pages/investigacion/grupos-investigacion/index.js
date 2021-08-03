@@ -3,6 +3,7 @@ import Layout from "../../../components/Layout"
 import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 import Link from 'next/link'
 import * as HiIcons from "react-icons/hi";
+import NoticiasExtra from '../../../components/NoticiasExtra';
 
 const gruposInvestigacion = () => {
     return (
@@ -51,22 +52,43 @@ const gruposInvestigacion = () => {
                                 <Col md="1" lg="1"></Col>
                                 <Col md="7" lg="8">
                                     <div className="mb-3">
+                                        <div className="title-dark mb-2">¿Qué es la Investigación universitaria?</div>
                                         <p>
-                                        Se discute en este trabajo el desarrollo histórico, significado y valor heurístico de la Historia Natural en la reflexión teórica y generación de hipótesis en biología. Sobre esta base se fundamenta la validez de una metodología propia en el dominio de las ciencias naturales históricas, en general.
+                                            Es aquella investigación colaborativa entre el docente y el estudiante, entendida como un proceso que involucra tanto la creación de conocimiento como el de educar y formar investigadores. Con esta premisa la UNMSM realizó un cambio importante en el manejo de la investigación en las 20 Facultades a través de la creación de los Grupos de Investigación (GI).
+                                        </p>
+                                        <div className="title-dark mb-2">¿Cómo se crearon los GI?</div>
+                                        <p>
+                                            Los GI se plantearon como unidades funcionales de duración temporal y renovable, integradas por docentes y estudiantes (preferentemente tesistas) de la UNMSM, para desarrollar actividades de investigación, desarrollo e innovación y que, a su vez, infundan dinamismo a los institutos de investigación en las facultades.
+                                        </p>
+                                        <div className="title-dark mb-2">¿Cuáles son sus objetivos?</div>
+                                        <p>
+                                            Los GI deberán contribuir a la investigación formativa a nivel del pregrado (trabajos de investigación y tesis), ser los guías y apoyo para las tesis de posgrado, y lograr graduaciones y titulaciones de alta calidad académica. Además, los GI deben promover y articular sus capacidades para solucionar y proponer alternativas a las diversas problemáticas del Perú, así como a las necesidades de innovación de las empresas y organismos públicos y privados, proponiendo soluciones tecnológicas; de esta manera, los GI se convierten en los espacios de investigaciones pertinentes a las necesidades de la sociedad y de formación de estudiantes con visión para el desarrollo. En resumen, en el modelo que propusimos, el estudiante de pre y posgrado debe vincularse a un GI, a fin de desarrollar allí un componente de programas o líneas de investigación del GI. Los GI tendrán estudiantes que cubrirán múltiples aspectos de los procesos que desarrollan mientras reciben el conocimiento directo de los docentes con más experiencia. Eso garantiza que el estudiante esté en contacto con la realidad de la investigación y no envuelto en metodologías que suelen confundirlo o llevarlo a una perspectiva formalista de la misma. Su relación con los investigadores de los GI y estos con la realidad del país, permitirá un mutuo enriquecimiento.
+                                        </p>
+                                        <div className="title-dark mb-2">¿Cuántos Grupos de Investigación encontramos en nuestra facultad?</div>
+                                        <p>
+                                            En la Facultad de Ciencias Biológicas se han constituido 36 grupos de Investigación los que han sido categorizados por el Vicerrectorado de Investigación y posgrado de nuestra Universidad siendo el 50% de ellos categorizados como grupos de investigación A y B.
                                         </p>
                                         <p>
-                                        Primero se examinan de manera crítica los principios generales y metodologías que rigen la investigación en ciencias naturales históricas, en contraste con las ciencias biológicas experimentales. Se comenta el actualismo, un principio fundamental que valida el uso de análogos actuales y la formulación de retrodicciones en la investigación del pasado.
+                                            En los Grupos de Investigación (GI)  se abordan las diferentes disciplinas de competencia del investigador biólogo de acuerdo a su 13  Líneas de investigación propuestas en el taller de Investigación y Posgrado 2019.
                                         </p>
-                                        <div className="title-dark mb-2">¿Cómo se puede participar en los grupos de investigación?</div>
+                                        <div className="title-dark mb-2">¿Te gustaría participar en un GI?</div>
                                         <p>
-                                            Los grupos de investigación pueden incorporar docentes que, de manera voluntaria, tengan la intención de iniciarse en la investigación. Los interesados, quienes deberán estar registrados como investigadores de la Universidad de Lima en el Directorio Nacional de Investigadores e Innovadores del Concytec, pueden contactar al responsable de cada grupo en cualquier momento del año y manifestar su interés en colaborar.
+                                            En los GI se  destaca  la presencia de sus miembros Coordinadores, Titulares, Colaboradores externos  y Adherentes en calidad de  estudiantes en conjunto con los docentes investigadores en la actividad formativa ejercida a través de los Trabajos y tesis de investigación a nivel de Pre grado y Posgrado. La participación activa de investigadores internacionales colabora en la internacionalización de la investigación en la UNMSM.
                                         </p>
-                                        <div className="title-dark mb-2">¿Cómo se puede crear un  grupo de investigación?</div>
                                         <p>
-                                            Los grupos de investigación pueden incorporar docentes que, de manera voluntaria, tengan la intención de iniciarse en la investigación. Los interesados, quienes deberán estar registrados como investigadores de la Universidad de Lima en el Directorio Nacional de Investigadores e Innovadores del Concytec, pueden contactar al responsable de cada grupo en cualquier momento del año y manifestar su interés en colaborar.
+                                            Los GI participan activamente en Convocatorias a FONDOS CONCURSABLES siendo  ganadores de proyectos institucionales con Fondos de la UNMSM y externos ya que los  productos de investigación  de los GI son evidentes en publicaciones en revista de impacto, tesis sustentadas y patentes.
+                                        </p>
+                                        <p>
+                                            Los invitamos a ser parte activa de los Grupos de Investigación de la Facultad de Ciencias Biológicas e interactuar con nuestros Grupos de investigación a través del correo electrónico <b>icbar.biologia@unmsm.edu.pe</b>.
                                         </p>
                                     </div>
-                                    <div>
+                                    <div className="text-center mb-3">
+                                        <a className="btn-green-bright" href="https://vrip.unmsm.edu.pe/biologia/" target="_blank">
+                                            Grupos de investigación
+                                        </a>
+                                    </div>
+                                    {/* BUSCADOR */}
+                                    {/* <div>
                                         <Container className="mb-4">
                                             <Row>
                                                 <Col md="3"></Col>
@@ -78,8 +100,9 @@ const gruposInvestigacion = () => {
                                                 <Col md="3"></Col>
                                             </Row>
                                         </Container>
-                                    </div>
-                                    <div className="divisor"></div>
+                                    </div> */}
+                                    {/* LISTA DEL BUSCADOR */}
+                                    {/* <div className="divisor"></div>
                                     <div>
                                         <div className="block-divider mb-3 pb-3 position-relative">
                                             <div className="mb-2">
@@ -123,66 +146,13 @@ const gruposInvestigacion = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </Col>
                                 <Col md="3" lg="2">
                                     <aside>
-                                        <div className="d-flex mb-3">
-                                            <h2 className="subtitle-green mr-1 mb-0">Noticias</h2>
-                                            <a href="#" className="d-inline-block">
-                                                <img src="/assets/img/iconos/boton_vermas.png"/>
-                                            </a>
-                                        </div>
-                                        <div>
-                                            <div className="card-bio mb-3">
-                                                <div className="part-img position-relative">
-                                                    <div className="position-relative">
-                                                        <img className="w-100 img-fluid" src="/assets/img/noticias/noticia2.png"></img>
-                                                        <div className="dark-filter"></div>
-                                                    </div>
-                                                    <div className="badge-tag">
-                                                        Tecnologia
-                                                    </div>
-                                                </div>
-                                                <div className="part-text">
-                                                    <p className="title-card mb-0">
-                                                        Dos científicas ganan el Premio Nobel de Química 2020 por “tijeras genéticas” CRISPR-Cas9
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="card-bio mb-3">
-                                                <div className="part-img position-relative">
-                                                    <div className="position-relative">
-                                                        <img className="w-100 img-fluid" src="/assets/img/noticias/noticia3.png"></img>
-                                                        <div className="dark-filter"></div>
-                                                    </div>
-                                                    <div className="badge-tag">
-                                                        Ciencia
-                                                    </div>
-                                                </div>
-                                                <div className="part-text">
-                                                    <p className="title-card mb-0">
-                                                        El objetivo de nuestro proyecto es ir en camino a producir clones de alpacas
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="card-bio mb-3">
-                                                <div className="part-img position-relative">
-                                                    <div className="position-relative">
-                                                        <img className="w-100 img-fluid" src="/assets/img/noticias/noticia4.png"></img>
-                                                        <div className="dark-filter"></div>
-                                                    </div>
-                                                    <div className="badge-tag">
-                                                        Facultad
-                                                    </div>
-                                                </div>
-                                                <div className="part-text">
-                                                    <p className="title-card mb-0">
-                                                        ¡La FCB ya cuenta oficialmente con un nuevo y moderno pabellón!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <NoticiasExtra 
+                                            idNoticiaDetalle = {""} 
+                                        />
                                     </aside>
                                 </Col>
                                 <Col md="1" lg="1"></Col>
