@@ -422,7 +422,7 @@ export default function Proyectos() {
                                             </p>
                                             <ul className="nav flex-column">
                                                 <li className="mb-2 text-center font-weight-bold">
-                                                    <Link href="#">
+                                                    <Link href="/investigacion/grupos-investigacion">
                                                         <a>
                                                             Infórmate aquí
                                                         </a>
