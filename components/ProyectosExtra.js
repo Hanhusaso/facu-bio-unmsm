@@ -24,8 +24,8 @@ const ProyectosExtra = (props) => {
             </div>
             <div>
                 {proyectosUltimos.map((proyecto_ultimo, index) =>(
-                    <div key={index} className="card-bio mb-3">
-                        <a href={`/investigacion/proyectos/proyecto?nombre=${proyecto_ultimo.url_nombre}`} style={{color: '#56756B'}}>
+                    <div key={index} className="mb-3">
+                        <a className="card-bio color-inherit no-color-hover" href={`/investigacion/proyectos/proyecto?nombre=${proyecto_ultimo.url_nombre}`}>
                             <div className="part-img position-relative">
                                 <div className="position-relative">
                                     <img className="w-100 img-fluid" src={proyecto_ultimo.imagen ? proyecto_ultimo.imagen.url : ''}></img>
