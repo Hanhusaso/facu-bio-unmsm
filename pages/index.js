@@ -657,17 +657,6 @@ export default function Home() {
 													</>
 												)}
 
-												<motion.p
-													className="mb-0 txt-proyectos-bg"
-													style={{
-														opacity: intro_proyectos,
-													}}
-												>
-													Descubre el trabajo
-													<br />
-													de alumnos, docentes
-													<br />y egresados
-												</motion.p>
 												{proyectos[0] ? 
 													<motion.a
 														style={{ x: proyecto_uno }}
@@ -696,7 +685,7 @@ export default function Home() {
 												''
 												}
 											</Col>
-											<Col md="2">
+											<Col className="mb-2 mb-md-0" md="2">
 											{proyectos[1] ?
 												<a
 													className="color-inherit"
