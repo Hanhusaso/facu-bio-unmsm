@@ -6,6 +6,12 @@ a {
             color: $green-bright;
         }
     }
+    &.no-color-hover:hover {
+        color: inherit;
+        .icon {
+            color: inherit;
+        }
+    }
     &:hover {
         text-decoration: none;
         color: $green-bright;
