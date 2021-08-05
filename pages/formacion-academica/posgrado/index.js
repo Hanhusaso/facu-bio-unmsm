@@ -45,7 +45,7 @@ const posgrado = () => {
                                 <Col sm="1"></Col>
                                 <Col className="">
                                     <p className="mb-0">
-                                        La Unidad de Posgrado de la Facultad de Ciencias Biológicas viene formando masa crítica en investigación, mediante programas de Doctorado y Maestrías, en base a la gran biodiversidad del Perú. Las líneas de investigación fomentadas por los programas de posgrado de nuestra unidad contemplan aspectos como: taxonomía y sistemática, florística, bioprospección, ecología vegetal ecología acuática, limnología, acuicultura, sistemática evolutiva, biogeografía, entomología, ornitología, malacología, biología de la reproducción, manejo y gestión de la biodiversidad, etnobiología, microbiología, parasitología, virología, biotecnología, contaminación biológica, biología molecular y genética.
+                                        La Unidad de Posgrado de la Facultad de Ciencias Biológicas viene formando investigadores, mediante programas de Doctorado y Maestrías, en base al estudio científico de la gran biodiversidad del Perú. Las líneas de investigación fomentadas por los programas de posgrado de nuestra unidad contemplan aspectos como: evolución y sistemática, biogeografía, ecología, limnología, acuicultura, biología de la reproducción, manejo y gestión de la biodiversidad, etnobiología, biología molecular y genética, microbiología, parasitología, virología, biotecnología, bioprospección, contaminación biológica, entre otros.
                                     </p>
                                 </Col>
                                 <Col sm="1"></Col>
@@ -133,9 +133,14 @@ const posgrado = () => {
                                     </div>
                                     {/* <div className="title-green text-center">E.P Microbiología y Parasitología</div> */}
                                     <div className="d-none d-md-block">
-                                        <p className="mb-0">
-                                            La Maestría de Investigación en Ecosistemas y Recursos Acuáticos con mención en Acuicultura, se desarrolla con el fin de formar capital humano que genere conocimiento y su aplicación. Se imparte una formación de calidad que provee investigadores altamente calificados. El egresado podrá desempeñarse tanto en el sector productivo como en universidades o institutos de investigación.
+                                        <p className="mb-2">
+                                            La Maestría de Investigación en Ecosistemas y Recursos Acuáticos se desarrolla con el fin de formar capital humano que genere conocimiento y su aplicación. Se imparte una formación de calidad que provee investigadores altamente calificados. Tiene tres menciones:
                                         </p>
+                                        <ul className="chevron-green-dark font-weight-bold">
+                                            <li>Acuicultura</li>
+                                            <li>Ecosistemas Acuáticos</li>
+                                            <li>Evaluación y Manejo de Recursos Pesqueros</li>
+                                        </ul>
                                     </div>
                                 </Col>
                                 <Col md="2"></Col>
