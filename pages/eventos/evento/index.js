@@ -123,24 +123,26 @@ const evento = () => {
                                     <Col md="7" lg="8">
                                         <div className="title-page mb-2">{evento.tipo} | {evento.nombre}</div>
                                         {/* <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div> */}
-                                        <div className="d-block d-md-flex justify-content-start">
-                                            <div className="date mr-4 mb-1">
-                                                <span>
-                                                    <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
-                                                </span>
-                                                <span>{new Date(evento.fechaInicio).getDate()} de {months[new Date(evento.fechaInicio).getMonth()]} de {new Date(evento.fechaInicio).getFullYear()}</span>
-                                            </div>
-                                            <div className="date mr-4 mb-1">
-                                                <span>
-                                                    <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
-                                                </span>
-                                                <span>{formatAMPM(new Date(evento.fechaInicio))}</span>
-                                            </div>
-                                            <div className="date mb-1">
-                                                <span>
-                                                    <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
-                                                </span>
-                                                <span>{evento.lugar}</span>
+                                        <div className="d-block d-lg-flex justify-content-between">
+                                            <div className="d-block d-lg-flex justify-content-start">
+                                                <div className="date mr-4 mb-1">
+                                                    <span>
+                                                        <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
+                                                    </span>
+                                                    <span>{new Date(evento.fechaInicio).getDate()} de {months[new Date(evento.fechaInicio).getMonth()]} de {new Date(evento.fechaInicio).getFullYear()}</span>
+                                                </div>
+                                                <div className="date mr-4 mb-1">
+                                                    <span>
+                                                        <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
+                                                    </span>
+                                                    <span>{formatAMPM(new Date(evento.fechaInicio))}</span>
+                                                </div>
+                                                <div className="date mb-1">
+                                                    <span>
+                                                        <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
+                                                    </span>
+                                                    <span>{evento.lugar}</span>
+                                                </div>
                                             </div>
                                             <div className="date mb-1">
                                                 <span>
