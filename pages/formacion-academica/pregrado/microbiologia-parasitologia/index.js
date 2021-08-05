@@ -231,7 +231,7 @@ const index = () => {
                                         <div className="mb-3 tab-pane fade" id="v-pills-mision" role="tabpanel" aria-labelledby="v-pills-mision-tab">
                                             <div className="grid-img-txt-1">
                                                 <div>
-                                                    <img className="w-100 img-fluid" src="/assets/img/carreras/mision.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/carreras/microbiologia/mision-ep-microbiologia-parasitologia-ciencias-biologicas-unmsm.png" alt="" />
                                                 </div>
                                                 <div className="mb-3 mb-md-0">
                                                     <p className="title">Misión</p>
@@ -243,7 +243,7 @@ const index = () => {
                                             <div className="divisor"></div>
                                             <div className="grid-img-txt-1">
                                                 <div>
-                                                    <img className="w-100 img-fluid" src="/assets/img/carreras/vision.png" alt="" />
+                                                    <img className="w-100 img-fluid" src="/assets/img/carreras/microbiologia/vision-ep-microbiologia-parasitologia-ciencias-biologicas-unmsm.png" alt="" />
                                                 </div>
                                                 <div className="mb-3 mb-md-0">
                                                     <p className="title">Visión</p>
