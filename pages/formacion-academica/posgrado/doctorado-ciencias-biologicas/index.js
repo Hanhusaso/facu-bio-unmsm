@@ -106,13 +106,6 @@ const index = () => {
                                 <Col md="1" lg="1"></Col>
                                 <Col md="3" lg="2">
                                     <div className="mb-4">
-                                        {/* <ul className="nav flex-column tabs-wrapper">
-                                            <li className="tab">Presentación</li>
-                                            <li className="tab">Admisión</li>
-                                            <li className="tab">Plana docente</li>
-                                            <li className="tab">Malla curricular</li>
-                                            <li className="tab">Seguimiento de egresados</li>
-                                        </ul> */}
                                         <div className="nav flex-column tabs-wrapper nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                                 <a className="tab d-flex active" id="v-pills-presentacion-tab" data-toggle="pill" href="#v-pills-presentacion" role="tab" aria-controls="v-pills-presentacion" aria-selected="true">
                                                     <div>
@@ -153,7 +146,8 @@ const index = () => {
                                                     </div>
                                                     <span>Plana docente</span>
                                                 </a>
-                                                <a className="tab d-flex" id="v-pills-malla-tab" data-toggle="pill" href="#v-pills-malla" role="tab" aria-controls="v-pills-malla" aria-selected="false">
+                                                {/* <a className="tab d-flex" id="v-pills-malla-tab" data-toggle="pill" href="#v-pills-malla" role="tab" aria-controls="v-pills-malla" aria-selected="false"> */}
+                                                <a href="/assets/archivos/posgrado/planes de estudio/plan-estudio-2020-doctorado-ciencias-biologicas.pdf" target="_blank" className="tab d-flex">
                                                     <div>
                                                         <svg width="19" height="21" viewBox="0 0 19 21" className="icon mr-3" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M16.5059 20.4783H5.25586C4.85816 20.4779 4.47686 20.3197 4.19564 20.0385C3.91442 19.7573 3.75626 19.376 3.75586 18.9783V14.4783H5.25586V18.9783H16.5059V2.47827H9.75586V0.978271H16.5059C16.9036 0.978669 17.2849 1.13683 17.5661 1.41805C17.8473 1.69927 18.0055 2.08057 18.0059 2.47827V18.9783C18.0055 19.376 17.8473 19.7573 17.5661 20.0385C17.2849 20.3197 16.9036 20.4779 16.5059 20.4783Z"/>
@@ -163,7 +157,7 @@ const index = () => {
                                                         <path d="M3.75586 16.7283C2.7616 16.7273 1.80835 16.3319 1.10531 15.6288C0.402259 14.9258 0.00685214 13.9725 0.00585938 12.9783V4.72827H1.50586V12.9783C1.50586 13.575 1.74291 14.1473 2.16487 14.5693C2.58683 14.9912 3.15912 15.2283 3.75586 15.2283C4.3526 15.2283 4.92489 14.9912 5.34685 14.5693C5.76881 14.1473 6.00586 13.575 6.00586 12.9783V6.22827C6.00586 6.02936 5.92684 5.83859 5.78619 5.69794C5.64554 5.55729 5.45477 5.47827 5.25586 5.47827C5.05695 5.47827 4.86618 5.55729 4.72553 5.69794C4.58488 5.83859 4.50586 6.02936 4.50586 6.22827V13.7283H3.00586V6.22827C3.00586 5.63153 3.24291 5.05924 3.66487 4.63728C4.08683 4.21532 4.65912 3.97827 5.25586 3.97827C5.8526 3.97827 6.42489 4.21532 6.84685 4.63728C7.26881 5.05924 7.50586 5.63153 7.50586 6.22827V12.9783C7.50487 13.9725 7.10946 14.9258 6.40641 15.6288C5.70337 16.3319 4.75012 16.7273 3.75586 16.7283Z"/>
                                                         </svg>
                                                     </div>
-                                                    <span>Malla curricular</span>
+                                                    <span>Plan de estudio</span>
                                                 </a>
                                                 {/* <a className="tab d-flex" id="v-pills-egresados-tab" data-toggle="pill" href="#v-pills-egresados" role="tab" aria-controls="v-pills-egresados" aria-selected="false">
                                                     <div>
@@ -277,13 +271,54 @@ const index = () => {
                                                     Asesorar los trabajos de investigación de estudiantes de pre y posgrado.
                                                 </li> */}
                                             </ul>
-                                            <a className="btn-green-bright" href="">
+                                            {/* <a className="btn-green-bright" href="">
                                                 Inscripciones
-                                            </a>
+                                            </a> */}
                                         </div>
                                         <div className="mb-3 tab-pane fade" id="v-pills-admision" role="tabpanel" aria-labelledby="v-pills-admision-tab">
                                             <Tabs defaultActiveKey="cronogramas" id="admision-tab">
                                                 <Tab className="pt-3" eventKey="cronogramas" title="Cronogramas">
+                                                    <div>
+                                                        <p className="title">Comunicado publicado por la Dirección General de Posgrado</p>
+                                                        <p>
+                                                            La Universidad Nacional Mayor de San Marcos (UNMSM), a través de la Dirección General de Estudios de Posgrado del Vicerrectorado
+                                                            de Investigación y Posgrado, informa a la comunidad universitaria y público en general que, a solicitud de los decanos de las facultades
+                                                            y el pedido del director de la unidad de posgrado de la facultad de Ingeniería, <b>se suspende el proceso de admisión 2021-II</b>.
+                                                        </p>
+                                                        <p>
+                                                            Dicho proceso será retomado en el mes de agosto, cuando las nuevas autoridades universitarias establezcan la reprogramación correspondiente.
+                                                        </p>
+                                                        <p>
+                                                            Cabe resaltar, que los postulantes que han realizado el pago de inscripción, no perderán este derecho y serán considerados una vez que se reactive
+                                                            el proceso.
+                                                        </p>
+                                                        <p>
+                                                            Asimismo, la III Feria Virtual de Posgrado UNMSM queda suspendida hasta que se comunique por nuestros medios oficiales la reprogramación de actividades
+                                                            del proceso de admisión.
+                                                        </p>
+                                                        <p>
+                                                            Finalmente, se informa que nuestros medios oficiales son:
+                                                        </p>
+                                                        <p>
+                                                            Portal web: <a href="https://posgrado.unmsm.edu.pe/" target="_blank">https://posgrado.unmsm.edu.pe/</a>
+                                                            <br />
+                                                            Facebook: <a href="https://www.facebook.com/unmsm.posgrado/" target="_blank">https://www.facebook.com/unmsm.posgrado/</a>
+                                                            <br />
+                                                            Twitter: <a href="https://twitter.com/PosgradoUNMSM" target="_blank">https://twitter.com/PosgradoUNMSM</a>
+                                                            <br />
+                                                            Instagram: <a href="https://www.instagram.com/posgrado.unmsm/" target="_blank">https://www.instagram.com/posgrado.unmsm/</a>
+                                                            <br />
+                                                            Youtube: <a href="https://www.youtube.com/PosgradoUNMSM-TV" target="_blank">https://www.youtube.com/PosgradoUNMSM-TV</a>
+                                                        </p>
+                                                        <p className="text-right">
+                                                            Lima 12 de julio de 2021
+                                                        </p>
+                                                        <p>
+                                                            <span className="title-dark">Dr. Sergio Ronceros Medrano</span>
+                                                            <br />
+                                                            <span>Director General de Estudios de Posgrado</span>
+                                                        </p>
+                                                    </div>
                                                     {/* <div>
                                                         <p className="title-dark">Cronograma de Admisión 2021 - I</p>
                                                         <div className="table-responsive mb-3">
@@ -381,14 +416,6 @@ const index = () => {
                                                             </table>
                                                         </div>
                                                     </div> */}
-                                                    <div>
-                                                        {/* <object data="/assets/archivos/malla_curricular_2020.pdf" type="application/pdf" width="100%" height="700px">  */}
-                                                            <a href="/assets/archivos/posgrado/Cronograma_posgrado2021-II.pdf" target="_blank">
-                                                                <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
-                                                                <span className="sub-title-dark">Descargar</span>
-                                                            </a>
-                                                        {/* </object> */}
-                                                    </div>
                                                 </Tab>
                                                 <Tab className="pt-3" eventKey="inscripcion" title="Pago de inscripción">
                                                     <div>
@@ -415,7 +442,7 @@ const index = () => {
                                                                             Magíster UNMSM, personal administrativo de la UNMSM, docente de Universidades nacionales y Magisterio Nacionales
                                                                         </td>
                                                                         <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;350.00
+                                                                            S/.&nbsp;400.00
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -423,7 +450,7 @@ const index = () => {
                                                                             Otros postulantes (Graduados de otras universidades)
                                                                         </td>
                                                                         <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;450.00
+                                                                            S/.&nbsp;500.00
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
@@ -443,7 +470,7 @@ const index = () => {
                                                                             Magíster UNMSM, personal administrativo de la UNMSM, docente de Universidades nacionales y Magisterio Nacionales
                                                                         </td>
                                                                         <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;350.00
+                                                                            S/.&nbsp;400.00
                                                                             <br/>
                                                                             <span className="title">Transacción: 9650 + código: 9702</span>
                                                                         </td>
@@ -453,7 +480,7 @@ const index = () => {
                                                                             Otros postulantes (Graduados de otras universidades)
                                                                         </td>
                                                                         <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;450.00
+                                                                            S/.&nbsp;500.00
                                                                             <br/>
                                                                             <span className="title">Transacción: 9650 + código: 9703</span>
                                                                         </td>
@@ -470,7 +497,7 @@ const index = () => {
                                                         </p>
                                                         <ul className="chevron-green-dark">
                                                             <li>Resumen de la hoja de vida del postulante (documentado, foliado y ordenado de acuerdo a los rubros del formato)</li>
-                                                            <li>Constancia de inscripción en línea del grado de Maestro o Doctor emitido por SUNEDU o la copia del diploma de grado de Maestro o Doctor fedateado por la universidad de procedencia (*).</li>
+                                                            <li>Constancia de inscripción en línea del grado de Bachiller emitido por SUNEDU o la copia del diploma de grado de Bachiller fedateado por la universidad de procedencia (*).</li>
                                                             <li>Copia del documento de identidad (DNI, carné de extranjería o pasaporte).</li>
                                                             <li>Recibo de pago por derecho de inscripción efectuado en el Banco de Crédito del Perú o en el Banco de la Nación.</li>
                                                             <li>Proyecto de investigación.</li>
@@ -487,7 +514,7 @@ const index = () => {
                                             </Tabs>
                                         </div>
                                         <div className="mb-3 tab-pane fade" id="v-pills-docente" role="tabpanel" aria-labelledby="v-pills-docente-tab">
-                                            <div className="divisor my-3"></div>
+                                            <div className="divisor mt-0"></div>
                                             {docentes.map((docente, index) => (
                                                 <div key={index} className="block-divider mb-3 pb-2 position-relative">
                                                     <h3 className="title">{docente.nombre}</h3>
@@ -706,17 +733,15 @@ const index = () => {
                                                 </p>
                                             </div> */}
                                         </div>
-                                        <div className="mb-3 tab-pane fade" id="v-pills-malla" role="tabpanel" aria-labelledby="v-pills-malla-tab">
+                                        {/* <div className="mb-3 tab-pane fade" id="v-pills-malla" role="tabpanel" aria-labelledby="v-pills-malla-tab">
                                             <div>
                                                 <div className="mb-4">
-                                                    {/* <object data="/assets/archivos/malla_curricular_2020.pdf" type="application/pdf" width="100%" height="700px">  */}
                                                         <a href="/assets/archivos/malla_curricular_2020.pdf" target="_blank">
                                                             <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
                                                             <span className="sub-title-dark">Descargar</span>
                                                         </a>
-                                                    {/* </object> */}
                                                 </div>
-                                                {/* <div className="section-compartir">
+                                                <div className="section-compartir">
                                                     <div className="d-inline-block font-weight-bold mr-3">
                                                         Compartir vía:
                                                     </div>
@@ -731,9 +756,9 @@ const index = () => {
                                                             <img src="/assets/img/iconos/facebook.svg"/>
                                                         </a>
                                                     </div>
-                                                </div> */}
+                                                </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         {/* <div className="mb-3 tab-pane fade" id="v-pills-egresados" role="tabpanel" aria-labelledby="v-pills-egresados-tab">
                                             <div className="grid-img-txt-2">
                                                 <div>
