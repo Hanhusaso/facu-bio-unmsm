@@ -3,7 +3,7 @@ import Layout from "../../../../components/Layout"
 import CronogramaPosgrado from "../../../../components/posgrado/CronogramaPosgrado";
 import PagoInscripcionMaestria from "../../../../components/posgrado/PagoInscripcionMaestria";
 import RequisitosMaestria from "../../../../components/posgrado/RequisitosMaestria";
-// import Tabs from "../../../../components/Tabs/vanillaTabs"
+
 import {Row, Col, Container, Breadcrumb, Tabs, Tab} from 'react-bootstrap'
 import Link from 'next/link'
 import {getDocenteByIdInformacionAcademicaApi} from '../../../api/formacion-academica';
@@ -358,7 +358,7 @@ const index = () => {
                                                 <Tab className="pt-3" eventKey="inscripcion" title="Pago de inscripción">
                                                     <PagoInscripcionMaestria/>
                                                 </Tab>
-                                                <Tab className="pt-3" eventKey="requisitos" title="Requisitos para el Doctorado">
+                                                <Tab className="pt-3" eventKey="requisitos" title="Requisitos para la Maestría">
                                                     <RequisitosMaestria/>
                                                 </Tab>
                                             </Tabs>
@@ -398,17 +398,15 @@ const index = () => {
                                                 </div>
                                             ))}
                                         </div>
-                                        <div className="mb-3 tab-pane fade" id="v-pills-malla" role="tabpanel" aria-labelledby="v-pills-malla-tab">
+                                        {/* <div className="mb-3 tab-pane fade" id="v-pills-malla" role="tabpanel" aria-labelledby="v-pills-malla-tab">
                                             <div>
                                                 <div className="mb-4">
-                                                    {/* <object data="/assets/archivos/malla_curricular_2020.pdf" type="application/pdf" width="100%" height="700px">  */}
                                                         <a href="/assets/archivos/malla_curricular_2020.pdf" target="_blank">
                                                             <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
                                                             <span className="sub-title-dark">Descargar</span>
                                                         </a>
-                                                    {/* </object> */}
                                                 </div>
-                                                {/* <div className="section-compartir">
+                                                <div className="section-compartir">
                                                     <div className="d-inline-block font-weight-bold mr-3">
                                                         Compartir vía:
                                                     </div>
@@ -423,9 +421,9 @@ const index = () => {
                                                             <img src="/assets/img/iconos/facebook.svg"/>
                                                         </a>
                                                     </div>
-                                                </div> */}
+                                                </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         {/* <div className="mb-3 tab-pane fade" id="v-pills-egresados" role="tabpanel" aria-labelledby="v-pills-egresados-tab">
                                             <div className="grid-img-txt-2">
                                                 <div>

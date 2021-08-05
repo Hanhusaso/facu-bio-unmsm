@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../../../../components/Layout"
-// import Tabs from "../../../../components/Tabs/vanillaTabs"
+import CronogramaPosgrado from "../../../../components/posgrado/CronogramaPosgrado";
+import PagoInscripcionDoctorado from "../../../../components/posgrado/PagoInscripcionDoctorado";
+import RequisitosDoctorado from "../../../../components/posgrado/RequisitosDoctorado";
+
 import {Row, Col, Container, Breadcrumb, Tabs, Tab} from 'react-bootstrap'
 import Link from 'next/link'
 import {getDocenteByIdInformacionAcademicaApi} from '../../../api/formacion-academica';
@@ -278,47 +281,7 @@ const index = () => {
                                         <div className="mb-3 tab-pane fade" id="v-pills-admision" role="tabpanel" aria-labelledby="v-pills-admision-tab">
                                             <Tabs defaultActiveKey="cronogramas" id="admision-tab">
                                                 <Tab className="pt-3" eventKey="cronogramas" title="Cronogramas">
-                                                    <div>
-                                                        <p className="title">Comunicado publicado por la Dirección General de Posgrado</p>
-                                                        <p>
-                                                            La Universidad Nacional Mayor de San Marcos (UNMSM), a través de la Dirección General de Estudios de Posgrado del Vicerrectorado
-                                                            de Investigación y Posgrado, informa a la comunidad universitaria y público en general que, a solicitud de los decanos de las facultades
-                                                            y el pedido del director de la unidad de posgrado de la facultad de Ingeniería, <b>se suspende el proceso de admisión 2021-II</b>.
-                                                        </p>
-                                                        <p>
-                                                            Dicho proceso será retomado en el mes de agosto, cuando las nuevas autoridades universitarias establezcan la reprogramación correspondiente.
-                                                        </p>
-                                                        <p>
-                                                            Cabe resaltar, que los postulantes que han realizado el pago de inscripción, no perderán este derecho y serán considerados una vez que se reactive
-                                                            el proceso.
-                                                        </p>
-                                                        <p>
-                                                            Asimismo, la III Feria Virtual de Posgrado UNMSM queda suspendida hasta que se comunique por nuestros medios oficiales la reprogramación de actividades
-                                                            del proceso de admisión.
-                                                        </p>
-                                                        <p>
-                                                            Finalmente, se informa que nuestros medios oficiales son:
-                                                        </p>
-                                                        <p>
-                                                            Portal web: <a href="https://posgrado.unmsm.edu.pe/" target="_blank">https://posgrado.unmsm.edu.pe/</a>
-                                                            <br />
-                                                            Facebook: <a href="https://www.facebook.com/unmsm.posgrado/" target="_blank">https://www.facebook.com/unmsm.posgrado/</a>
-                                                            <br />
-                                                            Twitter: <a href="https://twitter.com/PosgradoUNMSM" target="_blank">https://twitter.com/PosgradoUNMSM</a>
-                                                            <br />
-                                                            Instagram: <a href="https://www.instagram.com/posgrado.unmsm/" target="_blank">https://www.instagram.com/posgrado.unmsm/</a>
-                                                            <br />
-                                                            Youtube: <a href="https://www.youtube.com/PosgradoUNMSM-TV" target="_blank">https://www.youtube.com/PosgradoUNMSM-TV</a>
-                                                        </p>
-                                                        <p className="text-right">
-                                                            Lima 12 de julio de 2021
-                                                        </p>
-                                                        <p>
-                                                            <span className="title-dark">Dr. Sergio Ronceros Medrano</span>
-                                                            <br />
-                                                            <span>Director General de Estudios de Posgrado</span>
-                                                        </p>
-                                                    </div>
+                                                    <CronogramaPosgrado/>
                                                     {/* <div>
                                                         <p className="title-dark">Cronograma de Admisión 2021 - I</p>
                                                         <div className="table-responsive mb-3">
@@ -418,98 +381,10 @@ const index = () => {
                                                     </div> */}
                                                 </Tab>
                                                 <Tab className="pt-3" eventKey="inscripcion" title="Pago de inscripción">
-                                                    <div>
-                                                        <div className="d-flex">
-                                                            <AiIcons.AiFillInfoCircle className="icon mr-1"/>
-                                                            <p>
-                                                                <b>Observación:</b> Recuerde que antes de realizar el pago por derecho de inscripción debe verificar que el programa de interés cuente con vacantes disponibles y estar dentro del cronograma establecido en el presente proceso de admisión
-                                                            </p>
-                                                        </div>
-                                                        <p className="title">
-                                                            Banco de Crédito del Perú
-                                                        </p>
-                                                        <p>
-                                                            A continuación detallamos en número de Cuenta Corriente de la UNMSM en el Banco de Crédito del Perú, para depósitos en ventanilla, cajero, agente o transferencia interbancaria:
-                                                        </p>
-                                                        <p className="font-weight-bold text-center">
-                                                            Cta. Cte. n.° 191-0215772014 | CCI n.° 002-191-00021577201451
-                                                        </p>
-                                                        <div className="table-responsive mb-3">
-                                                            <table className="last-green bordered m-auto">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            Magíster UNMSM, personal administrativo de la UNMSM, docente de Universidades nacionales y Magisterio Nacionales
-                                                                        </td>
-                                                                        <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;400.00
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            Otros postulantes (Graduados de otras universidades)
-                                                                        </td>
-                                                                        <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;500.00
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                        <p className="title">
-                                                            Banco de la Nación
-                                                        </p>
-                                                        <p>
-                                                            Debe indicar  que realizará un depósito al n.° de TRANSACCIÓN 9650 + el código que corresponda; así como el n.° DNI, carné de extranjería o pasaporte del postulante.
-                                                        </p>
-                                                        <div className="table-responsive mb-3">
-                                                            <table className="last-green bordered m-auto">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            Magíster UNMSM, personal administrativo de la UNMSM, docente de Universidades nacionales y Magisterio Nacionales
-                                                                        </td>
-                                                                        <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;400.00
-                                                                            <br/>
-                                                                            <span className="title">Transacción: 9650 + código: 9702</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            Otros postulantes (Graduados de otras universidades)
-                                                                        </td>
-                                                                        <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;500.00
-                                                                            <br/>
-                                                                            <span className="title">Transacción: 9650 + código: 9703</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
+                                                    <PagoInscripcionDoctorado/>
                                                 </Tab>
                                                 <Tab className="pt-3" eventKey="requisitos" title="Requisitos para el Doctorado">
-                                                    <div>
-                                                        <p>
-                                                            El postulante deberá enviar (en un solo archivo pdf) mediante la plataforma de mesa de partes <span className="sub-title-15">(mesadepartes.biologia@unmsm.edu.pe)</span> el expediente completo a la Unidad de Posgrado de la Facultad, con los siguientes documentos:
-                                                        </p>
-                                                        <ul className="chevron-green-dark">
-                                                            <li>Resumen de la hoja de vida del postulante (documentado, foliado y ordenado de acuerdo a los rubros del formato)</li>
-                                                            <li>Constancia de inscripción en línea del grado de Bachiller emitido por SUNEDU o la copia del diploma de grado de Bachiller fedateado por la universidad de procedencia (*).</li>
-                                                            <li>Copia del documento de identidad (DNI, carné de extranjería o pasaporte).</li>
-                                                            <li>Recibo de pago por derecho de inscripción efectuado en el Banco de Crédito del Perú o en el Banco de la Nación.</li>
-                                                            <li>Proyecto de investigación.</li>
-                                                            <li>Otro documento que la Unidad de Posgrado considere con relación al perfil de ingreso al programa que postula. Revisar requisitos a través de la página web de la Facultad – Posgrado.</li>
-                                                        </ul>
-                                                        <p>
-                                                            (*) Los postulantes que obtuvieron el grado de Maestro o Doctor en la Universidad Nacional Mayor de San Marcos solo presentan copia simple.
-                                                        </p>
-                                                        <p>
-                                                            En el caso de graduados en el extranjero, los grados y títulos deberán estar revalidados o reconocidos según las normas vigentes.
-                                                        </p>
-                                                    </div>
+                                                    <RequisitosDoctorado/>
                                                 </Tab>
                                             </Tabs>
                                         </div>
