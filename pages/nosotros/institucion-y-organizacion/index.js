@@ -119,13 +119,13 @@ const index = () => {
                                                         Misión
                                                     </p>
                                                     <p className="mb-2">
-                                                        Formar profesionales e investigadores líderes en la generación y difusión del conocimiento científico de nuestra diversidad biológica, con valores, respetuosos de la diversidad cultural, promotores de la identidad nacional basada en una cultura  de calidad y responsabilidad social para contribuir  al desarrollo sostenible del país y la sociedad.
+                                                        Generar y difundir conocimiento científico, tecnológico y humanístico, formando profesionales e investigadores líderes, con valores y respetuosos de la diversidad cultural, promotores de la identidad nacional  basada en una cultura de calidad y responsabilidad social para contribuir al desarrollo sostenible del país y la sociedad.
                                                     </p>
                                                     <p className="title">
                                                         Visión
                                                     </p>
                                                     <p className="mb-0">
-                                                        Ser referente nacional e internacional en la generación de conocimiento, desarrollo e innovación en el área de las Ciencias Biológicas y la educación de calidad.
+                                                        Institución líder en el campo de las Ciencias Biológicas a nivel nacional e internacional, generadora del conocimiento y promotora de la innovación científica y tecnológica; formadora de académicos y profesionales con excelencia en la gestión del conocimiento, líderes de opinión y gestores del desarrollo nacional.
                                                     </p>
                                                 </div>
                                             </div>
