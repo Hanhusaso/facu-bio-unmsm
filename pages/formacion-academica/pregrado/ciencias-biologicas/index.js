@@ -182,7 +182,6 @@ const index = () => {
                                     )}
                                 </Col>
                                 <Col md="7" lg="8">
-                                    {/* <div className="mb-3"> */}
                                     <div className="mb-3 tab-content" id="v-pills-tabContent">
                                         <div className="mb-3 tab-pane fade show active" id="v-pills-presentacion" role="tabpanel" aria-labelledby="v-pills-presentacion-tab">
                                             <div className="wrapper-img-fr">
@@ -206,7 +205,13 @@ const index = () => {
                                                     <li>Zoología</li>
                                                 </ul>
                                                 <p>
-                                                    La Facultad de Ciencias Biológicas cuenta con la infraestructura adecuada para desarrollar sus diferentes actividades académicas, para lo cual posee un pabellón de docencia con aulas de teoría, laboratorios de práctica, laboratorios de informática debidamente equipadas, posee además recursos humanos altamente calificados. La mayoría de nuestros docentes cuentan con grados de doctor y maestrÍa que aseguran un nivel de enseñanza de excelencia.
+                                                    Para lograr este fin, el Director de la EP y su Comité de Gestión periódicamente evalúan y actualizan la currícula a fin de ofrecer cursos a nivel de las exigencias actuales.
+                                                </p>
+                                                <p>
+                                                    Nuestro objetivo fundamental es ofrecer al país Biólogos comprometidos con la conservación y protección del ambiente, el uso sostenible de los recursos naturales y capaces de desarrollar exitosamente las funciones propias de su quehacer profesional cuando se inserten en la vida laboral. Es de vital importancia la formación humanista que obtienen nuestros estudiantes durante sus estudios en la Universidad Nacional Mayor de San Marcos, lo cual los hace tomar conciencia social y su compromiso de ayudar al desarrollo del país.
+                                                </p>
+                                                <p>
+                                                    Para lo cual, la Facultad de Ciencias Biológicas cuenta con la infraestructura adecuada para desarrollar sus diferentes actividades académicas, posee un pabellón de docencia con aulas de clases, laboratorios de práctica, laboratorios de informática debidamente equipada. Asimismo,se cuenta con recursos humanos altamente calificados, y la mayoría de nuestros docentes cuentan con grados académicos de doctor y maestría obtenidos en universidades del exterior y en el Perú, quienes vienen contribuyendo en el proceso de iniciación científica de nuestros estudiantes, y que que nuestros estudiantes puedan lograr obtener exitosamente el grado académico de bachiller y el título profesional de biólogo. Entre los egresados más destacados de escuela profesional tenemos al doctor Juan Tarazona Compartió el Premio Nobel de la Paz 2007 otorgado a los autores del IV Informe de Evaluación del Panel Intergubernamental de Cambio Climático, Ramón Ferreyra.
                                                 </p>
                                                 <div>
                                                     <p className="title-dark">Grado:</p>
