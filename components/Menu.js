@@ -190,6 +190,14 @@ const Menu = () => {
 											{/* </Link> */}
 										</li>
 										<li className="nav-item">
+											{/* <Link href="/investigacion/proyectos"> */}
+											{/* <a className="nav-link">Producción científica de la Facultad</a> */}
+											<a href="/investigacion/proyectos" className="nav-link">
+												Producción científica de la Facultad
+											</a>
+											{/* </Link> */}
+										</li>
+										<li className="nav-item">
 											{/* <Link href="/investigacion/biblioteca"> */}
 											{/* <a className="nav-link">Biblioteca</a> */}
 											<a href="/investigacion/bibliotecas" className="nav-link">
