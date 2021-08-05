@@ -46,32 +46,26 @@ const index = () => {
                 <p className="font-weight-bold mb-2">Información académica</p>
                 <ul className="nav flex-column">
                     <li className="mb-2">
-                        <Link href="/informacion-academica/plan">
-                            <a>
-                                Plan de estudios
-                            </a>
-                        </Link>
+                        <a href="https://drive.google.com/drive/folders/17vJiH9X_Vnfj9qQ9ijratG8k2C1hksPs?usp=sharing" target="_blank">
+                            Plan de estudios
+                        </a>
                     </li>
-                    <li className="mb-2">
+                    {/* <li className="mb-2">
                         <Link href="/informacion-academica?recurso=informacion-de-docentes">
                             <a>
                                 Plana docente
                             </a>
                         </Link>
-                    </li>
+                    </li> */}
                     <li className="mb-2">
-                        <Link href="/informacion-academica/syllabus">
-                            <a>
-                                Syllabus
-                            </a>
-                        </Link>
+                        <a href="https://drive.google.com/drive/folders/1QXfbNP4quKyrdFyXsGzx6QyvrAfOBNI5?usp=sharing" target="_blank">
+                            Syllabus
+                        </a>
                     </li>
                     <li className="mb-0">
-                        <Link href="/informacion-academica/horarios">
-                            <a>
-                                Horarios
-                            </a>
-                        </Link>
+                        <a href="https://drive.google.com/file/d/1XH5KEc7vJNELM8rplccsmWdI3cSDVc4u/view?usp=sharing" target="_blank">
+                            Horarios
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -131,16 +125,8 @@ const index = () => {
                                 <Col md="1" lg="1"></Col>
                                 <Col md="3" lg="2">
                                     <div className="mb-4">
-                                        {/* <ul className="nav flex-column tabs-wrapper">
-                                            <li className="tab">Presentación</li>
-                                            <li className="tab">Misión y visión</li>
-                                            <li className="tab">Malla curricular</li>
-                                            <li className="tab">Seguimiento de egresados</li>
-                                        </ul> */}
                                         <div className="nav flex-column tabs-wrapper nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                            {/* <li className="tab"> */}
                                                 <a className="tab d-flex active" id="v-pills-presentacion-tab" data-toggle="pill" href="#v-pills-presentacion" role="tab" aria-controls="v-pills-presentacion" aria-selected="true">
-                                                    {/* <img className="title" src="/assets/img/iconos/presentacion.svg" alt="" /> */}
                                                     <div>
                                                         <svg width="24" height="25" viewBox="0 0 24 25" className="icon mr-3" xmlns="http://www.w3.org/2000/svg">
                                                         <g clip-path="url(#clip0)">
@@ -156,8 +142,6 @@ const index = () => {
                                                     </div>
                                                     <span>Presentación</span>
                                                 </a>
-                                            {/* </li> */}
-                                            {/* <li className="tab"> */}
                                                 <a className="tab d-flex" id="v-pills-mision-tab" data-toggle="pill" href="#v-pills-mision" role="tab" aria-controls="v-pills-mision" aria-selected="false">
                                                     <div>
                                                         <svg width="22" height="22" viewBox="0 0 22 22" className="icon mr-3" xmlns="http://www.w3.org/2000/svg">
@@ -167,9 +151,8 @@ const index = () => {
                                                     </div>
                                                     <span>Misión y visión</span>
                                                 </a>
-                                            {/* </li> */}
-                                            {/* <li className="tab"> */}
-                                                <a className="tab d-flex" id="v-pills-malla-tab" data-toggle="pill" href="#v-pills-malla" role="tab" aria-controls="v-pills-malla" aria-selected="false">
+                                                {/* <a className="tab d-flex" id="v-pills-malla-tab" data-toggle="pill" href="#v-pills-malla" role="tab" aria-controls="v-pills-malla" aria-selected="false"> */}
+                                                <a href="https://drive.google.com/file/d/1EceCVJveCMVhdNpVxpzqacywWok-yI-8/view?usp=sharing" target="_blank" className="tab d-flex">
                                                     <div>
                                                         <svg width="19" height="21" viewBox="0 0 19 21" className="icon mr-3" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M16.5059 20.4783H5.25586C4.85816 20.4779 4.47686 20.3197 4.19564 20.0385C3.91442 19.7573 3.75626 19.376 3.75586 18.9783V14.4783H5.25586V18.9783H16.5059V2.47827H9.75586V0.978271H16.5059C16.9036 0.978669 17.2849 1.13683 17.5661 1.41805C17.8473 1.69927 18.0055 2.08057 18.0059 2.47827V18.9783C18.0055 19.376 17.8473 19.7573 17.5661 20.0385C17.2849 20.3197 16.9036 20.4779 16.5059 20.4783Z"/>
@@ -181,8 +164,6 @@ const index = () => {
                                                     </div>
                                                     <span>Malla curricular</span>
                                                 </a>
-                                            {/* </li> */}
-                                            {/* <li className="tab"> */}
                                                 {/* <a className="tab d-flex" id="v-pills-egresados-tab" data-toggle="pill" href="#v-pills-egresados" role="tab" aria-controls="v-pills-egresados" aria-selected="false">
                                                     <div>
                                                         <svg width="18" height="25" viewBox="0 0 18 25" className="icon mr-3" xmlns="http://www.w3.org/2000/svg">
@@ -191,7 +172,6 @@ const index = () => {
                                                     </div>
                                                     <span>Seguimiento de egresados</span>
                                                 </a> */}
-                                            {/* </li> */}
                                         </div>
                                     </div>
                                     {width >= 768 && (
@@ -202,9 +182,7 @@ const index = () => {
                                     )}
                                 </Col>
                                 <Col md="7" lg="8">
-                                    {/* <div className="mb-3"> */}
                                     <div className="mb-3 tab-content" id="v-pills-tabContent">
-                                        {/* <div className="wrapper-img-fr mb-3"> */}
                                         <div className="mb-3 tab-pane fade show active" id="v-pills-presentacion" role="tabpanel" aria-labelledby="v-pills-presentacion-tab">
                                             <div className="wrapper-img-fr">
                                                 <div className="img-fr">
@@ -247,7 +225,6 @@ const index = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* <div className="mb-3"> */}
                                         <div className="mb-3 tab-pane fade" id="v-pills-mision" role="tabpanel" aria-labelledby="v-pills-mision-tab">
                                             <div className="grid-img-txt-1">
                                                 <div>
@@ -273,11 +250,9 @@ const index = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* <div className="mb-3"> */}
-                                        <div className="mb-3 tab-pane fade" id="v-pills-malla" role="tabpanel" aria-labelledby="v-pills-malla-tab">
+                                        {/* <div className="mb-3 tab-pane fade" id="v-pills-malla" role="tabpanel" aria-labelledby="v-pills-malla-tab">
                                             <div>
                                                 <div className="mb-4">
-                                                    {/* <embed src="/assets/archivos/malla_curricular_2020.pdf" width="100%" height="700px"/> */}
                                                     <object data="/assets/archivos/malla_curricular_2020.pdf" type="application/pdf" width="100%" height="700px"> 
                                                         <a href="/assets/archivos/malla_curricular_2020.pdf">
                                                             <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
@@ -285,7 +260,7 @@ const index = () => {
                                                         </a>
                                                     </object>
                                                 </div>
-                                                {/* <div className="section-compartir d-none d-sm-block mb-3">
+                                                <div className="section-compartir d-none d-sm-block mb-3">
                                                     <div className="d-inline-block font-weight-bold mr-3">
                                                         Compartir vía:
                                                     </div>
@@ -300,10 +275,9 @@ const index = () => {
                                                             <img src="/assets/img/iconos/facebook.svg"/>
                                                         </a>
                                                     </div>
-                                                </div> */}
+                                                </div>
                                             </div>
-                                        </div>
-                                        {/* <div className="mb-3"> */}
+                                        </div> */}
                                         {/* <div className="mb-3 tab-pane fade" id="v-pills-egresados" role="tabpanel" aria-labelledby="v-pills-egresados-tab">
                                             <div className="grid-img-txt-2">
                                                 <div className="mx-5 mx-md-0">
