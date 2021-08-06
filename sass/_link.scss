@@ -1,15 +1,22 @@
 a {
     color: $green-bright;
+    transition: color .3s ease;
     &.color-inherit {
         color: inherit;
         .icon {
             color: $green-bright;
         }
     }
+    &.no-color-hover:hover {
+        color: inherit;
+        .icon {
+            color: inherit;
+        }
+    }
     &:hover {
         text-decoration: none;
         color: $green-bright;
-        transition: color .3s ease;
+        // transition: color .3s ease;
     }
     .icon {
         fill: currentColor;

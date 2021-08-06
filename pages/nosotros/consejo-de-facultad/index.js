@@ -1,5 +1,7 @@
 import React , { useEffect } from 'react'
 import Layout from "../../../components/Layout"
+import EventosExtra from '../../../components/EventosExtra'
+
 import {Row, Col, Container, Breadcrumb, Tabs, Tab} from 'react-bootstrap'
 import Link from 'next/link'
 import * as FaIcons from "react-icons/fa";
@@ -730,113 +732,7 @@ const index = () => {
                                 </Col>
                                 <Col md="3" lg="2">
                                     <aside>
-                                        <div className="d-flex mb-3">
-                                            <h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
-                                            <a href="/eventos" className="d-inline-block">
-                                                <img src="/assets/img/iconos/boton_vermas.png"/>
-                                            </a>
-                                        </div>
-                                        <div>
-                                            <div className="card-bio no-grid mb-3">
-                                                <div className="part-img position-relative d-none d-md-block">
-                                                    <div className="position-relative">
-                                                        <img className="w-100 img-fluid" src="/assets/img/noticias/noticia2.png"></img>
-                                                        <div className="dark-filter"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="part-text">
-                                                    <p className="title-card title mb-0">
-                                                        Dos científicas ganan el Premio Nobel de Química 2020 por “tijeras genéticas” CRISPR-Cas9
-                                                    </p>
-                                                </div>
-                                                <div className="part-info">
-                                                    <div className="date mb-1">
-                                                        <span>
-                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
-                                                        </span>
-                                                        <span>7 de abril de 2021</span>
-                                                    </div>
-                                                    <div className="date mb-1">
-                                                        <span>
-                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
-                                                        </span>
-                                                        <span>5:00 pm</span>
-                                                    </div>
-                                                    <div className="date mb-1">
-                                                        <span>
-                                                            <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
-                                                        </span>
-                                                        <span>Zoom meetings</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="card-bio no-grid mb-3">
-                                                <div className="part-img position-relative d-none d-md-block">
-                                                    <div className="position-relative">
-                                                        <img className="w-100 img-fluid" src="/assets/img/noticias/noticia3.png"></img>
-                                                        <div className="dark-filter"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="part-text">
-                                                    <p className="title-card title mb-0">
-                                                        El objetivo de nuestro proyecto es ir en camino a producir clones de alpacas
-                                                    </p>
-                                                </div>
-                                                <div className="part-info">
-                                                    <div className="date mb-1">
-                                                        <span>
-                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
-                                                        </span>
-                                                        <span>7 de abril de 2021</span>
-                                                    </div>
-                                                    <div className="date mb-1">
-                                                        <span>
-                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
-                                                        </span>
-                                                        <span>5:00 pm</span>
-                                                    </div>
-                                                    <div className="date mb-1">
-                                                        <span>
-                                                            <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
-                                                        </span>
-                                                        <span>Zoom meetings</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="card-bio no-grid mb-3">
-                                                <div className="part-img position-relative d-none d-md-block">
-                                                    <div className="position-relative">
-                                                        <img className="w-100 img-fluid" src="/assets/img/noticias/noticia4.png"></img>
-                                                        <div className="dark-filter"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="part-text">
-                                                    <p className="title-card title mb-0">
-                                                        ¡La FCB ya cuenta oficialmente con un nuevo y moderno pabellón!
-                                                    </p>
-                                                </div>
-                                                <div className="part-info">
-                                                    <div className="date mb-1">
-                                                        <span>
-                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
-                                                        </span>
-                                                        <span>7 de abril de 2021</span>
-                                                    </div>
-                                                    <div className="date mb-1">
-                                                        <span>
-                                                            <img width="17px" className="mr-2" src="/assets/img/iconos/reloj.svg" alt="" />
-                                                        </span>
-                                                        <span>5:00 pm</span>
-                                                    </div>
-                                                    <div className="date mb-1">
-                                                        <span>
-                                                            <img width="13px" className="mr-2" src="/assets/img/iconos/lugar.svg" alt="" />
-                                                        </span>
-                                                        <span>Zoom meetings</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <EventosExtra/>
                                     </aside>
                                 </Col>
                                 <Col md="1" lg="1"></Col>

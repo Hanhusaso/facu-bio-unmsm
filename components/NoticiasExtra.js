@@ -27,8 +27,8 @@ const NoticiasExtra = (props) => {
             </div>
             <div>
                 {noticiasUltimas.map((noticia_ultima, index) =>(
-                    <div key={index} className="card-bio mb-3">
-                        <a href={`/noticias/noticia?titulo=${noticia_ultima.url_titulo}`} style={{color: '#56756B'}}>
+                    <div key={index} className="mb-3">
+                        <a className="card-bio color-inherit no-color-hover" href={`/noticias/noticia?titulo=${noticia_ultima.url_titulo}`}>
                             <div className="part-img position-relative">
                                 <div className="position-relative">
                                     <img className="w-100 img-fluid" src={noticia_ultima.imagen_previsualizacion ? noticia_ultima.imagen_previsualizacion[0].url : ''}></img>

@@ -1,4 +1,5 @@
 .btn-transparent {
+    cursor: pointer;
     background-color: transparent;
     // -webkit-appearance: none;
     // -moz-appearance: none;
@@ -8,6 +9,7 @@
 }
 
 .btn-green-bright {
+    cursor: pointer;
     display: inline-block;
     background-color: $green-bright;
     color: $wht;
@@ -20,6 +22,7 @@
 }
 
 .btn-square-green {
+    cursor: pointer;
     display: inline-block;
     text-align: center;
     width: 30px;

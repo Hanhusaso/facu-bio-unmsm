@@ -35,6 +35,7 @@ const noticias = () => {
     const [page, setPage] = useState(0);
     const [numberPage, setNumberPage] = useState(1);
     const [noticias, setNoticias] = useState([]);
+    const [countNoticias, setCountNoticias] = useState(0);
     const [loading, setLoading] = useState(true);
     const [sinResultados, setSinResultados] = useState(false);
     const [palabra, setPalabra] = useState("");
@@ -105,52 +106,50 @@ const noticias = () => {
         setTimeout(function(){ 
             j("input[type=checkbox]").prop("checked", false);
         }, 10);
+        (async () => {
+            const response_subcategorias = await getNoticiasSubcategoriasApi();
+            setNoticiasSubcategorias(response_subcategorias);
+        })();
     }, [])
 
     useEffect(() => {
         (async () => {
             if(palabra == ''){
                 const response1 = await countNoticiasApi(palabra, categorias, date);
+                setCountNoticias(response1);
                 setPaginador('');
-                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />); 
+                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />);
+                setLoading(true);
+                setSinResultados(false);
+                if(response1 != 0){
+                    const response = await getNoticiasApi(limitPerPage, page, palabra, categorias, date);
+                    setNoticias(response);
+                    setLoading(false);
+                }
+                else{
+                    setLoading(false);
+                    setSinResultados(true);
+                }
+                window.scrollTo(0, 0);
             }
             else{
                 const response1 = await countNoticiasApi(palabra, [], '');
+                setCountNoticias(response1);
                 setPaginador('');
                 setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/5.0)} onPageChange={onPageChange} />);
+                setLoading(true);
+                setSinResultados(false);
+                if(response1 != 0){
+                    const response = await getNoticiasApi(limitPerPage, page, palabra, [], '');
+                    setNoticias(response);
+                    setLoading(false);
+                }
+                else{
+                    setLoading(false);
+                    setSinResultados(true);
+                }
+                window.scrollTo(0, 0);
             }
-        })();
-        (async () => {
-          setLoading(true);
-          setSinResultados(false);
-          if(palabra == ''){
-            const response = await getNoticiasApi(limitPerPage, page, palabra, categorias, date);
-            setNoticias(response);
-            const response_subcategorias = await getNoticiasSubcategoriasApi();
-            setNoticiasSubcategorias(response_subcategorias);
-            setLoading(false);
-            if(size(response) == 0){
-              setSinResultados(true);
-            }
-            else{
-              setSinResultados(false);
-            }
-            window.scrollTo(0, 0);
-          }
-          else{
-            const response = await getNoticiasApi(limitPerPage, page, palabra, [], '');
-            setNoticias(response);
-            const response_subcategorias = await getNoticiasSubcategoriasApi();
-            setNoticiasSubcategorias(response_subcategorias);
-            setLoading(false);
-            if(size(response) == 0){
-              setSinResultados(true);
-            }
-            else{
-              setSinResultados(false);
-            }
-            window.scrollTo(0, 0);
-          }
         })();
     }, [page, palabra, categoria, date]);
 
@@ -479,6 +478,7 @@ const noticias = () => {
                                             </>
                                         ) : !sinResultados ? (
                                             <div>
+                                                <div className="mb-2">{countNoticias} {countNoticias == 1 ? 'resultado' : 'resultados'}</div> 
                                                 <div className="divisor my-3 mt-md-0"></div>
 
                                                 {noticias.map((noticia, index) =>(

@@ -22,6 +22,7 @@ const docentes = () => {
     const [page, setPage] = useState(0);
     const [numberPage, setNumberPage] = useState(1);
     const [docentes, setDocentes] = useState([]);
+    const [countDocentes, setCountDocentes] = useState(0);
     const [loading, setLoading] = useState(true);
     const [sinResultados, setSinResultados] = useState(false);
     const [informacionAcademica, setInformacionAcademica] = useState(false);
@@ -40,43 +41,44 @@ const docentes = () => {
     };
 
     useEffect(() => {
-        if (!query) {
+        if (query.nombre == undefined) {
             return;
         }
         (async () => {
-            const response3 = await getInformacionAcademicaByUrlApi(currentUrlInformacionAcademica);
-            if(size(response3) == 0){
-                // setSinResultados(true);
-                setPaginador('');
+            const response = await getInformacionAcademicaByUrlApi(currentUrlInformacionAcademica);
+            if(size(response) == 0){
+                setLoading(false);
+                setSinResultados(true);
             }
             else{
-                const response1 = await countDocenteByIdInformacionAcademicaApi(response3[0].id, palabra);
-                setPaginador('');
-                setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/10.0)} onPageChange={onPageChange} />);   
-            }    
+                setInformacionAcademica(response[0]);
+            }
         })();
+    }, [query])
+
+    useEffect(() => {
+        if (!query || !informacionAcademica) {
+            return;
+        }
         (async () => {
-          setLoading(true);
-          setSinResultados(false);
-          const response = await getInformacionAcademicaByUrlApi(currentUrlInformacionAcademica);
-          if(size(response) == 0){
-            // setSinResultados(true);
-          }
-          else{
-            setInformacionAcademica(response[0]);
-            const response2 = await getDocenteByIdInformacionAcademicaApi(limitPerPage, page, response[0].id, palabra);
-            setDocentes(response2);
-            setLoading(false);
-            if(size(response2) == 0){
-              setSinResultados(true);
+            const response1 = await countDocenteByIdInformacionAcademicaApi(informacionAcademica.id, palabra);
+            setCountDocentes(response1);
+            setPaginador('');
+            setPaginador(<Pagination defaultActivePage={numberPage} totalPages={Math.ceil(response1/10.0)} onPageChange={onPageChange} />);
+            setLoading(true);
+            setSinResultados(false);
+            if(response1 != 0){
+                const response2 = await getDocenteByIdInformacionAcademicaApi(limitPerPage, page, informacionAcademica.id, palabra);
+                setDocentes(response2);
+                setLoading(false);
             }
             else{
-              setSinResultados(false);
+                setLoading(false);
+                setSinResultados(true);
             }
-          }
-          window.scrollTo(0, 0);
+            window.scrollTo(0, 0);     
         })();
-    }, [page, query, palabra]);
+    }, [page, query, palabra, informacionAcademica]);
 
     return (
         <>
@@ -143,6 +145,7 @@ const docentes = () => {
                                             </>
                                     ) : !sinResultados ? (
                                         <div>
+                                            <div className="mb-2">{countDocentes} {countDocentes == 1 ? 'resultado' : 'resultados'}</div>
                                             <div className="divisor my-3"></div>
                                                 {docentes.map((docente, index) => (
                                                     <div key={index} className="block-divider mb-3 pb-2 position-relative">

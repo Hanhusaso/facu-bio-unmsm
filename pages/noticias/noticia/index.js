@@ -211,7 +211,8 @@ const noticia = () => {
                     //     No se encontró resultados
                     //     {/* <SinResultados /> */}
                     // </div>
-                )}
+                )
+            }
             </Layout>
         </>
     )

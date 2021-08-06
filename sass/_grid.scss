@@ -83,3 +83,11 @@
         }
     }
 }
+
+.grid-inputs-modal {
+    display: grid;
+    // grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    // grid-auto-flow: column;
+    grid-gap: 10px 15px;
+}

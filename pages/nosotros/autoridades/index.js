@@ -82,19 +82,12 @@ const index = () => {
 								<Col md="1" lg="1"></Col>
 								<Col md="3" lg="2">
 									<div className="mb-4">
-										{/* <ul className="nav flex-column tabs-wrapper">
-                                            <li className="tab">Decanato</li>
-                                            <li className="tab">Vicedecanato Académico de Pregrado</li>
-                                            <li className="tab">Vicedecanato de Investigación y Posgrado</li>
-                                            <li className="tab">Directores</li>
-                                        </ul> */}
 										<div
 											className="nav flex-column tabs-wrapper nav-pills"
 											id="v-pills-tab"
 											role="tablist"
 											aria-orientation="vertical"
 										>
-											{/* <li className="tab"> */}
 											<a
 												className="tab d-flex active"
 												id="v-pills-presentacion-tab"
@@ -104,7 +97,6 @@ const index = () => {
 												aria-controls="v-pills-presentacion"
 												aria-selected="true"
 											>
-												{/* <img className="title" src="/assets/img/iconos/presentacion.svg" alt="" /> */}
 												<div>
 													<svg
 														width="24"
@@ -131,8 +123,6 @@ const index = () => {
 												</div>
 												<span>Decanato</span>
 											</a>
-											{/* </li> */}
-											{/* <li className="tab"> */}
 											<a
 												className="tab d-flex"
 												id="v-pills-mision-tab"
@@ -156,8 +146,6 @@ const index = () => {
 												</div>
 												<span>Vicedecanato Académico de Pregrado</span>
 											</a>
-											{/* </li> */}
-											{/* <li className="tab"> */}
 											<a
 												className="tab d-flex"
 												id="v-pills-malla-tab"
@@ -184,9 +172,7 @@ const index = () => {
 												</div>
 												<span>Vicedecanato de Investigación y Posgrado</span>
 											</a>
-											{/* </li> */}
-											{/* <li className="tab"> */}
-											<a
+											{/* <a
 												className="tab d-flex"
 												id="v-pills-egresados-tab"
 												data-toggle="pill"
@@ -211,8 +197,7 @@ const index = () => {
 													</svg>
 												</div>
 												<span>Directores</span>
-											</a>
-											{/* </li> */}
+											</a> */}
 										</div>
 									</div>
 								</Col>
@@ -848,7 +833,7 @@ const index = () => {
 												</Row>
 											</Container>
 										</div>
-										<div
+										{/* <div
 											className="mb-3 tab-pane fade"
 											id="v-pills-egresados"
 											role="tabpanel"
@@ -958,7 +943,7 @@ const index = () => {
 													</p>
 												</div>
 											</div>
-										</div>
+										</div> */}
 									</div>
 								</Col>
 								<Col md="1" lg="1"></Col>

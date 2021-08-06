@@ -5,6 +5,11 @@
     height: 100vh;
     position: relative;
 
+    @include media-breakpoint-down(sm) {
+        height: auto;
+        min-height: auto;
+    }
+
     .bg-home-video {
         position: fixed;
         left: 0;
@@ -21,15 +26,24 @@
         // left: 5%;
         top: 30%;
         color: $wht;
+        @include media-breakpoint-down(sm) {
+            top: 20vw;
+        }
 
         .logo-unmsm {
             width: 110px;
+            @include media-breakpoint-down(sm) {
+                width: 20vw;
+            }
         }
         .title-letters {
             font-size: 50px;
             line-height: normal;
             font-weight: 700;
             position: relative;
+            @include media-breakpoint-down(sm) {
+                font-size: 7vw;
+            }
             &::after {
                 content: "";
                 width: 2px;
@@ -48,8 +62,14 @@
         position: absolute;
         bottom: 0;
         color: $wht;
+        @include media-breakpoint-down(sm) {
+            position: initial;
+        }
         .pad-extra-left {
             padding-left: 110px;
+            @include media-breakpoint-down(sm) {
+                padding-left: 0;
+            }
         }
         .wrapper-just-events {
             background-color: $gray-dark-75;
@@ -87,6 +107,9 @@
 
 .wrapper-carreras {
     display: flex;
+    @include media-breakpoint-down(sm) {
+        flex-direction: column;
+    }
     > div {
         flex-basis: 0;
         flex-grow: 1;
@@ -95,6 +118,12 @@
 
 .section-mision-numeros {
     font-size: 20px;
+    .name-number {
+        @include media-breakpoint-down(xs) {
+            font-size: 12px;
+            display: block;
+        }
+    }
 }
 
 .section-mision {
@@ -157,6 +186,13 @@
 
 .microscopio {
     z-index: 1;
+    @include media-breakpoint-down(xs) {
+        position: absolute;
+        width: 41vw;
+        max-width: 200px;
+        left: -8vw;
+        top: -65px;
+    }
 }
 
 .txt-numeros-bg {
@@ -167,6 +203,9 @@
     // margin-left: -15px;
     // top: -50px;
     position: relative;
+    @include media-breakpoint-down(xs) {
+        padding-left: 28vw;
+    }
     &::before {
         // content: "Enterate de las últimas novedades";
         content: "";
@@ -180,5 +219,11 @@
         background-position: center;
         background-size: cover;
         z-index: -1;
+        @include media-breakpoint-down(xs) {
+            width: 500px;
+            height: 500px;
+            right: -117px;
+            top: -25px;
+        }
     }
 }

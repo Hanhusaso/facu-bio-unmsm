@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../../../../components/Layout"
-// import Tabs from "../../../../components/Tabs/vanillaTabs"
+import CronogramaPosgrado from "../../../../components/posgrado/CronogramaPosgrado";
+import PagoInscripcionMaestria from "../../../../components/posgrado/PagoInscripcionMaestria";
+import RequisitosMaestria from "../../../../components/posgrado/RequisitosMaestria";
+
 import {Row, Col, Container, Breadcrumb, Tabs, Tab} from 'react-bootstrap'
 import Link from 'next/link'
 import {getDocenteByIdInformacionAcademicaApi} from '../../../api/formacion-academica';
@@ -106,13 +109,6 @@ const index = () => {
                                 <Col md="1" lg="1"></Col>
                                 <Col md="3" lg="2">
                                     <div className="mb-4">
-                                        {/* <ul className="nav flex-column tabs-wrapper">
-                                            <li className="tab">Presentación</li>
-                                            <li className="tab">Admisión</li>
-                                            <li className="tab">Plana docente</li>
-                                            <li className="tab">Malla curricular</li>
-                                            <li className="tab">Seguimiento de egresados</li>
-                                        </ul> */}
                                         <div className="nav flex-column tabs-wrapper nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                                 <a className="tab d-flex active" id="v-pills-presentacion-tab" data-toggle="pill" href="#v-pills-presentacion" role="tab" aria-controls="v-pills-presentacion" aria-selected="true">
                                                     <div>
@@ -153,7 +149,8 @@ const index = () => {
                                                     </div>
                                                     <span>Plana docente</span>
                                                 </a>
-                                                <a className="tab d-flex" id="v-pills-malla-tab" data-toggle="pill" href="#v-pills-malla" role="tab" aria-controls="v-pills-malla" aria-selected="false">
+                                                {/* <a className="tab d-flex" id="v-pills-malla-tab" data-toggle="pill" href="#v-pills-malla" role="tab" aria-controls="v-pills-malla" aria-selected="false"> */}
+                                                <a href="/assets/archivos/posgrado/planes de estudio/plan-estudio-2020-maestria-biodiversidad-gestion-ecosistemas.pdf" target="_blank" className="tab d-flex">
                                                     <div>
                                                         <svg width="19" height="21" viewBox="0 0 19 21" className="icon mr-3" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M16.5059 20.4783H5.25586C4.85816 20.4779 4.47686 20.3197 4.19564 20.0385C3.91442 19.7573 3.75626 19.376 3.75586 18.9783V14.4783H5.25586V18.9783H16.5059V2.47827H9.75586V0.978271H16.5059C16.9036 0.978669 17.2849 1.13683 17.5661 1.41805C17.8473 1.69927 18.0055 2.08057 18.0059 2.47827V18.9783C18.0055 19.376 17.8473 19.7573 17.5661 20.0385C17.2849 20.3197 16.9036 20.4779 16.5059 20.4783Z"/>
@@ -163,7 +160,7 @@ const index = () => {
                                                         <path d="M3.75586 16.7283C2.7616 16.7273 1.80835 16.3319 1.10531 15.6288C0.402259 14.9258 0.00685214 13.9725 0.00585938 12.9783V4.72827H1.50586V12.9783C1.50586 13.575 1.74291 14.1473 2.16487 14.5693C2.58683 14.9912 3.15912 15.2283 3.75586 15.2283C4.3526 15.2283 4.92489 14.9912 5.34685 14.5693C5.76881 14.1473 6.00586 13.575 6.00586 12.9783V6.22827C6.00586 6.02936 5.92684 5.83859 5.78619 5.69794C5.64554 5.55729 5.45477 5.47827 5.25586 5.47827C5.05695 5.47827 4.86618 5.55729 4.72553 5.69794C4.58488 5.83859 4.50586 6.02936 4.50586 6.22827V13.7283H3.00586V6.22827C3.00586 5.63153 3.24291 5.05924 3.66487 4.63728C4.08683 4.21532 4.65912 3.97827 5.25586 3.97827C5.8526 3.97827 6.42489 4.21532 6.84685 4.63728C7.26881 5.05924 7.50586 5.63153 7.50586 6.22827V12.9783C7.50487 13.9725 7.10946 14.9258 6.40641 15.6288C5.70337 16.3319 4.75012 16.7273 3.75586 16.7283Z"/>
                                                         </svg>
                                                     </div>
-                                                    <span>Malla curricular</span>
+                                                    <span>Plan de estudio</span>
                                                 </a>
                                                 {/* <a className="tab d-flex" id="v-pills-egresados-tab" data-toggle="pill" href="#v-pills-egresados" role="tab" aria-controls="v-pills-egresados" aria-selected="false">
                                                     <div>
@@ -184,77 +181,39 @@ const index = () => {
                                 <Col md="7" lg="8">
                                     <div className="mb-3 tab-content" id="v-pills-tabContent">
                                         <div className="mb-3 tab-pane fade show active" id="v-pills-presentacion" role="tabpanel" aria-labelledby="v-pills-presentacion-tab">
-                                            <p>
-                                                El programa de Doctorado en Ciencias Biológicas es escolarizado desde el año 2000, tuvo una duración de cuatro semestres. El año 2011 se planteó el currículo del Doctorado en Ciencias Biológicas con una duración de seis semestres académicos, tal como posteriormente lo indicó la nueva Ley Universitaria Nº30220 en el 2014.
-                                            </p>
-                                            <p>
-                                                El presente currículo ha sido elaborado para adecuarse a las normas presentes en el Reglamento General de Estudios de Posgrado aprobado con Resolución Rectoral 04790-R-18.
-                                            </p>
-                                            <div className="mb-3">
-                                                <p className="title-dark mb-1">
-                                                    1. Fecha de creación del Programa
-                                                </p>
-                                                <ul className="nav flex-column ml-3">
-                                                    <li>01 de marzo de 2000, R.R. N° 02069-R-00.</li>
-                                                    <li>04 de noviembre de 1999, R.D. N° 4078-D-FCB-99.</li>
-                                                </ul>
-                                            </div>
-                                            <div className="mb-3">
-                                                <p className="title-dark mb-1">
-                                                    2. Fecha de modificación del programa:
-                                                </p>
-                                                <ul className="nav flex-column ml-3">
-                                                    <li>03 de noviembre del 2017, R.R. N° 06658-R-17.</li>
-                                                    <li>30 de mayo de 2017, R.D. N° 229-D-FCB-2017.</li>
-                                                    <li>02 de junio del 2020, R.R. N° 01329-R-20.</li>
-                                                </ul>
-                                            </div>
-                                            <div className="mb-3">
-                                                <p className="title-dark mb-1">
-                                                    3. Comité Coordinador Del Doctorado En Ciencias Biológicas:
-                                                </p>
-                                                <ul className="nav flex-column ml-3">
-                                                    <li>Dr. César Augusto Aguilar Puntriano (Presidente)</li>
-                                                    <li>Dra. Joaquina Adelaida Albán Castillo</li>
-                                                    <li>Dra. Liz Erika Cruz Pío</li>
-                                                    <li>Dr. Niels Marciano Valencia Chacón</li>
-                                                    <li>Dr. Dan Erick Vivas Ruíz</li>
-                                                </ul>
-                                            </div>
-
                                             <p className="title-dark">
                                                 Sumilla del Programa
                                             </p>
                                             <p>
-                                                El Doctorado en Ciencias Biológicas forma especialistas de los más altos niveles capaces de evaluar e investigar la problemática nacional en las diversas áreas del conocimiento biológico, con especial énfasis en los campos de la biodiversidad y biología molecular.
+                                                El objetivo general de la Maestría de Investigación en Biodiversidad y Gestión de Ecosistemas es formar recursos humanos con la capacidad de generar conocimientos. Promover y gestionar la conservación en relación a la biodiversidad dentro de los enfoques del desarrollo sustentable y Ecosistémico en las distintas regiones del país.
                                             </p>
 
                                             <p className="title-dark">
                                                 Grado que se otorga:
                                             </p>
                                             <p>
-                                                Doctor en Ciencias Biológicas
+                                                Magíster en Biodiversidad y Gestión de Ecosistemas
                                             </p>
 
                                             <p className="title-dark">
                                                 Objetivos académicos:
                                             </p>
                                             <p>
-                                                El Programa de Doctorado en Ciencias Biológicas tiene como finalidad la formación de investigadores sobre la evolución y uso sostenible de la diversidad biológica, así como la capacitación para su futura incorporación en universidades, instituciones de investigación y centros de gestión tanto privados como de la administración pública. Asimismo, comprenderán y aplicarán los conceptos actuales de la biología molecular en arqueas, bacterias y eucariontes, contribuyendo con el conocimiento tanto en el área básica como aplicada a fin de lograr el aprovechamiento racional de nuestra megabiodiversidad. El Programa ofrece a los estudiantes la oportunidad de trabajar con reconocidos investigadores en diferentes tópicos relacionados con las prioridades actuales del país.
+                                                La Universidad Nacional Mayor de San Marcos forma Magísteres en Biodiversidad y Gestión de Ecosistemas altamente capacitados para conducir actividades o programas sobre biodiversidad y de gestión de ecosistemas a nivel de la planificación y ejecución operativa, científica y tecnológica. El graduado logrará incrementar su capacidad innovadora y crítica desarrollando estrategias de gestión de enfoque ecosistémico y de participación integral.
                                             </p>
 
                                             <p className="title-dark">
                                                 Dirigido a:
                                             </p>
                                             <p>
-                                                Profesionales que hayan concluido los estudios de Maestría o estén en posesión del Grado de Magíster en áreas de las Ciencias Biológicas o en disciplinas afines, otorgados por universidades nacionales o extranjeras que aseguren una formación acorde a los fines del Programa.
+                                                Profesionales que estén en posesión del grado académico de Bachiller en Ciencias Biológicas, Ciencias Ambientales, Ingeniero Agrónomo, Veterinaria o disciplinas afines, otorgados por universidades nacionales o extranjeras que quieran asegurar una formación de posgrado en recursos humanos especializados en el estudio, gestión y conservación de los recursos biológicos del país.
                                             </p>
 
                                             <p className="title-dark">
                                                 Duración:
                                             </p>
                                             <p>
-                                                3 años (6 semestres)
+                                                2 años (4 semestres)
                                             </p>
                                             
                                             <p className="title-dark">
@@ -262,28 +221,36 @@ const index = () => {
                                             </p>
                                             <ul className="chevron-green-dark">
                                                 <li>
-                                                    Generar nuevos conocimientos científicos y técnicos en las Ciencias Biológicas a través de la realización de trabajos originales. Estará capacitado para manejar y aplicar las metodologías que permitan resolver problemas de investigación en las diversas áreas del conocimiento biológico con especial énfasis en los campos de la biodiversidad y biología molecular.
+                                                    Conocer aspectos tantos teóricos como prácticos de la Diversidad animal y de la Diversidad vegetal; y los conocimientos y experiencia necesarios para que se incorpore al ámbito laboral.
                                                 </li>
                                                 <li>
-                                                    Desarrollar nuevas tecnologías para resolver problemas, detectar necesidades y oportunidades inherentes a su área de investigación. En particular, conocer y utilizar aproximaciones estadísticas contemporáneas. 
+                                                    Identificar taxones de animales y vegetales, conocer los fundamentos biológicos de la taxonomía y su aplicabilidad a la gestión sostenible de ecosistemas terrestres y marinos, la ciencia forestal, la arqueología, etc.
                                                 </li>
                                                 <li>
-                                                    Formular, gestionar y liderar proyectos de investigación, trabajando en equipo y en redes interdisciplinarias. Como consecuencia, será capaz de plantear y ejecutar hipótesis de trabajo, describir e interpretar resultados experimentales y analizar de forma crítica los descubrimientos presentados en las publicaciones científicas.
-                                                </li>
-                                                {/* <li>
-                                                    Manejar nuevas tecnologías de información y comunicaciones que le permitan difundir en forma eficiente sus investigaciones y resultados en revistas de la especialidad, círculos especializados y la comunidad social con el fin de participar satisfactoriamente en la educación superior y de posgrado a través de la experiencia adquirida en las actividades académicas del doctorado.
+                                                    Tener las habilidades que les permitirán ejercer sus actividades en empresas, organizaciones e instituciones que desarrollen inventarios de la biodiversidad, desarrollo de planes territoriales, auditoría ambiental, diseño y gestión de áreas protegidas, entre otros.
                                                 </li>
                                                 <li>
-                                                    Asesorar los trabajos de investigación de estudiantes de pre y posgrado.
-                                                </li> */}
+                                                    Trabajar en numerosos campos de ciencia básica y aplicada, como planificación del aprovechamiento de recursos (pesquerías, acuicultura, forestaría, fauna silvestre, silvicultura, etc.), museística conservación y gestión de especies vegetales o animales, plagas agrícolas o forestales, entomología aplicada, divulgación científica, y otros.
+                                                </li>
                                             </ul>
-                                            <a className="btn-green-bright" href="">
+                                            <div className="mb-3">
+                                                <p className="title-dark mb-1">
+                                                    Comité coordinador de la Maestría:
+                                                </p>
+                                                <ul className="nav flex-column ml-3">
+                                                    <li>Dr. Manuel Marín Bravo (Presidente)</li>
+                                                    <li>Mg. Mery Suni Ninataype</li>
+                                                    <li>Mg. José Roque Gamarra</li>
+                                                </ul>
+                                            </div>
+                                            {/* <a className="btn-green-bright" href="">
                                                 Inscripciones
-                                            </a>
+                                            </a> */}
                                         </div>
                                         <div className="mb-3 tab-pane fade" id="v-pills-admision" role="tabpanel" aria-labelledby="v-pills-admision-tab">
                                             <Tabs defaultActiveKey="cronogramas" id="admision-tab">
                                                 <Tab className="pt-3" eventKey="cronogramas" title="Cronogramas">
+                                                    <CronogramaPosgrado/>
                                                     {/* <div>
                                                         <p className="title-dark">Cronograma de Admisión 2021 - I</p>
                                                         <div className="table-responsive mb-3">
@@ -381,108 +348,12 @@ const index = () => {
                                                             </table>
                                                         </div>
                                                     </div> */}
-                                                    <div>
-                                                        {/* <object data="/assets/archivos/malla_curricular_2020.pdf" type="application/pdf" width="100%" height="700px">  */}
-                                                            <a href="/assets/archivos/posgrado/Cronograma_posgrado2021-II.pdf" target="_blank">
-                                                                <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
-                                                                <span className="sub-title-dark">Descargar</span>
-                                                            </a>
-                                                        {/* </object> */}
-                                                    </div>
                                                 </Tab>
                                                 <Tab className="pt-3" eventKey="inscripcion" title="Pago de inscripción">
-                                                    <div>
-                                                        <div className="d-flex">
-                                                            <AiIcons.AiFillInfoCircle className="icon mr-1"/>
-                                                            <p>
-                                                                <b>Observación:</b> Recuerde que antes de realizar el pago por derecho de inscripción debe verificar que el programa de interés cuente con vacantes disponibles y estar dentro del cronograma establecido en el presente proceso de admisión
-                                                            </p>
-                                                        </div>
-                                                        <p className="title">
-                                                            Banco de Crédito del Perú
-                                                        </p>
-                                                        <p>
-                                                            A continuación detallamos en número de Cuenta Corriente de la UNMSM en el Banco de Crédito del Perú, para depósitos en ventanilla, cajero, agente o transferencia interbancaria:
-                                                        </p>
-                                                        <p className="font-weight-bold text-center">
-                                                            Cta. Cte. n.° 191-0215772014 | CCI n.° 002-191-00021577201451
-                                                        </p>
-                                                        <div className="table-responsive mb-3">
-                                                            <table className="last-green bordered m-auto">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            Magíster UNMSM, personal administrativo de la UNMSM, docente de Universidades nacionales y Magisterio Nacionales
-                                                                        </td>
-                                                                        <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;350.00
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            Otros postulantes (Graduados de otras universidades)
-                                                                        </td>
-                                                                        <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;450.00
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                        <p className="title">
-                                                            Banco de la Nación
-                                                        </p>
-                                                        <p>
-                                                            Debe indicar  que realizará un depósito al n.° de TRANSACCIÓN 9650 + el código que corresponda; así como el n.° DNI, carné de extranjería o pasaporte del postulante.
-                                                        </p>
-                                                        <div className="table-responsive mb-3">
-                                                            <table className="last-green bordered m-auto">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            Magíster UNMSM, personal administrativo de la UNMSM, docente de Universidades nacionales y Magisterio Nacionales
-                                                                        </td>
-                                                                        <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;350.00
-                                                                            <br/>
-                                                                            <span className="title">Transacción: 9650 + código: 9702</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            Otros postulantes (Graduados de otras universidades)
-                                                                        </td>
-                                                                        <td className="font-weight-bold text-center">
-                                                                            S/.&nbsp;450.00
-                                                                            <br/>
-                                                                            <span className="title">Transacción: 9650 + código: 9703</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
+                                                    <PagoInscripcionMaestria/>
                                                 </Tab>
-                                                <Tab className="pt-3" eventKey="requisitos" title="Requisitos para el Doctorado">
-                                                    <div>
-                                                        <p>
-                                                            El postulante deberá enviar (en un solo archivo pdf) mediante la plataforma de mesa de partes <span className="sub-title-15">(mesadepartes.biologia@unmsm.edu.pe)</span> el expediente completo a la Unidad de Posgrado de la Facultad, con los siguientes documentos:
-                                                        </p>
-                                                        <ul className="chevron-green-dark">
-                                                            <li>Resumen de la hoja de vida del postulante (documentado, foliado y ordenado de acuerdo a los rubros del formato)</li>
-                                                            <li>Constancia de inscripción en línea del grado de Maestro o Doctor emitido por SUNEDU o la copia del diploma de grado de Maestro o Doctor fedateado por la universidad de procedencia (*).</li>
-                                                            <li>Copia del documento de identidad (DNI, carné de extranjería o pasaporte).</li>
-                                                            <li>Recibo de pago por derecho de inscripción efectuado en el Banco de Crédito del Perú o en el Banco de la Nación.</li>
-                                                            <li>Proyecto de investigación.</li>
-                                                            <li>Otro documento que la Unidad de Posgrado considere con relación al perfil de ingreso al programa que postula. Revisar requisitos a través de la página web de la Facultad – Posgrado.</li>
-                                                        </ul>
-                                                        <p>
-                                                            (*) Los postulantes que obtuvieron el grado de Maestro o Doctor en la Universidad Nacional Mayor de San Marcos solo presentan copia simple.
-                                                        </p>
-                                                        <p>
-                                                            En el caso de graduados en el extranjero, los grados y títulos deberán estar revalidados o reconocidos según las normas vigentes.
-                                                        </p>
-                                                    </div>
+                                                <Tab className="pt-3" eventKey="requisitos" title="Requisitos para la Maestría">
+                                                    <RequisitosMaestria/>
                                                 </Tab>
                                             </Tabs>
                                         </div>
@@ -521,17 +392,15 @@ const index = () => {
                                                 </div>
                                             ))}
                                         </div>
-                                        <div className="mb-3 tab-pane fade" id="v-pills-malla" role="tabpanel" aria-labelledby="v-pills-malla-tab">
+                                        {/* <div className="mb-3 tab-pane fade" id="v-pills-malla" role="tabpanel" aria-labelledby="v-pills-malla-tab">
                                             <div>
                                                 <div className="mb-4">
-                                                    {/* <object data="/assets/archivos/malla_curricular_2020.pdf" type="application/pdf" width="100%" height="700px">  */}
                                                         <a href="/assets/archivos/malla_curricular_2020.pdf" target="_blank">
                                                             <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
                                                             <span className="sub-title-dark">Descargar</span>
                                                         </a>
-                                                    {/* </object> */}
                                                 </div>
-                                                {/* <div className="section-compartir">
+                                                <div className="section-compartir">
                                                     <div className="d-inline-block font-weight-bold mr-3">
                                                         Compartir vía:
                                                     </div>
@@ -546,9 +415,9 @@ const index = () => {
                                                             <img src="/assets/img/iconos/facebook.svg"/>
                                                         </a>
                                                     </div>
-                                                </div> */}
+                                                </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         {/* <div className="mb-3 tab-pane fade" id="v-pills-egresados" role="tabpanel" aria-labelledby="v-pills-egresados-tab">
                                             <div className="grid-img-txt-2">
                                                 <div>
