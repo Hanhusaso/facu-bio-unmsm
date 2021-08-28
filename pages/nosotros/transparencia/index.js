@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Layout from "../../../components/Layout";
-import { Row, Col, Container, Breadcrumb, Tabs, Tab } from "react-bootstrap";
+import { Row, Col, Container, Breadcrumb, Tabs, Tab, Spinner } from "react-bootstrap";
 import {
 	getTransparencia2019,
 	getTransparencia2020,
 	getTransparencia2021,
 } from "../../api/transparencia";
+import moment from "moment";
 
 const transparencia = () => {
 	const [transparencia2021, setTransparencia2021] = useState([]);
@@ -22,7 +23,7 @@ const transparencia = () => {
 			setTransparencia2019(response_transparencia2019);
 		})();
 	}, []);
-
+	moment.locale("es");
 	console.log("esto es transparencia", transparencia2020);
 	return (
 		<>
@@ -127,19 +128,33 @@ const transparencia = () => {
 												<div className="table-responsive">
 													<table className="bordered">
 														<tbody>
-															{transparencia2021.map(function (doc) {
-																return (
-																	<tr>
-																		<td>{doc.fecha}</td>
-																		<td>{doc.titulo}</td>
-																		<td>
-																			<a href={`${doc.link}`} target="_blank">
-																				Ver documento
-																			</a>
-																		</td>
-																	</tr>
-																);
-															})}
+															{transparencia2021.length === 0 ? (
+																<div className="d-flex align-items-center justify-content-center my-5">
+																	<div className="d-inline-flex flex-column justify-content-center align-items-center">
+																		<Spinner
+																			size="sm"
+																			animation="border"
+																			role="status"
+																			className="mb-2"
+																		/>
+																		<span>Buscando registros...</span>
+																	</div>
+																</div>
+															) : (
+																transparencia2021.map(function (doc) {
+																	return (
+																		<tr>
+																			<td>{moment(doc.fecha).format("D MMMM")}</td>
+																			<td>{doc.titulo}</td>
+																			<td>
+																				<a href={`${doc.link}`} target="_blank">
+																					Ver documento
+																				</a>
+																			</td>
+																		</tr>
+																	);
+																})
+															)}
 														</tbody>
 													</table>
 												</div>
@@ -153,7 +168,7 @@ const transparencia = () => {
 															{transparencia2020.map(function (doc) {
 																return (
 																	<tr>
-																		<td>{doc.fecha}</td>
+																		<td>{moment(doc.fecha).format("D MMMM")}</td>
 																		<td>{doc.titulo}</td>
 																		<td>
 																			<a href={`${doc.link}`} target="_blank">
@@ -176,7 +191,7 @@ const transparencia = () => {
 															{transparencia2019.map(function (doc) {
 																return (
 																	<tr>
-																		<td>{doc.fecha}</td>
+																		<td>{moment(doc.fecha).format("D MMMM")}</td>
 																		<td>{doc.titulo}</td>
 																		<td>
 																			<a href={`${doc.link}`} target="_blank">
@@ -202,5 +217,4 @@ const transparencia = () => {
 		</>
 	);
 };
-
 export default transparencia;
