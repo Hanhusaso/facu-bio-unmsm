@@ -678,6 +678,15 @@ const Menu = () => {
 					<div className="extra-links">
 						<ul className="nav flex-column">
 							<li className="nav-item">
+								{/* <Link href="/nosotros/transparencia"> */}
+								{/* <a className="nav-link">Transparencia</a> */}
+								<a href="/nosotros/transparencia" className="d-flex align-items-center nav-link">
+									<img className="mr-3" src="/assets/img/iconos/icono transparencia.png" alt="" />
+									<span>Transparencia</span>
+								</a>
+								{/* </Link> */}
+							</li>
+							<li className="nav-item">
 								{/* <Link href="/tramites-y-procesos"> */}
 								{/* <a className="nav-link">Trámites y procesos</a> */}
 								<a href="/tramites-y-procesos" className="d-flex align-items-center nav-link">
@@ -695,9 +704,7 @@ const Menu = () => {
 								</a>
 								{/* </Link> */}
 							</li>
-							<li className="nav-item">
-								{/* <Link href="/revista-peruana-biologia"> */}
-								{/* <a className="nav-link">Revista Peruana de biología</a> */}
+							{/* <li className="nav-item">
 								<a
 									href="/investigacion/revista-peruana-biologia"
 									className="d-flex align-items-center nav-link"
@@ -705,8 +712,7 @@ const Menu = () => {
 									<img className="mr-3" src="/assets/img/iconos/revista_peruana.svg" alt="" />
 									<span>Revista Peruana de biología</span>
 								</a>
-								{/* </Link> */}
-							</li>
+							</li> */}
 							<li className="nav-item">
 								{/* <Link href="/investigacion/recursos-investigacion"> */}
 								{/* <a className="nav-link">Recursos de investigación</a> */}
@@ -730,22 +736,6 @@ const Menu = () => {
 									{/* <img className="mr-3" src="/assets/img/iconos/directorio.svg" alt="" /> */}
 									<FiIcons.FiPhone className="icon mr-3" />
 									<span>Directorio</span>
-								</a>
-								{/* </Link> */}
-							</li>
-							<li className="nav-item">
-								{/* <Link href="/nosotros/transparencia"> */}
-								{/* <a className="nav-link">Transparencia</a> */}
-								<a
-									href="/nosotros/transparencia"
-									className="d-flex align-items-center nav-link"
-								>
-									<img
-										className="mr-3"
-										src="/assets/img/iconos/icono transparencia.png"
-										alt=""
-									/>
-									<span>Transparencia</span>
 								</a>
 								{/* </Link> */}
 							</li>
