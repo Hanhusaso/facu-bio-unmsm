@@ -733,6 +733,22 @@ const Menu = () => {
 								</a>
 								{/* </Link> */}
 							</li>
+							<li className="nav-item">
+								{/* <Link href="/nosotros/transparencia"> */}
+								{/* <a className="nav-link">Transparencia</a> */}
+								<a
+									href="/nosotros/transparencia"
+									className="d-flex align-items-center nav-link"
+								>
+									<img
+										className="mr-3"
+										src="/assets/img/iconos/icono transparencia.png"
+										alt=""
+									/>
+									<span>Transparencia</span>
+								</a>
+								{/* </Link> */}
+							</li>
 						</ul>
 					</div>
 
