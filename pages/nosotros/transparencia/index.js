@@ -1,51 +1,70 @@
-import React, { useState } from 'react'
-import Link from 'next/link'
-import Layout from '../../../components/Layout'
-import {Row, Col, Container, Breadcrumb, Tabs, Tab} from 'react-bootstrap'
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import Layout from "../../../components/Layout";
+import { Row, Col, Container, Breadcrumb, Tabs, Tab } from "react-bootstrap";
+import {
+	getTransparencia2019,
+	getTransparencia2020,
+	getTransparencia2021,
+} from "../../api/transparencia";
 
 const transparencia = () => {
+	const [transparencia2021, setTransparencia2021] = useState([]);
+	const [transparencia2020, setTransparencia2020] = useState([]);
+	const [transparencia2019, setTransparencia2019] = useState([]);
+	useEffect(() => {
+		(async () => {
+			const response_transparencia2021 = await getTransparencia2021();
+			const response_transparencia2020 = await getTransparencia2020();
+			const response_transparencia2019 = await getTransparencia2019();
+			setTransparencia2021(response_transparencia2019);
+			setTransparencia2020(response_transparencia2020);
+			setTransparencia2019(response_transparencia2021);
+		})();
+	}, []);
 
-    return (
-        <>
-            <Layout title="Transparencia">
-                <div>
-                    <div>
-                        <Container>
-                            <Row>
-                                <Col md="1"></Col>
-                                <Col>
-                                    <Breadcrumb>
-                                        {/* <Breadcrumb.Item> */}
-                                        <li className="breadcrumb-item">
-                                            <Link href="/">
-                                                <a role="button">Inicio</a>
-                                            </Link>
-                                        </li>
-                                        {/* </Breadcrumb.Item> */}
-                                        <Breadcrumb.Item active>Nosotros: Transparencia</Breadcrumb.Item>
-                                    </Breadcrumb>
-                                </Col>
-                                <Col md="1"></Col>
-                            </Row>
-                        </Container>
-                    </div>
-                    <div>
-                        <Container className="mb-3">
-                            <Row>
-                                <Col md="1"></Col>
-                                <Col>
-                                    <div className="title-page text-center">Transparencia</div>
-                                </Col>
-                                <Col md="1"></Col>
-                            </Row>
-                        </Container>
+	console.log("esto es transparencia", transparencia2020);
+	return (
+		<>
+			<Layout title="Transparencia">
+				<div>
+					<div>
+						<Container>
+							<Row>
+								<Col md="1"></Col>
+								<Col>
+									<Breadcrumb>
+										{/* <Breadcrumb.Item> */}
+										<li className="breadcrumb-item">
+											<Link href="/">
+												<a role="button">Inicio</a>
+											</Link>
+										</li>
+										{/* </Breadcrumb.Item> */}
+										<Breadcrumb.Item active>Nosotros: Transparencia</Breadcrumb.Item>
+									</Breadcrumb>
+								</Col>
+								<Col md="1"></Col>
+							</Row>
+						</Container>
+					</div>
+					<div>
+						<Container className="mb-3">
+							<Row>
+								<Col md="1"></Col>
+								<Col>
+									<div className="title-page text-center">Transparencia</div>
+								</Col>
+								<Col md="1"></Col>
+							</Row>
+						</Container>
 
-                        <Container>
-                            <Row>
-                                <Col md="1"></Col>
-                                <Col md="2">
-                                    <div className="mb-4">
-                                        {/* <ul className="nav flex-column tabs-wrapper">
+						<Container>
+							<Row>
+								<Col md="1"></Col>
+								<Col md="2">
+									<div className="mb-4">
+										{/* <ul className="nav flex-column tabs-wrapper">
                                             <li className="tab">Resoluciones</li>
                                             <li className="tab">Actas del Consejo</li>
                                             <li className="tab">Convenios</li>
@@ -53,14 +72,31 @@ const transparencia = () => {
                                             <li className="tab">Plan estratégico 2019-2023</li>
                                             <li className="tab">Libro de Reclamaciones</li>
                                         </ul> */}
-                                        <div className="nav flex-column tabs-wrapper nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                                <a className="tab d-flex active" id="v-pills-presentacion-tab" data-toggle="pill" href="#v-pills-presentacion" role="tab" aria-controls="v-pills-presentacion" aria-selected="true">
-                                                    <div>
-                                                        <img className="mr-2" src="/assets/img/iconos/icono-actas-de-consejo-transparencia-unmsm.png" alt="" />
-                                                    </div>
-                                                    <span>Actas del consejo</span>
-                                                </a>
-                                                {/* <a className="tab d-flex" id="v-pills-mision-tab" data-toggle="pill" href="#v-pills-mision" role="tab" aria-controls="v-pills-mision" aria-selected="false">
+										<div
+											className="nav flex-column tabs-wrapper nav-pills"
+											id="v-pills-tab"
+											role="tablist"
+											aria-orientation="vertical"
+										>
+											<a
+												className="tab d-flex active"
+												id="v-pills-presentacion-tab"
+												data-toggle="pill"
+												href="#v-pills-presentacion"
+												role="tab"
+												aria-controls="v-pills-presentacion"
+												aria-selected="true"
+											>
+												<div>
+													<img
+														className="mr-2"
+														src="/assets/img/iconos/icono-actas-de-consejo-transparencia-unmsm.png"
+														alt=""
+													/>
+												</div>
+												<span>Actas del consejo</span>
+											</a>
+											{/* <a className="tab d-flex" id="v-pills-mision-tab" data-toggle="pill" href="#v-pills-mision" role="tab" aria-controls="v-pills-mision" aria-selected="false">
                                                     <div>
                                                         <svg width="22" height="22" viewBox="0 0 22 22" className="icon mr-3" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M21.5977 10.4199H18.7336C18.3281 6.98867 15.607 4.26758 12.1758 3.86211V0.998047C12.1758 0.894922 12.0914 0.810547 11.9883 0.810547H10.582C10.4789 0.810547 10.3945 0.894922 10.3945 0.998047V3.86211C6.96328 4.26758 4.24219 6.98867 3.83672 10.4199H0.972656C0.869531 10.4199 0.785156 10.5043 0.785156 10.6074V12.0137C0.785156 12.1168 0.869531 12.2012 0.972656 12.2012H3.83672C4.24219 15.6324 6.96328 18.3535 10.3945 18.759V21.623C10.3945 21.7262 10.4789 21.8105 10.582 21.8105H11.9883C12.0914 21.8105 12.1758 21.7262 12.1758 21.623V18.759C15.607 18.3535 18.3281 15.6324 18.7336 12.2012H21.5977C21.7008 12.2012 21.7852 12.1168 21.7852 12.0137V10.6074C21.7852 10.5043 21.7008 10.4199 21.5977 10.4199ZM11.2852 17.0293C8.12578 17.0293 5.56641 14.4699 5.56641 11.3105C5.56641 8.15117 8.12578 5.5918 11.2852 5.5918C14.4445 5.5918 17.0039 8.15117 17.0039 11.3105C17.0039 14.4699 14.4445 17.0293 11.2852 17.0293Z"/>
@@ -81,129 +117,90 @@ const transparencia = () => {
                                                     </div>
                                                     <span>Malla curricular</span>
                                                 </a> */}
-                                        </div>
-                                    </div>
-                                </Col>
-                                <Col md="8">
-                                    <Tabs defaultActiveKey="2021" id="resoluciones-tab">
-                                        <Tab className="pt-3" eventKey="2021" title="2021">
-                                            <div>
-                                                <div className="table-responsive">
-                                                    <table className="bordered">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    29/01/2021
-                                                                </td>
-                                                                <td>
-                                                                    Acta de sesión extraordinaria del consejo de facultad
-                                                                </td>
-                                                                <td>
-                                                                    <a href="#">
-                                                                        Ver documento
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    29/01/2021
-                                                                </td>
-                                                                <td>
-                                                                    Acta de sesión extraordinaria del consejo de facultad
-                                                                </td>
-                                                                <td>
-                                                                    <a href="#">
-                                                                        Ver documento
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </Tab>
-                                        <Tab className="pt-3" eventKey="2020" title="2020">
-                                            <div>
-                                                <div className="table-responsive">
-                                                    <table className="bordered">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    29/01/2020
-                                                                </td>
-                                                                <td>
-                                                                    Acta de sesión extraordinaria del consejo de facultad
-                                                                </td>
-                                                                <td>
-                                                                    <a href="#">
-                                                                        Ver documento
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    29/01/2020
-                                                                </td>
-                                                                <td>
-                                                                    Acta de sesión extraordinaria del consejo de facultad
-                                                                </td>
-                                                                <td>
-                                                                    <a href="#">
-                                                                        Ver documento
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </Tab>
-                                        <Tab className="pt-3" eventKey="2019" title="2019">
-                                            <div>
-                                                <div className="table-responsive">
-                                                    <table className="bordered">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    29/01/2019
-                                                                </td>
-                                                                <td>
-                                                                    Acta de sesión extraordinaria del consejo de facultad
-                                                                </td>
-                                                                <td>
-                                                                    <a href="#">
-                                                                        Ver documento
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    29/01/2019
-                                                                </td>
-                                                                <td>
-                                                                    Acta de sesión extraordinaria del consejo de facultad
-                                                                </td>
-                                                                <td>
-                                                                    <a href="#">
-                                                                        Ver documento
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </Tab>
-                                    </Tabs>
-                                </Col>
-                                <Col md="1"></Col>
-                            </Row>
-                        </Container>
-                    </div>
-                </div>
-            </Layout>
-        </>
-    )
-}
+										</div>
+									</div>
+								</Col>
+								<Col md="8">
+									<Tabs defaultActiveKey="2021" id="resoluciones-tab">
+										<Tab className="pt-3" eventKey="2021" title="2021">
+											<div>
+												<div className="table-responsive">
+													<table className="bordered">
+														<tbody>
+															{transparencia2021.map(function (doc) {
+																return (
+																	<tr>
+																		<td>{doc.fecha}</td>
+																		<td>{doc.titulo}</td>
+																		<td>
+																			<a href={`${doc.link}`} target="_blank">
+																				Ver documento
+																			</a>
+																		</td>
+																	</tr>
+																);
+															})}
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</Tab>
+										<Tab className="pt-3" eventKey="2020" title="2020">
+											<div>
+												<div className="table-responsive">
+													<table className="bordered">
+														<tbody>
+															{transparencia2020.map(function (doc) {
+																return (
+																	<tr>
+																		<td>{doc.fecha}</td>
+																		<td>{doc.titulo}</td>
+																		<td>
+																			<a href={`${doc.link}`} target="_blank">
+																				Ver documento
+																			</a>
+																		</td>
+																	</tr>
+																);
+															})}
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</Tab>
+										<Tab className="pt-3" eventKey="2019" title="2019">
+											<div>
+												<div className="table-responsive">
+													<table className="bordered">
+														<tbody>
+															{transparencia2019.map(function (doc) {
+																return (
+																	<tr>
+																		<td>{doc.fecha}</td>
+																		<td>{doc.titulo}</td>
+																		<td>
+																			<a href={`${doc.link}`} target="_blank">
+																				Ver documento
+																			</a>
+																		</td>
+																	</tr>
+																);
+															})}
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</Tab>
+									</Tabs>
+								</Col>
+								<Col md="1"></Col>
+							</Row>
+						</Container>
+					</div>
+				</div>
+			</Layout>
+		</>
+	);
+};
 
-export default transparencia
+export default transparencia;

@@ -36,7 +36,6 @@ export default function Home() {
 	const proyecto_tres = useTransform(scrollYProgress, [0, 0.2], [400, 0]);
 	const proyecto_cuatro = useTransform(scrollYProgress, [0, 0.2], [600, 0]);
 	const microscopio = useTransform(scrollYProgress, [0.7, 0.85], [0.3, 1]);
-	
 
 	const months = [
 		"enero",
@@ -64,43 +63,78 @@ export default function Home() {
 		return strTime;
 	}
 
-	function obtenerNombreGrupoInvestigacion(grupo_investigacion){
-		switch(grupo_investigacion){
-			case 'aplicacion_clinica_de_recursos_naturales' : return 'Aplicación clínica de recursos naturales';
-			case 'acuicultura_y_nutricion_de_organismos_acuaticos' : return 'Acuicultura y nutrición de organismos acuáticos';
-			case 'biologia_ecologia_y_cultivo_hacia_el_aprovechamiento_sostenible_del_recurso_alga' : return 'Biología, ecología y cultivo, hacia el aprovechamiento sostenible del recurso alga';
-			case 'biologia_molecular_y_biotecnologia' : return 'Biología molecular y biotecnología';
-			case 'biologia_molecular_de_parasitos_y_de_recursos_pesqueros' : return 'Biología molecular de parásitos y de recursos pesqueros';
-			case 'biodiversidad_y_ecologia_de_ambientes_acuaticos_continentales' : return 'Biodiversidad y ecología de ambientes acuáticos continentales';
-			case 'grupo_de_investigacion_en_bioeconomia' : return 'Grupo de investigación en bioeconomía';
-			case 'biodiversidad_de_ecosistemas_neotropicales' : return 'Biodiversidad de ecosistemas neotropicales';
-			case 'biotecnologia_para_la_remediacion' : return 'Biotecnología para la remediación';
-			case 'biodiversidad_y_taxonomia_de_invertebrados_marinos_para_conservacion_y_manejo_de_ambientes_marinos' : return 'Biodiversidad y taxonomía de invertebrados marinos para conservación y manejo de ambientes marinos';
-			case 'reproduccion_biologia_del_desarrollo_y_ecotoxicologia' : return 'Reproducción, biología del desarrollo y ecotoxicología';
-			case 'biotecnologia_reproductiva_para_la_conservacion_y_mejora_genetica_animal' : return 'Biotecnología reproductiva para la conservación y mejora genética animal';
-			case 'calidad_biologica_y_fisico_quimica_de_alimentos_aguas_y_ambientes' : return 'Calidad biológica y físico-química de alimentos, aguas y ambientes';
-			case 'citogenetica_y_sistemas_modelo_de_drosophila' : return 'Citogenética y sistemas modelo de drosophila';
-			case 'delimitacion_de_la_biodiversidad_de_especies_y_macroevolucion' : return 'Delimitación de la biodiversidad de especies y macroevolución';
-			case 'diversidad_de_mamiferos_y_sus_parasitos_y_su_implicancia_en_enfermedades_zoonoticas_emergentes' : return 'Diversidad de mamíferos y sus parásitos y su implicancia en enfermedades zoonóticas emergentes';
-			case 'diversidad_sistematica_de_artropodos_neotropicales' : return 'Diversidad y sistemática de artrópodos neotropicales';
-			case 'grupo_de_investigacion_en_ecosistemas_marinos_y_costeros' : return 'Grupo de investigación en ecosistemas marinos y costeros';
-			case 'ecologia_y_genetica_de_virus_emergentes_y_reemergentes' : return 'Ecología y genética de virus emergentes y reemergentes';
-			case 'evolucion_molecular_de_la_biota_en_el_peru' : return 'Evolución molecular de la biota en el Perú';
-			case 'estudio_de_las_poblaciones_amenazadas_de_la_flora' : return 'Estudio de las poblaciones amenazadas de la flora';
-			case 'genes_cromosomas_y_genomas_de_mamiferos' : return 'Genes, cromosomas y genomas de mamíferos';
-			case 'genetica_de_enfermedades_metabolicas' : return 'Genética de enfermedades metabólicas';
-			case 'grupo_de_investigacion_en_bioinformatica_y_biologia_estructural' : return 'Grupo de investigación en bioinformática y biología estructural';
-			case 'genomica_funcional_de_microorganismos_y_biorremediacion' : return 'Genómica funcional de microorganismos y biorremediación';
-			case 'inmunomoduladores_y_antitumorales_de_origen_natural_y_sintetico' : return 'Inmunomoduladores y antitumorales de origen natural y sintético';
-			case 'investigacion_y_desarrollo_de_procesos_biotecnologicos_agroindustriales_y_ambientales' : return 'Investigación y desarrollo de procesos biotecnológicos agroindustriales y ambientales';
-			case 'grupo_de_investigacion_en_recursos_geneticos' : return 'Grupo de investigación en recursos genéticos';
-			case 'recursos_naturales_y_bioactivos' : return 'Recursos naturales y bioactivos';
-			case 'restauracion_ecologica_de_ecosistemas_terrestres_y_acuaticas_del_peru' : return 'Restauración ecológica de ecosistemas terrestres y acuáticas del Perú';
-			case 'grupo_de_investigacion_en_toxinas_de_origen_animal_y_sus_antivenenos' : return 'Grupo de investigación en toxinas de origen animal y sus antivenenos';
-			case 'inmunologia_parasitaria_en_humanos_y_animales_de_importancia_en_salud_publica' : return 'Inmunología parasitaria en humanos y animales de importancia en salud pública';
-			case 'virologia_clinica_molecular_inmunopatogenesis_y_antivirales' : return 'Virología clínica molecular inmunopatogénesis y antivirales';
-			case 'biota_acuatica' : return 'Biota acuática';
-			default : return '';
+	function obtenerNombreGrupoInvestigacion(grupo_investigacion) {
+		switch (grupo_investigacion) {
+			case "aplicacion_clinica_de_recursos_naturales":
+				return "Aplicación clínica de recursos naturales";
+			case "acuicultura_y_nutricion_de_organismos_acuaticos":
+				return "Acuicultura y nutrición de organismos acuáticos";
+			case "biologia_ecologia_y_cultivo_hacia_el_aprovechamiento_sostenible_del_recurso_alga":
+				return "Biología, ecología y cultivo, hacia el aprovechamiento sostenible del recurso alga";
+			case "biologia_molecular_y_biotecnologia":
+				return "Biología molecular y biotecnología";
+			case "biologia_molecular_de_parasitos_y_de_recursos_pesqueros":
+				return "Biología molecular de parásitos y de recursos pesqueros";
+			case "biodiversidad_y_ecologia_de_ambientes_acuaticos_continentales":
+				return "Biodiversidad y ecología de ambientes acuáticos continentales";
+			case "grupo_de_investigacion_en_bioeconomia":
+				return "Grupo de investigación en bioeconomía";
+			case "biodiversidad_de_ecosistemas_neotropicales":
+				return "Biodiversidad de ecosistemas neotropicales";
+			case "biotecnologia_para_la_remediacion":
+				return "Biotecnología para la remediación";
+			case "biodiversidad_y_taxonomia_de_invertebrados_marinos_para_conservacion_y_manejo_de_ambientes_marinos":
+				return "Biodiversidad y taxonomía de invertebrados marinos para conservación y manejo de ambientes marinos";
+			case "reproduccion_biologia_del_desarrollo_y_ecotoxicologia":
+				return "Reproducción, biología del desarrollo y ecotoxicología";
+			case "biotecnologia_reproductiva_para_la_conservacion_y_mejora_genetica_animal":
+				return "Biotecnología reproductiva para la conservación y mejora genética animal";
+			case "calidad_biologica_y_fisico_quimica_de_alimentos_aguas_y_ambientes":
+				return "Calidad biológica y físico-química de alimentos, aguas y ambientes";
+			case "citogenetica_y_sistemas_modelo_de_drosophila":
+				return "Citogenética y sistemas modelo de drosophila";
+			case "delimitacion_de_la_biodiversidad_de_especies_y_macroevolucion":
+				return "Delimitación de la biodiversidad de especies y macroevolución";
+			case "diversidad_de_mamiferos_y_sus_parasitos_y_su_implicancia_en_enfermedades_zoonoticas_emergentes":
+				return "Diversidad de mamíferos y sus parásitos y su implicancia en enfermedades zoonóticas emergentes";
+			case "diversidad_sistematica_de_artropodos_neotropicales":
+				return "Diversidad y sistemática de artrópodos neotropicales";
+			case "grupo_de_investigacion_en_ecosistemas_marinos_y_costeros":
+				return "Grupo de investigación en ecosistemas marinos y costeros";
+			case "ecologia_y_genetica_de_virus_emergentes_y_reemergentes":
+				return "Ecología y genética de virus emergentes y reemergentes";
+			case "evolucion_molecular_de_la_biota_en_el_peru":
+				return "Evolución molecular de la biota en el Perú";
+			case "estudio_de_las_poblaciones_amenazadas_de_la_flora":
+				return "Estudio de las poblaciones amenazadas de la flora";
+			case "genes_cromosomas_y_genomas_de_mamiferos":
+				return "Genes, cromosomas y genomas de mamíferos";
+			case "genetica_de_enfermedades_metabolicas":
+				return "Genética de enfermedades metabólicas";
+			case "grupo_de_investigacion_en_bioinformatica_y_biologia_estructural":
+				return "Grupo de investigación en bioinformática y biología estructural";
+			case "genomica_funcional_de_microorganismos_y_biorremediacion":
+				return "Genómica funcional de microorganismos y biorremediación";
+			case "inmunomoduladores_y_antitumorales_de_origen_natural_y_sintetico":
+				return "Inmunomoduladores y antitumorales de origen natural y sintético";
+			case "investigacion_y_desarrollo_de_procesos_biotecnologicos_agroindustriales_y_ambientales":
+				return "Investigación y desarrollo de procesos biotecnológicos agroindustriales y ambientales";
+			case "grupo_de_investigacion_en_recursos_geneticos":
+				return "Grupo de investigación en recursos genéticos";
+			case "recursos_naturales_y_bioactivos":
+				return "Recursos naturales y bioactivos";
+			case "restauracion_ecologica_de_ecosistemas_terrestres_y_acuaticas_del_peru":
+				return "Restauración ecológica de ecosistemas terrestres y acuáticas del Perú";
+			case "grupo_de_investigacion_en_toxinas_de_origen_animal_y_sus_antivenenos":
+				return "Grupo de investigación en toxinas de origen animal y sus antivenenos";
+			case "inmunologia_parasitaria_en_humanos_y_animales_de_importancia_en_salud_publica":
+				return "Inmunología parasitaria en humanos y animales de importancia en salud pública";
+			case "virologia_clinica_molecular_inmunopatogenesis_y_antivirales":
+				return "Virología clínica molecular inmunopatogénesis y antivirales";
+			case "biota_acuatica":
+				return "Biota acuática";
+			default:
+				return "";
 		}
 	}
 
@@ -155,17 +189,20 @@ export default function Home() {
 						<section className="section-principal-home section-eventos">
 							{width >= 768 && (
 								<>
-								<video className="bg-home-video" loop autoPlay={true} muted>
-									<source src="/assets/video/facu_bio.mp4" type="video/mp4" />
-								</video>
+									<video className="bg-home-video" loop autoPlay={true} muted>
+										<source src="/assets/video/facu_bio.mp4" type="video/mp4" />
+									</video>
 								</>
 							)}
 							{width < 768 && (
 								<>
-								<img className="w-100 img-fluid mb-2 mb-md-0" src="/assets/img/home/home-ciencias-biologicas-unmsm.png"/>
+									<img
+										className="w-100 img-fluid mb-2 mb-md-0"
+										src="/assets/img/home/home-ciencias-biologicas-unmsm.png"
+									/>
 								</>
 							)}
-							
+
 							<motion.div
 								className="wrapper-title-home"
 								initial={{ opacity: 0 }}
@@ -218,80 +255,92 @@ export default function Home() {
 														<Row>
 															{eventos[0] ? (
 																<Col className="col-12 col-md mb-3 mb-md-0">
-																<a className="color-inherit" href={`eventos/evento?nombre=${eventos[0]?.url_nombre}`}>
-																	<p className="fecha-evento">
-																		<span>
-																			{new Date(eventos[0]?.fechaInicio).getDate() < 10
-																				? "0" + new Date(eventos[0]?.fechaInicio).getDate()
-																				: new Date(eventos[0]?.fechaInicio).getDate()}{" "}
-																			{months[new Date(eventos[0]?.fechaInicio).getMonth()]}
-																		</span>
-																		<span className="divisor-text mx-2"></span>
-																		<span>{formatAMPM(new Date(eventos[0].fechaInicio))}</span>
-																	</p>
-																	<p className="titulo-evento">{eventos[0]?.nombre}</p>
-																	<p className="lugar-evento mb-0">{eventos[0]?.lugar}</p>
-																</a>
+																	<a
+																		className="color-inherit"
+																		href={`eventos/evento?nombre=${eventos[0]?.url_nombre}`}
+																	>
+																		<p className="fecha-evento">
+																			<span>
+																				{new Date(eventos[0]?.fechaInicio).getDate() < 10
+																					? "0" + new Date(eventos[0]?.fechaInicio).getDate()
+																					: new Date(eventos[0]?.fechaInicio).getDate()}{" "}
+																				{months[new Date(eventos[0]?.fechaInicio).getMonth()]}
+																			</span>
+																			<span className="divisor-text mx-2"></span>
+																			<span>{formatAMPM(new Date(eventos[0].fechaInicio))}</span>
+																		</p>
+																		<p className="titulo-evento">{eventos[0]?.nombre}</p>
+																		<p className="lugar-evento mb-0">{eventos[0]?.lugar}</p>
+																	</a>
 																</Col>
 															) : (
 																""
 															)}
 															{eventos[1] ? (
 																<Col className="col-12 col-md mb-3 mb-md-0">
-																<a className="color-inherit" href={`eventos/evento?nombre=${eventos[1]?.url_nombre}`}>
-																	<p className="fecha-evento">
-																		<span>
-																			{new Date(eventos[1]?.fechaInicio).getDate() < 10
-																				? "0" + new Date(eventos[1]?.fechaInicio).getDate()
-																				: new Date(eventos[1]?.fechaInicio).getDate()}{" "}
-																			{months[new Date(eventos[1]?.fechaInicio).getMonth()]}
-																		</span>
-																		<span className="divisor-text mx-2"></span>
-																		<span>{formatAMPM(new Date(eventos[1].fechaInicio))}</span>
-																	</p>
-																	<p className="titulo-evento">{eventos[1]?.nombre}</p>
-																	<p className="lugar-evento mb-0">{eventos[1]?.lugar}</p>
-																</a>
+																	<a
+																		className="color-inherit"
+																		href={`eventos/evento?nombre=${eventos[1]?.url_nombre}`}
+																	>
+																		<p className="fecha-evento">
+																			<span>
+																				{new Date(eventos[1]?.fechaInicio).getDate() < 10
+																					? "0" + new Date(eventos[1]?.fechaInicio).getDate()
+																					: new Date(eventos[1]?.fechaInicio).getDate()}{" "}
+																				{months[new Date(eventos[1]?.fechaInicio).getMonth()]}
+																			</span>
+																			<span className="divisor-text mx-2"></span>
+																			<span>{formatAMPM(new Date(eventos[1].fechaInicio))}</span>
+																		</p>
+																		<p className="titulo-evento">{eventos[1]?.nombre}</p>
+																		<p className="lugar-evento mb-0">{eventos[1]?.lugar}</p>
+																	</a>
 																</Col>
 															) : (
 																""
 															)}
 															{eventos[2] ? (
 																<Col className="col-12 col-md mb-3 mb-md-0">
-																<a className="color-inherit" href={`eventos/evento?nombre=${eventos[2]?.url_nombre}`}>
-																	<p className="fecha-evento">
-																		<span>
-																			{new Date(eventos[2]?.fechaInicio).getDate() < 10
-																				? "0" + new Date(eventos[2]?.fechaInicio).getDate()
-																				: new Date(eventos[2]?.fechaInicio).getDate()}{" "}
-																			{months[new Date(eventos[2]?.fechaInicio).getMonth()]}
-																		</span>
-																		<span className="divisor-text mx-2"></span>
-																		<span>{formatAMPM(new Date(eventos[2].fechaInicio))}</span>
-																	</p>
-																	<p className="titulo-evento">{eventos[2]?.nombre}</p>
-																	<p className="lugar-evento mb-0">{eventos[2]?.lugar}</p>
-																</a>
+																	<a
+																		className="color-inherit"
+																		href={`eventos/evento?nombre=${eventos[2]?.url_nombre}`}
+																	>
+																		<p className="fecha-evento">
+																			<span>
+																				{new Date(eventos[2]?.fechaInicio).getDate() < 10
+																					? "0" + new Date(eventos[2]?.fechaInicio).getDate()
+																					: new Date(eventos[2]?.fechaInicio).getDate()}{" "}
+																				{months[new Date(eventos[2]?.fechaInicio).getMonth()]}
+																			</span>
+																			<span className="divisor-text mx-2"></span>
+																			<span>{formatAMPM(new Date(eventos[2].fechaInicio))}</span>
+																		</p>
+																		<p className="titulo-evento">{eventos[2]?.nombre}</p>
+																		<p className="lugar-evento mb-0">{eventos[2]?.lugar}</p>
+																	</a>
 																</Col>
 															) : (
 																""
 															)}
 															{eventos[3] ? (
 																<Col className="col-12 col-md mb-3 mb-md-0">
-																<a className="color-inherit" href={`eventos/evento?nombre=${eventos[3]?.url_nombre}`}>
-																	<p className="fecha-evento">
-																		<span>
-																			{new Date(eventos[3]?.fechaInicio).getDate() < 10
-																				? "0" + new Date(eventos[3]?.fechaInicio).getDate()
-																				: new Date(eventos[3]?.fechaInicio).getDate()}{" "}
-																			{months[new Date(eventos[3]?.fechaInicio).getMonth()]}
-																		</span>
-																		<span className="divisor-text mx-2"></span>
-																		<span>{formatAMPM(new Date(eventos[3].fechaInicio))}</span>
-																	</p>
-																	<p className="titulo-evento">{eventos[3]?.nombre}</p>
-																	<p className="lugar-evento mb-0">{eventos[3]?.lugar}</p>
-																</a>
+																	<a
+																		className="color-inherit"
+																		href={`eventos/evento?nombre=${eventos[3]?.url_nombre}`}
+																	>
+																		<p className="fecha-evento">
+																			<span>
+																				{new Date(eventos[3]?.fechaInicio).getDate() < 10
+																					? "0" + new Date(eventos[3]?.fechaInicio).getDate()
+																					: new Date(eventos[3]?.fechaInicio).getDate()}{" "}
+																				{months[new Date(eventos[3]?.fechaInicio).getMonth()]}
+																			</span>
+																			<span className="divisor-text mx-2"></span>
+																			<span>{formatAMPM(new Date(eventos[3].fechaInicio))}</span>
+																		</p>
+																		<p className="titulo-evento">{eventos[3]?.nombre}</p>
+																		<p className="lugar-evento mb-0">{eventos[3]?.lugar}</p>
+																	</a>
 																</Col>
 															) : (
 																""
@@ -355,7 +404,7 @@ export default function Home() {
 													<br />
 													novedades
 												</motion.p>
-												{noticias[0] ? 
+												{noticias[0] ? (
 													<motion.a
 														style={{ x: noticia_uno }}
 														whileHover={{ scale: 1.05 }}
@@ -374,155 +423,156 @@ export default function Home() {
 														</div>
 														<div className="caption-img">{noticias[0]?.titulo}</div>
 													</motion.a>
-												: 
-												''}
+												) : (
+													""
+												)}
 											</Col>
 											<Col className="mb-2 mb-md-0" md="2">
-											{noticias[1] ?
-												<a
-													className="color-inherit"
-													href={`noticias/noticia?titulo=${noticias[1].url_titulo}`}
-												>
-													<motion.div
-														style={{ y: noticia_dos }}
-														className="card-bio"
-														whileHover={{ scale: 1.05 }}
-														transition={{ duration: 0.2 }}
+												{noticias[1] ? (
+													<a
+														className="color-inherit"
+														href={`noticias/noticia?titulo=${noticias[1].url_titulo}`}
 													>
-														<div className="part-img position-relative">
-															<div className="position-relative">
-																<img
-																	className="w-100 img-fluid"
-																	src={
-																		noticias[1].imagen_previsualizacion
-																			? noticias[1].imagen_previsualizacion[0].url
-																			: ""
+														<motion.div
+															style={{ y: noticia_dos }}
+															className="card-bio"
+															whileHover={{ scale: 1.05 }}
+															transition={{ duration: 0.2 }}
+														>
+															<div className="part-img position-relative">
+																<div className="position-relative">
+																	<img
+																		className="w-100 img-fluid"
+																		src={
+																			noticias[1].imagen_previsualizacion
+																				? noticias[1].imagen_previsualizacion[0].url
+																				: ""
+																		}
+																	></img>
+																	<div className="dark-filter"></div>
+																</div>
+																<div className="badge-tag">
+																	{
+																		noticiasSubcategorias[
+																			noticias[1]?.id_categoria_subcategoria.id_subcategoria - 1
+																		].nombre
 																	}
-																></img>
-																<div className="dark-filter"></div>
+																</div>
 															</div>
-															<div className="badge-tag">
-																{
-																	noticiasSubcategorias[
-																		noticias[1]?.id_categoria_subcategoria.id_subcategoria - 1
-																	].nombre
-																}
-															</div>
-														</div>
-														<div className="part-text filter">
-															<p className="title-card">{noticias[1]?.titulo}</p>
-															<p className="desc-card mb-0">{noticias[1]?.sintesis}</p>
-															{/* <ClampLines
+															<div className="part-text filter">
+																<p className="title-card">{noticias[1]?.titulo}</p>
+																<p className="desc-card mb-0">{noticias[1]?.sintesis}</p>
+																{/* <ClampLines
 																	text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
 																	lines={4}
 																	buttons={false}
 																	ellipsis="..."
 																	className="desc-card mb-0"
 																/> */}
-														</div>
-													</motion.div>
-												</a>
-											:
-											''
-											}	
+															</div>
+														</motion.div>
+													</a>
+												) : (
+													""
+												)}
 											</Col>
 											<Col className="mb-2 mb-md-0" md="2">
-											{noticias[2] ?
-												<a
-													className="color-inherit"
-													href={`noticias/noticia?titulo=${noticias[2].url_titulo}`}
-												>
-													<motion.div
-														style={{ y: noticia_tres }}
-														className="card-bio"
-														whileHover={{ scale: 1.05 }}
-														transition={{ duration: 0.2 }}
+												{noticias[2] ? (
+													<a
+														className="color-inherit"
+														href={`noticias/noticia?titulo=${noticias[2].url_titulo}`}
 													>
-														<div className="part-img position-relative">
-															<div className="position-relative">
-																<img
-																	className="w-100 img-fluid"
-																	src={
-																		noticias[2].imagen_previsualizacion
-																			? noticias[2].imagen_previsualizacion[0].url
-																			: ""
+														<motion.div
+															style={{ y: noticia_tres }}
+															className="card-bio"
+															whileHover={{ scale: 1.05 }}
+															transition={{ duration: 0.2 }}
+														>
+															<div className="part-img position-relative">
+																<div className="position-relative">
+																	<img
+																		className="w-100 img-fluid"
+																		src={
+																			noticias[2].imagen_previsualizacion
+																				? noticias[2].imagen_previsualizacion[0].url
+																				: ""
+																		}
+																	></img>
+																	<div className="dark-filter"></div>
+																</div>
+																<div className="badge-tag">
+																	{
+																		noticiasSubcategorias[
+																			noticias[2]?.id_categoria_subcategoria.id_subcategoria - 1
+																		].nombre
 																	}
-																></img>
-																<div className="dark-filter"></div>
+																</div>
 															</div>
-															<div className="badge-tag">
-																{
-																	noticiasSubcategorias[
-																		noticias[2]?.id_categoria_subcategoria.id_subcategoria - 1
-																	].nombre
-																}
-															</div>
-														</div>
-														<div className="part-text filter">
-															<p className="title-card">{noticias[2]?.titulo}</p>
-															<p className="desc-card mb-0">{noticias[2]?.sintesis}</p>
-															{/* <ClampLines
+															<div className="part-text filter">
+																<p className="title-card">{noticias[2]?.titulo}</p>
+																<p className="desc-card mb-0">{noticias[2]?.sintesis}</p>
+																{/* <ClampLines
 																	text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
 																	lines={4}
 																	buttons={false}
 																	ellipsis="..."
 																	className="desc-card mb-0"
 																/> */}
-														</div>
-													</motion.div>
-												</a>
-											:
-											''
-											}
+															</div>
+														</motion.div>
+													</a>
+												) : (
+													""
+												)}
 											</Col>
 											<Col className="mb-2 mb-md-0" md="2">
-											{noticias[3] ?
-												<a
-												className="color-inherit"
-												href={`noticias/noticia?titulo=${noticias[3].url_titulo}`}
-												>
-													<motion.div
-														style={{ y: noticia_cuatro }}
-														whileHover={{ scale: 1.05 }}
-														transition={{ duration: 0.2 }}
-														className="card-bio"
+												{noticias[3] ? (
+													<a
+														className="color-inherit"
+														href={`noticias/noticia?titulo=${noticias[3].url_titulo}`}
 													>
-														<div className="part-img position-relative">
-															<div className="position-relative">
-																<img
-																	className="w-100 img-fluid"
-																	src={
-																		noticias[3].imagen_previsualizacion
-																			? noticias[3].imagen_previsualizacion[0].url
-																			: ""
+														<motion.div
+															style={{ y: noticia_cuatro }}
+															whileHover={{ scale: 1.05 }}
+															transition={{ duration: 0.2 }}
+															className="card-bio"
+														>
+															<div className="part-img position-relative">
+																<div className="position-relative">
+																	<img
+																		className="w-100 img-fluid"
+																		src={
+																			noticias[3].imagen_previsualizacion
+																				? noticias[3].imagen_previsualizacion[0].url
+																				: ""
+																		}
+																	></img>
+																	<div className="dark-filter"></div>
+																</div>
+																<div className="badge-tag">
+																	{
+																		noticiasSubcategorias[
+																			noticias[3]?.id_categoria_subcategoria.id_subcategoria - 1
+																		].nombre
 																	}
-																></img>
-																<div className="dark-filter"></div>
+																</div>
 															</div>
-															<div className="badge-tag">
-																{
-																	noticiasSubcategorias[
-																		noticias[3]?.id_categoria_subcategoria.id_subcategoria - 1
-																	].nombre
-																}
-															</div>
-														</div>
-														<div className="part-text filter">
-															<p className="title-card">{noticias[3]?.titulo}</p>
-															<p className="desc-card mb-0">{noticias[3]?.sintesis}</p>
-															{/* <ClampLines
+															<div className="part-text filter">
+																<p className="title-card">{noticias[3]?.titulo}</p>
+																<p className="desc-card mb-0">{noticias[3]?.sintesis}</p>
+																{/* <ClampLines
 																text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
 																lines={4}
 																buttons={false}
 																ellipsis="..."
 																className="desc-card mb-0"
 															/> */}
-														</div>
-													</motion.div>
-												</a>
-											:
-											''
-											}
+															</div>
+														</motion.div>
+													</a>
+												) : (
+													""
+												)}
 											</Col>
 											<Col md="1"></Col>
 										</Row>
@@ -621,8 +671,8 @@ export default function Home() {
 													<div className="d-flex justify-content-start justify-content-md-end">
 														<h2 className="subtitle-green mr-1 mb-0">Producción científica</h2>
 														<a href="/investigacion/proyectos" className="d-inline-block">
-                              								<img src="/assets/img/iconos/boton_vermas.png"/>
-                            							</a>
+															<img src="/assets/img/iconos/boton_vermas.png" />
+														</a>
 													</div>
 												</Col>
 											</Row>
@@ -638,26 +688,26 @@ export default function Home() {
 											>
 												{width >= 768 && (
 													<>
-													<motion.p
-														className="mb-0 txt-proyectos-bg"
-														style={{
-															opacity: intro_proyectos,
-														}}
-													>
-														Descubre el trabajo
-														<br />
-														de alumnos, docentes
-														<br />y egresados
-													</motion.p>
+														<motion.p
+															className="mb-0 txt-proyectos-bg"
+															style={{
+																opacity: intro_proyectos,
+															}}
+														>
+															Descubre el trabajo
+															<br />
+															de alumnos, docentes
+															<br />y egresados
+														</motion.p>
 													</>
 												)}
 												{width < 768 && (
 													<>
-													<p>Descubre el trabajo de alumnos, docentes y egresados</p>
+														<p>Descubre el trabajo de alumnos, docentes y egresados</p>
 													</>
 												)}
 
-												{proyectos[0] ? 
+												{proyectos[0] ? (
 													<motion.a
 														style={{ x: proyecto_uno }}
 														whileHover={{ scale: 1.05 }}
@@ -669,153 +719,158 @@ export default function Home() {
 															<div className="position-relative">
 																<img
 																	className="w-100 img-fluid"
-																	src={
-																		proyectos[0].imagen ? proyectos[0].imagen.url : ""
-																	}
+																	src={proyectos[0].imagen ? proyectos[0].imagen.url : ""}
 																></img>
 																<div className="dark-filter"></div>
 															</div>
 															<div className="caption-img">
 																{proyectos[0]?.nombre} <br></br>
-																{proyectos[0].responsable == null || proyectos[0].responsable == '' ? obtenerNombreGrupoInvestigacion(proyectos[0].grupo_investigacion) : proyectos[0].responsable}
+																{proyectos[0].responsable == null || proyectos[0].responsable == ""
+																	? obtenerNombreGrupoInvestigacion(
+																			proyectos[0].grupo_investigacion
+																	  )
+																	: proyectos[0].responsable}
 															</div>
 														</div>
 													</motion.a>
-												:
-												''
-												}
+												) : (
+													""
+												)}
 											</Col>
 											<Col className="mb-2 mb-md-0" md="2">
-											{proyectos[1] ?
-												<a
-													className="color-inherit"
-													href={`investigacion/proyectos/proyecto?nombre=${proyectos[1].url_nombre}`}
-												>
-													<motion.div 
-														style={{ y: proyecto_dos }}
-														className="card-bio"
-														whileHover={{ scale: 1.05 }}
-														transition={{ duration: 0.2 }}
+												{proyectos[1] ? (
+													<a
+														className="color-inherit"
+														href={`investigacion/proyectos/proyecto?nombre=${proyectos[1].url_nombre}`}
 													>
-														<div className="part-img position-relative">
-															<div className="position-relative">
-																<img
-																	className="w-100 img-fluid"
-																	src={
-																		proyectos[1].imagen
-																			? proyectos[1].imagen.url
-																			: ""
-																	}
-																></img>
-																<div className="dark-filter"></div>
+														<motion.div
+															style={{ y: proyecto_dos }}
+															className="card-bio"
+															whileHover={{ scale: 1.05 }}
+															transition={{ duration: 0.2 }}
+														>
+															<div className="part-img position-relative">
+																<div className="position-relative">
+																	<img
+																		className="w-100 img-fluid"
+																		src={proyectos[1].imagen ? proyectos[1].imagen.url : ""}
+																	></img>
+																	<div className="dark-filter"></div>
+																</div>
 															</div>
-														</div>
-														<div className="part-text">
-															<p className="title-card line-clamp-4">
-																{proyectos[1].nombre}
-															</p>
-															<p className="author-card mb-0">{proyectos[1].responsable == null || proyectos[1].responsable == '' ? obtenerNombreGrupoInvestigacion(proyectos[1].grupo_investigacion) : proyectos[1].responsable}</p>
-															{/* <ClampLines
+															<div className="part-text">
+																<p className="title-card line-clamp-4">{proyectos[1].nombre}</p>
+																<p className="author-card mb-0">
+																	{proyectos[1].responsable == null ||
+																	proyectos[1].responsable == ""
+																		? obtenerNombreGrupoInvestigacion(
+																				proyectos[1].grupo_investigacion
+																		  )
+																		: proyectos[1].responsable}
+																</p>
+																{/* <ClampLines
 																text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
 																lines={4}
 																buttons={false}
 																ellipsis="..."
 																className="desc-card mb-0"
 															/> */}
-														</div>
-													</motion.div>
-												</a>
-											:
-											''
-											}
+															</div>
+														</motion.div>
+													</a>
+												) : (
+													""
+												)}
 											</Col>
 											<Col className="mb-2 mb-md-0" md="2">
-											{proyectos[2] ?
-												<a
-													className="color-inherit"
-													href={`investigacion/proyectos/proyecto?nombre=${proyectos[2].url_nombre}`}
-												>
-													<motion.div 
-														style={{ y: proyecto_tres }}
-														className="card-bio"
-														whileHover={{ scale: 1.05 }}
-														transition={{ duration: 0.2 }}
+												{proyectos[2] ? (
+													<a
+														className="color-inherit"
+														href={`investigacion/proyectos/proyecto?nombre=${proyectos[2].url_nombre}`}
 													>
-														<div className="part-img position-relative">
-															<div className="position-relative">
-																<img
-																	className="w-100 img-fluid"
-																	src={
-																		proyectos[2].imagen
-																			? proyectos[2].imagen.url
-																			: ""
-																	}
-																></img>
-																<div className="dark-filter"></div>
+														<motion.div
+															style={{ y: proyecto_tres }}
+															className="card-bio"
+															whileHover={{ scale: 1.05 }}
+															transition={{ duration: 0.2 }}
+														>
+															<div className="part-img position-relative">
+																<div className="position-relative">
+																	<img
+																		className="w-100 img-fluid"
+																		src={proyectos[2].imagen ? proyectos[2].imagen.url : ""}
+																	></img>
+																	<div className="dark-filter"></div>
+																</div>
 															</div>
-														</div>
-														<div className="part-text">
-															<p className="title-card line-clamp-4">
-																{proyectos[2].nombre}
-															</p>
-															<p className="author-card mb-0">{proyectos[2].responsable == null || proyectos[2].responsable == '' ? obtenerNombreGrupoInvestigacion(proyectos[2].grupo_investigacion) : proyectos[2].responsable}</p>
-															{/* <ClampLines
+															<div className="part-text">
+																<p className="title-card line-clamp-4">{proyectos[2].nombre}</p>
+																<p className="author-card mb-0">
+																	{proyectos[2].responsable == null ||
+																	proyectos[2].responsable == ""
+																		? obtenerNombreGrupoInvestigacion(
+																				proyectos[2].grupo_investigacion
+																		  )
+																		: proyectos[2].responsable}
+																</p>
+																{/* <ClampLines
 																text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
 																lines={4}
 																buttons={false}
 																ellipsis="..."
 																className="desc-card mb-0"
 															/> */}
-														</div>
-													</motion.div>
-												</a>
-											:
-											''
-											}
+															</div>
+														</motion.div>
+													</a>
+												) : (
+													""
+												)}
 											</Col>
 											<Col className="mb-2 mb-md-0" md="2">
-											{proyectos[3] ?
-												<a
-													className="color-inherit"
-													href={`investigacion/proyectos/proyecto?nombre=${proyectos[3].url_nombre}`}
-												>
-													<motion.div 
-														style={{ y: proyecto_cuatro }}
-														className="card-bio"
-														whileHover={{ scale: 1.05 }}
-														transition={{ duration: 0.2 }}
+												{proyectos[3] ? (
+													<a
+														className="color-inherit"
+														href={`investigacion/proyectos/proyecto?nombre=${proyectos[3].url_nombre}`}
 													>
-														<div className="part-img position-relative">
-															<div className="position-relative">
-																<img
-																	className="w-100 img-fluid"
-																	src={
-																		proyectos[3].imagen
-																			? proyectos[3].imagen.url
-																			: ""
-																	}
-																></img>
-																<div className="dark-filter"></div>
+														<motion.div
+															style={{ y: proyecto_cuatro }}
+															className="card-bio"
+															whileHover={{ scale: 1.05 }}
+															transition={{ duration: 0.2 }}
+														>
+															<div className="part-img position-relative">
+																<div className="position-relative">
+																	<img
+																		className="w-100 img-fluid"
+																		src={proyectos[3].imagen ? proyectos[3].imagen.url : ""}
+																	></img>
+																	<div className="dark-filter"></div>
+																</div>
 															</div>
-														</div>
-														<div className="part-text">
-															<p className="title-card line-clamp-4">
-																{proyectos[3].nombre}
-															</p>
-															<p className="author-card mb-0">{proyectos[3].responsable == null || proyectos[3].responsable == '' ? obtenerNombreGrupoInvestigacion(proyectos[3].grupo_investigacion) : proyectos[3].responsable}</p>
-															{/* <ClampLines
+															<div className="part-text">
+																<p className="title-card line-clamp-4">{proyectos[3].nombre}</p>
+																<p className="author-card mb-0">
+																	{proyectos[3].responsable == null ||
+																	proyectos[3].responsable == ""
+																		? obtenerNombreGrupoInvestigacion(
+																				proyectos[3].grupo_investigacion
+																		  )
+																		: proyectos[3].responsable}
+																</p>
+																{/* <ClampLines
 																text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
 																lines={4}
 																buttons={false}
 																ellipsis="..."
 																className="desc-card mb-0"
 															/> */}
-														</div>
-													</motion.div>
-												</a>
-											:
-											''
-											}
+															</div>
+														</motion.div>
+													</a>
+												) : (
+													""
+												)}
 											</Col>
 											<Col md="1"></Col>
 										</Row>
