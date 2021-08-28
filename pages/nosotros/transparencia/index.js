@@ -17,9 +17,9 @@ const transparencia = () => {
 			const response_transparencia2021 = await getTransparencia2021();
 			const response_transparencia2020 = await getTransparencia2020();
 			const response_transparencia2019 = await getTransparencia2019();
-			setTransparencia2021(response_transparencia2019);
+			setTransparencia2021(response_transparencia2021);
 			setTransparencia2020(response_transparencia2020);
-			setTransparencia2019(response_transparencia2021);
+			setTransparencia2019(response_transparencia2019);
 		})();
 	}, []);
 
