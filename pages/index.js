@@ -25,7 +25,7 @@ export default function Home() {
 	const [proyectos, setProyectos] = useState([]);
 	const { scrollYProgress } = useViewportScroll();
 	const intro_noticias = useTransform(scrollYProgress, [0, 0.2], [0.2, 1]);
-	const noticia_uno = useTransform(scrollYProgress, [0, 0.2], [-200, 0]);
+	const noticia_uno = useTransform(scrollYProgress, [0, 0.2], [-10, 0]);
 	const noticia_dos = useTransform(scrollYProgress, [0, 0.2], [200, 0]);
 	const noticia_tres = useTransform(scrollYProgress, [0, 0.2], [400, 0]);
 	const noticia_cuatro = useTransform(scrollYProgress, [0, 0.2], [600, 0]);
