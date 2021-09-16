@@ -13,12 +13,12 @@ import { getEventosHomeApi } from "./api/eventos";
 import { getProyectosHomeApi } from "./api/proyectos";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { useWindowSize } from "../utils/useWindowSize";
+import useNovedades from "../hooks/useNovedades";
 
 export default function Home() {
 	const [loadingPage, setLoadingPage] = useState(true);
-
 	const { width, height } = useWindowSize();
-
+	const { data: novedades, loading: novedadesLoading } = useNovedades();
 	const [noticias, setNoticias] = useState([]);
 	const [noticiasSubcategorias, setNoticiasSubcategorias] = useState([]);
 	const [eventos, setEventos] = useState([]);
@@ -160,10 +160,10 @@ export default function Home() {
 
 	useEffect(() => {
 		(async () => {
-			const response_noticias = await getNoticiasHomeApi();
-			const response_subcategorias = await getNoticiasSubcategoriasApi();
-			setNoticias(response_noticias);
-			setNoticiasSubcategorias(response_subcategorias);
+			// const response_noticias = await getNoticiasHomeApi();
+			// const response_subcategorias = await getNoticiasSubcategoriasApi();
+			// setNoticias(response_noticias);
+			// setNoticiasSubcategorias(response_subcategorias);
 			const response_eventos = await getEventosHomeApi();
 			setEventos(response_eventos);
 			const response_proyectos = await getProyectosHomeApi();
@@ -173,11 +173,7 @@ export default function Home() {
 
 	return (
 		<div>
-			{noticias.length != 0 &&
-			noticiasSubcategorias.length != 0 &&
-			eventos.length != 0 &&
-			proyectos.length != 0 &&
-			!loadingPage ? (
+			{!novedadesLoading && !loadingPage ? (
 				<div>
 					<Head>
 						<title>Facultad de Ciencias Biológicas</title>
@@ -404,34 +400,32 @@ export default function Home() {
 													<br />
 													novedades
 												</motion.p>
-												{noticias[0] ? (
+												{novedades[0] ? (
 													<motion.a
 														style={{ x: noticia_uno }}
 														whileHover={{ scale: 1.05 }}
 														transition={{ duration: 0.2 }}
-														href={`noticias/noticia?titulo=${noticias[0].url_titulo}`}
+														href={`noticias/noticia?titulo=${novedades[0].slug}`}
 														className="position-relative box-shadow mt-auto"
 													>
 														<div className="position-relative">
 															<img
 																className="w-100 img-fluid"
-																src={
-																	noticias[0].imagen_banner ? noticias[0].imagen_banner[0].url : ""
-																}
+																src={novedades[0].banner ? novedades[0].banner.url : ""}
 															></img>
 															<div className="dark-filter"></div>
 														</div>
-														<div className="caption-img">{noticias[0]?.titulo}</div>
+														<div className="caption-img">{novedades[0]?.titulo}</div>
 													</motion.a>
 												) : (
 													""
 												)}
 											</Col>
 											<Col className="mb-2 mb-md-0" md="2">
-												{noticias[1] ? (
+												{novedades[1] ? (
 													<a
 														className="color-inherit"
-														href={`noticias/noticia?titulo=${noticias[1].url_titulo}`}
+														href={`noticias/noticia?titulo=${novedades[1].slug}`}
 													>
 														<motion.div
 															style={{ y: noticia_dos }}
@@ -443,25 +437,17 @@ export default function Home() {
 																<div className="position-relative">
 																	<img
 																		className="w-100 img-fluid"
-																		src={
-																			noticias[1].imagen_previsualizacion
-																				? noticias[1].imagen_previsualizacion[0].url
-																				: ""
-																		}
+																		src={novedades[1].banner ? novedades[1].banner.url : ""}
 																	></img>
 																	<div className="dark-filter"></div>
 																</div>
 																<div className="badge-tag">
-																	{
-																		noticiasSubcategorias[
-																			noticias[1]?.id_categoria_subcategoria.id_subcategoria - 1
-																		].nombre
-																	}
+																	{novedades[1].sub_categoria_noticia.nombre}
 																</div>
 															</div>
 															<div className="part-text filter">
-																<p className="title-card">{noticias[1]?.titulo}</p>
-																<p className="desc-card mb-0">{noticias[1]?.sintesis}</p>
+																<p className="title-card">{novedades[1]?.titulo}</p>
+																<p className="desc-card mb-0">{novedades[1]?.sintesis}</p>
 																{/* <ClampLines
 																	text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
 																	lines={4}
@@ -477,10 +463,10 @@ export default function Home() {
 												)}
 											</Col>
 											<Col className="mb-2 mb-md-0" md="2">
-												{noticias[2] ? (
+												{novedades[2] ? (
 													<a
 														className="color-inherit"
-														href={`noticias/noticia?titulo=${noticias[2].url_titulo}`}
+														href={`noticias/noticia?titulo=${novedades[2].slug}`}
 													>
 														<motion.div
 															style={{ y: noticia_tres }}
@@ -492,25 +478,17 @@ export default function Home() {
 																<div className="position-relative">
 																	<img
 																		className="w-100 img-fluid"
-																		src={
-																			noticias[2].imagen_previsualizacion
-																				? noticias[2].imagen_previsualizacion[0].url
-																				: ""
-																		}
+																		src={novedades[2].banner ? novedades[2].banner.url : ""}
 																	></img>
 																	<div className="dark-filter"></div>
 																</div>
 																<div className="badge-tag">
-																	{
-																		noticiasSubcategorias[
-																			noticias[2]?.id_categoria_subcategoria.id_subcategoria - 1
-																		].nombre
-																	}
+																	{novedades[2].sub_categoria_noticia.nombre}
 																</div>
 															</div>
 															<div className="part-text filter">
-																<p className="title-card">{noticias[2]?.titulo}</p>
-																<p className="desc-card mb-0">{noticias[2]?.sintesis}</p>
+																<p className="title-card">{novedades[2]?.titulo}</p>
+																<p className="desc-card mb-0">{novedades[2]?.sintesis}</p>
 																{/* <ClampLines
 																	text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
 																	lines={4}
@@ -526,10 +504,10 @@ export default function Home() {
 												)}
 											</Col>
 											<Col className="mb-2 mb-md-0" md="2">
-												{noticias[3] ? (
+												{novedades[3] ? (
 													<a
 														className="color-inherit"
-														href={`noticias/noticia?titulo=${noticias[3].url_titulo}`}
+														href={`noticias/noticia?titulo=${novedades[3].slug}`}
 													>
 														<motion.div
 															style={{ y: noticia_cuatro }}
@@ -541,25 +519,17 @@ export default function Home() {
 																<div className="position-relative">
 																	<img
 																		className="w-100 img-fluid"
-																		src={
-																			noticias[3].imagen_previsualizacion
-																				? noticias[3].imagen_previsualizacion[0].url
-																				: ""
-																		}
+																		src={novedades[3].banner ? novedades[3].banner.url : ""}
 																	></img>
 																	<div className="dark-filter"></div>
 																</div>
 																<div className="badge-tag">
-																	{
-																		noticiasSubcategorias[
-																			noticias[3]?.id_categoria_subcategoria.id_subcategoria - 1
-																		].nombre
-																	}
+																	{novedades[3].sub_categoria_noticia.nombre}
 																</div>
 															</div>
 															<div className="part-text filter">
-																<p className="title-card">{noticias[3]?.titulo}</p>
-																<p className="desc-card mb-0">{noticias[3]?.sintesis}</p>
+																<p className="title-card">{novedades[3]?.titulo}</p>
+																<p className="desc-card mb-0">{novedades[3]?.sintesis}</p>
 																{/* <ClampLines
 																text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
 																lines={4}

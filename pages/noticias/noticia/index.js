@@ -1,147 +1,113 @@
-import React , { useState , useEffect } from 'react'
-import { Loader } from 'semantic-ui-react'
-import { useRouter } from "next/router";
-import Layout from "../../../components/Layout"
-import {Row, Col, Container, Breadcrumb, Spinner} from 'react-bootstrap'
-import Link from 'next/link';
+import React, { useState, useEffect } from "react";
+import { Loader } from "semantic-ui-react";
+// import { useRouter } from "next/router";
+import Layout from "../../../components/Layout";
+import { Row, Col, Container, Breadcrumb, Spinner } from "react-bootstrap";
+import Link from "next/link";
 import { size } from "lodash";
-import {getNoticiaByUrlApi, updateVisitasNoticiaApi} from '../../api/noticias';
-import NoticiasExtra from "../../../components/NoticiasExtra"
+// import { getNoticiaByUrlApi, updateVisitasNoticiaApi } from "../../api/noticias";
+import NoticiasExtra from "../../../components/NoticiasExtra";
+import useNovedadesPage from "../../../hooks/useNovedadesPage";
+import { months } from "../../../utils/constants";
 
 const noticia = () => {
+	const { data: novedad, loading: novedadLoading } = useNovedadesPage();
 
-    const { query } = useRouter();
+	return (
+		<>
+			<Layout title="Noticia">
+				{novedadLoading ? (
+					<>
+						<div className="d-flex align-items-center justify-content-center my-5">
+							<div className="d-inline-flex flex-column justify-content-center align-items-center">
+								<Spinner animation="border" role="status" className="mb-2" />
+								<span>Buscando contenido...</span>
+							</div>
+						</div>
+					</>
+				) : (
+					<div>
+						<div>
+							<Container>
+								<Row>
+									<Col md="1"></Col>
+									<Col>
+										<Breadcrumb>
+											{/* <Breadcrumb.Item> */}
+											<li className="breadcrumb-item">
+												<Link href="/">
+													<a role="button">Inicio</a>
+												</Link>
+											</li>
+											{/* </Breadcrumb.Item> */}
+											{/* <Breadcrumb.Item active>Formación académica</Breadcrumb.Item> */}
+											<li className="breadcrumb-item">
+												<Link href="/noticias">
+													<a role="button">Noticias</a>
+												</Link>
+											</li>
+											<Breadcrumb.Item active>{novedad.titulo}</Breadcrumb.Item>
+										</Breadcrumb>
+									</Col>
+									<Col md="1"></Col>
+								</Row>
+							</Container>
+						</div>
+						<div>
+							<Container className="mb-3">
+								<Row>
+									<Col md="1" lg="1"></Col>
+									<Col md="7" lg="8">
+										<div className="title-page mb-2">{novedad.titulo}</div>
+										{/* <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div> */}
+										<div className="d-flex justify-content-between">
+											<div className="date">
+												<span>
+													<img
+														width="17px"
+														className="mr-2"
+														src="/assets/img/iconos/calendario.svg"
+														alt=""
+													/>
+												</span>
+												<span>
+													{new Date(novedad.fecha).getDate()} de{" "}
+													{months[new Date(novedad.fecha).getMonth()]} de{" "}
+													{new Date(novedad.fecha).getFullYear()}
+												</span>
+											</div>
+											<div className="date">
+												<span>
+													<img
+														width="22px"
+														className="mr-2"
+														src="/assets/img/iconos/vistas.svg"
+														alt=""
+													/>
+												</span>
+												<span>{novedad.visitas} vistas</span>
+											</div>
+										</div>
+									</Col>
+									<Col md="3" lg="2"></Col>
+									<Col md="1" lg="1"></Col>
+								</Row>
+							</Container>
+							<Container>
+								<Row>
+									<Col md="1" lg="1"></Col>
+									<Col md="7" lg="8">
+										<div className="d-flex justify-content-center mb-4">
+											<img
+												className="img-fluid"
+												src={novedad?.banner?.url ? novedad.banner.url : ""}
+												alt=""
+											/>
+										</div>
 
-    const currentUrlNoticia = query.titulo;
-    const [loading, setLoading] = useState(true);
-    const [sinResultados, setSinResultados] = useState(false);
-    const [noticia, setNoticia] = useState(false);
+										<div dangerouslySetInnerHTML={{ __html: novedad.cuerpo }} />
 
-    const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
-
-    function getCookie(cname) {
-        var name = cname + "=";
-        // console.log(document.cookie);
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        for(var i = 0; i <ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-    }
-
-    useEffect(() => {
-        if (!query) {
-            return;
-        }
-        (async () => {
-          setLoading(true);
-          setSinResultados(false);
-          const response = await getNoticiaByUrlApi(currentUrlNoticia);
-          if(size(response) == 0){
-            // setSinResultados(true);
-          }
-          else{
-            setNoticia(response[0]);
-            var cnoticia = getCookie("noticia"+response[0].id);
-
-            if(cnoticia == ""){
-                document.cookie = "noticia"+response[0].id+"="+response[0].id;
-                const response_update_visitas = await updateVisitasNoticiaApi(response[0].id, response[0].visitas);
-            }
-            setLoading(false);
-            // setSinResultados(false);
-          }
-
-        //   const response_noticias_ultimas = await getNoticiasUltimasApi();
-
-          window.scrollTo(0, 0);
-        })();
-    }, [query]);
-
-    return (
-        <>
-            <Layout title="Noticia">
-            {loading ? (
-                    <>
-                    <div className="d-flex align-items-center justify-content-center my-5">
-                        <div className="d-inline-flex flex-column justify-content-center align-items-center">
-                            <Spinner animation="border" role="status" className="mb-2"/>
-                            <span>Buscando formación...</span>
-                        </div>
-                    </div>
-                    </>
-                ) : !sinResultados ? (
-                    <div>
-                        <div>
-                            <Container>
-                                <Row>
-                                    <Col md="1"></Col>
-                                    <Col>
-                                        <Breadcrumb>
-                                            {/* <Breadcrumb.Item> */}
-                                            <li className="breadcrumb-item">
-                                                <Link href="/">
-                                                    <a role="button">Inicio</a>
-                                                </Link>
-                                            </li>
-                                            {/* </Breadcrumb.Item> */}
-                                            {/* <Breadcrumb.Item active>Formación académica</Breadcrumb.Item> */}
-                                            <li className="breadcrumb-item">
-                                                <Link href="/noticias">
-                                                    <a role="button">Noticias</a>
-                                                </Link>
-                                            </li>
-                                            <Breadcrumb.Item active>{noticia.titulo}</Breadcrumb.Item>
-                                        </Breadcrumb>
-                                    </Col>
-                                    <Col md="1"></Col>
-                                </Row>
-                            </Container>
-                        </div>
-                        <div>
-                            <Container className="mb-3">
-                                <Row>
-                                    <Col md="1" lg="1"></Col>
-                                    <Col md="7" lg="8">
-                                        <div className="title-page mb-2">{noticia.titulo}</div>
-                                        {/* <div className="sub-title text-center">Egresada de la E.P. Microbiología y Parasitología </div> */}
-                                        <div className="d-flex justify-content-between">
-                                            <div className="date">
-                                                <span>
-                                                    <img width="17px" className="mr-2" src="/assets/img/iconos/calendario.svg" alt="" />
-                                                </span>
-                                                <span>{new Date(noticia.fecha).getDate()} de {months[new Date(noticia.fecha).getMonth()]} de {new Date(noticia.fecha).getFullYear()}</span>
-                                            </div>
-                                            <div className="date">
-                                                <span>
-                                                    <img width="22px" className="mr-2" src="/assets/img/iconos/vistas.svg" alt="" />
-                                                </span>
-                                                <span>{noticia.visitas} vistas</span>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col md="3" lg="2"></Col>
-                                    <Col md="1" lg="1"></Col>
-                                </Row>
-                            </Container>
-                            <Container>
-                                <Row>
-                                    <Col md="1" lg="1"></Col>
-                                    <Col md="7" lg="8">
-                                        <div className="d-flex justify-content-center mb-4">
-                                            <img className="img-fluid" src={noticia.imagen_detalle ? noticia.imagen_detalle[0].url : ''} alt="" />
-                                        </div>
-                                        
-                                        <div dangerouslySetInnerHTML={{ __html: noticia.cuerpo }} />
-
-                                        {/* <p>
+										{/* <p>
                                             Una comitiva de investigadores en neurociencias cognitivas de Bolivia visitó la tarde de este martes 22 de octubre, la escuela profesional de Genética y Biotecnología de la Facultad de Ciencias Biológicas (FCB) de la UNMSM, para conocer los proyectos que se vienen realizando en los laboratorios relacionados a Genética Humana.
                                         </p>
                                         <p>
@@ -167,55 +133,36 @@ const noticia = () => {
                                             <li>El 4 de octubre último, la Facultad de Ciencias Biológicas de la UNMSM superó con éxito el proceso de auditoría externa con Bureau Veritas, quedando expedita para su acreditación internacional con ABET.</li>
                                             <li>El alcance de la certificación es: planificación, enseñanza, formación, evaluación, promoción de la investigación y de la responsabilidad social en pregrado para otorgar el título como Biólogo con mención en Botánica, Hidrobiología y Pesquería, Zoología; Biólogo Genetista y Biotecnólogo y Biólogo Microbiólogo Parasitólogo.</li>
                                         </ul> */}
-                                        
-                                         <div className="section-compartir mb-3">
-                                            <div className="d-inline-block font-weight-bold mr-3">
-                                                Compartir vía:
-                                            </div>
-                                            <div className="icons">
-                                                <a href="#" className="d-inline-block">
-                                                    <img src="/assets/img/iconos/email.svg"/>
-                                                </a>
-                                                <a href="#" className="d-inline-block">
-                                                    <img src="/assets/img/iconos/whatsapp.svg"/>
-                                                </a>
-                                                <a href="#" className="d-inline-block">
-                                                    <img src="/assets/img/iconos/facebook.svg"/>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </Col>
-                                    <Col md="3" lg="2">
-                                        <aside>
-                                            <NoticiasExtra 
-                                                idNoticiaDetalle = {noticia.id} 
-                                            />
-                                        </aside>
-                                    </Col>
-                                    <Col md="1" lg="1"></Col>
-                                </Row>
-                            </Container>
-                        </div>
-                    </div>
 
-                ) : (
-                    ''
-                    // <div style={{
-                    //     color: "#39556f",
-                    //     fontFamily: "Calibri",
-                    //     fontWeight: "bold",
-                    //     fontSize: "15px",
-                    //     marginTop: "27rem",
-                    //     marginLeft: "80rem",
-                    // }}>
-                    //     No se encontró resultados
-                    //     {/* <SinResultados /> */}
-                    // </div>
-                )
-            }
-            </Layout>
-        </>
-    )
-}
+										<div className="section-compartir mb-3">
+											<div className="d-inline-block font-weight-bold mr-3">Compartir vía:</div>
+											<div className="icons">
+												<a href="#" className="d-inline-block">
+													<img src="/assets/img/iconos/email.svg" />
+												</a>
+												<a href="#" className="d-inline-block">
+													<img src="/assets/img/iconos/whatsapp.svg" />
+												</a>
+												<a href="#" className="d-inline-block">
+													<img src="/assets/img/iconos/facebook.svg" />
+												</a>
+											</div>
+										</div>
+									</Col>
+									<Col md="3" lg="2">
+										<aside>
+											<NoticiasExtra idNoticiaDetalle={novedad.id} />
+										</aside>
+									</Col>
+									<Col md="1" lg="1"></Col>
+								</Row>
+							</Container>
+						</div>
+					</div>
+				)}
+			</Layout>
+		</>
+	);
+};
 
-export default noticia
+export default noticia;
