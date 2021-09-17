@@ -138,20 +138,6 @@ export default function Home() {
 		}
 	}
 
-	// useEffect(() => {
-	// 	setTimeout(() => {
-	// 		setLoadingPage(false);
-	// 	}, 800);
-
-	// 	(async () => {
-	// 		const response_noticias = await getNoticiasHomeApi();
-	// 		const response_subcategorias = await getNoticiasSubcategoriasApi();
-	// 		setNoticias(response_noticias);
-	// 		setNoticiasSubcategorias(response_subcategorias);
-	// 		const response_eventos = await getEventosHomeApi();
-	// 		setEventos(response_eventos);
-	// 	})();
-	// }, [loadingPage]);
 	useEffect(() => {
 		setTimeout(() => {
 			setLoadingPage(false);
@@ -160,10 +146,6 @@ export default function Home() {
 
 	useEffect(() => {
 		(async () => {
-			// const response_noticias = await getNoticiasHomeApi();
-			// const response_subcategorias = await getNoticiasSubcategoriasApi();
-			// setNoticias(response_noticias);
-			// setNoticiasSubcategorias(response_subcategorias);
 			const response_eventos = await getEventosHomeApi();
 			setEventos(response_eventos);
 			const response_proyectos = await getProyectosHomeApi();
