@@ -954,9 +954,9 @@ export default function Home() {
 					</main>
 					<Footer></Footer>
 				</div>
-			) : (
-				<LoaderPage />
-			)}
+			) : null
+			// <LoaderPage />
+			}
 		</div>
 	);
 }
