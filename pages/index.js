@@ -154,7 +154,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<div>
+		<div className="wrapper-loader-page">
 			{!novedadesLoading && !loadingPage ? (
 				<div>
 					<Head>
@@ -168,7 +168,11 @@ export default function Home() {
 							{width >= 768 && (
 								<>
 									<video className="bg-home-video" loop autoPlay={true} muted>
-										<source src="/assets/video/facu_bio.mp4" type="video/mp4" />
+										{/* <source src="/assets/video/facu_bio.mp4" type="video/mp4" /> */}
+										<source
+											src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/facu_bio_2fc88ec75f.mp4"
+											type="video/mp4"
+										/>
 									</video>
 								</>
 							)}
