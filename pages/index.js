@@ -154,6 +154,13 @@ export default function Home() {
 	}, []);
 
 	return (
+<<<<<<< HEAD
+=======
+		// style={{
+		// 	backgroundImage: "url(/assets/img/home/home-ciencias-biologicas-unmsm.png)",
+		// 	backgroundRepeat: "no-repeat",
+		// }}
+>>>>>>> f7428423a795a10e288d18bbe16c8126e2b1836a
 		<div className="wrapper-pre-loader-page">
 			{!novedadesLoading && !loadingPage ? (
 				<div>
@@ -168,7 +175,11 @@ export default function Home() {
 							{width >= 768 && (
 								<>
 									<video className="bg-home-video" loop autoPlay={true} muted>
-										<source src="/assets/video/facu_bio.mp4" type="video/mp4" />
+										{/* <source src="/assets/video/facu_bio.mp4" type="video/mp4" /> */}
+										<source
+											src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/facu_bio_2fc88ec75f.mp4"
+											type="video/mp4"
+										/>
 									</video>
 								</>
 							)}
