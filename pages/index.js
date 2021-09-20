@@ -154,13 +154,6 @@ export default function Home() {
 	}, []);
 
 	return (
-<<<<<<< HEAD
-=======
-		// style={{
-		// 	backgroundImage: "url(/assets/img/home/home-ciencias-biologicas-unmsm.png)",
-		// 	backgroundRepeat: "no-repeat",
-		// }}
->>>>>>> f7428423a795a10e288d18bbe16c8126e2b1836a
 		<div className="wrapper-pre-loader-page">
 			{!novedadesLoading && !loadingPage ? (
 				<div>
