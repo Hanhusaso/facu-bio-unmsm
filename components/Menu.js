@@ -402,6 +402,14 @@ const Menu = () => {
 											</li>
 											<li className="nav-item">
 												{/* <Link href="#"> */}
+												{/* <a className="nav-link">Centro de Producción Editorial e Imprenta (CEPREDIM)</a> */}
+												<a href="https://es.corrientexxi.com/" target="_blank" className="nav-link">
+													Proyecto CORRIENTE XXI
+												</a>
+												{/* </Link> */}
+											</li>
+											<li className="nav-item">
+												{/* <Link href="#"> */}
 												{/* <a className="nav-link">Dirección General de Responsabilidad social</a> */}
 												<a
 													href="https://dgrs.unmsm.edu.pe/inicio/"
