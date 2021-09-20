@@ -154,7 +154,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<div>
+		<div className="wrapper-pre-loader-page">
 			{!novedadesLoading && !loadingPage ? (
 				<div>
 					<Head>
