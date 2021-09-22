@@ -123,36 +123,54 @@ const index = () => {
                                                 Decano
                                             </p>
                                             <ul className="chevron-green-dark">
-                                                <li>Dr. Pablo Sergio Ramirez Roca</li>
+                                                <li>
+                                                    Dr. Pablo Sergio Ramirez Roca {"<decanobio@unmsm.edu.pe>"}
+                                                </li>
                                             </ul>
                                             <p className="title-dark">
-                                                Profesores principales
+                                                Representación docente
                                             </p>
                                             <ul className="chevron-green-dark">
-                                                <li>Dr. Carlos García Bedoya</li>
-                                                <li>Dr. Rosalía Quiróz García</li>
-                                                <li>Manuel Eulogio Conde Marcos</li>
+                                                <li>Ruth García de la Guarda {"<rgarciad@unmsm.edu.pe>"}</li>
+                                                <li>Joaquina Alban Castillo {"<jalbanc@unmsm.edu.pe>"}</li>
+                                                <li>Asunción Cano Echevarría {"<acanoe@unmsm.edu.pe>"}</li>
+                                                <li>César Aguilar Puntriano {"<caguilarp@unmsm.edu.pe>"}</li>
+                                                <li>Erasmo Honorio Colona Vallejos {"<ecolonav@unmsm.edu.pe>"}</li>
+                                                <li>Jerry Arana Maestre {"<jaranam@unmsm.edu.pe>"}</li>
                                             </ul>
                                             <p className="title-dark">
-                                                Profesores asociados
+                                                Representación del tercio estudiantil
                                             </p>
                                             <ul className="chevron-green-dark">
-                                                <li>Martín Fabbri García</li>
-                                                <li>Norma Meneses Tutaya</li>
-                                                <li>Manuel Eulogio Conde Marcos</li>
+                                                <li>Paulina Ríos Fababa {"<paulina.rios@unmsm.edu.pe>"}</li>
+                                                <li>Benjamín Diaz Zamora {"<benjamin.diaz@unmsm.edu.pe>"}</li>
+                                                <li>Gabriela Monsefú Estacio {"<gabriela.monsefu@unmsm.edu.pe>"}</li>
+                                                <li>10.	Leidy Pola Romero {"<leidy.pola@unmsm.edu.pe>"}</li>
                                             </ul>
                                             <p className="title-dark">
-                                                Profesor auxiliar
+                                                Autoridades
                                             </p>
                                             <ul className="chevron-green-dark">
-                                                <li>Agustín Prado Alvarado</li>
-                                            </ul>
-                                            <p className="title-dark">
-                                                Representantes de los estudiantes
-                                            </p>
-                                            <ul className="chevron-green-dark">
-                                                <li>Tercio estudiantil mayoría - Pregrado</li>
-                                                <li>Tercio estudiantil minoría - Posgrado</li>
+                                                <li>
+                                                    Martha Valdivia Cuya {"<mvaldiviac@unmsm.edu.pe>"}
+                                                    <br />
+                                                    Vicedecana de Investigación y Posgrado
+                                                </li>
+                                                <li>
+                                                    Mónica Paredes Anaya {"<mparedesa1@unmsm.edu.pe>"}
+                                                    <br />
+                                                    Directora de la Escuela Profesional de Genética y Biotecnología
+                                                </li>
+                                                <li>
+                                                    Pedro Luis Castellanos Sánchez {"<pcastellanoss@unmsm.edu.pe>"}
+                                                    <br />
+                                                    Director de la Escuela Profesional de Microbiología y Parasitología
+                                                </li>
+                                                <li>
+                                                    Enoc Jara Peña {"<ejarap@unmsm.edu.pe>"}
+                                                    <br />
+                                                    Director de la Escuela profesional de Ciencias Biológicas
+                                                </li>
                                             </ul>
                                         </div>
                                         <div className="mb-3 tab-pane fade" id="v-pills-comisiones" role="tabpanel" aria-labelledby="v-pills-comisiones-tab"></div>
