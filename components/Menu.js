@@ -123,7 +123,7 @@ const Menu = () => {
 												target="_blank"
 												className="nav-link d-flex align-items-center"
 											>
-												<span className="mr-1">Eduación continua</span>
+												<span className="mr-1">Educación continua</span>
 												<HiIcons.HiExternalLink />
 											</a>
 											{/* </Link> */}
