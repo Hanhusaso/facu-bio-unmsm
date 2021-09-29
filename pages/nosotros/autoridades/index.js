@@ -378,7 +378,7 @@ const index = () => {
 																	</Link>
 																</li>
 																<li className="mb-0">
-																	<Link href="/informacion-academica/docentes">
+																	<Link href="/informacion-academica?recurso=informacion-de-docentes">
 																		<a>Plana docente</a>
 																	</Link>
 																</li>
@@ -617,7 +617,7 @@ const index = () => {
 																	</Link>
 																</li>
 																<li className="mb-0">
-																	<Link href="/informacion-academica/docentes">
+																	<Link href="/informacion-academica?recurso=informacion-de-docentes">
 																		<a>Plana docente</a>
 																	</Link>
 																</li>
@@ -823,7 +823,7 @@ const index = () => {
 																	</Link>
 																</li>
 																<li className="mb-0">
-																	<Link href="/informacion-academica/docentes">
+																	<Link href="/informacion-academica?recurso=informacion-de-docentes">
 																		<a>Plana docente</a>
 																	</Link>
 																</li>
