@@ -217,7 +217,7 @@ const index = () => {
 															<span className="divisor-text-green mx-2"></span>
 															<span className="title">Decano</span>
 														</p>
-														<p>
+														<p style={{ textAlign: "justify" }}>
 															Biólogo Microbiólogo - Parasitólogo en la UNMSM y Doctor en Ciencias
 															mención Microbiología en la Universidad de Chile (2002) obtenido
 															mediante una beca de la Cooperación Alemana (DAAD), y Profesor
@@ -641,7 +641,7 @@ const index = () => {
 															<span className="divisor-text-green mx-2"></span>
 															<span className="title">Vicedecana de Investigación y Posgrado</span>
 														</p>
-														<p>
+														<p style={{ textAlign: "justify" }}>
 															Profesora Principal a Tiempo Completo, Investigadora de la Facultad de
 															Ciencias Biológicas, Miembro permanente del Instituto de
 															Investigaciones Antonio Raimondi, Jefa del laboratorio de Fisiología
