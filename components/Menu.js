@@ -232,6 +232,14 @@ const Menu = () => {
 											</a>
 											{/* </Link> */}
 										</li>
+										<li className="nav-item">
+											{/* <Link href="/investigacion/instituto-investigaciones-biologicas"> */}
+											{/* <a className="nav-link">Instituto de investigaciones biológicas</a> */}
+											<a href="/investigacion/comite-de-bioetica" className="nav-link">
+												Comité de Bioética de la FCB
+											</a>
+											{/* </Link> */}
+										</li>
 									</ul>
 									<div className="divider-green mx-3"></div>
 									<div className="interes-links">
