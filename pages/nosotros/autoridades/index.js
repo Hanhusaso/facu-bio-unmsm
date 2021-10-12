@@ -404,9 +404,47 @@ const index = () => {
 															<span className="divisor-text-green mx-2"></span>
 															<span className="title">Vicedecana académica</span>
 														</p>
-														{/* <p>
-															introducción para vicedecana académica
-														</p> */}
+														<p>
+															Profesora Principal a Dedicación Exclusiva del Dpto. Académico de
+															Microbiología y Parasitología de la Facultad de Ciencias Biológicas de
+															la Universidad Nacional Mayor de San Marcos. Título Profesional de
+															Biólogo-Microbiólogo por la Universidad Nacional de Trujillo, Grado
+															Académico de Magíster en Bioquímica por la Pontificia Universidad
+															Católica de Chile, Doctora en Ciencias Biológicas por la Universidad
+															Nacional Mayor de San Marcos.
+														</p>
+														<p>
+															Realiza sus actividades de investigación en el Laboratorio de
+															Microbiología Molecular y Biotecnología de la Facultad de Ciencias
+															Biológicas. Miembro Permanente del Instituto de Investigación de
+															Ciencias Biológicas Antonio Raimondi (ICBAR). Investigadora principal
+															en proyectos financiados por CONCYTEC y por el Vicerrectorado de
+															Investigación y Posgrado de la UNMSM. Especialista en temas de
+															microbiología. Líneas de investigación de microbiología molecular de
+															bacterias patógenas/oportunistas y de bacterias biolixiviantes y de
+															otras ambientales de interés biotecnológico. Asesora de Trabajos de
+															Investigación y de Tesis de pre y posgrado.
+														</p>
+														<p>
+															Miembro del comité de docentes que crearon la Maestría en Biología
+															Molecular. Coordinadora de la Maestría en Biología Molecular
+															(2004-2013).
+														</p>
+														<p>
+															En la docencia es profesora responsable, en el pregrado, de los cursos
+															de Fundamentos de Microbiología y de Microbiología en Salud, así como
+															colaboradora de Genética Microbiana e Ingeniería Genética; en el
+															posgrado (Maestría en Biología Molecular), ha sido responsable de
+															Microbiología Molecular, Tesis II, Tesis III y Tesis IV, y
+															colaboradora de Biología Molecular Avanzada.
+														</p>
+														<p>
+															Coordinadora del Dpto. Académico de Microbiología y Parasitología
+															(abril 2010-marzo 2014). Miembro del Consejo de Facultad 2010-2013 y
+															2020-2024. Miembro de la Comisión Permanente de Evaluación Curricular
+															y Coordinación Académica (06/2010 – 05/2013). Miembro de la Sociedad
+															Peruana de Bioquímica y Biología Molecular.
+														</p>
 														<div>
 															<a
 																target="_blank"
