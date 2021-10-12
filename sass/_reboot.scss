@@ -147,6 +147,20 @@ ul.chevron-green-dark {
 	overflow: hidden;
 }
 
+.line-clamp-9 {
+	display: -webkit-box;
+	-webkit-line-clamp: 9;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.line-clamp-11 {
+	display: -webkit-box;
+	-webkit-line-clamp: 11;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
 .icon {
 	font-size: 22px;
 }
