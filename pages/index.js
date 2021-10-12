@@ -431,16 +431,20 @@ export default function Home() {
 																	{novedades[1].sub_categoria_noticia.nombre}
 																</div>
 															</div>
-															<div className="part-text filter">
+															{/* <div className="part-text filter">
 																<p className="title-card">{novedades[1]?.titulo}</p>
-																<p className="desc-card mb-0">{novedades[1]?.sintesis}</p>
-																{/* <ClampLines
-																	text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN."}
-																	lines={4}
-																	buttons={false}
-																	ellipsis="..."
-																	className="desc-card mb-0"
-																/> */}
+																<p className="desc-card mb-0">{novedades[1]?.sintesis}</p> */}
+															<div className="part-text">
+																<p class={width < 768 ? "line-clamp-9 mb-0" : "line-clamp-11 mb-0"}>
+																	<span class="title-card mb-2">
+																		{novedades[1]?.titulo}
+																	</span>
+																	<br/>
+																	<br/>
+																	<span class="desc-card mb-0">
+																		{novedades[1]?.sintesis}
+																	</span>
+																</p>
 															</div>
 														</motion.div>
 													</a>
@@ -472,16 +476,20 @@ export default function Home() {
 																	{novedades[2].sub_categoria_noticia.nombre}
 																</div>
 															</div>
-															<div className="part-text filter">
+															{/* <div className="part-text filter">
 																<p className="title-card">{novedades[2]?.titulo}</p>
-																<p className="desc-card mb-0">{novedades[2]?.sintesis}</p>
-																{/* <ClampLines
-																	text={"La Dra. Martha Valdivia explicó que con su proyecto también se busca ayudar a otras especies peruanas que viven a grandes alturas en nuestro país. El proyecto busca."}
-																	lines={4}
-																	buttons={false}
-																	ellipsis="..."
-																	className="desc-card mb-0"
-																/> */}
+																<p className="desc-card mb-0">{novedades[2]?.sintesis}</p> */}
+															<div className="part-text">
+																<p class={width < 768 ? "line-clamp-9 mb-0" : "line-clamp-11 mb-0"}>
+																	<span class="title-card mb-2">
+																		{novedades[2]?.titulo}
+																	</span>
+																	<br/>
+																	<br/>
+																	<span class="desc-card mb-0">
+																		{novedades[2]?.sintesis}
+																	</span>
+																</p>
 															</div>
 														</motion.div>
 													</a>
@@ -513,16 +521,20 @@ export default function Home() {
 																	{novedades[3].sub_categoria_noticia.nombre}
 																</div>
 															</div>
-															<div className="part-text filter">
+															{/* <div className="part-text filter">
 																<p className="title-card">{novedades[3]?.titulo}</p>
-																<p className="desc-card mb-0">{novedades[3]?.sintesis}</p>
-																{/* <ClampLines
-																text={"La francesa Emmanuelle Charpentier y la estadounidense Jennifer Doudna “han reescrito un artículo muy interesante sobre la estructura del ADN en situaciones de."}
-																lines={4}
-																buttons={false}
-																ellipsis="..."
-																className="desc-card mb-0"
-															/> */}
+																<p className="desc-card mb-0">{novedades[3]?.sintesis}</p> */}
+															<div className="part-text">
+																<p class={width < 768 ? "line-clamp-9 mb-0" : "line-clamp-11 mb-0"}>
+																	<span class="title-card mb-2">
+																		{novedades[3]?.titulo}
+																	</span>
+																	<br/>
+																	<br/>
+																	<span class="desc-card mb-0">
+																		{novedades[3]?.sintesis}
+																	</span>
+																</p>
 															</div>
 														</motion.div>
 													</a>
