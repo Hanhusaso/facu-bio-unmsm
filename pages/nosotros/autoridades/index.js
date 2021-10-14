@@ -417,7 +417,7 @@ const index = () => {
 															<span className="divisor-text-green mx-2"></span>
 															<span className="title">Vicedecana académica</span>
 														</p>
-														<p>
+														<p style={{ textAlign: "justify" }}>
 															Profesora Principal a Dedicación Exclusiva del Dpto. Académico de
 															Microbiología y Parasitología de la Facultad de Ciencias Biológicas de
 															la Universidad Nacional Mayor de San Marcos. Título Profesional de
@@ -426,7 +426,7 @@ const index = () => {
 															Católica de Chile, Doctora en Ciencias Biológicas por la Universidad
 															Nacional Mayor de San Marcos.
 														</p>
-														<p>
+														<p style={{ textAlign: "justify" }}>
 															Realiza sus actividades de investigación en el Laboratorio de
 															Microbiología Molecular y Biotecnología de la Facultad de Ciencias
 															Biológicas. Miembro Permanente del Instituto de Investigación de
@@ -438,12 +438,12 @@ const index = () => {
 															otras ambientales de interés biotecnológico. Asesora de Trabajos de
 															Investigación y de Tesis de pre y posgrado.
 														</p>
-														<p>
+														<p style={{ textAlign: "justify" }}>
 															Miembro del comité de docentes que crearon la Maestría en Biología
 															Molecular. Coordinadora de la Maestría en Biología Molecular
 															(2004-2013).
 														</p>
-														<p>
+														<p style={{ textAlign: "justify" }}>
 															En la docencia es profesora responsable, en el pregrado, de los cursos
 															de Fundamentos de Microbiología y de Microbiología en Salud, así como
 															colaboradora de Genética Microbiana e Ingeniería Genética; en el
@@ -451,7 +451,7 @@ const index = () => {
 															Microbiología Molecular, Tesis II, Tesis III y Tesis IV, y
 															colaboradora de Biología Molecular Avanzada.
 														</p>
-														<p>
+														<p style={{ textAlign: "justify" }}>
 															Coordinadora del Dpto. Académico de Microbiología y Parasitología
 															(abril 2010-marzo 2014). Miembro del Consejo de Facultad 2010-2013 y
 															2020-2024. Miembro de la Comisión Permanente de Evaluación Curricular
