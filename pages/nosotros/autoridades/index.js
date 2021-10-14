@@ -218,27 +218,40 @@ const index = () => {
 															<span className="title">Decano</span>
 														</p>
 														<p style={{ textAlign: "justify" }}>
-															Biólogo Microbiólogo - Parasitólogo en la UNMSM y Doctor en Ciencias
-															mención Microbiología en la Universidad de Chile (2002) obtenido
-															mediante una beca de la Cooperación Alemana (DAAD), y Profesor
-															Principal de la Universidad Nacional Mayor de San Marcos en la
-															Facultad de Ciencias Biológicas, Departamento de Microbiología y
-															Parasitología. Mis investigaciones se orientan al estudio de
-															microorganismos extremófilos que participan en procesos de
-															biolixiviación de minerales de interés comercial, así como proteínas
-															recombinantes, resistencia metales en bacterias y levaduras, genómica
-															y proteómica estructural de microorganismos oxidadores de hierro y
-															azufre. Asimismo, en biodegradación de xenobióticos tales como PETN y
-															TNT, y biodegradación de colorantes textiles, entre otros. He recibido
-															fondos concursables PROCyT, Coordinador general de proyecto FINCYT,
-															FIDECOM, FINCyT-PITEI, Cienciactiva 2017, Fondecyt y varios fondos
-															concursables de la UNMSM. Director de la Unidad de Posgrado de la
-															Facultad de Ciencias Biológicas (2010-2013), Presidente del Consejo
-															Superior de Investigaciones del Vicerrectorado de Investigación y
-															Posgrado (VRIP) de la UNMSM (2014-2017), Director General de
-															Investigación y Transferencia Tecnológica de VRIP de la UNMSM desde
-															febrero del 2017 hasta octubre de 2020 y actual Decano de la Facultad
-															de Ciencias Biológicas de la UNMSM.
+															<p>
+																Bi&oacute;logo Microbi&oacute;logo - Parasit&oacute;logo por la
+																Universidad Nacional Mayor de San Marcos (UNMSM) y Doctor en
+																Ciencias menci&oacute;n Microbiolog&iacute;a en la Universidad de
+																Chile (2002) obtenido mediante una beca de la Cooperaci&oacute;n
+																Alemana (DAAD), y Profesor Principal de la UNMSM en la Facultad de
+																Ciencias Biol&oacute;gicas, Departamento de Microbiolog&iacute;a y
+																Parasitolog&iacute;a.
+															</p>
+															<p>
+																Sus investigaciones se orientan al estudio de microorganismos
+																extrem&oacute;filos que participan en procesos de
+																biolixiviaci&oacute;n de minerales de inter&eacute;s comercial,
+																as&iacute; como prote&iacute;nas recombinantes, resistencia metales
+																en bacterias y levaduras, gen&oacute;mica y prote&oacute;mica
+																estructural de microorganismos oxidadores de hierro y azufre.
+																Asimismo, en biodegradaci&oacute;n de xenobi&oacute;ticos tales como
+																PETN y TNT, y biodegradaci&oacute;n de colorantes textiles, entre
+																otros.
+															</p>
+															<p>
+																Ha recibido fondos concursables PROCyT, Coordinador general de
+																proyecto FINCYT, FIDECOM, FINCyT-PITEI, Cienciactiva 2017, Fondecyt
+																y varios fondos concursables de la UNMSM.
+															</p>
+															<p>
+																Ha sido Director de la Unidad de Posgrado de la Facultad de Ciencias
+																Biol&oacute;gicas (2010-2013), Presidente del Consejo Superior de
+																Investigaciones del Vicerrectorado de Investigaci&oacute;n y
+																Posgrado (VRIP) de la UNMSM (2014-2017), Director General de
+																Investigaci&oacute;n y Transferencia Tecnol&oacute;gica de VRIP de
+																la UNMSM desde febrero del 2017 hasta octubre de 2020 y actualmente
+																es Decano de la Facultad de Ciencias Biol&oacute;gicas de la UNMSM.
+															</p>
 														</p>
 														<div>
 															<a
@@ -680,43 +693,61 @@ const index = () => {
 															<span className="title">Vicedecana de Investigación y Posgrado</span>
 														</p>
 														<p style={{ textAlign: "justify" }}>
-															Profesora Principal a Tiempo Completo, Investigadora de la Facultad de
-															Ciencias Biológicas, Miembro permanente del Instituto de
-															Investigaciones Antonio Raimondi, Jefa del laboratorio de Fisiología
-															de la reproducción de la Facultad de Ciencias Biológicas de la
-															Universidad Nacional Mayor de San Marcos - UNMSM, Perú con grado de
-															Magister en Ciencias Biológicas con mención en Biología de la
-															Reproducción en la Universidad de Chile y grado de Doctor en Ciencias
-															Biológicas con mención en Fisiología en la Universidad Peruana
-															Cayetano Heredia. Con experiencia en organización e implementación de
-															equipamiento de laboratorios de alta tecnología para la investigación
-															en Reproducción. El objetivo de sus investigaciones está enfocado al
-															análisis de la fertilidad el manejo de gametos y de la interacción de
-															los mismos usando herramientas biotecnológicas (criopreservación,
-															fecundación In vitro y pruebas moleculares que revelen la capacidad
-															fértil de las especies (animales y humano)s. Ha desarrollado
-															protocolos de criopreservación de espermatozoides y posee una patente
-															en protocolo de criopreservación de zanganos para la industria
-															apícola. Asimismo, ha desarrollado tres patentes que se encuentran en
-															trámite internacional sobre medios para la crioconservación de células
-															madre espermatogoniales, biopsias testicluares de alpaca y diseño de
-															protocolos de criopreservación para células aisladas y biopsias. Ha
-															obtenido a través de fondos concursables el financiamiento a proyectos
-															de CONCYTEC (PROCYT y PROCOM), International Foundation for Science
-															(IFS), International Centre of Genetic Ingeniering and Biotechnology
-															(ICGEB). INNOVATE, PIMEM, FONDECYT y UNMSM. Sus publicaciones se
-															encuentran en Theriogenology, Biology of Reproduction, Biological
-															Research, Gamete Research, Molecular Reproduction fertility, SPERMOVA,
-															Reproduction domestic animals, Andrologia, Fronterirs, Revista peruana
-															de Biología, Revista de Investigación en Ciencias veterinarias, entre
-															otras. Ha formado a investigadores peruanos (Arequipa, Ayacucho,
-															Tacna) y extranjeros (Alemania, Bolivia, Chile) en el área de
-															reproducción tanto en investigación básica como aplicada y en
-															biotecnologías reproductivas como IVF, ICSI Cultivo celular,
-															criopreservación. Actualmente está dedicada al estudio de las células
-															madre testiculares de alpaca, maduración de ovocitos y manejo de
-															gametos para la producción embrionaria con perpectiva del uso de la
-															micromanipulación embrionaria para la producción de clones en alpacas.
+															<p>
+																Profesora Principal a Tiempo Completo, Investigadora de la Facultad
+																de Ciencias Biol&oacute;gicas, Miembro permanente del Instituto de
+																Investigaciones Antonio Raimondi, Jefa del laboratorio de
+																Fisiolog&iacute;a de la reproducci&oacute;n de la Facultad de
+																Ciencias Biol&oacute;gicas de la Universidad Nacional Mayor de San
+																Marcos (UNMSM), Per&uacute; con grado de Magister en Ciencias
+																Biol&oacute;gicas con menci&oacute;n en Biolog&iacute;a de la
+																Reproducci&oacute;n en la Universidad de Chile y grado de Doctor en
+																Ciencias Biol&oacute;gicas con menci&oacute;n en Fisiolog&iacute;a
+																en la Universidad Peruana Cayetano Heredia.
+															</p>
+															<p>
+																Con experiencia en organizaci&oacute;n e implementaci&oacute;n de
+																equipamiento de laboratorios de alta tecnolog&iacute;a para la
+																investigaci&oacute;n en Reproducci&oacute;n. El objetivo de sus
+																investigaciones est&aacute; enfocado al an&aacute;lisis de la
+																fertilidad el manejo de gametos y de la interacci&oacute;n de los
+																mismos usando herramientas biotecnol&oacute;gicas
+																(criopreservaci&oacute;n, fecundaci&oacute;n In vitro y pruebas
+																moleculares que revelen la capacidad f&eacute;rtil de las especies
+																(animales y humanos). Ha desarrollado protocolos de
+																criopreservaci&oacute;n de espermatozoides y posee una patente en
+																protocolo de criopreservaci&oacute;n de zanganos para la industria
+																ap&iacute;cola. Asimismo, ha desarrollado tres patentes que se
+																encuentran en tr&aacute;mite internacional sobre medios para la
+																crioconservaci&oacute;n de c&eacute;lulas madre espermatogoniales,
+																biopsias testicluares de alpaca y dise&ntilde;o de protocolos de
+																criopreservaci&oacute;n para c&eacute;lulas aisladas y biopsias.
+															</p>
+															<p>
+																Ha obtenido a trav&eacute;s de fondos concursables el financiamiento
+																a proyectos de CONCYTEC (PROCYT y PROCOM), International Foundation
+																for Science (IFS), International Centre of Genetic Ingeniering and
+																Biotechnology (ICGEB). INNOVATE, PIMEM, FONDECYT y UNMSM. Sus
+																publicaciones se encuentran en Theriogenology, Biology of
+																Reproduction, Biological Research, Gamete Research, Molecular
+																Reproduction fertility, SPERMOVA, Reproduction domestic animals,
+																Andrologia, Fronterirs, Revista peruana de Biolog&iacute;a, Revista
+																de Investigaci&oacute;n en Ciencias veterinarias, entre otras.
+															</p>
+															<p>
+																Ha formado a investigadores peruanos (Arequipa, Ayacucho, Tacna) y
+																extranjeros (Alemania, Bolivia, Chile) en el &aacute;rea de
+																reproducci&oacute;n tanto en investigaci&oacute;n b&aacute;sica como
+																aplicada y en biotecnolog&iacute;as reproductivas como IVF, ICSI
+																Cultivo celular, criopreservaci&oacute;n.
+															</p>
+															<p>
+																Actualmente est&aacute; dedicada al estudio de las c&eacute;lulas
+																madre testiculares de alpaca, maduraci&oacute;n de ovocitos y manejo
+																de gametos para la producci&oacute;n embrionaria con perspectiva del
+																uso de la micromanipulaci&oacute;n embrionaria para la
+																producci&oacute;n de clones en alpacas.
+															</p>
 														</p>
 														<div>
 															<a
