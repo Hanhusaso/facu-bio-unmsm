@@ -74,12 +74,24 @@ export default function InformacionAcademica() {
 		setTimeout(function () {
 			j("input[type=checkbox]").prop("checked", false);
 			console.log(query);
-			if (query.recurso == "informacion-de-docentes") {
+			if (query.recurso === "informacion-de-docentes") {
 				j("#recurso-docentes").prop("checked", true);
 				setRecursos(["docentes"]);
 				setRecurso(Math.random());
+			}else if (query.recurso === "syllabus") {
+				j("#recurso-syllabus").prop("checked", true);
+				setRecursos(["syllabus"]);
+				setRecurso(Math.random());
+			}else if(query.recurso === "horarios"){
+				j("#recurso-horarios").prop("checked", true);
+				setRecursos(["horarios"]);
+				setRecurso(Math.random());
+			}else if(query.recurso === "malla-curricular"){
+				j("#recurso-malla").prop("checked", true);
+				setRecursos(["malla-curricular"]);
+				setRecurso(Math.random());
 			}
-		}, 500);
+		}, 300);
 	}, [query]);
 
 	useEffect(() => {

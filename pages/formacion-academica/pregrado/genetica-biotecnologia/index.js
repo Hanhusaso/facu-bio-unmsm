@@ -5,6 +5,7 @@ import {Row, Col, Container, Breadcrumb} from 'react-bootstrap'
 import Link from 'next/link'
 
 import { useWindowSize } from '../../../../utils/useWindowSize'
+import InformacionAcademica from '../../../../components/interes/InformacionAcademica'
 
 const index = () => {
 
@@ -36,38 +37,6 @@ const index = () => {
                 </div>
                 <p className="font-weight-bold mb-1">Horario de atención:</p>
                 <p className="mb-0">8:00 a.m. - 3:45 p.m.</p>
-            </div>
-        )
-    }
-
-    const Interest = () => {
-        return (
-            <div className="block-interest-links mb-3">
-                <p className="font-weight-bold mb-2">Información académica</p>
-                <ul className="nav flex-column">
-                    <li className="mb-2">
-                        <a href="https://drive.google.com/drive/folders/17vJiH9X_Vnfj9qQ9ijratG8k2C1hksPs?usp=sharing" target="_blank">
-                            Plan de estudios
-                        </a>
-                    </li>
-                    {/* <li className="mb-2">
-                        <Link href="/informacion-academica?recurso=informacion-de-docentes">
-                            <a>
-                                Plana docente
-                            </a>
-                        </Link>
-                    </li> */}
-                    <li className="mb-2">
-                        <a href="https://drive.google.com/drive/folders/1QXfbNP4quKyrdFyXsGzx6QyvrAfOBNI5?usp=sharing" target="_blank">
-                            Syllabus
-                        </a>
-                    </li>
-                    <li className="mb-0">
-                        <a href="https://drive.google.com/file/d/1XH5KEc7vJNELM8rplccsmWdI3cSDVc4u/view?usp=sharing" target="_blank">
-                            Horarios
-                        </a>
-                    </li>
-                </ul>
             </div>
         )
     }
@@ -177,7 +146,7 @@ const index = () => {
                                     {width >= 768 && (
                                         <>
                                         <Contact />
-                                        <Interest />
+                                        <InformacionAcademica />
                                         </>
                                     )}
                                 </Col>
@@ -371,7 +340,7 @@ const index = () => {
                                     {width < 768 && (
                                         <>
                                         <Contact />
-                                        <Interest />
+                                        <InformacionAcademica />
                                         </>
                                     )}
                                 </Col>
