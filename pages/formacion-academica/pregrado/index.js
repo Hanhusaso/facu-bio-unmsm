@@ -85,7 +85,7 @@ const pregrado = () => {
                                     <div className="text-center mb-3">
                                         <Link href="/formacion-academica/pregrado/genetica-biotecnologia">
                                             <a className="title-green">
-                                                E.P Genética y Biotecnología
+                                                E.P. Genética y Biotecnología
                                             </a>
                                         </Link>
                                     </div>
@@ -120,7 +120,7 @@ const pregrado = () => {
                                     <div className="text-center mb-3">
                                         <Link href="/formacion-academica/pregrado/microbiologia-parasitologia">
                                             <a className="title-green">
-                                                E.P Microbiología y Parasitología
+                                                E.P. Microbiología y Parasitología
                                             </a>
                                         </Link>
                                     </div>
