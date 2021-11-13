@@ -302,7 +302,7 @@ const index = () => {
 													<p>
 														Encuentre nuestro mapa de procesos haciendo clic{" "}
 														<a
-															href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/Ok_FCB_D07_Objetivos_de_Calidad_V2_F_b08d2b316d.pdf"
+															href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/Ok_FCB_D01_Mapa_de_Procesos_V3_F_05beaa950d.pdf"
 															target="_blank"
 														>
 															aquí
