@@ -143,7 +143,7 @@ const index = () => {
 														</defs>
 													</svg>
 												</div>
-												<span>Calidad</span>
+												<span>Sistema&nbsp;de&nbsp;Gestión de Calidad</span>
 											</a>
 											<a
 												href="/assets/archivos/otros/ORGANIGRAMA FCB.pdf"
