@@ -378,13 +378,15 @@ const Menu = () => {
 											{/* <Link href="/comunidad/cerseus"> */}
 											{/* <a className="nav-link">Cerseus</a> */}
 											<a href="/comunidad/cerseu" className="nav-link">
-												Cerseu
+												CERSEU
 											</a>
 											{/* </Link> */}
 										</li>
-										{/* <li className="nav-item">
-                                            <a href="/comunidad/testimonios" className="nav-link">Testimonios</a>
-                                        </li> */}
+										<li className="nav-item">
+											<a href="/comunidad/unayoe" className="nav-link">
+												UNAYOE
+											</a>
+										</li>
 										{/* <li className="nav-item">
                                             <a href="/comunidad/proyectos" className="nav-link">Proyectos de la comunidad</a>
                                         </li> */}
