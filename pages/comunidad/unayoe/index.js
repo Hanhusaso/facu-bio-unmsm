@@ -50,11 +50,11 @@ const index = () => {
 							<a>Posgrado</a>
 						</Link>
 					</li>
-					<li className="mb-0">
+					{/* <li className="mb-0">
 						<Link href="/informacion-academica">
 							<a>Información académica</a>
 						</Link>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 		);
@@ -62,7 +62,7 @@ const index = () => {
 
 	return (
 		<>
-			<Layout title="CERSEU">
+			<Layout title="UNAYOE">
 				<div>
 					<div>
 						<Container>
@@ -76,7 +76,7 @@ const index = () => {
 											</Link>
 										</li>
 										<Breadcrumb.Item active>
-											Comunidad: Centro de Responsabilidad Social y Extensión Universitaria - CERSEU
+											Comunidad: Unidad de Asesoría y Orientación al Estudiante
 										</Breadcrumb.Item>
 									</Breadcrumb>
 								</Col>
@@ -90,7 +90,7 @@ const index = () => {
 								<Col md="1"></Col>
 								<Col>
 									<div className="title-page text-center">
-										Centro de Responsabilidad Social y Extensión Universitaria - CERSEU
+										Unidad de Asesoría y Orientación al Estudiante
 									</div>
 								</Col>
 								<Col md="1"></Col>
@@ -99,11 +99,7 @@ const index = () => {
 					</div>
 					{/* IMAGE */}
 					<div className="mb-4">
-						<img
-							className="w-100"
-							src="/assets/img/comunidad/cerseu/cerseu-biologia-unmsm.png"
-							alt=""
-						/>
+						<img className="w-100" src="/assets/img/comunidad/unayoe/unayoe-2.png" alt="" />
 					</div>
 
 					<div>
@@ -155,11 +151,11 @@ const index = () => {
 											</a>
 											<a
 												className="tab d-flex"
-												id="v-pills-objetivos-tab"
+												id="v-pills-funciones-tab"
 												data-toggle="pill"
-												href="#v-pills-objetivos"
+												href="#v-pills-funciones"
 												role="tab"
-												aria-controls="v-pills-objetivos"
+												aria-controls="v-pills-funciones"
 												aria-selected="false"
 											>
 												<div>
@@ -174,33 +170,7 @@ const index = () => {
 														<path d="M11.2852 8.49805C10.5328 8.49805 9.82969 8.78867 9.29766 9.32305C8.76563 9.85508 8.47266 10.5582 8.47266 11.3105C8.47266 12.0629 8.76563 12.766 9.29766 13.298C9.82969 13.8277 10.5352 14.123 11.2852 14.123C12.0352 14.123 12.7406 13.8301 13.2727 13.298C13.8023 12.766 14.0977 12.0605 14.0977 11.3105C14.0977 10.5605 13.8047 9.85508 13.2727 9.32305C12.7406 8.78867 12.0375 8.49805 11.2852 8.49805Z" />
 													</svg>
 												</div>
-												<span>Objetivos</span>
-											</a>
-											<a
-												className="tab d-flex"
-												id="v-pills-estructura-tab"
-												data-toggle="pill"
-												href="#v-pills-estructura"
-												role="tab"
-												aria-controls="v-pills-estructura"
-												aria-selected="false"
-											>
-												<div>
-													<svg
-														width="23"
-														height="23"
-														viewBox="0 0 23 23"
-														className="icon mr-3"
-														xmlns="http://www.w3.org/2000/svg"
-													>
-														<path
-															fill-rule="evenodd"
-															clip-rule="evenodd"
-															d="M8.06543 0.818359H0.0654297V8.81836H8.06543V5.81836H10.0654V19.8184H14.0654V22.8184H22.0654V14.8184H14.0654V17.8184H12.0654V5.81836H14.0654V8.81836H22.0654V0.818359H14.0654V3.81836H8.06543V0.818359ZM20.0654 2.81836H16.0654V6.81836H20.0654V2.81836ZM16.0654 16.8184H20.0654V20.8184H16.0654V16.8184Z"
-														/>
-													</svg>
-												</div>
-												<span>Estructura orgánica</span>
+												<span>Funciones</span>
 											</a>
 										</div>
 									</div>
@@ -220,85 +190,48 @@ const index = () => {
 											aria-labelledby="v-pills-presentacion-tab"
 										>
 											<p>
-												El Centro de Responsabilidad Social y Extensión Universitaria de la Facultad
-												de Ciencias Biológicas (CERSEU-FCB-UNMSM), es un órgano de línea, cuyo
-												objetivo principal es integrar nuestra Facultad a la sociedad, organiza la
-												extensión social y la prestación de servicios con el apoyo de docentes,
-												estudiantes y administrativos, contribuyendo con la vinculación de la
-												academia con la comunidad y los sectores productivos del país.
+												Es la Unidad dependiente de la Dirección Académica encargada de brindar
+												asesoría y orientación al estudiante de pre y posgrado de la facultad, en la
+												prevención, detección, tratamiento de problemas vocacionales y de aspecto
+												académico, así como consejería para el logro de un mejor aprovechamiento en
+												la formación profesional.
 											</p>
-											<p>
-												Esta importante labor se desarrolla a través de la realización de
-												actividades que permitan transferir a la comunidad nuestro conocimiento
-												científico, tecnológico, humanístico y de cooperación; brindando
-												conferencias, mesa redondas, cursos de capacitación, de actualización,
-												asistencia técnica y asesorías, entre otros. Así mismo, desarrolla y
-												promueve talleres artísticos culturales y deportivos.
-											</p>
-											<p>
-												El CERSEU ha venido desarrollando actividades las cuales permiten a la
-												Facultad captar recursos propios para invertirlos en su desarrollo,
-												contribuyendo activamente en el proceso de enseñanza-aprendizaje y la
-												investigación aplicada. Así mismo, que permitan solucionar problemas de
-												índole social mediante eficaces medios de información, comunicación y
-												gestión relacionadas a áreas de salud, ecología, educación ambiental,
-												genética, microbiología, reproducción, parasitología, botánica entre otros.
-												Brindando además visitas guiadas a las diferentes instalaciones de la
-												Facultad. Llevándose en la actualidad estas actividades de forma no
-												presencial.
-											</p>
-											<p className="title-dark">Misión</p>
-											<p>
-												Contribuir al desarrollo de la sociedad impartiendo una sólida actualización
-												y capacitación a través de los programas o servicios de los grupos de
-												investigación.
-											</p>
+											{/* <p className="title-dark">Misión</p> */}
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
-											id="v-pills-objetivos"
+											id="v-pills-funciones"
 											role="tabpanel"
-											aria-labelledby="v-pills-objetivos-tab"
+											aria-labelledby="v-pills-funciones-tab"
 										>
 											<ul className="chevron-green-dark">
 												<li>
-													Proyectar a la comunidad nuestros conocimientos a fin de extender nexos
-													que nos permita transferir nuestro conocimiento, ciencia y tecnología así
-													como los servicios que ofrece la Facultad a través de los grupos de
-													investigación.
+													Coordina la atenci&oacute;n de los estudiantes referente a su salud mental
+													a trav&eacute;s de la Cl&iacute;nica Universitaria.
 												</li>
 												<li>
-													Promover la suscripción de convenios y prestación de servicios con
-													instituciones públicas o privadas en áreas de nuestra competencia.
+													Coordina la atenci&oacute;n de los estudiantes respecto a denuncias por
+													hostigamiento y acoso sexual con la oficina de la Defensor&iacute;a
+													Universitaria.
+												</li>
+												<li>
+													Coordina las charlas de orientaci&oacute;n de procedimientos
+													administrativos, salud mental, habilidades blandas, orientaci&oacute;n
+													profesiogr&aacute;fica a trav&eacute;s del Centro de Salud Mental
+													Comunitario San Marcos y las Unidades de Asesor&iacute;a y
+													Orientaci&oacute;n al Estudiante de las Facultades.
+												</li>
+												<li>
+													Coordina con los estudiantes y egresados para efectuar encuestas de
+													Satisfacci&oacute;n y/o Insatisfacci&oacute;n de las unidades
+													acad&eacute;micas y administrativas que brindan servicios en la Facultad.
+												</li>
+												<li>
+													Coordina la atenci&oacute;n de los estudiantes referente a los
+													procedimientos administrativos virtuales (MAT) que realizan en las
+													unidades de Tr&aacute;mite Documentario y la Unidad de Matr&iacute;cula.
 												</li>
 											</ul>
-										</div>
-										<div
-											className="mb-3 tab-pane fade"
-											id="v-pills-estructura"
-											role="tabpanel"
-											aria-labelledby="v-pills-estructura-tab"
-										>
-											<p className="title-dark">Organización</p>
-											<p>
-												Formado por el director y su comité directo constituido por cuatro miembros
-												docentes de la Facultad
-											</p>
-											<p>
-												La Dirección del Centro de Responsabilidad Social y Extensión Universitaria
-												(CERSEU) ejerce liderazgo sobre el personal que conforma su organización.
-											</p>
-											<p>
-												Es responsable ante el Decanato y Consejo de Facultad del cumplimiento de
-												sus funciones. Coordina internamente con las Escuelas Profesionales,
-												Departamentos Académicos de la Facultad, Comisión Permanente de Relaciones
-												Interfacultativas y Convenios Nacionales e Internacionales.
-											</p>
-											<p>
-												Externamente coordina con los CERSEU de las demás Facultades y la Dirección
-												General de Responsabilidad Social Universitaria (DGRSU) de la Universidad
-												Nacional Mayor de San Marcos.
-											</p>
 										</div>
 									</div>
 									{width < 768 && (

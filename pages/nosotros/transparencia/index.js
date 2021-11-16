@@ -249,7 +249,7 @@ const transparencia = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-documentos-tab"
 										>
-											<ol>
+											<ul>
 												<li>
 													<p>
 														Flujograma M01.03 - Planificación académica y Gestión de
@@ -267,7 +267,31 @@ const transparencia = () => {
 														</a>
 													</p>
 												</li>
-											</ol>
+												<li>
+													<p>
+														Plan Operativo Institucional de la Facultad de Ciencias Biológicas&nbsp;
+														<a href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/POI_2021_FCB_compressed_aa21dbf7f3.pdf">
+															(Descargar aquí)
+														</a>
+													</p>
+												</li>
+												<li>
+													<p>
+														Informe de Evaluación de Plan Estratégico Institucional.&nbsp;
+														<a href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/Informe_de_Evaluacion_de_PEI_FCB_2020_F_compressed_5f6f6aee74.pdf">
+															(Descargar aquí)
+														</a>
+													</p>
+												</li>
+												<li>
+													<p>
+														Reglamento para promoción docente de la UNMSM.&nbsp;
+														<a href="https://drive.google.com/file/d/18c28W0Ah-5Y7dpOLRVGQ4XBU9fNMNQpQ/view?usp=sharing">
+															(Descargar aquí)
+														</a>
+													</p>
+												</li>
+											</ul>
 										</div>
 									</div>
 								</Col>
