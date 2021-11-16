@@ -3,6 +3,7 @@ import Link from "next/link";
 import Layout from "../../../components/Layout";
 import { Row, Col, Container, Breadcrumb, Tabs, Tab, Spinner } from "react-bootstrap";
 import {
+	getDocumentosOficiales,
 	getTransparencia2019,
 	getTransparencia2020,
 	getTransparencia2021,
@@ -13,18 +14,21 @@ const transparencia = () => {
 	const [transparencia2021, setTransparencia2021] = useState([]);
 	const [transparencia2020, setTransparencia2020] = useState([]);
 	const [transparencia2019, setTransparencia2019] = useState([]);
+	const [documentosOficiales, setDocumentosOficiales] = useState([]);
 	useEffect(() => {
 		(async () => {
 			const response_transparencia2021 = await getTransparencia2021();
 			const response_transparencia2020 = await getTransparencia2020();
 			const response_transparencia2019 = await getTransparencia2019();
+			const response_documentosOficiales = await getDocumentosOficiales();
 			setTransparencia2021(response_transparencia2021);
 			setTransparencia2020(response_transparencia2020);
 			setTransparencia2019(response_transparencia2019);
+			setDocumentosOficiales(response_documentosOficiales);
 		})();
 	}, []);
 	moment.locale("es");
-	console.log("esto es transparencia", transparencia2020);
+	console.log("esto es documentosOficiales", documentosOficiales);
 	return (
 		<>
 			<Layout title="Transparencia">
@@ -250,47 +254,28 @@ const transparencia = () => {
 											aria-labelledby="v-pills-documentos-tab"
 										>
 											<ul>
-												<li>
-													<p>
-														Flujograma M01.03 - Planificación académica y Gestión de
-														Matrícula.&nbsp;
-														<a href="https://drive.google.com/file/d/1-fpfIxOrM7eWzHvnNmJ8yiKGC9CANZX6/view?usp=sharing">
-															(Descargar aquí)
-														</a>
-													</p>
-												</li>
-												<li>
-													<p>
-														Reglamento para promoción docente de la UNMSM.&nbsp;
-														<a href="https://drive.google.com/file/d/18c28W0Ah-5Y7dpOLRVGQ4XBU9fNMNQpQ/view?usp=sharing">
-															(Descargar aquí)
-														</a>
-													</p>
-												</li>
-												<li>
-													<p>
-														Plan Operativo Institucional de la Facultad de Ciencias Biológicas&nbsp;
-														<a href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/POI_2021_FCB_compressed_aa21dbf7f3.pdf">
-															(Descargar aquí)
-														</a>
-													</p>
-												</li>
-												<li>
-													<p>
-														Informe de Evaluación de Plan Estratégico Institucional.&nbsp;
-														<a href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/Informe_de_Evaluacion_de_PEI_FCB_2020_F_compressed_5f6f6aee74.pdf">
-															(Descargar aquí)
-														</a>
-													</p>
-												</li>
-												<li>
-													<p>
-														Reglamento para promoción docente de la UNMSM.&nbsp;
-														<a href="https://drive.google.com/file/d/18c28W0Ah-5Y7dpOLRVGQ4XBU9fNMNQpQ/view?usp=sharing">
-															(Descargar aquí)
-														</a>
-													</p>
-												</li>
+												{documentosOficiales.map(function (doc) {
+													return (
+														<li key={doc.id}>
+															<p>
+																{doc.titulo}.&nbsp;
+																<a href={doc.link} target="_blank">
+																	(Descargar aquí)
+																</a>
+															</p>
+														</li>
+													);
+												})}
+												{/* {documentosOficiales.map((doc) => (
+													<li key={doc.id}>
+														<p>
+															{doc.titulo}.&nbsp;
+															<a href={doc.link} target="_blank">
+																(Descargar aquí)
+															</a>
+														</p>
+													</li>
+												))} */}
 											</ul>
 										</div>
 									</div>

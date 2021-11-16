@@ -48,3 +48,19 @@ export async function getTransparencia2021() {
 		return [];
 	}
 }
+export async function getDocumentosOficiales() {
+	try {
+		//   const url = `${BASE_PATH}/noticias?_limit=4&_sort=fecha:DESC`;
+		const url = `${BASE_PATH}/transparencias?trasparencia_categoria.nombre_eq=documentosOficiales&_sort=fecha:DESC`;
+		const response = await fetch(url);
+		const result = await response.json();
+		var documentos = [];
+		for (var i = 0; i < result.length; i++) {
+			documentos.push(result[i]);
+		}
+		return documentos;
+	} catch (error) {
+		console.log(error);
+		return [];
+	}
+}
