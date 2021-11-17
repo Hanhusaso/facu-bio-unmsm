@@ -249,7 +249,7 @@ const index = () => {
 														</div>
 														<div className="d-flex justify-content-center flex-column">
 															<p className="m-0 text-center title-dark">
-																Blga. Jeanne Rossanne Alba L.
+																Blga. Jeanne R. Alba Luna
 															</p>
 															<p className="m-0 text-center">Jefa de la OCAA-FCB</p>
 														</div>
@@ -444,7 +444,7 @@ const index = () => {
 														</p>
 														<p>Presidenta:</p>
 														<div className="pl-3">
-															<p>Blga. Jeanne Alba Luna</p>
+															<p>Blga. Jeanne R. Alba Luna</p>
 														</div>
 														<p>Miembros:</p>
 														<div className="pl-3">
