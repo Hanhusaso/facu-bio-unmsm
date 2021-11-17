@@ -2,8 +2,7 @@ import { BASE_PATH } from "../../utils/constants";
 
 export async function getTransparencia2019() {
 	try {
-		//   const url = `${BASE_PATH}/noticias?_limit=4&_sort=fecha:DESC`;
-		const url = `${BASE_PATH}/transparencias?ano_eq=2019&_sort=fecha:DESC`;
+		const url = `${BASE_PATH}/transparencias?_where[0][ano_eq]=2019&_where[1][trasparencia_categoria.id]=2&_sort=fecha:DESC`;
 		const response = await fetch(url);
 		const result = await response.json();
 		var noticias = [];
@@ -18,8 +17,7 @@ export async function getTransparencia2019() {
 }
 export async function getTransparencia2020() {
 	try {
-		//   const url = `${BASE_PATH}/noticias?_limit=4&_sort=fecha:DESC`;
-		const url = `${BASE_PATH}/transparencias?ano_eq=2020&_sort=fecha:DESC`;
+		const url = `${BASE_PATH}/transparencias?_where[0][ano_eq]=2020&_where[1][trasparencia_categoria.id]=2&_sort=fecha:DESC`;
 		const response = await fetch(url);
 		const result = await response.json();
 		var noticias = [];
@@ -34,8 +32,7 @@ export async function getTransparencia2020() {
 }
 export async function getTransparencia2021() {
 	try {
-		//   const url = `${BASE_PATH}/noticias?_limit=4&_sort=fecha:DESC`;
-		const url = `${BASE_PATH}/transparencias?ano_eq=2021&_sort=fecha:DESC`;
+		const url = `${BASE_PATH}/transparencias?_where[0][ano_eq]=2021&_where[1][trasparencia_categoria.id]=2&_sort=fecha:DESC`;
 		const response = await fetch(url);
 		const result = await response.json();
 		var noticias = [];
@@ -50,7 +47,6 @@ export async function getTransparencia2021() {
 }
 export async function getDocumentosOficiales() {
 	try {
-		//   const url = `${BASE_PATH}/noticias?_limit=4&_sort=fecha:DESC`;
 		const url = `${BASE_PATH}/transparencias?trasparencia_categoria.nombre_eq=documentosOficiales&_sort=fecha:DESC`;
 		const response = await fetch(url);
 		const result = await response.json();

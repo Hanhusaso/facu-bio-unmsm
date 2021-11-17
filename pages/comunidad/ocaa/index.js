@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Layout from "../../../components/Layout";
 // import Tabs from "../../../components/Tabs/vanillaTabs"
 import { Row, Col, Container, Breadcrumb } from "react-bootstrap";
@@ -8,7 +8,7 @@ import * as FaIcons from "react-icons/fa";
 const index = () => {
 	return (
 		<>
-			<Layout title="Autoridades y órganos de gobierno">
+			<Layout title="Oficina de Calidad Académica y Acreditación">
 				<div>
 					<div>
 						<Container>
@@ -31,7 +31,7 @@ const index = () => {
                                             </Link>
                                         </li> */}
 										<Breadcrumb.Item active>
-											Nosotros: Autoridades y órganos de gobierno
+											Comunidad: Oficina de Calidad Académica y Acreditación
 										</Breadcrumb.Item>
 									</Breadcrumb>
 								</Col>
@@ -44,7 +44,9 @@ const index = () => {
 							<Row>
 								<Col md="1"></Col>
 								<Col>
-									<div className="title-page text-center">Autoridades y órganos de gobierno</div>
+									<div className="title-page text-center">
+										Oficina de Calidad Académica y Acreditación
+									</div>
 								</Col>
 								<Col md="1"></Col>
 							</Row>
@@ -121,7 +123,7 @@ const index = () => {
 														</defs>
 													</svg>
 												</div>
-												<span>Decanato</span>
+												<span>Presentación</span>
 											</a>
 											<a
 												className="tab d-flex"
@@ -219,68 +221,35 @@ const index = () => {
 														</p>
 														<p style={{ textAlign: "justify" }}>
 															<p>
-																Bi&oacute;logo Microbi&oacute;logo - Parasit&oacute;logo por la
-																Universidad Nacional Mayor de San Marcos (UNMSM) y Doctor en
-																Ciencias menci&oacute;n Microbiolog&iacute;a en la Universidad de
-																Chile (2002) obtenido mediante una beca de la Cooperaci&oacute;n
-																Alemana (DAAD), y Profesor Principal de la UNMSM en la Facultad de
-																Ciencias Biol&oacute;gicas, Departamento de Microbiolog&iacute;a y
-																Parasitolog&iacute;a.
+																La Oficina de Calidad Acad&eacute;mica y Acreditaci&oacute;n (OCAA)
+																de la facultad de Ciencias Biol&oacute;gicas es el &oacute;rgano de
+																asesor&iacute;a que lidera los procesos de aseguramiento de la
+																calidad, priorizando los procesos acad&eacute;micos directamente
+																relacionados con la formaci&oacute;n profesional. Bajo ese contexto,
+																implementa el Sistema de Gesti&oacute;n de la Calidad y asume el
+																compromiso de impulsar la acreditaci&oacute;n de los programas de la
+																facultad, bajo el enfoque de una cultura de calidad y trabajo en
+																equipo, involucrando la participaci&oacute;n de docentes, personal
+																administrativo y estudiantes.
 															</p>
 															<p>
-																Sus investigaciones se orientan al estudio de microorganismos
-																extrem&oacute;filos que participan en procesos de
-																biolixiviaci&oacute;n de minerales de inter&eacute;s comercial,
-																as&iacute; como prote&iacute;nas recombinantes, resistencia metales
-																en bacterias y levaduras, gen&oacute;mica y prote&oacute;mica
-																estructural de microorganismos oxidadores de hierro y azufre.
-																Asimismo, en biodegradaci&oacute;n de xenobi&oacute;ticos tales como
-																PETN y TNT, y biodegradaci&oacute;n de colorantes textiles, entre
-																otros.
-															</p>
-															<p>
-																Ha recibido fondos concursables PROCyT, Coordinador general de
-																proyecto FINCYT, FIDECOM, FINCyT-PITEI, Cienciactiva 2017, Fondecyt
-																y varios fondos concursables de la UNMSM.
-															</p>
-															<p>
-																Ha sido Director de la Unidad de Posgrado de la Facultad de Ciencias
-																Biol&oacute;gicas (2010-2013), Presidente del Consejo Superior de
-																Investigaciones del Vicerrectorado de Investigaci&oacute;n y
-																Posgrado (VRIP) de la UNMSM (2014-2017), Director General de
-																Investigaci&oacute;n y Transferencia Tecnol&oacute;gica de VRIP de
-																la UNMSM desde febrero del 2017 hasta octubre de 2020 y actualmente
-																es Decano de la Facultad de Ciencias Biol&oacute;gicas de la UNMSM.
+																Jer&aacute;rquicamente depende del Decanato de la facultad y,
+																funcionalmente de la Oficina Central de Calidad Acad&eacute;mica y
+																Acreditaci&oacute;n (OCAA) de la Universidad.
 															</p>
 														</p>
-														<div>
-															<a
-																target="_blank"
-																href="/assets/archivos/autoridades/decanos/RR/R.R. N.º 017245 - 2020.- DIRECTOR.pdf"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Resolución rectoral</span>
-															</a>
-															<a
-																target="_blank"
-																href="/assets/archivos/autoridades/decanos/CV/cv-ramirez-roca.pdf"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Hoja de vida</span>
-															</a>
-														</div>
 													</Col>
 													<Col md="3" className="pr-0">
 														<div className="mb-3">
 															<img
 																className="img-fluid w-100"
-																src="/assets/img/nosotros/autoridades/decano.png"
+																src="/assets/img/comunidad/ocaa/blga-jeanne-rossanne-alba-luna.png"
 																alt="decano"
 															/>
 														</div>
-														<div className="d-flex justify-content-center">
+														<div className="d-flex justify-content-center flex-column">
+															<p className="m-0">Blga. Jeanne Rossanne Alba L.</p>
+															<p className="m-0">Jefa de la OCAA</p>
 															{/* <a className="btn-square-green mx-1" href="#">
                                                                 <FaIcons.FaFacebookF className="icon"/>
                                                             </a>
@@ -290,13 +259,13 @@ const index = () => {
                                                             <a className="btn-square-green mx-1" href="#">
                                                                 <FaIcons.FaTwitter className="icon"/>
                                                             </a> */}
-															<a
+															{/* <a
 																className="btn-square-green mx-1"
 																href="https://www.linkedin.com/in/pablo-sergio-ramirez-roca-2864a438/?originalSubdomain=pe"
 																target="_blank"
 															>
 																<FaIcons.FaLinkedinIn className="icon" />
-															</a>
+															</a> */}
 														</div>
 													</Col>
 												</Row>
