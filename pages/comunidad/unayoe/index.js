@@ -18,7 +18,7 @@ const index = () => {
 						<img className="icon mr-2" src="/assets/img/iconos/telefono.svg" alt="" />
 					</div>
 					<div>
-						<span>+(51) 619 7000 anexo 1550</span>
+						<span>+(51) 619 7000 anexo 1555</span>
 					</div>
 				</div>
 				<div className="mb-2 grid-contacto">
@@ -26,7 +26,7 @@ const index = () => {
 						<img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt="" />
 					</div>
 					<div>
-						<span>cerseu.biologia@unmsm.edu.pe</span>
+						<span>unayoe.biologia@unmsm.edu.pe</span>
 					</div>
 				</div>
 				{/* <p className="font-weight-bold mb-1">Horario de atención:</p>
@@ -195,6 +195,20 @@ const index = () => {
 												prevención, detección, tratamiento de problemas vocacionales y de aspecto
 												académico, así como consejería para el logro de un mejor aprovechamiento en
 												la formación profesional.
+											</p>
+											<p>
+												El jefe de la Unidad de Asesoría y Orientación al Estudiante de la Facultad
+												de Ciencias Biológicas depende de la Dirección Académica. Informa y responde
+												ante ella del cumplimiento de su misión y funciones asignadas. Coordina
+												internamente con los órganos de la Dirección Académica, Unidades de Asesoría
+												de la facultad y otras dependencias de la Universidad Nacional Mayor de San
+												Marcos. Asimismo, organiza y coordina un sistema permanente de consejería de
+												docentes que oriente y estimule al estudiante durante su carrera
+												profesional. De igual manera, ejecuta los programas de prácticas pre
+												profesionales en coordinación con la Comisión Permanente de Prácticas Pre
+												profesionales. Con la Unidad de Bienestar de la facultad, planifica y
+												promueve la ejecución del servicio psicopedagógico de orientación al
+												estudiante.
 											</p>
 											{/* <p className="title-dark">Misión</p> */}
 										</div>

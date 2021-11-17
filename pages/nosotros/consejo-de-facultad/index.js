@@ -214,7 +214,7 @@ const index = () => {
 											<p>Está integrado por:</p>
 											<p className="title-dark">Decano</p>
 											<ul className="chevron-green-dark">
-												<li>Dr. Pablo Sergio Ramirez Roca {"<decanobio@unmsm.edu.pe>"}</li>
+												<li>Dr. Pablo Sergio Ramírez Roca {"<decanobio@unmsm.edu.pe>"}</li>
 											</ul>
 											<p className="title-dark">Representación docente</p>
 											<ul className="chevron-green-dark">
