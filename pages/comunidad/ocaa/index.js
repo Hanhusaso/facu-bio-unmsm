@@ -127,11 +127,11 @@ const index = () => {
 											</a>
 											<a
 												className="tab d-flex"
-												id="v-pills-mision-tab"
+												id="v-pills-funciones-tab"
 												data-toggle="pill"
-												href="#v-pills-mision"
+												href="#v-pills-funciones"
 												role="tab"
-												aria-controls="v-pills-mision"
+												aria-controls="v-pills-funciones"
 												aria-selected="false"
 											>
 												<div>
@@ -146,15 +146,15 @@ const index = () => {
 														<path d="M11.2852 8.49805C10.5328 8.49805 9.82969 8.78867 9.29766 9.32305C8.76563 9.85508 8.47266 10.5582 8.47266 11.3105C8.47266 12.0629 8.76563 12.766 9.29766 13.298C9.82969 13.8277 10.5352 14.123 11.2852 14.123C12.0352 14.123 12.7406 13.8301 13.2727 13.298C13.8023 12.766 14.0977 12.0605 14.0977 11.3105C14.0977 10.5605 13.8047 9.85508 13.2727 9.32305C12.7406 8.78867 12.0375 8.49805 11.2852 8.49805Z" />
 													</svg>
 												</div>
-												<span>Vicedecanato Académico de Pregrado</span>
+												<span>Funciones</span>
 											</a>
 											<a
 												className="tab d-flex"
-												id="v-pills-malla-tab"
+												id="v-pills-comites-tab"
 												data-toggle="pill"
-												href="#v-pills-malla"
+												href="#v-pills-comites"
 												role="tab"
-												aria-controls="v-pills-malla"
+												aria-controls="v-pills-comites"
 												aria-selected="false"
 											>
 												<div>
@@ -172,7 +172,7 @@ const index = () => {
 														<path d="M3.75586 16.7283C2.7616 16.7273 1.80835 16.3319 1.10531 15.6288C0.402259 14.9258 0.00685214 13.9725 0.00585938 12.9783V4.72827H1.50586V12.9783C1.50586 13.575 1.74291 14.1473 2.16487 14.5693C2.58683 14.9912 3.15912 15.2283 3.75586 15.2283C4.3526 15.2283 4.92489 14.9912 5.34685 14.5693C5.76881 14.1473 6.00586 13.575 6.00586 12.9783V6.22827C6.00586 6.02936 5.92684 5.83859 5.78619 5.69794C5.64554 5.55729 5.45477 5.47827 5.25586 5.47827C5.05695 5.47827 4.86618 5.55729 4.72553 5.69794C4.58488 5.83859 4.50586 6.02936 4.50586 6.22827V13.7283H3.00586V6.22827C3.00586 5.63153 3.24291 5.05924 3.66487 4.63728C4.08683 4.21532 4.65912 3.97827 5.25586 3.97827C5.8526 3.97827 6.42489 4.21532 6.84685 4.63728C7.26881 5.05924 7.50586 5.63153 7.50586 6.22827V12.9783C7.50487 13.9725 7.10946 14.9258 6.40641 15.6288C5.70337 16.3319 4.75012 16.7273 3.75586 16.7283Z" />
 													</svg>
 												</div>
-												<span>Vicedecanato de Investigación y Posgrado</span>
+												<span>Comités</span>
 											</a>
 											{/* <a
 												className="tab d-flex"
@@ -214,11 +214,11 @@ const index = () => {
 											<Container>
 												<Row>
 													<Col md="9" className="pl-0">
-														<p>
+														{/* <p>
 															<span className="title-dark">Dr. Pablo Sergio Ramírez Roca</span>
 															<span className="divisor-text-green mx-2"></span>
 															<span className="title">Decano</span>
-														</p>
+														</p> */}
 														<p style={{ textAlign: "justify" }}>
 															<p>
 																La Oficina de Calidad Acad&eacute;mica y Acreditaci&oacute;n (OCAA)
@@ -248,74 +248,18 @@ const index = () => {
 															/>
 														</div>
 														<div className="d-flex justify-content-center flex-column">
-															<p className="m-0">Blga. Jeanne Rossanne Alba L.</p>
-															<p className="m-0">Jefa de la OCAA</p>
-															{/* <a className="btn-square-green mx-1" href="#">
-                                                                <FaIcons.FaFacebookF className="icon"/>
-                                                            </a>
-                                                            <a className="btn-square-green mx-1" href="#">
-                                                                <FaIcons.FaInstagram className="icon"/>
-                                                            </a>
-                                                            <a className="btn-square-green mx-1" href="#">
-                                                                <FaIcons.FaTwitter className="icon"/>
-                                                            </a> */}
-															{/* <a
-																className="btn-square-green mx-1"
-																href="https://www.linkedin.com/in/pablo-sergio-ramirez-roca-2864a438/?originalSubdomain=pe"
-																target="_blank"
-															>
-																<FaIcons.FaLinkedinIn className="icon" />
-															</a> */}
+															<p className="m-0 text-center title-dark">
+																Blga. Jeanne Rossanne Alba L.
+															</p>
+															<p className="m-0 text-center">Jefa de la OCAA-FCB</p>
 														</div>
 													</Col>
 												</Row>
 											</Container>
-											<div className="divisor my-3"></div>
+											{/* <div className="divisor my-3"></div>
 											<Container>
 												<Row>
-													<Col md="9" className="pl-0">
-														<p>
-															Al asumir el gobierno de la facultad reafirmamos nuestro compromiso de
-															realizar un trabajo con responsabilidad, equidad y transparencia; de
-															tal manera que podamos alcanzar objetivos académicos, administrativos,
-															de investigación y de proyección social, con la finalidad de colaborar
-															con el progreso del país dentro del marco del desarrollo sostenible.
-														</p>
-														<p className="title-dark">Funciones específicas:</p>
-														<ul className="chevron-green-dark">
-															<li>
-																El decano es la máxima autoridad que representa a la facultad,
-																preside el Consejo de Facultad y dirige la gestión académica y
-																administrativa, económica y financiera de la facultad.
-															</li>
-															<li>
-																Ejerce las atribuciones que le confieren la ley universitaria y el
-																Estatuto de la Universidad.
-															</li>
-														</ul>
-														<p className="title-dark">Funciones generales:</p>
-														<ul className="chevron-green-dark">
-															<li>
-																Dirigir y supervisar la gestión académica y administrativa,
-																económica y financiera de la facultad.
-															</li>
-															<li>
-																Proporcionar al consejo de Facultad información procesada que ayude
-																al planeamiento y toma de decisiones.
-															</li>
-															<li>
-																Conducir la formulación presupuestal y el plan de trabajo y
-																desarrollo de la facultad, acorde al plan estratégico de la facultad
-																aprobada.
-															</li>
-															<li>
-																Hacer cumplir los acuerdos y resoluciones del consejo de facultad y
-																las resoluciones rectorales que emita la sede central y gobierno
-																central en materia de su competencia.
-															</li>
-															<li>Representar a la facultad.</li>
-														</ul>
-													</Col>
+													<Col md="9" className="pl-0"></Col>
 													<Col md="3" className="pr-0">
 														<div className="contacto-wrapper mb-3">
 															<p className="title-dark mb-2">Contacto:</p>
@@ -368,85 +312,82 @@ const index = () => {
 														</div>
 													</Col>
 												</Row>
-											</Container>
+											</Container> */}
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
-											id="v-pills-mision"
+											id="v-pills-funciones"
 											role="tabpanel"
-											aria-labelledby="v-pills-mision-tab"
+											aria-labelledby="v-pills-funciones-tab"
 										>
 											<Container>
 												<Row>
-													<Col md="9" className="pl-0">
+													<Col md="12" className="pl-0">
 														<p>
-															<span className="title-dark">
-																Mg. Ruth Hortensia García de la Guarda
-															</span>
-															<span className="divisor-text-green mx-2"></span>
-															<span className="title">Vicedecana académica</span>
+															<strong className="title-dark">Funciones del Jefe de la OCAA:</strong>
 														</p>
-														<p style={{ textAlign: "justify" }}>
-															Profesora Principal a Dedicación Exclusiva del Dpto. Académico de
-															Microbiología y Parasitología de la Facultad de Ciencias Biológicas de
-															la Universidad Nacional Mayor de San Marcos. Título Profesional de
-															Biólogo-Microbiólogo por la Universidad Nacional de Trujillo, Grado
-															Académico de Magíster en Bioquímica por la Pontificia Universidad
-															Católica de Chile, Doctora en Ciencias Biológicas por la Universidad
-															Nacional Mayor de San Marcos.
+														<ul className="chevron-green-dark">
+															<li>
+																Impulsar y ejecutar la pol&iacute;tica de calidad universitaria de
+																la UNMSM en la facultad.
+															</li>
+															<li>
+																Implementar la estrategia de evaluaci&oacute;n &ndash;
+																planeaci&oacute;n &ndash; acci&oacute;n.
+															</li>
+															<li>Presidir el Comit&eacute; de Calidad de la Facultad.</li>
+															<li>
+																Acompa&ntilde;ar a los Comit&eacute;s de Calidad de los programas de
+																pregrado y posgrado en los procesos de acreditaci&oacute;n.
+															</li>
+															<li>
+																Emitir opini&oacute;n y asesorar en el campo de su competencia.
+															</li>
+															<li>
+																Otras funciones que le asigne el Decanato o el jefe de la OCCAA.
+															</li>
+														</ul>
+														<p>
+															<strong className="title-dark">
+																Funciones del comit&eacute; de calidad de la facultad:
+															</strong>
 														</p>
-														<p style={{ textAlign: "justify" }}>
-															Realiza sus actividades de investigación en el Laboratorio de
-															Microbiología Molecular y Biotecnología de la Facultad de Ciencias
-															Biológicas. Miembro Permanente del Instituto de Investigación de
-															Ciencias Biológicas Antonio Raimondi (ICBAR). Investigadora principal
-															en proyectos financiados por CONCYTEC y por el Vicerrectorado de
-															Investigación y Posgrado de la UNMSM. Especialista en temas de
-															microbiología. Líneas de investigación de microbiología molecular de
-															bacterias patógenas/oportunistas y de bacterias biolixiviantes y de
-															otras ambientales de interés biotecnológico. Asesora de Trabajos de
-															Investigación y de Tesis de pre y posgrado.
+														<ul className="chevron-green-dark">
+															<li>
+																Planificar y ejecutar las acciones de la pol&iacute;tica de calidad.
+															</li>
+															<li>
+																Planificar y ejecutar la estrategia de evaluaci&oacute;n &ndash;
+																planeaci&oacute;n &ndash; acci&oacute;n
+															</li>
+															<li>
+																Formular y ejecutar el plan de capacitaci&oacute;n en gesti&oacute;n
+																de la calidad dirigida a los miembros de la Facultad.
+															</li>
+															<li>
+																Otras funciones que les corresponda por las normas pertinentes.
+															</li>
+														</ul>
+														<p>
+															<strong className="title-dark">Funciones de la OCAA: </strong>
 														</p>
-														<p style={{ textAlign: "justify" }}>
-															Miembro del comité de docentes que crearon la Maestría en Biología
-															Molecular. Coordinadora de la Maestría en Biología Molecular
-															(2004-2013).
-														</p>
-														<p style={{ textAlign: "justify" }}>
-															En la docencia es profesora responsable, en el pregrado, de los cursos
-															de Fundamentos de Microbiología y de Microbiología en Salud, así como
-															colaboradora de Genética Microbiana e Ingeniería Genética; en el
-															posgrado (Maestría en Biología Molecular), ha sido responsable de
-															Microbiología Molecular, Tesis II, Tesis III y Tesis IV, y
-															colaboradora de Biología Molecular Avanzada.
-														</p>
-														<p style={{ textAlign: "justify" }}>
-															Coordinadora del Dpto. Académico de Microbiología y Parasitología
-															(abril 2010-marzo 2014). Miembro del Consejo de Facultad 2010-2013 y
-															2020-2024. Miembro de la Comisión Permanente de Evaluación Curricular
-															y Coordinación Académica (06/2010 – 05/2013). Miembro de la Sociedad
-															Peruana de Bioquímica y Biología Molecular.
-														</p>
-														<div>
-															<a
-																target="_blank"
-																href="/assets/archivos/autoridades/decanos/RR/R.R. N° 001841-2021-R VICEDECANA ACADÉMICA.pdf"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Resolución rectoral</span>
-															</a>
-															<a
-																target="_blank"
-																href="/assets/archivos/autoridades/decanos/CV/CV_Ruth_Garcia_2020.pdf"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Hoja de vida</span>
-															</a>
-														</div>
+														<ul className="chevron-green-dark">
+															<li>
+																Implementar las pol&iacute;ticas del Sistema de Calidad, Sistema de
+																Evaluaci&oacute;n de Calidad y Sistema de Gesti&oacute;n de la
+																Calidad en la Facultad, de acuerdo con las directivas de la OCCAA.
+															</li>
+															<li>
+																Orientar a las unidades org&aacute;nicas de la Facultad sobre los
+																asuntos materia de su competencia.
+															</li>
+															<li>
+																Otras funciones que le asigne el Decano o que le sean dadas por las
+																normas respectivas.
+															</li>
+														</ul>
 													</Col>
-													<Col md="3" className="pr-0">
+													{/* <Col md="3" className="pr-0">
 														<div className="mb-3">
 															<img
 																className="img-fluid w-100"
@@ -454,174 +395,16 @@ const index = () => {
 																alt="vicedecana"
 															/>
 														</div>
-														{/* <div className="d-flex justify-content-center">
-                                                            <a className="btn-square-green mx-1" href="#">
-                                                                <FaIcons.FaFacebookF className="icon"/>
-                                                            </a>
-                                                            <a className="btn-square-green mx-1" href="#">
-                                                                <FaIcons.FaInstagram className="icon"/>
-                                                            </a>
-                                                            <a className="btn-square-green mx-1" href="#">
-                                                                <FaIcons.FaTwitter className="icon"/>
-                                                            </a>
-                                                            <a className="btn-square-green mx-1" href="#">
-                                                                <FaIcons.FaLinkedinIn className="icon"/>
-                                                            </a>
-                                                        </div> */}
-													</Col>
+													</Col> */}
 												</Row>
 											</Container>
-											<div className="divisor my-3"></div>
+											{/* <div className="divisor my-3"></div>
 											<Container>
 												<Row>
-													<Col md="9" className="pl-0">
-														{/* <p>
-															La Dirección Académica es el órgano de apoyo de la Facultad de
-															Ciencias Biológicas, encargado de prestar los servicios académicos que
-															requieran los estudiantes y profesores de la Facultad, así como el
-															apoyo que se hace extensivo al personal docente.
-														</p>
-														<p className="title-dark">Funciones específicas:</p>
-														<ul className="chevron-green-dark">
-															<li>
-																Planificar, dirigir y supervisar las actividades de las unidades a
-																su cargo.
-															</li>
-															<li>Planificar, dirigir y supervisar el proceso de matrícula.</li>
-															<li>
-																Dirigir, conducir y supervisar administrativamente los procesos para
-																la obtención del grado Académico de Bachiller y Título Profesional.
-															</li>
-															<li>Realizar funciones de Fedatario de la Facultad.</li>
-															<li>
-																Desempeñarse como Secretario de las Sesiones de Consejo de Facultad
-																y llevar el Archivo de Actas correspondientes.
-															</li>
-															<li>
-																Proponer al Decanato, en coordinación con la Oficina de
-																Planificación, Presupuesto y Racionalización, el Plan Operativo
-																Anual y el presupuesto de las unidades a su cargo, así como la
-																evaluación periódica del cumplimiento de dicho plan.
-															</li>
-															<li>
-																Proponer a la unidad de Planificación, Presupuesto y Racionalización
-																de la Facultad, las modificaciones del Texto Único de Procedimientos
-																Administrativos (Tarifario descentralizado).
-															</li>
-															<li>
-																Dirigir y supervisar los servicios de biblioteca y hemeroteca,
-																asegurando la permanente actualización del material bibliográfico y
-																el eficiente y oportuno servicios a los alumnos.
-															</li>
-															<li>
-																Brindar apoyo al estudiante a través de la Unidad de Asesoría y
-																Orientación al Estudiante.
-															</li>
-															<li>
-																Coordinar y promover programas y servicios especiales de bienestar,
-																salud, alimentación y vivienda, recreación y deporte, en
-																coordinación con las oficinas de la Administración Central
-																correspondientes.
-															</li>
-															<li>
-																Coordinar la presentación trimestral del informe de gestión de la
-																Dirección Académica
-															</li>
-															<li>Otras funciones que se le asigne.</li>
-														</ul>
-														<p className="title-dark">Funciones generales:</p>
-														<ul className="chevron-green-dark">
-															<li>
-																Prestar apoyo académico al Decanato y Consejo de Facultad para el
-																cumplimiento de los fines y objetivos de la Facultad en las áreas de
-																su competencia.
-															</li>
-															<li>
-																Tiene a su cargo la emisión y custodia de las Actas Promocionales de
-																los cursos de Pre Grado, registros de Grado y Títulos que otorga la
-																Facultad.
-															</li>
-															<li>
-																Llevar el libro de Actas de las sesiones del Consejo de Facultad.
-															</li>
-															<li>
-																Centralizar y conducir los procedimientos académicos de la Facultad.
-															</li>
-															<li>
-																Programar y dirigir el proceso de matrícula, en coordinación con el
-																Sistema Único de Matrícula
-															</li>
-															<li>
-																Brindar apoyo al estudiante, mediante el servicio de detección y
-																tratamiento de sus problemas académicos y vocacionales.
-															</li>
-															<li>
-																Administrar la Biblioteca, los servicios de Hemeroteca y Centro de
-																Documentación de la Facultad.
-															</li>
-															<li>
-																Velar por el bienestar de los alumnos, docentes y no docentes en
-																coordinación permanente con la Oficina de Bienestar Universitario.
-															</li>
-														</ul>
-														<p className="title-dark">Líneas de responsabilidad y coordinación:</p>
-														<ul className="chevron-green-dark">
-															<li>Es el órgano Asesor Académico del Decanato.</li>
-															<li>
-																Es responsable ante el Decanato por su cumplimiento de las funciones
-																de la Dirección Académica
-															</li>
-															<li>
-																Es el órgano que supervisa y controla las Unidades de: Matrícula,
-																Registros Académicos, Grados y Títulos; Biblioteca Hemeroteca y
-																Centro de Documentación; Asesoría y Orientación del Estudiante y
-																Unidad de Bienestar.
-															</li>
-															<li>
-																La Dirección Académica, coordina los servicios académicos con el
-																Decanato, las Escuelas Académicas Profesionales de Ciencias
-																Biológicas, Genética y Biotecnología y Microbiología y
-																Parasitología; la Dirección Admninistrativa, los Órganos de
-																Asesoría, la Unidad de Posgrado, Instituto de Investigación, los
-																Departamentos Académicos y el CERSEU.
-															</li>
-															<li>
-																La Dirección Académica coordina sus funciones con el Vice Rectorado
-																Académico, la Secretaría General, el Sistemas de Bibliotecas
-																Central, la Oficina General de Bienestar Universitario y el Sistema
-																Único de Matrícula.
-															</li>
-														</ul> */}
-													</Col>
+													<Col md="9" className="pl-0"></Col>
 													<Col md="3" className="pr-0">
 														<div className="contacto-wrapper mb-3">
 															<p className="title-dark mb-2">Contacto:</p>
-															{/* <div className="grid-contacto">
-																<div>
-																	<img
-																		className="icon mr-2"
-																		src="/assets/img/iconos/telefono.svg"
-																		alt=""
-																	/>
-																</div>
-																<div>
-																	<span>+(51) 619 7000 anexo 1507</span>
-																</div>
-															</div>
-															<div className="mb-0 grid-contacto">
-																<div>
-																	<img
-																		className="icon mr-2"
-																		src="/assets/img/iconos/correo.svg"
-																		alt=""
-																	/>
-																</div>
-																<div>
-																	<span>epcb.biologia@unmsm.edu.pe</span>
-																</div>
-															</div>
-															<p className="font-weight-bold mb-1">Horario de atención:</p>
-															<p className="mb-0">8:00 a.m. - 5:00 p.m.</p> */}
 														</div>
 														<div className="block-interest-links">
 															<p className="font-weight-bold mb-2">Información académica</p>
@@ -645,134 +428,124 @@ const index = () => {
 														</div>
 													</Col>
 												</Row>
-											</Container>
+											</Container> */}
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
-											id="v-pills-malla"
+											id="v-pills-comites"
 											role="tabpanel"
-											aria-labelledby="v-pills-malla-tab"
+											aria-labelledby="v-pills-comites-tab"
 										>
 											<Container>
 												<Row>
-													<Col md="9" className="pl-0">
+													<Col md="12" className="pl-0">
 														<p>
-															<span className="title-dark">Dra. Martha Esther Valdivia Cuya</span>
-															<span className="divisor-text-green mx-2"></span>
-															<span className="title">Vicedecana de Investigación y Posgrado</span>
+															<strong>COMIT&Eacute; DE CALIDAD DE LA OCAA&ndash; FCB&nbsp;</strong>
 														</p>
-														<p style={{ textAlign: "justify" }}>
-															<p>
-																Profesora Principal a Tiempo Completo, Investigadora de la Facultad
-																de Ciencias Biol&oacute;gicas, Miembro permanente del Instituto de
-																Investigaciones Antonio Raimondi, Jefa del laboratorio de
-																Fisiolog&iacute;a de la reproducci&oacute;n de la Facultad de
-																Ciencias Biol&oacute;gicas de la Universidad Nacional Mayor de San
-																Marcos (UNMSM), Per&uacute; con grado de Magister en Ciencias
-																Biol&oacute;gicas con menci&oacute;n en Biolog&iacute;a de la
-																Reproducci&oacute;n en la Universidad de Chile y grado de Doctor en
-																Ciencias Biol&oacute;gicas con menci&oacute;n en Fisiolog&iacute;a
-																en la Universidad Peruana Cayetano Heredia.
-															</p>
-															<p>
-																Con experiencia en organizaci&oacute;n e implementaci&oacute;n de
-																equipamiento de laboratorios de alta tecnolog&iacute;a para la
-																investigaci&oacute;n en Reproducci&oacute;n. El objetivo de sus
-																investigaciones est&aacute; enfocado al an&aacute;lisis de la
-																fertilidad el manejo de gametos y de la interacci&oacute;n de los
-																mismos usando herramientas biotecnol&oacute;gicas
-																(criopreservaci&oacute;n, fecundaci&oacute;n In vitro y pruebas
-																moleculares que revelen la capacidad f&eacute;rtil de las especies
-																(animales y humanos). Ha desarrollado protocolos de
-																criopreservaci&oacute;n de espermatozoides y posee una patente en
-																protocolo de criopreservaci&oacute;n de zanganos para la industria
-																ap&iacute;cola. Asimismo, ha desarrollado tres patentes que se
-																encuentran en tr&aacute;mite internacional sobre medios para la
-																crioconservaci&oacute;n de c&eacute;lulas madre espermatogoniales,
-																biopsias testicluares de alpaca y dise&ntilde;o de protocolos de
-																criopreservaci&oacute;n para c&eacute;lulas aisladas y biopsias.
-															</p>
-															<p>
-																Ha obtenido a trav&eacute;s de fondos concursables el financiamiento
-																a proyectos de CONCYTEC (PROCYT y PROCOM), International Foundation
-																for Science (IFS), International Centre of Genetic Ingeniering and
-																Biotechnology (ICGEB). INNOVATE, PIMEM, FONDECYT y UNMSM. Sus
-																publicaciones se encuentran en Theriogenology, Biology of
-																Reproduction, Biological Research, Gamete Research, Molecular
-																Reproduction fertility, SPERMOVA, Reproduction domestic animals,
-																Andrologia, Fronterirs, Revista peruana de Biolog&iacute;a, Revista
-																de Investigaci&oacute;n en Ciencias veterinarias, entre otras.
-															</p>
-															<p>
-																Ha formado a investigadores peruanos (Arequipa, Ayacucho, Tacna) y
-																extranjeros (Alemania, Bolivia, Chile) en el &aacute;rea de
-																reproducci&oacute;n tanto en investigaci&oacute;n b&aacute;sica como
-																aplicada y en biotecnolog&iacute;as reproductivas como IVF, ICSI
-																Cultivo celular, criopreservaci&oacute;n.
-															</p>
-															<p>
-																Actualmente est&aacute; dedicada al estudio de las c&eacute;lulas
-																madre testiculares de alpaca, maduraci&oacute;n de ovocitos y manejo
-																de gametos para la producci&oacute;n embrionaria con perspectiva del
-																uso de la micromanipulaci&oacute;n embrionaria para la
-																producci&oacute;n de clones en alpacas.
-															</p>
+														<p>Presidenta:</p>
+														<div className="pl-3">
+															<p>Blga. Jeanne Alba Luna</p>
+														</div>
+														<p>Miembros:</p>
+														<div className="pl-3">
+															<p>Blga.&nbsp;Mar&iacute;a del Pilar Suyo Titto</p>
+															<p>Dr. Julio Sol&iacute;s Sarmiento</p>
+															<p>Ph.D Pedro Luis Castellanos S&aacute;nchez</p>
+															<p>Lic. Natividad Rodr&iacute;guez Mart&iacute;nez</p>
+														</div>
+														<p>
+															<strong>
+																COMIT&Eacute; DE CALIDAD DE E.P. CIENCIAS
+																BIOL&Oacute;GICAS-PREGRADO&nbsp;
+															</strong>
 														</p>
-														<div>
-															<a
-																target="_blank"
-																href="https://drive.google.com/file/d/1R8KkjOTsV7z51-OH2-8D8q6QTA7Z2mW7/view"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Resolución rectoral</span>
-															</a>
-															<a
-																target="_blank"
-																href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/MantDatosOrcid.do?numero_orcid=0000-0002-8301-5536&nombre_orcid=Martha%20Valdivia&id_investigador=17&estado=ok"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Hoja de vida</span>
-															</a>
+														<p>Presidente:</p>
+														<div className="pl-3">
+															<p>Dr. Enoc Jara Pe&ntilde;a</p>
 														</div>
-													</Col>
-													<Col md="3" className="pr-0">
-														<div className="mb-3">
-															<img
-																className="img-fluid w-100"
-																src="/assets/img/nosotros/autoridades/vicedecana-posgrado.png"
-																alt="vicedecana"
-															/>
+														<p>Miembros:</p>
+														<div className="pl-3">
+															<p>Blga. Jasm&iacute;n Opisso Mej&iacute;a&nbsp;</p>
+															<p>Mg. Eder Chilquillo Torres</p>
+															<p>Dr. Jos&eacute; P&eacute;rez Z&uacute;&ntilde;iga</p>
+															<p>Dra. Mabel Alvarado Guti&eacute;rrez</p>
+															<p>Mg. Liliana Tapia Ugaz</p>
+															<p>Mg. Irbin Llanqui Argollo</p>
+															<p>Srta. Daniela Egas Jara</p>
+															<p>Mg. Fanny Cornejo Fern&aacute;ndez</p>
+															<p>Mg. Jimmy Dulanto G&oacute;mez</p>
+															<p>Blgo. Mirbel Epiquien Rivera</p>
+															<p>Sra. Diana Tarazona Atapoma</p>
 														</div>
-														{/* <div className="d-flex justify-content-center">
-                                                            <a className="btn-square-green mx-1" href="#">
-                                                                <FaIcons.FaFacebookF className="icon"/>
-                                                            </a>
-                                                            <a className="btn-square-green mx-1" href="#">
-                                                                <FaIcons.FaInstagram className="icon"/>
-                                                            </a>
-                                                            <a className="btn-square-green mx-1" href="#">
-                                                                <FaIcons.FaTwitter className="icon"/>
-                                                            </a>
-                                                            <a className="btn-square-green mx-1" href="#">
-                                                                <FaIcons.FaLinkedinIn className="icon"/>
-                                                            </a>
-                                                        </div> */}
+														<p>
+															<strong>
+																COMIT&Eacute; DE CALIDAD DE E.P. GEN&Eacute;TICA Y
+																BIOTECNOLOG&Iacute;A-PREGRADO&nbsp;
+															</strong>
+														</p>
+														<p>Presidenta:</p>
+														<div className="pl-3">
+															<p>Dra. M&oacute;nica Paredes Anaya</p>
+														</div>
+														<p>Miembros:</p>
+														<div className="pl-3">
+															<p>Dr. Julio Sol&iacute;s Sarmiento</p>
+															<p>Mg. Edith Rodr&iacute;guez Quispe</p>
+															<p>Mg. Nadia Vera Munarri</p>
+															<p>Mg. Gustavo Sandoval Pe&ntilde;a</p>
+															<p>Mg. Jos&eacute; Linares Gonzales</p>
+															<p>Blga. Rosa Gonzales Gonzales</p>
+															<p>Blgo. Ruperto Severino L&oacute;pez</p>
+															<p>Blgo. Ernesto S&aacute;nchez Castro</p>
+															<p>Blgo. Ricardo Pella C&aacute;ceres</p>
+															<p>Sra. Yesmina Moscoso de la Torre</p>
+														</div>
+														<p>
+															<strong>
+																COMIT&Eacute; DE CALIDAD DE E.P. MICROBIOLOG&Iacute;A Y
+																PARASITOLOG&Iacute;A-PREGRADO
+															</strong>
+														</p>
+														<p>Presidente:</p>
+														<div className="pl-3">
+															<p>Ph. D. Pedro Castellanos S&aacute;nchez</p>
+														</div>
+														<p>Miembros:</p>
+														<div className="pl-3">
+															<p>Mg. D&eacute;bora Alvarado Iparraguirre</p>
+															<p>Dr. Enrique Mamani Zapana</p>
+															<p>Dra. Nora Vera Obando</p>
+															<p>Blgo. Augusto de la Cruz Calvo</p>
+															<p>Srta. Camila Guti&eacute;rrez Cobos</p>
+															<p>Sr. Mirko Lino Navarro</p>
+															<p>Sr. Aldo Flores P&eacute;rez</p>
+															<p>Sra. Haydee Raquel S&aacute;enz Carrillo</p>
+														</div>
+														<p>
+															<strong>
+																COMIT&Eacute; DE CALIDAD DEL DOCTORADO EN CIENCIAS
+																BIOL&Oacute;GICAS-POSGRADO
+															</strong>
+														</p>
+														<p>Presidente:</p>
+														<div className="pl-3">
+															<p>Dr. C&eacute;sar Aguilar Puntriano</p>
+														</div>
+														<p>Miembros:</p>
+														<div className="pl-3">
+															<p>Dra. Libertad Alzamora Gonzales</p>
+															<p>Dra. M&oacute;nica Arakaki Makishi</p>
+															<p>Dr. Niels Valencia Chac&oacute;n</p>
+															<p>Est. Yuri Ayala Sulca</p>
+															<p>Sra. Dora Mar&iacute;a Aguilar Ch&aacute;vez</p>
+														</div>
 													</Col>
 												</Row>
 											</Container>
-											<div className="divisor my-3"></div>
+											{/* <div className="divisor my-3"></div>
 											<Container>
 												<Row>
 													<Col md="9" className="pl-0">
-														{/* <p>
-															Al asumir el gobierno de la facultad reafirmamos nuestro compromiso de
-															realizar un trabajo con responsabilidad, equidad y transparencia; de
-															tal manera que podamos alcanzar objetivos académicos, administrativos,
-															de investigación y de proyección social, con la finalidad de colaborar
-															con el progreso del país dentro del marco del desarrollo sostenible.
-														</p> */}
 														<p className="title-dark">
 															Funciones del Vicedecanato de Investigación y Posgrado:
 														</p>
@@ -869,7 +642,7 @@ const index = () => {
 														</div>
 													</Col>
 												</Row>
-											</Container>
+											</Container> */}
 										</div>
 										{/* <div
 											className="mb-3 tab-pane fade"
