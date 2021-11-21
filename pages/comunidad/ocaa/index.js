@@ -2,8 +2,8 @@ import React from "react";
 import Layout from "../../../components/Layout";
 // import Tabs from "../../../components/Tabs/vanillaTabs"
 import { Row, Col, Container, Breadcrumb } from "react-bootstrap";
+import Accordion from "react-bootstrap/Accordion";
 import Link from "next/link";
-import * as FaIcons from "react-icons/fa";
 
 const index = () => {
 	return (
@@ -60,23 +60,6 @@ const index = () => {
 							alt=""
 						/>
 					</div>
-
-					{/* <div>
-                        <ul id="tabs-v" class="tabs">
-                            <li data-title="First tab">
-                                <h2>Some heading 1</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus lobortis sapien, ut rhoncus dui sagittis vel. Donec rhoncus convallis justo, in placerat nibh auctor ut. Aliquam erat volutpat. Morbi finibus velit et erat vehicula, facilisis viverra magna euismod. Nullam consequat a justo id luctus. Sed vitae maximus massa. Integer ligula ligula, semper ac feugiat vel, viverra sed nisi. In commodo lacus non orci faucibus mollis. Maecenas sit amet gravida leo, non ornare nisl. Etiam rhoncus dui vitae magna pulvinar, eu semper ex porttitor. Nulla facilisi. Donec ac tortor arcu. Nulla pharetra suscipit nulla. Ut maximus justo vitae libero fermentum efficitur. Aliquam mattis quam erat, eget varius tortor cursus eget.</p>
-                            </li>
-                            <li data-title="Second tab">
-                                <h2>Some heading 2</h2>
-                                <p>Pellentesque non felis sed nibh ultrices molestie in id ante. Aenean sollicitudin, lorem sed malesuada tempor, erat odio imperdiet mi, condimentum sagittis arcu leo sed erat. Nam sed ex lectus. Praesent efficitur ex vel nunc tempus aliquet. Nullam sit amet ligula enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti.</p>
-                            </li>
-                            <li data-title="Third tab">
-                                <h2>Some heading 3</h2>
-                                <p>Nullam quis eleifend massa. Nullam ut ex libero. Donec ac enim in ipsum interdum laoreet quis vestibulum risus. Curabitur pharetra dictum cursus. Praesent suscipit ultrices massa, ullamcorper ullamcorper leo tristique id. Praesent lobortis, mauris at placerat tempus, diam ex auctor quam, a posuere metus purus non nibh. Nunc sagittis dui lectus, non euismod dolor consequat nec. Proin non ipsum tempus, accumsan eros vel, mollis neque. Mauris sit amet justo non turpis porttitor luctus sed sed metus. Duis viverra sapien enim, non placerat erat feugiat maximus. Ut semper id mi id convallis.</p>
-                            </li>
-                        </ul>
-                    </div> */}
 
 					<div>
 						<Container>
@@ -235,7 +218,7 @@ const index = () => {
 															<p>
 																Jer&aacute;rquicamente depende del Decanato de la facultad y,
 																funcionalmente de la Oficina Central de Calidad Acad&eacute;mica y
-																Acreditaci&oacute;n (OCAA) de la Universidad.
+																Acreditaci&oacute;n (OCCAA) de la Universidad.
 															</p>
 														</p>
 													</Col>
@@ -256,63 +239,6 @@ const index = () => {
 													</Col>
 												</Row>
 											</Container>
-											{/* <div className="divisor my-3"></div>
-											<Container>
-												<Row>
-													<Col md="9" className="pl-0"></Col>
-													<Col md="3" className="pr-0">
-														<div className="contacto-wrapper mb-3">
-															<p className="title-dark mb-2">Contacto:</p>
-															<div className="grid-contacto">
-																<div>
-																	<img
-																		className="icon mr-2"
-																		src="/assets/img/iconos/telefono.svg"
-																		alt=""
-																	/>
-																</div>
-																<div>
-																	<span>+(51) 619 7000 anexo 1501</span>
-																</div>
-															</div>
-															<div className="mb-0 grid-contacto">
-																<div>
-																	<img
-																		className="icon mr-2"
-																		src="/assets/img/iconos/correo.svg"
-																		alt=""
-																	/>
-																</div>
-																<div>
-																	<span>decanobio@unmsm.edu.pe</span>
-																</div>
-															</div>
-															<p className="font-weight-bold mb-1">Horario de atención:</p>
-															<p className="mb-0">8:00 a.m. - 5:00 p.m.</p>
-														</div>
-														<div className="block-interest-links">
-															<p className="font-weight-bold mb-2">Información académica</p>
-															<ul className="nav flex-column">
-																<li className="mb-2">
-																	<Link href="/nosotros/consejo-de-facultad">
-																		<a>Consejo de facultad</a>
-																	</Link>
-																</li>
-																<li className="mb-2">
-																	<Link href="/nosotros/historia">
-																		<a>Historia</a>
-																	</Link>
-																</li>
-																<li className="mb-0">
-																	<Link href="/informacion-academica?recurso=informacion-de-docentes">
-																		<a>Plana docente</a>
-																	</Link>
-																</li>
-															</ul>
-														</div>
-													</Col>
-												</Row>
-											</Container> */}
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
@@ -387,48 +313,8 @@ const index = () => {
 															</li>
 														</ul>
 													</Col>
-													{/* <Col md="3" className="pr-0">
-														<div className="mb-3">
-															<img
-																className="img-fluid w-100"
-																src="/assets/img/nosotros/autoridades/vicedecana-academica.png"
-																alt="vicedecana"
-															/>
-														</div>
-													</Col> */}
 												</Row>
 											</Container>
-											{/* <div className="divisor my-3"></div>
-											<Container>
-												<Row>
-													<Col md="9" className="pl-0"></Col>
-													<Col md="3" className="pr-0">
-														<div className="contacto-wrapper mb-3">
-															<p className="title-dark mb-2">Contacto:</p>
-														</div>
-														<div className="block-interest-links">
-															<p className="font-weight-bold mb-2">Información académica</p>
-															<ul className="nav flex-column">
-																<li className="mb-2">
-																	<Link href="/nosotros/consejo-de-facultad">
-																		<a>Consejo de facultad</a>
-																	</Link>
-																</li>
-																<li className="mb-2">
-																	<Link href="/nosotros/historia">
-																		<a>Historia</a>
-																	</Link>
-																</li>
-																<li className="mb-0">
-																	<Link href="/informacion-academica?recurso=informacion-de-docentes">
-																		<a>Plana docente</a>
-																	</Link>
-																</li>
-															</ul>
-														</div>
-													</Col>
-												</Row>
-											</Container> */}
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
@@ -440,43 +326,76 @@ const index = () => {
 												<Row>
 													<Col md="12" className="pl-0">
 														<p>
-															<strong>COMIT&Eacute; DE CALIDAD DE LA OCAA&ndash; FCB&nbsp;</strong>
-														</p>
-														<p>Presidenta:</p>
-														<div className="pl-3">
-															<p>Blga. Jeanne R. Alba Luna</p>
-														</div>
-														<p>Miembros:</p>
-														<div className="pl-3">
-															<p>Blga.&nbsp;Mar&iacute;a del Pilar Suyo Titto</p>
-															<p>Dr. Julio Sol&iacute;s Sarmiento</p>
-															<p>Ph.D Pedro Luis Castellanos S&aacute;nchez</p>
-															<p>Lic. Natividad Rodr&iacute;guez Mart&iacute;nez</p>
-														</div>
-														<p>
-															<strong>
-																COMIT&Eacute; DE CALIDAD DE E.P. CIENCIAS
-																BIOL&Oacute;GICAS-PREGRADO&nbsp;
-															</strong>
+															<strong>COMIT&Eacute; DE CALIDAD DE LA OCAA-FCB</strong>
 														</p>
 														<p>Presidente:</p>
 														<div className="pl-3">
-															<p>Dr. Enoc Jara Pe&ntilde;a</p>
+															<p>Blga. Jeanne Alba Luna</p>
 														</div>
 														<p>Miembros:</p>
 														<div className="pl-3">
-															<p>Blga. Jasm&iacute;n Opisso Mej&iacute;a&nbsp;</p>
-															<p>Mg. Eder Chilquillo Torres</p>
-															<p>Dr. Jos&eacute; P&eacute;rez Z&uacute;&ntilde;iga</p>
-															<p>Dra. Mabel Alvarado Guti&eacute;rrez</p>
-															<p>Mg. Liliana Tapia Ugaz</p>
-															<p>Mg. Irbin Llanqui Argollo</p>
-															<p>Srta. Daniela Egas Jara</p>
-															<p>Mg. Fanny Cornejo Fern&aacute;ndez</p>
-															<p>Mg. Jimmy Dulanto G&oacute;mez</p>
-															<p>Blgo. Mirbel Epiquien Rivera</p>
-															<p>Sra. Diana Tarazona Atapoma</p>
+															<p>Blga. María del Pilar Suyo Titto</p>
+															<p>Dr. Julio Solís Sarmiento</p>
+															<p>Ph.D Pedro Luis Castellanos Sánchez</p>
+															<p>Lic. Natividad Rodríguez Martínez</p>
+															<p>Srta. Camila Guti&eacute;rrez Cobos</p>
 														</div>
+														<p>
+															<strong>
+																COMIT&Eacute;S DE CALIDAD DE LA ESCUELA PROFESIONAL DE CIENCIAS
+																BIOL&Oacute;GICAS-PREGRADO:
+															</strong>
+														</p>
+														<p>Dr. Enoc Efer Jara Pe&ntilde;a - Presidente</p>
+														<p>Sra. Diana Mar&iacute;a Tarazona Atapoma - Miembro Administrativo</p>
+														<p>
+															<strong>
+																Comit&eacute; de calidad de la Especialidad de Bot&aacute;nica:
+															</strong>
+														</p>
+														<p className="pl-3">
+															Blga. Jasm&iacute;n Alexandra Opisso Mej&iacute;a - Miembro
+														</p>
+														<p className="pl-3">Mg. Eder Augusto Chilquillo Torres - Miembro</p>
+														<p className="pl-3">
+															Dra. Roxana Yanina Casta&ntilde;eda Sifuentes - Miembro
+														</p>
+														<p className="pl-3">
+															Blgo. Mirbel Alberto Epiqui&eacute;n Rivera - Grupo de Inter&eacute;s
+														</p>
+														<p className="pl-3">Sr. Piero Marcello Mazzei Ugaz - Estudiante</p>
+														<p>
+															<strong>
+																Comit&eacute; de calidad de la especialidad de hidrobiolog&iacute;a
+																y pesquer&iacute;a:
+															</strong>
+														</p>
+														<p className="pl-3">Mg. Liliana Del Rosario Tapia Ugaz Miembro</p>
+														<p className="pl-3">Mg. Irbin Baltazar Llanqui Argollo - Miembro</p>
+														<p className="pl-3">
+															Mg. V&iacute;ctor Hern&aacute;n Aramayo Navarro - Miembro
+														</p>
+														<p className="pl-3">
+															Mg. Jimmy Ronald Dulanto G&oacute;mez - Grupo de inter&eacute;s
+														</p>
+														<p className="pl-3">Srta. Melissa Mej&iacute;a Mallqui - Estudiante</p>
+														<p>
+															<strong>
+																Comit&eacute; de calidad de la especialidad de zoolog&iacute;a:
+															</strong>
+														</p>
+														<p className="pl-3">
+															Dr. Jos&eacute; Miguel P&eacute;rez Z&uacute;&ntilde;iga - Miembro
+														</p>
+														<p className="pl-3">Dra, Mabel Alvarado Guti&eacute;rrez - Miembro</p>
+														<p className="pl-3">
+															Blga. Eliana Del Pilar Quispitupac Quispitupac - Miembro
+														</p>
+														<p className="pl-3">
+															Mg. Fanny Mar&iacute;a Cornejo Fern&aacute;ndez - Grupo de
+															inter&eacute;s
+														</p>
+														<p className="pl-3">Srta. Daniela Egas Jara - Estudiante</p>
 														<p>
 															<strong>
 																COMIT&Eacute; DE CALIDAD DE E.P. GEN&Eacute;TICA Y
@@ -512,10 +431,11 @@ const index = () => {
 														</div>
 														<p>Miembros:</p>
 														<div className="pl-3">
-															<p>Mg. D&eacute;bora Alvarado Iparraguirre</p>
+															<p>Dr. Juan Atilio Jiménez Chunga </p>
 															<p>Dr. Enrique Mamani Zapana</p>
 															<p>Dra. Nora Vera Obando</p>
 															<p>Blgo. Augusto de la Cruz Calvo</p>
+															<p>Prof. Juan Jiménez</p>
 															<p>Srta. Camila Guti&eacute;rrez Cobos</p>
 															<p>Sr. Mirko Lino Navarro</p>
 															<p>Sr. Aldo Flores P&eacute;rez</p>
@@ -539,222 +459,30 @@ const index = () => {
 															<p>Est. Yuri Ayala Sulca</p>
 															<p>Sra. Dora Mar&iacute;a Aguilar Ch&aacute;vez</p>
 														</div>
+														<p>
+															<strong>
+																COMITÉ DE CALIDAD DE LAS MAESTRÍAS DE LA UNIDAD DE POSGRADO
+															</strong>
+														</p>
+														<p>Presidente:</p>
+														<div className="pl-3">
+															<p>Mg. Patricia Gloria Woll Toso</p>
+														</div>
+														<p>Miembros:</p>
+														<div className="pl-3">
+															<p>Mg. Liliana Del Rosario Tapia Ugaz - Miembro</p>
+															<p>Dr. Manuel Jes&uacute;s Mar&iacute;n Bravo - Miembro</p>
+															<p>
+																Dr. Jos&eacute; Miguel P&eacute;rez Z&uacute;&ntilde;iga - Miembro
+															</p>
+															<p>Bach. Alejandro Paul Mendoza Huaman - Egresado</p>
+															<p>Bach. Valia Esther Herrera Alva - Estudiante</p>
+															<p>Sra. Dora Mar&iacute;a Aguilar Ch&aacute;vez - Administrativo</p>
+														</div>
 													</Col>
 												</Row>
 											</Container>
-											{/* <div className="divisor my-3"></div>
-											<Container>
-												<Row>
-													<Col md="9" className="pl-0">
-														<p className="title-dark">
-															Funciones del Vicedecanato de Investigación y Posgrado:
-														</p>
-														<ul className="chevron-green-dark">
-															<li>
-																Coordinar y organizar las actividades de investigación, y las
-																relacionadas con los productos de los estudios de investigación de
-																los institutos y de la unidad de posgrado.
-															</li>
-															<li>
-																Promover la incorporación y desarrollo de todos los docentes en el
-																campo de la investigación.
-															</li>
-															<li>
-																Promover la participación de los estudiantes de pregrado en las
-																actividades de investigación formativa.
-															</li>
-															<li>
-																Promover la publicación y difusión de los trabajos de investigación,
-																tesis, patentes, artículos y otros relacionados.
-															</li>
-															<li>
-																Coordinar y promover los programas de posgrado en todos los niveles.
-															</li>
-															<li>
-																Coordinar con los directores de la unidad de posgrado y de la unidad
-																de investigación las actividades en el ámbito de sus competencias en
-																cada facultad.
-															</li>
-															<li>Otras funciones que se establecen en la normativa respectiva.</li>
-														</ul>
-													</Col>
-													<Col md="3" className="pr-0">
-														<div className="contacto-wrapper mb-3">
-															<p className="title-dark mb-2">Contacto:</p>
-															<div className="grid-contacto">
-																<div>
-																	<img
-																		className="icon mr-2"
-																		src="/assets/img/iconos/telefono.svg"
-																		alt=""
-																	/>
-																</div>
-																<div>
-																	<span>+(51) 619 7000 anexo 1541</span>
-																</div>
-															</div>
-															<div className="grid-contacto">
-																<div>
-																	<img
-																		className="icon mr-2"
-																		src="/assets/img/iconos/telefono.svg"
-																		alt=""
-																	/>
-																</div>
-																<div>
-																	<span>Whatsapp: 998676628</span>
-																</div>
-															</div>
-															<div className="mb-0 grid-contacto">
-																<div>
-																	<img
-																		className="icon mr-2"
-																		src="/assets/img/iconos/correo.svg"
-																		alt=""
-																	/>
-																</div>
-																<div>
-																	<span>vdip.fcb@unmsm.edu.pe</span>
-																</div>
-															</div>
-															<p className="font-weight-bold mb-1">Horario de atención:</p>
-															<p className="mb-0">8:00 a.m. - 5:00 p.m.</p>
-														</div>
-														<div className="block-interest-links">
-															<p className="font-weight-bold mb-2">Información académica</p>
-															<ul className="nav flex-column">
-																<li className="mb-2">
-																	<Link href="/nosotros/consejo-de-facultad">
-																		<a>Consejo de facultad</a>
-																	</Link>
-																</li>
-																<li className="mb-2">
-																	<Link href="/nosotros/historia">
-																		<a>Historia</a>
-																	</Link>
-																</li>
-																<li className="mb-0">
-																	<Link href="/informacion-academica?recurso=informacion-de-docentes">
-																		<a>Plana docente</a>
-																	</Link>
-																</li>
-															</ul>
-														</div>
-													</Col>
-												</Row>
-											</Container> */}
 										</div>
-										{/* <div
-											className="mb-3 tab-pane fade"
-											id="v-pills-egresados"
-											role="tabpanel"
-											aria-labelledby="v-pills-egresados-tab"
-										>
-											<div className="divisor mt-0"></div>
-											<div className="grid-img-txt-2">
-												<div>
-													<img
-														className="w-100 img-fluid"
-														src="/assets/img/nosotros/autoridades/director-ciencias-biologicas.jpg"
-														alt=""
-													/>
-												</div>
-												<div>
-													<p className="title-dark">
-														Dr. José Cárdenas López | Directora de la E.P de Ciencias Biológicas
-													</p>
-													<p className="mb-2">
-														Biólogo Microbiólogo - Parasitólogo en la UNMSM y Doctor en Ciencias
-														mención Microbiología en la Universidad de Chile (2002) obtenido
-														mediante una beca de la Cooperación Alemana (DAAD), y Profesor Principal
-														de la Universidad Nacional Mayor de San Marcos en la Facultad de
-														Ciencias Biológicas, Departamento de Microbiología y Parasitología.
-													</p>
-													<p className="mb-2">
-														<span className="d-block d-md-inline mr-2 mb-3 mb-md-0">
-															Documentación:
-														</span>
-														<a
-															href="#"
-															className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-														>
-															<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-															<span className="">Resolución rectoral</span>
-														</a>
-														<a
-															href="#"
-															className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-														>
-															<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-															<span className="">Hoja de vida</span>
-														</a>
-													</p>
-													<p className="mb-0">
-														<span className="d-block d-md-inline mr-2 mb-3 mb-md-0">Contacto:</span>
-														<div className="d-block d-md-inline mb-3 mb-md-0">
-															<img
-																className="icon mr-2"
-																src="/assets/img/iconos/correo.svg"
-																alt=""
-															/>
-															<span className="text-break">laucastivas@unmsm.edu.pe</span>
-														</div>
-													</p>
-												</div>
-											</div>
-											<div className="divisor"></div>
-											<div className="grid-img-txt-2">
-												<div>
-													<img
-														className="w-100 img-fluid"
-														src="/assets/img/nosotros/autoridades/director-ciencias-biologicas.jpg"
-														alt=""
-													/>
-												</div>
-												<div>
-													<p className="title-dark">
-														Dr. José Cárdenas López | Directora de la E.P de Ciencias Biológicas
-													</p>
-													<p className="mb-2">
-														Biólogo Microbiólogo - Parasitólogo en la UNMSM y Doctor en Ciencias
-														mención Microbiología en la Universidad de Chile (2002) obtenido
-														mediante una beca de la Cooperación Alemana (DAAD), y Profesor Principal
-														de la Universidad Nacional Mayor de San Marcos en la Facultad de
-														Ciencias Biológicas, Departamento de Microbiología y Parasitología.
-													</p>
-													<p className="mb-2">
-														<span className="d-block d-md-inline mr-2 mb-3 mb-md-0">
-															Documentación:
-														</span>
-														<a
-															href="#"
-															className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-														>
-															<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-															<span className="">Resolución rectoral</span>
-														</a>
-														<a
-															href="#"
-															className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-														>
-															<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-															<span className="">Hoja de vida</span>
-														</a>
-													</p>
-													<p className="mb-0">
-														<span className="d-block d-md-inline mr-2 mb-3 mb-md-0">Contacto:</span>
-														<div className="d-block d-md-inline mb-3 mb-md-0">
-															<img
-																className="icon mr-2"
-																src="/assets/img/iconos/correo.svg"
-																alt=""
-															/>
-															<span className="text-break">laucastivas@unmsm.edu.pe</span>
-														</div>
-													</p>
-												</div>
-											</div>
-										</div> */}
 									</div>
 								</Col>
 								<Col md="1" lg="1"></Col>
