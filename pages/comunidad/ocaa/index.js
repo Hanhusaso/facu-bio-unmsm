@@ -338,7 +338,7 @@ const index = () => {
 															<p>Dr. Julio Solís Sarmiento</p>
 															<p>Ph.D Pedro Luis Castellanos Sánchez</p>
 															<p>Lic. Natividad Rodríguez Martínez</p>
-															<p>Srta. Camila Guti&eacute;rrez Cobos</p>
+															{/* <p>Srta. Camila Guti&eacute;rrez Cobos</p> */}
 														</div>
 														<p>
 															<strong>
