@@ -435,7 +435,7 @@ const index = () => {
 															<p>Dr. Enrique Mamani Zapana</p>
 															<p>Dra. Nora Vera Obando</p>
 															<p>Blgo. Augusto de la Cruz Calvo</p>
-															<p>Prof. Juan Jiménez</p>
+															{/* <p>Prof. Juan Jiménez</p> */}
 															{/* <p>Srta. Camila Guti&eacute;rrez Cobos</p> */}
 															<p>Sr. Mirko Lino Navarro</p>
 															<p>Sr. Aldo Flores P&eacute;rez</p>
