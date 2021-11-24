@@ -10,6 +10,9 @@ const useNovedades = () => {
 		fetch(url)
 			.then((resp) => resp.json())
 			.then((data) => setNovedades({ loading: false, error: null, data }));
+		return () => {
+			setNovedades({}); // This worked for me
+		};
 	}, [url]);
 
 	return novedades;

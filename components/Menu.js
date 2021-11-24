@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import Accordion from "react-bootstrap/Accordion";
 // import { IconName } from "react-icons/fa";
 import * as FaIcons from "react-icons/fa";
 import * as FiIcons from "react-icons/fi";
-import * as AiIcons from "react-icons/ai";
-import * as BsIcons from "react-icons/bs";
-import * as MdIcons from "react-icons/md";
 import * as Io5Icons from "react-icons/io5";
 import * as HiIcons from "react-icons/hi";
 import { motion } from "framer-motion";
