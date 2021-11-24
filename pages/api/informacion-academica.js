@@ -111,7 +111,7 @@ export async function getDocenteByIdInformacionAcademicaApi(
 			query = query + `&nombre_contains=${palabra}`;
 		}
 
-		const url = `${BASE_PATH}/docentes/?informacion_academica=${id_informacion_academica}&${limitItems}&${startItems}${query}`;
+		const url = `${BASE_PATH}/docentes/?informacion_academica=${id_informacion_academica}&${limitItems}&${startItems}${query}&_sort=nombre:ASC`;
 		const response = await fetch(url);
 		const result = await response.json();
 		return result;
