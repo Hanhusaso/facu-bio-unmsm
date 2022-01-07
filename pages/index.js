@@ -222,7 +222,7 @@ export default function Home() {
 									<Row>
 										<Col md={{ span: 11, offset: 1 }} className="p-0">
 											<div className="ml-0 ml-md-2 pad-extra-left">
-												<div className="d-flex mb-2 mb-md-0">
+												{/* <div className="d-flex mb-2 mb-md-0">
 													<h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
 													<motion.a
 														href="/eventos"
@@ -231,8 +231,8 @@ export default function Home() {
 													>
 														<img src="/assets/img/iconos/boton_vermas.png" />
 													</motion.a>
-												</div>
-												<div className="wrapper-just-events">
+												</div> */}
+												{/* <div className="wrapper-just-events">
 													<Container fluid className="px-0">
 														<Row>
 															{eventos[0] ? (
@@ -327,22 +327,9 @@ export default function Home() {
 															) : (
 																""
 															)}
-															{/* <Col>
-                              <p className="fecha-evento">
-                                <span>03 marzo</span>
-                                <span className="divisor-text mx-2"></span>
-                                <span>3 p.m.</span>
-                              </p>
-                              <p className="titulo-evento">
-                                Conferencia “Microrganismos de la selva central del Perú, un estudio de descubrimiento”
-                              </p>
-                              <p className="lugar-evento mb-0">
-                                Auditorio Tomas Romero-Facultad 3 piso
-                              </p>
-                            </Col> */}
 														</Row>
 													</Container>
-												</div>
+												</div> */}
 											</div>
 										</Col>
 									</Row>
