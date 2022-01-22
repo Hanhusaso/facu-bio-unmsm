@@ -174,14 +174,14 @@ const docentes = () => {
 													<h3 className="title">{docente.nombre}</h3>
 													<p className="mb-2">
 														<span className="mr-2">Documentación:</span>
-														<a
+														{/* <a
 															href={docente.link_resolucion_rectoral}
 															target="_blank"
 															className="d-inline-block color-inherit mr-3"
 														>
 															<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
 															<span className="">Resolución rectoral</span>
-														</a>
+														</a> */}
 														<a
 															href={docente.link_hoja_vida}
 															target="_blank"
