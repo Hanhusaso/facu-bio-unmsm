@@ -120,6 +120,25 @@ export async function getDocenteByIdInformacionAcademicaApi(
 		return [];
 	}
 }
+export async function getDocentesTotal(limit, start, palabra) {
+	try {
+		const limitItems = `_limit=${limit}`;
+		const startItems = `_start=${start}`;
+		var query = "";
+
+		if (palabra != "") {
+			// query = query + `&_where[_or][0][nombre_contains]=${palabra}&_where[_or][1][fk_centro_de_estudios.centro_contains]=${palabra}`
+			query = query + `&nombre_contains=${palabra}`;
+		}
+		const url = `${BASE_PATH}/docentes?${limitItems}&${startItems}${query}&_sort=nombre:ASC`;
+		const response = await fetch(url);
+		const result = await response.json();
+		return result;
+	} catch (error) {
+		console.log(error);
+		return [];
+	}
+}
 
 export async function countDocenteByIdInformacionAcademicaApi(id_informacion_academica, palabra) {
 	try {
@@ -131,6 +150,23 @@ export async function countDocenteByIdInformacionAcademicaApi(id_informacion_aca
 		}
 
 		const url = `${BASE_PATH}/docentes/count?informacion_academica=${id_informacion_academica}${query}`;
+		const response = await fetch(url);
+		const result = await response.json();
+		return result;
+	} catch (error) {
+		console.log(error);
+		return [];
+	}
+}
+export async function countDocentesTotal(palabra) {
+	try {
+		var query = "";
+
+		if (palabra != "") {
+			// query = query + `&_where[_or][0][nombre_contains]=${palabra}&_where[_or][1][fk_centro_de_estudios.centro_contains]=${palabra}`
+			query = query + `nombre_contains=${palabra}`;
+		}
+		const url = `${BASE_PATH}/docentes/count?${query}`;
 		const response = await fetch(url);
 		const result = await response.json();
 		return result;

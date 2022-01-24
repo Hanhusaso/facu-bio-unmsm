@@ -78,15 +78,15 @@ export default function InformacionAcademica() {
 				j("#recurso-docentes").prop("checked", true);
 				setRecursos(["docentes"]);
 				setRecurso(Math.random());
-			}else if (query.recurso === "syllabus") {
+			} else if (query.recurso === "syllabus") {
 				j("#recurso-syllabus").prop("checked", true);
 				setRecursos(["syllabus"]);
 				setRecurso(Math.random());
-			}else if(query.recurso === "horarios"){
+			} else if (query.recurso === "horarios") {
 				j("#recurso-horarios").prop("checked", true);
 				setRecursos(["horarios"]);
 				setRecurso(Math.random());
-			}else if(query.recurso === "malla-curricular"){
+			} else if (query.recurso === "malla-curricular") {
 				j("#recurso-malla").prop("checked", true);
 				setRecursos(["malla-curricular"]);
 				setRecurso(Math.random());
@@ -269,16 +269,28 @@ export default function InformacionAcademica() {
 									) : !sinResultados ? (
 										<div>
 											<div className="mb-2">
-												{informacionesAcademicas.length}{" "}
-												{informacionesAcademicas.length == 1 ? "resultado" : "resultados"}
+												{recursos.includes("docentes")
+													? informacionesAcademicas.length + 1
+													: informacionesAcademicas.length}{" "}
+												{informacionesAcademicas.length === 1 ? "resultado" : "resultados"}
 											</div>
 											<div className="divisor my-3"></div>
+											{recursos.includes("docentes") && (
+												<div className="block-divider mb-3">
+													<Link href="/informacion-academica/docentes/?nombre=lista-completa-de-docentes-de-la-facultad">
+														<a className="title">Lista completa de docentes de la facultad</a>
+													</Link>
+													<p className="mb-3">
+														Encuentra el nombre, hoja de vida, enlaces de información de
+														investigación y contacto de los docentes de la facultad
+													</p>
+												</div>
+											)}
 											{informacionesAcademicas.map((informacion_academica, index) => (
 												<div key={index} className="block-divider mb-3">
-													{/* <Link href={`/informacion-academica/${informacion_academica.recurso == 'horarios' ? 'horarios' : informacion_academica.recurso == 'malla curricular' ? 'plan' : informacion_academica.recurso == 'syllabus' ? 'syllabus' : informacion_academica.recurso == 'docentes' ? 'docentes' : ''}/?nombre=${informacion_academica.url_nombre}`}> */}
 													<Link
 														href={
-															informacion_academica.recurso == "docentes"
+															informacion_academica.recurso === "docentes"
 																? `/informacion-academica/docentes/?nombre=${informacion_academica.url_nombre}`
 																: informacion_academica.link != "" &&
 																  informacion_academica.link != null
@@ -287,7 +299,7 @@ export default function InformacionAcademica() {
 														}
 													>
 														<a
-															target={informacion_academica.recurso == "docentes" ? "" : "_blank"}
+															target={informacion_academica.recurso === "docentes" ? "" : "_blank"}
 															className="title"
 														>
 															{informacion_academica.nombre}
@@ -295,18 +307,6 @@ export default function InformacionAcademica() {
 													</Link>
 													<p className="mb-3">{informacion_academica.descripcion}</p>
 												</div>
-												// <div className="block-divider mb-3">
-												//     <Link href={`/tramites-y-procesos/tramite-proceso/?nombre=${tramites_procesos.url_tramite}`}>
-												//         <a className="title">{tramites_procesos.nombre_tramite}
-												//             {tramites_procesos.dirigido_a.split(" || ").map(dirigido_a => (
-												//                 <span style={{color: '#56756B'}}> | {capitalizarPrimeraLetra(dirigido_a)}</span>
-												//             ))}
-												//         </a>
-												//     </Link>
-												//     <p className="mb-3">
-												//         {tramites_procesos.descripcion}
-												//     </p>
-												// </div>
 											))}
 										</div>
 									) : (
