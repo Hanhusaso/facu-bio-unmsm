@@ -11,6 +11,8 @@ import {
 	getDocenteByIdInformacionAcademicaApi,
 	getInformacionAcademicaByUrlApi,
 	countDocenteByIdInformacionAcademicaApi,
+	countDocentesTotal,
+	getDocentesTotal,
 } from "../../api/informacion-academica";
 import NoticiasExtra from "../../../components/NoticiasExtra";
 import * as HiIcons from "react-icons/hi";
@@ -47,7 +49,12 @@ const docentes = () => {
 		if (query.nombre == undefined) {
 			return;
 		}
+		if (query.nombre === "lista-completa-de-docentes-de-la-facultad") {
+			setInformacionAcademica({ nombre: "Todos los profes" });
+			return;
+		}
 		(async () => {
+			console.log("Segunda función autoejectubale");
 			const response = await getInformacionAcademicaByUrlApi(currentUrlInformacionAcademica);
 			if (size(response) == 0) {
 				setLoading(false);
@@ -62,7 +69,35 @@ const docentes = () => {
 		if (!query || !informacionAcademica) {
 			return;
 		}
+		if (query.nombre === "lista-completa-de-docentes-de-la-facultad") {
+			(async () => {
+				const response1 = await countDocentesTotal(palabra);
+				console.log("countDocentes: ", response1);
+				setCountDocentes(response1);
+				setPaginador("");
+				setPaginador(
+					<Pagination
+						defaultActivePage={numberPage}
+						totalPages={Math.ceil(response1 / 10.0)}
+						onPageChange={onPageChange}
+					/>
+				);
+				setLoading(true);
+				setSinResultados(false);
+				if (response1 != 0) {
+					const response2 = await getDocentesTotal(limitPerPage, page, palabra);
+					setDocentes(response2);
+					setLoading(false);
+				} else {
+					setLoading(false);
+					setSinResultados(true);
+				}
+				window.scrollTo(0, 0);
+			})();
+			return;
+		}
 		(async () => {
+			console.log("Tercera función autoejectubale");
 			const response1 = await countDocenteByIdInformacionAcademicaApi(
 				informacionAcademica.id,
 				palabra
