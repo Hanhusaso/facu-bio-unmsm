@@ -50,7 +50,7 @@ const docentes = () => {
 			return;
 		}
 		if (query.nombre === "lista-completa-de-docentes-de-la-facultad") {
-			setInformacionAcademica({ nombre: "Todos los profes" });
+			setInformacionAcademica({ nombre: "Lista completa de docentes de la facultad" });
 			return;
 		}
 		(async () => {
