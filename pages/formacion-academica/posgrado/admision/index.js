@@ -580,7 +580,74 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-inversion-tab"
 										>
-											<p>Inversión</p>
+											<h4>Pago deasdasd...</h4>
+											<div className="table-responsive admision-posgrado-tablas">
+												<table className="striped w-100">
+													<tbody>
+														<tr style={{ borderTop: "1px solid #56756b40" }}>
+															<td></td>
+															<td>Estudiantes de UNMSM</td>
+															<td>oTRAS universidades</td>
+														</tr>
+														<tr>
+															<td style={{ backgroundColor: "#d2ede6" }}>Maestría</td>
+															<td style={{ backgroundColor: "#ffffff" }}>
+																S/.445.00
+																<br />
+																ransaciondsdnnnnnnn
+															</td>
+															<td style={{ backgroundColor: "#ffffff" }}>
+																S/.445.00
+																<br />
+																ransaciondsdnnnnnnn
+															</td>
+														</tr>
+														<tr style={{ borderBottom: "1px solid #56756b40" }}>
+															<td rowSpan={2}>Doctorado</td>
+															<td style={{ backgroundColor: "#ffffff" }}>
+																S/.445.00
+																<br />
+																ransaciondsdnnnnnnn
+															</td>
+															<td style={{ backgroundColor: "#ffffff" }}>
+																S/.445.00
+																<br />
+																ransaciondsdnnnnnnn
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<h4 className="mt-4">Inversión por estudios de Posgrado</h4>
+											<div className="table-responsive admision-posgrado-tablas">
+												<table className="striped w-100">
+													<tbody>
+														<tr style={{ borderTop: "1px solid #56756b40" }}>
+															<td>Maestría</td>
+															<td>Estudiantes de UNMSM</td>
+															<td>oTRAS universidades</td>
+															<td>oTRAS universidades</td>
+														</tr>
+														<tr style={{ borderTop: "1px solid #56756b40" }}>
+															<td>Maestría</td>
+															<td>Estudiantes de UNMSM</td>
+															<td>oTRAS universidades</td>
+															<td>oTRAS universidades</td>
+														</tr>
+														<tr
+															style={{
+																borderBottom: "1px solid #56756b40",
+																backgroundColor: "#ffffff",
+															}}
+														>
+															<td>Maestría</td>
+															<td>Estudiantes de UNMSM</td>
+															<td>oTRAS universidades</td>
+															<td>oTRAS universidades</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
@@ -588,7 +655,50 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-inversion-tab"
 										>
-											<p>Inscripción</p>
+											<p>
+												Inscripción &nbsp;
+												<a href="http://posgrado.unmsm.edu.pe" target="_blank">
+													http://posgrado.unmsm.edu.pe
+												</a>
+											</p>
+											<p>pago...</p>
+											<div className="table-responsive admision-posgrado-tablas">
+												<table className="striped w-100">
+													<tbody>
+														<tr style={{ borderTop: "1px solid #56756b40" }}>
+															<td></td>
+															<td>Estudiantes de UNMSM</td>
+															<td>oTRAS universidades</td>
+														</tr>
+														<tr>
+															<td style={{ backgroundColor: "#d2ede6" }}>Maestría</td>
+															<td style={{ backgroundColor: "#ffffff" }}>
+																S/.445.00
+																<br />
+																ransaciondsdnnnnnnn
+															</td>
+															<td style={{ backgroundColor: "#ffffff" }}>
+																S/.445.00
+																<br />
+																ransaciondsdnnnnnnn
+															</td>
+														</tr>
+														<tr style={{ borderBottom: "1px solid #56756b40" }}>
+															<td rowSpan={2}>Doctorado</td>
+															<td style={{ backgroundColor: "#ffffff" }}>
+																S/.445.00
+																<br />
+																ransaciondsdnnnnnnn
+															</td>
+															<td style={{ backgroundColor: "#ffffff" }}>
+																S/.445.00
+																<br />
+																ransaciondsdnnnnnnn
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
 										</div>
 									</div>
 									{width < 768 && (

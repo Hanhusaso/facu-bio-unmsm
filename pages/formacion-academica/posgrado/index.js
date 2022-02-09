@@ -67,13 +67,11 @@ const posgrado = () => {
 								<div className="text-white mr-5">
 									<h1 className="font-weight-bold">ADMISIÓN 2022-I</h1>
 									<p>Inscripciones: Del 1 de febrero al 18 de marzo</p>
-									<a
-										className="btn-green-bright"
-										href="https://cybertesis.unmsm.edu.pe/"
-										target="_blank"
-									>
-										Mas información
-									</a>
+									<Link href="/formacion-academica/posgrado/admision">
+										<a className="btn-green-bright" target="_blank">
+											Mas información
+										</a>
+									</Link>
 								</div>
 								<img
 									src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/cintillo_posgrado_74ca83b320.png"
