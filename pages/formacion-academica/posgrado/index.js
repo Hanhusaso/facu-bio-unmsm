@@ -67,7 +67,7 @@ const posgrado = () => {
 								<div className="text-white mr-5">
 									<h1 className="font-weight-bold">ADMISIÓN 2022-I</h1>
 									<p>Inscripciones: Del 1 de febrero al 18 de marzo</p>
-									<Link href="/formacion-academica/posgrado/admision">
+									<Link href="/posgrado-admision">
 										<a className="btn-green-bright" target="_blank">
 											Mas información
 										</a>
