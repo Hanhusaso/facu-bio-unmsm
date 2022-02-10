@@ -225,3 +225,30 @@
 		}
 	}
 }
+.admision-posgrado-tablas {
+	table {
+		tbody {
+			border-right: 1px solid #56756b40;
+			border-left: 1px solid #56756b40;
+			.bg-verdeClaro {
+				td {
+					background-color: #ddf2eb;
+				}
+			}
+			.bg-blancoTabla {
+				td {
+					background-color: #ffffff;
+				}
+			}
+			tr {
+				td {
+					border-right: 1px solid #56756b40;
+					border-left: 1px solid #56756b40;
+				}
+			}
+		}
+	}
+}
+.table-responsive {
+	overflow-x: visible;
+}
