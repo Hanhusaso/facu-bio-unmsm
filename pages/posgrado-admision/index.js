@@ -95,7 +95,7 @@ const index = () => {
 					<div className="mb-4">
 						<img
 							className="w-100"
-							src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/posgrado_admision_31916edf9a.png"
+							src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/posgrado_admision_2_f0fa5dc1bb.png"
 							alt=""
 						/>
 					</div>
