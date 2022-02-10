@@ -158,7 +158,7 @@ const index = () => {
 												<span>Presentación</span>
 											</a>
 											<Link href="/posgrado-admision">
-												<a className="tab d-flex">
+												<a className="tab d-flex" target="_blank">
 													<div>
 														<svg
 															width="23"
