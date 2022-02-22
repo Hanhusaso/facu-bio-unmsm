@@ -252,3 +252,11 @@
 .table-responsive {
 	overflow-x: visible;
 }
+.admision-posgrado {
+	.principal-title {
+		@include media-breakpoint-down(xs) {
+			font-size: 20px;
+			display: block;
+		}
+	}
+}

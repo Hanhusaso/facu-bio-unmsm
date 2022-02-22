@@ -58,14 +58,14 @@ const posgrado = () => {
 								<Col sm="1"></Col>
 							</Row>
 						</Container>
-						<div className="w-100 position-relative mb-5 ">
+						<div className="w-100 position-relative mb-5 admision-posgrado">
 							<img
 								className="w-100 h-100 imagen-banner-posgrado"
 								src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/fondo_cintillo_321ab31838.png"
 							/>
 							<div className=" h-100 d-flex justify-content-center align-items-center position-relative">
-								<div className="text-white mr-5">
-									<h1 className="font-weight-bold">ADMISIÓN 2022-I</h1>
+								<div className="text-white mr-md-5 mr-0 mt-3 mb-3 mt-md-0 mb-md-0">
+									<h1 className="font-weight-bold principal-title">ADMISIÓN 2022-I</h1>
 									<p>Inscripciones: Del 1 de febrero al 18 de marzo</p>
 									<Link href="/posgrado-admision">
 										<a className="btn-green-bright">Mas información</a>
@@ -73,7 +73,7 @@ const posgrado = () => {
 								</div>
 								<img
 									src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/cintillo_posgrado_74ca83b320.png"
-									className=" h-100"
+									className="h-100 d-none d-md-block d-lg-block"
 								/>
 							</div>
 						</div>
