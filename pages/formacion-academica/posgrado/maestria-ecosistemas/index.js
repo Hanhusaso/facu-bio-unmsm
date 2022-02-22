@@ -400,14 +400,14 @@ const index = () => {
 													<h3 className="title">{docente.nombre}</h3>
 													<p className="mb-2">
 														<span className="mr-2">Documentación:</span>
-														<a
+														{/* <a
 															href={docente.link_resolucion_rectoral}
 															target="_blank"
 															className="d-inline-block color-inherit mr-3"
 														>
 															<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
 															<span className="">Resolución rectoral</span>
-														</a>
+														</a> */}
 														<a
 															href={docente.link_hoja_vida}
 															target="_blank"
@@ -417,7 +417,7 @@ const index = () => {
 															<span className="">Hoja de vida</span>
 														</a>
 													</p>
-													<p className="mb-2">
+													{/* <p className="mb-2">
 														<span className="mr-2">Investigación:</span>
 														<a
 															href={docente.link_rais}
@@ -435,7 +435,7 @@ const index = () => {
 															<span className="mr-1">SIIS</span>
 															<HiIcons.HiExternalLink className="mb-1 icon" />
 														</a>
-													</p>
+													</p> */}
 													<p className="mb-2">
 														<span className="mr-2">Contacto:</span>
 														<img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt="" />
