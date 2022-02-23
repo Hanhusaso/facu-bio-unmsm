@@ -159,7 +159,7 @@ export default function Home() {
 
 	return (
 		<div className="wrapper-pre-loader-page">
-			<Modal show={show} onHide={handleClose}>
+			<Modal show={show} onHide={handleClose} centered>
 				<Modal.Body>
 					<img
 						src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/1080x1920_6_6fce5678c8.png"
