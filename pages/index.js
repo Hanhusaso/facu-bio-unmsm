@@ -6,7 +6,7 @@ import LoaderPage from "../components/LoaderPage";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import SocialMedia from "../components/SocialMedia";
-import { Row, Col, Container, Carousel } from "react-bootstrap";
+import { Row, Col, Container, Carousel, Modal } from "react-bootstrap";
 import ClampLines from "react-clamp-lines";
 import { getNoticiasHomeApi, getNoticiasSubcategoriasApi } from "./api/noticias";
 import { getEventosHomeApi } from "./api/eventos";
@@ -152,9 +152,21 @@ export default function Home() {
 			setProyectos(response_proyectos);
 		})();
 	}, []);
+	const [show, setShow] = useState(true);
+
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 
 	return (
 		<div className="wrapper-pre-loader-page">
+			<Modal show={show} onHide={handleClose}>
+				<Modal.Body>
+					<img
+						src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/1080x1920_6_6fce5678c8.png"
+						className="w-100"
+					/>
+				</Modal.Body>
+			</Modal>
 			{!novedadesLoading && !loadingPage ? (
 				<div>
 					<Head>
