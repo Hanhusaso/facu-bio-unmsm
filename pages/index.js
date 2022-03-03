@@ -7,8 +7,6 @@ import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import SocialMedia from "../components/SocialMedia";
 import { Row, Col, Container, Carousel, Modal } from "react-bootstrap";
-import ClampLines from "react-clamp-lines";
-import { getNoticiasHomeApi, getNoticiasSubcategoriasApi } from "./api/noticias";
 import { getEventosHomeApi } from "./api/eventos";
 import { getProyectosHomeApi } from "./api/proyectos";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
