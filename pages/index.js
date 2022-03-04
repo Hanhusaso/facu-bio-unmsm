@@ -242,7 +242,7 @@ export default function Home() {
 														<img src="/assets/img/iconos/boton_vermas.png" />
 													</motion.a>
 												</div>
-												<div className="wrapper-just-events">
+												{/* <div className="wrapper-just-events">
 													<Container fluid className="px-0">
 														<Row>
 															{eventos[0] ? (
@@ -339,7 +339,7 @@ export default function Home() {
 															)}
 														</Row>
 													</Container>
-												</div>
+												</div> */}
 											</div>
 										</Col>
 									</Row>
