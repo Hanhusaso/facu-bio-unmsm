@@ -150,21 +150,23 @@ export default function Home() {
 			setProyectos(response_proyectos);
 		})();
 	}, []);
-	const [show, setShow] = useState(true);
-
-	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
+	//********************************************** */
+	// Estados para controlar un modal que se carga inmediatamente despues de cargar la pagina
+	// const [show, setShow] = useState(true);
+	// const handleClose = () => setShow(false);
+	// const handleShow = () => setShow(true);
+	//********************************************** */
 
 	return (
 		<div className="wrapper-pre-loader-page">
-			<Modal show={show} onHide={handleClose} centered>
+			{/* <Modal show={show} onHide={handleClose} centered>
 				<Modal.Body>
 					<img
 						src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/1080x1920_6_6fce5678c8.png"
 						className="w-100"
 					/>
 				</Modal.Body>
-			</Modal>
+			</Modal> */}
 			{!novedadesLoading && !loadingPage ? (
 				<div>
 					<Head>
@@ -232,7 +234,7 @@ export default function Home() {
 									<Row>
 										<Col md={{ span: 11, offset: 1 }} className="p-0">
 											<div className="ml-0 ml-md-2 pad-extra-left">
-												<div className="d-flex mb-2 mb-md-0">
+												{/* <div className="d-flex mb-2 mb-md-0">
 													<h2 className="subtitle-green mr-1 mb-0">Eventos</h2>
 													<motion.a
 														href="/eventos"
@@ -241,7 +243,7 @@ export default function Home() {
 													>
 														<img src="/assets/img/iconos/boton_vermas.png" />
 													</motion.a>
-												</div>
+												</div> */}
 												{/* <div className="wrapper-just-events">
 													<Container fluid className="px-0">
 														<Row>
@@ -345,6 +347,27 @@ export default function Home() {
 									</Row>
 								</Container>
 							</motion.div>
+							<div className="position-absolute" style={{ right: 0, left: 0, bottom: 0 }}>
+								<div className="w-100 position-relative admision-posgrado">
+									<img
+										className="w-100 h-100 imagen-banner-posgrado"
+										src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/fondo_cintillo_321ab31838.png"
+									/>
+									<div className=" h-100 d-flex justify-content-center align-items-center position-relative">
+										<div className="text-white mr-md-5 mr-0 mt-3 mb-3 mt-md-0 mb-md-0">
+											<h1 className="font-weight-bold principal-title">ADMISIÓN 2022-I</h1>
+											<p>Inscripciones: Del 1 de febrero al 18 de marzo</p>
+											<Link href="/posgrado-admision">
+												<a className="btn-green-bright">Mas información</a>
+											</Link>
+										</div>
+										<img
+											src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/cintillo_posgrado_74ca83b320.png"
+											className="h-100 d-none d-md-block d-lg-block"
+										/>
+									</div>
+								</div>
+							</div>
 						</section>
 						<div className={width >= 768 ? "bg-green-png" : ""}>
 							<section className="section-noticias pt-2 pt-md-5 mb-2 mb-md-5">
