@@ -355,7 +355,7 @@ export default function Home() {
 									/>
 									<div className=" h-100 d-flex justify-content-center align-items-center position-relative">
 										<div className="text-white mr-md-5 mr-0 mt-3 mb-3 mt-md-0 mb-md-0">
-											<h1 className="font-weight-bold principal-title">ADMISIÓN 2022-I</h1>
+											<h1 className="font-weight-bold principal-title">ADMISIÓN POSGRADO 2022-I</h1>
 											<p>Inscripciones: Del 1 de febrero al 18 de marzo</p>
 											<Link href="/posgrado-admision">
 												<a className="btn-green-bright">Mas información</a>
