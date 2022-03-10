@@ -6,6 +6,7 @@ import Link from "next/link";
 import { getDocenteByIdInformacionAcademicaApi } from "../api/formacion-academica";
 
 import { useWindowSize } from "../../utils/useWindowSize";
+import { FiAlertCircle } from "react-icons/fi";
 
 const index = () => {
 	const { width, height } = useWindowSize();
@@ -134,6 +135,20 @@ const index = () => {
 													</svg>
 												</div>
 												<span>Cronograma</span>
+											</a>
+											<a
+												className="tab d-flex"
+												id="v-pills-recomendaciones-tab"
+												data-toggle="pill"
+												href="#v-pills-recomendaciones"
+												role="tab"
+												aria-controls="v-pills-recomendaciones"
+												aria-selected="false"
+											>
+												<div style={{ display: "flex" }} className="mr-3">
+													<FiAlertCircle style={{ fontSize: "24px" }} />
+												</div>
+												<span>Recomendaciones</span>
 											</a>
 											<a
 												className="tab d-flex"
@@ -424,6 +439,60 @@ const index = () => {
 													</div>
 												</Tab>
 											</Tabs>
+										</div>
+										<div
+											className="mb-3 tab-pane fade"
+											id="v-pills-recomendaciones"
+											role="tabpanel"
+											aria-labelledby="v-pills-recomendaciones-tab"
+										>
+											<p>
+												<strong>
+													RECOMENDACIONES PARA LOS POSTULANTES (DOCTORADO Y MAESTR&Iacute;AS) AL
+													PROCESO DE ADMISI&Oacute;N 2022-I
+												</strong>
+											</p>
+											<ol>
+												<li aria-level="1">
+													Como parte del proceso de postulaci&oacute;n, el estudiante debe
+													informarse de las posibilidades de financiamiento de la tesis a
+													desarrollar en el posgrado. Una de estas posibilidades es integrarse a
+													algunos de los grupos de investigaci&oacute;n (GI) de la FCB o facultades
+													afines, y participar de los concursos internos de financiamiento de
+													proyectos de investigaci&oacute;n para los GI. La informaci&oacute;n de
+													los grupos de investigaci&oacute;n de la FCB puede ser revisada en:
+													<a href="https://vrip.unmsm.edu.pe/biologia/" target="_blank">
+														https://vrip.unmsm.edu.pe/biologia/
+													</a>
+												</li>
+												<li aria-level="1">
+													El postulante debe evidenciar el contacto previo con un potencial asesor
+													para su proyecto de tesis. Este aspecto ser&aacute; evaluado en el proceso
+													de postulaci&oacute;n durante la presentaci&oacute;n de su proyecto de
+													investigaci&oacute;n (postulantes al doctorado) o en su propuesta de
+													proyecto de investigaci&oacute;n (una versi&oacute;n resumida para los
+													postulantes a las maestr&iacute;as). Este potencial asesor puede ser un
+													docente de la FCB o de la UNMSM preferentemente, o un investigador
+													reconocido, con trayectoria en el tema investigaci&oacute;n de la tesis, y
+													que est&eacute; acreditado como investigador RENACYT. Informaci&oacute;n
+													de la plana docente del doctorado y de cada maestr&iacute;a de la FCB la
+													pueden encontrar aqu&iacute;:
+													<a
+														href="https://biologia.unmsm.edu.pe/formacion-academica/posgrado"
+														target="_blank"
+													>
+														https://biologia.unmsm.edu.pe/formacion-academica/posgrado
+													</a>
+												</li>
+												<li aria-level="1">
+													Se valorar&aacute; positivamente que los postulantes puedan haber
+													realizado con antelaci&oacute;n el contacto con investigadores y jefes de
+													laboratorio de la FCB, de la UNMSM o de otras instituciones que
+													podr&iacute;an proveerles el financiamiento para su investigaci&oacute;n y
+													finalmente que puedan haber elaborado temas o preguntas de
+													investigaci&oacute;n para su postulaci&oacute;n.
+												</li>
+											</ol>
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
