@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import Layout from "../../../components/Layout";
+import React, { useEffect } from 'react';
+import Layout from '../../../components/Layout';
 // import Tabs from "../../../components/Tabs/vanillaTabs"
-import { Row, Col, Container, Breadcrumb } from "react-bootstrap";
-import Link from "next/link";
-import * as FaIcons from "react-icons/fa";
+import { Row, Col, Container, Breadcrumb } from 'react-bootstrap';
+import Link from 'next/link';
+import * as FaIcons from 'react-icons/fa';
 
 const index = () => {
 	return (
@@ -31,7 +31,8 @@ const index = () => {
                                             </Link>
                                         </li> */}
 										<Breadcrumb.Item active>
-											Nosotros: Autoridades y órganos de gobierno
+											Nosotros: Autoridades y órganos de
+											gobierno
 										</Breadcrumb.Item>
 									</Breadcrumb>
 								</Col>
@@ -44,7 +45,9 @@ const index = () => {
 							<Row>
 								<Col md="1"></Col>
 								<Col>
-									<div className="title-page text-center">Autoridades y órganos de gobierno</div>
+									<div className="title-page text-center">
+										Autoridades y órganos de gobierno
+									</div>
 								</Col>
 								<Col md="1"></Col>
 							</Row>
@@ -144,7 +147,10 @@ const index = () => {
 														<path d="M11.2852 8.49805C10.5328 8.49805 9.82969 8.78867 9.29766 9.32305C8.76563 9.85508 8.47266 10.5582 8.47266 11.3105C8.47266 12.0629 8.76563 12.766 9.29766 13.298C9.82969 13.8277 10.5352 14.123 11.2852 14.123C12.0352 14.123 12.7406 13.8301 13.2727 13.298C13.8023 12.766 14.0977 12.0605 14.0977 11.3105C14.0977 10.5605 13.8047 9.85508 13.2727 9.32305C12.7406 8.78867 12.0375 8.49805 11.2852 8.49805Z" />
 													</svg>
 												</div>
-												<span>Vicedecanato Académico de Pregrado</span>
+												<span>
+													Vicedecanato Académico de
+													Pregrado
+												</span>
 											</a>
 											<a
 												className="tab d-flex"
@@ -170,7 +176,10 @@ const index = () => {
 														<path d="M3.75586 16.7283C2.7616 16.7273 1.80835 16.3319 1.10531 15.6288C0.402259 14.9258 0.00685214 13.9725 0.00585938 12.9783V4.72827H1.50586V12.9783C1.50586 13.575 1.74291 14.1473 2.16487 14.5693C2.58683 14.9912 3.15912 15.2283 3.75586 15.2283C4.3526 15.2283 4.92489 14.9912 5.34685 14.5693C5.76881 14.1473 6.00586 13.575 6.00586 12.9783V6.22827C6.00586 6.02936 5.92684 5.83859 5.78619 5.69794C5.64554 5.55729 5.45477 5.47827 5.25586 5.47827C5.05695 5.47827 4.86618 5.55729 4.72553 5.69794C4.58488 5.83859 4.50586 6.02936 4.50586 6.22827V13.7283H3.00586V6.22827C3.00586 5.63153 3.24291 5.05924 3.66487 4.63728C4.08683 4.21532 4.65912 3.97827 5.25586 3.97827C5.8526 3.97827 6.42489 4.21532 6.84685 4.63728C7.26881 5.05924 7.50586 5.63153 7.50586 6.22827V12.9783C7.50487 13.9725 7.10946 14.9258 6.40641 15.6288C5.70337 16.3319 4.75012 16.7273 3.75586 16.7283Z" />
 													</svg>
 												</div>
-												<span>Vicedecanato de Investigación y Posgrado</span>
+												<span>
+													Vicedecanato de
+													Investigación y Posgrado
+												</span>
 											</a>
 											{/* <a
 												className="tab d-flex"
@@ -202,7 +211,10 @@ const index = () => {
 									</div>
 								</Col>
 								<Col md="7" lg="8">
-									<div className="mb-3 tab-content" id="v-pills-tabContent">
+									<div
+										className="mb-3 tab-content"
+										id="v-pills-tabContent"
+									>
 										<div
 											className="mb-3 tab-pane fade show active"
 											id="v-pills-presentacion"
@@ -211,46 +223,148 @@ const index = () => {
 										>
 											<Container>
 												<Row>
-													<Col md="9" className="pl-0">
+													<Col
+														md="9"
+														className="pl-0"
+													>
 														<p>
-															<span className="title-dark">Dr. Pablo Sergio Ramírez Roca</span>
+															<span className="title-dark">
+																Dr. Pablo Sergio
+																Ramírez Roca
+															</span>
 															<span className="divisor-text-green mx-2"></span>
-															<span className="title">Decano</span>
+															<span className="title">
+																Decano
+															</span>
 														</p>
-														<p style={{ textAlign: "justify" }}>
+														<p
+															style={{
+																textAlign:
+																	'justify',
+															}}
+														>
 															<p>
-																Bi&oacute;logo Microbi&oacute;logo - Parasit&oacute;logo por la
-																Universidad Nacional Mayor de San Marcos (UNMSM) y Doctor en
-																Ciencias menci&oacute;n Microbiolog&iacute;a en la Universidad de
-																Chile (2002) obtenido mediante una beca de la Cooperaci&oacute;n
-																Alemana (DAAD), y Profesor Principal de la UNMSM en la Facultad de
-																Ciencias Biol&oacute;gicas, Departamento de Microbiolog&iacute;a y
+																Bi&oacute;logo
+																Microbi&oacute;logo
+																-
+																Parasit&oacute;logo
+																por la
+																Universidad
+																Nacional Mayor
+																de San Marcos
+																(UNMSM) y Doctor
+																en Ciencias
+																menci&oacute;n
+																Microbiolog&iacute;a
+																en la
+																Universidad de
+																Chile (2002)
+																obtenido
+																mediante una
+																beca de la
+																Cooperaci&oacute;n
+																Alemana (DAAD),
+																y Profesor
+																Principal de la
+																UNMSM en la
+																Facultad de
+																Ciencias
+																Biol&oacute;gicas,
+																Departamento de
+																Microbiolog&iacute;a
+																y
 																Parasitolog&iacute;a.
 															</p>
 															<p>
-																Sus investigaciones se orientan al estudio de microorganismos
-																extrem&oacute;filos que participan en procesos de
-																biolixiviaci&oacute;n de minerales de inter&eacute;s comercial,
-																as&iacute; como prote&iacute;nas recombinantes, resistencia metales
-																en bacterias y levaduras, gen&oacute;mica y prote&oacute;mica
-																estructural de microorganismos oxidadores de hierro y azufre.
-																Asimismo, en biodegradaci&oacute;n de xenobi&oacute;ticos tales como
-																PETN y TNT, y biodegradaci&oacute;n de colorantes textiles, entre
+																Sus
+																investigaciones
+																se orientan al
+																estudio de
+																microorganismos
+																extrem&oacute;filos
+																que participan
+																en procesos de
+																biolixiviaci&oacute;n
+																de minerales de
+																inter&eacute;s
+																comercial,
+																as&iacute; como
+																prote&iacute;nas
+																recombinantes,
+																resistencia
+																metales en
+																bacterias y
+																levaduras,
+																gen&oacute;mica
+																y
+																prote&oacute;mica
+																estructural de
+																microorganismos
+																oxidadores de
+																hierro y azufre.
+																Asimismo, en
+																biodegradaci&oacute;n
+																de
+																xenobi&oacute;ticos
+																tales como PETN
+																y TNT, y
+																biodegradaci&oacute;n
+																de colorantes
+																textiles, entre
 																otros.
 															</p>
 															<p>
-																Ha recibido fondos concursables PROCyT, Coordinador general de
-																proyecto FINCYT, FIDECOM, FINCyT-PITEI, Cienciactiva 2017, Fondecyt
-																y varios fondos concursables de la UNMSM.
+																Ha recibido
+																fondos
+																concursables
+																PROCyT,
+																Coordinador
+																general de
+																proyecto FINCYT,
+																FIDECOM,
+																FINCyT-PITEI,
+																Cienciactiva
+																2017, Fondecyt y
+																varios fondos
+																concursables de
+																la UNMSM.
 															</p>
 															<p>
-																Ha sido Director de la Unidad de Posgrado de la Facultad de Ciencias
-																Biol&oacute;gicas (2010-2013), Presidente del Consejo Superior de
-																Investigaciones del Vicerrectorado de Investigaci&oacute;n y
-																Posgrado (VRIP) de la UNMSM (2014-2017), Director General de
-																Investigaci&oacute;n y Transferencia Tecnol&oacute;gica de VRIP de
-																la UNMSM desde febrero del 2017 hasta octubre de 2020 y actualmente
-																es Decano de la Facultad de Ciencias Biol&oacute;gicas de la UNMSM.
+																Ha sido Director
+																de la Unidad de
+																Posgrado de la
+																Facultad de
+																Ciencias
+																Biol&oacute;gicas
+																(2010-2013),
+																Presidente del
+																Consejo Superior
+																de
+																Investigaciones
+																del
+																Vicerrectorado
+																de
+																Investigaci&oacute;n
+																y Posgrado
+																(VRIP) de la
+																UNMSM
+																(2014-2017),
+																Director General
+																de
+																Investigaci&oacute;n
+																y Transferencia
+																Tecnol&oacute;gica
+																de VRIP de la
+																UNMSM desde
+																febrero del 2017
+																hasta octubre de
+																2020 y
+																actualmente es
+																Decano de la
+																Facultad de
+																Ciencias
+																Biol&oacute;gicas
+																de la UNMSM.
 															</p>
 														</p>
 														<div>
@@ -259,20 +373,36 @@ const index = () => {
 																href="/assets/archivos/autoridades/decanos/RR/R.R. N.º 017245 - 2020.- DIRECTOR.pdf"
 																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
 															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Resolución rectoral</span>
+																<img
+																	className="mr-2"
+																	src="/assets/img/iconos/pdf.svg"
+																	alt=""
+																/>
+																<span className="">
+																	Resolución
+																	rectoral
+																</span>
 															</a>
 															<a
 																target="_blank"
 																href="/assets/archivos/autoridades/decanos/CV/cv-ramirez-roca.pdf"
 																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
 															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Hoja de vida</span>
+																<img
+																	className="mr-2"
+																	src="/assets/img/iconos/pdf.svg"
+																	alt=""
+																/>
+																<span className="">
+																	Hoja de vida
+																</span>
 															</a>
 														</div>
 													</Col>
-													<Col md="3" className="pr-0">
+													<Col
+														md="3"
+														className="pr-0"
+													>
 														<div className="mb-3">
 															<img
 																className="img-fluid w-100"
@@ -304,52 +434,131 @@ const index = () => {
 											<div className="divisor my-3"></div>
 											<Container>
 												<Row>
-													<Col md="9" className="pl-0">
+													<Col
+														md="9"
+														className="pl-0"
+													>
 														<p>
-															Al asumir el gobierno de la facultad reafirmamos nuestro compromiso de
-															realizar un trabajo con responsabilidad, equidad y transparencia; de
-															tal manera que podamos alcanzar objetivos académicos, administrativos,
-															de investigación y de proyección social, con la finalidad de colaborar
-															con el progreso del país dentro del marco del desarrollo sostenible.
+															Al asumir el
+															gobierno de la
+															facultad reafirmamos
+															nuestro compromiso
+															de realizar un
+															trabajo con
+															responsabilidad,
+															equidad y
+															transparencia; de
+															tal manera que
+															podamos alcanzar
+															objetivos
+															académicos,
+															administrativos, de
+															investigación y de
+															proyección social,
+															con la finalidad de
+															colaborar con el
+															progreso del país
+															dentro del marco del
+															desarrollo
+															sostenible.
 														</p>
-														<p className="title-dark">Funciones específicas:</p>
+														<p className="title-dark">
+															Funciones
+															específicas:
+														</p>
 														<ul className="chevron-green-dark">
 															<li>
-																El decano es la máxima autoridad que representa a la facultad,
-																preside el Consejo de Facultad y dirige la gestión académica y
-																administrativa, económica y financiera de la facultad.
+																El decano es la
+																máxima autoridad
+																que representa a
+																la facultad,
+																preside el
+																Consejo de
+																Facultad y
+																dirige la
+																gestión
+																académica y
+																administrativa,
+																económica y
+																financiera de la
+																facultad.
 															</li>
 															<li>
-																Ejerce las atribuciones que le confieren la ley universitaria y el
-																Estatuto de la Universidad.
+																Ejerce las
+																atribuciones que
+																le confieren la
+																ley
+																universitaria y
+																el Estatuto de
+																la Universidad.
 															</li>
 														</ul>
-														<p className="title-dark">Funciones generales:</p>
+														<p className="title-dark">
+															Funciones generales:
+														</p>
 														<ul className="chevron-green-dark">
 															<li>
-																Dirigir y supervisar la gestión académica y administrativa,
-																económica y financiera de la facultad.
+																Dirigir y
+																supervisar la
+																gestión
+																académica y
+																administrativa,
+																económica y
+																financiera de la
+																facultad.
 															</li>
 															<li>
-																Proporcionar al consejo de Facultad información procesada que ayude
-																al planeamiento y toma de decisiones.
+																Proporcionar al
+																consejo de
+																Facultad
+																información
+																procesada que
+																ayude al
+																planeamiento y
+																toma de
+																decisiones.
 															</li>
 															<li>
-																Conducir la formulación presupuestal y el plan de trabajo y
-																desarrollo de la facultad, acorde al plan estratégico de la facultad
+																Conducir la
+																formulación
+																presupuestal y
+																el plan de
+																trabajo y
+																desarrollo de la
+																facultad, acorde
+																al plan
+																estratégico de
+																la facultad
 																aprobada.
 															</li>
 															<li>
-																Hacer cumplir los acuerdos y resoluciones del consejo de facultad y
-																las resoluciones rectorales que emita la sede central y gobierno
-																central en materia de su competencia.
+																Hacer cumplir
+																los acuerdos y
+																resoluciones del
+																consejo de
+																facultad y las
+																resoluciones
+																rectorales que
+																emita la sede
+																central y
+																gobierno central
+																en materia de su
+																competencia.
 															</li>
-															<li>Representar a la facultad.</li>
+															<li>
+																Representar a la
+																facultad.
+															</li>
 														</ul>
 													</Col>
-													<Col md="3" className="pr-0">
+													<Col
+														md="3"
+														className="pr-0"
+													>
 														<div className="contacto-wrapper mb-3">
-															<p className="title-dark mb-2">Contacto:</p>
+															<p className="title-dark mb-2">
+																Contacto:
+															</p>
 															<div className="grid-contacto">
 																<div>
 																	<img
@@ -359,7 +568,12 @@ const index = () => {
 																	/>
 																</div>
 																<div>
-																	<span>+(51) 619 7000 anexo 1501</span>
+																	<span>
+																		+(51)
+																		619 7000
+																		anexo
+																		1501
+																	</span>
 																</div>
 															</div>
 															<div className="mb-0 grid-contacto">
@@ -371,28 +585,48 @@ const index = () => {
 																	/>
 																</div>
 																<div>
-																	<span>decanobio@unmsm.edu.pe</span>
+																	<span>
+																		decanobio@unmsm.edu.pe
+																	</span>
 																</div>
 															</div>
-															<p className="font-weight-bold mb-1">Horario de atención:</p>
-															<p className="mb-0">8:00 a.m. - 5:00 p.m.</p>
+															<p className="font-weight-bold mb-1">
+																Horario de
+																atención:
+															</p>
+															<p className="mb-0">
+																8:00 a.m. - 5:00
+																p.m.
+															</p>
 														</div>
 														<div className="block-interest-links">
-															<p className="font-weight-bold mb-2">Información académica</p>
+															<p className="font-weight-bold mb-2">
+																Información
+																académica
+															</p>
 															<ul className="nav flex-column">
 																<li className="mb-2">
 																	<Link href="/nosotros/consejo-de-facultad">
-																		<a>Consejo de facultad</a>
+																		<a>
+																			Consejo
+																			de
+																			facultad
+																		</a>
 																	</Link>
 																</li>
 																<li className="mb-2">
 																	<Link href="/nosotros/historia">
-																		<a>Historia</a>
+																		<a>
+																			Historia
+																		</a>
 																	</Link>
 																</li>
 																<li className="mb-0">
 																	<Link href="/informacion-academica?recurso=informacion-de-docentes">
-																		<a>Plana docente</a>
+																		<a>
+																			Plana
+																			docente
+																		</a>
 																	</Link>
 																</li>
 															</ul>
@@ -409,54 +643,174 @@ const index = () => {
 										>
 											<Container>
 												<Row>
-													<Col md="9" className="pl-0">
+													<Col
+														md="9"
+														className="pl-0"
+													>
 														<p>
 															<span className="title-dark">
-																Mg. Ruth Hortensia García de la Guarda
+																Dra. Ruth
+																Hortensia García
+																de la Guarda
 															</span>
 															<span className="divisor-text-green mx-2"></span>
-															<span className="title">Vicedecana académica</span>
+															<span className="title">
+																Vicedecana
+																académica
+															</span>
 														</p>
-														<p style={{ textAlign: "justify" }}>
-															Profesora Principal a Dedicación Exclusiva del Dpto. Académico de
-															Microbiología y Parasitología de la Facultad de Ciencias Biológicas de
-															la Universidad Nacional Mayor de San Marcos. Título Profesional de
-															Biólogo-Microbiólogo por la Universidad Nacional de Trujillo, Grado
-															Académico de Magíster en Bioquímica por la Pontificia Universidad
-															Católica de Chile, Doctora en Ciencias Biológicas por la Universidad
-															Nacional Mayor de San Marcos.
+														<p
+															style={{
+																textAlign:
+																	'justify',
+															}}
+														>
+															Profesora Principal
+															a Dedicación
+															Exclusiva del Dpto.
+															Académico de
+															Microbiología y
+															Parasitología de la
+															Facultad de Ciencias
+															Biológicas de la
+															Universidad Nacional
+															Mayor de San Marcos.
+															Título Profesional
+															de
+															Biólogo-Microbiólogo
+															por la Universidad
+															Nacional de
+															Trujillo, Grado
+															Académico de
+															Magíster en
+															Bioquímica por la
+															Pontificia
+															Universidad Católica
+															de Chile, Doctora en
+															Ciencias Biológicas
+															por la Universidad
+															Nacional Mayor de
+															San Marcos.
 														</p>
-														<p style={{ textAlign: "justify" }}>
-															Realiza sus actividades de investigación en el Laboratorio de
-															Microbiología Molecular y Biotecnología de la Facultad de Ciencias
-															Biológicas. Miembro Permanente del Instituto de Investigación de
-															Ciencias Biológicas Antonio Raimondi (ICBAR). Investigadora principal
-															en proyectos financiados por CONCYTEC y por el Vicerrectorado de
-															Investigación y Posgrado de la UNMSM. Especialista en temas de
-															microbiología. Líneas de investigación de microbiología molecular de
-															bacterias patógenas/oportunistas y de bacterias biolixiviantes y de
-															otras ambientales de interés biotecnológico. Asesora de Trabajos de
-															Investigación y de Tesis de pre y posgrado.
+														<p
+															style={{
+																textAlign:
+																	'justify',
+															}}
+														>
+															Realiza sus
+															actividades de
+															investigación en el
+															Laboratorio de
+															Microbiología
+															Molecular y
+															Biotecnología de la
+															Facultad de Ciencias
+															Biológicas. Miembro
+															Permanente del
+															Instituto de
+															Investigación de
+															Ciencias Biológicas
+															Antonio Raimondi
+															(ICBAR).
+															Investigadora
+															principal en
+															proyectos
+															financiados por
+															CONCYTEC y por el
+															Vicerrectorado de
+															Investigación y
+															Posgrado de la
+															UNMSM. Especialista
+															en temas de
+															microbiología.
+															Líneas de
+															investigación de
+															microbiología
+															molecular de
+															bacterias
+															patógenas/oportunistas
+															y de bacterias
+															biolixiviantes y de
+															otras ambientales de
+															interés
+															biotecnológico.
+															Asesora de Trabajos
+															de Investigación y
+															de Tesis de pre y
+															posgrado.
 														</p>
-														<p style={{ textAlign: "justify" }}>
-															Miembro del comité de docentes que crearon la Maestría en Biología
-															Molecular. Coordinadora de la Maestría en Biología Molecular
+														<p
+															style={{
+																textAlign:
+																	'justify',
+															}}
+														>
+															Miembro del comité
+															de docentes que
+															crearon la Maestría
+															en Biología
+															Molecular.
+															Coordinadora de la
+															Maestría en Biología
+															Molecular
 															(2004-2013).
 														</p>
-														<p style={{ textAlign: "justify" }}>
-															En la docencia es profesora responsable, en el pregrado, de los cursos
-															de Fundamentos de Microbiología y de Microbiología en Salud, así como
-															colaboradora de Genética Microbiana e Ingeniería Genética; en el
-															posgrado (Maestría en Biología Molecular), ha sido responsable de
-															Microbiología Molecular, Tesis II, Tesis III y Tesis IV, y
-															colaboradora de Biología Molecular Avanzada.
+														<p
+															style={{
+																textAlign:
+																	'justify',
+															}}
+														>
+															En la docencia es
+															profesora
+															responsable, en el
+															pregrado, de los
+															cursos de
+															Fundamentos de
+															Microbiología y de
+															Microbiología en
+															Salud, así como
+															colaboradora de
+															Genética Microbiana
+															e Ingeniería
+															Genética; en el
+															posgrado (Maestría
+															en Biología
+															Molecular), ha sido
+															responsable de
+															Microbiología
+															Molecular, Tesis II,
+															Tesis III y Tesis
+															IV, y colaboradora
+															de Biología
+															Molecular Avanzada.
 														</p>
-														<p style={{ textAlign: "justify" }}>
-															Coordinadora del Dpto. Académico de Microbiología y Parasitología
-															(abril 2010-marzo 2014). Miembro del Consejo de Facultad 2010-2013 y
-															2020-2024. Miembro de la Comisión Permanente de Evaluación Curricular
-															y Coordinación Académica (06/2010 – 05/2013). Miembro de la Sociedad
-															Peruana de Bioquímica y Biología Molecular.
+														<p
+															style={{
+																textAlign:
+																	'justify',
+															}}
+														>
+															Coordinadora del
+															Dpto. Académico de
+															Microbiología y
+															Parasitología (abril
+															2010-marzo 2014).
+															Miembro del Consejo
+															de Facultad
+															2010-2013 y
+															2020-2024. Miembro
+															de la Comisión
+															Permanente de
+															Evaluación
+															Curricular y
+															Coordinación
+															Académica (06/2010 –
+															05/2013). Miembro de
+															la Sociedad Peruana
+															de Bioquímica y
+															Biología Molecular.
 														</p>
 														<div>
 															<a
@@ -464,20 +818,36 @@ const index = () => {
 																href="/assets/archivos/autoridades/decanos/RR/R.R. N° 001841-2021-R VICEDECANA ACADÉMICA.pdf"
 																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
 															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Resolución rectoral</span>
+																<img
+																	className="mr-2"
+																	src="/assets/img/iconos/pdf.svg"
+																	alt=""
+																/>
+																<span className="">
+																	Resolución
+																	rectoral
+																</span>
 															</a>
 															<a
 																target="_blank"
 																href="/assets/archivos/autoridades/decanos/CV/CV_Ruth_Garcia_2020.pdf"
 																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
 															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Hoja de vida</span>
+																<img
+																	className="mr-2"
+																	src="/assets/img/iconos/pdf.svg"
+																	alt=""
+																/>
+																<span className="">
+																	Hoja de vida
+																</span>
 															</a>
 														</div>
 													</Col>
-													<Col md="3" className="pr-0">
+													<Col
+														md="3"
+														className="pr-0"
+													>
 														<div className="mb-3">
 															<img
 																className="img-fluid w-100"
@@ -505,7 +875,10 @@ const index = () => {
 											<div className="divisor my-3"></div>
 											<Container>
 												<Row>
-													<Col md="9" className="pl-0">
+													<Col
+														md="9"
+														className="pl-0"
+													>
 														{/* <p>
 															La Dirección Académica es el órgano de apoyo de la Facultad de
 															Ciencias Biológicas, encargado de prestar los servicios académicos que
@@ -624,9 +997,14 @@ const index = () => {
 															</li>
 														</ul> */}
 													</Col>
-													<Col md="3" className="pr-0">
+													<Col
+														md="3"
+														className="pr-0"
+													>
 														<div className="contacto-wrapper mb-3">
-															<p className="title-dark mb-2">Contacto:</p>
+															<p className="title-dark mb-2">
+																Contacto:
+															</p>
 															{/* <div className="grid-contacto">
 																<div>
 																	<img
@@ -655,21 +1033,33 @@ const index = () => {
 															<p className="mb-0">8:00 a.m. - 5:00 p.m.</p> */}
 														</div>
 														<div className="block-interest-links">
-															<p className="font-weight-bold mb-2">Información académica</p>
+															<p className="font-weight-bold mb-2">
+																Información
+																académica
+															</p>
 															<ul className="nav flex-column">
 																<li className="mb-2">
 																	<Link href="/nosotros/consejo-de-facultad">
-																		<a>Consejo de facultad</a>
+																		<a>
+																			Consejo
+																			de
+																			facultad
+																		</a>
 																	</Link>
 																</li>
 																<li className="mb-2">
 																	<Link href="/nosotros/historia">
-																		<a>Historia</a>
+																		<a>
+																			Historia
+																		</a>
 																	</Link>
 																</li>
 																<li className="mb-0">
 																	<Link href="/informacion-academica?recurso=informacion-de-docentes">
-																		<a>Plana docente</a>
+																		<a>
+																			Plana
+																			docente
+																		</a>
 																	</Link>
 																</li>
 															</ul>
@@ -686,67 +1076,251 @@ const index = () => {
 										>
 											<Container>
 												<Row>
-													<Col md="9" className="pl-0">
+													<Col
+														md="9"
+														className="pl-0"
+													>
 														<p>
-															<span className="title-dark">Dra. Martha Esther Valdivia Cuya</span>
+															<span className="title-dark">
+																Dra. Martha
+																Esther Valdivia
+																Cuya
+															</span>
 															<span className="divisor-text-green mx-2"></span>
-															<span className="title">Vicedecana de Investigación y Posgrado</span>
+															<span className="title">
+																Vicedecana de
+																Investigación y
+																Posgrado
+															</span>
 														</p>
-														<p style={{ textAlign: "justify" }}>
+														<p
+															style={{
+																textAlign:
+																	'justify',
+															}}
+														>
 															<p>
-																Profesora Principal a Tiempo Completo, Investigadora de la Facultad
-																de Ciencias Biol&oacute;gicas, Miembro permanente del Instituto de
-																Investigaciones Antonio Raimondi, Jefa del laboratorio de
-																Fisiolog&iacute;a de la reproducci&oacute;n de la Facultad de
-																Ciencias Biol&oacute;gicas de la Universidad Nacional Mayor de San
-																Marcos (UNMSM), Per&uacute; con grado de Magister en Ciencias
-																Biol&oacute;gicas con menci&oacute;n en Biolog&iacute;a de la
-																Reproducci&oacute;n en la Universidad de Chile y grado de Doctor en
-																Ciencias Biol&oacute;gicas con menci&oacute;n en Fisiolog&iacute;a
-																en la Universidad Peruana Cayetano Heredia.
+																Profesora
+																Principal a
+																Tiempo Completo,
+																Investigadora de
+																la Facultad de
+																Ciencias
+																Biol&oacute;gicas,
+																Miembro
+																permanente del
+																Instituto de
+																Investigaciones
+																Antonio
+																Raimondi, Jefa
+																del laboratorio
+																de
+																Fisiolog&iacute;a
+																de la
+																reproducci&oacute;n
+																de la Facultad
+																de Ciencias
+																Biol&oacute;gicas
+																de la
+																Universidad
+																Nacional Mayor
+																de San Marcos
+																(UNMSM),
+																Per&uacute; con
+																grado de
+																Magister en
+																Ciencias
+																Biol&oacute;gicas
+																con
+																menci&oacute;n
+																en
+																Biolog&iacute;a
+																de la
+																Reproducci&oacute;n
+																en la
+																Universidad de
+																Chile y grado de
+																Doctor en
+																Ciencias
+																Biol&oacute;gicas
+																con
+																menci&oacute;n
+																en
+																Fisiolog&iacute;a
+																en la
+																Universidad
+																Peruana Cayetano
+																Heredia.
 															</p>
 															<p>
-																Con experiencia en organizaci&oacute;n e implementaci&oacute;n de
-																equipamiento de laboratorios de alta tecnolog&iacute;a para la
-																investigaci&oacute;n en Reproducci&oacute;n. El objetivo de sus
-																investigaciones est&aacute; enfocado al an&aacute;lisis de la
-																fertilidad el manejo de gametos y de la interacci&oacute;n de los
-																mismos usando herramientas biotecnol&oacute;gicas
-																(criopreservaci&oacute;n, fecundaci&oacute;n In vitro y pruebas
-																moleculares que revelen la capacidad f&eacute;rtil de las especies
-																(animales y humanos). Ha desarrollado protocolos de
-																criopreservaci&oacute;n de espermatozoides y posee una patente en
-																protocolo de criopreservaci&oacute;n de zanganos para la industria
-																ap&iacute;cola. Asimismo, ha desarrollado tres patentes que se
-																encuentran en tr&aacute;mite internacional sobre medios para la
-																crioconservaci&oacute;n de c&eacute;lulas madre espermatogoniales,
-																biopsias testicluares de alpaca y dise&ntilde;o de protocolos de
-																criopreservaci&oacute;n para c&eacute;lulas aisladas y biopsias.
+																Con experiencia
+																en
+																organizaci&oacute;n
+																e
+																implementaci&oacute;n
+																de equipamiento
+																de laboratorios
+																de alta
+																tecnolog&iacute;a
+																para la
+																investigaci&oacute;n
+																en
+																Reproducci&oacute;n.
+																El objetivo de
+																sus
+																investigaciones
+																est&aacute;
+																enfocado al
+																an&aacute;lisis
+																de la fertilidad
+																el manejo de
+																gametos y de la
+																interacci&oacute;n
+																de los mismos
+																usando
+																herramientas
+																biotecnol&oacute;gicas
+																(criopreservaci&oacute;n,
+																fecundaci&oacute;n
+																In vitro y
+																pruebas
+																moleculares que
+																revelen la
+																capacidad
+																f&eacute;rtil de
+																las especies
+																(animales y
+																humanos). Ha
+																desarrollado
+																protocolos de
+																criopreservaci&oacute;n
+																de
+																espermatozoides
+																y posee una
+																patente en
+																protocolo de
+																criopreservaci&oacute;n
+																de zanganos para
+																la industria
+																ap&iacute;cola.
+																Asimismo, ha
+																desarrollado
+																tres patentes
+																que se
+																encuentran en
+																tr&aacute;mite
+																internacional
+																sobre medios
+																para la
+																crioconservaci&oacute;n
+																de
+																c&eacute;lulas
+																madre
+																espermatogoniales,
+																biopsias
+																testicluares de
+																alpaca y
+																dise&ntilde;o de
+																protocolos de
+																criopreservaci&oacute;n
+																para
+																c&eacute;lulas
+																aisladas y
+																biopsias.
 															</p>
 															<p>
-																Ha obtenido a trav&eacute;s de fondos concursables el financiamiento
-																a proyectos de CONCYTEC (PROCYT y PROCOM), International Foundation
-																for Science (IFS), International Centre of Genetic Ingeniering and
-																Biotechnology (ICGEB). INNOVATE, PIMEM, FONDECYT y UNMSM. Sus
-																publicaciones se encuentran en Theriogenology, Biology of
-																Reproduction, Biological Research, Gamete Research, Molecular
-																Reproduction fertility, SPERMOVA, Reproduction domestic animals,
-																Andrologia, Fronterirs, Revista peruana de Biolog&iacute;a, Revista
-																de Investigaci&oacute;n en Ciencias veterinarias, entre otras.
+																Ha obtenido a
+																trav&eacute;s de
+																fondos
+																concursables el
+																financiamiento a
+																proyectos de
+																CONCYTEC (PROCYT
+																y PROCOM),
+																International
+																Foundation for
+																Science (IFS),
+																International
+																Centre of
+																Genetic
+																Ingeniering and
+																Biotechnology
+																(ICGEB).
+																INNOVATE, PIMEM,
+																FONDECYT y
+																UNMSM. Sus
+																publicaciones se
+																encuentran en
+																Theriogenology,
+																Biology of
+																Reproduction,
+																Biological
+																Research, Gamete
+																Research,
+																Molecular
+																Reproduction
+																fertility,
+																SPERMOVA,
+																Reproduction
+																domestic
+																animals,
+																Andrologia,
+																Fronterirs,
+																Revista peruana
+																de
+																Biolog&iacute;a,
+																Revista de
+																Investigaci&oacute;n
+																en Ciencias
+																veterinarias,
+																entre otras.
 															</p>
 															<p>
-																Ha formado a investigadores peruanos (Arequipa, Ayacucho, Tacna) y
-																extranjeros (Alemania, Bolivia, Chile) en el &aacute;rea de
-																reproducci&oacute;n tanto en investigaci&oacute;n b&aacute;sica como
-																aplicada y en biotecnolog&iacute;as reproductivas como IVF, ICSI
-																Cultivo celular, criopreservaci&oacute;n.
+																Ha formado a
+																investigadores
+																peruanos
+																(Arequipa,
+																Ayacucho, Tacna)
+																y extranjeros
+																(Alemania,
+																Bolivia, Chile)
+																en el
+																&aacute;rea de
+																reproducci&oacute;n
+																tanto en
+																investigaci&oacute;n
+																b&aacute;sica
+																como aplicada y
+																en
+																biotecnolog&iacute;as
+																reproductivas
+																como IVF, ICSI
+																Cultivo celular,
+																criopreservaci&oacute;n.
 															</p>
 															<p>
-																Actualmente est&aacute; dedicada al estudio de las c&eacute;lulas
-																madre testiculares de alpaca, maduraci&oacute;n de ovocitos y manejo
-																de gametos para la producci&oacute;n embrionaria con perspectiva del
-																uso de la micromanipulaci&oacute;n embrionaria para la
-																producci&oacute;n de clones en alpacas.
+																Actualmente
+																est&aacute;
+																dedicada al
+																estudio de las
+																c&eacute;lulas
+																madre
+																testiculares de
+																alpaca,
+																maduraci&oacute;n
+																de ovocitos y
+																manejo de
+																gametos para la
+																producci&oacute;n
+																embrionaria con
+																perspectiva del
+																uso de la
+																micromanipulaci&oacute;n
+																embrionaria para
+																la
+																producci&oacute;n
+																de clones en
+																alpacas.
 															</p>
 														</p>
 														<div>
@@ -755,20 +1329,36 @@ const index = () => {
 																href="https://drive.google.com/file/d/1R8KkjOTsV7z51-OH2-8D8q6QTA7Z2mW7/view"
 																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
 															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Resolución rectoral</span>
+																<img
+																	className="mr-2"
+																	src="/assets/img/iconos/pdf.svg"
+																	alt=""
+																/>
+																<span className="">
+																	Resolución
+																	rectoral
+																</span>
 															</a>
 															<a
 																target="_blank"
 																href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/MantDatosOrcid.do?numero_orcid=0000-0002-8301-5536&nombre_orcid=Martha%20Valdivia&id_investigador=17&estado=ok"
 																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
 															>
-																<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
-																<span className="">Hoja de vida</span>
+																<img
+																	className="mr-2"
+																	src="/assets/img/iconos/pdf.svg"
+																	alt=""
+																/>
+																<span className="">
+																	Hoja de vida
+																</span>
 															</a>
 														</div>
 													</Col>
-													<Col md="3" className="pr-0">
+													<Col
+														md="3"
+														className="pr-0"
+													>
 														<div className="mb-3">
 															<img
 																className="img-fluid w-100"
@@ -796,7 +1386,10 @@ const index = () => {
 											<div className="divisor my-3"></div>
 											<Container>
 												<Row>
-													<Col md="9" className="pl-0">
+													<Col
+														md="9"
+														className="pl-0"
+													>
 														{/* <p>
 															Al asumir el gobierno de la facultad reafirmamos nuestro compromiso de
 															realizar un trabajo con responsabilidad, equidad y transparencia; de
@@ -805,40 +1398,93 @@ const index = () => {
 															con el progreso del país dentro del marco del desarrollo sostenible.
 														</p> */}
 														<p className="title-dark">
-															Funciones del Vicedecanato de Investigación y Posgrado:
+															Funciones del
+															Vicedecanato de
+															Investigación y
+															Posgrado:
 														</p>
 														<ul className="chevron-green-dark">
 															<li>
-																Coordinar y organizar las actividades de investigación, y las
-																relacionadas con los productos de los estudios de investigación de
-																los institutos y de la unidad de posgrado.
+																Coordinar y
+																organizar las
+																actividades de
+																investigación, y
+																las relacionadas
+																con los
+																productos de los
+																estudios de
+																investigación de
+																los institutos y
+																de la unidad de
+																posgrado.
 															</li>
 															<li>
-																Promover la incorporación y desarrollo de todos los docentes en el
-																campo de la investigación.
+																Promover la
+																incorporación y
+																desarrollo de
+																todos los
+																docentes en el
+																campo de la
+																investigación.
 															</li>
 															<li>
-																Promover la participación de los estudiantes de pregrado en las
-																actividades de investigación formativa.
+																Promover la
+																participación de
+																los estudiantes
+																de pregrado en
+																las actividades
+																de investigación
+																formativa.
 															</li>
 															<li>
-																Promover la publicación y difusión de los trabajos de investigación,
-																tesis, patentes, artículos y otros relacionados.
+																Promover la
+																publicación y
+																difusión de los
+																trabajos de
+																investigación,
+																tesis, patentes,
+																artículos y
+																otros
+																relacionados.
 															</li>
 															<li>
-																Coordinar y promover los programas de posgrado en todos los niveles.
+																Coordinar y
+																promover los
+																programas de
+																posgrado en
+																todos los
+																niveles.
 															</li>
 															<li>
-																Coordinar con los directores de la unidad de posgrado y de la unidad
-																de investigación las actividades en el ámbito de sus competencias en
-																cada facultad.
+																Coordinar con
+																los directores
+																de la unidad de
+																posgrado y de la
+																unidad de
+																investigación
+																las actividades
+																en el ámbito de
+																sus competencias
+																en cada
+																facultad.
 															</li>
-															<li>Otras funciones que se establecen en la normativa respectiva.</li>
+															<li>
+																Otras funciones
+																que se
+																establecen en la
+																normativa
+																respectiva.
+															</li>
 														</ul>
 													</Col>
-													<Col md="3" className="pr-0">
+													<Col
+														md="3"
+														className="pr-0"
+													>
 														<div className="contacto-wrapper mb-3">
-															<p className="title-dark mb-2">Contacto:</p>
+															<p className="title-dark mb-2">
+																Contacto:
+															</p>
 															<div className="grid-contacto">
 																<div>
 																	<img
@@ -848,7 +1494,12 @@ const index = () => {
 																	/>
 																</div>
 																<div>
-																	<span>+(51) 619 7000 anexo 1541</span>
+																	<span>
+																		+(51)
+																		619 7000
+																		anexo
+																		1541
+																	</span>
 																</div>
 															</div>
 															<div className="grid-contacto">
@@ -860,7 +1511,10 @@ const index = () => {
 																	/>
 																</div>
 																<div>
-																	<span>Whatsapp: 998676628</span>
+																	<span>
+																		Whatsapp:
+																		998676628
+																	</span>
 																</div>
 															</div>
 															<div className="mb-0 grid-contacto">
@@ -872,28 +1526,48 @@ const index = () => {
 																	/>
 																</div>
 																<div>
-																	<span>vdip.fcb@unmsm.edu.pe</span>
+																	<span>
+																		vdip.fcb@unmsm.edu.pe
+																	</span>
 																</div>
 															</div>
-															<p className="font-weight-bold mb-1">Horario de atención:</p>
-															<p className="mb-0">8:00 a.m. - 5:00 p.m.</p>
+															<p className="font-weight-bold mb-1">
+																Horario de
+																atención:
+															</p>
+															<p className="mb-0">
+																8:00 a.m. - 5:00
+																p.m.
+															</p>
 														</div>
 														<div className="block-interest-links">
-															<p className="font-weight-bold mb-2">Información académica</p>
+															<p className="font-weight-bold mb-2">
+																Información
+																académica
+															</p>
 															<ul className="nav flex-column">
 																<li className="mb-2">
 																	<Link href="/nosotros/consejo-de-facultad">
-																		<a>Consejo de facultad</a>
+																		<a>
+																			Consejo
+																			de
+																			facultad
+																		</a>
 																	</Link>
 																</li>
 																<li className="mb-2">
 																	<Link href="/nosotros/historia">
-																		<a>Historia</a>
+																		<a>
+																			Historia
+																		</a>
 																	</Link>
 																</li>
 																<li className="mb-0">
 																	<Link href="/informacion-academica?recurso=informacion-de-docentes">
-																		<a>Plana docente</a>
+																		<a>
+																			Plana
+																			docente
+																		</a>
 																	</Link>
 																</li>
 															</ul>
