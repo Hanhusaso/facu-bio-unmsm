@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Layout from "../../components/Layout";
+import React, { useState, useEffect } from 'react';
+import Layout from '../../components/Layout';
 
-import { Row, Col, Container, Breadcrumb, Tabs, Tab } from "react-bootstrap";
-import Link from "next/link";
-import { getDocenteByIdInformacionAcademicaApi } from "../api/formacion-academica";
+import { Row, Col, Container, Breadcrumb, Tabs, Tab } from 'react-bootstrap';
+import Link from 'next/link';
+import { getDocenteByIdInformacionAcademicaApi } from '../api/formacion-academica';
 
-import { useWindowSize } from "../../utils/useWindowSize";
-import { FiAlertCircle } from "react-icons/fi";
+import { useWindowSize } from '../../utils/useWindowSize';
+import { FiAlertCircle } from 'react-icons/fi';
 
 const index = () => {
 	const { width, height } = useWindowSize();
@@ -15,7 +15,7 @@ const index = () => {
 	useEffect(() => {
 		(async () => {
 			const response = await getDocenteByIdInformacionAcademicaApi(
-				"doctorado_en_ciencias_biologicas"
+				'doctorado_en_ciencias_biologicas'
 			);
 			setDocentes(response);
 		})();
@@ -27,7 +27,11 @@ const index = () => {
 				<p className="title-dark mb-2">Contacto:</p>
 				<div className="grid-contacto">
 					<div>
-						<img className="icon mr-2" src="/assets/img/iconos/telefono.svg" alt="" />
+						<img
+							className="icon mr-2"
+							src="/assets/img/iconos/telefono.svg"
+							alt=""
+						/>
 					</div>
 					<div>
 						<span>+(51) 619 7000 Anexos 1503, 1510</span>
@@ -35,7 +39,11 @@ const index = () => {
 				</div>
 				<div className="mb-0 grid-contacto">
 					<div>
-						<img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt="" />
+						<img
+							className="icon mr-2"
+							src="/assets/img/iconos/correo.svg"
+							alt=""
+						/>
 					</div>
 					<div>
 						<span>
@@ -71,10 +79,15 @@ const index = () => {
 										{/* <li className="breadcrumb-item">Formación académica</li> */}
 										<li className="breadcrumb-item">
 											<Link href="/formacion-academica/posgrado">
-												<a role="button">Formación académica: Posgrado</a>
+												<a role="button">
+													Formación académica:
+													Posgrado
+												</a>
 											</Link>
 										</li>
-										<Breadcrumb.Item active>Posgrado | Admisión 2022-I</Breadcrumb.Item>
+										<Breadcrumb.Item active>
+											Posgrado | Admisión 2022-I
+										</Breadcrumb.Item>
 									</Breadcrumb>
 								</Col>
 								<Col md="1"></Col>
@@ -86,7 +99,9 @@ const index = () => {
 							<Row>
 								<Col md="1"></Col>
 								<Col>
-									<div className="title-page text-center">Posgrado | Admisión 2022-I</div>
+									<div className="title-page text-center">
+										Posgrado | Admisión 2022-I
+									</div>
 								</Col>
 								<Col md="1"></Col>
 							</Row>
@@ -122,7 +137,9 @@ const index = () => {
 												aria-controls="v-pills-cronograma"
 												aria-selected="true"
 											>
-												<div style={{ display: "flex" }}>
+												<div
+													style={{ display: 'flex' }}
+												>
 													<svg
 														width="24"
 														height="24"
@@ -145,8 +162,15 @@ const index = () => {
 												aria-controls="v-pills-recomendaciones"
 												aria-selected="false"
 											>
-												<div style={{ display: "flex" }} className="mr-3">
-													<FiAlertCircle style={{ fontSize: "24px" }} />
+												<div
+													style={{ display: 'flex' }}
+													className="mr-3"
+												>
+													<FiAlertCircle
+														style={{
+															fontSize: '24px',
+														}}
+													/>
 												</div>
 												<span>Recomendaciones</span>
 											</a>
@@ -159,7 +183,9 @@ const index = () => {
 												aria-controls="v-pills-cuadro"
 												aria-selected="false"
 											>
-												<div style={{ display: "flex" }}>
+												<div
+													style={{ display: 'flex' }}
+												>
 													<svg
 														width="24"
 														height="24"
@@ -173,7 +199,11 @@ const index = () => {
 														</g>
 														<defs>
 															<clipPath id="clip0_3136_9365">
-																<rect width="24" height="24" fill="white" />
+																<rect
+																	width="24"
+																	height="24"
+																	fill="white"
+																/>
 															</clipPath>
 														</defs>
 													</svg>
@@ -298,141 +328,381 @@ const index = () => {
 									)}
 								</Col>
 								<Col md="7" lg="8">
-									<div className="mb-3 tab-content" id="v-pills-tabContent">
+									<div
+										className="mb-3 tab-content"
+										id="v-pills-tabContent"
+									>
 										<div
 											className="mb-3 tab-pane fade show active"
 											id="v-pills-cronograma"
 											role="tabpanel"
 											aria-labelledby="v-pills-cronograma-tab"
 										>
-											<Tabs defaultActiveKey="cronogramas" id="admision-tab">
-												<Tab className="pt-3" eventKey="cronogramas" title="Proceso de admisión">
+											<Tabs
+												defaultActiveKey="cronogramas"
+												id="admision-tab"
+											>
+												<Tab
+													className="pt-3"
+													eventKey="cronogramas"
+													title="Proceso de admisión"
+												>
 													<div className="table-responsive admision-posgrado-tablas">
 														<table className="striped w-100">
 															<thead>
 																<tr>
-																	<th className="text-center">Actividad</th>
-																	<th className="text-center">Fecha</th>
+																	<th className="text-center">
+																		Actividad
+																	</th>
+																	<th className="text-center">
+																		Fecha
+																	</th>
 																</tr>
 															</thead>
 															<tbody>
 																<tr>
-																	<td>Cuadro de Vacantes-RR</td>
-																	<td>26 de enero</td>
-																</tr>
-																<tr>
-																	<td>Inscripción de postulantes y envío de expediente</td>
-																	<td>Del 01 de febrero al 18 de marzo</td>
-																</tr>
-																<tr>
-																	<td>Inscripción extemporánea</td>
-																	<td>21 de marzo</td>
-																</tr>
-																<tr>
-																	<td>Examen de aptitud virtual para maestrías y doctorados</td>
-																	<td>26 de marzo</td>
+																	<td>
+																		Cuadro
+																		de
+																		Vacantes-RR
+																	</td>
+																	<td>
+																		26 de
+																		enero
+																	</td>
 																</tr>
 																<tr>
 																	<td>
-																		Sustentación del proyecto de investigación (solo doctorado)
+																		Inscripción
+																		de
+																		postulantes
+																		y envío
+																		de
+																		expediente
 																	</td>
-																	<td>27 y 28 de marzo</td>
+																	<td>
+																		Del 01
+																		de
+																		febrero
+																		al 27 de
+																		marzo
+																	</td>
 																</tr>
+																{/* <tr>
+																	<td>
+																		Inscripción
+																		extemporánea
+																	</td>
+																	<td>
+																		21 de
+																		marzo
+																	</td>
+																</tr> */}
 																<tr>
-																	<td>Evaluación del expediente</td>
-																	<td> 29 y 30 de marzo</td>
+																	<td>
+																		Examen
+																		de
+																		aptitud
+																		virtual
+																		para
+																		maestrías
+																		y
+																		doctorados
+																	</td>
+																	<td>
+																		28 de
+																		marzo
+																	</td>
 																</tr>
 																<tr>
 																	<td>
-																		Entrevista personal virtual (solo maestría) Ingreso de
-																		evaluación al SISEVA para generación de actas
+																		Sustentación
+																		del
+																		proyecto
+																		de
+																		investigación
+																		(solo
+																		doctorado)
 																	</td>
-																	<td>27 y 28 de marzo</td>
-																</tr>
-																<tr>
-																	<td>Resolución de Decanato de ingresantes envío a la DGEP</td>
-																	<td>04 de abril</td>
+																	<td>
+																		29 de
+																		marzo
+																	</td>
 																</tr>
 																<tr>
 																	<td>
-																		Consolidado de ingresantes, envío a la Oficina de Planificación
+																		Evaluación
+																		del
+																		expediente
 																	</td>
-																	<td>08 de abril</td>
+																	<td>
+																		{' '}
+																		30 de
+																		marzo
+																	</td>
 																</tr>
 																<tr>
-																	<td>Oficina de Planificación, envío a MINEDU–SUNEDU</td>
-																	<td> 12 de abril</td>
+																	<td>
+																		Entrevista
+																		personal
+																		virtual
+																		(solo
+																		maestría)
+																		Ingreso
+																		de
+																		evaluación
+																		al
+																		SISEVA
+																		para
+																		generación
+																		de actas
+																	</td>
+																	<td>
+																		31 de
+																		marzo{' '}
+																		<br />{' '}
+																		01 de
+																		abril
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Publicación
+																		de
+																		resultados
+																	</td>
+																	<td>
+																		02 de
+																		abril
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Resolución
+																		de
+																		Decanato
+																		de
+																		ingresantes
+																		envío a
+																		la DGEP
+																	</td>
+																	<td>
+																		06 de
+																		abril
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Consolidado
+																		de
+																		ingresantes,
+																		envío a
+																		la
+																		Oficina
+																		de
+																		Planificación
+																	</td>
+																	<td>
+																		08 de
+																		abril
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Oficina
+																		de
+																		Planificación,
+																		envío a
+																		MINEDU–SUNEDU
+																	</td>
+																	<td>
+																		{' '}
+																		12 de
+																		abril
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Reactualización
+																		de
+																		matrícula
+																	</td>
+																	<td>
+																		Del 28
+																		de marzo
+																		al 01 de
+																		abril
+																	</td>
 																</tr>
 															</tbody>
 														</table>
 													</div>
 												</Tab>
-												<Tab className="pt-3" eventKey="inscripcion" title="Proceso de matrícula">
+												<Tab
+													className="pt-3"
+													eventKey="inscripcion"
+													title="Proceso de matrícula"
+												>
 													<div className="table-responsive admision-posgrado-tablas">
 														<table className="striped w-100">
 															<thead>
 																<tr>
-																	<th className="text-center">Actividad</th>
-																	<th className="text-center">Fecha</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td>Reactualización de matrícula</td>
-																	<td>Del 28 de marzo al 01 de abril</td>
-																</tr>
-																<tr>
-																	<td>Matrícula Regular</td>
-																	<td>Del 04 al 11 de abril</td>
-																</tr>
-																<tr>
-																	<td>Matrícula de ingresantes</td>
-																	<td>Del 08 al 11 de abril</td>
-																</tr>
-																<tr>
-																	<td>Reserva de matrícula</td>
-																	<td>Del 18 al 29 de abril</td>
-																</tr>
-																<tr>
-																	<td>Matrícula extemporánea y rectificación de matrícula</td>
-																	<td>Del 18 al 28 de abril</td>
-																</tr>
-																<tr>
-																	<td>Anulación de matrícula</td>
-																	<td>Del 02 al 06 de mayo</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</Tab>
-												<Tab className="pt-3" eventKey="academicas" title="Actividades académicas">
-													<div className="table-responsive admision-posgrado-tablas">
-														<table className="striped w-100">
-															<thead>
-																<tr>
-																	<th className="text-center">Actividad</th>
-																	<th className="text-center">Fecha</th>
+																	<th className="text-center">
+																		Actividad
+																	</th>
+																	<th className="text-center">
+																		Fecha
+																	</th>
 																</tr>
 															</thead>
 															<tbody>
 																<tr>
 																	<td>
-																		Capacitación en base de datos, aspectos de investigación y
-																		normativa de posgrado
+																		Reactualización
+																		de
+																		matrícula
 																	</td>
-																	<td>09 de abril</td>
+																	<td>
+																		Del 28
+																		de marzo
+																		al 01 de
+																		abril
+																	</td>
 																</tr>
 																<tr>
-																	<td>Inicio de clases</td>
-																	<td>11 de abril</td>
+																	<td>
+																		Matrícula
+																		Regular
+																	</td>
+																	<td>
+																		Del 04
+																		al 11 de
+																		abril
+																	</td>
 																</tr>
 																<tr>
-																	<td>Fin de clases</td>
-																	<td>02 de agosto</td>
+																	<td>
+																		Matrícula
+																		de
+																		ingresantes
+																	</td>
+																	<td>
+																		Del 08
+																		al 11 de
+																		abril
+																	</td>
 																</tr>
 																<tr>
-																	<td>Ingreso de notas</td>
-																	<td>Del 03 al 10 de agosto</td>
+																	<td>
+																		Reserva
+																		de
+																		matrícula
+																	</td>
+																	<td>
+																		Del 18
+																		al 29 de
+																		abril
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Matrícula
+																		extemporánea
+																		y
+																		rectificación
+																		de
+																		matrícula
+																	</td>
+																	<td>
+																		Del 18
+																		al 28 de
+																		abril
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Anulación
+																		de
+																		matrícula
+																	</td>
+																	<td>
+																		Del 02
+																		al 06 de
+																		mayo
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</Tab>
+												<Tab
+													className="pt-3"
+													eventKey="academicas"
+													title="Actividades académicas"
+												>
+													<div className="table-responsive admision-posgrado-tablas">
+														<table className="striped w-100">
+															<thead>
+																<tr>
+																	<th className="text-center">
+																		Actividad
+																	</th>
+																	<th className="text-center">
+																		Fecha
+																	</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>
+																		Capacitación
+																		en base
+																		de
+																		datos,
+																		aspectos
+																		de
+																		investigación
+																		y
+																		normativa
+																		de
+																		posgrado
+																	</td>
+																	<td>
+																		09 de
+																		abril
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Inicio
+																		de
+																		clases
+																	</td>
+																	<td>
+																		11 de
+																		abril
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Fin de
+																		clases
+																	</td>
+																	<td>
+																		02 de
+																		agosto
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Ingreso
+																		de notas
+																	</td>
+																	<td>
+																		Del 03
+																		al 10 de
+																		agosto
+																	</td>
 																</tr>
 															</tbody>
 														</table>
@@ -448,35 +718,73 @@ const index = () => {
 										>
 											<p>
 												<strong>
-													RECOMENDACIONES PARA LOS POSTULANTES (DOCTORADO Y MAESTR&Iacute;AS) AL
-													PROCESO DE ADMISI&Oacute;N 2022-I
+													RECOMENDACIONES PARA LOS
+													POSTULANTES (DOCTORADO Y
+													MAESTR&Iacute;AS) AL PROCESO
+													DE ADMISI&Oacute;N 2022-I
 												</strong>
 											</p>
 											<ol>
 												<li aria-level="1">
-													Como parte del proceso de postulaci&oacute;n, el estudiante debe
-													informarse de las posibilidades de financiamiento de la tesis a
-													desarrollar en el posgrado. Una de estas posibilidades es integrarse a
-													algunos de los grupos de investigaci&oacute;n (GI) de la FCB o facultades
-													afines, y participar de los concursos internos de financiamiento de
-													proyectos de investigaci&oacute;n para los GI. La informaci&oacute;n de
-													los grupos de investigaci&oacute;n de la FCB puede ser revisada en:
-													<a href="https://vrip.unmsm.edu.pe/biologia/" target="_blank">
+													Como parte del proceso de
+													postulaci&oacute;n, el
+													estudiante debe informarse
+													de las posibilidades de
+													financiamiento de la tesis a
+													desarrollar en el posgrado.
+													Una de estas posibilidades
+													es integrarse a algunos de
+													los grupos de
+													investigaci&oacute;n (GI) de
+													la FCB o facultades afines,
+													y participar de los
+													concursos internos de
+													financiamiento de proyectos
+													de investigaci&oacute;n para
+													los GI. La
+													informaci&oacute;n de los
+													grupos de
+													investigaci&oacute;n de la
+													FCB puede ser revisada en:
+													<a
+														href="https://vrip.unmsm.edu.pe/biologia/"
+														target="_blank"
+													>
 														https://vrip.unmsm.edu.pe/biologia/
 													</a>
 												</li>
 												<li aria-level="1">
-													El postulante debe evidenciar el contacto previo con un potencial asesor
-													para su proyecto de tesis. Este aspecto ser&aacute; evaluado en el proceso
-													de postulaci&oacute;n durante la presentaci&oacute;n de su proyecto de
-													investigaci&oacute;n (postulantes al doctorado) o en su propuesta de
-													proyecto de investigaci&oacute;n (una versi&oacute;n resumida para los
-													postulantes a las maestr&iacute;as). Este potencial asesor puede ser un
-													docente de la FCB o de la UNMSM preferentemente, o un investigador
-													reconocido, con trayectoria en el tema investigaci&oacute;n de la tesis, y
-													que est&eacute; acreditado como investigador RENACYT. Informaci&oacute;n
-													de la plana docente del doctorado y de cada maestr&iacute;a de la FCB la
-													pueden encontrar aqu&iacute;:
+													El postulante debe
+													evidenciar el contacto
+													previo con un potencial
+													asesor para su proyecto de
+													tesis. Este aspecto
+													ser&aacute; evaluado en el
+													proceso de
+													postulaci&oacute;n durante
+													la presentaci&oacute;n de su
+													proyecto de
+													investigaci&oacute;n
+													(postulantes al doctorado) o
+													en su propuesta de proyecto
+													de investigaci&oacute;n (una
+													versi&oacute;n resumida para
+													los postulantes a las
+													maestr&iacute;as). Este
+													potencial asesor puede ser
+													un docente de la FCB o de la
+													UNMSM preferentemente, o un
+													investigador reconocido, con
+													trayectoria en el tema
+													investigaci&oacute;n de la
+													tesis, y que est&eacute;
+													acreditado como investigador
+													RENACYT. Informaci&oacute;n
+													de la plana docente del
+													doctorado y de cada
+													maestr&iacute;a de la FCB la
+													pueden encontrar
+													aqu&iacute;:
 													<a
 														href="https://biologia.unmsm.edu.pe/formacion-academica/posgrado"
 														target="_blank"
@@ -485,12 +793,22 @@ const index = () => {
 													</a>
 												</li>
 												<li aria-level="1">
-													Se valorar&aacute; positivamente que los postulantes puedan haber
-													realizado con antelaci&oacute;n el contacto con investigadores y jefes de
-													laboratorio de la FCB, de la UNMSM o de otras instituciones que
-													podr&iacute;an proveerles el financiamiento para su investigaci&oacute;n y
-													finalmente que puedan haber elaborado temas o preguntas de
-													investigaci&oacute;n para su postulaci&oacute;n.
+													Se valorar&aacute;
+													positivamente que los
+													postulantes puedan haber
+													realizado con
+													antelaci&oacute;n el
+													contacto con investigadores
+													y jefes de laboratorio de la
+													FCB, de la UNMSM o de otras
+													instituciones que
+													podr&iacute;an proveerles el
+													financiamiento para su
+													investigaci&oacute;n y
+													finalmente que puedan haber
+													elaborado temas o preguntas
+													de investigaci&oacute;n para
+													su postulaci&oacute;n.
 												</li>
 											</ol>
 										</div>
@@ -504,9 +822,15 @@ const index = () => {
 												<table className="striped w-100">
 													<thead>
 														<tr>
-															<th className="text-center">Maestrías</th>
-															<th className="text-center">Mención</th>
-															<th className="text-center">Vac. Concurso</th>
+															<th className="text-center">
+																Maestrías
+															</th>
+															<th className="text-center">
+																Mención
+															</th>
+															<th className="text-center">
+																Vac. Concurso
+															</th>
 															<th className="text-center">
 																Traslado
 																<br />
@@ -516,42 +840,68 @@ const index = () => {
 																Traslado
 																<br /> externo
 															</th>
-															<th className="text-center">Total</th>
+															<th className="text-center">
+																Total
+															</th>
 														</tr>
 													</thead>
 													<tbody>
 														<tr className="bg-verdeClaro">
-															<td rowSpan={3}>Bótanica tropical</td>
-															<td>Taxonomía y Sistemática Evolutiva</td>
+															<td rowSpan={3}>
+																Bótanica
+																tropical
+															</td>
+															<td>
+																Taxonomía y
+																Sistemática
+																Evolutiva
+															</td>
 															<td>12</td>
 															<td>01</td>
 															<td>01</td>
 															<td>14</td>
 														</tr>
 														<tr className="bg-verdeClaro">
-															<td>Botánica Económica</td>
+															<td>
+																Botánica
+																Económica
+															</td>
 															<td>12</td>
 															<td>01</td>
 															<td>01</td>
 															<td>14</td>
 														</tr>
 														<tr className="bg-verdeClaro">
-															<td>Etnobotánica</td>
+															<td>
+																Etnobotánica
+															</td>
 															<td>12</td>
 															<td>01</td>
 															<td>01</td>
 															<td>14</td>
 														</tr>
 														<tr className="bg-blancoTabla">
-															<td rowSpan={3}>Ecosistemas y recursos acuáticos</td>
-															<td>Ecosistemas Acuáticos</td>
+															<td rowSpan={3}>
+																Ecosistemas y
+																recursos
+																acuáticos
+															</td>
+															<td>
+																Ecosistemas
+																Acuáticos
+															</td>
 															<td>10</td>
 															<td>01</td>
 															<td>01</td>
 															<td>12</td>
 														</tr>
 														<tr className="bg-blancoTabla">
-															<td>Evaluación y manejo de recursos pesqueros</td>
+															<td>
+																Evaluación y
+																manejo de
+																recursos
+																pesqueros
+															</td>
 															<td>10</td>
 															<td>01</td>
 															<td>01</td>
@@ -565,29 +915,42 @@ const index = () => {
 															<td>12</td>
 														</tr>
 														<tr className="bg-verdeClaro">
-															<td rowSpan={2}>Zoología</td>
-															<td>Sistemática y Evolución</td>
+															<td rowSpan={2}>
+																Zoología
+															</td>
+															<td>
+																Sistemática y
+																Evolución
+															</td>
 															<td>05</td>
 															<td>01</td>
 															<td>01</td>
 															<td>07</td>
 														</tr>
 														<tr className="bg-verdeClaro">
-															<td>Ecología y Conservación</td>
+															<td>
+																Ecología y
+																Conservación
+															</td>
 															<td>10</td>
 															<td>01</td>
 															<td>01</td>
 															<td>12</td>
 														</tr>
 														<tr className="bg-blancoTabla">
-															<td colSpan={2}>Biología molecular </td>
+															<td colSpan={2}>
+																Biología
+																molecular{' '}
+															</td>
 															<td>27</td>
 															<td>01</td>
 															<td>01</td>
 															<td>29</td>
 														</tr>
 														<tr className="bg-verdeClaro">
-															<td colSpan={2}>Genética</td>
+															<td colSpan={2}>
+																Genética
+															</td>
 															<td>10</td>
 															<td>01</td>
 															<td>01</td>
@@ -595,9 +958,16 @@ const index = () => {
 														</tr>
 														<tr
 															className="bg-blancoTabla"
-															style={{ borderBottom: "1px solid #56756b40" }}
+															style={{
+																borderBottom:
+																	'1px solid #56756b40',
+															}}
 														>
-															<td colSpan={2}>Biodiversidad y gestión de ecosistemas</td>
+															<td colSpan={2}>
+																Biodiversidad y
+																gestión de
+																ecosistemas
+															</td>
 															<td>18</td>
 															<td>01</td>
 															<td>01</td>
@@ -608,9 +978,15 @@ const index = () => {
 												<table className="striped w-100 mt-5">
 													<thead>
 														<tr>
-															<th className="text-center">Doctorado</th>
-															<th className="text-center">Mención</th>
-															<th className="text-center">Vac. Concurso</th>
+															<th className="text-center">
+																Doctorado
+															</th>
+															<th className="text-center">
+																Mención
+															</th>
+															<th className="text-center">
+																Vac. Concurso
+															</th>
 															<th className="text-center">
 																Traslado
 																<br />
@@ -620,15 +996,24 @@ const index = () => {
 																Traslado
 																<br /> externo
 															</th>
-															<th className="text-center">Total</th>
+															<th className="text-center">
+																Total
+															</th>
 														</tr>
 													</thead>
 													<tbody>
 														<tr
 															className="bg-blancoTabla"
-															style={{ borderBottom: "1px solid #56756b40" }}
+															style={{
+																borderBottom:
+																	'1px solid #56756b40',
+															}}
 														>
-															<td colSpan={2}>Doctorado en Ciencias Biológicas</td>
+															<td colSpan={2}>
+																Doctorado en
+																Ciencias
+																Biológicas
+															</td>
 															<td>10</td>
 															<td>01</td>
 															<td>01</td>
@@ -644,88 +1029,199 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-requisitos-tab"
 										>
-											<Tabs defaultActiveKey="maestria" id="admision-tab">
-												<Tab className="pt-3" eventKey="maestria" title="Maestría">
+											<Tabs
+												defaultActiveKey="maestria"
+												id="admision-tab"
+											>
+												<Tab
+													className="pt-3"
+													eventKey="maestria"
+													title="Maestría"
+												>
 													<p>
-														El postulante deberá enviar (en un solo archivo pdf) mediante la
-														plataforma de mesa de partes,&nbsp;
-														<b>&nbsp; mesadepartes.biologia@unmsm.edu.pe</b>,&nbsp; el expediente
-														completo a la Unidad de Posgrado de la Facultad, con los siguientes
+														El postulante deberá
+														enviar (en un solo
+														archivo pdf) mediante la
+														plataforma de mesa de
+														partes,&nbsp;
+														<b>
+															&nbsp;
+															mesadepartes.biologia@unmsm.edu.pe
+														</b>
+														,&nbsp; el expediente
+														completo a la Unidad de
+														Posgrado de la Facultad,
+														con los siguientes
 														documentos:
 													</p>
 													<ol>
 														<li>
-															Resumen de la hoja de vida del postulante (documentado, foliado y
-															ordenado de acuerdo a los rubros del formato).
+															Resumen de la hoja
+															de vida del
+															postulante
+															(documentado,
+															foliado y ordenado
+															de acuerdo a los
+															rubros del formato).
 														</li>
 														<li>
-															Constancia de inscripci&oacute;n en l&iacute;nea del grado de
-															Bachiller emitido por SUNEDU o la copia del diploma de grado de
-															Bachiller fedateado por la universidad de procedencia (*).
+															Constancia de
+															inscripci&oacute;n
+															en l&iacute;nea del
+															grado de Bachiller
+															emitido por SUNEDU o
+															la copia del diploma
+															de grado de
+															Bachiller fedateado
+															por la universidad
+															de procedencia (*).
 														</li>
 														<li>
-															Copia del documento de identidad (DNI, carn&eacute; de
-															extranjer&iacute;a o pasaporte).
+															Copia del documento
+															de identidad (DNI,
+															carn&eacute; de
+															extranjer&iacute;a o
+															pasaporte).
 														</li>
 														<li>
-															Recibo de pago por derecho de inscripci&oacute;n efectuado en el Banco
-															de Cr&eacute;dito del Per&uacute; o en el Banco de la Naci&oacute;n.
+															Recibo de pago por
+															derecho de
+															inscripci&oacute;n
+															efectuado en el
+															Banco de
+															Cr&eacute;dito del
+															Per&uacute; o en el
+															Banco de la
+															Naci&oacute;n.
 														</li>
 														<li>
-															Otro documento que la Unidad de Posgrado considere con relaci&oacute;n
-															al perfil de ingreso al programa que postula. Revisar requisitos a
-															trav&eacute;s de la p&aacute;gina web de la Facultad &ndash; Posgrado.
+															Otro documento que
+															la Unidad de
+															Posgrado considere
+															con relaci&oacute;n
+															al perfil de ingreso
+															al programa que
+															postula. Revisar
+															requisitos a
+															trav&eacute;s de la
+															p&aacute;gina web de
+															la Facultad &ndash;
+															Posgrado.
 														</li>
 													</ol>
 													<p>
-														(*) Los postulantes que obtuvieron el grado de Bachiller en la
-														Universidad Nacional Mayor de San Marcos solo presentan copia simple.{" "}
+														(*) Los postulantes que
+														obtuvieron el grado de
+														Bachiller en la
+														Universidad Nacional
+														Mayor de San Marcos solo
+														presentan copia simple.{' '}
 														<br />
-														En el caso de graduados en el extranjero, los grados y t&iacute;tulos
-														deber&aacute;n estar revalidados o reconocidos seg&uacute;n las normas
-														vigentes.
+														En el caso de graduados
+														en el extranjero, los
+														grados y t&iacute;tulos
+														deber&aacute;n estar
+														revalidados o
+														reconocidos seg&uacute;n
+														las normas vigentes.
 													</p>
 												</Tab>
-												<Tab className="pt-3" eventKey="doctorado" title="Doctorado">
+												<Tab
+													className="pt-3"
+													eventKey="doctorado"
+													title="Doctorado"
+												>
 													<p>
-														El postulante deberá enviar (en un solo archivo pdf) mediante la
-														plataforma de mesa de partes,&nbsp;
-														<b>&nbsp; mesadepartes.biologia@unmsm.edu.pe</b>,&nbsp;el expediente
-														completo a la Unidad de Posgrado de la Facultad, con los siguientes
+														El postulante deberá
+														enviar (en un solo
+														archivo pdf) mediante la
+														plataforma de mesa de
+														partes,&nbsp;
+														<b>
+															&nbsp;
+															mesadepartes.biologia@unmsm.edu.pe
+														</b>
+														,&nbsp;el expediente
+														completo a la Unidad de
+														Posgrado de la Facultad,
+														con los siguientes
 														documentos:
 													</p>
 													<ol>
 														<li>
-															Resumen de la hoja de vida del postulante (documentado, foliado y
-															ordenado de acuerdo a los rubros del formato)
+															Resumen de la hoja
+															de vida del
+															postulante
+															(documentado,
+															foliado y ordenado
+															de acuerdo a los
+															rubros del formato)
 														</li>
 														<li>
-															Constancia de inscripci&oacute;n en l&iacute;nea del grado de Maestro
-															o Doctor emitido por SUNEDU o la copia del diploma de grado de Maestro
-															o Doctor fedateado por la universidad de procedencia (*).
+															Constancia de
+															inscripci&oacute;n
+															en l&iacute;nea del
+															grado de Maestro o
+															Doctor emitido por
+															SUNEDU o la copia
+															del diploma de grado
+															de Maestro o Doctor
+															fedateado por la
+															universidad de
+															procedencia (*).
 														</li>
 														<li>
-															Copia del documento de identidad (DNI, carn&eacute; de
-															extranjer&iacute;a o pasaporte).
+															Copia del documento
+															de identidad (DNI,
+															carn&eacute; de
+															extranjer&iacute;a o
+															pasaporte).
 														</li>
 														<li>
-															Recibo de pago por derecho de inscripci&oacute;n efectuado en el Banco
-															de Cr&eacute;dito del Per&uacute; o en el Banco de la Naci&oacute;n.
+															Recibo de pago por
+															derecho de
+															inscripci&oacute;n
+															efectuado en el
+															Banco de
+															Cr&eacute;dito del
+															Per&uacute; o en el
+															Banco de la
+															Naci&oacute;n.
 														</li>
-														<li>Proyecto de Investigaci&oacute;n.</li>
 														<li>
-															Otro documento que la Unidad de Posgrado considere con relaci&oacute;n
-															al perfil de ingreso al programa que postula. Revisar requisitos a
-															trav&eacute;s de la p&aacute;gina web de la Facultad &ndash; Posgrado.
+															Proyecto de
+															Investigaci&oacute;n.
+														</li>
+														<li>
+															Otro documento que
+															la Unidad de
+															Posgrado considere
+															con relaci&oacute;n
+															al perfil de ingreso
+															al programa que
+															postula. Revisar
+															requisitos a
+															trav&eacute;s de la
+															p&aacute;gina web de
+															la Facultad &ndash;
+															Posgrado.
 														</li>
 													</ol>
 													<p>
-														(*) Los postulantes que obtuvieron el grado de Maestro o Doctor en la
-														Universidad Nacional Mayor de San Marcos solo presentan copia simple.
+														(*) Los postulantes que
+														obtuvieron el grado de
+														Maestro o Doctor en la
+														Universidad Nacional
+														Mayor de San Marcos solo
+														presentan copia simple.
 														<br />
-														En el caso de graduados en el extranjero, los grados y t&iacute;tulos
-														deber&aacute;n estar revalidados o reconocidos seg&uacute;n las normas
-														vigentes.
+														En el caso de graduados
+														en el extranjero, los
+														grados y t&iacute;tulos
+														deber&aacute;n estar
+														revalidados o
+														reconocidos seg&uacute;n
+														las normas vigentes.
 													</p>
 												</Tab>
 											</Tabs>
@@ -737,72 +1233,165 @@ const index = () => {
 											aria-labelledby="v-pills-inversion-tab"
 										>
 											<p>
-												<b>Pago de inscripción:</b> Banco de Crédito del Perú Cta. Cte.n.º
-												191-0215772014 CCI n.º 002-191-00021577201451 o Banco de la Nación
+												<b>Pago de inscripción:</b>{' '}
+												Banco de Crédito del Perú Cta.
+												Cte.n.º 191-0215772014 CCI n.º
+												002-191-00021577201451 o Banco
+												de la Nación
 											</p>
 											<div className="table-responsive admision-posgrado-tablas">
 												<table className="striped w-100">
 													<tbody>
-														<tr style={{ borderTop: "1px solid #56756b40" }}>
+														<tr
+															style={{
+																borderTop:
+																	'1px solid #56756b40',
+															}}
+														>
 															<td></td>
-															<td>Estudiantes de UNMSM</td>
-															<td>Otras universidades</td>
+															<td>
+																Estudiantes de
+																UNMSM
+															</td>
+															<td>
+																Otras
+																universidades
+															</td>
 														</tr>
 														<tr>
-															<td style={{ backgroundColor: "#d2ede6" }}>Maestría</td>
-															<td style={{ backgroundColor: "#ffffff" }}>
+															<td
+																style={{
+																	backgroundColor:
+																		'#d2ede6',
+																}}
+															>
+																Maestría
+															</td>
+															<td
+																style={{
+																	backgroundColor:
+																		'#ffffff',
+																}}
+															>
 																S/.350.00
 																<br />
-																Transacción: 9650 + código: 9700
+																Transacción:
+																9650 + código:
+																9700
 															</td>
-															<td style={{ backgroundColor: "#ffffff" }}>
+															<td
+																style={{
+																	backgroundColor:
+																		'#ffffff',
+																}}
+															>
 																S/.450.00
 																<br />
-																Transacción: 9650 + código: 9701
+																Transacción:
+																9650 + código:
+																9701
 															</td>
 														</tr>
-														<tr style={{ borderBottom: "1px solid #56756b40" }}>
-															<td rowSpan={2}>Doctorado</td>
-															<td style={{ backgroundColor: "#ffffff" }}>
+														<tr
+															style={{
+																borderBottom:
+																	'1px solid #56756b40',
+															}}
+														>
+															<td rowSpan={2}>
+																Doctorado
+															</td>
+															<td
+																style={{
+																	backgroundColor:
+																		'#ffffff',
+																}}
+															>
 																S/.400.00
 																<br />
-																Transacción: 9650 + código: 9702
+																Transacción:
+																9650 + código:
+																9702
 															</td>
-															<td style={{ backgroundColor: "#ffffff" }}>
+															<td
+																style={{
+																	backgroundColor:
+																		'#ffffff',
+																}}
+															>
 																S/.500.00
 																<br />
-																Transacción: 9650 + código: 9703
+																Transacción:
+																9650 + código:
+																9703
 															</td>
 														</tr>
 													</tbody>
 												</table>
 											</div>
-											<p className="mt-4">Inversión por estudios de Posgrado</p>
+											<p className="mt-4">
+												Inversión por estudios de
+												Posgrado
+											</p>
 											<div className="table-responsive admision-posgrado-tablas">
 												<table className="striped w-100">
 													<tbody>
-														<tr style={{ borderTop: "1px solid #56756b40" }}>
+														<tr
+															style={{
+																borderTop:
+																	'1px solid #56756b40',
+															}}
+														>
 															<td>Programa</td>
 															<td>Descripción</td>
 															<td>Importe</td>
 															<td>Requisito</td>
 														</tr>
-														<tr style={{ borderTop: "1px solid #56756b40" }}>
-															<td>Maetrías (4 semestres)</td>
-															<td>Matrícula / Perfeccionamiento</td>
-															<td>S/.310.00 / S/.2,000.00</td>
-															<td>Cubrir vacante</td>
+														<tr
+															style={{
+																borderTop:
+																	'1px solid #56756b40',
+															}}
+														>
+															<td>
+																Maetrías (4
+																semestres)
+															</td>
+															<td>
+																Matrícula /
+																Perfeccionamiento
+															</td>
+															<td>
+																S/.310.00 /
+																S/.2,000.00
+															</td>
+															<td>
+																Cubrir vacante
+															</td>
 														</tr>
 														<tr
 															style={{
-																borderBottom: "1px solid #56756b40",
-																backgroundColor: "#ffffff",
+																borderBottom:
+																	'1px solid #56756b40',
+																backgroundColor:
+																	'#ffffff',
 															}}
 														>
-															<td>Doctorado (6 semestres)</td>
-															<td>Matrícula / Perfeccionamiento</td>
-															<td>S/.310.00 / S/.3,400.00</td>
-															<td>Cubrir vacante</td>
+															<td>
+																Doctorado (6
+																semestres)
+															</td>
+															<td>
+																Matrícula /
+																Perfeccionamiento
+															</td>
+															<td>
+																S/.310.00 /
+																S/.3,400.00
+															</td>
+															<td>
+																Cubrir vacante
+															</td>
 														</tr>
 													</tbody>
 												</table>
@@ -816,46 +1405,105 @@ const index = () => {
 										>
 											<p>
 												<b>Inscripción: &nbsp;</b>
-												<a href="http://posgrado.unmsm.edu.pe" target="_blank">
+												<a
+													href="http://posgrado.unmsm.edu.pe"
+													target="_blank"
+												>
 													http://posgrado.unmsm.edu.pe
 												</a>
 											</p>
 											<p>
-												Pago de inscripción: Banco de Crédito del Perú Cta. Cte.n.º 191-0215772014
-												CCI n.º 002-191-00021577201451 o Banco de la Nación
+												Pago de inscripción: Banco de
+												Crédito del Perú Cta. Cte.n.º
+												191-0215772014 CCI n.º
+												002-191-00021577201451 o Banco
+												de la Nación
 											</p>
 											<div className="table-responsive admision-posgrado-tablas">
 												<table className="striped w-100">
 													<tbody>
-														<tr style={{ borderTop: "1px solid #56756b40" }}>
+														<tr
+															style={{
+																borderTop:
+																	'1px solid #56756b40',
+															}}
+														>
 															<td></td>
-															<td>Estudiantes de UNMSM</td>
-															<td>Otras universidades</td>
+															<td>
+																Estudiantes de
+																UNMSM
+															</td>
+															<td>
+																Otras
+																universidades
+															</td>
 														</tr>
 														<tr>
-															<td style={{ backgroundColor: "#d2ede6" }}>Maestría</td>
-															<td style={{ backgroundColor: "#ffffff" }}>
+															<td
+																style={{
+																	backgroundColor:
+																		'#d2ede6',
+																}}
+															>
+																Maestría
+															</td>
+															<td
+																style={{
+																	backgroundColor:
+																		'#ffffff',
+																}}
+															>
 																S/.350.00
 																<br />
-																Transacción: 9650 + código:9700
+																Transacción:
+																9650 +
+																código:9700
 															</td>
-															<td style={{ backgroundColor: "#ffffff" }}>
+															<td
+																style={{
+																	backgroundColor:
+																		'#ffffff',
+																}}
+															>
 																S/.450.00
 																<br />
-																Transacción: 9650 + código:9701
+																Transacción:
+																9650 +
+																código:9701
 															</td>
 														</tr>
-														<tr style={{ borderBottom: "1px solid #56756b40" }}>
-															<td rowSpan={2}>Doctorado</td>
-															<td style={{ backgroundColor: "#ffffff" }}>
+														<tr
+															style={{
+																borderBottom:
+																	'1px solid #56756b40',
+															}}
+														>
+															<td rowSpan={2}>
+																Doctorado
+															</td>
+															<td
+																style={{
+																	backgroundColor:
+																		'#ffffff',
+																}}
+															>
 																S/.400.00
 																<br />
-																Transacción: 9650 + código:9702
+																Transacción:
+																9650 +
+																código:9702
 															</td>
-															<td style={{ backgroundColor: "#ffffff" }}>
+															<td
+																style={{
+																	backgroundColor:
+																		'#ffffff',
+																}}
+															>
 																S/.500.00
 																<br />
-																Transacción: 9650 + código:9703
+																Transacción:
+																9650 +
+																código:9703
 															</td>
 														</tr>
 													</tbody>
