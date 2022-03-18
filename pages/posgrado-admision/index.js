@@ -12,14 +12,14 @@ const index = () => {
 	const { width, height } = useWindowSize();
 	const [docentes, setDocentes] = useState([]);
 
-	// useEffect(() => {
-	// 	(async () => {
-	// 		const response = await getDocenteByIdInformacionAcademicaApi(
-	// 			'doctorado_en_ciencias_biologicas'
-	// 		);
-	// 		setDocentes(response);
-	// 	})();
-	// }, []);
+	useEffect(() => {
+		(async () => {
+			const response = await getDocenteByIdInformacionAcademicaApi(
+				'doctorado_en_ciencias_biologicas'
+			);
+			setDocentes(response);
+		})();
+	}, []);
 
 	const Contact = () => {
 		return (
@@ -384,11 +384,11 @@ const index = () => {
 																		Del 01
 																		de
 																		febrero
-																		al 18 de
+																		al 27 de
 																		marzo
 																	</td>
 																</tr>
-																<tr>
+																{/* <tr>
 																	<td>
 																		Inscripción
 																		extemporánea
@@ -397,7 +397,7 @@ const index = () => {
 																		21 de
 																		marzo
 																	</td>
-																</tr>
+																</tr> */}
 																<tr>
 																	<td>
 																		Examen
@@ -410,7 +410,7 @@ const index = () => {
 																		doctorados
 																	</td>
 																	<td>
-																		26 de
+																		28 de
 																		marzo
 																	</td>
 																</tr>
@@ -425,8 +425,8 @@ const index = () => {
 																		doctorado)
 																	</td>
 																	<td>
-																		27 y 28
-																		de marzo
+																		29 de
+																		marzo
 																	</td>
 																</tr>
 																<tr>
@@ -437,8 +437,8 @@ const index = () => {
 																	</td>
 																	<td>
 																		{' '}
-																		29 y 30
-																		de marzo
+																		30 de
+																		marzo
 																	</td>
 																</tr>
 																<tr>
@@ -458,8 +458,22 @@ const index = () => {
 																		de actas
 																	</td>
 																	<td>
-																		27 y 28
-																		de marzo
+																		31 de
+																		marzo{' '}
+																		<br />{' '}
+																		01 de
+																		abril
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Publicación
+																		de
+																		resultados
+																	</td>
+																	<td>
+																		02 de
+																		abril
 																	</td>
 																</tr>
 																<tr>
@@ -473,7 +487,7 @@ const index = () => {
 																		la DGEP
 																	</td>
 																	<td>
-																		04 de
+																		06 de
 																		abril
 																	</td>
 																</tr>
@@ -504,6 +518,19 @@ const index = () => {
 																	<td>
 																		{' '}
 																		12 de
+																		abril
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		Reactualización
+																		de
+																		matrícula
+																	</td>
+																	<td>
+																		Del 28
+																		de marzo
+																		al 01 de
 																		abril
 																	</td>
 																</tr>
