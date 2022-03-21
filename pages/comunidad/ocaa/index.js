@@ -1,9 +1,9 @@
-import React from "react";
-import Layout from "../../../components/Layout";
+import React from 'react';
+import Layout from '../../../components/Layout';
 // import Tabs from "../../../components/Tabs/vanillaTabs"
-import { Row, Col, Container, Breadcrumb } from "react-bootstrap";
-import Accordion from "react-bootstrap/Accordion";
-import Link from "next/link";
+import { Row, Col, Container, Breadcrumb } from 'react-bootstrap';
+import Accordion from 'react-bootstrap/Accordion';
+import Link from 'next/link';
 
 const index = () => {
 	return (
@@ -31,7 +31,8 @@ const index = () => {
                                             </Link>
                                         </li> */}
 										<Breadcrumb.Item active>
-											Comunidad: Oficina de Calidad Académica y Acreditación
+											Comunidad: Oficina de Calidad
+											Académica y Acreditación
 										</Breadcrumb.Item>
 									</Breadcrumb>
 								</Col>
@@ -45,7 +46,8 @@ const index = () => {
 								<Col md="1"></Col>
 								<Col>
 									<div className="title-page text-center">
-										Oficina de Calidad Académica y Acreditación
+										Oficina de Calidad Académica y
+										Acreditación
 									</div>
 								</Col>
 								<Col md="1"></Col>
@@ -187,7 +189,10 @@ const index = () => {
 									</div>
 								</Col>
 								<Col md="7" lg="8">
-									<div className="mb-3 tab-content" id="v-pills-tabContent">
+									<div
+										className="mb-3 tab-content"
+										id="v-pills-tabContent"
+									>
 										<div
 											className="mb-3 tab-pane fade show active"
 											id="v-pills-presentacion"
@@ -196,33 +201,91 @@ const index = () => {
 										>
 											<Container>
 												<Row>
-													<Col md="9" className="pl-0">
+													<Col
+														md="9"
+														className="pl-0"
+													>
 														{/* <p>
 															<span className="title-dark">Dr. Pablo Sergio Ramírez Roca</span>
 															<span className="divisor-text-green mx-2"></span>
 															<span className="title">Decano</span>
 														</p> */}
-														<p style={{ textAlign: "justify" }}>
+														<p
+															style={{
+																textAlign:
+																	'justify',
+															}}
+														>
 															<p>
-																La Oficina de Calidad Acad&eacute;mica y Acreditaci&oacute;n (OCAA)
-																de la facultad de Ciencias Biol&oacute;gicas es el &oacute;rgano de
-																asesor&iacute;a que lidera los procesos de aseguramiento de la
-																calidad, priorizando los procesos acad&eacute;micos directamente
-																relacionados con la formaci&oacute;n profesional. Bajo ese contexto,
-																implementa el Sistema de Gesti&oacute;n de la Calidad y asume el
-																compromiso de impulsar la acreditaci&oacute;n de los programas de la
-																facultad, bajo el enfoque de una cultura de calidad y trabajo en
-																equipo, involucrando la participaci&oacute;n de docentes, personal
-																administrativo y estudiantes.
+																La Oficina de
+																Calidad
+																Acad&eacute;mica
+																y
+																Acreditaci&oacute;n
+																(OCAA) de la
+																facultad de
+																Ciencias
+																Biol&oacute;gicas
+																es el
+																&oacute;rgano de
+																asesor&iacute;a
+																que lidera los
+																procesos de
+																aseguramiento de
+																la calidad,
+																priorizando los
+																procesos
+																acad&eacute;micos
+																directamente
+																relacionados con
+																la
+																formaci&oacute;n
+																profesional.
+																Bajo ese
+																contexto,
+																implementa el
+																Sistema de
+																Gesti&oacute;n
+																de la Calidad y
+																asume el
+																compromiso de
+																impulsar la
+																acreditaci&oacute;n
+																de los programas
+																de la facultad,
+																bajo el enfoque
+																de una cultura
+																de calidad y
+																trabajo en
+																equipo,
+																involucrando la
+																participaci&oacute;n
+																de docentes,
+																personal
+																administrativo y
+																estudiantes.
 															</p>
 															<p>
-																Jer&aacute;rquicamente depende del Decanato de la facultad y,
-																funcionalmente de la Oficina Central de Calidad Acad&eacute;mica y
-																Acreditaci&oacute;n (OCCAA) de la Universidad.
+																Jer&aacute;rquicamente
+																depende del
+																Decanato de la
+																facultad y,
+																funcionalmente
+																de la Oficina
+																Central de
+																Calidad
+																Acad&eacute;mica
+																y
+																Acreditaci&oacute;n
+																(OCCAA) de la
+																Universidad.
 															</p>
 														</p>
 													</Col>
-													<Col md="3" className="pr-0">
+													<Col
+														md="3"
+														className="pr-0"
+													>
 														<div className="mb-3">
 															<img
 																className="img-fluid w-100"
@@ -232,9 +295,13 @@ const index = () => {
 														</div>
 														<div className="d-flex justify-content-center flex-column">
 															<p className="m-0 text-center title-dark">
-																Blga. Jeanne R. Alba Luna
+																Blga. Jeanne R.
+																Alba Luna
 															</p>
-															<p className="m-0 text-center">Jefa de la OCAA-FCB</p>
+															<p className="m-0 text-center">
+																Jefa de la
+																OCAA-FCB
+															</p>
 														</div>
 													</Col>
 												</Row>
@@ -248,68 +315,153 @@ const index = () => {
 										>
 											<Container>
 												<Row>
-													<Col md="12" className="pl-0">
-														<p>
-															<strong className="title-dark">Funciones del Jefe de la OCAA:</strong>
-														</p>
-														<ul className="chevron-green-dark">
-															<li>
-																Impulsar y ejecutar la pol&iacute;tica de calidad universitaria de
-																la UNMSM en la facultad.
-															</li>
-															<li>
-																Implementar la estrategia de evaluaci&oacute;n &ndash;
-																planeaci&oacute;n &ndash; acci&oacute;n.
-															</li>
-															<li>Presidir el Comit&eacute; de Calidad de la Facultad.</li>
-															<li>
-																Acompa&ntilde;ar a los Comit&eacute;s de Calidad de los programas de
-																pregrado y posgrado en los procesos de acreditaci&oacute;n.
-															</li>
-															<li>
-																Emitir opini&oacute;n y asesorar en el campo de su competencia.
-															</li>
-															<li>
-																Otras funciones que le asigne el Decanato o el jefe de la OCCAA.
-															</li>
-														</ul>
+													<Col
+														md="12"
+														className="pl-0"
+													>
 														<p>
 															<strong className="title-dark">
-																Funciones del comit&eacute; de calidad de la facultad:
+																Funciones del
+																Jefe de la OCAA:
 															</strong>
 														</p>
 														<ul className="chevron-green-dark">
 															<li>
-																Planificar y ejecutar las acciones de la pol&iacute;tica de calidad.
+																Impulsar y
+																ejecutar la
+																pol&iacute;tica
+																de calidad
+																universitaria de
+																la UNMSM en la
+																facultad.
 															</li>
 															<li>
-																Planificar y ejecutar la estrategia de evaluaci&oacute;n &ndash;
-																planeaci&oacute;n &ndash; acci&oacute;n
+																Implementar la
+																estrategia de
+																evaluaci&oacute;n
+																&ndash;
+																planeaci&oacute;n
+																&ndash;
+																acci&oacute;n.
 															</li>
 															<li>
-																Formular y ejecutar el plan de capacitaci&oacute;n en gesti&oacute;n
-																de la calidad dirigida a los miembros de la Facultad.
+																Presidir el
+																Comit&eacute; de
+																Calidad de la
+																Facultad.
 															</li>
 															<li>
-																Otras funciones que les corresponda por las normas pertinentes.
+																Acompa&ntilde;ar
+																a los
+																Comit&eacute;s
+																de Calidad de
+																los programas de
+																pregrado y
+																posgrado en los
+																procesos de
+																acreditaci&oacute;n.
+															</li>
+															<li>
+																Emitir
+																opini&oacute;n y
+																asesorar en el
+																campo de su
+																competencia.
+															</li>
+															<li>
+																Otras funciones
+																que le asigne el
+																Decanato o el
+																jefe de la
+																OCCAA.
 															</li>
 														</ul>
 														<p>
-															<strong className="title-dark">Funciones de la OCAA: </strong>
+															<strong className="title-dark">
+																Funciones del
+																comit&eacute; de
+																calidad de la
+																facultad:
+															</strong>
 														</p>
 														<ul className="chevron-green-dark">
 															<li>
-																Implementar las pol&iacute;ticas del Sistema de Calidad, Sistema de
-																Evaluaci&oacute;n de Calidad y Sistema de Gesti&oacute;n de la
-																Calidad en la Facultad, de acuerdo con las directivas de la OCCAA.
+																Planificar y
+																ejecutar las
+																acciones de la
+																pol&iacute;tica
+																de calidad.
 															</li>
 															<li>
-																Orientar a las unidades org&aacute;nicas de la Facultad sobre los
-																asuntos materia de su competencia.
+																Planificar y
+																ejecutar la
+																estrategia de
+																evaluaci&oacute;n
+																&ndash;
+																planeaci&oacute;n
+																&ndash;
+																acci&oacute;n
 															</li>
 															<li>
-																Otras funciones que le asigne el Decano o que le sean dadas por las
-																normas respectivas.
+																Formular y
+																ejecutar el plan
+																de
+																capacitaci&oacute;n
+																en
+																gesti&oacute;n
+																de la calidad
+																dirigida a los
+																miembros de la
+																Facultad.
+															</li>
+															<li>
+																Otras funciones
+																que les
+																corresponda por
+																las normas
+																pertinentes.
+															</li>
+														</ul>
+														<p>
+															<strong className="title-dark">
+																Funciones de la
+																OCAA:{' '}
+															</strong>
+														</p>
+														<ul className="chevron-green-dark">
+															<li>
+																Implementar las
+																pol&iacute;ticas
+																del Sistema de
+																Calidad, Sistema
+																de
+																Evaluaci&oacute;n
+																de Calidad y
+																Sistema de
+																Gesti&oacute;n
+																de la Calidad en
+																la Facultad, de
+																acuerdo con las
+																directivas de la
+																OCCAA.
+															</li>
+															<li>
+																Orientar a las
+																unidades
+																org&aacute;nicas
+																de la Facultad
+																sobre los
+																asuntos materia
+																de su
+																competencia.
+															</li>
+															<li>
+																Otras funciones
+																que le asigne el
+																Decano o que le
+																sean dadas por
+																las normas
+																respectivas.
 															</li>
 														</ul>
 													</Col>
@@ -324,160 +476,400 @@ const index = () => {
 										>
 											<Container>
 												<Row>
-													<Col md="12" className="pl-0">
+													<Col
+														md="12"
+														className="pl-0"
+													>
 														<p>
-															<strong>COMIT&Eacute; DE CALIDAD DE LA OCAA-FCB</strong>
+															<strong>
+																COMIT&Eacute; DE
+																CALIDAD DE LA
+																OCAA-FCB
+															</strong>
 														</p>
-														<p>Presidente:</p>
+														<p>Presidenta:</p>
 														<div className="pl-3">
-															<p>Blga. Jeanne Alba Luna</p>
+															<p>
+																Blga. Jeanne
+																Rossanne Alba
+																Luna
+															</p>
 														</div>
 														<p>Miembros:</p>
 														<div className="pl-3">
-															<p>Blga. María del Pilar Suyo Titto</p>
-															<p>Dr. Julio Solís Sarmiento</p>
-															<p>Ph.D Pedro Luis Castellanos Sánchez</p>
-															<p>Lic. Natividad Rodríguez Martínez</p>
+															<p>
+																Blga. María del
+																Pilar Suyo Titto
+															</p>
+															{/* <p>Dr. Julio Solís Sarmiento</p> */}
+															{/* <p>Ph.D Pedro Luis Castellanos Sánchez</p> */}
+															<p>
+																Mg. Nora
+																Yessenia Vera
+																Obando
+															</p>
+															<p>
+																Dr. Manuel Jesús
+																Marín Bravo
+															</p>
+															<p>
+																Lic. Natividad
+																Rodríguez
+																Martínez
+															</p>
+
 															{/* <p>Srta. Camila Guti&eacute;rrez Cobos</p> */}
 														</div>
 														<p>
 															<strong>
-																COMIT&Eacute;S DE CALIDAD DE LA ESCUELA PROFESIONAL DE CIENCIAS
+																COMIT&Eacute;S
+																DE CALIDAD DE LA
+																ESCUELA
+																PROFESIONAL DE
+																CIENCIAS
 																BIOL&Oacute;GICAS-PREGRADO:
 															</strong>
 														</p>
-														<p>Dr. Enoc Efer Jara Pe&ntilde;a - Presidente</p>
-														<p>Sra. Diana Mar&iacute;a Tarazona Atapoma - Miembro Administrativo</p>
+														<p>
+															Dr. Enoc Efer Jara
+															Pe&ntilde;a -
+															Presidente
+														</p>
+														<p>
+															Sra. Diana
+															Mar&iacute;a
+															Tarazona Atapoma -
+															Miembro
+															Administrativo
+														</p>
 														<p>
 															<strong>
-																Comit&eacute; de calidad de la Especialidad de Bot&aacute;nica:
+																Comit&eacute; de
+																calidad de la
+																Especialidad de
+																Bot&aacute;nica:
 															</strong>
 														</p>
 														<p className="pl-3">
-															Blga. Jasm&iacute;n Alexandra Opisso Mej&iacute;a - Miembro
+															Blga. Jasm&iacute;n
+															Alexandra Opisso
+															Mej&iacute;a -
+															Miembro
 														</p>
-														<p className="pl-3">Mg. Eder Augusto Chilquillo Torres - Miembro</p>
 														<p className="pl-3">
-															Dra. Roxana Yanina Casta&ntilde;eda Sifuentes - Miembro
+															Mg. Eder Augusto
+															Chilquillo Torres -
+															Miembro
 														</p>
 														<p className="pl-3">
-															Blgo. Mirbel Alberto Epiqui&eacute;n Rivera - Grupo de Inter&eacute;s
+															Dra. Roxana Yanina
+															Casta&ntilde;eda
+															Sifuentes - Miembro
 														</p>
-														<p className="pl-3">Sr. Piero Marcello Mazzei Ugaz - Estudiante</p>
+														<p className="pl-3">
+															Blgo. Mirbel Alberto
+															Epiqui&eacute;n
+															Rivera - Grupo de
+															Inter&eacute;s
+														</p>
+														<p className="pl-3">
+															Sr. Piero Marcello
+															Mazzei Ugaz -
+															Estudiante
+														</p>
 														<p>
 															<strong>
-																Comit&eacute; de calidad de la especialidad de hidrobiolog&iacute;a
-																y pesquer&iacute;a:
-															</strong>
-														</p>
-														<p className="pl-3">Mg. Liliana Del Rosario Tapia Ugaz Miembro</p>
-														<p className="pl-3">Mg. Irbin Baltazar Llanqui Argollo - Miembro</p>
-														<p className="pl-3">
-															Mg. V&iacute;ctor Hern&aacute;n Aramayo Navarro - Miembro
-														</p>
-														<p className="pl-3">
-															Mg. Jimmy Ronald Dulanto G&oacute;mez - Grupo de inter&eacute;s
-														</p>
-														<p className="pl-3">Srta. Melissa Mej&iacute;a Mallqui - Estudiante</p>
-														<p>
-															<strong>
-																Comit&eacute; de calidad de la especialidad de zoolog&iacute;a:
+																Comit&eacute; de
+																calidad de la
+																especialidad de
+																hidrobiolog&iacute;a
+																y
+																pesquer&iacute;a:
 															</strong>
 														</p>
 														<p className="pl-3">
-															Dr. Jos&eacute; Miguel P&eacute;rez Z&uacute;&ntilde;iga - Miembro
-														</p>
-														<p className="pl-3">Dra, Mabel Alvarado Guti&eacute;rrez - Miembro</p>
-														<p className="pl-3">
-															Blga. Eliana Del Pilar Quispitupac Quispitupac - Miembro
+															Mg. Liliana Del
+															Rosario Tapia Ugaz
+															Miembro
 														</p>
 														<p className="pl-3">
-															Mg. Fanny Mar&iacute;a Cornejo Fern&aacute;ndez - Grupo de
+															Mg. Irbin Baltazar
+															Llanqui Argollo -
+															Miembro
+														</p>
+														<p className="pl-3">
+															Mg. V&iacute;ctor
+															Hern&aacute;n
+															Aramayo Navarro -
+															Miembro
+														</p>
+														<p className="pl-3">
+															Mg. Jimmy Ronald
+															Dulanto G&oacute;mez
+															- Grupo de
 															inter&eacute;s
 														</p>
-														<p className="pl-3">Srta. Daniela Egas Jara - Estudiante</p>
+														<p className="pl-3">
+															Srta. Melissa
+															Mej&iacute;a Mallqui
+															- Estudiante
+														</p>
 														<p>
 															<strong>
-																COMIT&Eacute; DE CALIDAD DE E.P. GEN&Eacute;TICA Y
+																Comit&eacute; de
+																calidad de la
+																especialidad de
+																zoolog&iacute;a:
+															</strong>
+														</p>
+														<p className="pl-3">
+															Dr. Jos&eacute;
+															Miguel P&eacute;rez
+															Z&uacute;&ntilde;iga
+															- Miembro
+														</p>
+														<p className="pl-3">
+															Dra, Mabel Alvarado
+															Guti&eacute;rrez -
+															Miembro
+														</p>
+														<p className="pl-3">
+															Blga. Eliana Del
+															Pilar Quispitupac
+															Quispitupac -
+															Miembro
+														</p>
+														<p className="pl-3">
+															Mg. Fanny
+															Mar&iacute;a Cornejo
+															Fern&aacute;ndez -
+															Grupo de
+															inter&eacute;s
+														</p>
+														<p className="pl-3">
+															Srta. Daniela Egas
+															Jara - Estudiante
+														</p>
+														<p>
+															<strong>
+																COMIT&Eacute; DE
+																CALIDAD DE E.P.
+																GEN&Eacute;TICA
+																Y
 																BIOTECNOLOG&Iacute;A-PREGRADO&nbsp;
 															</strong>
 														</p>
 														<p>Presidenta:</p>
 														<div className="pl-3">
-															<p>Dra. M&oacute;nica Paredes Anaya</p>
+															<p>
+																Dra.
+																M&oacute;nica
+																Paredes Anaya
+															</p>
 														</div>
 														<p>Miembros:</p>
 														<div className="pl-3">
-															<p>Dr. Julio Sol&iacute;s Sarmiento</p>
-															<p>Mg. Edith Rodr&iacute;guez Quispe</p>
-															<p>Mg. Nadia Vera Munarri</p>
-															<p>Mg. Gustavo Sandoval Pe&ntilde;a</p>
-															<p>Mg. Jos&eacute; Linares Gonzales</p>
-															<p>Blga. Rosa Gonzales Gonzales</p>
-															<p>Blgo. Ruperto Severino L&oacute;pez</p>
-															<p>Blgo. Ernesto S&aacute;nchez Castro</p>
-															<p>Blgo. Ricardo Pella C&aacute;ceres</p>
-															<p>Sra. Yesmina Moscoso de la Torre</p>
+															<p>
+																Dr. Julio
+																Sol&iacute;s
+																Sarmiento
+															</p>
+															<p>
+																Mg. Edith
+																Rodr&iacute;guez
+																Quispe
+															</p>
+															<p>
+																Mg. Nadia Vera
+																Munarri
+															</p>
+															<p>
+																Mg. Gustavo
+																Sandoval
+																Pe&ntilde;a
+															</p>
+															<p>
+																Mg. Jos&eacute;
+																Linares Gonzales
+															</p>
+															<p>
+																Blga. Rosa
+																Gonzales
+																Gonzales
+															</p>
+															<p>
+																Blgo. Ruperto
+																Severino
+																L&oacute;pez
+															</p>
+															<p>
+																Blgo. Ernesto
+																S&aacute;nchez
+																Castro
+															</p>
+															<p>
+																Blgo. Ricardo
+																Pella
+																C&aacute;ceres
+															</p>
+															<p>
+																Sra. Yesmina
+																Moscoso de la
+																Torre
+															</p>
 														</div>
 														<p>
 															<strong>
-																COMIT&Eacute; DE CALIDAD DE E.P. MICROBIOLOG&Iacute;A Y
+																COMIT&Eacute; DE
+																CALIDAD DE E.P.
+																MICROBIOLOG&Iacute;A
+																Y
 																PARASITOLOG&Iacute;A-PREGRADO
 															</strong>
 														</p>
 														<p>Presidente:</p>
 														<div className="pl-3">
-															<p>Ph. D. Pedro Castellanos S&aacute;nchez</p>
+															<p>
+																Ph. D. Pedro
+																Castellanos
+																S&aacute;nchez
+															</p>
 														</div>
 														<p>Miembros:</p>
 														<div className="pl-3">
-															<p>Dr. Juan Atilio Jiménez Chunga </p>
-															<p>Dr. Enrique Mamani Zapana</p>
-															<p>Dra. Nora Vera Obando</p>
-															<p>Blgo. Augusto de la Cruz Calvo</p>
+															<p>
+																Dr. Juan Atilio
+																Jiménez Chunga{' '}
+															</p>
+															<p>
+																Dr. Enrique
+																Mamani Zapana
+															</p>
+															<p>
+																Dra. Nora Vera
+																Obando
+															</p>
+															<p>
+																Blgo. Augusto de
+																la Cruz Calvo
+															</p>
 															{/* <p>Prof. Juan Jiménez</p> */}
 															{/* <p>Srta. Camila Guti&eacute;rrez Cobos</p> */}
-															<p>Sr. Mirko Lino Navarro</p>
-															<p>Sr. Aldo Flores P&eacute;rez</p>
-															<p>Sra. Haydee Raquel S&aacute;enz Carrillo</p>
+															<p>
+																Sr. Mirko Lino
+																Navarro
+															</p>
+															<p>
+																Sr. Aldo Flores
+																P&eacute;rez
+															</p>
+															<p>
+																Sra. Haydee
+																Raquel
+																S&aacute;enz
+																Carrillo
+															</p>
 														</div>
 														<p>
 															<strong>
-																COMIT&Eacute; DE CALIDAD DEL DOCTORADO EN CIENCIAS
+																COMIT&Eacute; DE
+																CALIDAD DEL
+																DOCTORADO EN
+																CIENCIAS
 																BIOL&Oacute;GICAS-POSGRADO
 															</strong>
 														</p>
 														<p>Presidente:</p>
 														<div className="pl-3">
-															<p>Dr. C&eacute;sar Aguilar Puntriano</p>
+															<p>
+																Dr. C&eacute;sar
+																Aguilar
+																Puntriano
+															</p>
 														</div>
 														<p>Miembros:</p>
 														<div className="pl-3">
-															<p>Dra. Libertad Alzamora Gonzales</p>
-															<p>Dra. M&oacute;nica Arakaki Makishi</p>
-															<p>Dr. Niels Valencia Chac&oacute;n</p>
-															<p>Est. Yuri Ayala Sulca</p>
-															<p>Sra. Dora Mar&iacute;a Aguilar Ch&aacute;vez</p>
+															<p>
+																Dra. Libertad
+																Alzamora
+																Gonzales
+															</p>
+															<p>
+																Dra.
+																M&oacute;nica
+																Arakaki Makishi
+															</p>
+															<p>
+																Dr. Niels
+																Valencia
+																Chac&oacute;n
+															</p>
+															<p>
+																Est. Yuri Ayala
+																Sulca
+															</p>
+															<p>
+																Sra. Dora
+																Mar&iacute;a
+																Aguilar
+																Ch&aacute;vez
+															</p>
 														</div>
 														<p>
 															<strong>
-																COMITÉ DE CALIDAD DE LAS MAESTRÍAS DE LA UNIDAD DE POSGRADO
+																COMITÉ DE
+																CALIDAD DE LAS
+																MAESTRÍAS DE LA
+																UNIDAD DE
+																POSGRADO
 															</strong>
 														</p>
 														<p>Presidente:</p>
 														<div className="pl-3">
-															<p>Mg. Patricia Gloria Woll Toso</p>
+															<p>
+																Mg. Patricia
+																Gloria Woll Toso
+															</p>
 														</div>
 														<p>Miembros:</p>
 														<div className="pl-3">
-															<p>Mg. Liliana Del Rosario Tapia Ugaz - Miembro</p>
-															<p>Dr. Manuel Jes&uacute;s Mar&iacute;n Bravo - Miembro</p>
 															<p>
-																Dr. Jos&eacute; Miguel P&eacute;rez Z&uacute;&ntilde;iga - Miembro
+																Mg. Liliana Del
+																Rosario Tapia
+																Ugaz - Miembro
 															</p>
-															<p>Bach. Alejandro Paul Mendoza Huaman - Egresado</p>
-															<p>Bach. Valia Esther Herrera Alva - Estudiante</p>
-															<p>Sra. Dora Mar&iacute;a Aguilar Ch&aacute;vez - Administrativo</p>
+															<p>
+																Dr. Manuel
+																Jes&uacute;s
+																Mar&iacute;n
+																Bravo - Miembro
+															</p>
+															<p>
+																Dr. Jos&eacute;
+																Miguel
+																P&eacute;rez
+																Z&uacute;&ntilde;iga
+																- Miembro
+															</p>
+															<p>
+																Bach. Alejandro
+																Paul Mendoza
+																Huaman -
+																Egresado
+															</p>
+															<p>
+																Bach. Valia
+																Esther Herrera
+																Alva -
+																Estudiante
+															</p>
+															<p>
+																Sra. Dora
+																Mar&iacute;a
+																Aguilar
+																Ch&aacute;vez -
+																Administrativo
+															</p>
 														</div>
 													</Col>
 												</Row>
