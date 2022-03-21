@@ -12,14 +12,14 @@ const index = () => {
 	const { width, height } = useWindowSize();
 	const [docentes, setDocentes] = useState([]);
 
-	useEffect(() => {
-		(async () => {
-			const response = await getDocenteByIdInformacionAcademicaApi(
-				'doctorado_en_ciencias_biologicas'
-			);
-			setDocentes(response);
-		})();
-	}, []);
+	// useEffect(() => {
+	// 	(async () => {
+	// 		const response = await getDocenteByIdInformacionAcademicaApi(
+	// 			'doctorado_en_ciencias_biologicas'
+	// 		);
+	// 		setDocentes(response);
+	// 	})();
+	// }, []);
 
 	const Contact = () => {
 		return (
