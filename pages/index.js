@@ -371,7 +371,7 @@ export default function Home() {
 											</h1>
 											<p>
 												Inscripciones: Del 1 de febrero
-												al 18 de marzo
+												al 27 de marzo
 											</p>
 											<a
 												className="btn-green-bright"
