@@ -373,11 +373,17 @@ export default function Home() {
 												Inscripciones: Del 1 de febrero
 												al 18 de marzo
 											</p>
-											<Link href="/posgrado-admision">
+											<a
+												className="btn-green-bright"
+												href="/posgrado-admision"
+											>
+												Más información
+											</a>
+											{/* <Link href="/posgrado-admision">
 												<a className="btn-green-bright">
 													Mas información
 												</a>
-											</Link>
+											</Link> */}
 										</div>
 										<img
 											src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/cintillo_posgrado_74ca83b320.png"
@@ -522,14 +528,14 @@ export default function Home() {
 																<p className="desc-card mb-0">{novedades[1]?.sintesis}</p> */}
 															<div className="part-text">
 																<p
-																	class={
+																	className={
 																		width <
 																		768
 																			? 'line-clamp-9 mb-0'
 																			: 'line-clamp-11 mb-0'
 																	}
 																>
-																	<span class="title-card mb-2">
+																	<span className="title-card mb-2">
 																		{
 																			novedades[1]
 																				?.titulo
@@ -537,7 +543,7 @@ export default function Home() {
 																	</span>
 																	<br />
 																	<br />
-																	<span class="desc-card mb-0">
+																	<span className="desc-card mb-0">
 																		{
 																			novedades[1]
 																				?.sintesis
@@ -600,14 +606,14 @@ export default function Home() {
 																<p className="desc-card mb-0">{novedades[2]?.sintesis}</p> */}
 															<div className="part-text">
 																<p
-																	class={
+																	className={
 																		width <
 																		768
 																			? 'line-clamp-9 mb-0'
 																			: 'line-clamp-11 mb-0'
 																	}
 																>
-																	<span class="title-card mb-2">
+																	<span className="title-card mb-2">
 																		{
 																			novedades[2]
 																				?.titulo
@@ -615,7 +621,7 @@ export default function Home() {
 																	</span>
 																	<br />
 																	<br />
-																	<span class="desc-card mb-0">
+																	<span className="desc-card mb-0">
 																		{
 																			novedades[2]
 																				?.sintesis
@@ -678,14 +684,14 @@ export default function Home() {
 																<p className="desc-card mb-0">{novedades[3]?.sintesis}</p> */}
 															<div className="part-text">
 																<p
-																	class={
+																	className={
 																		width <
 																		768
 																			? 'line-clamp-9 mb-0'
 																			: 'line-clamp-11 mb-0'
 																	}
 																>
-																	<span class="title-card mb-2">
+																	<span className="title-card mb-2">
 																		{
 																			novedades[3]
 																				?.titulo
@@ -693,7 +699,7 @@ export default function Home() {
 																	</span>
 																	<br />
 																	<br />
-																	<span class="desc-card mb-0">
+																	<span className="desc-card mb-0">
 																		{
 																			novedades[3]
 																				?.sintesis
