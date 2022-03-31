@@ -71,7 +71,7 @@ const posgrado = () => {
 								<Col sm="1"></Col>
 							</Row>
 						</Container>
-						<div className="w-100 position-relative mb-5 admision-posgrado">
+						{/* <div className="w-100 position-relative mb-5 admision-posgrado">
 							<img
 								className="w-100 h-100 imagen-banner-posgrado"
 								src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/fondo_cintillo_321ab31838.png"
@@ -96,7 +96,7 @@ const posgrado = () => {
 									className="h-100 d-none d-md-block d-lg-block"
 								/>
 							</div>
-						</div>
+						</div> */}
 						<Container className="mb-4 mb-md-5">
 							<Row className="reverse-responsive">
 								<Col md="2"></Col>
@@ -114,8 +114,7 @@ const posgrado = () => {
 								</Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4"
-								>
+									md="4">
 									<div className="text-center mb-3">
 										{/* <Link href="/formacion-academica/pregrado/ciencias-biologicas"> */}
 										<Link href="/formacion-academica/posgrado/doctorado-ciencias-biologicas">
@@ -145,8 +144,7 @@ const posgrado = () => {
 								<Col md="2"></Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4"
-								>
+									md="4">
 									<div className="text-center mb-3">
 										<Link href="/formacion-academica/posgrado/maestria-botanica-tropical">
 											<a className="title-green">
@@ -205,8 +203,7 @@ const posgrado = () => {
 								</Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4"
-								>
+									md="4">
 									<div className="text-center mb-3">
 										<Link href="/formacion-academica/posgrado/maestria-ecosistemas">
 											<a className="title-green">
@@ -245,8 +242,7 @@ const posgrado = () => {
 								<Col md="2"></Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4"
-								>
+									md="4">
 									<div className="text-center mb-3">
 										<Link href="/formacion-academica/posgrado/maestria-zoologia">
 											<a className="title-green">
@@ -305,8 +301,7 @@ const posgrado = () => {
 								</Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4"
-								>
+									md="4">
 									<div className="text-center mb-3">
 										<Link href="/formacion-academica/posgrado/maestria-biologia-molecular">
 											<a className="title-green">
@@ -337,8 +332,7 @@ const posgrado = () => {
 								<Col md="2"></Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4"
-								>
+									md="4">
 									<div className="text-center mb-3">
 										<Link href="/formacion-academica/posgrado/maestria-genetica">
 											<a className="title-green">
@@ -396,8 +390,7 @@ const posgrado = () => {
 								</Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4"
-								>
+									md="4">
 									<div className="text-center mb-3">
 										<Link href="/formacion-academica/posgrado/maestria-biodiversidad">
 											<a className="title-green">
