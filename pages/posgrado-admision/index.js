@@ -1330,7 +1330,9 @@ const index = () => {
 																Matrícula /
 																Perfeccionamiento
 															</td>
-															<td>102-010</td>
+															<td>
+																102-010/102-011
+															</td>
 															<td>
 																S/.310.00 /
 																S/.2,000.00
@@ -1354,7 +1356,9 @@ const index = () => {
 																Matrícula /
 																Perfeccionamiento
 															</td>
-															<td>102-011</td>
+															<td>
+																102-010/102-011
+															</td>
 															<td>
 																S/.310.00 /
 																S/.3,400.00
