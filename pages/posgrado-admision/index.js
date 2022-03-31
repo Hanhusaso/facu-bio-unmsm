@@ -1327,14 +1327,17 @@ const index = () => {
 																semestres)
 															</td>
 															<td>
-																Matrícula /
+																Matrícula
+																<br />
 																Perfeccionamiento
 															</td>
 															<td>
-																102-010/102-011
+																102-010
+																<br />
+																102-011
 															</td>
 															<td>
-																S/.310.00 /
+																S/.310.00 <br />
 																S/.2,000.00
 															</td>
 															<td>
@@ -1353,14 +1356,17 @@ const index = () => {
 																semestres)
 															</td>
 															<td>
-																Matrícula /
+																Matrícula
+																<br />
 																Perfeccionamiento
 															</td>
 															<td>
-																102-010/102-011
+																102-010
+																<br />
+																102-011
 															</td>
 															<td>
-																S/.310.00 /
+																S/.310.00 <br />
 																S/.3,400.00
 															</td>
 															<td>
