@@ -126,8 +126,7 @@ const index = () => {
 											className="nav flex-column tabs-wrapper nav-pills"
 											id="v-pills-tab"
 											role="tablist"
-											aria-orientation="vertical"
-										>
+											aria-orientation="vertical">
 											<a
 												className="tab d-flex active"
 												id="v-pills-cronograma-tab"
@@ -135,19 +134,16 @@ const index = () => {
 												href="#v-pills-cronograma"
 												role="tab"
 												aria-controls="v-pills-cronograma"
-												aria-selected="true"
-											>
+												aria-selected="true">
 												<div
-													style={{ display: 'flex' }}
-												>
+													style={{ display: 'flex' }}>
 													<svg
 														width="24"
 														height="24"
 														viewBox="0 0 24 25"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
-														className="icon mr-3"
-													>
+														className="icon mr-3">
 														<path d="M23.04 2.69125H18V0.77125C18 0.63925 17.892 0.53125 17.76 0.53125H16.08C15.948 0.53125 15.84 0.63925 15.84 0.77125V2.69125H8.16V0.77125C8.16 0.63925 8.052 0.53125 7.92 0.53125H6.24C6.108 0.53125 6 0.63925 6 0.77125V2.69125H0.96C0.429 2.69125 0 3.12025 0 3.65125V23.5712C0 24.1022 0.429 24.5312 0.96 24.5312H23.04C23.571 24.5312 24 24.1022 24 23.5712V3.65125C24 3.12025 23.571 2.69125 23.04 2.69125ZM21.84 22.3712H2.16V10.9712H21.84V22.3712ZM2.16 8.93125V4.85125H6V6.29125C6 6.42325 6.108 6.53125 6.24 6.53125H7.92C8.052 6.53125 8.16 6.42325 8.16 6.29125V4.85125H15.84V6.29125C15.84 6.42325 15.948 6.53125 16.08 6.53125H17.76C17.892 6.53125 18 6.42325 18 6.29125V4.85125H21.84V8.93125H2.16Z" />
 													</svg>
 												</div>
@@ -160,12 +156,10 @@ const index = () => {
 												href="#v-pills-recomendaciones"
 												role="tab"
 												aria-controls="v-pills-recomendaciones"
-												aria-selected="false"
-											>
+												aria-selected="false">
 												<div
 													style={{ display: 'flex' }}
-													className="mr-3"
-												>
+													className="mr-3">
 													<FiAlertCircle
 														style={{
 															fontSize: '24px',
@@ -181,18 +175,15 @@ const index = () => {
 												href="#v-pills-cuadro"
 												role="tab"
 												aria-controls="v-pills-cuadro"
-												aria-selected="false"
-											>
+												aria-selected="false">
 												<div
-													style={{ display: 'flex' }}
-												>
+													style={{ display: 'flex' }}>
 													<svg
 														width="24"
 														height="24"
 														viewBox="0 0 24 24"
 														className="icon mr-3"
-														xmlns="http://www.w3.org/2000/svg"
-													>
+														xmlns="http://www.w3.org/2000/svg">
 														<g clipPath="url(#clip0_3136_9365)">
 															<path d="M21.75 4.5C21.9489 4.5 22.1397 4.57902 22.2803 4.71967C22.421 4.86032 22.5 5.05109 22.5 5.25V18.75C22.5 18.9489 22.421 19.1397 22.2803 19.2803C22.1397 19.421 21.9489 19.5 21.75 19.5H2.25C2.05109 19.5 1.86032 19.421 1.71967 19.2803C1.57902 19.1397 1.5 18.9489 1.5 18.75V5.25C1.5 5.05109 1.57902 4.86032 1.71967 4.71967C1.86032 4.57902 2.05109 4.5 2.25 4.5H21.75ZM2.25 3C1.65326 3 1.08097 3.23705 0.65901 3.65901C0.237053 4.08097 0 4.65326 0 5.25L0 18.75C0 19.3467 0.237053 19.919 0.65901 20.341C1.08097 20.7629 1.65326 21 2.25 21H21.75C22.3467 21 22.919 20.7629 23.341 20.341C23.7629 19.919 24 19.3467 24 18.75V5.25C24 4.65326 23.7629 4.08097 23.341 3.65901C22.919 3.23705 22.3467 3 21.75 3H2.25Z" />
 															<path d="M7.5 12C7.5 11.8011 7.57902 11.6103 7.71967 11.4697C7.86032 11.329 8.05109 11.25 8.25 11.25H18.75C18.9489 11.25 19.1397 11.329 19.2803 11.4697C19.421 11.6103 19.5 11.8011 19.5 12C19.5 12.1989 19.421 12.3897 19.2803 12.5303C19.1397 12.671 18.9489 12.75 18.75 12.75H8.25C8.05109 12.75 7.86032 12.671 7.71967 12.5303C7.57902 12.3897 7.5 12.1989 7.5 12ZM7.5 8.25C7.5 8.05109 7.57902 7.86032 7.71967 7.71967C7.86032 7.57902 8.05109 7.5 8.25 7.5H18.75C18.9489 7.5 19.1397 7.57902 19.2803 7.71967C19.421 7.86032 19.5 8.05109 19.5 8.25C19.5 8.44891 19.421 8.63968 19.2803 8.78033C19.1397 8.92098 18.9489 9 18.75 9H8.25C8.05109 9 7.86032 8.92098 7.71967 8.78033C7.57902 8.63968 7.5 8.44891 7.5 8.25ZM7.5 15.75C7.5 15.5511 7.57902 15.3603 7.71967 15.2197C7.86032 15.079 8.05109 15 8.25 15H18.75C18.9489 15 19.1397 15.079 19.2803 15.2197C19.421 15.3603 19.5 15.5511 19.5 15.75C19.5 15.9489 19.421 16.1397 19.2803 16.2803C19.1397 16.421 18.9489 16.5 18.75 16.5H8.25C8.05109 16.5 7.86032 16.421 7.71967 16.2803C7.57902 16.1397 7.5 15.9489 7.5 15.75ZM6 8.25C6 8.44891 5.92098 8.63968 5.78033 8.78033C5.63968 8.92098 5.44891 9 5.25 9C5.05109 9 4.86032 8.92098 4.71967 8.78033C4.57902 8.63968 4.5 8.44891 4.5 8.25C4.5 8.05109 4.57902 7.86032 4.71967 7.71967C4.86032 7.57902 5.05109 7.5 5.25 7.5C5.44891 7.5 5.63968 7.57902 5.78033 7.71967C5.92098 7.86032 6 8.05109 6 8.25V8.25ZM6 12C6 12.1989 5.92098 12.3897 5.78033 12.5303C5.63968 12.671 5.44891 12.75 5.25 12.75C5.05109 12.75 4.86032 12.671 4.71967 12.5303C4.57902 12.3897 4.5 12.1989 4.5 12C4.5 11.8011 4.57902 11.6103 4.71967 11.4697C4.86032 11.329 5.05109 11.25 5.25 11.25C5.44891 11.25 5.63968 11.329 5.78033 11.4697C5.92098 11.6103 6 11.8011 6 12V12ZM6 15.75C6 15.9489 5.92098 16.1397 5.78033 16.2803C5.63968 16.421 5.44891 16.5 5.25 16.5C5.05109 16.5 4.86032 16.421 4.71967 16.2803C4.57902 16.1397 4.5 15.9489 4.5 15.75C4.5 15.5511 4.57902 15.3603 4.71967 15.2197C4.86032 15.079 5.05109 15 5.25 15C5.44891 15 5.63968 15.079 5.78033 15.2197C5.92098 15.3603 6 15.5511 6 15.75V15.75Z" />
@@ -217,16 +208,14 @@ const index = () => {
 												href="#v-pills-requisitos"
 												role="tab"
 												aria-controls="v-pills-requisitos"
-												aria-selected="false"
-											>
+												aria-selected="false">
 												<div>
 													<svg
 														width="23"
 														height="24"
 														viewBox="0 0 23 26"
 														xmlns="http://www.w3.org/2000/svg"
-														className="icon mr-3"
-													>
+														className="icon mr-3">
 														<path d="M16.7708 11.6302C16.3896 11.6302 16.024 11.5034 15.7544 11.2778C15.4848 11.0522 15.3333 10.7462 15.3333 10.4271C15.3333 10.108 15.4848 9.80197 15.7544 9.57635C16.024 9.35072 16.3896 9.22396 16.7708 9.22396C17.1521 9.22396 17.5177 9.35072 17.7873 9.57635C18.0569 9.80197 18.2083 10.108 18.2083 10.4271C18.2083 10.7462 18.0569 11.0522 17.7873 11.2778C17.5177 11.5034 17.1521 11.6302 16.7708 11.6302ZM16.7708 16.4427C16.3896 16.4427 16.024 16.3159 15.7544 16.0903C15.4848 15.8647 15.3333 15.5587 15.3333 15.2396C15.3333 14.9205 15.4848 14.6145 15.7544 14.3888C16.024 14.1632 16.3896 14.0365 16.7708 14.0365C17.1521 14.0365 17.5177 14.1632 17.7873 14.3888C18.0569 14.6145 18.2083 14.9205 18.2083 15.2396C18.2083 15.5587 18.0569 15.8647 17.7873 16.0903C17.5177 16.3159 17.1521 16.4427 16.7708 16.4427ZM15.3333 20.0521C15.3333 20.3712 15.4848 20.6772 15.7544 20.9028C16.024 21.1284 16.3896 21.2552 16.7708 21.2552C17.1521 21.2552 17.5177 21.1284 17.7873 20.9028C18.0569 20.6772 18.2083 20.3712 18.2083 20.0521C18.2083 19.733 18.0569 19.427 17.7873 19.2013C17.5177 18.9757 17.1521 18.849 16.7708 18.849C16.3896 18.849 16.024 18.9757 15.7544 19.2013C15.4848 19.427 15.3333 19.733 15.3333 20.0521ZM13.4167 10.4271C13.4167 10.2144 13.3157 10.0103 13.136 9.85992C12.9563 9.7095 12.7125 9.625 12.4583 9.625H5.75C5.49583 9.625 5.25208 9.7095 5.07236 9.85992C4.89263 10.0103 4.79167 10.2144 4.79167 10.4271C4.79167 10.6398 4.89263 10.8438 5.07236 10.9942C5.25208 11.1447 5.49583 11.2292 5.75 11.2292H12.4583C12.7125 11.2292 12.9563 11.1447 13.136 10.9942C13.3157 10.8438 13.4167 10.6398 13.4167 10.4271ZM13.4167 15.2396C13.4167 15.0269 13.3157 14.8228 13.136 14.6724C12.9563 14.522 12.7125 14.4375 12.4583 14.4375H5.75C5.49583 14.4375 5.25208 14.522 5.07236 14.6724C4.89263 14.8228 4.79167 15.0269 4.79167 15.2396C4.79167 15.4523 4.89263 15.6563 5.07236 15.8067C5.25208 15.9572 5.49583 16.0417 5.75 16.0417H12.4583C12.7125 16.0417 12.9563 15.9572 13.136 15.8067C13.3157 15.6563 13.4167 15.4523 13.4167 15.2396ZM13.4167 20.0521C13.4167 19.8394 13.3157 19.6353 13.136 19.4849C12.9563 19.3345 12.7125 19.25 12.4583 19.25H5.75C5.49583 19.25 5.25208 19.3345 5.07236 19.4849C4.89263 19.6353 4.79167 19.8394 4.79167 20.0521C4.79167 20.2648 4.89263 20.4688 5.07236 20.6192C5.25208 20.7697 5.49583 20.8542 5.75 20.8542H12.4583C12.7125 20.8542 12.9563 20.7697 13.136 20.6192C13.3157 20.4688 13.4167 20.2648 13.4167 20.0521ZM8.625 3.30838e-07C8.03021 -0.000260645 7.44996 0.153884 6.96423 0.441191C6.47849 0.728498 6.11118 1.13482 5.91292 1.60417H2.875C2.1125 1.60417 1.38123 1.85768 0.842068 2.30894C0.302901 2.7602 0 3.37224 0 4.01042V23.2604C0 23.8986 0.302901 24.5106 0.842068 24.9619C1.38123 25.4131 2.1125 25.6667 2.875 25.6667H20.125C20.8875 25.6667 21.6188 25.4131 22.1579 24.9619C22.6971 24.5106 23 23.8986 23 23.2604V4.01042C23 3.37224 22.6971 2.7602 22.1579 2.30894C21.6188 1.85768 20.8875 1.60417 20.125 1.60417H17.0871C16.8888 1.13482 16.5215 0.728498 16.0358 0.441191C15.55 0.153884 14.9698 -0.000260645 14.375 3.30838e-07H8.625ZM7.66667 2.40625C7.66667 2.19352 7.76763 1.98951 7.94736 1.83909C8.12708 1.68867 8.37083 1.60417 8.625 1.60417H14.375C14.6292 1.60417 14.8729 1.68867 15.0526 1.83909C15.2324 1.98951 15.3333 2.19352 15.3333 2.40625C15.3333 2.61898 15.2324 2.82299 15.0526 2.97341C14.8729 3.12383 14.6292 3.20833 14.375 3.20833H8.625C8.37083 3.20833 8.12708 3.12383 7.94736 2.97341C7.76763 2.82299 7.66667 2.61898 7.66667 2.40625ZM2.875 3.20833H5.91292C6.11118 3.67768 6.47849 4.084 6.96423 4.37131C7.44996 4.65862 8.03021 4.81276 8.625 4.8125H14.375C14.9698 4.81276 15.55 4.65862 16.0358 4.37131C16.5215 4.084 16.8888 3.67768 17.0871 3.20833H20.125C20.3792 3.20833 20.6229 3.29284 20.8026 3.44326C20.9824 3.59368 21.0833 3.79769 21.0833 4.01042V23.2604C21.0833 23.4731 20.9824 23.6772 20.8026 23.8276C20.6229 23.978 20.3792 24.0625 20.125 24.0625H2.875C2.62083 24.0625 2.37708 23.978 2.19736 23.8276C2.01763 23.6772 1.91667 23.4731 1.91667 23.2604V4.01042C1.91667 3.79769 2.01763 3.59368 2.19736 3.44326C2.37708 3.29284 2.62083 3.20833 2.875 3.20833V3.20833Z" />
 													</svg>
 												</div>
@@ -239,8 +228,7 @@ const index = () => {
 												href="#v-pills-inversion"
 												role="tab"
 												aria-controls="v-pills-inversion"
-												aria-selected="false"
-											>
+												aria-selected="false">
 												<div>
 													<svg
 														width="26"
@@ -248,8 +236,7 @@ const index = () => {
 														viewBox="0 0 26 19"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
-														className="icon mr-3"
-													>
+														className="icon mr-3">
 														<path
 															d="M2.39286 3.42857C2.39286 3.15654 2.49968 2.89624 2.68889 2.70478C2.878 2.51342 3.13385 2.40646 3.4 2.40646H22.6C22.8661 2.40646 23.122 2.51342 23.3111 2.70478C23.5003 2.89624 23.6071 3.15654 23.6071 3.42857V15.5714C23.6071 15.8435 23.5003 16.1038 23.3111 16.2952C23.122 16.4866 22.8661 16.5935 22.6 16.5935H3.4C3.13385 16.5935 2.878 16.4866 2.68889 16.2952C2.49968 16.1038 2.39286 15.8435 2.39286 15.5714V3.42857ZM1.52512 1.53558C1.02849 2.03814 0.75 2.71912 0.75 3.42857V15.5714C0.75 16.2809 1.02849 16.9619 1.52512 17.4644C2.02186 17.9671 2.69622 18.25 3.4 18.25H22.6C23.3038 18.25 23.9781 17.9671 24.4749 17.4644C24.9715 16.9619 25.25 16.2809 25.25 15.5714V3.42857C25.25 2.71912 24.9715 2.03813 24.4749 1.53558C23.9781 1.03293 23.3038 0.75 22.6 0.75H3.4C2.69622 0.75 2.02186 1.03293 1.52512 1.53558Z"
 															stroke="#56756B"
@@ -289,8 +276,7 @@ const index = () => {
 												href="#v-pills-inscripcion"
 												role="tab"
 												aria-controls="v-pills-inscripcion"
-												aria-selected="false"
-											>
+												aria-selected="false">
 												<div>
 													<svg
 														width="22"
@@ -298,8 +284,7 @@ const index = () => {
 														viewBox="0 0 22 25"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
-														className="icon mr-3"
-													>
+														className="icon mr-3">
 														<path
 															d="M13.9713 11.0971L10.3447 14.7251L8.87414 13.2532L8.87406 13.2531C8.78402 13.1631 8.67713 13.0917 8.55948 13.0429C8.44184 12.9942 8.31574 12.9691 8.18841 12.9691C7.93124 12.9691 7.6846 13.0713 7.50276 13.2531C7.41272 13.3432 7.34129 13.4501 7.29256 13.5677C7.24383 13.6854 7.21875 13.8114 7.21875 13.9388C7.21875 14.0661 7.24383 14.1922 7.29256 14.3099C7.34129 14.4275 7.41272 14.5344 7.50276 14.6244L9.65878 16.7805C9.65885 16.7805 9.65893 16.7806 9.659 16.7807C9.74894 16.8708 9.85577 16.9423 9.97337 16.9911C10.0911 17.0399 10.2172 17.0651 10.3447 17.0651C10.4721 17.0651 10.5983 17.0399 10.7159 16.9911C10.8335 16.9423 10.9404 16.8708 11.0303 16.7807C11.0304 16.7806 11.0305 16.7805 11.0305 16.7805L15.3426 12.4684C15.3426 12.4684 15.3427 12.4683 15.3427 12.4683C15.4329 12.3783 15.5044 12.2715 15.5532 12.1538C15.6021 12.0361 15.6272 11.91 15.6272 11.7825C15.6272 11.6551 15.6021 11.5289 15.5532 11.4112C15.5044 11.2936 15.4329 11.1868 15.3428 11.0969C15.2528 11.0068 15.146 10.9353 15.0284 10.8865C14.9108 10.8376 14.7846 10.8125 14.6572 10.8125C14.5297 10.8125 14.4036 10.8376 14.2859 10.8865C14.1682 10.9353 14.0613 11.0069 13.9713 11.0971Z"
 															stroke="#56756B"
@@ -330,23 +315,19 @@ const index = () => {
 								<Col md="7" lg="8">
 									<div
 										className="mb-3 tab-content"
-										id="v-pills-tabContent"
-									>
+										id="v-pills-tabContent">
 										<div
 											className="mb-3 tab-pane fade show active"
 											id="v-pills-cronograma"
 											role="tabpanel"
-											aria-labelledby="v-pills-cronograma-tab"
-										>
+											aria-labelledby="v-pills-cronograma-tab">
 											<Tabs
 												defaultActiveKey="cronogramas"
-												id="admision-tab"
-											>
+												id="admision-tab">
 												<Tab
 													className="pt-3"
 													eventKey="cronogramas"
-													title="Proceso de admisión"
-												>
+													title="Proceso de admisión">
 													<div className="table-responsive admision-posgrado-tablas">
 														<table className="striped w-100">
 															<thead>
@@ -541,8 +522,7 @@ const index = () => {
 												<Tab
 													className="pt-3"
 													eventKey="inscripcion"
-													title="Proceso de matrícula"
-												>
+													title="Proceso de matrícula">
 													<div className="table-responsive admision-posgrado-tablas">
 														<table className="striped w-100">
 															<thead>
@@ -638,8 +618,7 @@ const index = () => {
 												<Tab
 													className="pt-3"
 													eventKey="academicas"
-													title="Actividades académicas"
-												>
+													title="Actividades académicas">
 													<div className="table-responsive admision-posgrado-tablas">
 														<table className="striped w-100">
 															<thead>
@@ -714,8 +693,7 @@ const index = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-recomendaciones"
 											role="tabpanel"
-											aria-labelledby="v-pills-recomendaciones-tab"
-										>
+											aria-labelledby="v-pills-recomendaciones-tab">
 											<p>
 												<strong>
 													RECOMENDACIONES PARA LOS
@@ -748,8 +726,7 @@ const index = () => {
 													FCB puede ser revisada en:
 													<a
 														href="https://vrip.unmsm.edu.pe/biologia/"
-														target="_blank"
-													>
+														target="_blank">
 														https://vrip.unmsm.edu.pe/biologia/
 													</a>
 												</li>
@@ -787,8 +764,7 @@ const index = () => {
 													aqu&iacute;:
 													<a
 														href="https://biologia.unmsm.edu.pe/formacion-academica/posgrado"
-														target="_blank"
-													>
+														target="_blank">
 														https://biologia.unmsm.edu.pe/formacion-academica/posgrado
 													</a>
 												</li>
@@ -816,8 +792,7 @@ const index = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-cuadro"
 											role="tabpanel"
-											aria-labelledby="v-pills-cuadro-tab"
-										>
+											aria-labelledby="v-pills-cuadro-tab">
 											<div className="table-responsive admision-posgrado-tablas">
 												<table className="striped w-100">
 													<thead>
@@ -961,8 +936,7 @@ const index = () => {
 															style={{
 																borderBottom:
 																	'1px solid #56756b40',
-															}}
-														>
+															}}>
 															<td colSpan={2}>
 																Biodiversidad y
 																gestión de
@@ -1007,8 +981,7 @@ const index = () => {
 															style={{
 																borderBottom:
 																	'1px solid #56756b40',
-															}}
-														>
+															}}>
 															<td colSpan={2}>
 																Doctorado en
 																Ciencias
@@ -1027,17 +1000,14 @@ const index = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-requisitos"
 											role="tabpanel"
-											aria-labelledby="v-pills-requisitos-tab"
-										>
+											aria-labelledby="v-pills-requisitos-tab">
 											<Tabs
 												defaultActiveKey="maestria"
-												id="admision-tab"
-											>
+												id="admision-tab">
 												<Tab
 													className="pt-3"
 													eventKey="maestria"
-													title="Maestría"
-												>
+													title="Maestría">
 													<p>
 														El postulante deberá
 														enviar (en un solo
@@ -1129,8 +1099,7 @@ const index = () => {
 												<Tab
 													className="pt-3"
 													eventKey="doctorado"
-													title="Doctorado"
-												>
+													title="Doctorado">
 													<p>
 														El postulante deberá
 														enviar (en un solo
@@ -1230,14 +1199,13 @@ const index = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-inversion"
 											role="tabpanel"
-											aria-labelledby="v-pills-inversion-tab"
-										>
+											aria-labelledby="v-pills-inversion-tab">
 											<p>
 												<b>Pago de inscripción:</b>{' '}
 												Banco de Crédito del Perú Cta.
 												Cte.n.º 191-0215772014 CCI n.º
 												002-191-00021577201451 o Banco
-												de la Nación
+												de la Nación:
 											</p>
 											<div className="table-responsive admision-posgrado-tablas">
 												<table className="striped w-100">
@@ -1246,8 +1214,7 @@ const index = () => {
 															style={{
 																borderTop:
 																	'1px solid #56756b40',
-															}}
-														>
+															}}>
 															<td></td>
 															<td>
 																Estudiantes de
@@ -1263,16 +1230,14 @@ const index = () => {
 																style={{
 																	backgroundColor:
 																		'#d2ede6',
-																}}
-															>
+																}}>
 																Maestría
 															</td>
 															<td
 																style={{
 																	backgroundColor:
 																		'#ffffff',
-																}}
-															>
+																}}>
 																S/.350.00
 																<br />
 																Transacción:
@@ -1283,8 +1248,7 @@ const index = () => {
 																style={{
 																	backgroundColor:
 																		'#ffffff',
-																}}
-															>
+																}}>
 																S/.450.00
 																<br />
 																Transacción:
@@ -1296,8 +1260,7 @@ const index = () => {
 															style={{
 																borderBottom:
 																	'1px solid #56756b40',
-															}}
-														>
+															}}>
 															<td rowSpan={2}>
 																Doctorado
 															</td>
@@ -1305,8 +1268,7 @@ const index = () => {
 																style={{
 																	backgroundColor:
 																		'#ffffff',
-																}}
-															>
+																}}>
 																S/.400.00
 																<br />
 																Transacción:
@@ -1317,8 +1279,7 @@ const index = () => {
 																style={{
 																	backgroundColor:
 																		'#ffffff',
-																}}
-															>
+																}}>
 																S/.500.00
 																<br />
 																Transacción:
@@ -1330,8 +1291,15 @@ const index = () => {
 												</table>
 											</div>
 											<p className="mt-4">
-												Inversión por estudios de
-												Posgrado
+												<b>
+													Inversión por estudios de
+													Posgrado:
+												</b>
+												&nbsp; Todo pago debe realizarse
+												en agencias físicas del Banco
+												Pichincha, según los conceptos
+												de pagos señalados en el
+												siguiente cuadro:
 											</p>
 											<div className="table-responsive admision-posgrado-tablas">
 												<table className="striped w-100">
@@ -1340,10 +1308,12 @@ const index = () => {
 															style={{
 																borderTop:
 																	'1px solid #56756b40',
-															}}
-														>
+															}}>
 															<td>Programa</td>
 															<td>Descripción</td>
+															<td>
+																Concepto de pago
+															</td>
 															<td>Importe</td>
 															<td>Requisito</td>
 														</tr>
@@ -1351,8 +1321,7 @@ const index = () => {
 															style={{
 																borderTop:
 																	'1px solid #56756b40',
-															}}
-														>
+															}}>
 															<td>
 																Maetrías (4
 																semestres)
@@ -1361,6 +1330,7 @@ const index = () => {
 																Matrícula /
 																Perfeccionamiento
 															</td>
+															<td>102-010</td>
 															<td>
 																S/.310.00 /
 																S/.2,000.00
@@ -1375,8 +1345,7 @@ const index = () => {
 																	'1px solid #56756b40',
 																backgroundColor:
 																	'#ffffff',
-															}}
-														>
+															}}>
 															<td>
 																Doctorado (6
 																semestres)
@@ -1385,6 +1354,7 @@ const index = () => {
 																Matrícula /
 																Perfeccionamiento
 															</td>
+															<td>102-011</td>
 															<td>
 																S/.310.00 /
 																S/.3,400.00
@@ -1401,14 +1371,12 @@ const index = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-inscripcion"
 											role="tabpanel"
-											aria-labelledby="v-pills-inversion-tab"
-										>
+											aria-labelledby="v-pills-inversion-tab">
 											<p>
 												<b>Inscripción: &nbsp;</b>
 												<a
 													href="http://posgrado.unmsm.edu.pe"
-													target="_blank"
-												>
+													target="_blank">
 													http://posgrado.unmsm.edu.pe
 												</a>
 											</p>
@@ -1426,8 +1394,7 @@ const index = () => {
 															style={{
 																borderTop:
 																	'1px solid #56756b40',
-															}}
-														>
+															}}>
 															<td></td>
 															<td>
 																Estudiantes de
@@ -1443,16 +1410,14 @@ const index = () => {
 																style={{
 																	backgroundColor:
 																		'#d2ede6',
-																}}
-															>
+																}}>
 																Maestría
 															</td>
 															<td
 																style={{
 																	backgroundColor:
 																		'#ffffff',
-																}}
-															>
+																}}>
 																S/.350.00
 																<br />
 																Transacción:
@@ -1463,8 +1428,7 @@ const index = () => {
 																style={{
 																	backgroundColor:
 																		'#ffffff',
-																}}
-															>
+																}}>
 																S/.450.00
 																<br />
 																Transacción:
@@ -1476,8 +1440,7 @@ const index = () => {
 															style={{
 																borderBottom:
 																	'1px solid #56756b40',
-															}}
-														>
+															}}>
 															<td rowSpan={2}>
 																Doctorado
 															</td>
@@ -1485,8 +1448,7 @@ const index = () => {
 																style={{
 																	backgroundColor:
 																		'#ffffff',
-																}}
-															>
+																}}>
 																S/.400.00
 																<br />
 																Transacción:
@@ -1497,8 +1459,7 @@ const index = () => {
 																style={{
 																	backgroundColor:
 																		'#ffffff',
-																}}
-															>
+																}}>
 																S/.500.00
 																<br />
 																Transacción:
