@@ -394,9 +394,8 @@ const posgrado = () => {
 									<div className="text-center mb-3">
 										<Link href="/formacion-academica/posgrado/maestria-biodiversidad">
 											<a className="title-green">
-												Maestría en Investigación en
-												Biodiversidad y Gestión de
-												Ecosistemas
+												Maestría en Biodiversidad y
+												Gestión de Ecosistemas
 											</a>
 										</Link>
 									</div>

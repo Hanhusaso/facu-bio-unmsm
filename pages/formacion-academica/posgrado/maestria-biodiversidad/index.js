@@ -65,7 +65,7 @@ const index = () => {
 
 	return (
 		<>
-			<Layout title="Maestría en Investigación en Biodiversidad y Gestión de Ecosistemas">
+			<Layout title="Maestría en Biodiversidad y Gestión de Ecosistemas">
 				<div>
 					<div>
 						<Container>
@@ -91,9 +91,8 @@ const index = () => {
 											</Link>
 										</li>
 										<Breadcrumb.Item active>
-											Maestría en Investigación en
-											Biodiversidad y Gestión de
-											Ecosistemas
+											Maestría en Biodiversidad y Gestión
+											de Ecosistemas
 										</Breadcrumb.Item>
 									</Breadcrumb>
 								</Col>
@@ -107,8 +106,8 @@ const index = () => {
 								<Col md="1"></Col>
 								<Col>
 									<div className="title-page text-center">
-										Maestría en Investigación en
-										Biodiversidad y Gestión de Ecosistemas
+										Maestría en Biodiversidad y Gestión de
+										Ecosistemas
 									</div>
 								</Col>
 								<Col md="1"></Col>
