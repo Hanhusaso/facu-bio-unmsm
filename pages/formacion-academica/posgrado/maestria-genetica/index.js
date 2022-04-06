@@ -263,9 +263,9 @@ const index = () => {
 												Sumilla del Programa
 											</p>
 											<p>
-												El objetivo de la Maestría de
-												Investigación en Genética es
-												formar investigadores y docentes
+												El objetivo de la Maestría en
+												Genética es formar
+												investigadores y docentes
 												calificados para conocer los
 												genes, su estructura, su
 												organización, los mecanismos de

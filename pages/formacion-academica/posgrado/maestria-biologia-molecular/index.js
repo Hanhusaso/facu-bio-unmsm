@@ -263,16 +263,15 @@ const index = () => {
 												Sumilla del Programa
 											</p>
 											<p>
-												La Maestría de Investigación en
-												Biología Molecular forma
-												especialistas del más alto nivel
-												conocedores de los conceptos y
-												metodologías actualizadas en el
-												campo de la biología molecular,
-												además de constituirse en un
-												seguidor activo de los
-												constantes avances de la
-												disciplina.
+												La Maestría en Biología
+												Molecular forma especialistas
+												del más alto nivel conocedores
+												de los conceptos y metodologías
+												actualizadas en el campo de la
+												biología molecular, además de
+												constituirse en un seguidor
+												activo de los constantes avances
+												de la disciplina.
 											</p>
 
 											<p className="title-dark">
