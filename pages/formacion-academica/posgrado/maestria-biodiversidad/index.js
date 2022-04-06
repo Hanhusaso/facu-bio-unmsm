@@ -266,12 +266,12 @@ const index = () => {
 											</p>
 											<p>
 												El objetivo general de la
-												Maestría de Investigación en
-												Biodiversidad y Gestión de
-												Ecosistemas es formar recursos
-												humanos con la capacidad de
-												generar conocimientos. Promover
-												y gestionar la conservación en
+												Maestría en Biodiversidad y
+												Gestión de Ecosistemas es formar
+												recursos humanos con la
+												capacidad de generar
+												conocimientos. Promover y
+												gestionar la conservación en
 												relación a la biodiversidad
 												dentro de los enfoques del
 												desarrollo sustentable y

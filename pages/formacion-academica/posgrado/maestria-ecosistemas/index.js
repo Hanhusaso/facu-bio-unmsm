@@ -262,15 +262,15 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
 											<p>
-												La Maestría de Investigación en
-												Ecosistemas y Recursos Acuáticos
-												se desarrolla con el fin de
-												formar capital humano que genere
-												conocimiento y su aplicación. Se
-												imparte una formación de calidad
-												que provee investigadores
-												altamente calificados. Tiene
-												tres menciones:
+												La Maestría en Ecosistemas y
+												Recursos Acuáticos se desarrolla
+												con el fin de formar capital
+												humano que genere conocimiento y
+												su aplicación. Se imparte una
+												formación de calidad que provee
+												investigadores altamente
+												calificados. Tiene tres
+												menciones:
 											</p>
 											<ul className="chevron-green-dark mb-3">
 												<li>Acuicultura</li>

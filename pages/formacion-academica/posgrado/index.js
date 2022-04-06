@@ -155,7 +155,7 @@ const posgrado = () => {
 									{/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
 									<div className="d-none d-md-block">
 										<p className="mb-2">
-											La Maestría de Botánica Tropical de
+											La Maestría en Botánica Tropical de
 											la Facultad de Ciencias Biológicas
 											de la Universidad Nacional Mayor de
 											San Marcos ofrece el grado académico
@@ -215,13 +215,12 @@ const posgrado = () => {
 									{/* <div className="title-green text-center">E.P Microbiología y Parasitología</div> */}
 									<div className="d-none d-md-block">
 										<p className="mb-2">
-											La Maestría de Investigación en
-											Ecosistemas y Recursos Acuáticos se
-											desarrolla con el fin de formar
-											capital humano que genere
-											conocimiento y su aplicación. Se
-											imparte una formación de calidad que
-											provee investigadores altamente
+											La Maestría en Ecosistemas y
+											Recursos Acuáticos se desarrolla con
+											el fin de formar capital humano que
+											genere conocimiento y su aplicación.
+											Se imparte una formación de calidad
+											que provee investigadores altamente
 											calificados. Tiene tres menciones:
 										</p>
 										<ul className="chevron-green-dark font-weight-bold">
@@ -312,11 +311,10 @@ const posgrado = () => {
 									{/* <div className="title-green text-center">E.P Microbiología y Parasitología</div> */}
 									<div className="d-none d-md-block">
 										<p className="mb-0">
-											La Maestría de Investigación en
-											Biología Molecular forma
-											especialistas del más alto nivel,
-											conocedores de los conceptos y
-											metodologías actualizadas en el
+											La Maestría en Biología Molecular
+											forma especialistas del más alto
+											nivel, conocedores de los conceptos
+											y metodologías actualizadas en el
 											campo de la biología molecular,
 											además de constituirse en un
 											seguidor activo de los constantes
@@ -343,20 +341,19 @@ const posgrado = () => {
 									{/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
 									<div className="d-none d-md-block">
 										<p className="mb-0">
-											El objetivo de la Maestría de
-											Investigación en Genética es formar
-											investigadores y docentes
-											calificados para conocer los genes,
-											su estructura, su organización, los
-											mecanismos de transferencia y
-											expresión y su alteración espontánea
-											e inducida en función del tiempo y
-											las condiciones ambientales. Así
-											mismo, utilizar las herramientas
-											moleculares para su aislamiento,
-											conservación y empleo en el
-											mejoramiento genético a través de
-											librerías y bancos genéticos.
+											El objetivo de la Maestría en
+											Genética es formar investigadores y
+											docentes calificados para conocer
+											los genes, su estructura, su
+											organización, los mecanismos de
+											transferencia y expresión y su
+											alteración espontánea e inducida en
+											función del tiempo y las condiciones
+											ambientales. Así mismo, utilizar las
+											herramientas moleculares para su
+											aislamiento, conservación y empleo
+											en el mejoramiento genético a través
+											de librerías y bancos genéticos.
 										</p>
 									</div>
 								</Col>
@@ -403,15 +400,15 @@ const posgrado = () => {
 									<div className="d-none d-md-block">
 										<p className="mb-0">
 											El objetivo general de la Maestría
-											de Investigación en Biodiversidad y
-											Gestión de Ecosistemas es formar
-											recursos humanos con la capacidad de
-											generar conocimientos. Promover y
-											gestionar la conservación en
-											relación a la biodiversidad dentro
-											de los enfoques del desarrollo
-											sustentable y ecosistémico en las
-											distintas regiones del país.
+											en Biodiversidad y Gestión de
+											Ecosistemas es formar recursos
+											humanos con la capacidad de generar
+											conocimientos. Promover y gestionar
+											la conservación en relación a la
+											biodiversidad dentro de los enfoques
+											del desarrollo sustentable y
+											ecosistémico en las distintas
+											regiones del país.
 										</p>
 									</div>
 								</Col>
