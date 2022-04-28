@@ -1,9 +1,19 @@
 .btn-modal-close {
-    color: $green-dark;
+	color: $green-dark;
 }
 
 @include media-breakpoint-up(lg) {
-    .modal-lg, .modal-xl {
-        max-width: 1400px;
-    }
+	.modal-lg,
+	.modal-xl {
+		max-width: 1400px;
+	}
+}
+
+.swiper {
+	position: static !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	top: 25% !important;
+	color: $green !important;
 }
