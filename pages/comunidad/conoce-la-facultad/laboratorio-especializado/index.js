@@ -110,7 +110,24 @@ const index = () => {
 											cualquier laboratorio.
 										</span>
 									</p>
-									<p>
+									<div>
+										<a
+											className="font-weight-bold"
+											style={{ cursor: 'pointer' }}
+											onClick={() => {
+												window.open(
+													'https://drive.google.com/file/d/1Trvv5JUixj9NkNLS92EJ2YX44Uq_kjqs/view?usp=sharing',
+													'_blank'
+												);
+											}}>
+											Clic aquí{' '}
+										</a>
+										<span style={{ fontWeight: '600' }}>
+											para descargar el brochure
+											informativo.
+										</span>
+									</div>
+									<p className="mt-2">
 										<strong>Equipos</strong>
 									</p>
 									<p>
