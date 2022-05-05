@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import Head from "next/head";
-import { useRouter } from "next/router";
+import React, { useEffect } from 'react';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 const index = () => {
 	// const router = useRouter();
@@ -18,7 +18,7 @@ const index = () => {
 				width="100%"
 				height="100%"
 				src="https://unmsm.edu.pe/"
-				style={{ position: "absolute", border: "none" }}
+				style={{ position: 'absolute', border: 'none' }}
 			/>
 		</>
 	);
