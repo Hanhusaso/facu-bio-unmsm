@@ -347,7 +347,6 @@ const index = () => {
 													adem&aacute;s en el
 													desarrollo de su tesis.
 												</p>
-												<br></br>
 												<p>
 													<strong>
 														DURACI&Oacute;N
@@ -357,7 +356,6 @@ const index = () => {
 													5 a&ntilde;os, divididos en
 													10 semestres&nbsp;
 												</p>
-												<br></br>
 												<p>
 													<strong>GRADO</strong>
 												</p>
@@ -370,7 +368,6 @@ const index = () => {
 													Hidrobiolog&iacute;a y
 													pesquer&iacute;a.
 												</p>
-												<br></br>
 												<p>
 													<strong>
 														T&Iacute;TULO
@@ -382,7 +379,6 @@ const index = () => {
 													Gen&eacute;tica y
 													Biotecnolog&iacute;a
 												</p>
-												<br></br>
 												<p>
 													<strong>
 														ESTRATEGIA EDUCATIVA
@@ -677,6 +673,7 @@ const index = () => {
 														acuerdo con su
 														&aacute;rea de
 														profundizaci&oacute;n.
+														<br />
 														Como investigador en
 														proyectos
 														tecnol&oacute;gicos y
@@ -686,7 +683,8 @@ const index = () => {
 														ganader&iacute;a,
 														pesquer&iacute;a,
 														industria, salud, medio
-														ambiente. Por su
+														ambiente.
+														<br /> Por su
 														car&aacute;cter de
 														emprendedor e innovador
 														en el aprovechamiento y

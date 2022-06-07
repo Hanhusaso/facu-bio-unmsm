@@ -564,7 +564,7 @@ const index = () => {
 														trabajo:
 													</strong>
 												</p>
-												<ul>
+												<ul className="chevron-green-dark">
 													<li aria-level="1">
 														<strong>Salud:</strong>{' '}
 														Dise&ntilde;ar
@@ -573,8 +573,9 @@ const index = () => {
 														enfocadas a estudios
 														ecol&oacute;gicos y
 														evolutivos intra e
-														interespec&iacute;ficos.Buscar
-														componentes
+														interespec&iacute;ficos.
+														<br />
+														Buscar componentes
 														gen&eacute;ticos de
 														enfermedades complejas
 														para mejorar su
@@ -583,8 +584,9 @@ const index = () => {
 														detecci&oacute;n de
 														mutaciones que provoquen
 														da&ntilde;os en la
-														salud.Trabajar en
-														proyectos de
+														salud.
+														<br />
+														Trabajar en proyectos de
 														reproducci&oacute;n
 														asistida y de estudio de
 														car&aacute;cteres
@@ -623,9 +625,10 @@ const index = () => {
 														trav&eacute;s del
 														mejoramiento
 														gen&eacute;tico de
-														plantas y
-														animales.Trabajar en el
-														mejor desarrollo de los
+														plantas y animales.
+														<br />
+														Trabajar en el mejor
+														desarrollo de los
 														servicios agrarios y
 														agropecuarios, a
 														trav&eacute;s de la

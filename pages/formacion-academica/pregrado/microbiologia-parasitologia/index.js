@@ -676,7 +676,7 @@ const index = () => {
 														trabajo:
 													</strong>
 												</p>
-												<ul>
+												<ul className="chevron-green-dark">
 													<li aria-level="1">
 														<strong>Salud: </strong>
 														Dise&ntilde;ar, dirigir
@@ -852,8 +852,10 @@ const index = () => {
 														garanticen su inocuidad,
 														comercializaci&oacute;n
 														y su
-														conservaci&oacute;n.&nbsp;Evaluar
-														y calificar el estado
+														conservaci&oacute;n.
+														<br />
+														&nbsp;Evaluar y
+														calificar el estado
 														higi&eacute;nico-sanitario
 														de recursos naturales
 														(aguas, suelos y aire)
