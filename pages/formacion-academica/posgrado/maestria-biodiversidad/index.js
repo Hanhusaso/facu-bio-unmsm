@@ -167,6 +167,41 @@ const index = () => {
 												</div>
 												<span>Presentación</span>
 											</a>
+											<a
+												className="tab d-flex"
+												id="v-pills-perfil-tab"
+												data-toggle="pill"
+												href="#v-pills-perfil"
+												role="tab"
+												aria-controls="v-pills-perfil"
+												aria-selected="false">
+												<div>
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														className="mr-3"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12 1C5.9247 1 1 5.9247 1 12C1 18.0753 5.9247 23 12 23C18.0753 23 23 18.0753 23 12C23 5.9247 18.0753 1 12 1Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+														<path
+															d="M3.49805 18.981C3.49805 18.981 5.94995 15.8504 11.9999 15.8504C18.0499 15.8504 20.5029 18.981 20.5029 18.981M11.9999 12.0004C12.8752 12.0004 13.7145 11.6527 14.3334 11.0338C14.9523 10.415 15.2999 9.57561 15.2999 8.70039C15.2999 7.82518 14.9523 6.98581 14.3334 6.36694C13.7145 5.74807 12.8752 5.40039 11.9999 5.40039C11.1247 5.40039 10.2854 5.74807 9.66649 6.36694C9.04762 6.98581 8.69995 7.82518 8.69995 8.70039C8.69995 9.57561 9.04762 10.415 9.66649 11.0338C10.2854 11.6527 11.1247 12.0004 11.9999 12.0004Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+													</svg>
+												</div>
+												<span>
+													Perfil del ingresante y
+													egresado
+												</span>
+											</a>
 											{/* <Link href="/posgrado-admision">
 												<a className="tab d-flex" target="_blank">
 													<div>
@@ -234,7 +269,7 @@ const index = () => {
 														<path d="M3.75586 16.7283C2.7616 16.7273 1.80835 16.3319 1.10531 15.6288C0.402259 14.9258 0.00685214 13.9725 0.00585938 12.9783V4.72827H1.50586V12.9783C1.50586 13.575 1.74291 14.1473 2.16487 14.5693C2.58683 14.9912 3.15912 15.2283 3.75586 15.2283C4.3526 15.2283 4.92489 14.9912 5.34685 14.5693C5.76881 14.1473 6.00586 13.575 6.00586 12.9783V6.22827C6.00586 6.02936 5.92684 5.83859 5.78619 5.69794C5.64554 5.55729 5.45477 5.47827 5.25586 5.47827C5.05695 5.47827 4.86618 5.55729 4.72553 5.69794C4.58488 5.83859 4.50586 6.02936 4.50586 6.22827V13.7283H3.00586V6.22827C3.00586 5.63153 3.24291 5.05924 3.66487 4.63728C4.08683 4.21532 4.65912 3.97827 5.25586 3.97827C5.8526 3.97827 6.42489 4.21532 6.84685 4.63728C7.26881 5.05924 7.50586 5.63153 7.50586 6.22827V12.9783C7.50487 13.9725 7.10946 14.9258 6.40641 15.6288C5.70337 16.3319 4.75012 16.7273 3.75586 16.7283Z" />
 													</svg>
 												</div>
-												<span>Plan de estudio</span>
+												<span>Malla curricular</span>
 											</a>
 											{/* <a className="tab d-flex" id="v-pills-egresados-tab" data-toggle="pill" href="#v-pills-egresados" role="tab" aria-controls="v-pills-egresados" aria-selected="false">
                                                     <div>
@@ -261,156 +296,315 @@ const index = () => {
 											id="v-pills-presentacion"
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
-											<p className="title-dark">
-												Sumilla del Programa
+											<p>
+												El programa de Maestr&iacute;a
+												de Biodiversidad y
+												Gesti&oacute;n de Ecosistemas
+												nace como resultado de la
+												necesidad de brindar al
+												pa&iacute;s la formaci&oacute;n
+												de profesionales altamente
+												calificados en el estudio de la
+												biodiversidad as&iacute; como la
+												gesti&oacute;n de los
+												ecosistemas.&nbsp;
 											</p>
 											<p>
-												El objetivo general de la
-												Maestría en Biodiversidad y
-												Gestión de Ecosistemas es formar
-												recursos humanos con la
-												capacidad de generar
-												conocimientos. Promover y
-												gestionar la conservación en
-												relación a la biodiversidad
-												dentro de los enfoques del
-												desarrollo sustentable y
-												Ecosistémico en las distintas
-												regiones del país.
-											</p>
-
-											<p className="title-dark">
-												Grado que se otorga:
-											</p>
-											<p>
-												Magíster en Biodiversidad y
-												Gestión de Ecosistemas
-											</p>
-
-											<p className="title-dark">
-												Objetivos académicos:
-											</p>
-											<p>
-												La Universidad Nacional Mayor de
-												San Marcos forma Magísteres en
-												Biodiversidad y Gestión de
-												Ecosistemas altamente
-												capacitados para conducir
-												actividades o programas sobre
-												biodiversidad y de gestión de
-												ecosistemas a nivel de la
-												planificación y ejecución
-												operativa, científica y
-												tecnológica. El graduado logrará
-												incrementar su capacidad
-												innovadora y crítica
-												desarrollando estrategias de
-												gestión de enfoque ecosistémico
-												y de participación integral.
-											</p>
-
-											<p className="title-dark">
-												Dirigido a:
+												El programa cuenta con una plana
+												docente constituida por
+												especialistas reconocidos en el
+												estudio de la flora y fauna
+												peruana, y se dicta en base a
+												principios como la
+												interdisciplinariedad, que
+												facilita el abarcar el
+												conocimiento en forma integral
+												para evitar el conocimiento
+												aislado, fraccionado o disperso;
+												el pensamiento sist&eacute;mico,
+												que permite superar la
+												tradici&oacute;n
+												anal&iacute;tico-mec&aacute;nica
+												de los fen&oacute;menos de la
+												naturaleza, promoviendo en
+												cambio la totalidad
+												sint&eacute;tica y
+												hol&iacute;stica; y la
+												diversidad cognitiva, que
+												conduce a comprender el
+												contenido y la extensi&oacute;n
+												de la diversidad de la
+												inteligencia humana
+												(inteligencias
+												m&uacute;ltiples), as&iacute;
+												como de la din&aacute;mica de la
+												inteligencia artificial
+												(inform&aacute;tica). Se enfoca
+												en las diversas formas de
+												reflexi&oacute;n sobre lo que
+												conocemos: c&oacute;mo lo
+												conocemos
+												(metacognici&oacute;n),
+												qu&eacute; conocemos y para
+												qu&eacute; conocemos (modelos
+												aplicativos).
 											</p>
 											<p>
-												Profesionales que estén en
-												posesión del grado académico de
-												Bachiller en Ciencias
-												Biológicas, Ciencias
-												Ambientales, Ingeniero Agrónomo,
-												Veterinaria o disciplinas
-												afines, otorgados por
-												universidades nacionales o
-												extranjeras que quieran asegurar
-												una formación de posgrado en
-												recursos humanos especializados
-												en el estudio, gestión y
-												conservación de los recursos
-												biológicos del país.
+												El egresado de la
+												maestr&iacute;a puede
+												desempe&ntilde;arse en diversos
+												&aacute;mbitos como investigador
+												en proyectos tecnol&oacute;gicos
+												y cient&iacute;ficos en los
+												sectores de agricultura,
+												ganader&iacute;a,
+												pesquer&iacute;a e industria;
+												como gestor de servicios medio
+												ambientales; y en &aacute;reas
+												como biocomercio,
+												informaci&oacute;n,
+												documentaci&oacute;n y
+												divulgaci&oacute;n, turismo,
+												protecci&oacute;n de
+												&aacute;reas reservadas,etc.
 											</p>
-
-											<p className="title-dark">
-												Duración:
+											<p>
+												<strong>DURACI&Oacute;N</strong>
 											</p>
-											<p>2 años (4 semestres)</p>
-
-											<p className="title-dark">
-												Perfil del graduado:
+											<p>
+												2 a&ntilde;os, divididos en 4
+												semestres&nbsp;
 											</p>
-											<ul className="chevron-green-dark">
-												<li>
-													Conocer aspectos tantos
-													teóricos como prácticos de
-													la Diversidad animal y de la
-													Diversidad vegetal; y los
-													conocimientos y experiencia
-													necesarios para que se
-													incorpore al ámbito laboral.
+											<p>
+												<strong>GRADO</strong>
+											</p>
+											<p>
+												Magister en Biodiversidad y
+												Gesti&oacute;n de Ecosistemas
+											</p>
+											<p>
+												<strong>
+													L&Iacute;NEAS DE
+													INVESTIGACI&Oacute;N
+												</strong>
+											</p>
+											<ul>
+												<li aria-level="1">
+													Sistem&aacute;tica molecular
+													y evolutiva
 												</li>
-												<li>
-													Identificar taxones de
-													animales y vegetales,
-													conocer los fundamentos
-													biológicos de la taxonomía y
-													su aplicabilidad a la
-													gestión sostenible de
+												<li aria-level="1">
+													Biogeograf&iacute;a
+												</li>
+												<li aria-level="1">
+													Ecolog&iacute;a de
+													poblaciones
+												</li>
+												<li aria-level="1">
+													Biolog&iacute;a de la
+													conservaci&oacute;n de
+													recursos amaz&oacute;nicos
+												</li>
+												<li aria-level="1">
+													Biolog&iacute;a y
+													conservaci&oacute;n de
+													recursos pesqueros
+												</li>
+												<li aria-level="1">
+													Ornitolog&iacute;a y
+													etolog&iacute;a
+												</li>
+												<li aria-level="1">
+													Herpetolog&iacute;a
+												</li>
+												<li aria-level="1">
+													Malacolog&iacute;a
+												</li>
+												<li aria-level="1">
+													Evaluaci&oacute;n del
+													impacto ambiental
+												</li>
+												<li aria-level="1">
+													Taxonom&iacute;a y
+													sistem&aacute;tica
+													flor&iacute;stica
+												</li>
+												<li aria-level="1">
+													&Aacute;reas protegidas y
+													conservaci&oacute;n de la
+													biodiversidad
+												</li>
+												<li aria-level="1">
+													Rescate y
+													revalorizaci&oacute;n del
+													conocimiento de las especies
+													vegetales
+												</li>
+												<li aria-level="1">
+													Bioprospecci&oacute;n
+												</li>
+												<li aria-level="1">
+													Fitosociolog&iacute;a
+												</li>
+												<li aria-level="1">
+													Fitorremediaci&oacute;n
+												</li>
+												<li aria-level="1">
+													Biorremediaci&oacute;n
+												</li>
+											</ul>
+										</div>
+										<div
+											className="mb-3 tab-pane fade"
+											id="v-pills-perfil"
+											role="tabpanel"
+											aria-labelledby="v-pills-perfil-tab">
+											<p>
+												<strong>
+													PERFIL DEL INGRESANTE
+												</strong>
+											</p>
+											<p>
+												El ingresante a la
+												Maestr&iacute;a en Biodiversidad
+												y Gesti&oacute;n de Ecosistemas:
+											</p>
+											<p>
+												- Estar&aacute; en
+												posesi&oacute;n del Grado
+												Acad&eacute;mico de Bachiller en
+												Ciencias Biol&oacute;gicas,
+												Ciencias Ambientales, Ingeniero
+												Agr&oacute;nomo, Veterinaria o
+												disciplinas afines, otorgados
+												por universidades nacionales o
+												extranjeras que aseguren una
+												formaci&oacute;n acorde a los
+												fines del programa.
+											</p>
+											<p>
+												<strong>
+													PERFIL DEL EGRESADO
+												</strong>
+											</p>
+											<p>
+												El egresado de la
+												maestr&iacute;a de Biodiversidad
+												y gesti&oacute;n de ecosistemas
+												estar&aacute; plenamente
+												capacitado para trabajar en
+												campos diversos como la
+												investigaci&oacute;n pura en
+												Bot&aacute;nica, en
+												Zoolog&iacute;a y en la
+												Hidrobiolog&iacute;a,
+												adem&aacute;s de numerosos
+												campos de ciencia aplicada, como
+												planificaci&oacute;n del
+												aprovechamiento de recursos
+												(pesquer&iacute;as, acuicultura,
+												silvicultura, etc.),
+												muse&iacute;stica,
+												conservaci&oacute;n y
+												gesti&oacute;n de especies
+												vegetales o animales, plagas
+												agr&iacute;colas o forestales,
+												entomolog&iacute;a aplicada,
+												divulgaci&oacute;n
+												cient&iacute;fica, y otros.
+											</p>
+											<p>
+												Adem&aacute;s, estar&aacute; en
+												condiciones de:
+											</p>
+											<ul>
+												<li aria-level="1">
+													Identificar taxones animales
+													y vegetales, conocer los
+													fundamentos
+													biol&oacute;gicos de la
+													taxonom&iacute;a y su
+													aplicabilidad a la
+													gesti&oacute;n sostenible de
 													ecosistemas terrestres y
 													marinos, la ciencia
-													forestal, la arqueología,
-													etc.
+													forestal, la
+													arqueolog&iacute;a, etc.
 												</li>
-												<li>
+												<li aria-level="1">
 													Tener las habilidades que
-													les permitirán ejercer sus
-													actividades en empresas,
-													organizaciones e
+													les permitir&aacute;n
+													ejercer sus actividades en
+													empresas, organizaciones e
 													instituciones que
 													desarrollen inventarios de
 													la biodiversidad, desarrollo
 													de planes territoriales,
-													auditoría ambiental, diseño
-													y gestión de áreas
-													protegidas, entre otros.
+													auditor&iacute;a ambiental,
+													dise&ntilde;o y
+													gesti&oacute;n de
+													&aacute;reas protegidas,
+													entre otros.
 												</li>
-												<li>
+												<li aria-level="1">
 													Trabajar en numerosos campos
-													de ciencia básica y
-													aplicada, como planificación
-													del aprovechamiento de
-													recursos (pesquerías,
-													acuicultura, forestaría,
-													fauna silvestre,
-													silvicultura, etc.),
-													museística conservación y
-													gestión de especies
+													de ciencia b&aacute;sica y
+													aplicada, como
+													planificaci&oacute;n del
+													aprovechamiento de recursos
+													(pesquer&iacute;as,
+													acuicultura,
+													forester&iacute;a, fauna
+													silvestre, silvicultura,
+													etc.), muse&iacute;stica,
+													conservaci&oacute;n y
+													gesti&oacute;n de especies
 													vegetales o animales, plagas
-													agrícolas o forestales,
-													entomología aplicada,
-													divulgación científica, y
-													otros.
+													agr&iacute;colas o
+													forestales,
+													entomolog&iacute;a aplicada,
+													divulgaci&oacute;n
+													cient&iacute;fica, y otros.
+												</li>
+												<li aria-level="1">
+													Tener la capacidad de
+													realizar un an&aacute;lisis
+													cr&iacute;tico, evaluaciones
+													y s&iacute;ntesis de ideas
+													nuevas y complejas.
+												</li>
+												<li aria-level="1">
+													Comprender de manera
+													sistem&aacute;tica el campo
+													de estudio y el dominio de
+													las habilidades y
+													m&eacute;todos de
+													investigaci&oacute;n
+													relacionados con la
+													biodiversidad y
+													biolog&iacute;a de la
+													conservaci&oacute;n.
+												</li>
+												<li aria-level="1">
+													Contribuir a la ciencia a
+													trav&eacute;s de una
+													investigaci&oacute;n
+													original del conocimiento
+													que ampl&iacute;e las
+													fronteras que se plasme en
+													publicaciones
+													cient&iacute;ficas.
+												</li>
+												<li aria-level="1">
+													Capacidad de fomentar en
+													contextos acad&eacute;micos
+													y profesionales, el avance
+													tecnol&oacute;gico, social o
+													cultural dentro de una
+													sociedad basada en el
+													conocimiento.
 												</li>
 											</ul>
-											<div className="mb-3">
-												<p className="title-dark mb-1">
-													Comité coordinador de la
-													Maestría:
-												</p>
-												<ul className="nav flex-column ml-3">
-													<li>
-														Dr. Manuel Marín
-														Bravo (Presidente)
-													</li>
-													<li>
-														Mg. Mery Suni Ninataype
-													</li>
-													<li>
-														Mg. José Roque Gamarra
-													</li>
-												</ul>
-											</div>
-											{/* <a className="btn-green-bright" href="">
-                                                Inscripciones
-                                            </a> */}
 										</div>
 										<div
 											className="mb-3 tab-pane fade"

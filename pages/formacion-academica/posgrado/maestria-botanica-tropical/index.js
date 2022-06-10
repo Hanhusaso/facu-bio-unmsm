@@ -165,6 +165,41 @@ const index = () => {
 												</div>
 												<span>Presentación</span>
 											</a>
+											<a
+												className="tab d-flex"
+												id="v-pills-perfil-tab"
+												data-toggle="pill"
+												href="#v-pills-perfil"
+												role="tab"
+												aria-controls="v-pills-perfil"
+												aria-selected="false">
+												<div>
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														className="mr-3"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12 1C5.9247 1 1 5.9247 1 12C1 18.0753 5.9247 23 12 23C18.0753 23 23 18.0753 23 12C23 5.9247 18.0753 1 12 1Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+														<path
+															d="M3.49805 18.981C3.49805 18.981 5.94995 15.8504 11.9999 15.8504C18.0499 15.8504 20.5029 18.981 20.5029 18.981M11.9999 12.0004C12.8752 12.0004 13.7145 11.6527 14.3334 11.0338C14.9523 10.415 15.2999 9.57561 15.2999 8.70039C15.2999 7.82518 14.9523 6.98581 14.3334 6.36694C13.7145 5.74807 12.8752 5.40039 11.9999 5.40039C11.1247 5.40039 10.2854 5.74807 9.66649 6.36694C9.04762 6.98581 8.69995 7.82518 8.69995 8.70039C8.69995 9.57561 9.04762 10.415 9.66649 11.0338C10.2854 11.6527 11.1247 12.0004 11.9999 12.0004Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+													</svg>
+												</div>
+												<span>
+													Perfil del ingresante y
+													egresado
+												</span>
+											</a>
 											{/* <Link href="/posgrado-admision">
 												<a className="tab d-flex" target="_blank">
 													<div>
@@ -260,221 +295,311 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
 											<p>
-												La Maestría en Botánica Tropical
-												fue creada por Resolución
-												Rectoral Nº 92256-R-88 de fecha
-												14 de abril de 1988, desde su
-												creación tuvo tres menciones que
-												son: Taxonomía y Sistemática
-												Evolutiva, Botánica Económica y
-												Etnobotánica. Comenzó sus
-												actividades formativas en el
-												semestre 1989-I, siendo
-												conjuntamente con las maestrías
-												en Zoología y en Ecosistemas y
-												Recursos Acuáticos las maestrías
-												más antiguas de la Unidad de
-												Posgrado de la Facultad de
-												Ciencias Biológicas, pero fue la
-												primera en comenzar sus
-												actividades en el año 1989 de
-												las tres maestrías, las otras
-												dos maestrías iniciaron sus
-												actividades en el semestre
-												1993-II. También fue la primera
-												maestría en obtener su primer
-												graduado en el año 1994, siendo
-												el Bachiller Asunción Alipio
-												Cano Echevarría en obtener el
-												grado de Magíster en Botánica
-												Tropical con mención en
-												Taxonomía y Sistemática
-												Evolutiva. El programa se
-												actualizó en el año 2010 según
-												Resolución Rectoral Nº
-												04309-R-10 de fecha 12 de agosto
-												de 2010, y la universidad
-												posteriormente requirió la
-												actualización Curricular del
-												Doctorado y las Maestrías, donde
-												la UPG de Ciencias Biológicas se
-												encargó de preparar dicha
-												actualización manteniendo sus
-												tres menciones, sin otros
-												cambios y refrendados por la
-												Resolución Rectoral Nº
-												06658-R-17 de fecha 03 de
-												noviembre de 2017.
+												La Maestr&iacute;a en
+												Bot&aacute;nica Tropical cuenta
+												con tres importantes menciones:
+												Taxonom&iacute;a y
+												Sistem&aacute;tica Evolutiva,
+												Bot&aacute;nica Econ&oacute;mica
+												y Etnobot&aacute;nica.
 											</p>
 											<p>
-												Recientemente se ha llevado a
-												cabo una segunda Jornada
-												Curricular en fecha 25 de julio
-												de 2019, y con previas reuniones
-												de los comités coordinadores de
-												las maestrías en conjunto se
-												plantea eliminar las menciones,
-												para flexibilizar y concretizar
-												los estudios en un solo programa
-												toda vez que cada mención es
-												considerado un programa
-												diferente, asimismo se asume un
-												reto de adecuación al nuevo
-												reglamento de estudios de
-												Posgrado de la Universidad,
-												realizándose algunos cambios
-												sustanciales en cada programa y
-												estableciendo cursos como ejes
-												transversales en común. Se
-												mantiene el valor de 72 créditos
-												y su desarrollo en cuatro
-												semestres con duración de dos
-												años, considerándose una
-												maestría de investigación que
-												conlleva a continuar estudios de
-												Doctorado.
+												Desde la menci&oacute;n de
+												Taxonom&iacute;a y
+												Sistem&aacute;tica Evolutiva,
+												busca formar personas capaces de
+												contribuir al conocimiento de la
+												flora sentando las bases para su
+												determinaci&oacute;n y
+												verificaci&oacute;n
+												bot&aacute;nica,
+												distribuci&oacute;n y
+												conservaci&oacute;n. Completar y
+												consolidar su formaci&oacute;n
+												para que se constituyan en
+												investigadores de alto nivel,
+												capaces de elaborar y ejecutar
+												proyectos donde se realicen
+												inventarios, cat&aacute;logos,
+												conocimiento de la
+												vegetaci&oacute;n y flora como
+												especie y su distribuci&oacute;n
+												ecol&oacute;gica, bases para la
+												toma de decisiones de
+												conservaci&oacute;n y manejo.
 											</p>
-											<div className="mb-3">
-												<p className="title-dark mb-1">
-													Menciones
-												</p>
-												<ul className="chevron-green-dark">
-													<li>Botánica Económica</li>
-													<li>Etnobotánica</li>
-													<li>
-														Taxonomía y Sistemática
-														Evolutiva
-													</li>
-												</ul>
-											</div>
-											<div className="mb-3">
-												<p className="title-dark mb-1">
-													1. Fecha de creación del
-													Programa
-												</p>
-												<ul className="nav flex-column ml-3">
-													<li>
-														14 de abril de 1988,
-														R.R. N° 92256
-													</li>
-													<li>
-														30 de marzo de 1988,
-														R.D. N° 444-FCB-88
-													</li>
-												</ul>
-											</div>
-											<div className="mb-3">
-												<p className="title-dark mb-1">
-													2. Fecha de actualización
-													del programa:
-												</p>
-												<ul className="nav flex-column ml-3">
-													<li>
-														12 de agosto de 2010,
-														R.R. N° 04309-R-10
-													</li>
-													<li>
-														03 de noviembre de 2017,
-														R.R. N° 06658-R-17
-													</li>
-													<li>
-														30 de mayo de 2017, R.D.
-														N° 229-D-FCB-17
-													</li>
-													<li>
-														02 de junio del 2020,
-														R.R. N° 01329-R-20
-													</li>
-												</ul>
-											</div>
-											<div className="mb-3">
-												<p className="title-dark mb-1">
-													3. Comités coordinadores del
-													Doctorado y Maestrías:
-												</p>
-												<ul className="nav flex-column ml-3">
-													<li>
-														20 de febrero del 2021,
-														R.D. Nº
-														0103-2021-D-FCB/UNMSM
-													</li>
-												</ul>
-											</div>
-											<div className="mb-3">
-												<p className="title-dark mb-1">
-													4. Comité coordinador de la
-													Maestría en Biología
-													Tropical:
-												</p>
-												<ul className="nav flex-column ml-3">
-													<li>
-														Dra. Joaquina Adelaida
-														Albán Castillo
-														(Presidenta)
-													</li>
-													<li>
-														Dra. Mónica Arakaki
-														Makishi
-													</li>
-													<li>
-														Mg. Asunción Alipio Cano
-														Echevarría
-													</li>
-												</ul>
-											</div>
-
-											{/* <p className="title-dark">
-                                                Sumilla del Programa
-                                            </p>
-                                            <p>
-                                                El Doctorado en Ciencias Biológicas forma especialistas de los más altos niveles capaces de evaluar e investigar la problemática nacional en las diversas áreas del conocimiento biológico, con especial énfasis en los campos de la biodiversidad y biología molecular.
-                                            </p>
-
-                                            <p className="title-dark">
-                                                Grado que se otorga:
-                                            </p>
-                                            <p>
-                                                Doctor en Ciencias Biológicas
-                                            </p>
-
-                                            <p className="title-dark">
-                                                Objetivos académicos:
-                                            </p>
-                                            <p>
-                                                El Programa de Doctorado en Ciencias Biológicas tiene como finalidad la formación de investigadores sobre la evolución y uso sostenible de la diversidad biológica, así como la capacitación para su futura incorporación en universidades, instituciones de investigación y centros de gestión tanto privados como de la administración pública. Asimismo, comprenderán y aplicarán los conceptos actuales de la biología molecular en arqueas, bacterias y eucariontes, contribuyendo con el conocimiento tanto en el área básica como aplicada a fin de lograr el aprovechamiento racional de nuestra megabiodiversidad. El Programa ofrece a los estudiantes la oportunidad de trabajar con reconocidos investigadores en diferentes tópicos relacionados con las prioridades actuales del país.
-                                            </p>
-
-                                            <p className="title-dark">
-                                                Dirigido a:
-                                            </p>
-                                            <p>
-                                                Profesionales que hayan concluido los estudios de Maestría o estén en posesión del Grado de Magíster en áreas de las Ciencias Biológicas o en disciplinas afines, otorgados por universidades nacionales o extranjeras que aseguren una formación acorde a los fines del Programa.
-                                            </p>
-
-                                            <p className="title-dark">
-                                                Duración:
-                                            </p>
-                                            <p>
-                                                3 años (6 semestres)
-                                            </p>
-                                            
-                                            <p className="title-dark">
-                                                Perfil del graduado:
-                                            </p>
-                                            <ul className="chevron-green-dark">
-                                                <li>
-                                                    Generar nuevos conocimientos científicos y técnicos en las Ciencias Biológicas a través de la realización de trabajos originales. Estará capacitado para manejar y aplicar las metodologías que permitan resolver problemas de investigación en las diversas áreas del conocimiento biológico con especial énfasis en los campos de la biodiversidad y biología molecular.
-                                                </li>
-                                                <li>
-                                                    Desarrollar nuevas tecnologías para resolver problemas, detectar necesidades y oportunidades inherentes a su área de investigación. En particular, conocer y utilizar aproximaciones estadísticas contemporáneas. 
-                                                </li>
-                                                <li>
-                                                    Formular, gestionar y liderar proyectos de investigación, trabajando en equipo y en redes interdisciplinarias. Como consecuencia, será capaz de plantear y ejecutar hipótesis de trabajo, describir e interpretar resultados experimentales y analizar de forma crítica los descubrimientos presentados en las publicaciones científicas.
-                                                </li>
-                                            </ul>
-                                            <a className="btn-green-bright" href="">
-                                                Inscripciones
-                                            </a> */}
+											<p>
+												Por otro lado, la menci&oacute;n
+												en Bot&aacute;nica
+												Econ&oacute;mica, pretende
+												formar personas capaces de
+												contribuir al conocimiento de la
+												flora remarcando las especies
+												&uacute;tiles al ser humano,
+												sentando las bases para su
+												determinaci&oacute;n
+												bot&aacute;nica, establecer su
+												origen, domesticaci&oacute;n y
+												mejoramiento, establecimiento de
+												variedades, cultivos,
+												conservaci&oacute;n y manejo
+												sostenible de los mismos.
+												Completar y consolidar su
+												formaci&oacute;n para que se
+												constituyan en investigadores de
+												alto nivel, capaces de elaborar
+												y ejecutar proyectos,
+												ampliaci&oacute;n del
+												conocimiento de las plantas
+												&uacute;tiles, mejoramiento de
+												cultivos, variedades,
+												rendimiento, fomentar el
+												conocimiento de la
+												vegetaci&oacute;n y flora de
+												importancia econ&oacute;mica en
+												aspectos de alimentaci&oacute;n,
+												colorantes, perfumer&iacute;a,
+												medicinas, textiler&iacute;a,
+												vivienda etc., y establecer
+												bases para la toma de decisiones
+												de conservaci&oacute;n, manejo y
+												desarrollo sostenible.
+											</p>
+											<p>
+												Finalmente es objetivo de la
+												menci&oacute;n de
+												Etnobot&aacute;nica, formar
+												personas capaces de contribuir
+												al conocimiento de la flora
+												utilizada por las antiguas
+												culturas y las presentes,
+												sentando las bases para su
+												conocimiento,
+												conservaci&oacute;n y
+												protecci&oacute;n de las mismas.
+												Completar y consolidar su
+												formaci&oacute;n para que se
+												constituyan en investigadores de
+												alto nivel, capaces de elaborar
+												y ejecutar proyectos donde se
+												revalore el conocimiento de las
+												plantas utilizadas por las
+												civilizaciones y culturas
+												diversas con &eacute;nfasis en
+												la flora americana y peruana,
+												sentando las bases para toma de
+												decisiones de
+												conservaci&oacute;n del
+												conocimiento ancestral de usos y
+												clasificaci&oacute;n, as&iacute;
+												como el manejo adecuado para su
+												protecci&oacute;n.
+											</p>
+											<p>
+												<strong>DURACI&Oacute;N</strong>
+											</p>
+											<p>
+												2 a&ntilde;os, divididos en 4
+												semestres&nbsp;
+											</p>
+											<p>
+												<strong>GRADO</strong>
+											</p>
+											<p>
+												Magister en Bot&aacute;nica
+												Tropical con menci&oacute;n en
+												Taxonom&iacute;a y
+												Sistem&aacute;tica Evolutiva,
+												Bot&aacute;nica Econ&oacute;mica
+												y Etnobot&aacute;nica.
+											</p>
+											<p>
+												<strong>
+													L&Iacute;NEAS DE
+													INVESTIGACI&Oacute;N
+												</strong>
+											</p>
+											<ul>
+												<li aria-level="1">
+													Taxonom&iacute;a y
+													sistem&aacute;tica vegetal
+												</li>
+												<li aria-level="1">
+													Sistem&aacute;tica molecular
+													y evolutiva
+												</li>
+												<li aria-level="1">
+													Jardines bot&aacute;nicos y
+													conservaci&oacute;n de la
+													diversidad vegetal
+												</li>
+												<li aria-level="1">
+													Valor econ&oacute;mico de
+													las especies y
+													fijaci&oacute;n de N2 por
+													leguminosas
+												</li>
+												<li aria-level="1">
+													Plantas medicinales
+												</li>
+												<li aria-level="1">
+													Rescate y
+													revalorizaci&oacute;n del
+													conocimiento de las especies
+													vegetales de las etnias
+												</li>
+												<li aria-level="1">
+													Bioprospecci&oacute;n
+												</li>
+												<li aria-level="1">
+													Flor&iacute;stica
+												</li>
+												<li aria-level="1">
+													Ecolog&iacute;a vegetal
+												</li>
+												<li aria-level="1">
+													Comunidades vegetales
+												</li>
+												<li aria-level="1">
+													Fitorremediaci&oacute;n
+												</li>
+											</ul>
+										</div>
+										<div
+											className="mb-3 tab-pane fade"
+											id="v-pills-perfil"
+											role="tabpanel"
+											aria-labelledby="v-pills-perfil-tab">
+											<p>
+												<strong>
+													PERFIL DEL INGRESANTE
+												</strong>
+											</p>
+											<p>
+												El ingresante a la
+												Maestr&iacute;a en
+												Bot&aacute;nica Tropical:
+											</p>
+											<ul>
+												<li aria-level="1">
+													Poseer&aacute; el grado
+													acad&eacute;mico de
+													bachiller en Ciencias
+													biol&oacute;gicas o
+													disciplinas afines,
+													otorgados por universidades
+													nacionales o extranjeras que
+													aseguren una
+													formaci&oacute;n acorde a
+													los fines del Programa.
+												</li>
+												<li aria-level="1">
+													Haber aprobado durante sus
+													estudios de pregrado los
+													siguientes cursos
+													b&aacute;sicos o sus
+													equivalentes:
+													Bot&aacute;nica,
+													Gen&eacute;tica,
+													Citolog&iacute;a,
+													Fisiolog&iacute;a,
+													Bioqu&iacute;mica,
+													Ecolog&iacute;a,
+													F&iacute;sica,
+													Qu&iacute;mica y
+													Estad&iacute;stica.
+												</li>
+											</ul>
+											<p>
+												<strong>
+													PERFIL DEL EGRESADO
+												</strong>
+											</p>
+											<p>
+												El mag&iacute;ster en cualquiera
+												de las tres menciones que opte
+												por el tema de su tesis,
+												ejercer&aacute;
+												investigaci&oacute;n y docencia
+												universitaria de calidad
+												aplicando metodolog&iacute;as
+												pedag&oacute;gicas innovadoras y
+												acordes con el avance de la
+												ciencia. Liderar&aacute; y
+												desarrollar&aacute;
+												investigaciones b&aacute;sicas y
+												/o aplicadas en los campos
+												diversos de la bot&aacute;nica y
+												ciencias afines, pudiendo
+												trabajar por su
+												capacitaci&oacute;n en muchos
+												campos donde la disciplina se
+												requiera; cumpliendo con valores
+												&eacute;ticos profesionales,
+												entre sus funciones y/o
+												actividades podemos
+												se&ntilde;alar:
+											</p>
+											<ul>
+												<li aria-level="1">
+													Realizar la
+													determinaci&oacute;n de las
+													especies de los diversos
+													grupos de la flora peruana.
+												</li>
+												<li aria-level="1">
+													Solucionar los problemas de
+													inventarios y
+													evaluaci&oacute;n de los
+													ecosistemas con criterio de
+													conservaci&oacute;n de la
+													diversidad
+													flor&iacute;stica.
+												</li>
+												<li aria-level="1">
+													Tener conocimientos de las
+													especies vegetales de valor
+													econ&oacute;mico en las
+													diversas regiones
+													geogr&aacute;ficas: de valor
+													alimenticio, forrajera, de
+													uso industrial, medicinal,
+													ornamental y considerar sus
+													cualidades, cantidades y
+													factibilidad de uso para
+													contribuir a mejorar el
+													nivel de vida del ser
+													humano.
+												</li>
+												<li aria-level="1">
+													Realizar investigaciones
+													sobre biotecnolog&iacute;a
+													de especies vegetales.
+												</li>
+												<li aria-level="1">
+													Ser capaz de realizar la
+													revalorizaci&oacute;n y
+													rescate de la riqueza del
+													conocimiento de la flora
+													silvestre y cultivada,
+													propio de las diversas
+													etnias de nuestro vasto
+													territorio.
+												</li>
+												<li aria-level="1">
+													Formular estrategias de
+													protecci&oacute;n a la
+													cultura bot&aacute;nica
+													tradicional y su uso
+													sostenible.
+												</li>
+												<li aria-level="1">
+													Asesorar trabajos de
+													investigaci&oacute;n de
+													estudiantes de pre y
+													posgrado.
+												</li>
+											</ul>
 										</div>
 										<div
 											className="mb-3 tab-pane fade"

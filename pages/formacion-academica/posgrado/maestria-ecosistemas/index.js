@@ -167,6 +167,41 @@ const index = () => {
 												</div>
 												<span>Presentación</span>
 											</a>
+											<a
+												className="tab d-flex"
+												id="v-pills-perfil-tab"
+												data-toggle="pill"
+												href="#v-pills-perfil"
+												role="tab"
+												aria-controls="v-pills-perfil"
+												aria-selected="false">
+												<div>
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														className="mr-3"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12 1C5.9247 1 1 5.9247 1 12C1 18.0753 5.9247 23 12 23C18.0753 23 23 18.0753 23 12C23 5.9247 18.0753 1 12 1Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+														<path
+															d="M3.49805 18.981C3.49805 18.981 5.94995 15.8504 11.9999 15.8504C18.0499 15.8504 20.5029 18.981 20.5029 18.981M11.9999 12.0004C12.8752 12.0004 13.7145 11.6527 14.3334 11.0338C14.9523 10.415 15.2999 9.57561 15.2999 8.70039C15.2999 7.82518 14.9523 6.98581 14.3334 6.36694C13.7145 5.74807 12.8752 5.40039 11.9999 5.40039C11.1247 5.40039 10.2854 5.74807 9.66649 6.36694C9.04762 6.98581 8.69995 7.82518 8.69995 8.70039C8.69995 9.57561 9.04762 10.415 9.66649 11.0338C10.2854 11.6527 11.1247 12.0004 11.9999 12.0004Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+													</svg>
+												</div>
+												<span>
+													Perfil del ingresante y
+													egresado
+												</span>
+											</a>
 											{/* <Link href="/posgrado-admision">
 												<a className="tab d-flex" target="_blank">
 													<div>
@@ -262,27 +297,198 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
 											<p>
-												La Maestría en Ecosistemas y
-												Recursos Acuáticos se desarrolla
-												con el fin de formar capital
-												humano que genere conocimiento y
-												su aplicación. Se imparte una
-												formación de calidad que provee
-												investigadores altamente
-												calificados. Tiene tres
-												menciones:
+												La maestr&iacute;a en
+												Ecosistemas y Recursos
+												acu&aacute;ticos forma
+												mag&iacute;steres que
+												contribuyen en el desarrollo del
+												pa&iacute;s teniendo como foco
+												de investigaci&oacute;n el mar
+												peruano y los ecosistemas
+												acu&aacute;ticos continentales.
 											</p>
-											<ul className="chevron-green-dark mb-3">
-												<li>Acuicultura</li>
-												<li>Ecosistemas Acuáticos</li>
-												<li>
-													Evaluación y Manejo de
-													Recursos Pesqueros
+											<p>
+												Esta maestr&iacute;a fue creada
+												en abril de 1988 bajo el nombre
+												de Maestr&iacute;a en
+												Hidrobiolog&iacute;a y
+												Pesquer&iacute;a. En mayo de
+												2010 toma el nombre actual de
+												Maestr&iacute;a en Ecosistemas y
+												Recursos Acu&aacute;ticos con
+												tres menciones: Acuicultura,
+												Ecosistemas Acu&aacute;ticos y
+												Evaluaci&oacute;n y Manejo de
+												Recursos Pesqueros.
+											</p>
+											<p>
+												Se busca que los estudiantes
+												puedan abordar la
+												problem&aacute;tica de nuestros
+												ecosistemas marinos y de aguas
+												continentales, conducentes a su
+												aprovechamiento de manera
+												sostenible. La formaci&oacute;n
+												conlleva a consolidar y
+												completar la formaci&oacute;n de
+												los ingresantes, as&iacute; como
+												formar investigadores de alto
+												nivel, capaces de elaborar y
+												ejecutar proyectos de
+												investigaci&oacute;n originales.
+												Perfeccionar docentes
+												universitarios, elevando su
+												nivel acad&eacute;mico,
+												as&iacute; como capacitar
+												profesionales para favorecer su
+												mejor desenvolvimiento
+												cient&iacute;fico-tecnol&oacute;gico.
+											</p>
+											<p>
+												Los egresados se pueden
+												desempe&ntilde;ar en diversos
+												&aacute;mbitos como investigador
+												en proyectos tecnol&oacute;gicos
+												y cient&iacute;ficos en los
+												sectores de agricultura e
+												industria; realizando servicios
+												medioambientales; en
+												&aacute;reas como biocomercio,
+												informaci&oacute;n,
+												documentaci&oacute;n y
+												divulgaci&oacute;n; docencia e
+												investigaci&oacute;n en
+												instituciones de
+												educaci&oacute;n superior,
+												turismo, etc.
+											</p>
+											<p>
+												<strong>DURACI&Oacute;N</strong>
+											</p>
+											<p>
+												2 a&ntilde;os, divididos en 4
+												semestres&nbsp;
+											</p>
+											<p>
+												<strong>GRADO</strong>
+											</p>
+											<p>
+												Magister en Ecosistemas y
+												Recursos Acu&aacute;ticos con
+												menci&oacute;n en Acuicultura,
+												Ecosistemas Acu&aacute;ticos y
+												Evaluaci&oacute;n o Manejo de
+												Recursos Pesqueros.
+											</p>
+											<p>
+												<strong>
+													L&Iacute;NEAS DE
+													INVESTIGACI&Oacute;N
+												</strong>
+											</p>
+											<ul>
+												<li aria-level="1">
+													Ecolog&iacute;a
+													acu&aacute;tica
+												</li>
+												<li aria-level="1">
+													Evaluaci&oacute;n y manejo
+													de recursos
+												</li>
+												<li aria-level="1">
+													Limnolog&iacute;a
+												</li>
+												<li aria-level="1">
+													Acuicultura
+												</li>
+												<li aria-level="1">
+													Recursos Acu&aacute;ticos
 												</li>
 											</ul>
-											{/* <a className="btn-green-bright" href="">
-                                                Inscripciones
-                                            </a> */}
+										</div>
+										<div
+											className="mb-3 tab-pane fade"
+											id="v-pills-perfil"
+											role="tabpanel"
+											aria-labelledby="v-pills-perfil-tab">
+											<p>
+												<strong>
+													PERFIL DEL INGRESANTE
+												</strong>
+											</p>
+											<p>
+												El ingresante a la
+												maestr&iacute;a en Ecosistemas y
+												Recursos Acu&aacute;ticos:
+											</p>
+											<p>
+												Poseer&aacute; grado
+												acad&eacute;mico de bachiller en
+												Ciencias Biol&oacute;gicas o
+												&aacute;reas afines. otorgados
+												por universidades nacionales o
+												extranjeras que aseguren una
+												formaci&oacute;n acorde a los
+												fines del Programa.
+											</p>
+											<p>
+												<strong>
+													PERFIL DEL EGRESADO
+												</strong>
+											</p>
+											<p>
+												El egresado de la
+												maestr&iacute;a en Ecosistemas y
+												Recursos Acu&aacute;ticos,
+												estar&aacute; capacitado para
+												desarrollar investigaci&oacute;n
+												orientada al estudio de los
+												ecosistemas marinos y
+												continentales, dirigir
+												actividades de
+												conservaci&oacute;n y manejo de
+												los recursos con enfoque
+												ecosist&eacute;mico. El graduado
+												tendr&aacute; las bases
+												te&oacute;ricas y
+												pr&aacute;cticas que le permitan
+												interactuar eficientemente en
+												estudios multi e
+												interdisciplinarios. Asimismo,
+												podr&aacute; ejercer docencia
+												universitaria de calidad
+												aplicando metodolog&iacute;as
+												pedag&oacute;gicas innovadoras.
+											</p>
+											<p>
+												&Aacute;mbito de
+												desempe&ntilde;o y mercado
+												laboral.
+											</p>
+											<ul>
+												<li aria-level="1">
+													Centros e Institutos de
+													investigaci&oacute;n
+												</li>
+												<li aria-level="1">
+													Industria alimentaria
+												</li>
+												<li aria-level="1">
+													Acuicultura, piscicultura y
+													pesquer&iacute;a
+												</li>
+												<li aria-level="1">
+													Centros de ense&ntilde;anza
+													superior
+												</li>
+												<li aria-level="1">
+													Dise&ntilde;o de proyectos
+												</li>
+												<li aria-level="1">
+													Asesor&iacute;as y
+													consultor&iacute;as
+												</li>
+											</ul>
 										</div>
 										<div
 											className="mb-3 tab-pane fade"

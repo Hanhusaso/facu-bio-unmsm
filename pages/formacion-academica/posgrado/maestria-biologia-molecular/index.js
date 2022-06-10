@@ -165,6 +165,41 @@ const index = () => {
 												</div>
 												<span>Presentación</span>
 											</a>
+											<a
+												className="tab d-flex"
+												id="v-pills-perfil-tab"
+												data-toggle="pill"
+												href="#v-pills-perfil"
+												role="tab"
+												aria-controls="v-pills-perfil"
+												aria-selected="false">
+												<div>
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														className="mr-3"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12 1C5.9247 1 1 5.9247 1 12C1 18.0753 5.9247 23 12 23C18.0753 23 23 18.0753 23 12C23 5.9247 18.0753 1 12 1Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+														<path
+															d="M3.49805 18.981C3.49805 18.981 5.94995 15.8504 11.9999 15.8504C18.0499 15.8504 20.5029 18.981 20.5029 18.981M11.9999 12.0004C12.8752 12.0004 13.7145 11.6527 14.3334 11.0338C14.9523 10.415 15.2999 9.57561 15.2999 8.70039C15.2999 7.82518 14.9523 6.98581 14.3334 6.36694C13.7145 5.74807 12.8752 5.40039 11.9999 5.40039C11.1247 5.40039 10.2854 5.74807 9.66649 6.36694C9.04762 6.98581 8.69995 7.82518 8.69995 8.70039C8.69995 9.57561 9.04762 10.415 9.66649 11.0338C10.2854 11.6527 11.1247 12.0004 11.9999 12.0004Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+													</svg>
+												</div>
+												<span>
+													Perfil del ingresante y
+													egresado
+												</span>
+											</a>
 											{/* <Link href="/posgrado-admision">
 												<a className="tab d-flex" target="_blank">
 													<div>
@@ -259,156 +294,239 @@ const index = () => {
 											id="v-pills-presentacion"
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
-											<p className="title-dark">
-												Sumilla del Programa
+											<p>
+												El Programa de Maestr&iacute;a
+												en Biolog&iacute;a Molecular
+												proporciona una formaci&oacute;n
+												s&oacute;lida en los conceptos y
+												las metodolog&iacute;as
+												actualizadas del &aacute;rea y
+												promueve la investigaci&oacute;n
+												a nivel molecular de los
+												organismos, para llegar a la
+												comprensi&oacute;n y al manejo
+												de &eacute;stos.
 											</p>
 											<p>
-												La Maestría en Biología
-												Molecular forma especialistas
-												del más alto nivel conocedores
-												de los conceptos y metodologías
-												actualizadas en el campo de la
-												biología molecular, además de
-												constituirse en un seguidor
-												activo de los constantes avances
-												de la disciplina.
-											</p>
-
-											<p className="title-dark">
-												Grado que se otorga:
-											</p>
-											<p>
-												Magíster en Biología Molecular
-											</p>
-
-											<p className="title-dark">
-												Objetivos académicos:
-											</p>
-											<p>
-												El programa forma investigadores
-												de alto nivel científico que
-												comprendan y apliquen los
-												conceptos actuales de la
-												Biología Molecular en arqueas,
-												eucariotes y bacterias,
+												Su principal objetivo es formar
+												investigadores de alto nivel
+												cient&iacute;fico que
+												comprendan, analicen y apliquen
+												los conceptos actuales de la
+												Biolog&iacute;a Molecular en
+												arqueas, eucariotas y bacterias,
 												cubriendo fundamentalmente las
-												áreas básicas y aplicadas,
-												incluyendo los aspectos
-												genéticos, bioquímicos,
-												fisiológicos, taxonómicos y
-												evolutivos, para el
-												aprovechamiento racional de
-												nuestra enorme biodiversidad.
-											</p>
-
-											<p className="title-dark">
-												Dirigido a:
+												&aacute;reas b&aacute;sicas y
+												aplicadas, incluyendo los
+												aspectos gen&eacute;ticos,
+												bioqu&iacute;micos,
+												fisiol&oacute;gicos,
+												taxon&oacute;micos y evolutivos,
+												para el aprovechamiento racional
+												de nuestra enorme biodiversidad;
+												las actividades de
+												investigaci&oacute;n en las
+												cuales participan los
+												estudiantes se desarrollan
+												dentro de las l&iacute;neas de
+												los grupos de
+												investigaci&oacute;n de la
+												Universidad.
 											</p>
 											<p>
-												Profesionales que posean el
-												grado académico de bachiller en
-												Ciencias Biológicas, Genética,
-												Microbiología, Química, Medicina
-												Humana, Medicina Veterinaria,
-												Odontología, Agronomía,
-												Biotecnología, Nutrición y
-												Farmacia y Bioquímica; asimismo,
-												deberán acreditar haber aprobado
-												durante sus estudios de pregrado
-												los siguientes cursos o sus
-												equivalentes: Bioquímica,
-												Genética Microbiana, Animal o
-												Humana y Fisiología General; y
-												contar con una línea de
-												investigación.
+												<strong>DURACI&Oacute;N</strong>
 											</p>
-
-											<p className="title-dark">
-												Duración:
+											<p>
+												2 a&ntilde;os, divididos en 4
+												semestres&nbsp;
 											</p>
-											<p>2 años (4 semestres)</p>
-
-											<p className="title-dark">
-												Perfil del graduado:
+											<p>
+												<strong>GRADO</strong>
 											</p>
-											<ul className="chevron-green-dark">
-												<li>
-													El graduado de la maestría
-													de Biología Molecular será
-													un profundo conocedor de los
-													conceptos y metodologías
+											<p>
+												Magister en Biolog&iacute;a
+												Molecular
+											</p>
+											<p>
+												<strong>
+													L&Iacute;NEAS DE
+													INVESTIGACI&Oacute;N
+												</strong>
+											</p>
+											<ul>
+												<li aria-level="1">
+													Desarrollo de vacunas
+													recombinantes
+												</li>
+												<li aria-level="1">
+													Filogenia molecular de
+													arqueas, bacterias y
+													eucariotas
+												</li>
+												<li aria-level="1">
+													Biolog&iacute;a molecular de
+													microorganismos
+												</li>
+												<li aria-level="1">
+													Bioqu&iacute;mica y
+													biolog&iacute;a molecular de
+													venenos
+												</li>
+												<li aria-level="1">
+													Biolog&iacute;a molecular de
+													virus animales
+												</li>
+												<li aria-level="1">
+													Caracterizaci&oacute;n
+													genot&iacute;pica y
+													molecular de cepas nativas
+													de microorganismos de
+													importancia agr&iacute;cola
+												</li>
+												<li aria-level="1">
+													Fisiolog&iacute;a molecular
+													reproductiva
+												</li>
+											</ul>
+										</div>
+										<div
+											className="mb-3 tab-pane fade"
+											id="v-pills-perfil"
+											role="tabpanel"
+											aria-labelledby="v-pills-perfil-tab">
+											<p>
+												<strong>
+													PERFIL DEL INGRESANTE
+												</strong>
+											</p>
+											<p>
+												El ingresante a la
+												Maestr&iacute;a en
+												Biolog&iacute;a Molecular:
+											</p>
+											<ul>
+												<li aria-level="1">
+													Poseer&aacute; el Grado
+													Acad&eacute;mico de
+													Bachiller en Ciencias
+													Biol&oacute;gicas, Bachiller
+													en Gen&eacute;tica y
+													Biotecnolog&iacute;a,
+													Bachiller en
+													Microbiolog&iacute;a y
+													Parasitolog&iacute;a y otras
+													ciencias b&aacute;sicas, o
+													Grado Acad&eacute;mico de
+													Bachiller en Medicina
+													Humana, Medicina Veterinaria
+													y Farmacia y
+													Bioqu&iacute;mica.
+												</li>
+												<li aria-level="1">
+													Deber&aacute;n acreditar
+													haber aprobado durante sus
+													estudios de pregrado los
+													siguientes cursos o sus
+													equivalentes:
+													Bioqu&iacute;mica,
+													Gen&eacute;tica Microbiana,
+													Fisiolog&iacute;a General,
+													Gen&eacute;tica Humana.
+												</li>
+												<li aria-level="1">
+													Leer y comprender el idioma
+													ingl&eacute;s.
+												</li>
+												<li aria-level="1">
+													Haber obtenido la
+													calificaci&oacute;n
+													requerida en el
+													&ldquo;Examen de Aptitud
+													para Estudios de
+													Posgrado&rdquo; con una
+													antig&uuml;edad no mayor de
+													dos a&ntilde;os calendario.
+												</li>
+												<li aria-level="1">
+													Haber aprobado y alcanzado
+													vacante en el proceso de
+													admisi&oacute;n respectivo.
+												</li>
+												<li aria-level="1">
+													Deber&aacute; contar con una
+													l&iacute;nea de
+													investigaci&oacute;n.
+												</li>
+											</ul>
+											<p>
+												<strong>
+													PERFIL DEL EGRESADO
+												</strong>
+											</p>
+											<p>
+												El graduado de la
+												maestr&iacute;a de
+												Biolog&iacute;a Molecular debe:
+											</p>
+											<ul>
+												<li aria-level="1">
+													Ser un profundo conocedor de
+													los conceptos y
+													metodolog&iacute;as
 													actualizadas en el campo de
-													la biología molecular,
-													además de constituirse en un
-													seguidor activo de los
-													constantes avances de la
-													disciplina.
+													la biolog&iacute;a
+													molecular.
 												</li>
-												<li>
-													Demostrará capacidad y
-													autonomía en la formulación,
-													gestión de proyectos de
-													investigación en Biología
-													Molecular y será capaz de
-													trabajar en equipo y redes
-													en forma interdisciplinaria.
+												<li aria-level="1">
+													Demostrar capacidad y
+													autonom&iacute;a en la
+													formulaci&oacute;n y en la
+													gesti&oacute;n de proyectos
+													de investigaci&oacute;n en
+													biolog&iacute;a molecular.
 												</li>
-												<li>
-													Presentará una actitud
+												<li aria-level="1">
+													Ser capaz de trabajar en
+													equipo y redes en forma
+													interdisciplinaria.
+												</li>
+												<li aria-level="1">
+													Presentar una actitud
 													comprometida con la
-													actualización permanente y
-													con el desarrollo de la
-													biología molecular en su
-													quehacer profesional, en la
-													docencia y en la
-													investigación.
+													actualizaci&oacute;n
+													permanente y con el
+													desarrollo de la
+													biolog&iacute;a molecular en
+													su quehacer profesional,
+													docencia e
+													investigaci&oacute;n.
 												</li>
-												<li>
-													Líder de la investigación
-													básica y/o aplicada que
-													podrá dirigir
-													investigaciones inter, multi
-													y transdisciplinarias.
+												<li aria-level="1">
+													Asumir liderazgo en la
+													investigaci&oacute;n
+													b&aacute;sica y aplicada,
+													dirigiendo investigaciones
+													inter y multidisciplinarias.
 												</li>
-												<li>
-													Es capaz de analizar
+												<li aria-level="1">
+													Ser capaz de analizar
 													problemas y establecer
 													preguntas relevantes a nivel
 													celular y molecular.
 												</li>
-												<li>
-													Es autónomo con principios
-													éticos de investigación, que
-													saben trabajar en equipo,
-													escribir propuestas de
-													proyectos y publicar el
-													producto de su investigación
-													en revistas científicas
-													internacionales.
+												<li aria-level="1">
+													Tener libertad de
+													pensamiento, ejercer su
+													actividad con principios
+													&eacute;ticos de
+													investigaci&oacute;n y saber
+													trabajar en equipo, escribir
+													propuestas de proyectos y
+													publicar el producto de su
+													investigaci&oacute;n en
+													revistas indizadas.
 												</li>
 											</ul>
-											<div className="mb-3">
-												<p className="title-dark mb-1">
-													Comité coordinador de la
-													Maestría:
-												</p>
-												<ul className="nav flex-column ml-3">
-													<li>
-														Mg. Patricia Woll
-														Toso (Presidente)
-													</li>
-													<li>
-														Dr. Dan Erik Vivas Ruiz
-													</li>
-													<li>
-														Mg. Erasmo Colona
-														Vallejos
-													</li>
-												</ul>
-											</div>
-											{/* <a className="btn-green-bright" href="">
-                                                Inscripciones
-                                            </a> */}
 										</div>
 										<div
 											className="mb-3 tab-pane fade"

@@ -165,6 +165,41 @@ const index = () => {
 												</div>
 												<span>Presentación</span>
 											</a>
+											<a
+												className="tab d-flex"
+												id="v-pills-perfil-tab"
+												data-toggle="pill"
+												href="#v-pills-perfil"
+												role="tab"
+												aria-controls="v-pills-perfil"
+												aria-selected="false">
+												<div>
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														className="mr-3"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12 1C5.9247 1 1 5.9247 1 12C1 18.0753 5.9247 23 12 23C18.0753 23 23 18.0753 23 12C23 5.9247 18.0753 1 12 1Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+														<path
+															d="M3.49805 18.981C3.49805 18.981 5.94995 15.8504 11.9999 15.8504C18.0499 15.8504 20.5029 18.981 20.5029 18.981M11.9999 12.0004C12.8752 12.0004 13.7145 11.6527 14.3334 11.0338C14.9523 10.415 15.2999 9.57561 15.2999 8.70039C15.2999 7.82518 14.9523 6.98581 14.3334 6.36694C13.7145 5.74807 12.8752 5.40039 11.9999 5.40039C11.1247 5.40039 10.2854 5.74807 9.66649 6.36694C9.04762 6.98581 8.69995 7.82518 8.69995 8.70039C8.69995 9.57561 9.04762 10.415 9.66649 11.0338C10.2854 11.6527 11.1247 12.0004 11.9999 12.0004Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+													</svg>
+												</div>
+												<span>
+													Perfil del ingresante y
+													egresado
+												</span>
+											</a>
 											{/* <Link href="/posgrado-admision">
 												<a className="tab d-flex" target="_blank">
 													<div>
@@ -260,36 +295,276 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
 											<p>
-												La Maestría de Zoología de la
-												Facultad de Ciencias Biológicas
-												de la Universidad Nacional Mayor
-												de San Marcos ofrece el grado
-												académico respectivo mediante el
-												desarrollo de cuatro semestres
-												con cursos básicos y electivos;
-												conducidos por
-												profesores–investigadores
-												especialistas en fauna peruana
+												El programa de Zoolog&iacute;a
+												cuenta con tres menciones:
+												Sistem&aacute;tica y
+												Evoluci&oacute;n,
+												Ecolog&iacute;a y
+												Conservaci&oacute;n, y
+												Morfolog&iacute;a y
+												Fisiolog&iacute;a; con el
+												prop&oacute;sito de formar
+												investigadores altamente
+												calificados, profesores
+												universitarios de alto nivel y
+												profesionales altamente
+												especializados que contribuyan a
+												resolver la problem&aacute;tica
+												cient&iacute;fica y
+												tecnol&oacute;gica del
+												pa&iacute;s mediante el estudio
+												de organismos animales bajo
+												m&uacute;ltiples enfoques.
 											</p>
-											<div className="mb-3">
-												<p className="title-dark mb-1">
-													Menciones
-												</p>
-												<ul className="chevron-green-dark">
-													<li>
-														Ecología y Conservación
-													</li>
-													<li>
-														Sistemática y Evolución
-													</li>
-													<li>
-														Ecología y Conservación
-													</li>
-												</ul>
-											</div>
-											{/* <a className="btn-green-bright" href="">
-                                                Inscripciones
-                                            </a> */}
+											<p>
+												La menci&oacute;n en
+												Sistem&aacute;tica y
+												Evoluci&oacute;n busca formar
+												investigadores altamente
+												calificados con capacidad de
+												generar conocimientos y
+												contribuir a la
+												resoluci&oacute;n de problemas
+												taxon&oacute;micos con una
+												visi&oacute;n integrativa de
+												evoluci&oacute;n,
+												sistem&aacute;tica,
+												ecolog&iacute;a y
+												biolog&iacute;a de la
+												conservaci&oacute;n. Promover el
+												desarrollo de colecciones
+												cient&iacute;ficas debidamente
+												identificadas y conservadas para
+												su mantenimiento a largo plazo
+												con el fin de usarlas como pilar
+												de estudios b&aacute;sicos y/o
+												aplicados de la biodiversidad,
+												su conservaci&oacute;n y uso
+												sostenible.
+											</p>
+											<p>
+												Por otro lado la menci&oacute;n
+												en Ecolog&iacute;a y
+												Conservaci&oacute;n pretende
+												formar profesionales altamente
+												especializados con capacidad de
+												generar informaci&oacute;n que
+												coadyuve a la
+												conservaci&oacute;n a largo
+												plazo de los ecosistemas, sus
+												poblaciones animales y las
+												interacciones de las que forman
+												parte. As&iacute; mismo
+												podr&aacute;n contribuir a la
+												gesti&oacute;n &oacute;ptima de
+												la fauna silvestre en programas
+												de desarrollo sostenible.
+											</p>
+											<p>
+												Finalmente la menci&oacute;n en
+												Morfolog&iacute;a y
+												Fisiolog&iacute;a tiene como
+												objetivo formar investigadores
+												con capacidad de generar
+												informaci&oacute;n sobre los
+												rasgos morfol&oacute;gicos y
+												fisiol&oacute;gicos en un grupo
+												animal y c&oacute;mo estas
+												adaptaciones los favorece para
+												que puedan existir en los
+												h&aacute;bitats que ocupan.
+												Promover el desarrollo de
+												biotecnolog&iacute;as que
+												repliquen caracter&iacute;sticas
+												adaptativas ya sea
+												morfol&oacute;gicas y/o
+												fisiol&oacute;gicas de uno o
+												m&aacute;s grupos animales.
+											</p>
+											<p>
+												<strong>DURACI&Oacute;N</strong>
+											</p>
+											<p>
+												2 a&ntilde;os, divididos en 4
+												semestres&nbsp;
+											</p>
+											<p>
+												<strong>GRADO</strong>
+											</p>
+											<p>
+												Mag&iacute;ster en
+												Zoolog&iacute;a con
+												menci&oacute;n en&nbsp;
+											</p>
+											<p>
+												<strong>T&Iacute;TULO</strong>
+											</p>
+											<p>
+												T&iacute;tulo profesional de
+												Bi&oacute;logo en
+												Gen&eacute;tica y
+												Biotecnolog&iacute;a con
+												menci&oacute;n en
+												Sistem&aacute;tica y
+												Evoluci&oacute;n,
+												Ecolog&iacute;a y
+												Conservaci&oacute;n, o
+												Morfolog&iacute;a y
+												Fisiolog&iacute;a
+											</p>
+											<p>
+												<strong>
+													L&Iacute;NEAS DE
+													INVESTIGACI&Oacute;N
+												</strong>
+											</p>
+											<p>
+												La disciplina eje del Programa
+												de Maestr&iacute;a en
+												Zoolog&iacute;a son las Ciencias
+												Biol&oacute;gicas enfocadas al
+												estudio de organismos animales
+												en todos sus aspectos. Las
+												l&iacute;neas de
+												investigaci&oacute;n son:
+											</p>
+											<ul>
+												<li aria-level="1">
+													Sistem&aacute;tica evolutiva
+												</li>
+												<li aria-level="1">
+													Biogeograf&iacute;a
+												</li>
+												<li aria-level="1">
+													Biolog&iacute;a de la
+													conservaci&oacute;n
+												</li>
+												<li aria-level="1">
+													Fisiolog&iacute;a e
+													histolog&iacute;a comparada
+												</li>
+												<li aria-level="1">
+													Embriolog&iacute;a comparada
+												</li>
+												<li aria-level="1">
+													Ecolog&iacute;a de
+													poblaciones y de comunidades
+												</li>
+												<li aria-level="1">
+													Estudios integrativos en
+													taxonom&iacute;a,
+													biodiversidad y
+													conservaci&oacute;n
+													biol&oacute;gica
+												</li>
+											</ul>
+										</div>
+										<div
+											className="mb-3 tab-pane fade"
+											id="v-pills-perfil"
+											role="tabpanel"
+											aria-labelledby="v-pills-perfil-tab">
+											<p>
+												<strong>
+													PERFIL DEL INGRESANTE
+												</strong>
+											</p>
+											<p>
+												Poseer el grado acad&eacute;mico
+												de bachiller en Ciencias
+												biol&oacute;gicas o &aacute;reas
+												afines.
+											</p>
+											<p>
+												Haber aprobado durante los
+												estudios de pregrado las
+												siguientes asignaturas:
+												Zoolog&iacute;a,
+												Ecolog&iacute;a,
+												Gen&eacute;tica,
+												Fisiolog&iacute;a,
+												Qu&iacute;mica org&aacute;nica e
+												inorg&aacute;nica,
+												F&iacute;sica, Matem&aacute;tica
+												y Estad&iacute;stica.
+											</p>
+											<p>
+												<strong>
+													PERFIL DEL EGRESADO
+												</strong>
+											</p>
+											<p>
+												En las tres menciones, el
+												graduado de la Maestr&iacute;a
+												en Zoolog&iacute;a tendr&aacute;
+												la capacidad de
+												desempe&ntilde;arse en la
+												investigaci&oacute;n, docencia
+												universitaria y en la
+												ejecuci&oacute;n de proyectos en
+												sistem&aacute;tica,
+												biolog&iacute;a evolutiva,
+												ecolog&iacute;a y
+												conservaci&oacute;n en
+												investigaci&oacute;n
+												b&aacute;sica y/o aplicada que
+												requieran la correcta
+												identificaci&oacute;n de
+												especies de fauna silvestre.
+												Tambi&eacute;n podr&aacute;:
+											</p>
+											<ul>
+												<li aria-level="1">
+													Identificar mediante el uso
+													de t&eacute;cnicas modernas
+													grupos naturales en el reino
+													animal que garantice la
+													conservaci&oacute;n de 1)
+													linajes amenazados por
+													extinci&oacute;n o
+													vulnerables, 2)
+													end&eacute;micos, 3) de
+													inter&eacute;s
+													econ&oacute;mico, etc. y
+													evaluar su estado de
+													conservaci&oacute;n para
+													prever/mitigar los impactos,
+													naturales o
+													antr&oacute;picos, sobre sus
+													poblaciones.
+												</li>
+												<li aria-level="1">
+													Promover el desarrollo y
+													buen mantenimiento de
+													colecciones
+													cient&iacute;ficas que
+													sirvan de referencia para
+													estudios de &iacute;ndole
+													diversa tanto b&aacute;sicos
+													como aplicados.
+												</li>
+												<li aria-level="1">
+													Conocer mediante el uso de
+													t&eacute;cnicas modernas el
+													comportamiento,
+													ecolog&iacute;a y
+													distribuci&oacute;n de
+													especies de inter&eacute;s
+													cient&iacute;fico,
+													comercial, salud
+													p&uacute;blica, etc.
+												</li>
+												<li aria-level="1">
+													Promover el desarrollo y
+													buen mantenimiento de bases
+													de datos ecol&oacute;gicos
+													de especies animales que
+													sirva como referencia para
+													estudios de &iacute;ndole
+													diversa tanto b&aacute;sicos
+													como aplicados.
+												</li>
+											</ul>
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
