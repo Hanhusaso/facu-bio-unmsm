@@ -51,14 +51,9 @@ const index = () => {
 						/>
 					</div>
 					<div>
-						<span>
-							{/* epcb.biologia@unmsm.edu.pe */}
-							upg.biologia@unmsm.edu.pe
-						</span>
+						<span>upg.biologia@unmsm.edu.pe</span>
 					</div>
 				</div>
-				{/* <p className="font-weight-bold mb-1">Horario de atención:</p>
-                <p className="mb-0">8:00 a.m. - 5:00 p.m.</p> */}
 			</div>
 		);
 	};
@@ -73,15 +68,11 @@ const index = () => {
 								<Col md="1"></Col>
 								<Col>
 									<Breadcrumb>
-										{/* <Breadcrumb.Item> */}
 										<li className="breadcrumb-item">
 											<Link href="/">
 												<a role="button">Inicio</a>
 											</Link>
 										</li>
-										{/* </Breadcrumb.Item> */}
-										{/* <Breadcrumb.Item active>Formación académica</Breadcrumb.Item> */}
-										{/* <li className="breadcrumb-item">Formación académica</li> */}
 										<li className="breadcrumb-item">
 											<Link href="/formacion-academica/posgrado">
 												<a role="button">
@@ -165,34 +156,41 @@ const index = () => {
 												</div>
 												<span>Presentación</span>
 											</a>
-											{/* <Link href="/posgrado-admision">
-												<a className="tab d-flex" target="_blank">
-													<div>
-														<svg
-															width="23"
-															height="18"
-															viewBox="0 0 23 18"
-															className="icon mr-3"
-															xmlns="http://www.w3.org/2000/svg"
-														>
-															<g clip-path="url(#clip0)">
-																<path d="M22.2939 4.83473V15.5122C22.2939 15.9942 22.1162 16.4113 21.7609 16.7635C21.4056 17.1157 20.9901 17.2918 20.5143 17.2918H2.12528C1.64949 17.2918 1.23395 17.1157 0.878651 16.7635C0.523352 16.4113 0.345703 15.9942 0.345703 15.5122V4.83473C0.345703 4.36512 0.524897 3.95112 0.883285 3.59273C1.24167 3.23434 1.65567 3.05515 2.12528 3.05515H8.65041L8.64115 4.51959H8.36309C8.26422 4.51959 8.1808 4.55203 8.11283 4.61691C8.04486 4.6818 8.01088 4.75749 8.01088 4.844V5.48353C8.01088 5.57004 8.04486 5.64265 8.11283 5.70135C8.1808 5.76005 8.26422 5.7894 8.36309 5.7894H14.3228C14.4217 5.7894 14.5036 5.76005 14.5684 5.70135C14.6333 5.64265 14.6658 5.57004 14.6658 5.48353V4.844C14.6658 4.75749 14.6333 4.6818 14.5684 4.61691C14.5036 4.55203 14.4217 4.51959 14.3228 4.51959H14.0355L14.017 3.05515H20.5143C20.9901 3.05515 21.4056 3.2328 21.7609 3.58809C22.1162 3.94339 22.2939 4.35894 22.2939 4.83473ZM9.95729 13.8068C9.95729 13.4113 9.92949 13.0452 9.87388 12.7084C9.81826 12.3717 9.72867 12.0473 9.60509 11.7352C9.4815 11.4232 9.29613 11.1776 9.04897 10.9984C8.8018 10.8192 8.50829 10.7296 8.16844 10.7296C7.69883 11.1992 7.13962 11.434 6.49082 11.434C5.82965 11.434 5.26427 11.1992 4.79466 10.7296C4.4548 10.7296 4.16284 10.8192 3.91877 10.9984C3.67469 11.1776 3.49087 11.4232 3.36728 11.7352C3.2437 12.0473 3.15565 12.3717 3.10313 12.7084C3.0506 13.0452 3.02434 13.4113 3.02434 13.8068C3.02434 14.1961 3.13557 14.5313 3.35801 14.8124C3.58046 15.0936 3.85234 15.2342 4.17366 15.2342H8.78018C9.10149 15.2342 9.378 15.0936 9.60972 14.8124C9.84144 14.5313 9.95729 14.1961 9.95729 13.8068ZM8.567 9.00562C8.567 8.42479 8.36463 7.92891 7.9599 7.518C7.55517 7.10709 7.06547 6.90164 6.49082 6.90164C5.91616 6.90164 5.42647 7.10709 5.02174 7.518C4.61701 7.92891 4.41464 8.42479 4.41464 9.00562C4.41464 9.5741 4.61701 10.0607 5.02174 10.4654C5.42647 10.8702 5.91616 11.0725 6.49082 11.0725C7.06547 11.0725 7.55517 10.8702 7.9599 10.4654C8.36463 10.0607 8.567 9.5741 8.567 9.00562ZM19.643 14.1961V13.5009C19.643 13.4082 19.6121 13.3279 19.5503 13.2599C19.4886 13.192 19.4113 13.158 19.3186 13.158H11.672C11.5793 13.158 11.4974 13.192 11.4264 13.2599C11.3553 13.3279 11.3198 13.4082 11.3198 13.5009V14.1961C11.3198 14.2888 11.3553 14.3691 11.4264 14.437C11.4974 14.505 11.5793 14.539 11.672 14.539H19.3186C19.4113 14.539 19.4886 14.5066 19.5503 14.4417C19.6121 14.3768 19.643 14.2949 19.643 14.1961ZM15.4999 11.434V10.7296C15.4999 10.6307 15.466 10.5489 15.398 10.484C15.33 10.4191 15.2497 10.3866 15.157 10.3866H11.672C11.5793 10.3866 11.4974 10.4206 11.4264 10.4886C11.3553 10.5566 11.3198 10.6369 11.3198 10.7296V11.434C11.3198 11.5267 11.3553 11.607 11.4264 11.675C11.4974 11.743 11.5793 11.7769 11.672 11.7769H15.157C15.2497 11.7769 15.33 11.7445 15.398 11.6796C15.466 11.6147 15.4999 11.5329 15.4999 11.434ZM19.643 11.434V10.7296C19.643 10.6307 19.6121 10.5489 19.5503 10.484C19.4886 10.4191 19.4113 10.3866 19.3186 10.3866H17.2332C17.1343 10.3866 17.0509 10.4191 16.9829 10.484C16.915 10.5489 16.881 10.6307 16.881 10.7296V11.434C16.881 11.5329 16.915 11.6147 16.9829 11.6796C17.0509 11.7445 17.1343 11.7769 17.2332 11.7769H19.3186C19.4113 11.7769 19.4886 11.7445 19.5503 11.6796C19.6121 11.6147 19.643 11.5329 19.643 11.434ZM19.643 8.65341V7.95826C19.643 7.8594 19.6121 7.77752 19.5503 7.71264C19.4886 7.64776 19.4113 7.61532 19.3186 7.61532H11.672C11.5793 7.61532 11.4974 7.64931 11.4264 7.71728C11.3553 7.78525 11.3198 7.86558 11.3198 7.95826V8.65341C11.3198 8.75228 11.3553 8.8357 11.4264 8.90367C11.4974 8.97164 11.5793 9.00562 11.672 9.00562H19.3186C19.4113 9.00562 19.4886 8.97164 19.5503 8.90367C19.6121 8.8357 19.643 8.75228 19.643 8.65341ZM10.0685 0.682373C9.92022 0.682373 9.79355 0.720992 9.6885 0.798231C9.58346 0.87547 9.53094 0.969701 9.53094 1.08092V4.76058C9.53094 4.86562 9.585 4.95831 9.69314 5.03864C9.80127 5.11897 9.9264 5.15913 10.0685 5.15913H12.6081C12.7564 5.15913 12.8816 5.11897 12.9835 5.03864C13.0855 4.95831 13.1364 4.86562 13.1364 4.76058V1.08092C13.1364 0.969701 13.0855 0.87547 12.9835 0.798231C12.8816 0.720992 12.7564 0.682373 12.6081 0.682373H10.0685Z" />
-															</g>
-															<defs>
-																<clipPath id="clip0">
-																	<rect
-																		width="21.9521"
-																		height="16.6094"
-																		fill="white"
-																		transform="translate(0.34375 0.682373)"
-																	/>
-																</clipPath>
-															</defs>
-														</svg>
-													</div>
-													<span>Admisión</span>
-												</a>
-											</Link> */}
+											<a
+												className="tab d-flex"
+												id="v-pills-perfil-tab"
+												data-toggle="pill"
+												href="#v-pills-perfil"
+												role="tab"
+												aria-controls="v-pills-perfil"
+												aria-selected="false">
+												<div>
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														className="mr-3"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12 1C5.9247 1 1 5.9247 1 12C1 18.0753 5.9247 23 12 23C18.0753 23 23 18.0753 23 12C23 5.9247 18.0753 1 12 1Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+														<path
+															d="M3.49805 18.981C3.49805 18.981 5.94995 15.8504 11.9999 15.8504C18.0499 15.8504 20.5029 18.981 20.5029 18.981M11.9999 12.0004C12.8752 12.0004 13.7145 11.6527 14.3334 11.0338C14.9523 10.415 15.2999 9.57561 15.2999 8.70039C15.2999 7.82518 14.9523 6.98581 14.3334 6.36694C13.7145 5.74807 12.8752 5.40039 11.9999 5.40039C11.1247 5.40039 10.2854 5.74807 9.66649 6.36694C9.04762 6.98581 8.69995 7.82518 8.69995 8.70039C8.69995 9.57561 9.04762 10.415 9.66649 11.0338C10.2854 11.6527 11.1247 12.0004 11.9999 12.0004Z"
+															strokeWidth="1.5"
+															strokeLinecap="round"
+															strokeLinejoin="round"
+														/>
+													</svg>
+												</div>
+												<span>
+													Perfil del ingresante y
+													egresado
+												</span>
+											</a>
 											<a
 												className="tab d-flex"
 												id="v-pills-docente-tab"
@@ -213,8 +211,7 @@ const index = () => {
 												</div>
 												<span>Plana docente</span>
 											</a>
-											{/* <a className="tab d-flex" id="v-pills-malla-tab" data-toggle="pill" href="#v-pills-malla" role="tab" aria-controls="v-pills-malla" aria-selected="false"> */}
-											{/* <a href="/assets/archivos/posgrado/planes de estudio/plan-estudio-2020-doctorado-ciencias-biologicas.pdf" target="_blank" className="tab d-flex"> */}
+
 											<a
 												href="/assets/archivos/posgrado/planes de estudio/plan-estudio-2020-doctorado-ciencias-biologicas.pdf"
 												target="_blank"
@@ -233,16 +230,8 @@ const index = () => {
 														<path d="M3.75586 16.7283C2.7616 16.7273 1.80835 16.3319 1.10531 15.6288C0.402259 14.9258 0.00685214 13.9725 0.00585938 12.9783V4.72827H1.50586V12.9783C1.50586 13.575 1.74291 14.1473 2.16487 14.5693C2.58683 14.9912 3.15912 15.2283 3.75586 15.2283C4.3526 15.2283 4.92489 14.9912 5.34685 14.5693C5.76881 14.1473 6.00586 13.575 6.00586 12.9783V6.22827C6.00586 6.02936 5.92684 5.83859 5.78619 5.69794C5.64554 5.55729 5.45477 5.47827 5.25586 5.47827C5.05695 5.47827 4.86618 5.55729 4.72553 5.69794C4.58488 5.83859 4.50586 6.02936 4.50586 6.22827V13.7283H3.00586V6.22827C3.00586 5.63153 3.24291 5.05924 3.66487 4.63728C4.08683 4.21532 4.65912 3.97827 5.25586 3.97827C5.8526 3.97827 6.42489 4.21532 6.84685 4.63728C7.26881 5.05924 7.50586 5.63153 7.50586 6.22827V12.9783C7.50487 13.9725 7.10946 14.9258 6.40641 15.6288C5.70337 16.3319 4.75012 16.7273 3.75586 16.7283Z" />
 													</svg>
 												</div>
-												<span>Plan de estudio</span>
+												<span>Malla curricular</span>
 											</a>
-											{/* <a className="tab d-flex" id="v-pills-egresados-tab" data-toggle="pill" href="#v-pills-egresados" role="tab" aria-controls="v-pills-egresados" aria-selected="false">
-                                                    <div>
-                                                        <svg width="18" height="25" viewBox="0 0 18 25" className="icon mr-3" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.00803e-07 23.252V3.00195C2.00803e-07 2.2063 0.316071 1.44324 0.87868 0.880633C1.44129 0.318024 2.20435 0.00195313 3 0.00195313L15 0.00195312C15.7956 0.00195313 16.5587 0.318024 17.1213 0.880633C17.6839 1.44324 18 2.2063 18 3.00195V23.252C18.0001 23.3822 17.9663 23.5102 17.9019 23.6234C17.8375 23.7366 17.7447 23.8311 17.6327 23.8975C17.5207 23.964 17.3933 24.0001 17.263 24.0024C17.1328 24.0047 17.0043 23.973 16.89 23.9105L9 19.6055L1.11 23.9105C0.995744 23.973 0.867178 24.0047 0.736957 24.0024C0.606737 24.0001 0.47935 23.964 0.367338 23.8975C0.255325 23.8311 0.162547 23.7366 0.0981369 23.6234C0.0337268 23.5102 -9.50907e-05 23.3822 2.00803e-07 23.252ZM9.24 6.15195C9.21807 6.10697 9.18394 6.06906 9.14151 6.04254C9.09907 6.01602 9.05004 6.00195 9 6.00195C8.94996 6.00195 8.90092 6.01602 8.85849 6.04254C8.81606 6.06906 8.78193 6.10697 8.76 6.15195L7.809 8.07945C7.78996 8.11844 7.76171 8.15221 7.72669 8.17782C7.69166 8.20343 7.65093 8.22013 7.608 8.22645L5.478 8.53545C5.42897 8.54289 5.38297 8.56385 5.34518 8.59596C5.30738 8.62807 5.27928 8.67008 5.26401 8.71727C5.24875 8.76445 5.24693 8.81496 5.25877 8.86313C5.2706 8.91129 5.29561 8.95521 5.331 8.98995L6.87 10.4915C6.933 10.553 6.9615 10.6415 6.9465 10.7285L6.585 12.8495C6.57685 12.8984 6.58251 12.9487 6.60136 12.9946C6.6202 13.0406 6.65148 13.0803 6.69168 13.1095C6.73188 13.1386 6.77941 13.156 6.82893 13.1596C6.87845 13.1632 6.92799 13.1529 6.972 13.13L8.877 12.128C8.91519 12.108 8.95765 12.0975 9.00075 12.0975C9.04385 12.0975 9.08631 12.108 9.1245 12.128L11.0295 13.13C11.0735 13.1525 11.1228 13.1625 11.1721 13.1587C11.2214 13.1548 11.2686 13.1374 11.3086 13.1083C11.3485 13.0793 11.3796 13.0397 11.3984 12.994C11.4172 12.9483 11.423 12.8982 11.415 12.8495L11.052 10.727C11.0443 10.6843 11.0472 10.6405 11.0602 10.5992C11.0733 10.5579 11.0962 10.5204 11.127 10.49L12.669 8.98845C12.7044 8.95371 12.7294 8.90979 12.7412 8.86163C12.7531 8.81346 12.7512 8.76295 12.736 8.71577C12.7207 8.66858 12.6926 8.62657 12.6548 8.59446C12.617 8.56234 12.571 8.54139 12.522 8.53395L10.392 8.22495C10.3491 8.21863 10.3083 8.20193 10.2733 8.17632C10.2383 8.15071 10.21 8.11694 10.191 8.07795L9.24 6.15195Z"/>
-                                                        </svg>
-                                                    </div>
-                                                    <span>Seguimiento de egresados</span>
-                                                </a> */}
 										</div>
 									</div>
 									{width >= 768 && (
@@ -261,226 +250,311 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
 											<p>
-												El programa de Doctorado en
-												Ciencias Biológicas es
-												escolarizado desde el año 2000,
-												tuvo una duración de cuatro
-												semestres. El año 2011 se
-												planteó el currículo del
-												Doctorado en Ciencias Biológicas
-												con una duración de seis
-												semestres académicos, tal como
-												posteriormente lo indicó la
-												nueva Ley Universitaria Nº30220
-												en el 2014.
-											</p>
-											<p>
-												El presente currículo ha sido
-												elaborado para adecuarse a las
-												normas presentes en el
-												Reglamento General de Estudios
-												de Posgrado aprobado con
-												Resolución Rectoral 04790-R-18.
-											</p>
-											<div className="mb-3">
-												<p className="title-dark mb-1">
-													1. Fecha de creación del
-													Programa
-												</p>
-												<ul className="nav flex-column ml-3">
-													<li>
-														01 de marzo de 2000,
-														R.R. N° 02069-R-00.
-													</li>
-													<li>
-														04 de noviembre de 1999,
-														R.D. N° 4078-D-FCB-99.
-													</li>
-												</ul>
-											</div>
-											<div className="mb-3">
-												<p className="title-dark mb-1">
-													2. Fecha de modificación del
-													programa:
-												</p>
-												<ul className="nav flex-column ml-3">
-													<li>
-														03 de noviembre del
-														2017, R.R. N°
-														06658-R-17.
-													</li>
-													<li>
-														30 de mayo de 2017, R.D.
-														N° 229-D-FCB-2017.
-													</li>
-													<li>
-														02 de junio del 2020,
-														R.R. N° 01329-R-20.
-													</li>
-												</ul>
-											</div>
-											<div className="mb-3">
-												<p className="title-dark mb-1">
-													3. Comité Coordinador Del
-													Doctorado En Ciencias
-													Biológicas:
-												</p>
-												<ul className="nav flex-column ml-3">
-													<li>
-														Dr. César Augusto
-														Aguilar Puntriano
-														(Presidente)
-													</li>
-													<li>
-														Dra. Joaquina Adelaida
-														Albán Castillo
-													</li>
-													<li>
-														Dra. Liz Erika Cruz Pío
-													</li>
-													<li>
-														Dr. Niels Marciano
-														Valencia Chacón
-													</li>
-													<li>
-														Dr. Dan Erick Vivas Ruíz
-													</li>
-												</ul>
-											</div>
-
-											<p className="title-dark">
-												Sumilla del Programa
-											</p>
-											<p>
-												El Doctorado en Ciencias
-												Biológicas forma especialistas
-												de los más altos niveles capaces
-												de evaluar e investigar la
-												problemática nacional en las
-												diversas áreas del conocimiento
-												biológico, con especial énfasis
-												en los campos de la
-												biodiversidad y biología
-												molecular.
-											</p>
-
-											<p className="title-dark">
-												Grado que se otorga:
-											</p>
-											<p>Doctor en Ciencias Biológicas</p>
-
-											<p className="title-dark">
-												Objetivos académicos:
-											</p>
-											<p>
 												El Programa de Doctorado en
-												Ciencias Biológicas tiene como
-												finalidad la formación de
+												Ciencias Biol&oacute;gicas tiene
+												como finalidad la
+												formaci&oacute;n de
 												investigadores sobre la
-												evolución y uso sostenible de la
-												diversidad biológica, así como
-												la capacitación para su futura
-												incorporación en universidades,
-												instituciones de investigación y
-												centros de gestión tanto
+												evoluci&oacute;n y uso
+												sostenible de la diversidad
+												biol&oacute;gica, as&iacute;
+												como la capacitaci&oacute;n para
+												su futura incorporaci&oacute;n
+												en universidades, instituciones
+												de investigaci&oacute;n y
+												centros de gesti&oacute;n tanto
 												privados como de la
-												administración pública.
-												Asimismo, comprenderán y
-												aplicarán los conceptos actuales
-												de la biología molecular en
-												arqueas, bacterias y
-												eucariontes, contribuyendo con
-												el conocimiento tanto en el área
-												básica como aplicada a fin de
-												lograr el aprovechamiento
-												racional de nuestra
-												megabiodiversidad. El Programa
-												ofrece a los estudiantes la
-												oportunidad de trabajar con
-												reconocidos investigadores en
-												diferentes tópicos relacionados
-												con las prioridades actuales del
-												país.
-											</p>
-
-											<p className="title-dark">
-												Dirigido a:
+												administraci&oacute;n
+												p&uacute;blica.Asimismo,
+												comprender&aacute;n y
+												aplicar&aacute;n los conceptos
+												actuales de la biolog&iacute;a
+												molecular en arqueas, bacterias
+												y eucariontes, contribuyendo con
+												el conocimiento tanto en el
+												&aacute;rea b&aacute;sica como
+												aplicada a fin de lograr el
+												aprovechamiento racional de
+												nuestra megadiversidad.
 											</p>
 											<p>
-												Profesionales que hayan
-												concluido los estudios de
-												Maestría o estén en posesión del
-												Grado de Magíster en áreas de
-												las Ciencias Biológicas o en
+												El Programa ofrece a los
+												estudiantes la oportunidad de
+												trabajar con reconocidos
+												investigadores en diferentes
+												t&oacute;picos relacionados con
+												las prioridades actuales del
+												pa&iacute;s. El doctorado se
+												convierte en el espacio de
+												formaci&oacute;n de
+												investigadores con visi&oacute;n
+												transformadora, actitud
+												sist&eacute;mica para la
+												investigaci&oacute;n,
+												comprometido con el desarrollo
+												humano en todas sus dimensiones:
+												social, econ&oacute;mico y
+												cultural.
+											</p>
+											<p>
+												Las l&iacute;neas de
+												investigaci&oacute;n
+												desarrolladas contemplan
+												aspectos como:
+												flor&iacute;stica,
+												bioprospecci&oacute;n,
+												taxonom&iacute;a y
+												sistem&aacute;tica evolutiva,
+												biogeograf&iacute;a,
+												entomolog&iacute;a,
+												ornitolog&iacute;a,
+												malacolog&iacute;a,
+												microbiolog&iacute;a,
+												parasitolog&iacute;a,
+												virolog&iacute;a,
+												biolog&iacute;a de la
+												reproducci&oacute;n,
+												biolog&iacute;a molecular y
+												gen&eacute;tica, ecolog&iacute;a
+												vegetal, ecolog&iacute;a
+												acu&aacute;tica,
+												limnolog&iacute;a, acuicultura,
+												manejo y gesti&oacute;n de la
+												biodiversidad,
+												etnobiolog&iacute;a,
+												biotecnolog&iacute;a,
+												contaminaci&oacute;n
+												biol&oacute;gica, entre otros.
+											</p>
+											<p>
+												<strong>DURACI&Oacute;N</strong>
+											</p>
+											<p>
+												3 a&ntilde;os, divididos en 6
+												semestres&nbsp;
+											</p>
+											<p>
+												<strong>GRADO</strong>
+											</p>
+											<p>
+												Doctor en Ciencias
+												Biol&oacute;gicas
+											</p>
+											<p>
+												<strong>
+													L&Iacute;NEAS DE
+													INVESTIGACI&Oacute;N
+												</strong>
+											</p>
+											<p>
+												<strong>
+													Conocimiento de la
+													biodiversidad y
+													ecolog&iacute;a
+												</strong>
+											</p>
+											<ul>
+												<li aria-level="1">
+													Biodiversidad y
+													Ecolog&iacute;a de
+													Ecosisitemas
+													acu&aacute;ticos
+												</li>
+												<li aria-level="1">
+													Biodiversidad y
+													ecolog&iacute;a de
+													ecosistemas terrestres
+												</li>
+												<li aria-level="1">
+													Diversidad Gen&eacute;tica
+												</li>
+												<li aria-level="1">
+													Paleobiolog&iacute;a
+												</li>
+											</ul>
+											<p>
+												<strong>
+													Biotecnolog&iacute;a
+												</strong>
+											</p>
+											<ul>
+												<li aria-level="1">
+													Biorremediaci&oacute;n y
+													bioconversi&oacute;n
+												</li>
+												<li aria-level="1">
+													Principios activos
+												</li>
+												<li aria-level="1">
+													Biotecnolog&iacute;a de
+													recursos gen&eacute;ticos
+												</li>
+												<li aria-level="1">
+													Desarrollo de productos
+													biol&oacute;gicos
+												</li>
+											</ul>
+											<p>
+												<strong>Salud y sanidad</strong>
+											</p>
+											<ul>
+												<li aria-level="1">
+													Salud p&uacute;blica
+												</li>
+												<li aria-level="1">
+													Calidad ambiental
+												</li>
+												<li aria-level="1">
+													Reproducci&oacute;n
+												</li>
+											</ul>
+											<p>
+												<strong>
+													Producci&oacute;n y manejo
+													de recursos
+													biol&oacute;gicos
+												</strong>
+											</p>
+											<ul>
+												<li aria-level="1">
+													Producci&oacute;n y manejo
+													de recursos
+													hidrobiol&oacute;gicos
+												</li>
+												<li aria-level="1">
+													Producci&oacute;n y manejo
+													de recursos terrestres
+												</li>
+											</ul>
+										</div>
+										<div
+											className="mb-3 tab-pane fade"
+											id="v-pills-perfil"
+											role="tabpanel"
+											aria-labelledby="v-pills-perfil-tab">
+											<p>
+												<strong>
+													PERFIL DEL INGRESANTE
+												</strong>
+											</p>
+											<p>
+												El ingresante al programa de
+												Doctorado en Ciencias
+												Biol&oacute;gicas es:
+											</p>
+											<p>
+												Graduado que haya concluido los
+												estudios de Maestr&iacute;a o
+												est&eacute; en posesi&oacute;n
+												del Grado de Mag&iacute;ster en
+												&aacute;reas de las Ciencias
+												Biol&oacute;gicas o en
 												disciplinas afines, otorgados
 												por universidades nacionales o
 												extranjeras que aseguren una
-												formación acorde a los fines del
-												Programa.
+												formaci&oacute;n acorde a los
+												fines del Programa.
 											</p>
-
-											<p className="title-dark">
-												Duración:
+											<p>
+												<strong>
+													PERFIL DEL EGRESADO
+												</strong>
 											</p>
-											<p>3 años (6 semestres)</p>
-
-											<p className="title-dark">
-												Perfil del graduado:
+											<p>
+												El egresado del Programa de
+												Doctorado en Ciencias
+												Biol&oacute;gicas de la Facultad
+												de Ciencias
 											</p>
-											<ul className="chevron-green-dark">
-												<li>
+											<p>
+												Biol&oacute;gicas ser&aacute;
+												capaz de:
+											</p>
+											<ul>
+												<li aria-level="1">
 													Generar nuevos conocimientos
-													científicos y técnicos en
-													las Ciencias Biológicas a
-													través de la realización de
-													trabajos originales. Estará
-													capacitado para manejar y
-													aplicar las metodologías que
+													cient&iacute;ficos y
+													t&eacute;cnicos en las
+													Ciencias Biol&oacute;gicas a
+													trav&eacute;s de la
+													realizaci&oacute;n de
+													trabajos originales.
+												</li>
+												<li aria-level="1">
+													Estar&aacute; capacitado
+													para manejar y aplicar las
+													metodolog&iacute;as que
 													permitan resolver problemas
-													de investigación en las
-													diversas áreas del
-													conocimiento biológico con
-													especial énfasis en los
-													campos de la biodiversidad y
-													biología molecular.
+													de investigaci&oacute;n en
+													las diversas &aacute;reas
+													del conocimiento
+													biol&oacute;gico con
+													especial &eacute;nfasis en
+													los campos de la
+													biodiversidad y
+													biolog&iacute;a molecular.
 												</li>
-												<li>
+												<li aria-level="1">
 													Desarrollar nuevas
-													tecnologías para resolver
-													problemas, detectar
+													tecnolog&iacute;as para
+													resolver problemas, detectar
 													necesidades y oportunidades
-													inherentes a su área de
-													investigación. En
-													particular, conocer y
-													utilizar aproximaciones
-													estadísticas contemporáneas.
+													inherentes a su &aacute;rea
+													de investigaci&oacute;n.
 												</li>
-												<li>
+												<li aria-level="1">
+													En particular, conocer y
+													utilizar aproximaciones
+													estad&iacute;sticas
+													contempor&aacute;neas.
+												</li>
+												<li aria-level="1">
 													Formular, gestionar y
 													liderar proyectos de
-													investigación, trabajando en
-													equipo y en redes
-													interdisciplinarias. Como
-													consecuencia, será capaz de
+													investigaci&oacute;n,
+													trabajando en equipo y en
+													redes interdisciplinarias.
+													Como consecuencia,
+													ser&aacute; capaz de
 													plantear y ejecutar
-													hipótesis de trabajo,
+													hip&oacute;tesis de trabajo,
 													describir e interpretar
 													resultados experimentales y
-													analizar de forma crítica
-													los descubrimientos
-													presentados en las
-													publicaciones científicas.
+													analizar de forma
+													cr&iacute;tica los
+													descubrimientos presentados
+													en las publicaciones
+													cient&iacute;ficas.
 												</li>
-												{/* <li>
-                                                    Manejar nuevas tecnologías de información y comunicaciones que le permitan difundir en forma eficiente sus investigaciones y resultados en revistas de la especialidad, círculos especializados y la comunidad social con el fin de participar satisfactoriamente en la educación superior y de posgrado a través de la experiencia adquirida en las actividades académicas del doctorado.
-                                                </li>
-                                                <li>
-                                                    Asesorar los trabajos de investigación de estudiantes de pre y posgrado.
-                                                </li> */}
+												<li aria-level="1">
+													Manejar nuevas
+													tecnolog&iacute;as de
+													informaci&oacute;n y
+													comunicaciones que le
+													permitan difundir en forma
+													eficiente sus
+													investigaciones y resultados
+													en revistas de la
+													especialidad,
+													c&iacute;rculos
+													especializados y la
+													comunidad social con el fin
+													de participar
+													satisfactoriamente en la
+													educaci&oacute;n superior y
+													de Posgrado a trav&eacute;s
+													de la experiencia adquirida
+													en las actividades
+													acad&eacute;micas del
+													doctorado.
+												</li>
+												<li aria-level="1">
+													Asesorar los trabajos de
+													investigaci&oacute;n de
+													estudiantes de pre y
+													posgrado.
+												</li>
 											</ul>
-											{/* <a className="btn-green-bright" href="">
-                                                Inscripciones
-                                            </a> */}
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
@@ -607,6 +681,7 @@ const index = () => {
 												</Tab>
 											</Tabs>
 										</div>
+
 										<div
 											className="mb-3 tab-pane fade"
 											id="v-pills-docente"
@@ -682,307 +757,7 @@ const index = () => {
 													</p>
 												</div>
 											))}
-											{/* <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Mg. Anthonny Flores Carrasco | Docente principal</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div> */}
-											{/* <div className="divisor"></div> */}
-											{/* <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Dra. Kelly Sánchez Ortega</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div> */}
-											{/* <div className="divisor"></div> */}
-											{/* <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Dra. Claudia Veramendi Gomez</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div> */}
-											{/* <div className="divisor"></div> */}
-											{/* <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Mg. Ricarfo Gonzales Fernandez | Docente principal</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div> */}
-											{/* <div className="divisor"></div> */}
-											{/* <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Mg. Mariela Fátima Carranza Díaz | Docente principal</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div> */}
-											{/* <div className="divisor"></div> */}
-											{/* <div className="block-divider mb-3 pb-2 position-relative">
-                                                <h3 className="title">Mg.Karla Gutierrez Benitez | Docente principal</h3>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Documentación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Resolución rectoral</span>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-3">
-                                                        <img className="mr-2" src="/assets/img/iconos/pdf.svg" alt=""/>
-                                                        <span className="">Hoja de vida</span>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Investigación:</span>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">RAIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                    <a href="#" className="d-inline-block color-inherit mr-2">
-                                                        <span className="mr-1">SIIS</span>
-                                                        <HiIcons.HiExternalLink  className="mb-1 icon"/>
-                                                    </a>
-                                                </p>
-                                                <p className="mb-2">
-                                                    <span className="mr-2">Contacto:</span>
-                                                    <img className="icon mr-2" src="/assets/img/iconos/correo.svg" alt=""/>
-                                                    <span className="text-break">laucastivas@unmsm.edu.pe</span>
-                                                </p>
-                                            </div> */}
 										</div>
-										{/* <div className="mb-3 tab-pane fade" id="v-pills-malla" role="tabpanel" aria-labelledby="v-pills-malla-tab">
-                                            <div>
-                                                <div className="mb-4">
-                                                        <a href="/assets/archivos/malla_curricular_2020.pdf" target="_blank">
-                                                            <img className="mr-2" src="/assets/img/iconos/descarga.svg" alt=""/>
-                                                            <span className="sub-title-dark">Descargar</span>
-                                                        </a>
-                                                </div>
-                                                <div className="section-compartir">
-                                                    <div className="d-inline-block font-weight-bold mr-3">
-                                                        Compartir vía:
-                                                    </div>
-                                                    <div className="icons">
-                                                        <a href="#" className="d-inline-block">
-                                                            <img src="/assets/img/iconos/email.svg"/>
-                                                        </a>
-                                                        <a href="#" className="d-inline-block">
-                                                            <img src="/assets/img/iconos/whatsapp.svg"/>
-                                                        </a>
-                                                        <a href="#" className="d-inline-block">
-                                                            <img src="/assets/img/iconos/facebook.svg"/>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> */}
-										{/* <div className="mb-3 tab-pane fade" id="v-pills-egresados" role="tabpanel" aria-labelledby="v-pills-egresados-tab">
-                                            <div className="grid-img-txt-2">
-                                                <div>
-                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
-                                                        <a>
-                                                            <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado1.png" alt="" />
-                                                        </a>
-                                                    </Link>
-                                                </div>
-                                                <div>
-                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
-                                                        <a className="title">
-                                                            <p>
-                                                                Dra. María Cárdenas López|  Coordinadora general de proyectos ganadores CONCYTEC
-                                                            </p>
-                                                        </a>
-                                                    </Link>
-                                                    <p className="mb-0">
-                                                        "La profesión que escogí  ha sido nombrada la carrera del futuro. Según El Colombiano "La biología dominará los currículos". Es una ciencia en la que predomina la investigación y EAFIT me ha brindado todas las herramientas necesarias para mi formación como científica; desde varios grupos de investigación y semilleros, hasta una infraestructura que cuenta con los laboratorios mejores dotados, al igual que charlas informátivas de diferentes temas de pertinencia dictadas por extranjeros y nacionales que han enriquecido mi conocimiento. 
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="divisor"></div>
-                                            <div className="grid-img-txt-2">
-                                                <div>
-                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
-                                                        <a>
-                                                            <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado2.png" alt="" />
-                                                        </a>
-                                                    </Link>
-                                                </div>
-                                                <div>
-                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
-                                                        <a className="title">
-                                                            <p>
-                                                                Dr. Carlos Palacios Hernandez | Becario de la OEA en la Maestría en Ciencias
-                                                            </p>
-                                                        </a>
-                                                    </Link>
-                                                    <p className="mb-0">
-                                                        Las oportunidades de intercambio y hacer doble titulación vuelven más atractiva mi hoja de vida. Aparte la universidad tiene una facilidad de pago (debido a  numerosos convenios que tiene) que me permitió seguir estudiando, y debido a mi promedio, pude alcanzar mi mayor ánhelo: la Beca de Honor Pregrado por el primer semestre. Son éstas clases de estímulos que fomentan el buen estudio. Por eso y mucho más adoro Mi universidad, me siento orgullosa de decir que soy y seré sanmarquino.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="divisor"></div>
-                                            <div className="grid-img-txt-2">
-                                                <div>
-                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
-                                                        <a>
-                                                            <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado3.png" alt="" />
-                                                        </a>
-                                                    </Link>
-                                                </div>
-                                                <div>
-                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
-                                                        <a className="title">
-                                                            <p>
-                                                                Dra. Claudia Villa Vargas | Jefe Laboratorio de Proteómica y Biomedicina Molecular IPICYT-México 
-                                                            </p>
-                                                        </a>
-                                                    </Link>
-                                                    <p className="mb-0">
-                                                        Mi interés de investigación son las interacciones biológicas entre distintos componentes del plancton. Durante mi tesis de pregrado en Biología Marina estudié la potencial interacción entre hongos y huevos de copépodos y en mi tesis de Magister en Ciencias c/m en Oceanografía investigué el microbioma gastro-intestinal del zooplancton (microorganismos asociados a copépodos y eufáusidos) en la zona norte y centro sur de Chile. Durante mis estudios de doctorado profundizaré en otros aspectos de la interacción entre microorganismos y copépodos
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="divisor"></div>
-                                            <div className="grid-img-txt-2">
-                                                <div>
-                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
-                                                        <a>
-                                                            <img className="w-100 img-fluid" src="/assets/img/carreras/ciencias biologicas/egresados/egresado4.png" alt="" />
-                                                        </a>
-                                                    </Link>
-                                                </div>
-                                                <div>
-                                                    <Link href="/formacion-academica/pregrado/ciencias-biologicas/egresado">
-                                                        <a className="title">
-                                                            <p>
-                                                                Dr. Luis Jimenez Hidalgo | Director del CENAN
-                                                            </p>
-                                                        </a>
-                                                    </Link>
-                                                    <p className="mb-0">
-                                                        Estudie biología, actualmente soy gerente de inocuidad y certificaciones en la empresa Antigua Processors en Guatemala, recuerdo que cuando estaba en la época de colegio visite la Universidad y me llamaron la atención los laboratorios y áreas verdes, aprendí a cómo cultivar plantas sin sustrato como la tierra, y conocí granjas de animales y también plantas prehistóricas aquí en la UNMSM, sabía que quería estudiar aquí.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div> */}
 									</div>
 									{width < 768 && (
 										<>
