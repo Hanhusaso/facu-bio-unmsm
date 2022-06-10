@@ -148,7 +148,7 @@ const index = () => {
 														<path d="M11.2852 8.49805C10.5328 8.49805 9.82969 8.78867 9.29766 9.32305C8.76563 9.85508 8.47266 10.5582 8.47266 11.3105C8.47266 12.0629 8.76563 12.766 9.29766 13.298C9.82969 13.8277 10.5352 14.123 11.2852 14.123C12.0352 14.123 12.7406 13.8301 13.2727 13.298C13.8023 12.766 14.0977 12.0605 14.0977 11.3105C14.0977 10.5605 13.8047 9.85508 13.2727 9.32305C12.7406 8.78867 12.0375 8.49805 11.2852 8.49805Z" />
 													</svg>
 												</div>
-												<span>Convocatoria</span>
+												<span>Convocatorias</span>
 											</a>
 										</div>
 									</div>
@@ -168,23 +168,6 @@ const index = () => {
 											id="v-pills-presentacion"
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
-											<p>
-												Programa administrado por la
-												Oficina General de
-												Cooperaci&oacute;n y Relaciones
-												Interinstitucionales el cual
-												permite a estudiantes externos
-												(nacionales y extranjeros) de
-												pregrado o posgrado, realizar
-												una estancia en la UNMSM,
-												durante un per&iacute;odo
-												m&aacute;ximo de dos semestres
-												acad&eacute;micos y obtener una
-												certificaci&oacute;n oficial de
-												las actividades realizadas para
-												el reconocimiento en su
-												universidad de origen.
-											</p>
 											<p>
 												La Universidad Nacional Mayor de
 												San Marcos, a trav&eacute;s de

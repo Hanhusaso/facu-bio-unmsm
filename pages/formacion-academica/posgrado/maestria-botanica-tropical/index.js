@@ -304,7 +304,7 @@ const index = () => {
 												y Etnobot&aacute;nica.
 											</p>
 											<p>
-												Desde la menci&oacute;n de
+												La menci&oacute;n en
 												Taxonom&iacute;a y
 												Sistem&aacute;tica Evolutiva,
 												busca formar personas capaces de
@@ -367,7 +367,7 @@ const index = () => {
 											</p>
 											<p>
 												Finalmente es objetivo de la
-												menci&oacute;n de
+												menci&oacute;n en
 												Etnobot&aacute;nica, formar
 												personas capaces de contribuir
 												al conocimiento de la flora
