@@ -227,251 +227,254 @@ export default function Home() {
 									</Row>
 								</Container>
 							</motion.div>
-							<motion.div
-								className="wrapper-eventos"
-								initial={{ left: '100vw', opacity: 0 }}
-								animate={{ left: 0, opacity: 1 }}
-								transition={{ duration: 1.5 }}>
-								<Container fluid>
-									<Row>
-										<Col
-											md={{ span: 11, offset: 1 }}
-											className="p-0">
-											<div className="ml-0 ml-md-2 pad-extra-left">
-												<div className="d-flex mb-2 mb-md-0">
-													<h2 className="subtitle-green mr-1 mb-0">
-														Eventos
-													</h2>
-													<motion.a
-														href="/eventos"
-														whileHover={{
-															scale: 1.1,
-														}}
-														className="d-inline-block">
-														<img src="/assets/img/iconos/boton_vermas.png" />
-													</motion.a>
+							{eventos.length > 0 && (
+								<motion.div
+									className="wrapper-eventos"
+									initial={{ left: '100vw', opacity: 0 }}
+									animate={{ left: 0, opacity: 1 }}
+									transition={{ duration: 1.5 }}>
+									<Container fluid>
+										<Row>
+											<Col
+												md={{ span: 11, offset: 1 }}
+												className="p-0">
+												<div className="ml-0 ml-md-2 pad-extra-left">
+													<div className="d-flex mb-2 mb-md-0">
+														<h2 className="subtitle-green mr-1 mb-0">
+															Eventos
+														</h2>
+														<motion.a
+															href="/eventos"
+															whileHover={{
+																scale: 1.1,
+															}}
+															className="d-inline-block">
+															<img src="/assets/img/iconos/boton_vermas.png" />
+														</motion.a>
+													</div>
+													<div className="wrapper-just-events">
+														<Container
+															fluid
+															className="px-0">
+															<Row>
+																{eventos[0] ? (
+																	<Col className="col-12 col-md mb-3 mb-md-0">
+																		<a
+																			className="color-inherit"
+																			href={`eventos/evento?nombre=${eventos[0]?.url_nombre}`}>
+																			<p className="fecha-evento">
+																				<span>
+																					{new Date(
+																						eventos[0]?.fechaInicio
+																					).getDate() <
+																					10
+																						? '0' +
+																						  new Date(
+																								eventos[0]?.fechaInicio
+																						  ).getDate()
+																						: new Date(
+																								eventos[0]?.fechaInicio
+																						  ).getDate()}{' '}
+																					{
+																						months[
+																							new Date(
+																								eventos[0]?.fechaInicio
+																							).getMonth()
+																						]
+																					}
+																				</span>
+																				<span className="divisor-text mx-2"></span>
+																				<span>
+																					{formatAMPM(
+																						new Date(
+																							eventos[0].fechaInicio
+																						)
+																					)}
+																				</span>
+																			</p>
+																			<p className="titulo-evento">
+																				{
+																					eventos[0]
+																						?.nombre
+																				}
+																			</p>
+																			<p className="lugar-evento mb-0">
+																				{
+																					eventos[0]
+																						?.lugar
+																				}
+																			</p>
+																		</a>
+																	</Col>
+																) : (
+																	''
+																)}
+																{eventos[1] ? (
+																	<Col className="col-12 col-md mb-3 mb-md-0">
+																		<a
+																			className="color-inherit"
+																			href={`eventos/evento?nombre=${eventos[1]?.url_nombre}`}>
+																			<p className="fecha-evento">
+																				<span>
+																					{new Date(
+																						eventos[1]?.fechaInicio
+																					).getDate() <
+																					10
+																						? '0' +
+																						  new Date(
+																								eventos[1]?.fechaInicio
+																						  ).getDate()
+																						: new Date(
+																								eventos[1]?.fechaInicio
+																						  ).getDate()}{' '}
+																					{
+																						months[
+																							new Date(
+																								eventos[1]?.fechaInicio
+																							).getMonth()
+																						]
+																					}
+																				</span>
+																				<span className="divisor-text mx-2"></span>
+																				<span>
+																					{formatAMPM(
+																						new Date(
+																							eventos[1].fechaInicio
+																						)
+																					)}
+																				</span>
+																			</p>
+																			<p className="titulo-evento">
+																				{
+																					eventos[1]
+																						?.nombre
+																				}
+																			</p>
+																			<p className="lugar-evento mb-0">
+																				{
+																					eventos[1]
+																						?.lugar
+																				}
+																			</p>
+																		</a>
+																	</Col>
+																) : (
+																	''
+																)}
+																{eventos[2] ? (
+																	<Col className="col-12 col-md mb-3 mb-md-0">
+																		<a
+																			className="color-inherit"
+																			href={`eventos/evento?nombre=${eventos[2]?.url_nombre}`}>
+																			<p className="fecha-evento">
+																				<span>
+																					{new Date(
+																						eventos[2]?.fechaInicio
+																					).getDate() <
+																					10
+																						? '0' +
+																						  new Date(
+																								eventos[2]?.fechaInicio
+																						  ).getDate()
+																						: new Date(
+																								eventos[2]?.fechaInicio
+																						  ).getDate()}{' '}
+																					{
+																						months[
+																							new Date(
+																								eventos[2]?.fechaInicio
+																							).getMonth()
+																						]
+																					}
+																				</span>
+																				<span className="divisor-text mx-2"></span>
+																				<span>
+																					{formatAMPM(
+																						new Date(
+																							eventos[2].fechaInicio
+																						)
+																					)}
+																				</span>
+																			</p>
+																			<p className="titulo-evento">
+																				{
+																					eventos[2]
+																						?.nombre
+																				}
+																			</p>
+																			<p className="lugar-evento mb-0">
+																				{
+																					eventos[2]
+																						?.lugar
+																				}
+																			</p>
+																		</a>
+																	</Col>
+																) : (
+																	''
+																)}
+																{eventos[3] ? (
+																	<Col className="col-12 col-md mb-3 mb-md-0">
+																		<a
+																			className="color-inherit"
+																			href={`eventos/evento?nombre=${eventos[3]?.url_nombre}`}>
+																			<p className="fecha-evento">
+																				<span>
+																					{new Date(
+																						eventos[3]?.fechaInicio
+																					).getDate() <
+																					10
+																						? '0' +
+																						  new Date(
+																								eventos[3]?.fechaInicio
+																						  ).getDate()
+																						: new Date(
+																								eventos[3]?.fechaInicio
+																						  ).getDate()}{' '}
+																					{
+																						months[
+																							new Date(
+																								eventos[3]?.fechaInicio
+																							).getMonth()
+																						]
+																					}
+																				</span>
+																				<span className="divisor-text mx-2"></span>
+																				<span>
+																					{formatAMPM(
+																						new Date(
+																							eventos[3].fechaInicio
+																						)
+																					)}
+																				</span>
+																			</p>
+																			<p className="titulo-evento">
+																				{
+																					eventos[3]
+																						?.nombre
+																				}
+																			</p>
+																			<p className="lugar-evento mb-0">
+																				{
+																					eventos[3]
+																						?.lugar
+																				}
+																			</p>
+																		</a>
+																	</Col>
+																) : (
+																	''
+																)}
+															</Row>
+														</Container>
+													</div>
 												</div>
-												<div className="wrapper-just-events">
-													<Container
-														fluid
-														className="px-0">
-														<Row>
-															{eventos[0] ? (
-																<Col className="col-12 col-md mb-3 mb-md-0">
-																	<a
-																		className="color-inherit"
-																		href={`eventos/evento?nombre=${eventos[0]?.url_nombre}`}>
-																		<p className="fecha-evento">
-																			<span>
-																				{new Date(
-																					eventos[0]?.fechaInicio
-																				).getDate() <
-																				10
-																					? '0' +
-																					  new Date(
-																							eventos[0]?.fechaInicio
-																					  ).getDate()
-																					: new Date(
-																							eventos[0]?.fechaInicio
-																					  ).getDate()}{' '}
-																				{
-																					months[
-																						new Date(
-																							eventos[0]?.fechaInicio
-																						).getMonth()
-																					]
-																				}
-																			</span>
-																			<span className="divisor-text mx-2"></span>
-																			<span>
-																				{formatAMPM(
-																					new Date(
-																						eventos[0].fechaInicio
-																					)
-																				)}
-																			</span>
-																		</p>
-																		<p className="titulo-evento">
-																			{
-																				eventos[0]
-																					?.nombre
-																			}
-																		</p>
-																		<p className="lugar-evento mb-0">
-																			{
-																				eventos[0]
-																					?.lugar
-																			}
-																		</p>
-																	</a>
-																</Col>
-															) : (
-																''
-															)}
-															{eventos[1] ? (
-																<Col className="col-12 col-md mb-3 mb-md-0">
-																	<a
-																		className="color-inherit"
-																		href={`eventos/evento?nombre=${eventos[1]?.url_nombre}`}>
-																		<p className="fecha-evento">
-																			<span>
-																				{new Date(
-																					eventos[1]?.fechaInicio
-																				).getDate() <
-																				10
-																					? '0' +
-																					  new Date(
-																							eventos[1]?.fechaInicio
-																					  ).getDate()
-																					: new Date(
-																							eventos[1]?.fechaInicio
-																					  ).getDate()}{' '}
-																				{
-																					months[
-																						new Date(
-																							eventos[1]?.fechaInicio
-																						).getMonth()
-																					]
-																				}
-																			</span>
-																			<span className="divisor-text mx-2"></span>
-																			<span>
-																				{formatAMPM(
-																					new Date(
-																						eventos[1].fechaInicio
-																					)
-																				)}
-																			</span>
-																		</p>
-																		<p className="titulo-evento">
-																			{
-																				eventos[1]
-																					?.nombre
-																			}
-																		</p>
-																		<p className="lugar-evento mb-0">
-																			{
-																				eventos[1]
-																					?.lugar
-																			}
-																		</p>
-																	</a>
-																</Col>
-															) : (
-																''
-															)}
-															{eventos[2] ? (
-																<Col className="col-12 col-md mb-3 mb-md-0">
-																	<a
-																		className="color-inherit"
-																		href={`eventos/evento?nombre=${eventos[2]?.url_nombre}`}>
-																		<p className="fecha-evento">
-																			<span>
-																				{new Date(
-																					eventos[2]?.fechaInicio
-																				).getDate() <
-																				10
-																					? '0' +
-																					  new Date(
-																							eventos[2]?.fechaInicio
-																					  ).getDate()
-																					: new Date(
-																							eventos[2]?.fechaInicio
-																					  ).getDate()}{' '}
-																				{
-																					months[
-																						new Date(
-																							eventos[2]?.fechaInicio
-																						).getMonth()
-																					]
-																				}
-																			</span>
-																			<span className="divisor-text mx-2"></span>
-																			<span>
-																				{formatAMPM(
-																					new Date(
-																						eventos[2].fechaInicio
-																					)
-																				)}
-																			</span>
-																		</p>
-																		<p className="titulo-evento">
-																			{
-																				eventos[2]
-																					?.nombre
-																			}
-																		</p>
-																		<p className="lugar-evento mb-0">
-																			{
-																				eventos[2]
-																					?.lugar
-																			}
-																		</p>
-																	</a>
-																</Col>
-															) : (
-																''
-															)}
-															{eventos[3] ? (
-																<Col className="col-12 col-md mb-3 mb-md-0">
-																	<a
-																		className="color-inherit"
-																		href={`eventos/evento?nombre=${eventos[3]?.url_nombre}`}>
-																		<p className="fecha-evento">
-																			<span>
-																				{new Date(
-																					eventos[3]?.fechaInicio
-																				).getDate() <
-																				10
-																					? '0' +
-																					  new Date(
-																							eventos[3]?.fechaInicio
-																					  ).getDate()
-																					: new Date(
-																							eventos[3]?.fechaInicio
-																					  ).getDate()}{' '}
-																				{
-																					months[
-																						new Date(
-																							eventos[3]?.fechaInicio
-																						).getMonth()
-																					]
-																				}
-																			</span>
-																			<span className="divisor-text mx-2"></span>
-																			<span>
-																				{formatAMPM(
-																					new Date(
-																						eventos[3].fechaInicio
-																					)
-																				)}
-																			</span>
-																		</p>
-																		<p className="titulo-evento">
-																			{
-																				eventos[3]
-																					?.nombre
-																			}
-																		</p>
-																		<p className="lugar-evento mb-0">
-																			{
-																				eventos[3]
-																					?.lugar
-																			}
-																		</p>
-																	</a>
-																</Col>
-															) : (
-																''
-															)}
-														</Row>
-													</Container>
-												</div>
-											</div>
-										</Col>
-									</Row>
-								</Container>
-							</motion.div>
+											</Col>
+										</Row>
+									</Container>
+								</motion.div>
+							)}
+
 							{/* <div
 								className="position-absolute"
 								style={{ right: 0, left: 0, bottom: 0 }}
