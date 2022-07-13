@@ -366,7 +366,7 @@ const antonioRaimondi = () => {
 										</p>
 										<p>
 											<a
-												href="https://drive.google.com/file/d/1leT3WQGXv6UOH_mrVfUpdz8D1sDJZxa9/view?usp=sharing"
+												href="https://drive.google.com/file/d/1rCZAc39iqD4hlVzY7e8TLtKSyF6BBZHr/view?usp=sharing"
 												target="_blank">
 												Clic Aquí para descargar el
 												reglamento vigente del Comité de
@@ -388,6 +388,20 @@ const antonioRaimondi = () => {
 												target="_blank">
 												Clic Aquí para descargar RD N°
 												000178/ 2021-D-FCB/UNMSM
+											</a>
+										</p>
+										<p>
+											<a
+												href="https://drive.google.com/file/d/1i8Mfw6jA0Nm_Y9yXnJpoIcXV8dJQu2sU/view?usp=sharing"
+												target="_blank">
+												RD No 000290-DGA-2022 Tarifario
+											</a>
+										</p>
+										<p>
+											<a
+												href="https://drive.google.com/file/d/1JSEzKyCgRC4OviK1VBJZEtxf0TfEDEVv/view?usp=sharing"
+												target="_blank">
+												Cronograma de reuniones 2022
 											</a>
 										</p>
 									</div>
