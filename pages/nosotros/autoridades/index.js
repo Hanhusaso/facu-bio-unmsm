@@ -89,8 +89,7 @@ const index = () => {
 											className="nav flex-column tabs-wrapper nav-pills"
 											id="v-pills-tab"
 											role="tablist"
-											aria-orientation="vertical"
-										>
+											aria-orientation="vertical">
 											<a
 												className="tab d-flex active"
 												id="v-pills-presentacion-tab"
@@ -98,16 +97,14 @@ const index = () => {
 												href="#v-pills-presentacion"
 												role="tab"
 												aria-controls="v-pills-presentacion"
-												aria-selected="true"
-											>
+												aria-selected="true">
 												<div>
 													<svg
 														width="24"
 														height="25"
 														viewBox="0 0 24 25"
 														className="icon mr-3"
-														xmlns="http://www.w3.org/2000/svg"
-													>
+														xmlns="http://www.w3.org/2000/svg">
 														<g clip-path="url(#clip0)">
 															<path d="M21.75 5.34961C21.9489 5.34961 22.1397 5.42863 22.2803 5.56928C22.421 5.70993 22.5 5.9007 22.5 6.09961V19.5996C22.5 19.7985 22.421 19.9893 22.2803 20.1299C22.1397 20.2706 21.9489 20.3496 21.75 20.3496H2.25C2.05109 20.3496 1.86032 20.2706 1.71967 20.1299C1.57902 19.9893 1.5 19.7985 1.5 19.5996V6.09961C1.5 5.9007 1.57902 5.70993 1.71967 5.56928C1.86032 5.42863 2.05109 5.34961 2.25 5.34961H21.75ZM2.25 3.84961C1.65326 3.84961 1.08097 4.08666 0.65901 4.50862C0.237053 4.93058 0 5.50287 0 6.09961L0 19.5996C0 20.1963 0.237053 20.7686 0.65901 21.1906C1.08097 21.6126 1.65326 21.8496 2.25 21.8496H21.75C22.3467 21.8496 22.919 21.6126 23.341 21.1906C23.7629 20.7686 24 20.1963 24 19.5996V6.09961C24 5.50287 23.7629 4.93058 23.341 4.50862C22.919 4.08666 22.3467 3.84961 21.75 3.84961H2.25Z" />
 															<path d="M7.5 12.8496C7.5 12.6507 7.57902 12.4599 7.71967 12.3193C7.86032 12.1786 8.05109 12.0996 8.25 12.0996H18.75C18.9489 12.0996 19.1397 12.1786 19.2803 12.3193C19.421 12.4599 19.5 12.6507 19.5 12.8496C19.5 13.0485 19.421 13.2393 19.2803 13.3799C19.1397 13.5206 18.9489 13.5996 18.75 13.5996H8.25C8.05109 13.5996 7.86032 13.5206 7.71967 13.3799C7.57902 13.2393 7.5 13.0485 7.5 12.8496ZM7.5 9.09961C7.5 8.9007 7.57902 8.70993 7.71967 8.56928C7.86032 8.42863 8.05109 8.34961 8.25 8.34961H18.75C18.9489 8.34961 19.1397 8.42863 19.2803 8.56928C19.421 8.70993 19.5 8.9007 19.5 9.09961C19.5 9.29852 19.421 9.48929 19.2803 9.62994C19.1397 9.77059 18.9489 9.84961 18.75 9.84961H8.25C8.05109 9.84961 7.86032 9.77059 7.71967 9.62994C7.57902 9.48929 7.5 9.29852 7.5 9.09961ZM7.5 16.5996C7.5 16.4007 7.57902 16.2099 7.71967 16.0693C7.86032 15.9286 8.05109 15.8496 8.25 15.8496H18.75C18.9489 15.8496 19.1397 15.9286 19.2803 16.0693C19.421 16.2099 19.5 16.4007 19.5 16.5996C19.5 16.7985 19.421 16.9893 19.2803 17.1299C19.1397 17.2706 18.9489 17.3496 18.75 17.3496H8.25C8.05109 17.3496 7.86032 17.2706 7.71967 17.1299C7.57902 16.9893 7.5 16.7985 7.5 16.5996ZM6 9.09961C6 9.29852 5.92098 9.48929 5.78033 9.62994C5.63968 9.77059 5.44891 9.84961 5.25 9.84961C5.05109 9.84961 4.86032 9.77059 4.71967 9.62994C4.57902 9.48929 4.5 9.29852 4.5 9.09961C4.5 8.9007 4.57902 8.70993 4.71967 8.56928C4.86032 8.42863 5.05109 8.34961 5.25 8.34961C5.44891 8.34961 5.63968 8.42863 5.78033 8.56928C5.92098 8.70993 6 8.9007 6 9.09961ZM6 12.8496C6 13.0485 5.92098 13.2393 5.78033 13.3799C5.63968 13.5206 5.44891 13.5996 5.25 13.5996C5.05109 13.5996 4.86032 13.5206 4.71967 13.3799C4.57902 13.2393 4.5 13.0485 4.5 12.8496C4.5 12.6507 4.57902 12.4599 4.71967 12.3193C4.86032 12.1786 5.05109 12.0996 5.25 12.0996C5.44891 12.0996 5.63968 12.1786 5.78033 12.3193C5.92098 12.4599 6 12.6507 6 12.8496ZM6 16.5996C6 16.7985 5.92098 16.9893 5.78033 17.1299C5.63968 17.2706 5.44891 17.3496 5.25 17.3496C5.05109 17.3496 4.86032 17.2706 4.71967 17.1299C4.57902 16.9893 4.5 16.7985 4.5 16.5996C4.5 16.4007 4.57902 16.2099 4.71967 16.0693C4.86032 15.9286 5.05109 15.8496 5.25 15.8496C5.44891 15.8496 5.63968 15.9286 5.78033 16.0693C5.92098 16.2099 6 16.4007 6 16.5996Z" />
@@ -133,16 +130,14 @@ const index = () => {
 												href="#v-pills-mision"
 												role="tab"
 												aria-controls="v-pills-mision"
-												aria-selected="false"
-											>
+												aria-selected="false">
 												<div>
 													<svg
 														width="22"
 														height="22"
 														viewBox="0 0 22 22"
 														className="icon mr-3"
-														xmlns="http://www.w3.org/2000/svg"
-													>
+														xmlns="http://www.w3.org/2000/svg">
 														<path d="M21.5977 10.4199H18.7336C18.3281 6.98867 15.607 4.26758 12.1758 3.86211V0.998047C12.1758 0.894922 12.0914 0.810547 11.9883 0.810547H10.582C10.4789 0.810547 10.3945 0.894922 10.3945 0.998047V3.86211C6.96328 4.26758 4.24219 6.98867 3.83672 10.4199H0.972656C0.869531 10.4199 0.785156 10.5043 0.785156 10.6074V12.0137C0.785156 12.1168 0.869531 12.2012 0.972656 12.2012H3.83672C4.24219 15.6324 6.96328 18.3535 10.3945 18.759V21.623C10.3945 21.7262 10.4789 21.8105 10.582 21.8105H11.9883C12.0914 21.8105 12.1758 21.7262 12.1758 21.623V18.759C15.607 18.3535 18.3281 15.6324 18.7336 12.2012H21.5977C21.7008 12.2012 21.7852 12.1168 21.7852 12.0137V10.6074C21.7852 10.5043 21.7008 10.4199 21.5977 10.4199ZM11.2852 17.0293C8.12578 17.0293 5.56641 14.4699 5.56641 11.3105C5.56641 8.15117 8.12578 5.5918 11.2852 5.5918C14.4445 5.5918 17.0039 8.15117 17.0039 11.3105C17.0039 14.4699 14.4445 17.0293 11.2852 17.0293Z" />
 														<path d="M11.2852 8.49805C10.5328 8.49805 9.82969 8.78867 9.29766 9.32305C8.76563 9.85508 8.47266 10.5582 8.47266 11.3105C8.47266 12.0629 8.76563 12.766 9.29766 13.298C9.82969 13.8277 10.5352 14.123 11.2852 14.123C12.0352 14.123 12.7406 13.8301 13.2727 13.298C13.8023 12.766 14.0977 12.0605 14.0977 11.3105C14.0977 10.5605 13.8047 9.85508 13.2727 9.32305C12.7406 8.78867 12.0375 8.49805 11.2852 8.49805Z" />
 													</svg>
@@ -159,16 +154,14 @@ const index = () => {
 												href="#v-pills-malla"
 												role="tab"
 												aria-controls="v-pills-malla"
-												aria-selected="false"
-											>
+												aria-selected="false">
 												<div>
 													<svg
 														width="19"
 														height="21"
 														viewBox="0 0 19 21"
 														className="icon mr-3"
-														xmlns="http://www.w3.org/2000/svg"
-													>
+														xmlns="http://www.w3.org/2000/svg">
 														<path d="M16.5059 20.4783H5.25586C4.85816 20.4779 4.47686 20.3197 4.19564 20.0385C3.91442 19.7573 3.75626 19.376 3.75586 18.9783V14.4783H5.25586V18.9783H16.5059V2.47827H9.75586V0.978271H16.5059C16.9036 0.978669 17.2849 1.13683 17.5661 1.41805C17.8473 1.69927 18.0055 2.08057 18.0059 2.47827V18.9783C18.0055 19.376 17.8473 19.7573 17.5661 20.0385C17.2849 20.3197 16.9036 20.4779 16.5059 20.4783Z" />
 														<path d="M9.75586 9.97827H15.0059V11.4783H9.75586V9.97827Z" />
 														<path d="M9.00586 9.97827H15.0059V11.4783H9.00586V9.97827Z" />
@@ -213,20 +206,17 @@ const index = () => {
 								<Col md="7" lg="8">
 									<div
 										className="mb-3 tab-content"
-										id="v-pills-tabContent"
-									>
+										id="v-pills-tabContent">
 										<div
 											className="mb-3 tab-pane fade show active"
 											id="v-pills-presentacion"
 											role="tabpanel"
-											aria-labelledby="v-pills-presentacion-tab"
-										>
+											aria-labelledby="v-pills-presentacion-tab">
 											<Container>
 												<Row>
 													<Col
 														md="9"
-														className="pl-0"
-													>
+														className="pl-0">
 														<p>
 															<span className="title-dark">
 																Dr. Pablo Sergio
@@ -241,8 +231,7 @@ const index = () => {
 															style={{
 																textAlign:
 																	'justify',
-															}}
-														>
+															}}>
 															<p>
 																Bi&oacute;logo
 																Microbi&oacute;logo
@@ -371,8 +360,7 @@ const index = () => {
 															<a
 																target="_blank"
 																href="/assets/archivos/autoridades/decanos/RR/R.R. N.º 017245 - 2020.- DIRECTOR.pdf"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
+																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
 																<img
 																	className="mr-2"
 																	src="/assets/img/iconos/pdf.svg"
@@ -386,8 +374,7 @@ const index = () => {
 															<a
 																target="_blank"
 																href="/assets/archivos/autoridades/decanos/CV/cv-ramirez-roca.pdf"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
+																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
 																<img
 																	className="mr-2"
 																	src="/assets/img/iconos/pdf.svg"
@@ -401,8 +388,7 @@ const index = () => {
 													</Col>
 													<Col
 														md="3"
-														className="pr-0"
-													>
+														className="pr-0">
 														<div className="mb-3">
 															<img
 																className="img-fluid w-100"
@@ -423,8 +409,7 @@ const index = () => {
 															<a
 																className="btn-square-green mx-1"
 																href="https://www.linkedin.com/in/pablo-sergio-ramirez-roca-2864a438/?originalSubdomain=pe"
-																target="_blank"
-															>
+																target="_blank">
 																<FaIcons.FaLinkedinIn className="icon" />
 															</a>
 														</div>
@@ -436,8 +421,7 @@ const index = () => {
 												<Row>
 													<Col
 														md="9"
-														className="pl-0"
-													>
+														className="pl-0">
 														<p>
 															Al asumir el
 															gobierno de la
@@ -553,8 +537,7 @@ const index = () => {
 													</Col>
 													<Col
 														md="3"
-														className="pr-0"
-													>
+														className="pr-0">
 														<div className="contacto-wrapper mb-3">
 															<p className="title-dark mb-2">
 																Contacto:
@@ -639,14 +622,12 @@ const index = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-mision"
 											role="tabpanel"
-											aria-labelledby="v-pills-mision-tab"
-										>
+											aria-labelledby="v-pills-mision-tab">
 											<Container>
 												<Row>
 													<Col
 														md="9"
-														className="pl-0"
-													>
+														className="pl-0">
 														<p>
 															<span className="title-dark">
 																Dra. Ruth
@@ -663,8 +644,7 @@ const index = () => {
 															style={{
 																textAlign:
 																	'justify',
-															}}
-														>
+															}}>
 															Profesora Principal
 															a Dedicación
 															Exclusiva del Dpto.
@@ -696,8 +676,7 @@ const index = () => {
 															style={{
 																textAlign:
 																	'justify',
-															}}
-														>
+															}}>
 															Realiza sus
 															actividades de
 															investigación en el
@@ -744,8 +723,7 @@ const index = () => {
 															style={{
 																textAlign:
 																	'justify',
-															}}
-														>
+															}}>
 															Miembro del comité
 															de docentes que
 															crearon la Maestría
@@ -760,8 +738,7 @@ const index = () => {
 															style={{
 																textAlign:
 																	'justify',
-															}}
-														>
+															}}>
 															En la docencia es
 															profesora
 															responsable, en el
@@ -790,8 +767,7 @@ const index = () => {
 															style={{
 																textAlign:
 																	'justify',
-															}}
-														>
+															}}>
 															Coordinadora del
 															Dpto. Académico de
 															Microbiología y
@@ -816,8 +792,7 @@ const index = () => {
 															<a
 																target="_blank"
 																href="/assets/archivos/autoridades/decanos/RR/R.R. N° 001841-2021-R VICEDECANA ACADÉMICA.pdf"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
+																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
 																<img
 																	className="mr-2"
 																	src="/assets/img/iconos/pdf.svg"
@@ -831,8 +806,7 @@ const index = () => {
 															<a
 																target="_blank"
 																href="/assets/archivos/autoridades/decanos/CV/CV_Ruth_Garcia_2020.pdf"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
+																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
 																<img
 																	className="mr-2"
 																	src="/assets/img/iconos/pdf.svg"
@@ -846,8 +820,7 @@ const index = () => {
 													</Col>
 													<Col
 														md="3"
-														className="pr-0"
-													>
+														className="pr-0">
 														<div className="mb-3">
 															<img
 																className="img-fluid w-100"
@@ -877,8 +850,7 @@ const index = () => {
 												<Row>
 													<Col
 														md="9"
-														className="pl-0"
-													>
+														className="pl-0">
 														{/* <p>
 															La Dirección Académica es el órgano de apoyo de la Facultad de
 															Ciencias Biológicas, encargado de prestar los servicios académicos que
@@ -999,8 +971,7 @@ const index = () => {
 													</Col>
 													<Col
 														md="3"
-														className="pr-0"
-													>
+														className="pr-0">
 														<div className="contacto-wrapper mb-3">
 															<p className="title-dark mb-2">
 																Contacto:
@@ -1072,19 +1043,16 @@ const index = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-malla"
 											role="tabpanel"
-											aria-labelledby="v-pills-malla-tab"
-										>
+											aria-labelledby="v-pills-malla-tab">
 											<Container>
 												<Row>
 													<Col
 														md="9"
-														className="pl-0"
-													>
+														className="pl-0">
 														<p>
 															<span className="title-dark">
-																Dra. Martha
-																Esther Valdivia
-																Cuya
+																Dra. Patricia
+																Gloria Woll Toso
 															</span>
 															<span className="divisor-text-green mx-2"></span>
 															<span className="title">
@@ -1097,238 +1065,118 @@ const index = () => {
 															style={{
 																textAlign:
 																	'justify',
-															}}
-														>
-															<p>
-																Profesora
-																Principal a
-																Tiempo Completo,
-																Investigadora de
+															}}>
+															<>
+																Mi nombre es
+																Patricia Gloria
+																Woll Toso, mis
+																estudios de
+																pregrado se
+																realizaron en la
+																Universidad{' '}
+																<br />
+																Nacional Mayor
+																de San Marcos,
+																obteniendo el
+																grado de
+																Bachiller con
+																tesis el
+																a&ntilde;o 1977
+																y el
+																t&iacute;tulo{' '}
+																<br />
+																profesional el
+																a&ntilde;o 1979.
+																Mis estudios de
+																Magister en
+																Bioqu&iacute;mica
+																fueros
+																realizados en la
+																UNMSM, <br />
+																obteniendo el
+																grado en el
+																a&ntilde;o 1981.
+																En la
+																actualidad,
+																trabajo como
+																profesora
+																principal a
+																tiempo <br />
+																completo e
+																investigadora en
 																la Facultad de
 																Ciencias
 																Biol&oacute;gicas,
-																Miembro
-																permanente del
-																Instituto de
-																Investigaciones
-																Antonio
-																Raimondi, Jefa
-																del laboratorio
-																de
-																Fisiolog&iacute;a
-																de la
-																reproducci&oacute;n
-																de la Facultad
-																de Ciencias
-																Biol&oacute;gicas
-																de la
-																Universidad
-																Nacional Mayor
-																de San Marcos
-																(UNMSM),
-																Per&uacute; con
-																grado de
-																Magister en
-																Ciencias
-																Biol&oacute;gicas
-																con
-																menci&oacute;n
+																ejerciendo el
+																cargo presidente
+																del <br />
+																Comit&eacute;
+																Coordinador de
+																la
+																Maestr&iacute;a
 																en
 																Biolog&iacute;a
-																de la
-																Reproducci&oacute;n
-																en la
-																Universidad de
-																Chile y grado de
-																Doctor en
+																Molecular de la
+																Facultad de
 																Ciencias
+																Biol&oacute;gicas.
+																<br />
+																He sido
+																Directora
+																Acad&eacute;mica
+																de mi Facultad
+																(2010-2013),
+																jefa de la
+																Oficina Central
+																de Calidad{' '}
+																<br />
+																Acad&eacute;mica
+																y
+																Acreditaci&oacute;n
+																de la UNMSM
+																(2014-2016),
+																Decana interina
+																de la Facultad
+																de Ciencias{' '}
+																<br />
 																Biol&oacute;gicas
-																con
-																menci&oacute;n
-																en
-																Fisiolog&iacute;a
-																en la
-																Universidad
-																Peruana Cayetano
-																Heredia.
-															</p>
-															<p>
-																Con experiencia
-																en
-																organizaci&oacute;n
-																e
-																implementaci&oacute;n
-																de equipamiento
-																de laboratorios
-																de alta
-																tecnolog&iacute;a
-																para la
-																investigaci&oacute;n
-																en
-																Reproducci&oacute;n.
-																El objetivo de
-																sus
-																investigaciones
-																est&aacute;
-																enfocado al
-																an&aacute;lisis
-																de la fertilidad
-																el manejo de
-																gametos y de la
-																interacci&oacute;n
-																de los mismos
-																usando
-																herramientas
-																biotecnol&oacute;gicas
-																(criopreservaci&oacute;n,
-																fecundaci&oacute;n
-																In vitro y
-																pruebas
-																moleculares que
-																revelen la
-																capacidad
-																f&eacute;rtil de
-																las especies
-																(animales y
-																humanos). Ha
-																desarrollado
-																protocolos de
-																criopreservaci&oacute;n
+																(junio - julio
+																2016) y hasta el
+																a&ntilde;o 2016,
+																representante de
+																la UNMSM en el
+																Comit&eacute;
+																T&eacute;cnico{' '}
+																<br />
 																de
-																espermatozoides
-																y posee una
-																patente en
-																protocolo de
-																criopreservaci&oacute;n
-																de zanganos para
-																la industria
-																ap&iacute;cola.
-																Asimismo, ha
-																desarrollado
-																tres patentes
-																que se
-																encuentran en
-																tr&aacute;mite
-																internacional
-																sobre medios
-																para la
-																crioconservaci&oacute;n
+																Normalizaci&oacute;n
 																de
-																c&eacute;lulas
-																madre
-																espermatogoniales,
-																biopsias
-																testicluares de
-																alpaca y
-																dise&ntilde;o de
-																protocolos de
-																criopreservaci&oacute;n
-																para
-																c&eacute;lulas
-																aisladas y
-																biopsias.
-															</p>
-															<p>
-																Ha obtenido a
-																trav&eacute;s de
-																fondos
-																concursables el
-																financiamiento a
-																proyectos de
-																CONCYTEC (PROCYT
-																y PROCOM),
-																International
-																Foundation for
-																Science (IFS),
-																International
-																Centre of
-																Genetic
-																Ingeniering and
-																Biotechnology
-																(ICGEB).
-																INNOVATE, PIMEM,
-																FONDECYT y
-																UNMSM. Sus
-																publicaciones se
-																encuentran en
-																Theriogenology,
-																Biology of
-																Reproduction,
-																Biological
-																Research, Gamete
-																Research,
-																Molecular
-																Reproduction
-																fertility,
-																SPERMOVA,
-																Reproduction
-																domestic
-																animals,
-																Andrologia,
-																Fronterirs,
-																Revista peruana
-																de
-																Biolog&iacute;a,
-																Revista de
-																Investigaci&oacute;n
-																en Ciencias
-																veterinarias,
-																entre otras.
-															</p>
-															<p>
-																Ha formado a
-																investigadores
-																peruanos
-																(Arequipa,
-																Ayacucho, Tacna)
-																y extranjeros
-																(Alemania,
-																Bolivia, Chile)
-																en el
-																&aacute;rea de
-																reproducci&oacute;n
-																tanto en
-																investigaci&oacute;n
-																b&aacute;sica
-																como aplicada y
-																en
-																biotecnolog&iacute;as
-																reproductivas
-																como IVF, ICSI
-																Cultivo celular,
-																criopreservaci&oacute;n.
-															</p>
-															<p>
-																Actualmente
-																est&aacute;
-																dedicada al
-																estudio de las
-																c&eacute;lulas
-																madre
-																testiculares de
-																alpaca,
-																maduraci&oacute;n
-																de ovocitos y
-																manejo de
-																gametos para la
-																producci&oacute;n
-																embrionaria con
-																perspectiva del
-																uso de la
-																micromanipulaci&oacute;n
-																embrionaria para
-																la
-																producci&oacute;n
-																de clones en
-																alpacas.
-															</p>
+																Gesti&oacute;n
+																de la Calidad en
+																Organizaciones
+																Educativas,
+																Comit&eacute;
+																Espejo de la ISO
+																<br />
+																PC 288
+																Educational
+																Organizations
+																Management
+																Systems
+																Requirements
+																with guidance
+																for use, siendo{' '}
+																<br />
+																actualmente
+																asesora del
+																Comit&eacute;.
+															</>
 														</p>
 														<div>
 															<a
 																target="_blank"
-																href="https://drive.google.com/file/d/1R8KkjOTsV7z51-OH2-8D8q6QTA7Z2mW7/view"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
+																href="https://cdn.www.gob.pe/uploads/document/file/3514840/RESOLUCI%C3%93N%20RECTORAL-008308-2022-R%20Patricia%20Woll_compressed.pdf.pdf"
+																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
 																<img
 																	className="mr-2"
 																	src="/assets/img/iconos/pdf.svg"
@@ -1341,9 +1189,8 @@ const index = () => {
 															</a>
 															<a
 																target="_blank"
-																href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/MantDatosOrcid.do?numero_orcid=0000-0002-8301-5536&nombre_orcid=Martha%20Valdivia&id_investigador=17&estado=ok"
-																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0"
-															>
+																href="https://drive.google.com/file/d/1Wg1V97KBgGlj6zTR1ljnfgnaDDl8RTaj/view"
+																className="d-block d-md-inline color-inherit mr-3 mb-3 mb-md-0">
 																<img
 																	className="mr-2"
 																	src="/assets/img/iconos/pdf.svg"
@@ -1357,8 +1204,7 @@ const index = () => {
 													</Col>
 													<Col
 														md="3"
-														className="pr-0"
-													>
+														className="pr-0">
 														<div className="mb-3">
 															<img
 																className="img-fluid w-100"
@@ -1388,8 +1234,7 @@ const index = () => {
 												<Row>
 													<Col
 														md="9"
-														className="pl-0"
-													>
+														className="pl-0">
 														{/* <p>
 															Al asumir el gobierno de la facultad reafirmamos nuestro compromiso de
 															realizar un trabajo con responsabilidad, equidad y transparencia; de
@@ -1479,8 +1324,7 @@ const index = () => {
 													</Col>
 													<Col
 														md="3"
-														className="pr-0"
-													>
+														className="pr-0">
 														<div className="contacto-wrapper mb-3">
 															<p className="title-dark mb-2">
 																Contacto:
@@ -1502,7 +1346,7 @@ const index = () => {
 																	</span>
 																</div>
 															</div>
-															<div className="grid-contacto">
+															{/* <div className="grid-contacto">
 																<div>
 																	<img
 																		className="icon mr-2"
@@ -1516,7 +1360,7 @@ const index = () => {
 																		998676628
 																	</span>
 																</div>
-															</div>
+															</div> */}
 															<div className="mb-0 grid-contacto">
 																<div>
 																	<img
