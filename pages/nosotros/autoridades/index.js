@@ -1346,7 +1346,7 @@ const index = () => {
 																	</span>
 																</div>
 															</div>
-															<div className="grid-contacto">
+															{/* <div className="grid-contacto">
 																<div>
 																	<img
 																		className="icon mr-2"
@@ -1360,7 +1360,7 @@ const index = () => {
 																		998676628
 																	</span>
 																</div>
-															</div>
+															</div> */}
 															<div className="mb-0 grid-contacto">
 																<div>
 																	<img
