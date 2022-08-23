@@ -241,20 +241,21 @@ const index = () => {
 											aria-labelledby="v-pills-presentacion-tab">
 											<div className="wrapper-img-fr">
 												<div className="img-fr">
-													<img
+													{/* <img
 														className="w-100 img-fluid"
 														src="/assets/img/carreras/ciencias biologicas/director.png"
 														alt=""
-													/>
+													/> */}
 													<div className="caption">
 														<div className="mb-2 font-weight-bold">
 															Director
 														</div>
-														<div className="mb-1">
-															Dr. Enoc Jara Peña
-														</div>
+														<p>
+															Dr. Rafael Simon
+															Oswaldo La Rosa Loli
+														</p>
 														<div className="mb-0">
-															ejarap@unmsm.edu.pe
+															rlarosal@unmsm.edu.pe
 														</div>
 													</div>
 												</div>
@@ -361,12 +362,7 @@ const index = () => {
 												</p>
 												<p>
 													Bachiller en Ciencias
-													Biol&oacute;gicas con
-													menci&oacute;n en
-													Bot&aacute;nica,
-													Zoolog&iacute;a o
-													Hidrobiolog&iacute;a y
-													pesquer&iacute;a.
+													Biol&oacute;gicas
 												</p>
 												<p>
 													<strong>
@@ -375,9 +371,12 @@ const index = () => {
 												</p>
 												<p>
 													T&iacute;tulo profesional de
-													Bi&oacute;logo en
-													Gen&eacute;tica y
-													Biotecnolog&iacute;a
+													Bi&oacute;logo con
+													menci&oacute;n en
+													Bot&aacute;nica,
+													Zoolog&iacute;a o
+													Hidrobiolog&iacute;a y
+													pesquer&iacute;a
 												</p>
 												<p>
 													<strong>
