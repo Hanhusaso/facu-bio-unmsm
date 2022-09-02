@@ -16,6 +16,7 @@ import {
 } from '../../api/informacion-academica';
 import NoticiasExtra from '../../../components/NoticiasExtra';
 import * as HiIcons from 'react-icons/hi';
+import link from 'next/link';
 
 const limitPerPage = 10;
 
@@ -230,7 +231,8 @@ const docentes = () => {
 											{docentes.map((docente, index) => (
 												<div
 													key={index}
-													className="block-divider mb-3 pb-2 position-relative">
+													className="block-divider mb-3 pb-2 position-relative"
+												>
 													<h3 className="title">
 														{docente.nombre}
 													</h3>
@@ -251,7 +253,8 @@ const docentes = () => {
 																docente.link_hoja_vida
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-3">
+															className="d-inline-block color-inherit mr-3"
+														>
 															<img
 																className="mr-2"
 																src="/assets/img/iconos/pdf.svg"
@@ -271,7 +274,8 @@ const docentes = () => {
 																docente.link_rais
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-2">
+															className="d-inline-block color-inherit mr-2"
+														>
 															<span className="mr-1">
 																RAIS
 															</span>
@@ -282,7 +286,8 @@ const docentes = () => {
 																docente.link_siis
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-2">
+															className="d-inline-block color-inherit mr-2"
+														>
 															<span className="mr-1">
 																SIIS
 															</span>
@@ -307,6 +312,7 @@ const docentes = () => {
 																	}
 																</span>
 															</p>
+
 															<p className="mb-2">
 																<span className="mr-2">
 																	Clase:
@@ -321,6 +327,37 @@ const docentes = () => {
 															</p>
 														</>
 													) : null}
+
+													{docente.pregrado ||
+													docente.posgrado ? (
+														<p className="mb-2">
+															<span className="mr-2">
+																Nivel del
+																enseñanza:
+															</span>
+															<span className="mr-2">
+																{docente.pregrado &&
+																docente.posgrado ? (
+																	<>
+																		Pregrado
+																		y
+																		Posgrado
+																	</>
+																) : docente.pregrado &&
+																  !docente.posgrado ? (
+																	<>
+																		Pregrado
+																	</>
+																) : !docente.pregrado &&
+																  docente.posgrado ? (
+																	<>
+																		Posgrado
+																	</>
+																) : null}
+															</span>
+														</p>
+													) : null}
+
 													<p className="mb-2">
 														<span className="mr-2">
 															Contacto:
