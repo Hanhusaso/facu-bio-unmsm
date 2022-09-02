@@ -328,28 +328,28 @@ const docentes = () => {
 														</>
 													) : null}
 
-													{docente.pregrado ||
-													docente.posgrado ? (
+													{docente.ensenanza_pregrado ||
+													docente.ensenanza_posgrado ? (
 														<p className="mb-2">
 															<span className="mr-2">
 																Nivel del
 																enseñanza:
 															</span>
 															<span className="mr-2">
-																{docente.pregrado &&
-																docente.posgrado ? (
+																{docente.ensenanza_pregrado &&
+																docente.ensenanza_posgrado ? (
 																	<>
 																		Pregrado
 																		y
 																		Posgrado
 																	</>
-																) : docente.pregrado &&
-																  !docente.posgrado ? (
+																) : docente.ensenanza_pregrado &&
+																  !docente.ensenanza_posgrado ? (
 																	<>
 																		Pregrado
 																	</>
-																) : !docente.pregrado &&
-																  docente.posgrado ? (
+																) : !docente.ensenanza_pregrado &&
+																  docente.ensenanza_posgrado ? (
 																	<>
 																		Posgrado
 																	</>
