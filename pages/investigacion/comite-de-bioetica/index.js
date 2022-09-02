@@ -412,7 +412,7 @@ const antonioRaimondi = () => {
 											<p className="title-dark mb-2">
 												Contacto:
 											</p>
-											<div className="grid-contacto">
+											{/* <div className="grid-contacto">
 												<div>
 													<img
 														className="icon mr-2"
@@ -426,7 +426,7 @@ const antonioRaimondi = () => {
 														1506
 													</span>
 												</div>
-											</div>
+											</div> */}
 											<div className="mb-0 grid-contacto">
 												<div>
 													<img
@@ -437,7 +437,7 @@ const antonioRaimondi = () => {
 												</div>
 												<div>
 													<span>
-														icbar.biologia@unmsm.edu.pe
+														comitebioetica.biologia@unmsm.edu.pe
 													</span>
 												</div>
 											</div>
