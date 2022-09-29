@@ -22,7 +22,7 @@ const index = () => {
 						/>
 					</div>
 					<div>
-						<span>+(51) 619 7000 anexo 1555</span>
+						<span>+&#40;51&#41; 619 7000 anexo 1545</span>
 					</div>
 				</div>
 				<div className="mb-2 grid-contacto">
@@ -34,7 +34,7 @@ const index = () => {
 						/>
 					</div>
 					<div>
-						<span>unayoe.biologia@unmsm.edu.pe</span>
+						<span>bienestar.biologia@unmsm.edu.pe</span>
 					</div>
 				</div>
 				{/* <p className="font-weight-bold mb-1">Horario de atención:</p>
@@ -84,8 +84,7 @@ const index = () => {
 											</Link>
 										</li>
 										<Breadcrumb.Item active>
-											Comunidad: Unidad de Asesoría y
-											Orientación al Estudiante
+											Comunidad: Unidad de Bienestar
 										</Breadcrumb.Item>
 									</Breadcrumb>
 								</Col>
@@ -99,8 +98,7 @@ const index = () => {
 								<Col md="1"></Col>
 								<Col>
 									<div className="title-page text-center">
-										Unidad de Asesoría y Orientación al
-										Estudiante
+										Unidad de Bienestar
 									</div>
 								</Col>
 								<Col md="1"></Col>
@@ -111,7 +109,7 @@ const index = () => {
 					<div className="mb-4">
 						<img
 							className="w-100"
-							src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/unayoe_1_0d7d3a82f1.jpeg"
+							src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/bienestar_universitario_biologia_c_7b7a40e4ce.png"
 							alt=""
 						/>
 					</div>
@@ -200,48 +198,28 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
 											<p>
-												Es la Unidad dependiente de la
-												Dirección Académica encargada de
-												brindar asesoría y orientación
-												al estudiante de pre y posgrado
-												de la facultad, en la
-												prevención, detección,
-												tratamiento de problemas
-												vocacionales y de aspecto
-												académico, así como consejería
-												para el logro de un mejor
-												aprovechamiento en la formación
-												profesional.
-											</p>
-											<p>
-												El jefe de la Unidad de Asesoría
-												y Orientación al Estudiante de
-												la Facultad de Ciencias
-												Biológicas depende de la
-												Dirección Académica. Informa y
-												responde ante ella del
-												cumplimiento de su misión y
-												funciones asignadas. Coordina
-												internamente con los órganos de
-												la Dirección Académica, Unidades
-												de Asesoría de la facultad y
-												otras dependencias de la
-												Universidad Nacional Mayor de
-												San Marcos. Asimismo, organiza y
-												coordina un sistema permanente
-												de consejería de docentes que
-												oriente y estimule al estudiante
-												durante su carrera profesional.
-												De igual manera, ejecuta los
-												programas de prácticas pre
-												profesionales en coordinación
-												con la Comisión Permanente de
-												Prácticas Pre profesionales. Con
-												la Unidad de Bienestar de la
-												facultad, planifica y promueve
-												la ejecución del servicio
-												psicopedagógico de orientación
-												al estudiante.
+												<p>
+													Es la Unidad dependiente de
+													la Direcci&oacute;n
+													Acad&eacute;mica encargada
+													de organizar programas de
+													bienestar en apoyo a los
+													estudiantes, docentes y
+													administrativos en aspectos
+													de desarrollo personal,
+													salud, problemas sociales,
+													familiares y de
+													integraci&oacute;n a la
+													sociedad. Est&aacute;
+													encargada de brindar a los
+													miembros de la Facultad,
+													alternativas para alcanzar
+													un estado de
+													satisfacci&oacute;n en sus
+													necesidades b&aacute;sicas
+													como seres humanos en
+													equilibrio biopsicosocial.{' '}
+												</p>
 											</p>
 											{/* <p className="title-dark">Misión</p> */}
 										</div>
@@ -251,57 +229,111 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-funciones-tab">
 											<ol>
-												<li className="mb-2">
-													Brindar charlas inductivas
-													orientadas al conocimiento
-													de:
-													<ul className="chevron-green-dark">
-														<li>
-															Reglamentos internos
-															y procedimientos
-															administrativos
-															(SGCDFD y MAT).
+												<li aria-level="1">
+													Desarrollo de
+													Evaluaci&oacute;n Social
+													para tr&aacute;mites en
+													Beneficio del Estudiante:
+													<ul>
+														<li aria-level="2">
+															Evaluaci&oacute;n
+															social para la
+															Reactualizaci&oacute;n
+															de Matricula.
 														</li>
-														<li>
-															Reglamento general
-															de matr&iacute;cula.
+														<li aria-level="2">
+															Evaluaci&oacute;n
+															para la
+															Anulaci&oacute;n de
+															Matr&iacute;cula
 														</li>
-														<li>
-															Reglamento de
-															tutor&iacute;a
-															acad&eacute;mica.
+														<li aria-level="2">
+															Evaluaci&oacute;n de
+															la Solicitud de Beca
+															Vivienda y/o
+															Renovaci&oacute;n de
+															Vivienda.
 														</li>
-														<li>
-															Reglamento de acoso
-															sexual.
+														<li aria-level="2">
+															Evaluaci&oacute;n de
+															Subsidio
+															econ&oacute;mico
+															salud para los
+															estudiantes.
+														</li>
+														<li aria-level="2">
+															Proceso de
+															Difusi&oacute;n,
+															Orientaci&oacute;n y
+															ayuda para el
+															tr&aacute;mite de
+															PRONABEC Beca
+															Permanencia.
 														</li>
 													</ul>
 												</li>
-												<li className="m-2">
-													Difundir las convocatorias
-													de becas internacionales en
-													estudios de doctorados y
-													maestr&iacute;as.
+												<li aria-level="1">
+													Servicio de
+													orientaci&oacute;n y apoyo
+													para los estudiantes
+													regulares y observados en
+													caso de problemas en salud
+													f&iacute;sica y/o
+													psicol&oacute;gica.
 												</li>
-												<li className="m-2">
-													Gestionar actividades
-													extracurriculares:
+												<li>
+													Charlas de
+													orientaci&oacute;n
+													psicol&oacute;gica.
 												</li>
-												<ul className="chevron-green-dark">
-													<li>Talleres y ferias.</li>
-													<li>
-														Formaci&oacute;n de
-														habilidades
-														blandas.&nbsp;
-													</li>
-												</ul>
-												<li className="m-2">
-													Informar acerca de la
-													ejecuci&oacute;n de eventos.
+												<li>
+													Gesti&oacute;n de
+													integraci&oacute;n de la
+													Facultad con la Comunidad
+													San Marquina.&nbsp;Eventos
+													culturales, c&iacute;vicos y
+													festivos, por ejemplo:
+													Ferias (estudiantes
+													transmiten sus
+													conocimientos). Conferencias
+													(Docentes o invitados
+													transmiten conocimientos).
 												</li>
-												<li className="m-2">
-													Vincular y hacer seguimiento
-													a egresados y graduados.
+												<li>
+													Gesti&oacute;n de la salud:
+													<ul>
+														<li>
+															Gesti&oacute;n de
+															Campa&ntilde;a de
+															Salud:
+														</li>
+														<li aria-level="2">
+															Elaboraci&oacute;n
+															de Reporte de
+															Licencia por
+															enfermedad y/o
+															maternidad para el
+															proceso de Subsidios
+															de Docentes y
+															Administrativos
+														</li>
+														<li aria-level="2">
+															Atenci&oacute;n y
+															acompa&ntilde;amiento
+															a estudiantes,
+															docentes y
+															administrativos en
+															caso de situaciones
+															m&eacute;dicas y de
+															emergencias.
+														</li>
+														<li aria-level="2">
+															Orientaci&oacute;n
+															ante situaciones de
+															salud relacionados a
+															covid19.
+														</li>
+													</ul>
 												</li>
 											</ol>
 										</div>
