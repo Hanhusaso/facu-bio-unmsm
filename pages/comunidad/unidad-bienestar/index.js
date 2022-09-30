@@ -70,7 +70,7 @@ const index = () => {
 
 	return (
 		<>
-			<Layout title="UNAYOE">
+			<Layout title="Unidad de Bienestar">
 				<div>
 					<div>
 						<Container>
