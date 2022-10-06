@@ -199,9 +199,7 @@ const index = () => {
 											aria-labelledby="v-pills-presentacion-tab">
 											<p>
 												<p>
-													Es la Unidad dependiente de
-													la Direcci&oacute;n
-													Acad&eacute;mica encargada
+													Es la Unidad dependiente  del Vicedecanato Académico encargada
 													de organizar programas de
 													bienestar en apoyo a los
 													estudiantes, docentes y

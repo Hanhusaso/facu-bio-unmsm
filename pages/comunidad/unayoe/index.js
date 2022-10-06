@@ -200,11 +200,7 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
 											<p>
-												Es la Unidad dependiente de la
-												Dirección Académica encargada de
-												brindar asesoría y orientación
-												al estudiante de pre y posgrado
-												de la facultad, en la
+												Es la Unidad dependiente del Vicedecanato Académico encargada de brindar asesoría y orientación al estudiante de pre y posgrado de la facultad, en la
 												prevención, detección,
 												tratamiento de problemas
 												vocacionales y de aspecto
@@ -217,13 +213,13 @@ const index = () => {
 												El jefe de la Unidad de Asesoría
 												y Orientación al Estudiante de
 												la Facultad de Ciencias
-												Biológicas depende de la
-												Dirección Académica. Informa y
+												Biológicas depende del
+												Vicedecanato Académico. Informa y
 												responde ante ella del
 												cumplimiento de su misión y
 												funciones asignadas. Coordina
-												internamente con los órganos de
-												la Dirección Académica, Unidades
+												internamente con los órganos del
+												Vicedecanato Académico, Unidades
 												de Asesoría de la facultad y
 												otras dependencias de la
 												Universidad Nacional Mayor de
