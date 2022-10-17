@@ -851,123 +851,93 @@ const index = () => {
 													<Col
 														md="9"
 														className="pl-0">
-														{/* <p>
-															La Dirección Académica es el órgano de apoyo de la Facultad de
-															Ciencias Biológicas, encargado de prestar los servicios académicos que
-															requieran los estudiantes y profesores de la Facultad, así como el
-															apoyo que se hace extensivo al personal docente.
+														<p className="title-dark">
+															Funciones:
 														</p>
-														<p className="title-dark">Funciones específicas:</p>
 														<ul className="chevron-green-dark">
 															<li>
-																Planificar, dirigir y supervisar las actividades de las unidades a
-																su cargo.
-															</li>
-															<li>Planificar, dirigir y supervisar el proceso de matrícula.</li>
-															<li>
-																Dirigir, conducir y supervisar administrativamente los procesos para
-																la obtención del grado Académico de Bachiller y Título Profesional.
-															</li>
-															<li>Realizar funciones de Fedatario de la Facultad.</li>
-															<li>
-																Desempeñarse como Secretario de las Sesiones de Consejo de Facultad
-																y llevar el Archivo de Actas correspondientes.
+																Apoyar la
+																gestión de la
+																escuela
+																profesional.
 															</li>
 															<li>
-																Proponer al Decanato, en coordinación con la Oficina de
-																Planificación, Presupuesto y Racionalización, el Plan Operativo
-																Anual y el presupuesto de las unidades a su cargo, así como la
-																evaluación periódica del cumplimiento de dicho plan.
+																Llevar el libro
+																de actas de las
+																sesiones del
+																consejo de
+																facultad.
 															</li>
 															<li>
-																Proponer a la unidad de Planificación, Presupuesto y Racionalización
-																de la Facultad, las modificaciones del Texto Único de Procedimientos
-																Administrativos (Tarifario descentralizado).
+																Emitir y
+																resguardar las
+																actas
+																promocionales de
+																las asignaturas
+																de pregrado y
+																posgrado,
+																registros de
+																grados y títulos
+																y otros
+																documentos
+																valorados que
+																otorga la
+																facultad.
 															</li>
 															<li>
-																Dirigir y supervisar los servicios de biblioteca y hemeroteca,
-																asegurando la permanente actualización del material bibliográfico y
-																el eficiente y oportuno servicios a los alumnos.
+																Centralizar y
+																conducir los
+																procedimientos
+																académicos de la
+																facultad.
 															</li>
 															<li>
-																Brindar apoyo al estudiante a través de la Unidad de Asesoría y
-																Orientación al Estudiante.
+																Programar y
+																dirigir el
+																proceso de
+																matrícula de
+																pregrado y
+																posgrado en
+																coordinación con
+																el Sistema Único
+																de Matrícula o
+																con la entidad
+																que cumpla esa
+																función.
 															</li>
 															<li>
-																Coordinar y promover programas y servicios especiales de bienestar,
-																salud, alimentación y vivienda, recreación y deporte, en
-																coordinación con las oficinas de la Administración Central
-																correspondientes.
+																Brindar apoyo al
+																estudiante a
+																través del
+																servicio de
+																detección y
+																solución de sus
+																problemas
+																académicos y
+																vocacionales.
 															</li>
 															<li>
-																Coordinar la presentación trimestral del informe de gestión de la
-																Dirección Académica
+																Coordinar con
+																entidades
+																otorgantes de
+																becas y
+																prácticas
+																preprofesionales
+																para los
+																estudiantes y
+																gestionar
+																convenios de
+																cooperación
+																interinstitucional.
 															</li>
-															<li>Otras funciones que se le asigne.</li>
+															<li>
+																Otras funciones
+																que se
+																establecen en la
+																normativa
+																respectiva
+															</li>
 														</ul>
-														<p className="title-dark">Funciones generales:</p>
-														<ul className="chevron-green-dark">
-															<li>
-																Prestar apoyo académico al Decanato y Consejo de Facultad para el
-																cumplimiento de los fines y objetivos de la Facultad en las áreas de
-																su competencia.
-															</li>
-															<li>
-																Tiene a su cargo la emisión y custodia de las Actas Promocionales de
-																los cursos de Pre Grado, registros de Grado y Títulos que otorga la
-																Facultad.
-															</li>
-															<li>
-																Llevar el libro de Actas de las sesiones del Consejo de Facultad.
-															</li>
-															<li>
-																Centralizar y conducir los procedimientos académicos de la Facultad.
-															</li>
-															<li>
-																Programar y dirigir el proceso de matrícula, en coordinación con el
-																Sistema Único de Matrícula
-															</li>
-															<li>
-																Brindar apoyo al estudiante, mediante el servicio de detección y
-																tratamiento de sus problemas académicos y vocacionales.
-															</li>
-															<li>
-																Administrar la Biblioteca, los servicios de Hemeroteca y Centro de
-																Documentación de la Facultad.
-															</li>
-															<li>
-																Velar por el bienestar de los alumnos, docentes y no docentes en
-																coordinación permanente con la Oficina de Bienestar Universitario.
-															</li>
-														</ul>
-														<p className="title-dark">Líneas de responsabilidad y coordinación:</p>
-														<ul className="chevron-green-dark">
-															<li>Es el órgano Asesor Académico del Decanato.</li>
-															<li>
-																Es responsable ante el Decanato por su cumplimiento de las funciones
-																de la Dirección Académica
-															</li>
-															<li>
-																Es el órgano que supervisa y controla las Unidades de: Matrícula,
-																Registros Académicos, Grados y Títulos; Biblioteca Hemeroteca y
-																Centro de Documentación; Asesoría y Orientación del Estudiante y
-																Unidad de Bienestar.
-															</li>
-															<li>
-																La Dirección Académica, coordina los servicios académicos con el
-																Decanato, las Escuelas Académicas Profesionales de Ciencias
-																Biológicas, Genética y Biotecnología y Microbiología y
-																Parasitología; la Dirección Admninistrativa, los Órganos de
-																Asesoría, la Unidad de Posgrado, Instituto de Investigación, los
-																Departamentos Académicos y el CERSEU.
-															</li>
-															<li>
-																La Dirección Académica coordina sus funciones con el Vice Rectorado
-																Académico, la Secretaría General, el Sistemas de Bibliotecas
-																Central, la Oficina General de Bienestar Universitario y el Sistema
-																Único de Matrícula.
-															</li>
-														</ul> */}
 													</Col>
 													<Col
 														md="3"
