@@ -76,7 +76,7 @@ const Footer = () => {
 							className="d-flex align-items-start justify-content-end">
 							<img
 								className="img-logo"
-								src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/logo_certificadora_biologia_a8ae017331.png"
+								src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/BV_Cert_ISO_9001_2015_01_2_1_1_ee64b28e1a.png"
 								alt=""
 							/>
 							{/* <a href="https://www.unmsm.edu.pe/" target="_blank">
