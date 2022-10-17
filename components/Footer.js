@@ -1,5 +1,5 @@
-import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import React from 'react';
+import { Row, Col, Container } from 'react-bootstrap';
 
 const Footer = () => {
 	return (
@@ -10,7 +10,9 @@ const Footer = () => {
 						<Col sm="1"></Col>
 						<Col sm="10">
 							<div>
-								<p className="title-footer">Facultad de Ciencias Biológicas</p>
+								<p className="title-footer">
+									Facultad de Ciencias Biológicas
+								</p>
 							</div>
 						</Col>
 						<Col sm="1"></Col>
@@ -39,16 +41,24 @@ const Footer = () => {
 						<Col sm="3">
 							<ul className="nav flex-column">
 								<li className="mb-3">
-									<a href="/tramites-y-procesos">Trámites y procesos</a>
+									<a href="/tramites-y-procesos">
+										Trámites y procesos
+									</a>
 								</li>
 								<li className="mb-3">
-									<a href="/informacion-academica">Información académica</a>
+									<a href="/informacion-academica">
+										Información académica
+									</a>
 								</li>
 								<li className="mb-3">
-									<a href="/investigacion/revista-peruana-biologia">Revista peruana de Biología</a>
+									<a href="/investigacion/revista-peruana-biologia">
+										Revista peruana de Biología
+									</a>
 								</li>
 								<li className="mb-3">
-									<a href="/investigacion/recursos-investigacion">Recursos de Investigación</a>
+									<a href="/investigacion/recursos-investigacion">
+										Recursos de Investigación
+									</a>
 								</li>
 							</ul>
 						</Col>
@@ -61,10 +71,16 @@ const Footer = () => {
 								{/* <li className="mb-3">Nosotros</li> */}
 							</ul>
 						</Col>
-						<Col sm="2" className="d-flex align-items-start justify-content-end">
-							<a href="https://www.unmsm.edu.pe/" target="_blank">
-								<img className="img-logo" src="/assets/img/iconos/escudo_sanmarcos.png" alt="" />
-							</a>
+						<Col
+							sm="2"
+							className="d-flex align-items-start justify-content-end">
+							<img
+								className="img-logo"
+								src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/logo_certificadora_biologia_a8ae017331.png"
+								alt=""
+							/>
+							{/* <a href="https://www.unmsm.edu.pe/" target="_blank">
+							</a> */}
 						</Col>
 						<Col sm="1"></Col>
 					</Row>
@@ -75,7 +91,8 @@ const Footer = () => {
 						<Col sm="10">
 							<div className="d-flex justify-content-center">
 								<p className="footer-bot mb-2">
-									Facultad de Ciencias Biológicas - Universidad Nacional Mayor de San Marcos
+									Facultad de Ciencias Biológicas -
+									Universidad Nacional Mayor de San Marcos
 								</p>
 							</div>
 						</Col>
@@ -86,13 +103,11 @@ const Footer = () => {
 			<script
 				src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
 				integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-				crossOrigin="anonymous"
-			></script>
+				crossOrigin="anonymous"></script>
 			<script
 				src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
 				integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-				crossOrigin="anonymous"
-			></script>
+				crossOrigin="anonymous"></script>
 		</>
 	);
 };
