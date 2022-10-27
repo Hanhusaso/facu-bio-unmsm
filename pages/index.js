@@ -1299,7 +1299,7 @@ export default function Home() {
 															</div>
 															<div>
 																{/* <span>+</span> */}
-																<span>132</span>
+																<span>153</span>
 															</div>
 															<div>
 																<span className="name-number">
@@ -1317,7 +1317,7 @@ export default function Home() {
 															</div>
 															<div>
 																{/* <span>+</span> */}
-																<span>56</span>
+																<span>833</span>
 															</div>
 															<div>
 																<span className="name-number">
@@ -1335,7 +1335,7 @@ export default function Home() {
 															</div>
 															<div>
 																{/* <span>+</span> */}
-																<span>773</span>
+																<span>877</span>
 															</div>
 															<div>
 																<span className="name-number">
