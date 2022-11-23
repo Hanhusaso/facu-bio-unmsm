@@ -1,99 +1,111 @@
 .dark-filter {
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    background: rgb(0,0,0);
-    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 33%);
-    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 33%);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 33%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
-    // z-index: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	background: rgb(0, 0, 0);
+	background: -moz-linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(255, 255, 255, 0) 33%
+	);
+	background: -webkit-linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(255, 255, 255, 0) 33%
+	);
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(255, 255, 255, 0) 33%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+	// z-index: 0;
 }
 
 .caption-img {
-    color: $wht;
-    position: absolute;
-    bottom: 0;
-    padding: 15px;
-    font-weight: 700;
+	color: $wht;
+	position: absolute;
+	bottom: 0;
+	padding: 15px;
+	font-weight: 700;
 }
 
 .wrapper-img-fr {
-    @include media-breakpoint-down(sm) {
-        display: flex;
-        flex-direction: column;
-    }
+	@include media-breakpoint-down(sm) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .img-fr {
-    width: 200px;
-    float: right;
-    margin: 0px 0px 24px 24px;
-    @include media-breakpoint-down(sm) {
-        order: 99;
-        align-self: center;
-        margin: 0;
-    }
-    .caption {
-        background-color: $green-15;
-        text-align: center;
-        padding: 13px 24px;
-        word-break: break-word !important;
-        word-wrap: break-word !important;
-        &>div:nth-child(1) {
-            font-size: 16px;
-            font-weight: 700;
-        }
-        &>div:nth-child(2) {
-            font-size: 15px;
-            line-height: 18px;
-        }
-        &>div:nth-child(3) {
-            font-size: 14px;
-            line-height: 16.8px;
-        }
-    }
+	width: 216px;
+	float: right;
+	margin: 0px 0px 24px 24px;
+	@include media-breakpoint-down(sm) {
+		order: 99;
+		align-self: center;
+		margin: 0;
+	}
+	.caption {
+		background-color: $green-15;
+		text-align: center;
+		padding: 13px 24px;
+		word-break: break-word !important;
+		word-wrap: break-word !important;
+		& > div:nth-child(1) {
+			font-size: 16px;
+			font-weight: 700;
+		}
+		& > div:nth-child(2) {
+			font-size: 15px;
+			line-height: 18px;
+		}
+		& > div:nth-child(3) {
+			font-size: 14px;
+			line-height: 16.8px;
+		}
+	}
 }
 
 .book-hover {
-    position: relative;
-    display: block;
-    .caption-hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $green-dark-75;
-        color: $wht;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 25px;
-        font-size: 13px;
-        display: flex;
-        opacity: 0;
-        transition: opacity .3s;
-    }
-    &:hover .caption-hover {
-        opacity: 1;
-    }
+	position: relative;
+	display: block;
+	.caption-hover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $green-dark-75;
+		color: $wht;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 25px;
+		font-size: 13px;
+		display: flex;
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+	&:hover .caption-hover {
+		opacity: 1;
+	}
 }
 
 .img-float-left {
-    width: 48%;
-    float: left;
-    @include media-breakpoint-down(md) {
-        width: 100%;
-        float: none;
-    }
+	width: 48%;
+	float: left;
+	@include media-breakpoint-down(md) {
+		width: 100%;
+		float: none;
+	}
 }
 
 .img-info {
-    color: $green;
-    font-style: italic;
+	color: $green;
+	font-style: italic;
 }

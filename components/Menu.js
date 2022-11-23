@@ -124,6 +124,16 @@ const Menu = () => {
 											{/* </Link> */}
 										</li>
 										<li className="nav-item">
+											{/* <Link href="/formacion-academica/posgrado"> */}
+											{/* <a className="nav-link">Posgrado</a> */}
+											<a
+												href="/formacion-academica/estudios-generales"
+												className="nav-link">
+												Estudios Generales
+											</a>
+											{/* </Link> */}
+										</li>
+										<li className="nav-item">
 											{/* <Link href="/formacion-academica/educacion-continua"> */}
 											{/* <a className="nav-link">Eduación continua</a> */}
 											<a
