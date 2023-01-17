@@ -137,7 +137,7 @@ const index = () => {
                                     </div>
                                     <div>
                                         <div>
-                                            <AiIcons.AiFillInfoCircle className="icon mb-1 mr-1"/>
+                                            <AiIcons.AiOutlineInfoCircle className="icon mb-1 mr-1"/>
                                             <span><b>Observación:</b></span>
                                         </div>
                                         <div>

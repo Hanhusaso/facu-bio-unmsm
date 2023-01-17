@@ -1,48 +1,121 @@
-import React from "react";
+import React from 'react';
 
 const CronogramaPosgrado = () => {
 	return (
 		<div>
-            <p className="title">Comunicado publicado por la Dirección General de Posgrado</p>
-            <p>
-                La Universidad Nacional Mayor de San Marcos (UNMSM), a través de la Dirección General de Estudios de Posgrado del Vicerrectorado
-                de Investigación y Posgrado, informa a la comunidad universitaria y público en general que, a solicitud de los decanos de las facultades
-                y el pedido del director de la unidad de posgrado de la facultad de Ingeniería, <b>se suspende el proceso de admisión 2021-II</b>.
-            </p>
-            <p>
-                Dicho proceso será retomado en el mes de agosto, cuando las nuevas autoridades universitarias establezcan la reprogramación correspondiente.
-            </p>
-            <p>
-                Cabe resaltar, que los postulantes que han realizado el pago de inscripción, no perderán este derecho y serán considerados una vez que se reactive
-                el proceso.
-            </p>
-            <p>
-                Asimismo, la III Feria Virtual de Posgrado UNMSM queda suspendida hasta que se comunique por nuestros medios oficiales la reprogramación de actividades
-                del proceso de admisión.
-            </p>
-            <p>
-                Finalmente, se informa que nuestros medios oficiales son:
-            </p>
-            <p>
-                Portal web: <a href="https://posgrado.unmsm.edu.pe/" target="_blank">https://posgrado.unmsm.edu.pe/</a>
-                <br />
-                Facebook: <a href="https://www.facebook.com/unmsm.posgrado/" target="_blank">https://www.facebook.com/unmsm.posgrado/</a>
-                <br />
-                Twitter: <a href="https://twitter.com/PosgradoUNMSM" target="_blank">https://twitter.com/PosgradoUNMSM</a>
-                <br />
-                Instagram: <a href="https://www.instagram.com/posgrado.unmsm/" target="_blank">https://www.instagram.com/posgrado.unmsm/</a>
-                <br />
-                Youtube: <a href="https://www.youtube.com/PosgradoUNMSM-TV" target="_blank">https://www.youtube.com/PosgradoUNMSM-TV</a>
-            </p>
-            <p className="text-right">
-                Lima 12 de julio de 2021
-            </p>
-            <p>
-                <span className="title-dark">Dr. Sergio Ronceros Medrano</span>
-                <br />
-                <span>Director General de Estudios de Posgrado</span>
-            </p>
-        </div>
+			<p>
+				El proceso de admisión a los programas de doctorado de la Unidad
+				de Posgrado de la facultad de Ciencias Biológicas se desarrolla
+				semestralmente según cronograma aprobado por el VRIP.
+			</p>
+			<p className="title-dark">Cronograma de Admisión 2021 - I</p>
+			<div className="table-responsive mb-3">
+				<table className="striped m-auto">
+					<thead>
+						<tr>
+							<th className="text-center">Actividad</th>
+							<th className="text-center">Fechas 2021</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Inscripción de postulantes y envío de expediente
+							</td>
+							<td>Del 02 de enero al 14 de marzo</td>
+						</tr>
+						<tr>
+							<td>Evaluación del expediente</td>
+							<td>Del 15 al 17 de marzo</td>
+						</tr>
+						<tr>
+							<td>Entrevista personal (solo maestría)</td>
+							<td>18 y 19 de marzo</td>
+						</tr>
+						<tr>
+							<td>Examen de aptitud virtual (solo maestría)</td>
+							<td>20 de marzo</td>
+						</tr>
+						<tr>
+							<td>
+								Sustentación del proyecto de investigación (solo
+								doctorado)
+							</td>
+							<td>20 y 21 de marzo</td>
+						</tr>
+						<tr>
+							<td>Publicación de resultados</td>
+							<td>23 de marzo</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>
+				<span className="title-dark">Vacantes: </span>
+				<span>Número</span>
+			</p>
+			<p className="title-dark">
+				Cronograma de actividades académicas 2021 - I
+			</p>
+			<div className="table-responsive mb-3">
+				<table className="striped m-auto">
+					<thead>
+						<tr>
+							<th className="text-center">Actividad</th>
+							<th className="text-center">Fechas 2021</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Matrícula ingresantes (Maestría o Doctorado)
+							</td>
+							<td>Del 29 de marzo al 02 de abril</td>
+						</tr>
+						<tr>
+							<td>
+								Matrícula regular (ingresantes 2021 y
+								anteriores)
+							</td>
+							<td>Del 22 al 26 de marzo</td>
+						</tr>
+						<tr>
+							<td>Clases</td>
+							<td>
+								Inicio: 05 de abril
+								<br />
+								Término: 24 de julio
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p className="title-dark">Inversión por estudios de Posgrado</p>
+			<div className="table-responsive mb-3">
+				<table className="striped m-auto">
+					<thead>
+						<tr>
+							<th className="text-center">Programa</th>
+							<th className="text-center">Descripción</th>
+							<th className="text-center">Importe</th>
+							<th className="text-center">Requisitos</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Doctorado (6 semestres)</th>
+							<td>Matrícula perfeccionamiento</td>
+							<td>
+								S/. 310.00
+								<br />
+								S/. 3400.00
+							</td>
+							<td>Cubrir vacante</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
 	);
 };
 

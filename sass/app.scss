@@ -1,46 +1,46 @@
-@import "custom-bootstrap";
-@import "~bootstrap/scss/bootstrap";
+@import 'custom-bootstrap';
+@import '~bootstrap/scss/bootstrap';
 
-@import "variables";
-
+@import 'variables';
 
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-@import "reboot";
+@import 'reboot';
 
 // Componentes
-@import "menu";
-@import "header";
-@import "breadcrumb";
-@import "titles";
-@import "cards";
-@import "img";
-@import "carousel";
-@import "contacto";
-@import "interest-links";
-@import "compartir";
-@import "loader";
+@import 'menu';
+@import 'header';
+@import 'breadcrumb';
+@import 'titles';
+@import 'cards';
+@import 'img';
+@import 'carousel';
+@import 'contacto';
+@import 'interest-links';
+@import 'compartir';
+@import 'loader';
 
-@import "buttons";
-@import "badge";
-@import "tabs";
-@import "link";
-@import "grid";
-@import "form";
-@import "table";
-@import "accordion";
-@import "paginador";
-@import "spinner";
-@import "modal";
-
+@import 'buttons';
+@import 'badge';
+@import 'tabs';
+@import 'link';
+@import 'grid';
+@import 'form';
+@import 'table';
+@import 'accordion';
+@import 'paginador';
+@import 'spinner';
+@import 'modal';
+@import 'observacion';
+@import 'icons';
 
 // @import "vanillaTabs";
 
 // pages
-@import "../pages/index";
-@import "../pages/informacion-academica/syllabus/syllabus";
-@import "../pages/formacion-academica/pregrado/index";
+@import '../pages/index';
+@import '../pages/informacion-academica/syllabus/syllabus';
+@import '../pages/formacion-academica/pregrado/index';
 
 // footer
-@import "footer";
+@import 'footer';

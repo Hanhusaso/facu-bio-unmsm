@@ -48,7 +48,7 @@ const posgrado = () => {
 							<Row>
 								<Col sm="1"></Col>
 								<Col className="">
-									<p className="mb-0">
+									<p className="mb-4">
 										La Unidad de Posgrado de la Facultad de
 										Ciencias Biológicas viene formando
 										investigadores, mediante programas de
@@ -66,6 +66,35 @@ const posgrado = () => {
 										parasitología, virología, biotecnología,
 										bioprospección, contaminación biológica,
 										entre otros.
+									</p>
+									<p className="mb-2 font-weight-bold">
+										Misión
+									</p>
+									<p className="mb-4">
+										Formar investigadores y profesionales
+										líderes en la generación y difusión del
+										conocimiento en ciencias biológicas,
+										respetuosos de la diversidad cultural,
+										en un marco de cultura de calidad y
+										responsabilidad social, para contribuir
+										a los objetivos del desarrollo
+										sostenible (R. D.
+										N.°001044-2022-D-FCB/UNMSM).
+									</p>
+									<p className="mb-2 font-weight-bold">
+										Visión
+									</p>
+									<p className="mb-4">
+										Ser referente nacional e internacional
+										en educación a nivel de posgrado; líder
+										en la generación y difusión de
+										conocimientos, tecnología e innovación;
+										con excelencia académica y comprometida
+										con los objetivos del desarrollo
+										sostenible; pionero y a la vanguardia en
+										los estudios de ciencias biológicas y
+										conservación de la biodiversidad (R.D.
+										N.° 001044-2022-D-FCB/UNMSM).
 									</p>
 								</Col>
 								<Col sm="1"></Col>

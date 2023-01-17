@@ -6,10 +6,18 @@
 		border-bottom: 1px solid $green-dark-50;
 		font-size: 16px;
 		color: $green-dark;
-		stroke: $green-dark;
+		// stroke: $green-dark;
+		svg {
+			stroke: $green-dark;
+			fill: $green-dark;
+		}
 		&.active {
 			color: $green;
-			stroke: $green;
+			// stroke: $green;
+			svg {
+				stroke: $green;
+				fill: $green;
+			}
 		}
 	}
 }
@@ -26,6 +34,6 @@
 		border: none;
 		color: $green-dark;
 		font-weight: 700;
-		padding: 5px 15px;
+		padding: 5px 9px;
 	}
 }

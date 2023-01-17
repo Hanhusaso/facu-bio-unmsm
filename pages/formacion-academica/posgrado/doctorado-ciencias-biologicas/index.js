@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../../../../components/Layout';
-import CronogramaPosgrado from '../../../../components/posgrado/CronogramaPosgrado';
-import PagoInscripcionDoctorado from '../../../../components/posgrado/PagoInscripcionDoctorado';
-import RequisitosDoctorado from '../../../../components/posgrado/RequisitosDoctorado';
 
 import { Row, Col, Container, Breadcrumb, Tabs, Tab } from 'react-bootstrap';
 import Link from 'next/link';
@@ -12,6 +9,16 @@ import * as AiIcons from 'react-icons/ai';
 import * as HiIcons from 'react-icons/hi';
 
 import { useWindowSize } from '../../../../utils/useWindowSize';
+
+import * as Icon from '../../../../components/Icons';
+
+import GuiaProcesoAdmisionDoctorado from '../../../../components/posgrado/doctorado/GuiaProcesoAdmisionDoctorado';
+import CronogramaDoctorado from '../../../../components/posgrado/doctorado/CronogramaDoctorado';
+import CuadroVacantesDoctorado from '../../../../components/posgrado/doctorado/CuadroVacantesDoctorado';
+import RequisitosDoctorado from '../../../../components/posgrado/doctorado/RequisitosDoctorado';
+import CostosAdmisionDoctorado from '../../../../components/posgrado/doctorado/CostosAdmisionDoctorado';
+import ProcesoEvaluacionDoctorado from '../../../../components/posgrado/doctorado/ProcesoEvaluacionDoctorado';
+import InversionEconomicaDoctorado from '../../../../components/posgrado/doctorado/InversionEconomicaDoctorado';
 
 const index = () => {
 	const { width, height } = useWindowSize();
@@ -32,11 +39,12 @@ const index = () => {
 				<p className="title-dark mb-2">Contacto:</p>
 				<div className="grid-contacto">
 					<div>
-						<img
+						{/* <img
 							className="icon mr-2"
 							src="/assets/img/iconos/telefono.svg"
 							alt=""
-						/>
+						/> */}
+						<Icon.telefonoIcon className="icon mr-2" />
 					</div>
 					<div>
 						<span>+(51) 619 7000 Anexos 1503, 1510</span>
@@ -44,11 +52,12 @@ const index = () => {
 				</div>
 				<div className="mb-0 grid-contacto">
 					<div>
-						<img
+						{/* <img
 							className="icon mr-2"
 							src="/assets/img/iconos/correo.svg"
 							alt=""
-						/>
+						/> */}
+						<Icon.CorreoIcon className="icon mr-2" />
 					</div>
 					<div>
 						<span>upg.biologia@unmsm.edu.pe</span>
@@ -132,7 +141,7 @@ const index = () => {
 												aria-controls="v-pills-presentacion"
 												aria-selected="true">
 												<div>
-													<svg
+													{/* <svg
 														width="24"
 														height="25"
 														viewBox="0 0 24 25"
@@ -152,11 +161,12 @@ const index = () => {
 																/>
 															</clipPath>
 														</defs>
-													</svg>
+													</svg> */}
+													<Icon.presentacionIcon className="mr-3" />
 												</div>
 												<span>Presentación</span>
 											</a>
-											<a
+											{/* <a
 												className="tab d-flex"
 												id="v-pills-perfil-tab"
 												data-toggle="pill"
@@ -165,31 +175,25 @@ const index = () => {
 												aria-controls="v-pills-perfil"
 												aria-selected="false">
 												<div>
-													<svg
-														width="24"
-														height="24"
-														viewBox="0 0 24 24"
-														className="mr-3"
-														fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M12 1C5.9247 1 1 5.9247 1 12C1 18.0753 5.9247 23 12 23C18.0753 23 23 18.0753 23 12C23 5.9247 18.0753 1 12 1Z"
-															strokeWidth="1.5"
-															strokeLinecap="round"
-															strokeLinejoin="round"
-														/>
-														<path
-															d="M3.49805 18.981C3.49805 18.981 5.94995 15.8504 11.9999 15.8504C18.0499 15.8504 20.5029 18.981 20.5029 18.981M11.9999 12.0004C12.8752 12.0004 13.7145 11.6527 14.3334 11.0338C14.9523 10.415 15.2999 9.57561 15.2999 8.70039C15.2999 7.82518 14.9523 6.98581 14.3334 6.36694C13.7145 5.74807 12.8752 5.40039 11.9999 5.40039C11.1247 5.40039 10.2854 5.74807 9.66649 6.36694C9.04762 6.98581 8.69995 7.82518 8.69995 8.70039C8.69995 9.57561 9.04762 10.415 9.66649 11.0338C10.2854 11.6527 11.1247 12.0004 11.9999 12.0004Z"
-															strokeWidth="1.5"
-															strokeLinecap="round"
-															strokeLinejoin="round"
-														/>
-													</svg>
+													<Icon.perfilIcon className="mr-3" />
 												</div>
 												<span>
 													Perfil del ingresante y
 													egresado
 												</span>
+											</a> */}
+											<a
+												className="tab d-flex"
+												id="v-pills-admision-tab"
+												data-toggle="pill"
+												href="#v-pills-admision"
+												role="tab"
+												aria-controls="v-pills-admision"
+												aria-selected="false">
+												<div>
+													<Icon.admisionIcon className="mr-3" />
+												</div>
+												<span>Admisión</span>
 											</a>
 											<a
 												className="tab d-flex"
@@ -200,24 +204,24 @@ const index = () => {
 												aria-controls="v-pills-docente"
 												aria-selected="false">
 												<div>
-													<svg
+													{/* <svg
 														width="24"
 														height="20"
 														viewBox="0 0 24 20"
 														className="icon mr-3"
 														xmlns="http://www.w3.org/2000/svg">
 														<path d="M7.86372 13.4365C7.77548 13.4365 7.68723 13.4494 7.60304 13.4767C7.12452 13.6322 6.62125 13.7319 6.0914 13.7319C5.56155 13.7319 5.05828 13.6322 4.57939 13.4767C4.4952 13.4494 4.40732 13.4365 4.31908 13.4365C2.02761 13.4365 0.171469 15.3004 0.183653 17.5948C0.188823 18.5644 0.985999 19.3442 1.95598 19.3442H10.2268C11.1968 19.3442 11.994 18.5644 11.9991 17.5948C12.0113 15.3004 10.1552 13.4365 7.86372 13.4365ZM6.0914 12.2549C8.04908 12.2549 9.63605 10.668 9.63605 8.7103C9.63605 6.75262 8.04908 5.16565 6.0914 5.16565C4.13372 5.16565 2.54675 6.75262 2.54675 8.7103C2.54675 10.668 4.13372 12.2549 6.0914 12.2549ZM22.0423 0.439453H7.86372C6.88636 0.439453 6.0914 1.261 6.0914 2.27049V3.9841C6.95615 3.9841 7.75665 4.23444 8.4545 4.64134V2.80255H21.4515V13.4365H19.0884V11.0734H14.3622V13.4365H11.5472C12.2524 14.0527 12.7701 14.8665 13.0127 15.7996H22.0423C23.0197 15.7996 23.8146 14.978 23.8146 13.9686V2.27049C23.8146 1.261 23.0197 0.439453 22.0423 0.439453Z" />
-													</svg>
+													</svg> */}
+													<Icon.planaDocenteIcon className="mr-3" />
 												</div>
 												<span>Plana docente</span>
 											</a>
-
 											<a
 												href="/assets/archivos/posgrado/planes de estudio/plan-estudio-2020-doctorado-ciencias-biologicas.pdf"
 												target="_blank"
 												className="tab d-flex">
 												<div>
-													<svg
+													{/* <svg
 														width="19"
 														height="21"
 														viewBox="0 0 19 21"
@@ -228,9 +232,23 @@ const index = () => {
 														<path d="M9.00586 9.97827H15.0059V11.4783H9.00586V9.97827Z" />
 														<path d="M8.25586 9.97827H15.0059V11.4783H8.25586V9.97827Z" />
 														<path d="M3.75586 16.7283C2.7616 16.7273 1.80835 16.3319 1.10531 15.6288C0.402259 14.9258 0.00685214 13.9725 0.00585938 12.9783V4.72827H1.50586V12.9783C1.50586 13.575 1.74291 14.1473 2.16487 14.5693C2.58683 14.9912 3.15912 15.2283 3.75586 15.2283C4.3526 15.2283 4.92489 14.9912 5.34685 14.5693C5.76881 14.1473 6.00586 13.575 6.00586 12.9783V6.22827C6.00586 6.02936 5.92684 5.83859 5.78619 5.69794C5.64554 5.55729 5.45477 5.47827 5.25586 5.47827C5.05695 5.47827 4.86618 5.55729 4.72553 5.69794C4.58488 5.83859 4.50586 6.02936 4.50586 6.22827V13.7283H3.00586V6.22827C3.00586 5.63153 3.24291 5.05924 3.66487 4.63728C4.08683 4.21532 4.65912 3.97827 5.25586 3.97827C5.8526 3.97827 6.42489 4.21532 6.84685 4.63728C7.26881 5.05924 7.50586 5.63153 7.50586 6.22827V12.9783C7.50487 13.9725 7.10946 14.9258 6.40641 15.6288C5.70337 16.3319 4.75012 16.7273 3.75586 16.7283Z" />
-													</svg>
+													</svg> */}
+													<Icon.mallaCurricularIcon className="mr-3" />
 												</div>
 												<span>Malla curricular</span>
+											</a>
+											<a
+												className="tab d-flex"
+												id="v-pills-inversion-tab"
+												data-toggle="pill"
+												href="#v-pills-inversion"
+												role="tab"
+												aria-controls="v-pills-inversion"
+												aria-selected="false">
+												<div>
+													<Icon.inversionEconomicaIcon className="mr-3" />
+												</div>
+												<span>Inversión económica</span>
 											</a>
 										</div>
 									</div>
@@ -249,6 +267,24 @@ const index = () => {
 											id="v-pills-presentacion"
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
+											<div className="info-box mb-4">
+												<p className="mb-3">
+													<span>
+														<Icon.GradoTituloIcon className="mr-2 position-relative bot-2px" />
+													</span>
+													<strong>Título:</strong>{' '}
+													Doctor/a en Ciencias
+													Biológicas
+												</p>
+												<p className="mb-0">
+													<span>
+														<Icon.DuracionIcon className="mr-08rem position-relative bot-2px left-3px" />
+													</span>
+													<strong>Duración:</strong>{' '}
+													Tres años (dos semestres por
+													año)
+												</p>
+											</div>
 											<p>
 												El Programa de Doctorado en
 												Ciencias Biol&oacute;gicas tiene
@@ -325,20 +361,6 @@ const index = () => {
 												biotecnolog&iacute;a,
 												contaminaci&oacute;n
 												biol&oacute;gica, entre otros.
-											</p>
-											<p>
-												<strong>DURACI&Oacute;N</strong>
-											</p>
-											<p>
-												3 a&ntilde;os, divididos en 6
-												semestres&nbsp;
-											</p>
-											<p>
-												<strong>GRADO</strong>
-											</p>
-											<p>
-												Doctor en Ciencias
-												Biol&oacute;gicas
 											</p>
 											<p>
 												<strong>
@@ -427,7 +449,7 @@ const index = () => {
 												</li>
 											</ul>
 										</div>
-										<div
+										{/* <div
 											className="mb-3 tab-pane fade"
 											id="v-pills-perfil"
 											role="tabpanel"
@@ -555,133 +577,53 @@ const index = () => {
 													posgrado.
 												</li>
 											</ul>
-										</div>
+										</div> */}
 										<div
 											className="mb-3 tab-pane fade"
 											id="v-pills-admision"
 											role="tabpanel"
 											aria-labelledby="v-pills-admision-tab">
 											<Tabs
-												defaultActiveKey="cronogramas"
+												defaultActiveKey="guia"
 												id="admision-tab">
 												<Tab
 													className="pt-3"
-													eventKey="cronogramas"
-													title="Cronogramas">
-													<CronogramaPosgrado />
-													{/* <div>
-                                                        <p className="title-dark">Cronograma de Admisión 2021 - I</p>
-                                                        <div className="table-responsive mb-3">
-                                                            <table className="striped m-auto">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th className="text-center">Actividad</th>
-                                                                        <th className="text-center">Fechas 2021</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Inscripción de postulantes y envío de expediente</td>
-                                                                        <td>Del 02 de enero al 14 de marzo</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Evaluación del expediente</td>
-                                                                        <td>Del 15 al 17 de marzo</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Entrevista personal (solo maestría)</td>
-                                                                        <td>18 y 19 de marzo</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Examen de aptitud virtual (solo maestría)</td>
-                                                                        <td>20 de marzo</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Sustentación del proyecto de investigación (solo doctorado)</td>
-                                                                        <td>20 y 21 de marzo</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Publicación de resultados</td>
-                                                                        <td>23 de marzo</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                        <p>
-                                                            <span className="title-dark">Vacantes: </span>
-                                                            <span>Número</span>
-                                                        </p>
-                                                        <p className="title-dark">Cronograma de actividades académicas 2021 - I</p>
-                                                        <div className="table-responsive mb-3">
-                                                            <table className="striped m-auto">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th className="text-center">Actividad</th>
-                                                                        <th className="text-center">Fechas 2021</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Matrícula ingresantes (Maestría o Doctorado)</td>
-                                                                        <td>Del 29 de marzo al 02 de abril</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Matrícula regular (ingresantes 2021 y anteriores)</td>
-                                                                        <td>Del 22 al 26 de marzo</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Clases</td>
-                                                                        <td>
-                                                                            Inicio: 05 de abril
-                                                                            <br/>
-                                                                            Término: 24 de julio
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                        <p className="title-dark">Inversión por estudios de Posgrado</p>
-                                                        <div className="table-responsive mb-3">
-                                                            <table className="striped m-auto">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th className="text-center">Programa</th>
-                                                                        <th className="text-center">Descripción</th>
-                                                                        <th className="text-center">Importe</th>
-                                                                        <th className="text-center">Requisitos</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <th>Doctorado (6 semestres)</th>
-                                                                        <td>Matrícula perfeccionamiento</td>
-                                                                        <td>
-                                                                            S/. 310.00
-                                                                            <br/>
-                                                                            S/. 3400.00
-                                                                        </td>
-                                                                        <td>Cubrir vacante</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div> */}
+													eventKey="guia"
+													title="Guía de proceso de Admisión">
+													<GuiaProcesoAdmisionDoctorado />
 												</Tab>
 												<Tab
 													className="pt-3"
-													eventKey="inscripcion"
-													title="Pago de inscripción">
-													<PagoInscripcionDoctorado />
+													eventKey="cronograma"
+													title="Cronograma">
+													<CronogramaDoctorado />
+												</Tab>
+												<Tab
+													className="pt-3"
+													eventKey="cuadro"
+													title="Cuadro de Vacantes">
+													<CuadroVacantesDoctorado />
 												</Tab>
 												<Tab
 													className="pt-3"
 													eventKey="requisitos"
-													title="Requisitos para el Doctorado">
+													title="Requisitos">
 													<RequisitosDoctorado />
+												</Tab>
+												<Tab
+													className="pt-3"
+													eventKey="costos"
+													title="Costos de Admisión">
+													<CostosAdmisionDoctorado />
+												</Tab>
+												<Tab
+													className="pt-3"
+													eventKey="proceso"
+													title="Proceso de evaluación">
+													<ProcesoEvaluacionDoctorado />
 												</Tab>
 											</Tabs>
 										</div>
-
 										<div
 											className="mb-3 tab-pane fade"
 											id="v-pills-docente"
@@ -757,6 +699,13 @@ const index = () => {
 													</p>
 												</div>
 											))}
+										</div>
+										<div
+											className="mb-3 tab-pane fade"
+											id="v-pills-inversion"
+											role="tabpanel"
+											aria-labelledby="v-pills-inversion-tab">
+											<InversionEconomicaDoctorado />
 										</div>
 									</div>
 									{width < 768 && (

@@ -1,0 +1,82 @@
+.wrapper-paso {
+	display: grid;
+	grid-template-columns: 88px auto;
+	margin-bottom: 2.5rem;
+	&:last-of-type {
+		.wrapper-icon-paso {
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				width: 2px;
+				height: calc(100% - 88px);
+				background-color: $green;
+				z-index: -10;
+			}
+		}
+	}
+	.wrapper-icon-paso {
+		background-color: $wht;
+		border: 2px solid $green;
+		border-radius: 100%;
+		width: 88px;
+		height: 88px;
+		display: grid;
+		place-items: center;
+		.icon-paso {
+			width: 40px;
+		}
+	}
+	.wrapper-text-paso {
+		margin-left: 3rem;
+	}
+}
+
+.fill-green {
+	fill: $green;
+}
+
+.stroke-green {
+	stroke: $green;
+}
+
+.fill-green-dark {
+	fill: $green-dark;
+}
+
+.stroke-green-dark {
+	stroke: $green-dark;
+}
+
+.fill-green-bright {
+	fill: $green-bright;
+}
+
+.stroke-green-bright {
+	stroke: $green-bright;
+}
+
+.fill-gray {
+	fill: $gray;
+}
+
+.stroke-gray {
+	stroke: $gray;
+}
+
+.fill-gray-bright {
+	fill: $gray-bright;
+}
+
+.stroke-gray-bright {
+	stroke: $gray-bright;
+}
+
+.fill-gray-dark {
+	fill: $gray-dark;
+}
+
+.stroke-gray-dark {
+	stroke: $gray-dark;
+}
