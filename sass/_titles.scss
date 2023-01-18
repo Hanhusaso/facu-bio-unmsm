@@ -53,6 +53,12 @@
 	color: $green;
 }
 
+.sub-title-15-bold {
+	font-size: 15px;
+	font-weight: 700;
+	color: $green;
+}
+
 .sub-text {
 	font-size: 14px;
 	font-weight: 400;
@@ -72,6 +78,12 @@
 	color: $green-dark;
 }
 
+.title-dark-15 {
+	font-size: 15px;
+	font-weight: 700;
+	color: $green-dark;
+}
+
 .title-15 {
 	font-size: 15px;
 	font-weight: 700;
@@ -80,8 +92,8 @@
 
 .title-dark {
 	font-size: 16px;
-	color: $green-dark;
 	font-weight: 700;
+	color: $green-dark;
 }
 
 .date {
@@ -103,6 +115,10 @@
 .title-footer {
 	font-size: 20px;
 	font-weight: 700;
+}
+
+.color-green {
+	color: $green;
 }
 
 .color-green-bright {

@@ -20,14 +20,14 @@ import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/Cos
 import ProcesoEvaluacionMaestria from '../../../../components/posgrado/maestria/ProcesoEvaluacionMaestria';
 import InversionEconomicaMaestria from '../../../../components/posgrado/maestria/InversionEconomicaMaestria';
 
-const index = () => {
+const mencionSistematicaYEvolucion = () => {
 	const { width, height } = useWindowSize();
 	const [docentes, setDocentes] = useState([]);
 
 	useEffect(() => {
 		(async () => {
 			const response = await getDocenteByIdInformacionAcademicaApi(
-				'maestria_en_investigacion_en_biodiversidad_y_gestion_de_ecosistemas'
+				'maestria_en_zoologia'
 			);
 			setDocentes(response);
 		})();
@@ -53,13 +53,15 @@ const index = () => {
 						<span>upg.biologia@unmsm.edu.pe</span>
 					</div>
 				</div>
+				{/* <p className="font-weight-bold mb-1">Horario de atención:</p>
+                <p className="mb-0">8:00 a.m. - 5:00 p.m.</p> */}
 			</div>
 		);
 	};
 
 	return (
 		<>
-			<Layout title="Maestría en Biodiversidad y Gestión de Ecosistemas">
+			<Layout title="Maestría en Zoología con mención en Sistemática y Evolución">
 				<div>
 					<div>
 						<Container>
@@ -81,8 +83,8 @@ const index = () => {
 											</Link>
 										</li>
 										<Breadcrumb.Item active>
-											Maestría en Biodiversidad y Gestión
-											de Ecosistemas
+											Maestría en Zoología con mención en
+											Sistemática y Evolución
 										</Breadcrumb.Item>
 									</Breadcrumb>
 								</Col>
@@ -96,8 +98,8 @@ const index = () => {
 								<Col md="1"></Col>
 								<Col>
 									<div className="title-page text-center">
-										Maestría en Biodiversidad y Gestión de
-										Ecosistemas
+										Maestría en Zoología con mención en
+										Sistemática y Evolución
 									</div>
 								</Col>
 								<Col md="1"></Col>
@@ -108,7 +110,7 @@ const index = () => {
 					<div className="mb-4">
 						<img
 							className="w-100"
-							src="/assets/img/posgrado/maestria biodiversidad/banner-maestria-biodiversidad-gestion-ecosisemas-unmsm.png"
+							src="/assets/img/posgrado/maestria zoologia/banner-maestria-zoologia-unmsm.png"
 							alt=""
 						/>
 					</div>
@@ -180,7 +182,7 @@ const index = () => {
 												<span>Plana docente</span>
 											</a>
 											{/* <a
-												href="/assets/archivos/posgrado/planes de estudio/plan-estudio-2020-maestria-biodiversidad-gestion-ecosistemas.pdf"
+												href="/assets/archivos/posgrado/planes de estudio/plan-estudio-2020-maestria-zoologia.pdf"
 												target="_blank"
 												className="tab d-flex">
 												<div>
@@ -231,8 +233,9 @@ const index = () => {
 														<Icon.GradoTituloIcon className="mr-2 position-relative bot-2px" />
 													</span>
 													<strong>Título:</strong>{' '}
-													Magister en Biodiversidad y
-													Gestión de Ecosistemas
+													Magíster en Zoología con
+													mención en Sistemática y
+													Evolución
 												</p>
 												<p className="mb-0">
 													<span>
@@ -244,41 +247,34 @@ const index = () => {
 												</p>
 											</div>
 											<p className="mb-4">
-												El programa académico tiene como
-												finalidad formar recursos
-												humanos con la capacidad de
-												generar conocimientos acerca de
-												los ecosistemas existentes.
-												Asimismo, busca promover y
-												gestionar la conservación de la
-												biodiversidad dentro de los
-												enfoques del desarrollo
-												sustentable y ecosistémico en
-												las distintas regiones del país.
+												Este programa académico busca
+												consolidar la formación de
+												profesionales e investigadores
+												de alto nivel, con capacidad de
+												buscar la ampliación del
+												conocimiento de las plantas
+												útiles y el mejoramiento de
+												cultivos de importancia
+												económica en aspectos de
+												alimentación, colorantes,
+												perfumes, medicinas, textiles.
 											</p>
 											<p className="mb-3">
 												<strong>Objetivos:</strong>
 											</p>
 											<p className="mb-4">
-												Formar investigadores altamente
-												capacitados para conducir
-												actividades sobre biodiversidad
-												y gestión de ecosistemas a nivel
-												de la planificación y ejecución
-												operativa. Además, desarrollar
-												estrategias de gestión con
-												enfoque sistémico y de
-												participación integral.
-												Asimismo, incrementar su
-												capacidad innovadora y crítica,
-												con el desarrollo de estrategias
-												de gestión en el enfoque
-												ecosistémico y de participación
-												integral. Finalmente, producir
-												conocimiento a través de
-												investigaciones inéditas
-												relacionadas a estudios de
-												biodiversidad.
+												Formar personas capaces de
+												contribuir al conocimiento de la
+												flora, con el fin de resaltar
+												las especies útiles al ser
+												humano, para sentar las bases de
+												su determinación botánica:
+												establecer su origen,
+												domesticación y mejoramiento;
+												así como, el establecimiento de
+												variedades, cultivos,
+												conservación y manejo sostenible
+												de los mismos.
 											</p>
 											<p className="mb-3">
 												<strong>
@@ -286,25 +282,20 @@ const index = () => {
 												</strong>
 											</p>
 											<p className="mb-4">
-												Dirigido a profesionales que se
-												encuentren en el proceso de
-												obtención del grado académico de
-												Bachiller en Ciencias
-												Biológicas, Ciencias
-												Ambientales, Ingeniero Agrónomo,
-												Veterinaria o disciplinas
-												afines, otorgados por
-												universidades nacionales o
-												extranjeras, y deseen asegurar
-												una formación de posgrado en
-												recursos humanos especializado
-												en el estudio, gestión y
-												conservación de los recursos
-												biológicos del país. Con
-												conocimiento de conceptos
-												básicos y actuales de Biología y
-												responder de manera proactiva
-												ante situaciones problemas.
+												Dirigido a profesionales con
+												grado de bachiller en ciencias
+												biológicas o disciplinas afines,
+												otorgado por universidades
+												nacionales o extranjeras que
+												aseguren una formación acorde al
+												perfil del programa. Haber
+												aprobado, durante sus estudios
+												de pregrado, los siguientes
+												cursos básicos o sus
+												equivalentes: Botánica,
+												Genética, Citología, Fisiología,
+												Bioquímica, Ecología, Física,
+												Química y Estadística.
 											</p>
 											<p className="mb-3">
 												<strong>
@@ -312,77 +303,35 @@ const index = () => {
 												</strong>
 											</p>
 											<p className="mb-4">
-												El graduado aplicará los
-												fundamentos biológicos a la
-												gestión sostenible de
-												ecosistemas terrestres y
-												marinos. Gestionará y liderará
-												empresas, organizaciones e
-												instituciones que desarrollan
-												inventarios de la biodiversidad,
-												desarrollo de planes
-												territoriales, auditoría
-												ambiental, diseño y gestión de
-												áreas protegidas, entre otros.
-												Finalmente, generará
-												conocimiento a través de
-												publicaciones científicas y/o
-												herramientas de gestión.
+												El graduado realizará
+												investigación y docencia
+												universitaria de calidad
+												aplicando metodologías
+												pedagógicas innovadoras, acordes
+												con el avance de la ciencia.
+												Liderará investigaciones básicas
+												o aplicadas en los campos
+												diversos de la botánica y
+												ciencias afines, con la
+												posibilidad de trabajar, por su
+												capacitación, en muchos campos
+												donde la disciplina se requiera,
+												con valores éticos profesionales
+												destacables.
 											</p>
-											<p className="mb-3">
+											{/* <p className="mb-3">
 												<strong>
 													¿Por qué estudiar con
 													nosotros?
 												</strong>
 											</p>
-											<p className="mb-4">
-												Contamos con una plana docente
-												constituida por especialistas
-												reconocidos en el estudio de la
-												flora y fauna peruana, y
-												dictamos en base a principios
-												como la interdisciplinariedad,
-												que facilita el abarcar el
-												conocimiento en forma integral
-												para evitar el conocimiento
-												aislado, fraccionado o disperso.
-											</p>
+											<p className="mb-4"></p>
 											<p>
 												<strong>Campo Laboral:</strong>
 											</p>
 											<ul className="pl-3">
-												<li aria-level="1">
-													Investigador en proyectos
-													tecnológicos y científicos
-													en los sectores de
-													agricultura, ganadería,
-													pesquería e industria.
-												</li>
-												<li aria-level="1">
-													Gestión de servicios
-													medioambientales.
-												</li>
-												<li aria-level="1">
-													Biocomercio, información,
-													documentación y divulgación.
-												</li>
-												<li aria-level="1">
-													Docencia e investigación en
-													instituciones de educación
-													superior.
-												</li>
-												<li aria-level="1">
-													Asesorías y consultorías.
-												</li>
-												<li aria-level="1">
-													Evaluación y gestión de
-													impacto ambiental.
-												</li>
-												<li aria-level="1">
-													Gestión para protección de
-													áreas reservadas, turismo.
-												</li>
-											</ul>
+												<li aria-level="1"></li>
+											</ul> */}
 										</div>
 										{/* <div
 											className="mb-3 tab-pane fade"
@@ -395,22 +344,23 @@ const index = () => {
 												</strong>
 											</p>
 											<p>
-												El ingresante a la
-												Maestr&iacute;a en Biodiversidad
-												y Gesti&oacute;n de Ecosistemas:
+												Poseer el grado acad&eacute;mico
+												de bachiller en Ciencias
+												biol&oacute;gicas o &aacute;reas
+												afines.
 											</p>
 											<p>
-												- Estar&aacute; en
-												posesi&oacute;n del Grado
-												Acad&eacute;mico de Bachiller en
-												Ciencias Biol&oacute;gicas,
-												Ciencias Ambientales, Ingeniero
-												Agr&oacute;nomo, Veterinaria o
-												disciplinas afines, otorgados
-												por universidades nacionales o
-												extranjeras que aseguren una
-												formaci&oacute;n acorde a los
-												fines del programa.
+												Haber aprobado durante los
+												estudios de pregrado las
+												siguientes asignaturas:
+												Zoolog&iacute;a,
+												Ecolog&iacute;a,
+												Gen&eacute;tica,
+												Fisiolog&iacute;a,
+												Qu&iacute;mica org&aacute;nica e
+												inorg&aacute;nica,
+												F&iacute;sica, Matem&aacute;tica
+												y Estad&iacute;stica.
 											</p>
 											<p>
 												<strong>
@@ -418,121 +368,75 @@ const index = () => {
 												</strong>
 											</p>
 											<p>
-												El egresado de la
-												maestr&iacute;a de Biodiversidad
-												y gesti&oacute;n de ecosistemas
-												estar&aacute; plenamente
-												capacitado para trabajar en
-												campos diversos como la
-												investigaci&oacute;n pura en
-												Bot&aacute;nica, en
-												Zoolog&iacute;a y en la
-												Hidrobiolog&iacute;a,
-												adem&aacute;s de numerosos
-												campos de ciencia aplicada, como
-												planificaci&oacute;n del
-												aprovechamiento de recursos
-												(pesquer&iacute;as, acuicultura,
-												silvicultura, etc.),
-												muse&iacute;stica,
-												conservaci&oacute;n y
-												gesti&oacute;n de especies
-												vegetales o animales, plagas
-												agr&iacute;colas o forestales,
-												entomolog&iacute;a aplicada,
-												divulgaci&oacute;n
-												cient&iacute;fica, y otros.
-											</p>
-											<p>
-												Adem&aacute;s, estar&aacute; en
-												condiciones de:
+												En las tres menciones, el
+												graduado de la Maestr&iacute;a
+												en Zoolog&iacute;a tendr&aacute;
+												la capacidad de
+												desempe&ntilde;arse en la
+												investigaci&oacute;n, docencia
+												universitaria y en la
+												ejecuci&oacute;n de proyectos en
+												sistem&aacute;tica,
+												biolog&iacute;a evolutiva,
+												ecolog&iacute;a y
+												conservaci&oacute;n en
+												investigaci&oacute;n
+												b&aacute;sica y/o aplicada que
+												requieran la correcta
+												identificaci&oacute;n de
+												especies de fauna silvestre.
+												Tambi&eacute;n podr&aacute;:
 											</p>
 											<ul>
 												<li aria-level="1">
-													Identificar taxones animales
-													y vegetales, conocer los
-													fundamentos
-													biol&oacute;gicos de la
-													taxonom&iacute;a y su
-													aplicabilidad a la
-													gesti&oacute;n sostenible de
-													ecosistemas terrestres y
-													marinos, la ciencia
-													forestal, la
-													arqueolog&iacute;a, etc.
+													Identificar mediante el uso
+													de t&eacute;cnicas modernas
+													grupos naturales en el reino
+													animal que garantice la
+													conservaci&oacute;n de 1)
+													linajes amenazados por
+													extinci&oacute;n o
+													vulnerables, 2)
+													end&eacute;micos, 3) de
+													inter&eacute;s
+													econ&oacute;mico, etc. y
+													evaluar su estado de
+													conservaci&oacute;n para
+													prever/mitigar los impactos,
+													naturales o
+													antr&oacute;picos, sobre sus
+													poblaciones.
 												</li>
 												<li aria-level="1">
-													Tener las habilidades que
-													les permitir&aacute;n
-													ejercer sus actividades en
-													empresas, organizaciones e
-													instituciones que
-													desarrollen inventarios de
-													la biodiversidad, desarrollo
-													de planes territoriales,
-													auditor&iacute;a ambiental,
-													dise&ntilde;o y
-													gesti&oacute;n de
-													&aacute;reas protegidas,
-													entre otros.
+													Promover el desarrollo y
+													buen mantenimiento de
+													colecciones
+													cient&iacute;ficas que
+													sirvan de referencia para
+													estudios de &iacute;ndole
+													diversa tanto b&aacute;sicos
+													como aplicados.
 												</li>
 												<li aria-level="1">
-													Trabajar en numerosos campos
-													de ciencia b&aacute;sica y
-													aplicada, como
-													planificaci&oacute;n del
-													aprovechamiento de recursos
-													(pesquer&iacute;as,
-													acuicultura,
-													forester&iacute;a, fauna
-													silvestre, silvicultura,
-													etc.), muse&iacute;stica,
-													conservaci&oacute;n y
-													gesti&oacute;n de especies
-													vegetales o animales, plagas
-													agr&iacute;colas o
-													forestales,
-													entomolog&iacute;a aplicada,
-													divulgaci&oacute;n
-													cient&iacute;fica, y otros.
+													Conocer mediante el uso de
+													t&eacute;cnicas modernas el
+													comportamiento,
+													ecolog&iacute;a y
+													distribuci&oacute;n de
+													especies de inter&eacute;s
+													cient&iacute;fico,
+													comercial, salud
+													p&uacute;blica, etc.
 												</li>
 												<li aria-level="1">
-													Tener la capacidad de
-													realizar un an&aacute;lisis
-													cr&iacute;tico, evaluaciones
-													y s&iacute;ntesis de ideas
-													nuevas y complejas.
-												</li>
-												<li aria-level="1">
-													Comprender de manera
-													sistem&aacute;tica el campo
-													de estudio y el dominio de
-													las habilidades y
-													m&eacute;todos de
-													investigaci&oacute;n
-													relacionados con la
-													biodiversidad y
-													biolog&iacute;a de la
-													conservaci&oacute;n.
-												</li>
-												<li aria-level="1">
-													Contribuir a la ciencia a
-													trav&eacute;s de una
-													investigaci&oacute;n
-													original del conocimiento
-													que ampl&iacute;e las
-													fronteras que se plasme en
-													publicaciones
-													cient&iacute;ficas.
-												</li>
-												<li aria-level="1">
-													Capacidad de fomentar en
-													contextos acad&eacute;micos
-													y profesionales, el avance
-													tecnol&oacute;gico, social o
-													cultural dentro de una
-													sociedad basada en el
-													conocimiento.
+													Promover el desarrollo y
+													buen mantenimiento de bases
+													de datos ecol&oacute;gicos
+													de especies animales que
+													sirva como referencia para
+													estudios de &iacute;ndole
+													diversa tanto b&aacute;sicos
+													como aplicados.
 												</li>
 											</ul>
 										</div> */}
@@ -682,4 +586,4 @@ const index = () => {
 	);
 };
 
-export default index;
+export default mencionSistematicaYEvolucion;

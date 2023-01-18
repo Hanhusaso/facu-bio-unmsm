@@ -20,14 +20,14 @@ import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/Cos
 import ProcesoEvaluacionMaestria from '../../../../components/posgrado/maestria/ProcesoEvaluacionMaestria';
 import InversionEconomicaMaestria from '../../../../components/posgrado/maestria/InversionEconomicaMaestria';
 
-const index = () => {
+const mencionBotanicaEconomica = () => {
 	const { width, height } = useWindowSize();
 	const [docentes, setDocentes] = useState([]);
 
 	useEffect(() => {
 		(async () => {
 			const response = await getDocenteByIdInformacionAcademicaApi(
-				'maestria_en_investigacion_en_biodiversidad_y_gestion_de_ecosistemas'
+				'maestria_en_botanica_tropical'
 			);
 			setDocentes(response);
 		})();
@@ -53,13 +53,15 @@ const index = () => {
 						<span>upg.biologia@unmsm.edu.pe</span>
 					</div>
 				</div>
+				{/* <p className="font-weight-bold mb-1">Horario de atención:</p>
+                <p className="mb-0">8:00 a.m. - 5:00 p.m.</p> */}
 			</div>
 		);
 	};
 
 	return (
 		<>
-			<Layout title="Maestría en Biodiversidad y Gestión de Ecosistemas">
+			<Layout title="Maestría en Botánica Tropical con mención en Botánica económica">
 				<div>
 					<div>
 						<Container>
@@ -81,8 +83,8 @@ const index = () => {
 											</Link>
 										</li>
 										<Breadcrumb.Item active>
-											Maestría en Biodiversidad y Gestión
-											de Ecosistemas
+											Maestría en Botánica Tropical con
+											mención en Botánica económica
 										</Breadcrumb.Item>
 									</Breadcrumb>
 								</Col>
@@ -96,8 +98,8 @@ const index = () => {
 								<Col md="1"></Col>
 								<Col>
 									<div className="title-page text-center">
-										Maestría en Biodiversidad y Gestión de
-										Ecosistemas
+										Maestría en Botánica Tropical con
+										mención en Botánica económica
 									</div>
 								</Col>
 								<Col md="1"></Col>
@@ -108,7 +110,7 @@ const index = () => {
 					<div className="mb-4">
 						<img
 							className="w-100"
-							src="/assets/img/posgrado/maestria biodiversidad/banner-maestria-biodiversidad-gestion-ecosisemas-unmsm.png"
+							src="/assets/img/posgrado/maestria botanica tropical/banner-maestria-botanica-tropical-unmsm.png"
 							alt=""
 						/>
 					</div>
@@ -180,7 +182,7 @@ const index = () => {
 												<span>Plana docente</span>
 											</a>
 											{/* <a
-												href="/assets/archivos/posgrado/planes de estudio/plan-estudio-2020-maestria-biodiversidad-gestion-ecosistemas.pdf"
+												href="/assets/archivos/posgrado/planes de estudio/plan-estudio-2020-maestria-botanica-tropical.pdf"
 												target="_blank"
 												className="tab d-flex">
 												<div>
@@ -231,8 +233,9 @@ const index = () => {
 														<Icon.GradoTituloIcon className="mr-2 position-relative bot-2px" />
 													</span>
 													<strong>Título:</strong>{' '}
-													Magister en Biodiversidad y
-													Gestión de Ecosistemas
+													Magíster en Botánica
+													Tropical con mención en
+													Botánica económica
 												</p>
 												<p className="mb-0">
 													<span>
@@ -244,41 +247,34 @@ const index = () => {
 												</p>
 											</div>
 											<p className="mb-4">
-												El programa académico tiene como
-												finalidad formar recursos
-												humanos con la capacidad de
-												generar conocimientos acerca de
-												los ecosistemas existentes.
-												Asimismo, busca promover y
-												gestionar la conservación de la
-												biodiversidad dentro de los
-												enfoques del desarrollo
-												sustentable y ecosistémico en
-												las distintas regiones del país.
+												Este programa académico busca
+												consolidar la formación de
+												profesionales e investigadores
+												de alto nivel, con capacidad de
+												buscar la ampliación del
+												conocimiento de las plantas
+												útiles y el mejoramiento de
+												cultivos de importancia
+												económica en aspectos de
+												alimentación, colorantes,
+												perfumes, medicinas, textiles.
 											</p>
 											<p className="mb-3">
 												<strong>Objetivos:</strong>
 											</p>
 											<p className="mb-4">
-												Formar investigadores altamente
-												capacitados para conducir
-												actividades sobre biodiversidad
-												y gestión de ecosistemas a nivel
-												de la planificación y ejecución
-												operativa. Además, desarrollar
-												estrategias de gestión con
-												enfoque sistémico y de
-												participación integral.
-												Asimismo, incrementar su
-												capacidad innovadora y crítica,
-												con el desarrollo de estrategias
-												de gestión en el enfoque
-												ecosistémico y de participación
-												integral. Finalmente, producir
-												conocimiento a través de
-												investigaciones inéditas
-												relacionadas a estudios de
-												biodiversidad.
+												Formar personas capaces de
+												contribuir al conocimiento de la
+												flora, con el fin de resaltar
+												las especies útiles al ser
+												humano, para sentar las bases de
+												su determinación botánica:
+												establecer su origen,
+												domesticación y mejoramiento;
+												así como, el establecimiento de
+												variedades, cultivos,
+												conservación y manejo sostenible
+												de los mismos.
 											</p>
 											<p className="mb-3">
 												<strong>
@@ -286,25 +282,20 @@ const index = () => {
 												</strong>
 											</p>
 											<p className="mb-4">
-												Dirigido a profesionales que se
-												encuentren en el proceso de
-												obtención del grado académico de
-												Bachiller en Ciencias
-												Biológicas, Ciencias
-												Ambientales, Ingeniero Agrónomo,
-												Veterinaria o disciplinas
-												afines, otorgados por
-												universidades nacionales o
-												extranjeras, y deseen asegurar
-												una formación de posgrado en
-												recursos humanos especializado
-												en el estudio, gestión y
-												conservación de los recursos
-												biológicos del país. Con
-												conocimiento de conceptos
-												básicos y actuales de Biología y
-												responder de manera proactiva
-												ante situaciones problemas.
+												Dirigido a profesionales con
+												grado de bachiller en ciencias
+												biológicas o disciplinas afines,
+												otorgado por universidades
+												nacionales o extranjeras que
+												aseguren una formación acorde al
+												perfil del programa. Haber
+												aprobado, durante sus estudios
+												de pregrado, los siguientes
+												cursos básicos o sus
+												equivalentes: Botánica,
+												Genética, Citología, Fisiología,
+												Bioquímica, Ecología, Física,
+												Química y Estadística.
 											</p>
 											<p className="mb-3">
 												<strong>
@@ -312,77 +303,35 @@ const index = () => {
 												</strong>
 											</p>
 											<p className="mb-4">
-												El graduado aplicará los
-												fundamentos biológicos a la
-												gestión sostenible de
-												ecosistemas terrestres y
-												marinos. Gestionará y liderará
-												empresas, organizaciones e
-												instituciones que desarrollan
-												inventarios de la biodiversidad,
-												desarrollo de planes
-												territoriales, auditoría
-												ambiental, diseño y gestión de
-												áreas protegidas, entre otros.
-												Finalmente, generará
-												conocimiento a través de
-												publicaciones científicas y/o
-												herramientas de gestión.
+												El graduado realizará
+												investigación y docencia
+												universitaria de calidad
+												aplicando metodologías
+												pedagógicas innovadoras, acordes
+												con el avance de la ciencia.
+												Liderará investigaciones básicas
+												o aplicadas en los campos
+												diversos de la botánica y
+												ciencias afines, con la
+												posibilidad de trabajar, por su
+												capacitación, en muchos campos
+												donde la disciplina se requiera,
+												con valores éticos profesionales
+												destacables.
 											</p>
-											<p className="mb-3">
+											{/* <p className="mb-3">
 												<strong>
 													¿Por qué estudiar con
 													nosotros?
 												</strong>
 											</p>
-											<p className="mb-4">
-												Contamos con una plana docente
-												constituida por especialistas
-												reconocidos en el estudio de la
-												flora y fauna peruana, y
-												dictamos en base a principios
-												como la interdisciplinariedad,
-												que facilita el abarcar el
-												conocimiento en forma integral
-												para evitar el conocimiento
-												aislado, fraccionado o disperso.
-											</p>
+											<p className="mb-4"></p>
 											<p>
 												<strong>Campo Laboral:</strong>
 											</p>
 											<ul className="pl-3">
-												<li aria-level="1">
-													Investigador en proyectos
-													tecnológicos y científicos
-													en los sectores de
-													agricultura, ganadería,
-													pesquería e industria.
-												</li>
-												<li aria-level="1">
-													Gestión de servicios
-													medioambientales.
-												</li>
-												<li aria-level="1">
-													Biocomercio, información,
-													documentación y divulgación.
-												</li>
-												<li aria-level="1">
-													Docencia e investigación en
-													instituciones de educación
-													superior.
-												</li>
-												<li aria-level="1">
-													Asesorías y consultorías.
-												</li>
-												<li aria-level="1">
-													Evaluación y gestión de
-													impacto ambiental.
-												</li>
-												<li aria-level="1">
-													Gestión para protección de
-													áreas reservadas, turismo.
-												</li>
-											</ul>
+												<li aria-level="1"></li>
+											</ul> */}
 										</div>
 										{/* <div
 											className="mb-3 tab-pane fade"
@@ -396,143 +345,127 @@ const index = () => {
 											</p>
 											<p>
 												El ingresante a la
-												Maestr&iacute;a en Biodiversidad
-												y Gesti&oacute;n de Ecosistemas:
+												Maestr&iacute;a en
+												Bot&aacute;nica Tropical:
 											</p>
-											<p>
-												- Estar&aacute; en
-												posesi&oacute;n del Grado
-												Acad&eacute;mico de Bachiller en
-												Ciencias Biol&oacute;gicas,
-												Ciencias Ambientales, Ingeniero
-												Agr&oacute;nomo, Veterinaria o
-												disciplinas afines, otorgados
-												por universidades nacionales o
-												extranjeras que aseguren una
-												formaci&oacute;n acorde a los
-												fines del programa.
-											</p>
+											<ul>
+												<li aria-level="1">
+													Poseer&aacute; el grado
+													acad&eacute;mico de
+													bachiller en Ciencias
+													biol&oacute;gicas o
+													disciplinas afines,
+													otorgados por universidades
+													nacionales o extranjeras que
+													aseguren una
+													formaci&oacute;n acorde a
+													los fines del Programa.
+												</li>
+												<li aria-level="1">
+													Haber aprobado durante sus
+													estudios de pregrado los
+													siguientes cursos
+													b&aacute;sicos o sus
+													equivalentes:
+													Bot&aacute;nica,
+													Gen&eacute;tica,
+													Citolog&iacute;a,
+													Fisiolog&iacute;a,
+													Bioqu&iacute;mica,
+													Ecolog&iacute;a,
+													F&iacute;sica,
+													Qu&iacute;mica y
+													Estad&iacute;stica.
+												</li>
+											</ul>
 											<p>
 												<strong>
 													PERFIL DEL EGRESADO
 												</strong>
 											</p>
 											<p>
-												El egresado de la
-												maestr&iacute;a de Biodiversidad
-												y gesti&oacute;n de ecosistemas
-												estar&aacute; plenamente
-												capacitado para trabajar en
-												campos diversos como la
-												investigaci&oacute;n pura en
-												Bot&aacute;nica, en
-												Zoolog&iacute;a y en la
-												Hidrobiolog&iacute;a,
-												adem&aacute;s de numerosos
-												campos de ciencia aplicada, como
-												planificaci&oacute;n del
-												aprovechamiento de recursos
-												(pesquer&iacute;as, acuicultura,
-												silvicultura, etc.),
-												muse&iacute;stica,
-												conservaci&oacute;n y
-												gesti&oacute;n de especies
-												vegetales o animales, plagas
-												agr&iacute;colas o forestales,
-												entomolog&iacute;a aplicada,
-												divulgaci&oacute;n
-												cient&iacute;fica, y otros.
-											</p>
-											<p>
-												Adem&aacute;s, estar&aacute; en
-												condiciones de:
+												El mag&iacute;ster en cualquiera
+												de las tres menciones que opte
+												por el tema de su tesis,
+												ejercer&aacute;
+												investigaci&oacute;n y docencia
+												universitaria de calidad
+												aplicando metodolog&iacute;as
+												pedag&oacute;gicas innovadoras y
+												acordes con el avance de la
+												ciencia. Liderar&aacute; y
+												desarrollar&aacute;
+												investigaciones b&aacute;sicas y
+												/o aplicadas en los campos
+												diversos de la bot&aacute;nica y
+												ciencias afines, pudiendo
+												trabajar por su
+												capacitaci&oacute;n en muchos
+												campos donde la disciplina se
+												requiera; cumpliendo con valores
+												&eacute;ticos profesionales,
+												entre sus funciones y/o
+												actividades podemos
+												se&ntilde;alar:
 											</p>
 											<ul>
 												<li aria-level="1">
-													Identificar taxones animales
-													y vegetales, conocer los
-													fundamentos
-													biol&oacute;gicos de la
-													taxonom&iacute;a y su
-													aplicabilidad a la
-													gesti&oacute;n sostenible de
-													ecosistemas terrestres y
-													marinos, la ciencia
-													forestal, la
-													arqueolog&iacute;a, etc.
+													Realizar la
+													determinaci&oacute;n de las
+													especies de los diversos
+													grupos de la flora peruana.
 												</li>
 												<li aria-level="1">
-													Tener las habilidades que
-													les permitir&aacute;n
-													ejercer sus actividades en
-													empresas, organizaciones e
-													instituciones que
-													desarrollen inventarios de
-													la biodiversidad, desarrollo
-													de planes territoriales,
-													auditor&iacute;a ambiental,
-													dise&ntilde;o y
-													gesti&oacute;n de
-													&aacute;reas protegidas,
-													entre otros.
+													Solucionar los problemas de
+													inventarios y
+													evaluaci&oacute;n de los
+													ecosistemas con criterio de
+													conservaci&oacute;n de la
+													diversidad
+													flor&iacute;stica.
 												</li>
 												<li aria-level="1">
-													Trabajar en numerosos campos
-													de ciencia b&aacute;sica y
-													aplicada, como
-													planificaci&oacute;n del
-													aprovechamiento de recursos
-													(pesquer&iacute;as,
-													acuicultura,
-													forester&iacute;a, fauna
-													silvestre, silvicultura,
-													etc.), muse&iacute;stica,
-													conservaci&oacute;n y
-													gesti&oacute;n de especies
-													vegetales o animales, plagas
-													agr&iacute;colas o
-													forestales,
-													entomolog&iacute;a aplicada,
-													divulgaci&oacute;n
-													cient&iacute;fica, y otros.
+													Tener conocimientos de las
+													especies vegetales de valor
+													econ&oacute;mico en las
+													diversas regiones
+													geogr&aacute;ficas: de valor
+													alimenticio, forrajera, de
+													uso industrial, medicinal,
+													ornamental y considerar sus
+													cualidades, cantidades y
+													factibilidad de uso para
+													contribuir a mejorar el
+													nivel de vida del ser
+													humano.
 												</li>
 												<li aria-level="1">
-													Tener la capacidad de
-													realizar un an&aacute;lisis
-													cr&iacute;tico, evaluaciones
-													y s&iacute;ntesis de ideas
-													nuevas y complejas.
+													Realizar investigaciones
+													sobre biotecnolog&iacute;a
+													de especies vegetales.
 												</li>
 												<li aria-level="1">
-													Comprender de manera
-													sistem&aacute;tica el campo
-													de estudio y el dominio de
-													las habilidades y
-													m&eacute;todos de
-													investigaci&oacute;n
-													relacionados con la
-													biodiversidad y
-													biolog&iacute;a de la
-													conservaci&oacute;n.
+													Ser capaz de realizar la
+													revalorizaci&oacute;n y
+													rescate de la riqueza del
+													conocimiento de la flora
+													silvestre y cultivada,
+													propio de las diversas
+													etnias de nuestro vasto
+													territorio.
 												</li>
 												<li aria-level="1">
-													Contribuir a la ciencia a
-													trav&eacute;s de una
-													investigaci&oacute;n
-													original del conocimiento
-													que ampl&iacute;e las
-													fronteras que se plasme en
-													publicaciones
-													cient&iacute;ficas.
+													Formular estrategias de
+													protecci&oacute;n a la
+													cultura bot&aacute;nica
+													tradicional y su uso
+													sostenible.
 												</li>
 												<li aria-level="1">
-													Capacidad de fomentar en
-													contextos acad&eacute;micos
-													y profesionales, el avance
-													tecnol&oacute;gico, social o
-													cultural dentro de una
-													sociedad basada en el
-													conocimiento.
+													Asesorar trabajos de
+													investigaci&oacute;n de
+													estudiantes de pre y
+													posgrado.
 												</li>
 											</ul>
 										</div> */}
@@ -682,4 +615,4 @@ const index = () => {
 	);
 };
 
-export default index;
+export default mencionBotanicaEconomica;

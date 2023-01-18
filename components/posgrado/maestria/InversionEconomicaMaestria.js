@@ -121,7 +121,7 @@ const InversionEconomicaMaestria = () => {
 				</div>
 			</div>
 
-			<div className="mb-4">
+			{/* <div className="mb-4">
 				<p className="font-weight-bold">3. Costo por ciclo:</p>
 				<p className="mb-3">
 					Cada curso tiene una cantidad determinada de creditaje por
@@ -146,7 +146,7 @@ const InversionEconomicaMaestria = () => {
 						sujetos a variaciones.
 					</p>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

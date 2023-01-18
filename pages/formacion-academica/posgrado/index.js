@@ -175,11 +175,13 @@ const posgrado = () => {
 									className="d-flex flex-column justify-content-center"
 									md="4">
 									<div className="text-center mb-3">
-										<Link href="/formacion-academica/posgrado/maestria-botanica-tropical">
-											<a className="title-green">
-												Maestría en Botánica Tropical
-											</a>
-										</Link>
+										{/* <Link href="/formacion-academica/posgrado/maestria-botanica-tropical">
+											<a className="title-green"> */}
+										<span className="title-green">
+											Maestría en Botánica Tropical
+										</span>
+										{/* </a>
+										</Link> */}
 									</div>
 									{/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
 									<div className="d-none d-md-block">
@@ -192,26 +194,42 @@ const posgrado = () => {
 											cuatro semestres con cursos básicos
 											y electivos. Tiene tres menciones:
 										</p>
-										<ul className="chevron-green-dark font-weight-bold">
-											<li>Botánica Económica</li>
-											<li>Etnobotánica</li>
+										<ul className="chevron-green-dark">
 											<li>
-												Taxonomía y Sistemática
-												Evolutiva
+												<Link href="/formacion-academica/posgrado/maestria-botanica-tropical/mencion-botanica-economica">
+													<a className="title-dark-15">
+														Botánica Económica
+													</a>
+												</Link>
+											</li>
+											<li>
+												<Link href="/formacion-academica/posgrado/maestria-botanica-tropical/mencion-etnobotanica">
+													<a className="title-dark-15">
+														Etnobotánica
+													</a>
+												</Link>
+											</li>
+											<li>
+												<Link href="/formacion-academica/posgrado/maestria-botanica-tropical/mencion-taxonomia-y-sistematica-evolutiva">
+													<a className="title-dark-15">
+														Taxonomía y Sistemática
+														Evolutiva
+													</a>
+												</Link>
 											</li>
 										</ul>
 									</div>
 								</Col>
 								<Col md="4" className="text-center">
-									<Link href="/formacion-academica/posgrado/maestria-botanica-tropical">
-										<a>
-											<img
-												className="img-fluid"
-												src="/assets/img/posgrado/maestria-botanica-tropical-unmsm-minihome.png"
-												alt=""
-											/>
-										</a>
-									</Link>
+									{/* <Link href="/formacion-academica/posgrado/maestria-botanica-tropical">
+										<a> */}
+									<img
+										className="img-fluid"
+										src="/assets/img/posgrado/maestria-botanica-tropical-unmsm-minihome.png"
+										alt="botanica tropical"
+									/>
+									{/* </a>
+									</Link> */}
 								</Col>
 								<Col md="2"></Col>
 							</Row>
@@ -220,26 +238,29 @@ const posgrado = () => {
 							<Row className="reverse-responsive">
 								<Col md="2"></Col>
 								<Col md="4" className="text-center">
-									<Link href="/formacion-academica/posgrado/maestria-ecosistemas">
-										<a>
-											<img
-												className="img-fluid"
-												src="/assets/img/posgrado/maestria-ecosistemas-recursos-acuaticos-unmsm-minihome.png"
-												alt=""
-											/>
-										</a>
-									</Link>
+									{/* <Link href="/formacion-academica/posgrado/maestria-ecosistemas">
+										<a> */}
+									<img
+										className="img-fluid"
+										src="/assets/img/posgrado/maestria-ecosistemas-recursos-acuaticos-unmsm-minihome.png"
+										alt=""
+									/>
+									{/* </a>
+									</Link> */}
 								</Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
 									md="4">
 									<div className="text-center mb-3">
-										<Link href="/formacion-academica/posgrado/maestria-ecosistemas">
-											<a className="title-green">
-												Maestría en Ecosistemas y
-												Recursos Acuáticos
-											</a>
-										</Link>
+										{/* <Link href="/formacion-academica/posgrado/maestria-ecosistemas">
+											<a className="title-green"> */}
+										<span className="title-green">
+											Maestría en Ecosistemas y Recursos
+											Acuáticos
+										</span>
+
+										{/* </a>
+										</Link> */}
 									</div>
 									{/* <div className="title-green text-center">E.P Microbiología y Parasitología</div> */}
 									<div className="d-none d-md-block">
@@ -252,12 +273,28 @@ const posgrado = () => {
 											que provee investigadores altamente
 											calificados. Tiene tres menciones:
 										</p>
-										<ul className="chevron-green-dark font-weight-bold">
-											<li>Acuicultura</li>
-											<li>Ecosistemas Acuáticos</li>
+										<ul className="chevron-green-dark">
 											<li>
-												Evaluación y Manejo de Recursos
-												Pesqueros
+												<Link href="/formacion-academica/posgrado/maestria-ecosistemas/mencion-acuicultura">
+													<a className="title-dark-15">
+														Acuicultura
+													</a>
+												</Link>
+											</li>
+											<li>
+												<Link href="/formacion-academica/posgrado/maestria-ecosistemas/mencion-ecosistemas-acuaticos">
+													<a className="title-dark-15">
+														Ecosistemas Acuáticos
+													</a>
+												</Link>
+											</li>
+											<li>
+												<Link href="/formacion-academica/posgrado/maestria-ecosistemas/mencion-evaluacion-y-manejo-de-recursos-pesqueros">
+													<a className="title-dark-15">
+														Evaluación y Manejo de
+														Recursos Pesqueros
+													</a>
+												</Link>
 											</li>
 										</ul>
 									</div>
@@ -272,11 +309,13 @@ const posgrado = () => {
 									className="d-flex flex-column justify-content-center"
 									md="4">
 									<div className="text-center mb-3">
-										<Link href="/formacion-academica/posgrado/maestria-zoologia">
-											<a className="title-green">
-												Maestría en Zoología
-											</a>
-										</Link>
+										{/* <Link href="/formacion-academica/posgrado/maestria-zoologia">
+											<a className="title-green"> */}
+										<span className="title-green">
+											Maestría en Zoología
+										</span>
+										{/* </a>
+										</Link> */}
 									</div>
 									{/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
 									<div className="d-none d-md-block">
@@ -289,26 +328,37 @@ const posgrado = () => {
 											académico, así como capacitar
 											profesionales para favorecer su
 											mejor desenvolvimiento
-											científico-tecnológico. Tiene tres
+											científico-tecnológico. Tiene dos
 											menciones:
 										</p>
-										<ul className="chevron-green-dark font-weight-bold">
-											<li>Ecología y Conservación</li>
-											<li>Sistemática y Evolución</li>
-											<li>Ecología y Conservación</li>
+										<ul className="chevron-green-dark">
+											<li>
+												<Link href="/formacion-academica/posgrado/maestria-zoologia/mencion-ecologia-y-conservacion">
+													<a className="title-dark-15">
+														Ecología y Conservación
+													</a>
+												</Link>
+											</li>
+											<li>
+												<Link href="/formacion-academica/posgrado/maestria-zoologia/mencion-sistematica-y-evolucion">
+													<a className="title-dark-15">
+														Sistemática y Evolución
+													</a>
+												</Link>
+											</li>
 										</ul>
 									</div>
 								</Col>
 								<Col md="4" className="text-center">
-									<Link href="/formacion-academica/posgrado/maestria-zoologia">
-										<a>
-											<img
-												className="img-fluid"
-												src="/assets/img/posgrado/maestria-zoologia-unmsm-minihome.png"
-												alt=""
-											/>
-										</a>
-									</Link>
+									{/* <Link href="/formacion-academica/posgrado/maestria-zoologia">
+										<a> */}
+									<img
+										className="img-fluid"
+										src="/assets/img/posgrado/maestria-zoologia-unmsm-minihome.png"
+										alt="maestria zoologia"
+									/>
+									{/* </a>
+									</Link> */}
 								</Col>
 								<Col md="2"></Col>
 							</Row>

@@ -191,7 +191,7 @@ const index = () => {
 												</div>
 												<span>Plana docente</span>
 											</a>
-											<a
+											{/* <a
 												href="/assets/archivos/posgrado/planes de estudio/plan-estudio-2020-maestria-ecosistemas-recursos-acuaticos.pdf"
 												target="_blank"
 												className="tab d-flex">
@@ -199,7 +199,7 @@ const index = () => {
 													<Icon.mallaCurricularIcon className="mr-3" />
 												</div>
 												<span>Malla curricular</span>
-											</a>
+											</a> */}
 											<a
 												className="tab d-flex"
 												id="v-pills-inversion-tab"

@@ -179,7 +179,7 @@ const index = () => {
 												</div>
 												<span>Plana docente</span>
 											</a>
-											<a
+											{/* <a
 												href="/assets/archivos/posgrado/planes de estudio/plan-estudio-2020-maestria-genetica.pdf"
 												target="_blank"
 												className="tab d-flex">
@@ -187,7 +187,7 @@ const index = () => {
 													<Icon.mallaCurricularIcon className="mr-3" />
 												</div>
 												<span>Malla curricular</span>
-											</a>
+											</a> */}
 											<a
 												className="tab d-flex"
 												id="v-pills-inversion-tab"
@@ -218,150 +218,147 @@ const index = () => {
 											id="v-pills-presentacion"
 											role="tabpanel"
 											aria-labelledby="v-pills-presentacion-tab">
-											<p>
-												El programa de Maestr&iacute;a
-												en Gen&eacute;tica proporciona
-												una formaci&oacute;n integral a
-												los ingresantes quienes deben
-												conocer desde las bases
-												hist&oacute;ricas de esta
-												ciencia hasta los avances que
-												han convertido a esta disciplina
-												en una de las m&aacute;s
-												avanzadas del mundo
-												cient&iacute;fico actual.&nbsp;
+											<div className="info-box mb-4">
+												<p className="mb-3">
+													<span>
+														<Icon.TipoMaestriaIcon className="mr-2 position-relative bot-2px" />
+													</span>
+													<strong>Tipo:</strong>{' '}
+													Investigación
+												</p>
+												<p className="mb-3">
+													<span>
+														<Icon.GradoTituloIcon className="mr-2 position-relative bot-2px" />
+													</span>
+													<strong>Título:</strong>{' '}
+													Magíster en Genética
+												</p>
+												<p className="mb-0">
+													<span>
+														<Icon.DuracionIcon className="mr-08rem position-relative bot-2px left-3px" />
+													</span>
+													<strong>Duración:</strong>{' '}
+													Dos años (dos semestres por
+													año)
+												</p>
+											</div>
+											<p className="mb-4">
+												Este programa académico busca
+												formar investigadores y docentes
+												calificados para conocer los
+												genes, estructura, organización,
+												mecanismos de transferencia,
+												expresión, alteración espontánea
+												e inducida en función del tiempo
+												y las condiciones ambientales.
+												Asimismo, utilizar las
+												herramientas moleculares para su
+												aislamiento, conservación y
+												empleo en el mejoramiento
+												genético a través de librerías y
+												bancos genéticos.
 											</p>
-											<p>
-												Las nuevas tecnolog&iacute;as
-												para el an&aacute;lisis del ADN,
-												ARN, las prote&iacute;nas
-												permiten no solo evaluar los
-												cambios en la estructura de los
-												genes en distintos organismos lo
-												que le da al estudiante una
-												vasta imagen de conocimiento
-												sobre el tema y los retos de los
-												cambios clim&aacute;ticos que
-												participan en las variaciones
-												gen&eacute;ticas.
+											<p className="mb-3">
+												<strong>Objetivos:</strong>
 											</p>
-											<p>
-												La Facultad de Ciencias
-												Biol&oacute;gicas puso en
-												funcionamiento el programa de
-												Maestr&iacute;a en
-												Gen&eacute;tica, como ciencia de
-												la herencia y variaci&oacute;n
-												de los seres vivos, estudia la
-												transmisi&oacute;n de los
-												caracteres a nivel familiar y
-												poblacional, la naturaleza y
-												propiedades del material
-												hereditario, los mecanismos de
-												acci&oacute;n gen&eacute;tica y
-												su regulaci&oacute;n, los
-												&aacute;cidos nucleicos, el gen
-												y las prote&iacute;nas, la
-												transferencia horizontal de
-												genes en animales y vegetales,
-												finalmente el estudio de la
-												gen&oacute;mica de
-												disecci&oacute;n molecular.
+											<p className="mb-4">
+												Formar investigadores y docentes
+												calificados para conocer los
+												diferentes comportamientos de
+												los genes tales como:
+												organización, transmisión,
+												expresión, cómo cambian y cuál
+												es su destino en el espacio y en
+												el tiempo. Así también,
+												capacitar en el manejo de
+												distintas técnicas de
+												mejoramiento genético de
+												especies útiles de la
+												biodiversidad y la formación del
+												banco de genes. Asimismo,
+												incentivar la utilización de
+												marcadores genéticos aplicados a
+												la mejora genética, mediante las
+												nuevas tecnologías para el
+												análisis del ADN y ARN, con el
+												fin de proporcionar al
+												estudiante una vasta imagen de
+												conocimiento sobre el tema y los
+												retos de los cambios climáticos
+												que participan en las
+												variaciones genéticas.
 											</p>
-											<p>
-												<strong>DURACI&Oacute;N</strong>
-											</p>
-											<p>
-												2 a&ntilde;os, divididos en 4
-												semestres&nbsp;
-											</p>
-											<p>
-												<strong>GRADO</strong>
-											</p>
-											<p>Magister en Gen&eacute;tica</p>
-											<p>
+											<p className="mb-3">
 												<strong>
-													L&Iacute;NEAS DE
-													INVESTIGACI&Oacute;N
+													Perfil del ingresante:
 												</strong>
 											</p>
-											<p>
-												La disciplina eje del Programa
-												es la de Ciencias
-												Biol&oacute;gicas, aplicada a
-												los aspectos gen&eacute;ticos de
-												todos los seres vivos. Las
-												l&iacute;neas de
-												investigaci&oacute;n son:
+											<p className="mb-4">
+												El postulante debe poseer el
+												grado de Bachiller en Ciencias
+												Biológicas, Genética y
+												Biotecnología, Microbiología y
+												Parasitología, Medicina Humana,
+												Medicina Veterinaria, Farmacia y
+												Bioquímica o disciplinas afines
+												a la Ciencias Básicas. Además,
+												haber aprobado durante los
+												estudios de pregrado las
+												siguientes asignaturas o sus
+												equivalentes: Bioquímica,
+												Genética, Fisiología General,
+												Ecología General, Zoología,
+												Botánica, Bioestadística,
+												Física, Química y otros cursos
+												que sirvan de base para los
+												cursos obligatorios del Plan de
+												Estudios. Asimismo, competencias
+												comunicativas en inglés.
 											</p>
-											<ul>
+											<p className="mb-3">
+												<strong>
+													Perfil del egresado:
+												</strong>
+											</p>
+											<p className="mb-4">
+												El graduado estará formado como
+												investigador-científico para
+												llevar a cabo investigaciones de
+												alto nivel sobre temas de
+												genética estructural y
+												mejoramiento genético de
+												especies animales, vegetales y
+												microorganismos. Además, estará
+												capacitado para evaluar el modo
+												de realizar cultivos y crianzas
+												de alta eficiencia en ambientes
+												terrestres y acuáticos.
+												Asimismo, podrá preparar
+												protocolos para nuevas
+												tecnologías en este campo. Así
+												también, participará como
+												investigador docente en
+												universidades, centros de
+												investigación, empresas
+												biogenéticas para la producción
+												de alimentos, salud e industria.
+											</p>
+											{/* <p className="mb-3">
+												<strong>
+													¿Por qué estudiar con
+													nosotros?
+												</strong>
+											</p>
+											<p className="mb-4">
+												
+											</p>
+											<p>
+												<strong>Campo Laboral:</strong>
+											</p>
+											<ul className="pl-3">
 												<li aria-level="1">
-													Caracterizaci&oacute;n
-													gen&eacute;tica de
-													poblaciones peruanas.
 												</li>
-												<li aria-level="1">
-													Detecci&oacute;n de
-													da&ntilde;o
-													mutag&eacute;nico por
-													metodolog&iacute;as
-													gen&eacute;ticas.
-												</li>
-												<li aria-level="1">
-													Identificaci&oacute;n de
-													genes que predisponen a
-													enfermedades
-													gen&eacute;ticas en
-													poblaciones peruanas.
-												</li>
-												<li aria-level="1">
-													Aislamiento y
-													caracterizaci&oacute;n
-													gen&eacute;tico-molecular de
-													enzimas y toxinas de
-													animales ponzo&ntilde;osos
-													de origen animal, vegetal y
-													microbiano.
-												</li>
-												<li aria-level="1">
-													Transferencia de genes en
-													bacterias de ambientes
-													marinos.
-												</li>
-												<li aria-level="1">
-													Marcadores moleculares
-													utilizados en
-													Gen&eacute;tica Forense.
-												</li>
-												<li aria-level="1">
-													Gen&eacute;tica y
-													Citogen&eacute;tica de
-													insectos.
-												</li>
-												<li aria-level="1">
-													Gen&eacute;tica y
-													Citogen&eacute;tica humana y
-													de vertebrados.
-												</li>
-												<li aria-level="1">
-													Estudio de la
-													relaci&oacute;n
-													gen&eacute;tica entre
-													simbiontes y
-													par&aacute;sitos-hu&eacute;sped.
-												</li>
-												<li aria-level="1">
-													Caracterizaci&oacute;n de
-													recursos gen&eacute;ticos
-													con aplicaci&oacute;n
-													biotecnol&oacute;gica.
-												</li>
-												<li aria-level="1">
-													Gen&eacute;tica de insectos
-													transmisores de enfermedades
-													en humanos.
-												</li>
-											</ul>
+											</ul> */}
 										</div>
 										{/* <div
 											className="mb-3 tab-pane fade show active"
