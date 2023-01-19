@@ -248,33 +248,48 @@ const mencionSistematicaYEvolucion = () => {
 											</div>
 											<p className="mb-4">
 												Este programa académico busca
-												consolidar la formación de
-												profesionales e investigadores
-												de alto nivel, con capacidad de
-												buscar la ampliación del
-												conocimiento de las plantas
-												útiles y el mejoramiento de
-												cultivos de importancia
-												económica en aspectos de
-												alimentación, colorantes,
-												perfumes, medicinas, textiles.
+												formar investigadores altamente
+												calificados con capacidad de
+												generar conocimientos y
+												contribuir a la resolución de
+												problemas taxonómicos con una
+												visión integrativa de evolución,
+												sistemática, ecología y biología
+												de la conservación. Además,
+												promueve el desarrollo de
+												colecciones científicas
+												debidamente identificadas y
+												conservadas para su
+												mantenimiento a largo plazo, con
+												el fin de usarlas como pilar de
+												estudios básicos o aplicados de
+												la biodiversidad, su
+												conservación y uso sostenible.
 											</p>
 											<p className="mb-3">
 												<strong>Objetivos:</strong>
 											</p>
 											<p className="mb-4">
-												Formar personas capaces de
-												contribuir al conocimiento de la
-												flora, con el fin de resaltar
-												las especies útiles al ser
-												humano, para sentar las bases de
-												su determinación botánica:
-												establecer su origen,
-												domesticación y mejoramiento;
-												así como, el establecimiento de
-												variedades, cultivos,
-												conservación y manejo sostenible
-												de los mismos.
+												Formar investigadores de alto
+												nivel en el área de Sistemática
+												y Evolución de la fauna
+												silvestre. Proponer y ejecutar
+												proyectos de investigación
+												originales en investigación
+												básica y/o aplicada en las áreas
+												de sistemática y biología
+												evolutiva que requieran la
+												correcta identificación de
+												especies de fauna silvestre.
+												Además, gestionar óptimamente la
+												fauna silvestre en programas de
+												desarrollo sostenible, así como
+												perfeccionar profesionales para
+												favorecer el mejor
+												desenvolvimiento
+												científico-tecnológico, así como
+												elevar el nivel académico de
+												docentes universitarios.
 											</p>
 											<p className="mb-3">
 												<strong>
@@ -283,19 +298,31 @@ const mencionSistematicaYEvolucion = () => {
 											</p>
 											<p className="mb-4">
 												Dirigido a profesionales con
-												grado de bachiller en ciencias
-												biológicas o disciplinas afines,
-												otorgado por universidades
+												grado de Bachiller en Ciencias
+												Biológicas o áreas afines,
+												otorgados por universidades
 												nacionales o extranjeras que
-												aseguren una formación acorde al
-												perfil del programa. Haber
-												aprobado, durante sus estudios
-												de pregrado, los siguientes
-												cursos básicos o sus
-												equivalentes: Botánica,
-												Genética, Citología, Fisiología,
-												Bioquímica, Ecología, Física,
-												Química y Estadística.
+												aseguren una formación acorde a
+												los fines del programa. También
+												deberá aprobar el “Examen de
+												Aptitud para Estudios de
+												Posgrado” con una antigüedad no
+												mayor de dos años calendario, y
+												contar con conocimientos básicos
+												y actuales de Zoología,
+												Ecología, Genética, Fisiología,
+												Química orgánica e inorgánica,
+												Física, Matemática y
+												Estadística. Por último,
+												proponer trabajos de
+												investigación en temas
+												relacionados a la Zoología, así
+												como contar con experiencia
+												verificable en alguna línea de
+												investigación en el ámbito de la
+												Zoología o afín con las líneas
+												de investigación de la Facultad
+												de Ciencias Biológicas.
 											</p>
 											<p className="mb-3">
 												<strong>
@@ -303,35 +330,91 @@ const mencionSistematicaYEvolucion = () => {
 												</strong>
 											</p>
 											<p className="mb-4">
-												El graduado realizará
-												investigación y docencia
-												universitaria de calidad
-												aplicando metodologías
-												pedagógicas innovadoras, acordes
-												con el avance de la ciencia.
-												Liderará investigaciones básicas
-												o aplicadas en los campos
-												diversos de la botánica y
-												ciencias afines, con la
-												posibilidad de trabajar, por su
-												capacitación, en muchos campos
-												donde la disciplina se requiera,
-												con valores éticos profesionales
-												destacables.
+												El graduado aplicará
+												herramientas metodológicas
+												actuales para la investigación
+												en sistemática y biología
+												evolutiva. Diseñará y
+												desarrollará proyectos de
+												investigación en fauna, en
+												aspectos de sistemática y
+												biología evolutiva. Conformará
+												equipos multidisciplinarios en
+												áreas de investigación de su
+												especialidad desarrollando
+												proyectos con responsabilidad y
+												ética en la investigación básica
+												y aplicada, y en la docencia
+												universitaria en temas
+												relacionados con sistemática y
+												biología evolutiva.
 											</p>
-											{/* <p className="mb-3">
+											<p className="mb-3">
 												<strong>
 													¿Por qué estudiar con
 													nosotros?
 												</strong>
 											</p>
-											<p className="mb-4"></p>
+											<p className="mb-4">
+												Nuestro propósito es formar
+												investigadores altamente
+												calificados, profesores
+												universitarios de alto nivel y
+												profesionales especializados que
+												contribuyan a resolver la
+												problemática científica y
+												tecnológica del país mediante el
+												estudio de organismos animales
+												bajo múltiples enfoques.
+											</p>
 											<p>
 												<strong>Campo Laboral:</strong>
 											</p>
 											<ul className="pl-3">
-												<li aria-level="1"></li>
-											</ul> */}
+												<li aria-level="1">
+													Centros de investigación en
+													equipos multi, trans e
+													interdisciplinarios
+													nacionales y /o extranjeros
+													como el NAMRU (vectores de
+													importancia en salud
+													pública), fiscalía (biología
+													forense), etc.
+												</li>
+												<li aria-level="1">
+													Centros agrícolas,
+													ganaderos, industriales,
+													etc.
+												</li>
+												<li aria-level="1">
+													Áreas naturales protegidas
+													y/o de naturaleza privada.
+												</li>
+												<li aria-level="1">
+													Docencia e investigación en
+													instituciones de enseñanza
+													superior.
+												</li>
+												<li aria-level="1">
+													Diseño de proyectos para
+													restauración ecológica,
+													establecimiento de áreas
+													naturales protegidas, plan
+													de contención de plagas,
+													etc.
+												</li>
+												<li aria-level="1">
+													Asesorías y consultorías de
+													alto nivel académico con
+													fines diversos.
+												</li>
+												<li aria-level="1">
+													Evaluación y gestión del
+													impacto ambiental en
+													proyectos de desarrollo
+													económico.
+												</li>
+											</ul>
 										</div>
 										{/* <div
 											className="mb-3 tab-pane fade"

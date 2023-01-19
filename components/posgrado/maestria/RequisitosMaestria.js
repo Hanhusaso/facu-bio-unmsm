@@ -29,17 +29,23 @@ const RequisitosMaestria = () => {
 			</p>
 			<ol className="pl-3">
 				<li className="mb-2">
-					<span className="color-green-bright font-weight-bold">
+					<a
+						className="font-weight-bold"
+						href="https://posgrado-unmsm.s3.sa-east-1.amazonaws.com/resumen_hv_postulante_9c4d207cfe.pdf?updated_at=2022-06-13T21:07:58.885Z"
+						target="_blank">
 						Resumen de la hoja de vida
-					</span>{' '}
+					</a>{' '}
 					del postulante (documentado, foliado y ordenado de acuerdo a
 					los rubros del formato).
 				</li>
 				<li className="mb-2">
-					<span className="color-green-bright font-weight-bold">
+					<a
+						className="font-weight-bold"
+						href="https://www.gob.pe/488-obtener-constancia-de-inscripcion-de-diplomas"
+						target="_blank">
 						Constancia de inscripción en línea del grado de
 						Bachiller emitido por SUNEDU
-					</span>{' '}
+					</a>{' '}
 					o la copia del diploma de grado de Bachiller fedateado por
 					la universidad de procedencia (*).
 				</li>
@@ -48,8 +54,15 @@ const RequisitosMaestria = () => {
 					extranjería o pasaporte).
 				</li>
 				<li className="mb-2">
-					Recibo de pago por derecho de inscripción efectuado en el
-					Banco de Crédito del Perú o en el Banco de la Nación.
+					Recibo de{' '}
+					<a
+						className="font-weight-bold"
+						href="https://posgrado.unmsm.edu.pe/pago-inscripcion/"
+						target="_blank">
+						pago por derecho de inscripción
+					</a>{' '}
+					efectuado en el Banco de Crédito del Perú o en el Banco de
+					la Nación.
 				</li>
 				<li className="mb-2">
 					Otro documento que la Unidad de Posgrado considere con

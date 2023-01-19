@@ -21,7 +21,7 @@ const CuadroVacantesDoctorado = () => {
 					<tbody>
 						<tr>
 							<td>Ciencias Biológicas</td>
-							<td className="text-center">10</td>
+							<td className="text-center">12</td>
 						</tr>
 					</tbody>
 				</table>

@@ -247,34 +247,41 @@ const mencionEcologiaYConservacion = () => {
 												</p>
 											</div>
 											<p className="mb-4">
-												Este programa académico busca
-												consolidar la formación de
-												profesionales e investigadores
-												de alto nivel, con capacidad de
-												buscar la ampliación del
-												conocimiento de las plantas
-												útiles y el mejoramiento de
-												cultivos de importancia
-												económica en aspectos de
-												alimentación, colorantes,
-												perfumes, medicinas, textiles.
+												Este programa forma
+												profesionales altamente
+												especializados, con capacidad de
+												generar información que
+												contribuya a la conservación a
+												largo plazo tanto a los
+												ecosistemas como a las
+												poblaciones animales en sus
+												interacciones de las que forman
+												parte. Asimismo, busca apoyo en
+												la óptima gestión de la fauna
+												silvestre en programas de
+												desarrollo sostenible.
 											</p>
 											<p className="mb-3">
 												<strong>Objetivos:</strong>
 											</p>
 											<p className="mb-4">
-												Formar personas capaces de
-												contribuir al conocimiento de la
-												flora, con el fin de resaltar
-												las especies útiles al ser
-												humano, para sentar las bases de
-												su determinación botánica:
-												establecer su origen,
-												domesticación y mejoramiento;
-												así como, el establecimiento de
-												variedades, cultivos,
-												conservación y manejo sostenible
-												de los mismos.
+												Formar investigadores de alto
+												nivel en el área de Ecología y
+												Conservación de la fauna
+												silvestre. Proponer y ejecutar
+												proyectos de investigación
+												originales en investigación
+												básica y/o aplicada en las áreas
+												de ecología y conservación de
+												fauna silvestre. Gestionar
+												óptimamente la fauna silvestre
+												en programas de desarrollo
+												sostenible, así como la
+												información que coadyuve a la
+												conservación a largo plazo de
+												los ecosistemas, sus poblaciones
+												animales y las interacciones de
+												las que forman parte.
 											</p>
 											<p className="mb-3">
 												<strong>
@@ -283,19 +290,31 @@ const mencionEcologiaYConservacion = () => {
 											</p>
 											<p className="mb-4">
 												Dirigido a profesionales con
-												grado de bachiller en ciencias
-												biológicas o disciplinas afines,
-												otorgado por universidades
+												grado de bachiller en Ciencias
+												Biológicas o áreas afines,
+												otorgados por universidades
 												nacionales o extranjeras que
-												aseguren una formación acorde al
-												perfil del programa. Haber
-												aprobado, durante sus estudios
-												de pregrado, los siguientes
-												cursos básicos o sus
-												equivalentes: Botánica,
-												Genética, Citología, Fisiología,
-												Bioquímica, Ecología, Física,
-												Química y Estadística.
+												aseguren una formación acorde a
+												los fines del programa. También
+												deberá aprobar el “Examen de
+												Aptitud para Estudios de
+												Posgrado” con una antigüedad no
+												mayor de dos años calendario, y
+												contar con conocimientos básicos
+												y actuales de Zoología,
+												Ecología, Genética, Fisiología,
+												Química orgánica e inorgánica,
+												Física, Matemática y
+												Estadística. Por último,
+												proponer trabajos de
+												investigación en temas
+												relacionados a la Zoología, así
+												como contar con experiencia
+												verificable en alguna línea de
+												investigación en el ámbito de la
+												Zoología o afín con las líneas
+												de investigación de la Facultad
+												de Ciencias Biológicas.
 											</p>
 											<p className="mb-3">
 												<strong>
@@ -303,35 +322,95 @@ const mencionEcologiaYConservacion = () => {
 												</strong>
 											</p>
 											<p className="mb-4">
-												El graduado realizará
-												investigación y docencia
-												universitaria de calidad
-												aplicando metodologías
-												pedagógicas innovadoras, acordes
-												con el avance de la ciencia.
-												Liderará investigaciones básicas
-												o aplicadas en los campos
-												diversos de la botánica y
-												ciencias afines, con la
-												posibilidad de trabajar, por su
-												capacitación, en muchos campos
-												donde la disciplina se requiera,
-												con valores éticos profesionales
-												destacables.
+												El graduado aplicará
+												herramientas metodológicas
+												actuales para la investigación
+												en ecología y conservación.
+												Diseñará y desarrollará
+												proyectos de investigación en
+												fauna, en aspectos de ecología y
+												conservación. Difundirá el
+												resultado de investigaciones
+												científicas en reuniones,
+												revistas especializadas o grupos
+												de profesionales en la gestión
+												de la biodiversidad. Conformará
+												en equipos multidisciplinarios
+												en áreas de investigación de su
+												especialidad desarrollando
+												proyectos con responsabilidad y
+												ética en la investigación básica
+												y aplicada, y en la docencia
+												universitaria en temas
+												relacionados con ecología y
+												conservación.
 											</p>
-											{/* <p className="mb-3">
+											<p className="mb-3">
 												<strong>
 													¿Por qué estudiar con
 													nosotros?
 												</strong>
 											</p>
-											<p className="mb-4"></p>
+											<p className="mb-4">
+												Nuestro propósito es formar
+												investigadores altamente
+												calificados, profesores
+												universitarios de alto nivel y
+												profesionales especializados que
+												contribuyan a resolver la
+												problemática científica y
+												tecnológica del país mediante el
+												estudio de organismos animales
+												bajo múltiples enfoques.
+											</p>
 											<p>
 												<strong>Campo Laboral:</strong>
 											</p>
 											<ul className="pl-3">
-												<li aria-level="1"></li>
-											</ul> */}
+												<li aria-level="1">
+													Centros de investigación en
+													equipos multi, trans e
+													interdisciplinarios
+													nacionales y /o extranjeros
+													como el NAMRU (vectores de
+													importancia en salud
+													pública), fiscalía (biología
+													forense), etc.
+												</li>
+												<li aria-level="1">
+													Centros agrícolas,
+													ganaderos, industriales,
+													etc.
+												</li>
+												<li aria-level="1">
+													Áreas naturales protegidas
+													y/o de naturaleza privada.
+												</li>
+												<li aria-level="1">
+													Docencia e investigación en
+													instituciones de enseñanza
+													superior.
+												</li>
+												<li aria-level="1">
+													Diseño de proyectos para
+													restauración ecológica,
+													establecimiento de áreas
+													naturales protegidas, plan
+													de contención de plagas,
+													etc.
+												</li>
+												<li aria-level="1">
+													Asesorías y consultorías de
+													alto nivel académico con
+													fines diversos.
+												</li>
+												<li aria-level="1">
+													Evaluación y gestión del
+													impacto ambiental en
+													proyectos de desarrollo
+													económico.
+												</li>
+											</ul>
 										</div>
 										{/* <div
 											className="mb-3 tab-pane fade"

@@ -1,5 +1,6 @@
 import React from 'react';
 import * as Icon from '../../Icons';
+import Link from 'next/link';
 
 const GuiaProcesoAdmisionDoctorado = () => {
 	return (
@@ -84,9 +85,12 @@ const GuiaProcesoAdmisionDoctorado = () => {
 					<div className="wrapper-text-paso">
 						<p className="font-weight-bold">Paso 5:</p>
 						<p>
-							<span className="font-weight-bold">
+							<a
+								className="font-weight-bold"
+								href="https://posgrado.unmsm.edu.pe/pago-inscripcion/"
+								target="_blank">
 								Realiza el pago de inscripción
-							</span>{' '}
+							</a>{' '}
 							en el Banco de Crédito del Perú o en el Banco de la
 							Nación, indicando el n.° de documento de identidad
 							del postulante (DNI, carné de extranjería o
@@ -106,7 +110,15 @@ const GuiaProcesoAdmisionDoctorado = () => {
 							de San Marcos, deberás{' '}
 							<span className="font-weight-bold">
 								habilitar tu comprobante de pago en la
-								plataforma virtual y registrar sus datos.
+							</span>{' '}
+							<a
+								className="font-weight-bold"
+								href="https://posgrado.unmsm.edu.pe/admision/inscripcion/"
+								target="_blank">
+								plataforma virtual
+							</a>{' '}
+							<span className="font-weight-bold">
+								y registrar sus datos.
 							</span>{' '}
 							Una vez que finalices el registro de datos, se
 							generará tu código de postulante.
@@ -180,9 +192,11 @@ const GuiaProcesoAdmisionDoctorado = () => {
 					<Icon.globoIcon className="mr-2" />
 				</span>
 				<span className="font-weight-bold">Sitio web:</span>{' '}
-				<a href="https://posgrado.unmsm.edu.pe/" target="_blank">
-					https://posgrado.unmsm.edu.pe/
-				</a>
+				<Link href="/formacion-academica/posgrado">
+					<a>
+						https://biologia.unmsm.edu.pe/formacion-academica/posgrado
+					</a>
+				</Link>
 			</p>
 			<p>
 				<span>

@@ -24,61 +24,61 @@ const CuadroVacantesMaestria = () => {
 								Botánica Tropical con mención en Taxonomía y
 								Sistemática Evolutiva
 							</td>
-							<td className="text-center">12</td>
+							<td className="text-center">14</td>
 						</tr>
 						<tr>
 							<td>
 								Botánica Tropical con mención en Botánica
 								Económica
 							</td>
-							<td className="text-center">12</td>
+							<td className="text-center">14</td>
 						</tr>
 						<tr>
 							<td>
 								Botánica Tropical con mención en Etnobotánica
 							</td>
-							<td className="text-center">12</td>
+							<td className="text-center">14</td>
 						</tr>
 						<tr>
 							<td>
 								Ecosistemas y recursos acuáticos con mención en
 								ecosistemas acuático
 							</td>
-							<td className="text-center">10</td>
+							<td className="text-center">12</td>
 						</tr>
 						<tr>
 							<td>
 								Ecosistemas y recursos acuáticos con mención en
 								Evaluación y Manejo de Recursos Pesqueros
 							</td>
-							<td className="text-center">10</td>
+							<td className="text-center">12</td>
 						</tr>
 						<tr>
 							<td>
 								Ecosistemas y recursos acuáticos con mención en
 								Acuicultura
 							</td>
-							<td className="text-center">10</td>
+							<td className="text-center">12</td>
 						</tr>
 						<tr>
 							<td>
 								Zoología con mención en Sistemática y Evolución
 							</td>
-							<td className="text-center">10</td>
+							<td className="text-center">12</td>
 						</tr>
 						<tr>
 							<td>
 								Zoología con mención en Ecología y Conservación
 							</td>
-							<td className="text-center">10</td>
+							<td className="text-center">12</td>
 						</tr>
 						<tr>
 							<td>Biología molecular</td>
-							<td className="text-center">27</td>
+							<td className="text-center">29</td>
 						</tr>
 						<tr>
 							<td>Biodiversidad y gestión en ecosistemas</td>
-							<td className="text-center">15</td>
+							<td className="text-center">17</td>
 						</tr>
 					</tbody>
 				</table>

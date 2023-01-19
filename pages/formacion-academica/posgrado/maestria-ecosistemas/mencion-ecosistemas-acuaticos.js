@@ -250,27 +250,28 @@ const mencionEcosistemasAcuaticos = () => {
 												</p>
 											</div>
 											<p className="mb-4">
-												Este programa académico busca
-												consolidar la formación de
-												profesionales e investigadores
-												de alto nivel, con capacidad de
-												realizar inventarios o catálogos
-												para clasificar el conocimiento
-												de la vegetación y flora como
-												especie, así como la
-												distribución ecológica para su
-												conservación y manejo.
+												Este programa académico tiene
+												como finalidad formar
+												investigadores de alto nivel que
+												aborden las diferentes
+												problemáticas de nuestros
+												ecosistemas marinos y de aguas
+												continentales, conducentes a su
+												aprovechamiento de manera
+												sostenible.
 											</p>
 											<p className="mb-3">
 												<strong>Objetivos:</strong>
 											</p>
 											<p className="mb-4">
-												Formar personas capaces de
-												contribuir al conocimiento de la
-												flora para sentar las bases de
-												su determinación y verificación
-												botánica; así como a su
-												distribución y conservación.
+												Proponer y ejecutar proyectos de
+												investigación científica
+												originales aplicados a
+												ecosistemas acuáticos. Mejorar
+												el nivel académico, técnico y
+												científico de investigadores
+												para su mejor desenvolvimiento
+												científico-tecnológico.
 											</p>
 											<p className="mb-3">
 												<strong>
@@ -279,19 +280,28 @@ const mencionEcosistemasAcuaticos = () => {
 											</p>
 											<p className="mb-4">
 												Dirigido a profesionales con
-												grado de bachiller en ciencias
-												biológicas o disciplinas afines,
-												otorgado por universidades
+												grado de bachiller en Ciencias
+												Biológicas o áreas afines,
+												otorgados por universidades
 												nacionales o extranjeras que
-												aseguren una formación acorde al
-												perfil del programa. Haber
-												aprobado, durante sus estudios
-												de pregrado, los siguientes
-												cursos básicos o sus
-												equivalentes: Botánica,
-												Genética, Citología, Fisiología,
-												Bioquímica, Ecología, Física,
-												Química y Estadística.
+												aseguren una formación acorde a
+												los fines del programa. Haber
+												aprobado el “Examen de Aptitud
+												para Estudios de Posgrado” con
+												una antigüedad no mayor de dos
+												años calendario. También tener
+												conocimiento de conceptos
+												básicos y actuales de Zoología,
+												Hidrobiología, Ecología, Física,
+												Química y analizar información
+												científica en idiomas distintos
+												al castellano. Por último, debe
+												proponer trabajos de
+												investigación en temas
+												relacionados a los ecosistemas
+												acuáticos y responder de manera
+												proactiva ante situaciones
+												complejas.
 											</p>
 											<p className="mb-3">
 												<strong>
@@ -299,35 +309,85 @@ const mencionEcosistemasAcuaticos = () => {
 												</strong>
 											</p>
 											<p className="mb-4">
-												El graduado realizará
-												investigación y docencia
-												universitaria de calidad
-												aplicando metodologías
-												pedagógicas innovadoras, acordes
-												con el avance de la ciencia.
-												Liderará investigaciones básicas
-												o aplicadas en los campos
-												diversos de la botánica y
-												ciencias afines, con la
-												posibilidad de trabajar, por su
-												capacitación, en muchos campos
-												donde la disciplina se requiera,
-												con valores éticos profesionales
-												destacables.
+												El graduado desarrollará una
+												investigación orientada al
+												estudio de los ecosistemas
+												marinos y continentales.
+												Dirigirá actividades de
+												investigación científica sobre
+												conservación y manejo de los
+												recursos con enfoque
+												ecosistémico, interactuando
+												eficientemente en estudios
+												multidisciplinarios e
+												interdisciplinarios. Generará
+												conocimiento a través de
+												publicaciones científicas y/o
+												herramientas de gestión.
 											</p>
-											{/* <p className="mb-3">
+											<p className="mb-3">
 												<strong>
 													¿Por qué estudiar con
 													nosotros?
 												</strong>
 											</p>
-											<p className="mb-4"></p>
+											<p className="mb-4">
+												En el Perú se realizan numerosas
+												actividades vinculadas a sus
+												ecosistemas acuáticos y a sus
+												recursos acuáticos vivos, por
+												ello este programa especializado
+												en Ecosistemas Acuáticos aborda
+												temas transversales asociados al
+												aprovechamiento de recursos
+												marinos vivos, marinos y
+												continentales; además incide en
+												el estudio y conservación de
+												ecosistemas acuáticos y su
+												biodiversidad en las diferentes
+												regiones del país. La malla
+												curricular del programa responde
+												eficientemente a las necesidades
+												sociales que requieren atención
+												sobre temas cruciales a nivel
+												nacional.
+											</p>
 											<p>
 												<strong>Campo Laboral:</strong>
 											</p>
 											<ul className="pl-3">
-												<li aria-level="1"></li>
-											</ul> */}
+												<li aria-level="1">
+													Entidades Nacionales y
+													Privadas Acuícolas.
+												</li>
+												<li aria-level="1">
+													Institutos Nacionales de
+													Investigación Científica
+													(IMARPE, INGEMMET, IIAP).
+												</li>
+												<li aria-level="1">
+													Entidades Nacionales de
+													Producción, Administración y
+													Control (PRODUCE, MINAM,
+													ITP, OEFA, SENACE, SANIPES,
+													SERNANP).
+												</li>
+												<li aria-level="1">
+													Entidades Privadas como ONG
+													de investigación.
+												</li>
+												<li aria-level="1">
+													Entidades Nacionales
+													Municipales (Oficinas de
+													Control y Administración
+													Ambiental).
+												</li>
+												<li aria-level="1">
+													Universidades Nacionales y
+													Privadas (Docencia e
+													Investigación).
+												</li>
+											</ul>
 										</div>
 										{/* <div
 											className="mb-3 tab-pane fade"

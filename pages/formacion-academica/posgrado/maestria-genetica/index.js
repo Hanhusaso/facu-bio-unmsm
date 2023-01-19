@@ -33,6 +33,10 @@ const index = () => {
 		})();
 	}, []);
 
+	const masinfo = () => {
+		$('#v-pills-admision-tab').tab('show');
+	};
+
 	const Contact = () => {
 		return (
 			<div className="contacto-wrapper mb-3">
@@ -105,12 +109,26 @@ const index = () => {
 						</Container>
 					</div>
 					{/* IMAGE */}
-					<div className="mb-4">
+					<div className="mb-4 position-relative">
 						<img
 							className="w-100"
 							src="/assets/img/posgrado/maestria genetica/banner-maestria-genetica-unmsm.png"
 							alt=""
 						/>
+						<div className="box-no-proceso-admision">
+							<div>
+								<p>
+									Este programa no entra al proceso de
+									admisión 2023-I
+								</p>
+								<a
+									href="#v-pills-tabContent"
+									onClick={masinfo}
+									className="btn-green-bright">
+									Más información
+								</a>
+							</div>
+						</div>
 					</div>
 
 					<div>
@@ -544,12 +562,12 @@ const index = () => {
 													title="Cronograma">
 													<CronogramaMaestria />
 												</Tab>
-												<Tab
+												{/* <Tab
 													className="pt-3"
 													eventKey="cuadro"
 													title="Cuadro de Vacantes">
 													<CuadroVacantesMaestria />
-												</Tab>
+												</Tab> */}
 												<Tab
 													className="pt-3"
 													eventKey="requisitos"

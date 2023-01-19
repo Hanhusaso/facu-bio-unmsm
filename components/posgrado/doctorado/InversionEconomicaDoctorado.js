@@ -1,5 +1,6 @@
 import React from 'react';
 import * as AiIcons from 'react-icons/ai';
+import * as Icon from '../../Icons';
 
 const InversionEconomicaDoctorado = () => {
 	return (
@@ -146,6 +147,24 @@ const InversionEconomicaDoctorado = () => {
 						sujetos a variaciones.
 					</p>
 				</div>
+			</div>
+
+			<div>
+				<p className="font-weight-bold">Más información</p>
+				<p>
+					<span>
+						<Icon.CorreoIcon className="mr-2" />
+					</span>
+					<span className="font-weight-bold">Correo:</span>{' '}
+					upg.biologia@unmsm.edu.pe
+				</p>
+				<p>
+					<span>
+						<Icon.telefonoIcon className="mr-2" />
+					</span>
+					<span className="font-weight-bold">Teléfono: </span> Escuela
+					de 990 090 886 (Sra. Dora Aguilar)
+				</p>
 			</div>
 		</div>
 	);
