@@ -184,8 +184,8 @@ const posgrado = () => {
 										</Link> */}
 									</div>
 									{/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
-									<div className="d-none d-md-block">
-										<p className="mb-2">
+									<div>
+										<p className="mb-2 d-none d-md-block">
 											La Maestría en Botánica Tropical de
 											la Facultad de Ciencias Biológicas
 											de la Universidad Nacional Mayor de
@@ -263,8 +263,8 @@ const posgrado = () => {
 										</Link> */}
 									</div>
 									{/* <div className="title-green text-center">E.P Microbiología y Parasitología</div> */}
-									<div className="d-none d-md-block">
-										<p className="mb-2">
+									<div>
+										<p className="mb-2 d-none d-md-block">
 											La Maestría en Ecosistemas y
 											Recursos Acuáticos se desarrolla con
 											el fin de formar capital humano que
@@ -318,8 +318,8 @@ const posgrado = () => {
 										</Link> */}
 									</div>
 									{/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
-									<div className="d-none d-md-block">
-										<p className="mb-2">
+									<div>
+										<p className="mb-2 d-none d-md-block">
 											Se busca formar investigadores de
 											alto nivel, capaces de elaborar y
 											ejecutar proyectos de investigación
