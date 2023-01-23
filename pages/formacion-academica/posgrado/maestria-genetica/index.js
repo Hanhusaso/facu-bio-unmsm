@@ -118,15 +118,16 @@ const index = () => {
 						<div className="box-no-proceso-admision">
 							<div>
 								<p>
-									Este programa no entra al proceso de
-									admisión 2023-I
+									Este programa no se encuentra en el actual
+									proceso de admisión 2023-I.
 								</p>
-								<a
+								{/* <a
 									href="#v-pills-tabContent"
 									onClick={masinfo}
-									className="btn-green-bright">
+									className="btn-green-bright"
+								>
 									Más información
-								</a>
+								</a> */}
 							</div>
 						</div>
 					</div>
@@ -141,7 +142,8 @@ const index = () => {
 											className="nav flex-column tabs-wrapper nav-pills"
 											id="v-pills-tab"
 											role="tablist"
-											aria-orientation="vertical">
+											aria-orientation="vertical"
+										>
 											<a
 												className="tab d-flex active"
 												id="v-pills-presentacion-tab"
@@ -149,7 +151,8 @@ const index = () => {
 												href="#v-pills-presentacion"
 												role="tab"
 												aria-controls="v-pills-presentacion"
-												aria-selected="true">
+												aria-selected="true"
+											>
 												<div>
 													<Icon.presentacionIcon className="mr-3" />
 												</div>
@@ -178,7 +181,8 @@ const index = () => {
 												href="#v-pills-admision"
 												role="tab"
 												aria-controls="v-pills-admision"
-												aria-selected="false">
+												aria-selected="false"
+											>
 												<div>
 													<Icon.admisionIcon className="mr-3" />
 												</div>
@@ -191,7 +195,8 @@ const index = () => {
 												href="#v-pills-docente"
 												role="tab"
 												aria-controls="v-pills-docente"
-												aria-selected="false">
+												aria-selected="false"
+											>
 												<div>
 													<Icon.planaDocenteIcon className="mr-3" />
 												</div>
@@ -206,7 +211,7 @@ const index = () => {
 												</div>
 												<span>Malla curricular</span>
 											</a> */}
-											<a
+											{/* <a
 												className="tab d-flex"
 												id="v-pills-inversion-tab"
 												data-toggle="pill"
@@ -218,7 +223,7 @@ const index = () => {
 													<Icon.inversionEconomicaIcon className="mr-3" />
 												</div>
 												<span>Inversión económica</span>
-											</a>
+											</a> */}
 										</div>
 									</div>
 									{width >= 768 && (
@@ -230,12 +235,14 @@ const index = () => {
 								<Col md="7" lg="8">
 									<div
 										className="mb-3 tab-content"
-										id="v-pills-tabContent">
+										id="v-pills-tabContent"
+									>
 										<div
 											className="mb-3 tab-pane fade show active"
 											id="v-pills-presentacion"
 											role="tabpanel"
-											aria-labelledby="v-pills-presentacion-tab">
+											aria-labelledby="v-pills-presentacion-tab"
+										>
 											<div className="info-box mb-4">
 												<p className="mb-3">
 													<span>
@@ -546,58 +553,72 @@ const index = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-admision"
 											role="tabpanel"
-											aria-labelledby="v-pills-admision-tab">
-											<Tabs
+											aria-labelledby="v-pills-admision-tab"
+										>
+											<b>
+												Este programa no se encuentra en
+												el actual proceso de admisión
+												2023-I.
+											</b>
+											{/* <Tabs
 												defaultActiveKey="guia"
-												id="admision-tab">
+												id="admision-tab"
+											>
 												<Tab
 													className="pt-3"
 													eventKey="guia"
-													title="Guía de proceso de Admisión">
+													title="Guía de proceso de Admisión"
+												>
 													<GuiaProcesoAdmisionMaestria />
 												</Tab>
 												<Tab
 													className="pt-3"
 													eventKey="cronograma"
-													title="Cronograma">
+													title="Cronograma"
+												>
 													<CronogramaMaestria />
 												</Tab>
-												{/* <Tab
+												<Tab
 													className="pt-3"
 													eventKey="cuadro"
 													title="Cuadro de Vacantes">
 													<CuadroVacantesMaestria />
-												</Tab> */}
+												</Tab> 
 												<Tab
 													className="pt-3"
 													eventKey="requisitos"
-													title="Requisitos">
+													title="Requisitos"
+												>
 													<RequisitosMaestria />
 												</Tab>
 												<Tab
 													className="pt-3"
 													eventKey="costos"
-													title="Costos de Admisión">
+													title="Costos de Admisión"
+												>
 													<CostosAdmisionMaestria />
 												</Tab>
 												<Tab
 													className="pt-3"
 													eventKey="proceso"
-													title="Proceso de evaluación">
+													title="Proceso de evaluación"
+												>
 													<ProcesoEvaluacionMaestria />
 												</Tab>
-											</Tabs>
+											</Tabs> */}
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
 											id="v-pills-docente"
 											role="tabpanel"
-											aria-labelledby="v-pills-docente-tab">
+											aria-labelledby="v-pills-docente-tab"
+										>
 											<div className="divisor mt-0"></div>
 											{docentes.map((docente, index) => (
 												<div
 													key={index}
-													className="block-divider mb-3 pb-2 position-relative">
+													className="block-divider mb-3 pb-2 position-relative"
+												>
 													<h3 className="title">
 														{docente.nombre}
 													</h3>
@@ -618,7 +639,8 @@ const index = () => {
 																docente.link_hoja_vida
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-3">
+															className="d-inline-block color-inherit mr-3"
+														>
 															<img
 																className="mr-2"
 																src="/assets/img/iconos/pdf.svg"
@@ -668,7 +690,8 @@ const index = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-inversion"
 											role="tabpanel"
-											aria-labelledby="v-pills-inversion-tab">
+											aria-labelledby="v-pills-inversion-tab"
+										>
 											<InversionEconomicaMaestria />
 										</div>
 									</div>
