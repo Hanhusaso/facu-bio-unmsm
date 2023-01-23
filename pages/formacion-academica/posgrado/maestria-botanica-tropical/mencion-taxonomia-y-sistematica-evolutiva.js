@@ -127,7 +127,8 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 											className="nav flex-column tabs-wrapper nav-pills"
 											id="v-pills-tab"
 											role="tablist"
-											aria-orientation="vertical">
+											aria-orientation="vertical"
+										>
 											<a
 												className="tab d-flex active"
 												id="v-pills-presentacion-tab"
@@ -135,7 +136,8 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 												href="#v-pills-presentacion"
 												role="tab"
 												aria-controls="v-pills-presentacion"
-												aria-selected="true">
+												aria-selected="true"
+											>
 												<div>
 													<Icon.presentacionIcon className="mr-3" />
 												</div>
@@ -164,7 +166,8 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 												href="#v-pills-admision"
 												role="tab"
 												aria-controls="v-pills-admision"
-												aria-selected="false">
+												aria-selected="false"
+											>
 												<div>
 													<Icon.admisionIcon className="mr-3" />
 												</div>
@@ -177,7 +180,8 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 												href="#v-pills-docente"
 												role="tab"
 												aria-controls="v-pills-docente"
-												aria-selected="false">
+												aria-selected="false"
+											>
 												<div>
 													<Icon.planaDocenteIcon className="mr-3" />
 												</div>
@@ -199,7 +203,8 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 												href="#v-pills-inversion"
 												role="tab"
 												aria-controls="v-pills-inversion"
-												aria-selected="false">
+												aria-selected="false"
+											>
 												<div>
 													<Icon.inversionEconomicaIcon className="mr-3" />
 												</div>
@@ -216,12 +221,14 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 								<Col md="7" lg="8">
 									<div
 										className="mb-3 tab-content"
-										id="v-pills-tabContent">
+										id="v-pills-tabContent"
+									>
 										<div
 											className="mb-3 tab-pane fade show active"
 											id="v-pills-presentacion"
 											role="tabpanel"
-											aria-labelledby="v-pills-presentacion-tab">
+											aria-labelledby="v-pills-presentacion-tab"
+										>
 											<div className="info-box mb-4">
 												<p className="mb-3">
 													<span>
@@ -469,44 +476,55 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-admision"
 											role="tabpanel"
-											aria-labelledby="v-pills-admision-tab">
+											aria-labelledby="v-pills-admision-tab"
+										>
 											<Tabs
 												defaultActiveKey="guia"
-												id="admision-tab">
+												id="admision-tab"
+											>
 												<Tab
 													className="pt-3"
 													eventKey="guia"
-													title="Guía de proceso de Admisión">
+													title="Guía de proceso de Admisión"
+												>
 													<GuiaProcesoAdmisionMaestria />
 												</Tab>
 												<Tab
 													className="pt-3"
 													eventKey="cronograma"
-													title="Cronograma">
+													title="Cronograma"
+												>
 													<CronogramaMaestria />
 												</Tab>
 												<Tab
 													className="pt-3"
 													eventKey="cuadro"
-													title="Cuadro de Vacantes">
-													<CuadroVacantesMaestria />
+													title="Cuadro de Vacantes"
+												>
+													<CuadroVacantesMaestria
+														programaName="Botánica Tropical con mención en Taxonomía y Sistemática Evolutiva"
+														vacantesNumber={14}
+													/>
 												</Tab>
 												<Tab
 													className="pt-3"
 													eventKey="requisitos"
-													title="Requisitos">
+													title="Requisitos"
+												>
 													<RequisitosMaestria />
 												</Tab>
 												<Tab
 													className="pt-3"
 													eventKey="costos"
-													title="Costos de Admisión">
+													title="Costos de Admisión"
+												>
 													<CostosAdmisionMaestria />
 												</Tab>
 												<Tab
 													className="pt-3"
 													eventKey="proceso"
-													title="Proceso de evaluación">
+													title="Proceso de evaluación"
+												>
 													<ProcesoEvaluacionMaestria />
 												</Tab>
 											</Tabs>
@@ -515,12 +533,14 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-docente"
 											role="tabpanel"
-											aria-labelledby="v-pills-docente-tab">
+											aria-labelledby="v-pills-docente-tab"
+										>
 											<div className="divisor mt-0"></div>
 											{docentes.map((docente, index) => (
 												<div
 													key={index}
-													className="block-divider mb-3 pb-2 position-relative">
+													className="block-divider mb-3 pb-2 position-relative"
+												>
 													<h3 className="title">
 														{docente.nombre}
 													</h3>
@@ -541,7 +561,8 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 																docente.link_hoja_vida
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-3">
+															className="d-inline-block color-inherit mr-3"
+														>
 															<img
 																className="mr-2"
 																src="/assets/img/iconos/pdf.svg"
@@ -591,7 +612,8 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 											className="mb-3 tab-pane fade"
 											id="v-pills-inversion"
 											role="tabpanel"
-											aria-labelledby="v-pills-inversion-tab">
+											aria-labelledby="v-pills-inversion-tab"
+										>
 											<InversionEconomicaMaestria />
 										</div>
 									</div>

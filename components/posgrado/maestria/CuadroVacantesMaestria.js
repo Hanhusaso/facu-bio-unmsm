@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CuadroVacantesMaestria = () => {
+const CuadroVacantesMaestria = ({ programaName = '', vacantesNumber = 0 }) => {
 	return (
 		<div>
 			<p className="mb-4">
@@ -14,19 +14,16 @@ const CuadroVacantesMaestria = () => {
 				<table className="striped m-auto table-cuadro-vacante">
 					<thead>
 						<tr>
-							<th className="text-center">Programas</th>
-							<th className="text-center">Vacantes</th>
+							<th className="text-center">Nombre del programa</th>
+							<th className="text-center">Número de Vacantes</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>
-								Botánica Tropical con mención en Taxonomía y
-								Sistemática Evolutiva
-							</td>
-							<td className="text-center">14</td>
+							<td>{programaName}</td>
+							<td className="text-center">{vacantesNumber}</td>
 						</tr>
-						<tr>
+						{/* <tr>
 							<td>
 								Botánica Tropical con mención en Botánica
 								Económica
@@ -79,7 +76,7 @@ const CuadroVacantesMaestria = () => {
 						<tr>
 							<td>Biodiversidad y gestión en ecosistemas</td>
 							<td className="text-center">17</td>
-						</tr>
+						</tr> */}
 					</tbody>
 				</table>
 			</div>

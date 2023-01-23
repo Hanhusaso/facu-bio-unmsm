@@ -72,7 +72,8 @@ const GuiaProcesoAdmisionMaestria = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/documentos/resumen-hv-postulante.pdf"
-								target="_blank">
+								target="_blank"
+							>
 								hoja de vida
 							</a>
 						</p>
@@ -88,7 +89,8 @@ const GuiaProcesoAdmisionMaestria = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/pago-inscripcion/"
-								target="_blank">
+								target="_blank"
+							>
 								Realiza el pago de inscripción
 							</a>{' '}
 							en el Banco de Crédito del Perú o en el Banco de la
@@ -114,7 +116,8 @@ const GuiaProcesoAdmisionMaestria = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/admision/inscripcion/"
-								target="_blank">
+								target="_blank"
+							>
 								plataforma virtual
 							</a>{' '}
 							<span className="font-weight-bold">
@@ -187,7 +190,7 @@ const GuiaProcesoAdmisionMaestria = () => {
 					cualquier pago, para que figure en el sistema.
 				</p>
 			</div>
-			<p className="font-weight-bold">Más información</p>
+			{/* <p className="font-weight-bold">Más información</p>
 			<p>
 				<span>
 					<Icon.globoIcon className="mr-2" />
@@ -198,7 +201,7 @@ const GuiaProcesoAdmisionMaestria = () => {
 						https://biologia.unmsm.edu.pe/formacion-academica/posgrado
 					</a>
 				</Link>
-			</p>
+			</p> */}
 			<p>
 				<span>
 					<Icon.CorreoIcon className="mr-2" />
