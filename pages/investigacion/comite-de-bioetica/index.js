@@ -337,14 +337,19 @@ const antonioRaimondi = () => {
 											</li>
 											<li>
 												Formato 1 para evaluación del
-												proyecto (En versión editable).
+												proyecto (en versión editable).
 											</li>
 											<li>
 												Documentos sustentatorios (RR de
-												aprobación, Dictamen, Link de
-												Convocatoria, etc.).
+												aprobación, dictamen, link de
+												convocatoria, etc.).
 											</li>
-											<li>Proyecto completo</li>
+											<li>Proyecto completo.</li>
+											<li>
+												Presentar recibo. Concepto de
+												pago: 101-337, Banco Pichincha
+												(ver tarifario).
+											</li>
 										</ol>
 										<p>
 											<a
@@ -399,9 +404,9 @@ const antonioRaimondi = () => {
 										</p>
 										<p>
 											<a
-												href="https://drive.google.com/file/d/1JSEzKyCgRC4OviK1VBJZEtxf0TfEDEVv/view?usp=sharing"
+												href="https://drive.google.com/file/d/1QtOilSArUbPCsNe2KLFcgn-n5X5NFLp6/view?usp=share_link"
 												target="_blank">
-												Cronograma de reuniones 2022
+												Cronograma de reuniones 2023
 											</a>
 										</p>
 									</div>
