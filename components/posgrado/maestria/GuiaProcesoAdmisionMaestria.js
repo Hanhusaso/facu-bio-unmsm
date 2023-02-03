@@ -54,7 +54,7 @@ const GuiaProcesoAdmisionMaestria = () => {
 								cumplir con los requisitos establecidos
 							</span>{' '}
 							por la Dirección General de Estudios de Posgrado
-							(DGEP) para postular a los programas maestrías.
+							(DGEP) para postular a los programas de maestrías.
 						</p>
 					</div>
 				</div>
