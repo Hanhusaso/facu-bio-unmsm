@@ -62,7 +62,8 @@ const Menu = () => {
 					<h3 className="title-menu mb-0">MENÚ</h3>
 					<button
 						className="btn-menu-close btn-transparent p-0"
-						onClick={hideSidebar}>
+						onClick={hideSidebar}
+					>
 						<Io5Icons.IoClose className="close-icon icon" />
 					</button>
 				</div>
@@ -80,13 +81,15 @@ const Menu = () => {
 								<Accordion.Toggle
 									className="btn-transparent btn-accordion-nav nav-link"
 									variant="link"
-									eventKey="0">
+									eventKey="0"
+								>
 									Formación académica
 								</Accordion.Toggle>
 							</div>
 							<Accordion.Collapse
 								className="wrapper-collapse"
-								eventKey="0">
+								eventKey="0"
+							>
 								<div>
 									<ul className="nav flex-column main-sub-navs">
 										<li className="nav-item">
@@ -95,7 +98,8 @@ const Menu = () => {
 											<a
 												href="https://www.unmsm.edu.pe/formacion-academica/admision"
 												target="_blank"
-												className="nav-link d-flex align-items-center">
+												className="nav-link d-flex align-items-center"
+											>
 												<span className="mr-1">
 													Admisión
 												</span>
@@ -108,7 +112,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Pregrado</a> */}
 											<a
 												href="/formacion-academica/pregrado"
-												className="nav-link">
+												className="nav-link"
+											>
 												Pregrado
 											</a>
 											{/* </Link> */}
@@ -118,7 +123,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Posgrado</a> */}
 											<a
 												href="/formacion-academica/posgrado"
-												className="nav-link">
+												className="nav-link"
+											>
 												Posgrado
 											</a>
 											{/* </Link> */}
@@ -128,7 +134,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Posgrado</a> */}
 											<a
 												href="/formacion-academica/estudios-generales"
-												className="nav-link">
+												className="nav-link"
+											>
 												Estudios Generales
 											</a>
 											{/* </Link> */}
@@ -139,7 +146,8 @@ const Menu = () => {
 											<a
 												href=" https://www.unmsm.edu.pe/formacion-academica/educacion-continua"
 												target="_blank"
-												className="nav-link d-flex align-items-center">
+												className="nav-link d-flex align-items-center"
+											>
 												<span className="mr-1">
 													Educación continua
 												</span>
@@ -163,7 +171,8 @@ const Menu = () => {
 												<a
 													href="https://sum.unmsm.edu.pe/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													SUM
 												</a>
 												{/* </Link> */}
@@ -174,7 +183,8 @@ const Menu = () => {
 												<a
 													href="https://sisbib.unmsm.edu.pe/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Sistema de bibliotecas
 												</a>
 												{/* </Link> */}
@@ -185,7 +195,8 @@ const Menu = () => {
 												<a
 													href="https://www.gob.pe/concytec"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Concytec
 												</a>
 												{/* </Link> */}
@@ -200,13 +211,15 @@ const Menu = () => {
 								<Accordion.Toggle
 									className="btn-transparent btn-accordion-nav nav-link"
 									variant="link"
-									eventKey="1">
+									eventKey="1"
+								>
 									Investigación
 								</Accordion.Toggle>
 							</div>
 							<Accordion.Collapse
 								className="wrapper-collapse"
-								eventKey="1">
+								eventKey="1"
+							>
 								<div>
 									<ul className="nav flex-column main-sub-navs">
 										{/* <li className="nav-item">
@@ -217,7 +230,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Recursos para la investigación</a> */}
 											<a
 												href="/investigacion/recursos-investigacion"
-												className="nav-link">
+												className="nav-link"
+											>
 												Recursos para la investigación
 											</a>
 											{/* </Link> */}
@@ -227,7 +241,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Producción científica de la Facultad</a> */}
 											<a
 												href="/investigacion/proyectos"
-												className="nav-link">
+												className="nav-link"
+											>
 												Producción científica de la
 												Facultad
 											</a>
@@ -238,7 +253,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Biblioteca</a> */}
 											<a
 												href="/investigacion/bibliotecas"
-												className="nav-link">
+												className="nav-link"
+											>
 												Bibliotecas
 											</a>
 											{/* </Link> */}
@@ -248,7 +264,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Grupos de investigación</a> */}
 											<a
 												href="/investigacion/grupos-investigacion"
-												className="nav-link">
+												className="nav-link"
+											>
 												Grupos de investigación
 											</a>
 											{/* </Link> */}
@@ -258,7 +275,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Revista peruana de Biología</a> */}
 											<a
 												href="/investigacion/revista-peruana-biologia"
-												className="nav-link">
+												className="nav-link"
+											>
 												Revista peruana de Biología
 											</a>
 											{/* </Link> */}
@@ -271,7 +289,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Instituto de investigaciones biológicas</a> */}
 											<a
 												href="/investigacion/antonio-raimondi"
-												className="nav-link">
+												className="nav-link"
+											>
 												Instituto de Investigación de
 												Ciencias Biológicas "Antonio
 												Raimondi" - ICBAR
@@ -283,7 +302,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Instituto de investigaciones biológicas</a> */}
 											<a
 												href="/investigacion/comite-de-bioetica"
-												className="nav-link">
+												className="nav-link"
+											>
 												Comité de Bioética de la FCB
 											</a>
 											{/* </Link> */}
@@ -304,7 +324,8 @@ const Menu = () => {
 												<a
 													href="https://rais.unmsm.edu.pe/user/login"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Registro de actividades de
 													investigación de San Marcos
 													(RAIS)
@@ -317,7 +338,8 @@ const Menu = () => {
 												<a
 													href="https://siis.unmsm.edu.pe/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Sistema de información de la
 													investigación en San Marcos
 													(SII)
@@ -330,7 +352,8 @@ const Menu = () => {
 												<a
 													href="https://vrip.unmsm.edu.pe/"
 													target="blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Vicerrectorado de
 													investigación de Posgrado
 												</a>
@@ -342,7 +365,8 @@ const Menu = () => {
 												<a
 													href="https://museohn.unmsm.edu.pe/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Museo de Historia Natural
 													UNMSM
 												</a>
@@ -358,13 +382,15 @@ const Menu = () => {
 								<Accordion.Toggle
 									className="btn-transparent btn-accordion-nav nav-link"
 									variant="link"
-									eventKey="2">
+									eventKey="2"
+								>
 									Noticias y eventos
 								</Accordion.Toggle>
 							</div>
 							<Accordion.Collapse
 								className="wrapper-collapse"
-								eventKey="2">
+								eventKey="2"
+							>
 								<div>
 									<ul className="nav flex-column main-sub-navs">
 										<li className="nav-item">
@@ -372,7 +398,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Noticias</a> */}
 											<a
 												href="/noticias"
-												className="nav-link">
+												className="nav-link"
+											>
 												Noticias
 											</a>
 											{/* </Link> */}
@@ -382,7 +409,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Eventos</a> */}
 											<a
 												href="/eventos"
-												className="nav-link">
+												className="nav-link"
+											>
 												Eventos
 											</a>
 											{/* </Link> */}
@@ -406,7 +434,8 @@ const Menu = () => {
 												<a
 													href="https://rtvsanmarcos.unmsm.edu.pe/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													RTV San Marcos
 												</a>
 												{/* </Link> */}
@@ -424,13 +453,15 @@ const Menu = () => {
 								<Accordion.Toggle
 									className="btn-transparent btn-accordion-nav nav-link"
 									variant="link"
-									eventKey="3">
+									eventKey="3"
+								>
 									Comunidad
 								</Accordion.Toggle>
 							</div>
 							<Accordion.Collapse
 								className="wrapper-collapse"
-								eventKey="3">
+								eventKey="3"
+							>
 								<div>
 									<ul className="nav flex-column main-sub-navs">
 										<li className="nav-item">
@@ -438,7 +469,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Conoce la facultad</a> */}
 											<a
 												href="/comunidad/conoce-la-facultad"
-												className="nav-link">
+												className="nav-link"
+											>
 												Conoce la facultad
 											</a>
 											{/* </Link> */}
@@ -448,8 +480,9 @@ const Menu = () => {
 											{/* <a className="nav-link">Conoce la facultad</a> */}
 											<a
 												href="/comunidad/movilidad-estudiantil"
-												className="nav-link">
-												Movilidad estudiantil
+												className="nav-link"
+											>
+												Movilidad, Becas y Convenios
 											</a>
 											{/* </Link> */}
 										</li>
@@ -458,7 +491,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Cerseus</a> */}
 											<a
 												href="/comunidad/cerseu"
-												className="nav-link">
+												className="nav-link"
+											>
 												CERSEU
 											</a>
 											{/* </Link> */}
@@ -466,7 +500,8 @@ const Menu = () => {
 										<li className="nav-item">
 											<a
 												href="/comunidad/unayoe"
-												className="nav-link">
+												className="nav-link"
+											>
 												UNAYOE
 											</a>
 										</li>
@@ -474,14 +509,16 @@ const Menu = () => {
 										<li className="nav-item">
 											<a
 												href="/comunidad/ocaa"
-												className="nav-link">
+												className="nav-link"
+											>
 												OCAA
 											</a>
 										</li>
 										<li className="nav-item">
 											<a
 												href="/comunidad/unidad-bienestar"
-												className="nav-link">
+												className="nav-link"
+											>
 												Unidad de Bienenestar
 											</a>
 										</li>
@@ -504,7 +541,8 @@ const Menu = () => {
 												<a
 													href="https://www.unmsm.edu.pe/comunidad"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Comunidad UNMSM
 												</a>
 												{/* </Link> */}
@@ -515,7 +553,8 @@ const Menu = () => {
 												<a
 													href="https://es.corrientexxi.com/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Proyecto CORRIENTE XXI
 												</a>
 												{/* </Link> */}
@@ -526,7 +565,8 @@ const Menu = () => {
 												<a
 													href="https://dgrs.unmsm.edu.pe/inicio/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Dirección General de
 													Responsabilidad social
 												</a>
@@ -538,7 +578,8 @@ const Menu = () => {
 												<a
 													href="https://ogbu.unmsm.edu.pe/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Oficina General de Bienestar
 													universitaria
 												</a>
@@ -550,7 +591,8 @@ const Menu = () => {
 												<a
 													href="https://ceprim.unmsm.edu.pe/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Centro de Producción
 													Editorial e Imprenta
 													(CEPREDIM)
@@ -567,13 +609,15 @@ const Menu = () => {
 								<Accordion.Toggle
 									className="btn-transparent btn-accordion-nav nav-link"
 									variant="link"
-									eventKey="4">
+									eventKey="4"
+								>
 									Nosotros
 								</Accordion.Toggle>
 							</div>
 							<Accordion.Collapse
 								className="wrapper-collapse"
-								eventKey="4">
+								eventKey="4"
+							>
 								<div>
 									<ul className="nav flex-column main-sub-navs">
 										<li className="nav-item">
@@ -581,7 +625,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Historia</a> */}
 											<a
 												href="/nosotros/historia"
-												className="nav-link">
+												className="nav-link"
+											>
 												Historia
 											</a>
 											{/* </Link> */}
@@ -591,7 +636,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Autoridades y órganos de gobierno</a> */}
 											<a
 												href="/nosotros/autoridades"
-												className="nav-link">
+												className="nav-link"
+											>
 												Autoridades y órganos de
 												gobierno
 											</a>
@@ -602,7 +648,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Institución y organización</a> */}
 											<a
 												href="/nosotros/institucion-y-organizacion"
-												className="nav-link">
+												className="nav-link"
+											>
 												Institución y organización
 											</a>
 											{/* </Link> */}
@@ -615,7 +662,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Consejo de facultad</a> */}
 											<a
 												href="/nosotros/consejo-de-facultad"
-												className="nav-link">
+												className="nav-link"
+											>
 												Consejo de facultad
 											</a>
 											{/* </Link> */}
@@ -628,7 +676,8 @@ const Menu = () => {
 											{/* <a className="nav-link">Transparencia</a> */}
 											<a
 												href="/nosotros/transparencia"
-												className="nav-link">
+												className="nav-link"
+											>
 												Transparencia
 											</a>
 											{/* </Link> */}
@@ -649,7 +698,8 @@ const Menu = () => {
 												<a
 													href="https://occaa.unmsm.edu.pe/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Oficina Central de la
 													calidad académica y
 													acreditación
@@ -662,7 +712,8 @@ const Menu = () => {
 												<a
 													href="https://secgen.unmsm.edu.pe/wordpress/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Secretaría general
 												</a>
 												{/* </Link> */}
@@ -673,7 +724,8 @@ const Menu = () => {
 												<a
 													href="https://comisionestatuto.unmsm.edu.pe/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Comisión revisora del
 													estatuto
 												</a>
@@ -685,7 +737,8 @@ const Menu = () => {
 												<a
 													href="https://celectoral1.unmsm.edu.pe/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Comité electoral
 												</a>
 												{/* </Link> */}
@@ -696,7 +749,8 @@ const Menu = () => {
 												<a
 													href="https://sistcontrolinterno.unmsm.edu.pe/"
 													target="_blank"
-													className="nav-link">
+													className="nav-link"
+												>
 													Sistema de Control interno
 												</a>
 												{/* </Link> */}
@@ -719,7 +773,8 @@ const Menu = () => {
 					<h3 className="title-menu mb-0">BÚSQUEDA</h3>
 					<button
 						className="btn-search-close btn-transparent p-0"
-						onClick={hideSidebar}>
+						onClick={hideSidebar}
+					>
 						<Io5Icons.IoClose className="close-icon icon" />
 					</button>
 				</div>
@@ -741,7 +796,8 @@ const Menu = () => {
 					<h3 className="title-menu mb-0">INTRANET</h3>
 					<button
 						className="btn-intranet-close btn-transparent p-0"
-						onClick={hideSidebar}>
+						onClick={hideSidebar}
+					>
 						<Io5Icons.IoClose className="close-icon icon" />
 					</button>
 				</div>
@@ -753,7 +809,8 @@ const Menu = () => {
 							<a
 								href="https://webmail.unmsm.edu.pe/"
 								target="_blank"
-								className="nav-link btn-accordion-nav">
+								className="nav-link btn-accordion-nav"
+							>
 								Correo institucional
 							</a>
 							{/* </Link> */}
@@ -764,7 +821,8 @@ const Menu = () => {
 							<a
 								href="https://sum.unmsm.edu.pe/"
 								target="_blank"
-								className="nav-link btn-accordion-nav">
+								className="nav-link btn-accordion-nav"
+							>
 								Sistema único de matrícula (SUM)
 							</a>
 							{/* </Link> */}
@@ -775,7 +833,8 @@ const Menu = () => {
 							<a
 								href="http://oev.unmsm.edu.pe/"
 								target="_blank"
-								className="nav-link btn-accordion-nav">
+								className="nav-link btn-accordion-nav"
+							>
 								Aula Virtual (OEV)
 							</a>
 							{/* </Link> */}
@@ -795,7 +854,8 @@ const Menu = () => {
 							? 'toogle-btn-menu open menu-bars btn-transparent'
 							: 'toogle-btn-menu menu-bars btn-transparent'
 					}
-					onClick={toogleSidebar}>
+					onClick={toogleSidebar}
+				>
 					<div className="menu-btn-bars"></div>
 				</button>
 			</div>
@@ -804,10 +864,12 @@ const Menu = () => {
 					className="navbar-toogle"
 					initial={{ top: '-25vh' }}
 					animate={{ top: 0 }}
-					transition={{ duration: 0.5 }}>
+					transition={{ duration: 0.5 }}
+				>
 					<button
 						className="menu-bars btn-transparent"
-						onClick={showSectionMenu}>
+						onClick={showSectionMenu}
+					>
 						<img src="/assets/img/iconos/hamburguesa.png" alt="" />
 					</button>
 					{/* <button className="menu-search btn-transparent" onClick={showSectionSearch}>
@@ -815,7 +877,8 @@ const Menu = () => {
                     </button> */}
 					<button
 						className="menu-user btn-transparent"
-						onClick={showSectionIntranet}>
+						onClick={showSectionIntranet}
+					>
 						<img src="/assets/img/iconos/intranet.png" alt="" />
 					</button>
 				</motion.div>
@@ -836,7 +899,8 @@ const Menu = () => {
 								{/* <a className="nav-link">Trámites y procesos</a> */}
 								<a
 									href="/tramites-y-procesos"
-									className="d-flex align-items-center nav-link">
+									className="d-flex align-items-center nav-link"
+								>
 									<img
 										className="mr-3"
 										src="/assets/img/iconos/tramites_procesos.svg"
@@ -851,7 +915,8 @@ const Menu = () => {
 								{/* <a className="nav-link">Información académica</a> */}
 								<a
 									href="/informacion-academica"
-									className="d-flex align-items-center nav-link">
+									className="d-flex align-items-center nav-link"
+								>
 									<img
 										className="mr-3"
 										src="/assets/img/iconos/informacion_academica.svg"
@@ -875,7 +940,8 @@ const Menu = () => {
 								{/* <a className="nav-link">Recursos de investigación</a> */}
 								<a
 									href="/investigacion/recursos-investigacion"
-									className="d-flex align-items-center nav-link">
+									className="d-flex align-items-center nav-link"
+								>
 									<img
 										className="mr-3"
 										src="/assets/img/iconos/recursos_investigacion.svg"
@@ -890,7 +956,8 @@ const Menu = () => {
 								{/* <a className="nav-link">Recursos de investigación</a> */}
 								<a
 									href="/directorio"
-									className="d-flex align-items-center nav-link">
+									className="d-flex align-items-center nav-link"
+								>
 									{/* <img className="mr-3" src="/assets/img/iconos/directorio.svg" alt="" /> */}
 									<FiIcons.FiPhone className="icon mr-3" />
 									<span>Directorio</span>
@@ -902,7 +969,8 @@ const Menu = () => {
 								{/* <a className="nav-link">Transparencia</a> */}
 								<a
 									href="/nosotros/transparencia"
-									className="d-flex align-items-center nav-link">
+									className="d-flex align-items-center nav-link"
+								>
 									<img
 										className="mr-3"
 										src="/assets/img/iconos/icono transparencia.png"
@@ -921,7 +989,8 @@ const Menu = () => {
 								<a
 									className="nav-link"
 									href="https://webmail.unmsm.edu.pe/"
-									target="_blank">
+									target="_blank"
+								>
 									Correo institucional
 								</a>
 							</li>
@@ -929,7 +998,8 @@ const Menu = () => {
 								<a
 									className="nav-link"
 									href="https://sum.unmsm.edu.pe/"
-									target="_blank">
+									target="_blank"
+								>
 									Sistema único de matrícula (SUM)
 								</a>
 							</li>
@@ -937,7 +1007,8 @@ const Menu = () => {
 								<a
 									className="nav-link"
 									href="http://oev.unmsm.edu.pe/"
-									target="_blank">
+									target="_blank"
+								>
 									Aula Virtual (OEV)
 								</a>
 							</li>
@@ -949,21 +1020,24 @@ const Menu = () => {
 							<li>
 								<a
 									href="https://www.facebook.com/FacultadCienciasBiologicasUNMSM/"
-									target="_blank">
+									target="_blank"
+								>
 									<FaIcons.FaFacebookF />
 								</a>
 							</li>
 							<li>
 								<a
 									href="https://twitter.com/biounmsm"
-									target="_blank">
+									target="_blank"
+								>
 									<FaIcons.FaTwitter />
 								</a>
 							</li>
 							<li>
 								<a
 									href="https://www.youtube.com/channel/UCXVV5vV4Bsc9BOWO3V47uwQ"
-									target="_blank">
+									target="_blank"
+								>
 									<FaIcons.FaYoutube />
 								</a>
 							</li>
