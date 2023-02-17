@@ -72,8 +72,7 @@ const GuiaProcesoAdmisionDoctorado = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/documentos/resumen-hv-postulante.pdf"
-								target="_blank"
-							>
+								target="_blank">
 								hoja de vida
 							</a>
 						</p>
@@ -89,8 +88,7 @@ const GuiaProcesoAdmisionDoctorado = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/pago-inscripcion/"
-								target="_blank"
-							>
+								target="_blank">
 								Realiza el pago de inscripción
 							</a>{' '}
 							en el Banco de Crédito del Perú o en el Banco de la
@@ -116,8 +114,7 @@ const GuiaProcesoAdmisionDoctorado = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/admision/inscripcion/"
-								target="_blank"
-							>
+								target="_blank">
 								plataforma virtual
 							</a>{' '}
 							<span className="font-weight-bold">
@@ -219,8 +216,8 @@ const GuiaProcesoAdmisionDoctorado = () => {
 				<span>
 					<Icon.telefonoIcon className="mr-2" />
 				</span>
-				<span className="font-weight-bold">Teléfono: </span> Escuela de
-				990 090 886 (Sra. Dora Aguilar)
+				<span className="font-weight-bold">Teléfono: </span>990 090 886
+				(Sra. Dora Aguilar)
 			</p>
 		</div>
 	);

@@ -36,7 +36,7 @@ const RequisitosMaestria = () => {
 						Resumen de la hoja de vida
 					</a>{' '}
 					del postulante (documentado, foliado y ordenado de acuerdo a
-					los rubros del formato).
+					los rubros del formato) en un solo archivo en PDF.
 				</li>
 				<li className="mb-2">
 					<a

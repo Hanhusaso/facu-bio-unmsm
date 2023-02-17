@@ -54,7 +54,7 @@ const GuiaProcesoAdmisionMaestria = () => {
 								cumplir con los requisitos establecidos
 							</span>{' '}
 							por la Dirección General de Estudios de Posgrado
-							(DGEP) para postular a los programas maestrías.
+							(DGEP) para postular a los programas de maestrías.
 						</p>
 					</div>
 				</div>
@@ -72,8 +72,7 @@ const GuiaProcesoAdmisionMaestria = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/documentos/resumen-hv-postulante.pdf"
-								target="_blank"
-							>
+								target="_blank">
 								hoja de vida
 							</a>
 						</p>
@@ -89,8 +88,7 @@ const GuiaProcesoAdmisionMaestria = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/pago-inscripcion/"
-								target="_blank"
-							>
+								target="_blank">
 								Realiza el pago de inscripción
 							</a>{' '}
 							en el Banco de Crédito del Perú o en el Banco de la
@@ -116,8 +114,7 @@ const GuiaProcesoAdmisionMaestria = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/admision/inscripcion/"
-								target="_blank"
-							>
+								target="_blank">
 								plataforma virtual
 							</a>{' '}
 							<span className="font-weight-bold">
@@ -220,8 +217,8 @@ const GuiaProcesoAdmisionMaestria = () => {
 				<span>
 					<Icon.telefonoIcon className="mr-2" />
 				</span>
-				<span className="font-weight-bold">Teléfono: </span> Escuela de
-				990 090 886 (Sra. Dora Aguilar)
+				<span className="font-weight-bold">Teléfono: </span>990 090 886
+				(Sra. Dora Aguilar)
 			</p>
 		</div>
 	);
