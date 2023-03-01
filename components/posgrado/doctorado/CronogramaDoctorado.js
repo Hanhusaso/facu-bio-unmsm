@@ -31,30 +31,30 @@ const CronogramaDoctorado = () => {
 						</tr>
 						<tr>
 							<td>Inscripción extemporánea</td>
-							<td>Del 1 al 7 de marzo del 2023</td>
+							<td>Del 1 al 13 de marzo del 2023</td>
 						</tr>
 						<tr>
 							<td>Examen de aptitud virtual</td>
-							<td>11 de marzo del 2023</td>
+							<td>14 de marzo del 2023</td>
 						</tr>
 						<tr>
 							<td>Sustentación del proyecto de investigación</td>
-							<td>12 y 13 de marzo del 2023</td>
+							<td>15 y 16 de marzo del 2023</td>
 						</tr>
 						<tr>
 							<td>Evaluación del expediente</td>
-							<td>14 de marzo del 2023</td>
+							<td>17 de marzo del 2023</td>
 						</tr>
 						<tr>
 							<td>
 								Ingreso de evaluación al SISEVA para generación
 								de actas
 							</td>
-							<td>17 y 19 de marzo del 2023</td>
+							<td>20 y 21 de marzo del 2023</td>
 						</tr>
 						<tr>
 							<td>Publicación de resultado</td>
-							<td>20 de marzo del 2023</td>
+							<td>22 de marzo del 2023</td>
 						</tr>
 					</tbody>
 				</table>
@@ -125,7 +125,7 @@ const CronogramaDoctorado = () => {
 								Capacitación en base de datos, aspectos de
 								investigación y normativa de posgrado
 							</td>
-							<td>19 de marzo del 2023</td>
+							<td>1 de abril del 2023</td>
 						</tr>
 					</tbody>
 				</table>
