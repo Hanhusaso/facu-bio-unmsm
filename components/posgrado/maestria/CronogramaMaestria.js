@@ -31,30 +31,30 @@ const CronogramaMaestria = () => {
 						</tr>
 						<tr>
 							<td>Inscripción extemporánea</td>
-							<td>Del 1 al 17 de marzo del 2023</td>
+							<td>Del 1 al 24 de marzo del 2023</td>
 						</tr>
 						<tr>
 							<td>Examen de aptitud virtual</td>
-							<td>18 de marzo del 2023</td>
+							<td>25 de marzo del 2023</td>
 						</tr>
 						<tr>
 							<td>Evaluación del expediente</td>
-							<td>20 de marzo del 2023</td>
+							<td>27 de marzo del 2023</td>
 						</tr>
 						<tr>
 							<td>Entrevista personal virtual</td>
-							<td>20 y 21 de marzo del 2023</td>
+							<td>27 y 28 de marzo del 2023</td>
 						</tr>
 						<tr>
 							<td>
 								Ingreso de evaluación al SISEVA para generación
 								de actas
 							</td>
-							<td>20 y 23 de marzo del 2023</td>
+							<td>29 y 30 de marzo del 2023</td>
 						</tr>
 						<tr>
 							<td>Publicación de resultados</td>
-							<td>23 de marzo del 2023</td>
+							<td>31 de marzo del 2023</td>
 						</tr>
 					</tbody>
 				</table>
@@ -81,11 +81,11 @@ const CronogramaMaestria = () => {
 						</tr>
 						<tr>
 							<td>Matrícula regular</td>
-							<td>Del 6 al 31 de marzo del 2023</td>
+							<td>Del 6 de marzo al 7 de abril del 2023</td>
 						</tr>
 						<tr>
 							<td>Matrícula de ingresantes</td>
-							<td>Del 27 al 31 de marzo del 2023</td>
+							<td>Del 3 al 7 de abril del 2023</td>
 						</tr>
 						<tr>
 							<td>
@@ -125,7 +125,7 @@ const CronogramaMaestria = () => {
 								Capacitación en base de datos, aspectos de
 								investigación y normativa de posgrado
 							</td>
-							<td>1 de abril del 2023</td>
+							<td>5 de abril del 2023</td>
 						</tr>
 					</tbody>
 				</table>
@@ -147,15 +147,15 @@ const CronogramaMaestria = () => {
 						<tr className="d-none"></tr>
 						<tr>
 							<td>Inicio de clases</td>
-							<td>3 de abril del 2023</td>
+							<td>10 de abril del 2023</td>
 						</tr>
 						<tr>
 							<td>Fin de clases</td>
-							<td>22 de julio del 2023</td>
+							<td>29 de julio del 2023</td>
 						</tr>
 						<tr>
 							<td>Ingreso de notas</td>
-							<td>Del 24 al 27 de julio del 2023</td>
+							<td>Del 31 de julio al 3 de agosto del 2023</td>
 						</tr>
 					</tbody>
 				</table>
