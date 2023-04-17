@@ -178,6 +178,7 @@ const index = () => {
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
+															fill="transparent"
 														/>
 														<path
 															// style={{
@@ -188,6 +189,7 @@ const index = () => {
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
+															fill="transparent"
 														/>
 													</svg>
 												</div>

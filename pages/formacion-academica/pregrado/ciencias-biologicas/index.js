@@ -163,12 +163,14 @@ const index = () => {
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
+															fill="transparent"
 														/>
 														<path
 															d="M3.49805 18.981C3.49805 18.981 5.94995 15.8504 11.9999 15.8504C18.0499 15.8504 20.5029 18.981 20.5029 18.981M11.9999 12.0004C12.8752 12.0004 13.7145 11.6527 14.3334 11.0338C14.9523 10.415 15.2999 9.57561 15.2999 8.70039C15.2999 7.82518 14.9523 6.98581 14.3334 6.36694C13.7145 5.74807 12.8752 5.40039 11.9999 5.40039C11.1247 5.40039 10.2854 5.74807 9.66649 6.36694C9.04762 6.98581 8.69995 7.82518 8.69995 8.70039C8.69995 9.57561 9.04762 10.415 9.66649 11.0338C10.2854 11.6527 11.1247 12.0004 11.9999 12.0004Z"
 															strokeWidth="1.5"
 															strokeLinecap="round"
 															strokeLinejoin="round"
+															fill="transparent"
 														/>
 													</svg>
 												</div>
@@ -261,92 +263,89 @@ const index = () => {
 												</div>
 												<p>
 													La carrera profesional de
-													Ciencias Biol&oacute;gicas
-													busca gu&iacute;ar al
-													estudiante en el{' '}
+													Microbiología y
+													Parasitología{' '}
 													<strong>
-														conocimiento, manejo y
-														uso de la biodiversidad,
-														desarrollando tres
-														menciones{' '}
+														capacita a sus egresados
+														en el conocimiento
+														integral de los
+														microorganismos y
+														parásitos, la
+														interpretación de la
+														interacción con sus
+														entornos y su
+														participación en
+														procesos evolutivos
 													</strong>
-													en los siguientes campos: la{' '}
+													. Nos enfocamos en brindar
+													herramientas formativas que
+													permitan la generación de
+													soluciones innovadoras y con
+													impacto social, promoviendo
+													en las aulas un trabajo
+													transdisciplinario que
+													permite a sus egresados
+													destacarse en las diversas{' '}
 													<strong>
-														bot&aacute;nica
+														áreas laborales
 													</strong>{' '}
-													(centrada en el estudio del
-													reino Plantae y organismos
-													afines), la{' '}
-													<strong>
-														zoolog&iacute;a
-													</strong>{' '}
-													(centrada en el estudio del
-													reino Animalia) y la{' '}
-													<strong>
-														hidrobiolog&iacute;a
-													</strong>{' '}
-													<strong>
-														y pesquer&iacute;a
-													</strong>
-													, dedicada al estudio de la
-													vida en cuerpos de agua
-													continentales y marinos con
-													una orientaci&oacute;n a su
-													manejo y
-													aprovechamiento.&nbsp;
+													que permite la finalización
+													de la carrera, tales como el
+													área de salud,
+													biotecnología, gestión,
+													agroindustrial, ambiental,
+													minería, etc.
 												</p>
 												<p>
-													Los graduados de la escuela
-													determinan y advierten sobre
-													el{' '}
-													<strong>
-														conocimiento,
-														aprovechamiento y uso
-														sustentable de los
-														recursos
-														biol&oacute;gicos
-													</strong>
-													, estando comprometidos con
-													el conocimiento
-													sistem&aacute;tico,
-													fisiol&oacute;gico,
-													ecol&oacute;gico, y uso
-													sustentable de los recursos
-													gen&eacute;ticos, las
-													especies, poblaciones,
-													comunidades
-													biol&oacute;gicas, y los
-													procesos y funciones
-													ecosist&eacute;micas.
+													Tiene como misión formar
+													profesionales e
+													investigadores líderes en
+													las áreas de Botánica,
+													Hidrobiología y Pesquería y
+													Zoología; generadores de
+													conocimiento científico y
+													tecnológico, basado en una
+													cultura de calidad que
+													contribuya al desarrollo
+													sostenible del país.
+													Asimismo, tenemos como
+													visión ser líder en la
+													formación de Biólogos
+													Botánicos, Hidrobiólogos,
+													Pesqueros y Zoólogos, con
+													educación de calidad y
+													altamente competitivos a
+													nivel nacional e
+													internacional, reconocidos
+													por su participación en
+													investigación científica y
+													tecnológica, innovación y el
+													desarrollo sostenible del
+													país.
 												</p>
 												<p>
-													El estudiante tiene{' '}
+													Los alumnos tienen la
+													oportunidad de{' '}
 													<strong>
-														oportunidad de
-														desarrollar trabajos de
-														investigaci&oacute;n
-														desde los cursos de
-														formaci&oacute;n
-														b&aacute;sica
+														desarrollar labores de
+														investigación desde el
+														inicio de la carrera,
+														estando involucrados en
+														ambientes de laboratorio
+														desde un primer momento
 													</strong>
-													. Los cursos obligatorios
-													incluyen en su
-													mayor&iacute;a actividades
-													de investigaci&oacute;n que
-													se desarrollan tanto en el
-													laboratorio como en el
-													campo, dirigidos por
-													docentes calificados.
-													Durante las pr&aacute;cticas
-													pre-profesionales
-													tambi&eacute;n tienen la
-													oportunidad para participar
-													en grupos de
-													investigaci&oacute;n con
-													impacto real, los cuales
-													pueden culminar
-													adem&aacute;s en el
-													desarrollo de su tesis.
+													. Además tienen la
+													posibilidad de formar parte
+													de los grupos de
+													investigación de facultad,{' '}
+													<strong>
+														involucrándose en
+														proyectos con impacto
+														real
+													</strong>
+													, de la mano de docentes
+													calificados y con
+													experiencia en el campo.
 												</p>
 												<p>
 													<strong>
