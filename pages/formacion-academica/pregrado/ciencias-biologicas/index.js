@@ -250,14 +250,14 @@ const index = () => {
 													/> */}
 													<div className="caption">
 														<div className="mb-2 font-weight-bold">
-															Director
+															Directora (e)
 														</div>
 														<p>
-															Dr. Rafael Simon
-															Oswaldo La Rosa Loli
+															Mg. Silvia Ysabel
+															Aguilar Luna
 														</p>
 														<div className="mb-0">
-															rlarosal@unmsm.edu.pe
+															saguilarl@unmsm.edu.pe
 														</div>
 													</div>
 												</div>
