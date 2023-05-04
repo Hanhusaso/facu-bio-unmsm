@@ -93,7 +93,7 @@ const index = () => {
 					<div className="mb-4">
 						<img
 							className="w-100"
-							src="/assets/img/carreras/ciencias biologicas/banner_ciencias biologicas.png"
+							src="/assets/img/carreras/ciencias biologicas/banner_ciencias_biologicas.jpg"
 							alt=""
 						/>
 					</div>
@@ -263,38 +263,24 @@ const index = () => {
 												</div>
 												<p>
 													La carrera profesional de
-													Microbiología y
-													Parasitología{' '}
-													<strong>
-														capacita a sus egresados
-														en el conocimiento
-														integral de los
-														microorganismos y
-														parásitos, la
-														interpretación de la
-														interacción con sus
-														entornos y su
-														participación en
-														procesos evolutivos
-													</strong>
-													. Nos enfocamos en brindar
-													herramientas formativas que
-													permitan la generación de
-													soluciones innovadoras y con
-													impacto social, promoviendo
-													en las aulas un trabajo
-													transdisciplinario que
-													permite a sus egresados
-													destacarse en las diversas{' '}
-													<strong>
-														áreas laborales
-													</strong>{' '}
-													que permite la finalización
-													de la carrera, tales como el
-													área de salud,
-													biotecnología, gestión,
-													agroindustrial, ambiental,
-													minería, etc.
+													Ciencias Biológicas busca
+													guiar al estudiante en el
+													conocimiento, manejo y uso
+													de la biodiversidad,
+													desarrollando tres menciones
+													en los siguientes campos: la
+													botánica (centrada en el
+													estudio del reino Plantae y
+													organismos afines), la
+													zoología (centrada en el
+													estudio del reino Animalia)
+													y la hidrobiología y
+													pesquería, dedicada al
+													estudio de la vida en
+													cuerpos de agua
+													continentales y marinos con
+													una orientación a su manejo
+													y aprovechamiento.
 												</p>
 												<p>
 													Tiene como misión formar
@@ -312,7 +298,7 @@ const index = () => {
 													visión ser líder en la
 													formación de Biólogos
 													Botánicos, Hidrobiólogos,
-													Pesqueros y Zoólogos, con
+													Pesqueros y Zoólogos con
 													educación de calidad y
 													altamente competitivos a
 													nivel nacional e
@@ -324,28 +310,21 @@ const index = () => {
 													país.
 												</p>
 												<p>
-													Los alumnos tienen la
-													oportunidad de{' '}
-													<strong>
-														desarrollar labores de
-														investigación desde el
-														inicio de la carrera,
-														estando involucrados en
-														ambientes de laboratorio
-														desde un primer momento
-													</strong>
-													. Además tienen la
-													posibilidad de formar parte
-													de los grupos de
-													investigación de facultad,{' '}
-													<strong>
-														involucrándose en
-														proyectos con impacto
-														real
-													</strong>
-													, de la mano de docentes
-													calificados y con
-													experiencia en el campo.
+													Los graduados de la escuela
+													determinan y advierten sobre
+													el conocimiento,
+													aprovechamiento y uso
+													sustentable de los recursos
+													biológicos, estando
+													comprometidos con el
+													conocimiento sistemático,
+													fisiológico, ecológico, y
+													uso sustentable de los
+													recursos genéticos, las
+													especies, poblaciones,
+													comunidades biológicas, y
+													los procesos y funciones
+													ecosistémicas.
 												</p>
 												<p>
 													<strong>

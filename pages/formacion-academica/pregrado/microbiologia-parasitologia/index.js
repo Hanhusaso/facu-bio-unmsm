@@ -262,21 +262,21 @@ const index = () => {
 											aria-labelledby="v-pills-presentacion-tab">
 											<div className="wrapper-img-fr">
 												<div className="img-fr">
-													<img
+													{/* <img
 														className="w-100 img-fluid"
 														src="/assets/img/carreras/microbiologia/director.png"
 														alt=""
-													/>
+													/> */}
 													<div className="caption">
 														<div className="mb-2 font-weight-bold">
 															Director
 														</div>
 														<div className="mb-1">
-															Pedro Luis
-															Castellanos Sánchez
+															Dr. Tito Libio
+															Sánchez Rojas
 														</div>
 														<div className="mb-0">
-															pcastellanos@unmsm.edu.pe
+															tsanchezr@unmsm.edu.pe
 														</div>
 													</div>
 												</div>
