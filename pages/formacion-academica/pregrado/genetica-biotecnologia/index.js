@@ -342,10 +342,8 @@ const index = () => {
 													</strong>
 												</p>
 												<p>
-													T&iacute;tulo profesional de
-													Bi&oacute;logo en
-													Gen&eacute;tica y
-													Biotecnolog&iacute;a
+													Biólogo/a Genetista
+													Biotecnólogo/a
 												</p>
 												<p>
 													<strong>

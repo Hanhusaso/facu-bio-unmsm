@@ -348,13 +348,9 @@ const index = () => {
 													</strong>
 												</p>
 												<p>
-													T&iacute;tulo profesional de
-													Bi&oacute;logo con
-													menci&oacute;n en
-													Bot&aacute;nica,
-													Zoolog&iacute;a o
-													Hidrobiolog&iacute;a y
-													pesquer&iacute;a
+													Biólogo/a con mención en
+													Botánica, Zoología o
+													Hidrobiología y pesquería
 												</p>
 												<p>
 													<strong>

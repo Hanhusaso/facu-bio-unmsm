@@ -374,10 +374,9 @@ const index = () => {
 													</strong>
 												</p>
 												<p>
-													T&iacute;tulo profesional de
-													Bi&oacute;logo en
-													Microbiolog&iacute;a y
-													Parasitolog&iacute;a
+													Título Profesional de
+													Biólogo/a Microbiólogo/a
+													Parasitólogo/a
 												</p>
 												<p>
 													<strong>
