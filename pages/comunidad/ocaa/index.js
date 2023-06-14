@@ -277,17 +277,18 @@ const index = () => {
 														<div className="mb-3">
 															<img
 																className="img-fluid w-100"
-																src="/assets/img/comunidad/ocaa/blga-jeanne-rossanne-alba-luna.png"
+																src="/assets/img/comunidad/ocaa/oscar-diego-evangelista-vargas-ocaa-fcb.jpg"
 																alt="decano"
 															/>
 														</div>
 														<div className="d-flex justify-content-center flex-column">
 															<p className="m-0 text-center title-dark">
-																Blga. Jeanne R.
-																Alba Luna
+																Mg. Oscar Diego
+																Evangelista
+																Vargas
 															</p>
 															<p className="m-0 text-center">
-																Jefa de la
+																Jefe de la
 																OCAA-FCB
 															</p>
 														</div>
@@ -474,9 +475,9 @@ const index = () => {
 														<p>Presidenta:</p>
 														<div className="pl-3">
 															<p>
-																Blga. Jeanne
-																Rossanne Alba
-																Luna
+																Mg. Oscar Diego
+																Evangelista
+																Vargas
 															</p>
 														</div>
 														<p>Miembros:</p>
