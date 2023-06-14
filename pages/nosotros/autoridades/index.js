@@ -824,7 +824,7 @@ const index = () => {
 														<div className="mb-3">
 															<img
 																className="img-fluid w-100"
-																src="/assets/img/nosotros/autoridades/vicedecana-academica.png"
+																src="/assets/img/nosotros/autoridades/vicedecano-academico.jpg"
 																alt="vicedecana"
 															/>
 														</div>

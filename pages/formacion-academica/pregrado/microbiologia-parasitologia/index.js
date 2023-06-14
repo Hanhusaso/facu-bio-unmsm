@@ -262,11 +262,11 @@ const index = () => {
 											aria-labelledby="v-pills-presentacion-tab">
 											<div className="wrapper-img-fr">
 												<div className="img-fr">
-													{/* <img
+													<img
 														className="w-100 img-fluid"
-														src="/assets/img/carreras/microbiologia/director.png"
+														src="/assets/img/carreras/microbiologia/director.jpg"
 														alt=""
-													/> */}
+													/>
 													<div className="caption">
 														<div className="mb-2 font-weight-bold">
 															Director
