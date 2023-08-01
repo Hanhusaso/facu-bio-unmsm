@@ -2,7 +2,7 @@ import { BASE_PATH } from "../../utils/constants";
 
 export async function getProyectosHomeApi(){
   try {
-      const url = `${BASE_PATH}/proyectos?_limit=4&_sort=fecha:DESC`;
+      const url = `${BASE_PATH}/proyectos?_limit=4&_sort=fecha:DESC,id:DESC`;
       const response = await fetch(url);
       const result = await response.json();
       var proyectos = [];
@@ -51,9 +51,10 @@ export async function getProyectosApi(limit, start, palabra, grupos_investigacio
             }
         }
 
-        const url = `${BASE_PATH}/proyectos?_sort=fecha:DESC&${limitItems}&${startItems}${query}`;
+        const url = `${BASE_PATH}/proyectos?_sort=fecha:DESC,id:DESC&${limitItems}&${startItems}${query}`;
         const response = await fetch(url);
         const result = await response.json();
+        console.log(result);
         return result;
     } catch (error) {
         console.log(error);
@@ -170,7 +171,7 @@ export async function getProyectosUltimosApi(id_proyecto){
             query = query + `&id_ne=${id_proyecto}`;
         }
 
-        const url = `${BASE_PATH}/proyectos/?_sort=fecha:DESC&_limit=3${query}`;
+        const url = `${BASE_PATH}/proyectos/?_sort=fecha:DESC,id:DESC&_limit=3${query}`;
         const response = await fetch(url);
         const result = await response.json();
         return result;
