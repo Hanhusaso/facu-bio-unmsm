@@ -243,11 +243,11 @@ const index = () => {
 											aria-labelledby="v-pills-presentacion-tab">
 											<div className="wrapper-img-fr">
 												<div className="img-fr">
-													{/* <img
+													<img
 														className="w-100 img-fluid"
-														src="/assets/img/carreras/ciencias biologicas/director.png"
+														src="/assets/img/carreras/ciencias biologicas/director.jpg"
 														alt=""
-													/> */}
+													/>
 													<div className="caption">
 														<div className="mb-2 font-weight-bold">
 															Directora (e)
@@ -348,13 +348,9 @@ const index = () => {
 													</strong>
 												</p>
 												<p>
-													T&iacute;tulo profesional de
-													Bi&oacute;logo con
-													menci&oacute;n en
-													Bot&aacute;nica,
-													Zoolog&iacute;a o
-													Hidrobiolog&iacute;a y
-													pesquer&iacute;a
+													Biólogo/a con mención en
+													Botánica, Zoología o
+													Hidrobiología y pesquería
 												</p>
 												<p>
 													<strong>

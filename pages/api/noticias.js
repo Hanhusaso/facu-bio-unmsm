@@ -140,7 +140,7 @@ export async function getNoticiasUltimasApi(id_noticia) {
 			query = query + `&id_ne=${id_noticia}`;
 		}
 
-		const url = `${BASE_PATH}/noticias/?_sort=fecha:DESC&_limit=3${query}`;
+		const url = `${BASE_PATH}/novedades/?_sort=fecha:DESC&_limit=3${query}`;
 		const response = await fetch(url);
 		const result = await response.json();
 		return result;

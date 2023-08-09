@@ -31,11 +31,11 @@ const NoticiasExtra = (props) => {
                         <a className="card-bio color-inherit no-color-hover" href={`/noticias/noticia?titulo=${noticia_ultima.url_titulo}`}>
                             <div className="part-img position-relative">
                                 <div className="position-relative">
-                                    <img className="w-100 img-fluid" src={noticia_ultima.imagen_previsualizacion ? noticia_ultima.imagen_previsualizacion[0].url : ''}></img>
+                                    <img className="w-100 img-fluid" src={noticia_ultima.banner ? noticia_ultima.banner.url : ''}></img>
                                     <div className="dark-filter"></div>
                                 </div>
                                 <div className="badge-tag">
-                                {noticiasSubcategorias[noticia_ultima.id_categoria_subcategoria.id_subcategoria-1].nombre}
+                                {noticiasSubcategorias[noticia_ultima.sub_categoria_noticia.id-1].nombre}
                                 </div>
                             </div>
                             <div className="part-text">
