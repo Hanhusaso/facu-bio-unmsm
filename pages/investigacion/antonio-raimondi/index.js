@@ -86,7 +86,8 @@ const antonioRaimondi = () => {
 												<a
 													href="https://drive.google.com/file/d/1xmaRdZHK9EyDfnbVOzpJ3pDcO8-kPs2A/view"
 													target="_blank"
-													rel="noreferrer">
+													rel="noreferrer"
+												>
 													&#40;Ver Resolución
 													Rectoral&#41;
 												</a>
@@ -157,11 +158,12 @@ const antonioRaimondi = () => {
 										</p>
 									</div>
 									<div className="title-dark mb-2">
-										Directora(e) del Instituto de
-										Investigación “Antonio Raimondi”
+										Director(e) del Instituto de
+										Investigación de Ciencias Biológicas
+										"Antonio Raimondi"
 									</div>
 									<p className="mb-5">
-										Mg. Patricia Gloria Woll Toso
+										Dr. Juan Atilio Jiménez Chunga
 									</p>
 									<div className="mb-3">
 										<table className="striped m-auto">
@@ -169,7 +171,8 @@ const antonioRaimondi = () => {
 												<tr>
 													<th
 														colSpan="2"
-														className="text-center">
+														className="text-center"
+													>
 														Comité directivo del
 														ICBAR
 													</th>
