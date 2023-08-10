@@ -228,7 +228,7 @@ const antonioRaimondi = () => {
 														Franz Teodosio Cardoso
 														Pacheco
 													</td>
-													<td>Zooología</td>
+													<td>Zoología</td>
 												</tr>
 											</tbody>
 										</table>
