@@ -1,17 +1,27 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import Layout from "../../../components/Layout";
-import { Row, Col, Container, Breadcrumb, Tabs, Tab, Spinner } from "react-bootstrap";
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import Layout from '../../../components/Layout';
+import {
+	Row,
+	Col,
+	Container,
+	Breadcrumb,
+	Tabs,
+	Tab,
+	Spinner,
+} from 'react-bootstrap';
 import {
 	getDocumentosOficiales,
 	getTransparencia2019,
 	getTransparencia2020,
 	getTransparencia2021,
 	getTransparencia2022,
-} from "../../api/transparencia";
-import moment from "moment";
+	getTransparencia2023,
+} from '../../api/transparencia';
+import moment from 'moment';
 
 const transparencia = () => {
+	const [transparencia2023, setTransparencia2023] = useState([]);
 	const [transparencia2022, setTransparencia2022] = useState([]);
 	const [transparencia2021, setTransparencia2021] = useState([]);
 	const [transparencia2020, setTransparencia2020] = useState([]);
@@ -19,11 +29,13 @@ const transparencia = () => {
 	const [documentosOficiales, setDocumentosOficiales] = useState([]);
 	useEffect(() => {
 		(async () => {
+			const response_transparencia2023 = await getTransparencia2023();
 			const response_transparencia2022 = await getTransparencia2022();
 			const response_transparencia2021 = await getTransparencia2021();
 			const response_transparencia2020 = await getTransparencia2020();
 			const response_transparencia2019 = await getTransparencia2019();
 			const response_documentosOficiales = await getDocumentosOficiales();
+			setTransparencia2023(response_transparencia2023);
 			setTransparencia2022(response_transparencia2022);
 			setTransparencia2021(response_transparencia2021);
 			setTransparencia2020(response_transparencia2020);
@@ -31,8 +43,8 @@ const transparencia = () => {
 			setDocumentosOficiales(response_documentosOficiales);
 		})();
 	}, []);
-	moment.locale("es");
-	console.log("esto es documentosOficiales", documentosOficiales);
+	moment.locale('es');
+	console.log('esto es documentosOficiales', documentosOficiales);
 	return (
 		<>
 			<Layout title="Transparencia">
@@ -50,7 +62,9 @@ const transparencia = () => {
 											</Link>
 										</li>
 										{/* </Breadcrumb.Item> */}
-										<Breadcrumb.Item active>Nosotros: Transparencia</Breadcrumb.Item>
+										<Breadcrumb.Item active>
+											Nosotros: Transparencia
+										</Breadcrumb.Item>
 									</Breadcrumb>
 								</Col>
 								<Col md="1"></Col>
@@ -62,7 +76,9 @@ const transparencia = () => {
 							<Row>
 								<Col md="1"></Col>
 								<Col>
-									<div className="title-page text-center">Transparencia</div>
+									<div className="title-page text-center">
+										Transparencia
+									</div>
 								</Col>
 								<Col md="1"></Col>
 							</Row>
@@ -152,26 +168,39 @@ const transparencia = () => {
 														<path d="M3.75586 16.7283C2.7616 16.7273 1.80835 16.3319 1.10531 15.6288C0.402259 14.9258 0.00685214 13.9725 0.00585938 12.9783V4.72827H1.50586V12.9783C1.50586 13.575 1.74291 14.1473 2.16487 14.5693C2.58683 14.9912 3.15912 15.2283 3.75586 15.2283C4.3526 15.2283 4.92489 14.9912 5.34685 14.5693C5.76881 14.1473 6.00586 13.575 6.00586 12.9783V6.22827C6.00586 6.02936 5.92684 5.83859 5.78619 5.69794C5.64554 5.55729 5.45477 5.47827 5.25586 5.47827C5.05695 5.47827 4.86618 5.55729 4.72553 5.69794C4.58488 5.83859 4.50586 6.02936 4.50586 6.22827V13.7283H3.00586V6.22827C3.00586 5.63153 3.24291 5.05924 3.66487 4.63728C4.08683 4.21532 4.65912 3.97827 5.25586 3.97827C5.8526 3.97827 6.42489 4.21532 6.84685 4.63728C7.26881 5.05924 7.50586 5.63153 7.50586 6.22827V12.9783C7.50487 13.9725 7.10946 14.9258 6.40641 15.6288C5.70337 16.3319 4.75012 16.7273 3.75586 16.7283Z" />
 													</svg>
 												</div>
-												<span>Documentos oficiales</span>
+												<span>
+													Documentos oficiales
+												</span>
 											</a>
 										</div>
 									</div>
 								</Col>
 								<Col md="7" lg="8">
-									<div className="mb-3 tab-content" id="v-pills-tabContent">
+									<div
+										className="mb-3 tab-content"
+										id="v-pills-tabContent"
+									>
 										<div
 											className="mb-3 tab-pane fade show active"
 											id="v-pills-actas"
 											role="tabpanel"
 											aria-labelledby="v-pills-actas-tab"
 										>
-											<Tabs defaultActiveKey="2022" id="resoluciones-tab">
-												<Tab className="pt-3" eventKey="2022" title="2022">
+											<Tabs
+												defaultActiveKey="2023"
+												id="resoluciones-tab"
+											>
+												<Tab
+													className="pt-3"
+													eventKey="2023"
+													title="2023"
+												>
 													<div>
 														<div className="table-responsive">
 															<table className="bordered">
 																<tbody>
-																	{transparencia2022.length === 0 ? (
+																	{transparencia2023.length ===
+																	0 ? (
 																		<div className="d-flex align-items-center justify-content-center my-5">
 																			<div className="d-inline-flex flex-column justify-content-center align-items-center">
 																				<Spinner
@@ -180,35 +209,61 @@ const transparencia = () => {
 																					role="status"
 																					className="mb-2"
 																				/>
-																				<span>Buscando registros...</span>
+																				<span>
+																					Buscando
+																					registros...
+																				</span>
 																			</div>
 																		</div>
 																	) : (
-																		transparencia2022.map(function (doc) {
-																			return (
-																				<tr>
-																					<td>{moment(doc.fecha).format("D MMMM")}</td>
-																					<td>{doc.titulo}</td>
-																					<td>
-																						<a href={`${doc.link}`} target="_blank">
-																							Ver documento
-																						</a>
-																					</td>
-																				</tr>
-																			);
-																		})
+																		transparencia2023.map(
+																			function (
+																				doc
+																			) {
+																				return (
+																					<tr>
+																						<td>
+																							{moment(
+																								doc.fecha
+																							).format(
+																								'D MMMM'
+																							)}
+																						</td>
+																						<td>
+																							{
+																								doc.titulo
+																							}
+																						</td>
+																						<td>
+																							<a
+																								href={`${doc.link}`}
+																								target="_blank"
+																							>
+																								Ver
+																								documento
+																							</a>
+																						</td>
+																					</tr>
+																				);
+																			}
+																		)
 																	)}
 																</tbody>
 															</table>
 														</div>
 													</div>
 												</Tab>
-												<Tab className="pt-3" eventKey="2021" title="2021">
+												<Tab
+													className="pt-3"
+													eventKey="2022"
+													title="2022"
+												>
 													<div>
 														<div className="table-responsive">
 															<table className="bordered">
 																<tbody>
-																	{transparencia2021.length === 0 ? (
+																	{transparencia2022.length ===
+																	0 ? (
 																		<div className="d-flex align-items-center justify-content-center my-5">
 																			<div className="d-inline-flex flex-column justify-content-center align-items-center">
 																				<Spinner
@@ -217,70 +272,198 @@ const transparencia = () => {
 																					role="status"
 																					className="mb-2"
 																				/>
-																				<span>Buscando registros...</span>
+																				<span>
+																					Buscando
+																					registros...
+																				</span>
 																			</div>
 																		</div>
 																	) : (
-																		transparencia2021.map(function (doc) {
-																			return (
-																				<tr>
-																					<td>{moment(doc.fecha).format("D MMMM")}</td>
-																					<td>{doc.titulo}</td>
-																					<td>
-																						<a href={`${doc.link}`} target="_blank">
-																							Ver documento
-																						</a>
-																					</td>
-																				</tr>
-																			);
-																		})
+																		transparencia2022.map(
+																			function (
+																				doc
+																			) {
+																				return (
+																					<tr>
+																						<td>
+																							{moment(
+																								doc.fecha
+																							).format(
+																								'D MMMM'
+																							)}
+																						</td>
+																						<td>
+																							{
+																								doc.titulo
+																							}
+																						</td>
+																						<td>
+																							<a
+																								href={`${doc.link}`}
+																								target="_blank"
+																							>
+																								Ver
+																								documento
+																							</a>
+																						</td>
+																					</tr>
+																				);
+																			}
+																		)
 																	)}
 																</tbody>
 															</table>
 														</div>
 													</div>
 												</Tab>
-												<Tab className="pt-3" eventKey="2020" title="2020">
+												<Tab
+													className="pt-3"
+													eventKey="2021"
+													title="2021"
+												>
 													<div>
 														<div className="table-responsive">
 															<table className="bordered">
 																<tbody>
-																	{transparencia2020.map(function (doc) {
-																		return (
-																			<tr>
-																				<td>{moment(doc.fecha).format("D MMMM")}</td>
-																				<td>{doc.titulo}</td>
-																				<td>
-																					<a href={`${doc.link}`} target="_blank">
-																						Ver documento
-																					</a>
-																				</td>
-																			</tr>
-																		);
-																	})}
+																	{transparencia2021.length ===
+																	0 ? (
+																		<div className="d-flex align-items-center justify-content-center my-5">
+																			<div className="d-inline-flex flex-column justify-content-center align-items-center">
+																				<Spinner
+																					size="sm"
+																					animation="border"
+																					role="status"
+																					className="mb-2"
+																				/>
+																				<span>
+																					Buscando
+																					registros...
+																				</span>
+																			</div>
+																		</div>
+																	) : (
+																		transparencia2021.map(
+																			function (
+																				doc
+																			) {
+																				return (
+																					<tr>
+																						<td>
+																							{moment(
+																								doc.fecha
+																							).format(
+																								'D MMMM'
+																							)}
+																						</td>
+																						<td>
+																							{
+																								doc.titulo
+																							}
+																						</td>
+																						<td>
+																							<a
+																								href={`${doc.link}`}
+																								target="_blank"
+																							>
+																								Ver
+																								documento
+																							</a>
+																						</td>
+																					</tr>
+																				);
+																			}
+																		)
+																	)}
 																</tbody>
 															</table>
 														</div>
 													</div>
 												</Tab>
-												<Tab className="pt-3" eventKey="2019" title="2019">
+												<Tab
+													className="pt-3"
+													eventKey="2020"
+													title="2020"
+												>
 													<div>
 														<div className="table-responsive">
 															<table className="bordered">
 																<tbody>
-																	{transparencia2019.map(function (doc) {
-																		return (
-																			<tr>
-																				<td>{moment(doc.fecha).format("D MMMM")}</td>
-																				<td>{doc.titulo}</td>
-																				<td>
-																					<a href={`${doc.link}`} target="_blank">
-																						Ver documento
-																					</a>
-																				</td>
-																			</tr>
-																		);
-																	})}
+																	{transparencia2020.map(
+																		function (
+																			doc
+																		) {
+																			return (
+																				<tr>
+																					<td>
+																						{moment(
+																							doc.fecha
+																						).format(
+																							'D MMMM'
+																						)}
+																					</td>
+																					<td>
+																						{
+																							doc.titulo
+																						}
+																					</td>
+																					<td>
+																						<a
+																							href={`${doc.link}`}
+																							target="_blank"
+																						>
+																							Ver
+																							documento
+																						</a>
+																					</td>
+																				</tr>
+																			);
+																		}
+																	)}
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</Tab>
+												<Tab
+													className="pt-3"
+													eventKey="2019"
+													title="2019"
+												>
+													<div>
+														<div className="table-responsive">
+															<table className="bordered">
+																<tbody>
+																	{transparencia2019.map(
+																		function (
+																			doc
+																		) {
+																			return (
+																				<tr>
+																					<td>
+																						{moment(
+																							doc.fecha
+																						).format(
+																							'D MMMM'
+																						)}
+																					</td>
+																					<td>
+																						{
+																							doc.titulo
+																						}
+																					</td>
+																					<td>
+																						<a
+																							href={`${doc.link}`}
+																							target="_blank"
+																						>
+																							Ver
+																							documento
+																						</a>
+																					</td>
+																				</tr>
+																			);
+																		}
+																	)}
 																</tbody>
 															</table>
 														</div>
@@ -295,18 +478,27 @@ const transparencia = () => {
 											aria-labelledby="v-pills-documentos-tab"
 										>
 											<ul>
-												{documentosOficiales.map(function (doc) {
-													return (
-														<li key={doc.id}>
-															<p>
-																{doc.titulo}.&nbsp;
-																<a href={doc.link} target="_blank">
-																	(Descargar aquí)
-																</a>
-															</p>
-														</li>
-													);
-												})}
+												{documentosOficiales.map(
+													function (doc) {
+														return (
+															<li key={doc.id}>
+																<p>
+																	{doc.titulo}
+																	.&nbsp;
+																	<a
+																		href={
+																			doc.link
+																		}
+																		target="_blank"
+																	>
+																		(Descargar
+																		aquí)
+																	</a>
+																</p>
+															</li>
+														);
+													}
+												)}
 												{/* {documentosOficiales.map((doc) => (
 													<li key={doc.id}>
 														<p>
