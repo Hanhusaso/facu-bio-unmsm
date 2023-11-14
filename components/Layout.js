@@ -21,7 +21,7 @@ const Layout = ({ title, children }) => {
 			<Header></Header>
 			<div
 				className="bg-textura below-header pb-5"
-				style={{ minHeight: '100vh' }}
+				style={{ minHeight: 'calc(100vh - 288px)' }}
 			>
 				{children}
 			</div>
