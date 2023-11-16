@@ -72,7 +72,7 @@ const Footer = () => {
 							</ul>
 						</Col>
 						<Col
-							sm="2"
+							sm="3"
 							className="d-flex align-items-start justify-content-end flex-column"
 						>
 							<img
@@ -80,7 +80,9 @@ const Footer = () => {
 								src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/BV_Cert_ISO_9001_2015_01_2_1_1_ee64b28e1a.png"
 								alt=""
 							/>
-							<p className="font-weight-light mt-2">
+							<p className="mt-2">N° CO 23.00020/U</p>
+							<p>ALCANCE DEL SISTEMA DE GESTIÓN DE LA CALIDAD:</p>
+							<p className="font-weight-light">
 								“Planificación, enseñanza, formación,
 								evaluación, promoción de la investigación y de
 								la responsabilidad social en pre-grado para
