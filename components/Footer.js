@@ -73,15 +73,39 @@ const Footer = () => {
 						</Col>
 						<Col
 							sm="2"
-							className="d-flex align-items-start justify-content-end">
+							className="d-flex align-items-start justify-content-end flex-column"
+						>
 							<img
 								className="img-logo"
 								src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/BV_Cert_ISO_9001_2015_01_2_1_1_ee64b28e1a.png"
 								alt=""
 							/>
+							<p className="font-weight-light mt-2">
+								“Planificación, enseñanza, formación,
+								evaluación, promoción de la investigación y de
+								la responsabilidad social en pre-grado para
+								otorgar el título como Biólogo con mención en:
+								Botánica, Hidrobiología y Pesquería, Zoología;
+								Biólogo Genetista Biotecnólogo y Biólogo
+								Microbiólogo Parasitólogo”.
+							</p>
 							{/* <a href="https://www.unmsm.edu.pe/" target="_blank">
 							</a> */}
 						</Col>
+						{/* <Col
+							sm="2"
+							className="d-flex align-items-start justify-content-end mt-4"
+						>
+							<p>
+								“Planificación, enseñanza, formación,
+								evaluación, promoción de la investigación y de
+								la responsabilidad social en pre-grado para
+								otorgar el título como Biólogo con mención en:
+								Botánica, Hidrobiología y Pesquería, Zoología;
+								Biólogo Genetista Biotecnólogo y Biólogo
+								Microbiólogo Parasitólogo”.
+							</p>
+						</Col> */}
 						<Col sm="1"></Col>
 					</Row>
 				</Container>
@@ -103,11 +127,13 @@ const Footer = () => {
 			<script
 				src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
 				integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-				crossOrigin="anonymous"></script>
+				crossOrigin="anonymous"
+			></script>
 			<script
 				src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
 				integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-				crossOrigin="anonymous"></script>
+				crossOrigin="anonymous"
+			></script>
 		</>
 	);
 };
