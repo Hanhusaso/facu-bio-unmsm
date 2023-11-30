@@ -43,7 +43,7 @@
 				font-size: 7vw;
 			}
 			&::after {
-				content: "";
+				content: '';
 				width: 2px;
 				height: 90%;
 				position: absolute;
@@ -144,7 +144,7 @@
 	position: absolute;
 	&::before {
 		// content: "Enterate de las últimas novedades";
-		content: "";
+		content: '';
 		position: absolute;
 		top: -390px;
 		// left: -390px;
@@ -160,7 +160,7 @@
 
 .txt-proyectos-bg {
 	z-index: 0;
-	font-size: 40px;
+	font-size: 30px;
 	color: $wht;
 	line-height: 44px;
 	margin-left: -15px;
@@ -168,7 +168,7 @@
 	position: absolute;
 	&::before {
 		// content: "Enterate de las últimas novedades";
-		content: "";
+		content: '';
 		position: absolute;
 		top: -26px;
 		// left: -390px;
@@ -206,7 +206,7 @@
 	}
 	&::before {
 		// content: "Enterate de las últimas novedades";
-		content: "";
+		content: '';
 		position: absolute;
 		top: -70px;
 		// left: -390px;

@@ -377,7 +377,7 @@ export default function Proyectos() {
 											<br /> ganadores
 										</strong>{' '}
 										del concurso de financiamiento
-										<br /> del VRIP 2022
+										<br /> del VRIP 2023
 									</h5>
 									<div>
 										<div
@@ -387,7 +387,8 @@ export default function Proyectos() {
 													'_blank'
 												);
 											}}
-											href="/posgrado-admision">
+											href="/posgrado-admision"
+										>
 											<a className="btn-green-bright">
 												Ver lista de proyectos
 											</a>
@@ -438,7 +439,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="biologia_molecular_y_biotecnologia_1">
+														for="biologia_molecular_y_biotecnologia_1"
+													>
 														<span className="checkmark"></span>
 														Biología molecular y
 														biotecnología{' '}
@@ -461,7 +463,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="biotecnologia_para_la_remediacion_1">
+														for="biotecnologia_para_la_remediacion_1"
+													>
 														<span className="checkmark"></span>
 														Biotecnología para la
 														remediación{' '}
@@ -484,7 +487,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="reproduccion_biologia_del_desarrollo_y_ecotoxicologia_1">
+														for="reproduccion_biologia_del_desarrollo_y_ecotoxicologia_1"
+													>
 														<span className="checkmark"></span>
 														Reproducción, biología
 														del desarrollo y
@@ -508,7 +512,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="citogenetica_y_sistemas_modelo_de_drosophila_1">
+														for="citogenetica_y_sistemas_modelo_de_drosophila_1"
+													>
 														<span className="checkmark"></span>
 														Citogenética y sistemas
 														modelo de drosophila{' '}
@@ -531,7 +536,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="con-responsable">
+														for="con-responsable"
+													>
 														<span className="checkmark"></span>
 														Con responsable{' '}
 														{countGrupo5 != null
@@ -568,7 +574,8 @@ export default function Proyectos() {
 															);
 														}
 													}, 50);
-												}}>
+												}}
+											>
 												Ver todos
 											</div>
 										</div>
@@ -587,7 +594,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="tesis">
+														for="tesis"
+													>
 														<span className="checkmark"></span>
 														Tesis
 													</label>
@@ -602,7 +610,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="patentes">
+														for="patentes"
+													>
 														<span className="checkmark"></span>
 														Patentes
 													</label>
@@ -617,7 +626,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="articulos_cientificos">
+														for="articulos_cientificos"
+													>
 														<span className="checkmark"></span>
 														Artículos científicos
 													</label>
@@ -639,7 +649,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="2021-2015">
+														for="2021-2015"
+													>
 														<span className="checkmark"></span>
 														2021 - 2015
 													</label>
@@ -654,7 +665,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="2014-2010">
+														for="2014-2010"
+													>
 														<span className="checkmark"></span>
 														2014 - 2010
 													</label>
@@ -669,7 +681,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="2009-2005">
+														for="2009-2005"
+													>
 														<span className="checkmark"></span>
 														2009 - 2005
 													</label>
@@ -684,7 +697,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="2004-2000">
+														for="2004-2000"
+													>
 														<span className="checkmark"></span>
 														2004 - 2000
 													</label>
@@ -699,7 +713,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="1999-1995">
+														for="1999-1995"
+													>
 														<span className="checkmark"></span>
 														1999 - 1995
 													</label>
@@ -714,7 +729,8 @@ export default function Proyectos() {
 													/>
 													<label
 														className="mb-0"
-														for="1994-1990">
+														for="1994-1990"
+													>
 														<span className="checkmark"></span>
 														1994 - 1990
 													</label>
@@ -756,7 +772,8 @@ export default function Proyectos() {
 														<div className="grid-img-txt-2 no-reverse">
 															<a
 																className="mb-2 mb-md-0"
-																href={`proyectos/proyecto?nombre=${proyecto.url_nombre}`}>
+																href={`proyectos/proyecto?nombre=${proyecto.url_nombre}`}
+															>
 																<div className="part-img position-relative">
 																	<img
 																		className="w-100 img-fluid"
@@ -786,7 +803,8 @@ export default function Proyectos() {
 																</p>
 																<a
 																	href={`proyectos/proyecto?nombre=${proyecto.url_nombre}`}
-																	className="mb-2 title line-clamp-2">
+																	className="mb-2 title line-clamp-2"
+																>
 																	{
 																		proyecto.nombre
 																	}
@@ -839,7 +857,8 @@ export default function Proyectos() {
 				centered
 				size="lg"
 				show={showModal}
-				onHide={() => setShowModal(false)}>
+				onHide={() => setShowModal(false)}
+			>
 				<Modal.Body>
 					<div className="text-right">
 						<button
@@ -869,7 +888,8 @@ export default function Proyectos() {
 									}
 								}, 50);
 							}}
-							className="btn-modal-close btn-transparent p-0">
+							className="btn-modal-close btn-transparent p-0"
+						>
 							<Io5Icons.IoClose className="close-icon icon" />
 						</button>
 					</div>
@@ -888,7 +908,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="aplicacion_clinica_de_recursos_naturales">
+									for="aplicacion_clinica_de_recursos_naturales"
+								>
 									<span className="checkmark"></span>
 									Aplicación clínica de recursos naturales
 								</label>
@@ -903,7 +924,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="acuicultura_y_nutricion_de_organismos_acuaticos">
+									for="acuicultura_y_nutricion_de_organismos_acuaticos"
+								>
 									<span className="checkmark"></span>
 									Acuicultura y nutrición de organismos
 									acuáticos
@@ -919,7 +941,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="biologia_ecologia_y_cultivo_hacia_el_aprovechamiento_sostenible_del_recurso_alga">
+									for="biologia_ecologia_y_cultivo_hacia_el_aprovechamiento_sostenible_del_recurso_alga"
+								>
 									<span className="checkmark"></span>Biología,
 									ecología y cultivo, hacia el aprovechamiento
 									sostenible del recurso alga
@@ -935,7 +958,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="biologia_molecular_y_biotecnologia">
+									for="biologia_molecular_y_biotecnologia"
+								>
 									<span className="checkmark"></span>Biología
 									molecular y biotecnología
 								</label>
@@ -950,7 +974,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="biologia_molecular_de_parasitos_y_de_recursos_pesqueros">
+									for="biologia_molecular_de_parasitos_y_de_recursos_pesqueros"
+								>
 									<span className="checkmark"></span>Biología
 									molecular de parásitos y de recursos
 									pesqueros
@@ -966,7 +991,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="biodiversidad_y_ecologia_de_ambientes_acuaticos_continentales">
+									for="biodiversidad_y_ecologia_de_ambientes_acuaticos_continentales"
+								>
 									<span className="checkmark"></span>
 									Biodiversidad y ecología de ambientes
 									acuáticos continentales
@@ -982,7 +1008,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="grupo_de_investigacion_en_bioeconomia">
+									for="grupo_de_investigacion_en_bioeconomia"
+								>
 									<span className="checkmark"></span>Grupo de
 									investigación en bioeconomía
 								</label>
@@ -997,7 +1024,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="biodiversidad_de_ecosistemas_neotropicales">
+									for="biodiversidad_de_ecosistemas_neotropicales"
+								>
 									<span className="checkmark"></span>
 									Biodiversidad de ecosistemas neotropicales
 								</label>
@@ -1012,7 +1040,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="biotecnologia_para_la_remediacion">
+									for="biotecnologia_para_la_remediacion"
+								>
 									<span className="checkmark"></span>
 									Biotecnología para la remediación
 								</label>
@@ -1027,7 +1056,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="biodiversidad_y_taxonomia_de_invertebrados_marinos_para_conservacion_y_manejo_de_ambientes_marinos">
+									for="biodiversidad_y_taxonomia_de_invertebrados_marinos_para_conservacion_y_manejo_de_ambientes_marinos"
+								>
 									<span className="checkmark"></span>
 									Biodiversidad y taxonomía de invertebrados
 									marinos para conservación y manejo de
@@ -1044,7 +1074,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="reproduccion_biologia_del_desarrollo_y_ecotoxicologia">
+									for="reproduccion_biologia_del_desarrollo_y_ecotoxicologia"
+								>
 									<span className="checkmark"></span>
 									Reproducción, biología del desarrollo y
 									ecotoxicología
@@ -1060,7 +1091,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="biotecnologia_reproductiva_para_la_conservacion_y_mejora_genetica_animal">
+									for="biotecnologia_reproductiva_para_la_conservacion_y_mejora_genetica_animal"
+								>
 									<span className="checkmark"></span>
 									Biotecnología reproductiva para la
 									conservación y mejora genética animal
@@ -1076,7 +1108,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="calidad_biologica_y_fisico_quimica_de_alimentos_aguas_y_ambientes">
+									for="calidad_biologica_y_fisico_quimica_de_alimentos_aguas_y_ambientes"
+								>
 									<span className="checkmark"></span>Calidad
 									biológica y físico-química de alimentos,
 									aguas y ambientes
@@ -1092,7 +1125,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="citogenetica_y_sistemas_modelo_de_drosophila">
+									for="citogenetica_y_sistemas_modelo_de_drosophila"
+								>
 									<span className="checkmark"></span>
 									Citogenética y sistemas modelo de drosophila
 								</label>
@@ -1107,7 +1141,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="delimitacion_de_la_biodiversidad_de_especies_y_macroevolucion">
+									for="delimitacion_de_la_biodiversidad_de_especies_y_macroevolucion"
+								>
 									<span className="checkmark"></span>
 									Delimitación de la biodiversidad de especies
 									y macroevolución
@@ -1123,7 +1158,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="diversidad_de_mamiferos_y_sus_parasitos_y_su_implicancia_en_enfermedades_zoonoticas_emergentes">
+									for="diversidad_de_mamiferos_y_sus_parasitos_y_su_implicancia_en_enfermedades_zoonoticas_emergentes"
+								>
 									<span className="checkmark"></span>
 									Diversidad de mamíferos y sus parásitos y su
 									implicancia en enfermedades zoonóticas
@@ -1140,7 +1176,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="diversidad_sistematica_de_artropodos_neotropicales">
+									for="diversidad_sistematica_de_artropodos_neotropicales"
+								>
 									<span className="checkmark"></span>
 									Diversidad y sistemática de artrópodos
 									neotropicales
@@ -1156,7 +1193,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="grupo_de_investigacion_en_ecosistemas_marinos_y_costeros">
+									for="grupo_de_investigacion_en_ecosistemas_marinos_y_costeros"
+								>
 									<span className="checkmark"></span>Grupo de
 									investigación en ecosistemas marinos y
 									costeros
@@ -1172,7 +1210,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="ecologia_y_genetica_de_virus_emergentes_y_reemergentes">
+									for="ecologia_y_genetica_de_virus_emergentes_y_reemergentes"
+								>
 									<span className="checkmark"></span>Ecología
 									y genética de virus emergentes y
 									reemergentes
@@ -1188,7 +1227,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="evolucion_molecular_de_la_biota_en_el_peru">
+									for="evolucion_molecular_de_la_biota_en_el_peru"
+								>
 									<span className="checkmark"></span>Evolución
 									molecular de la biota en el Perú
 								</label>
@@ -1203,7 +1243,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="estudio_de_las_poblaciones_amenazadas_de_la_flora">
+									for="estudio_de_las_poblaciones_amenazadas_de_la_flora"
+								>
 									<span className="checkmark"></span>Estudio
 									de las poblaciones amenazadas de la flora
 								</label>
@@ -1218,7 +1259,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="genes_cromosomas_y_genomas_de_mamiferos">
+									for="genes_cromosomas_y_genomas_de_mamiferos"
+								>
 									<span className="checkmark"></span>Genes,
 									cromosomas y genomas de mamíferos
 								</label>
@@ -1233,7 +1275,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="genetica_de_enfermedades_metabolicas">
+									for="genetica_de_enfermedades_metabolicas"
+								>
 									<span className="checkmark"></span>Genética
 									de enfermedades metabólicas
 								</label>
@@ -1248,7 +1291,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="grupo_de_investigacion_en_bioinformatica_y_biologia_estructural">
+									for="grupo_de_investigacion_en_bioinformatica_y_biologia_estructural"
+								>
 									<span className="checkmark"></span>Grupo de
 									investigación en bioinformática y biología
 									estructural
@@ -1264,7 +1308,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="genomica_funcional_de_microorganismos_y_biorremediacion">
+									for="genomica_funcional_de_microorganismos_y_biorremediacion"
+								>
 									<span className="checkmark"></span>Genómica
 									funcional de microorganismos y
 									biorremediación
@@ -1280,7 +1325,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="inmunomoduladores_y_antitumorales_de_origen_natural_y_sintetico">
+									for="inmunomoduladores_y_antitumorales_de_origen_natural_y_sintetico"
+								>
 									<span className="checkmark"></span>
 									Inmunomoduladores y antitumorales de origen
 									natural y sintético
@@ -1296,7 +1342,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="investigacion_y_desarrollo_de_procesos_biotecnologicos_agroindustriales_y_ambientales">
+									for="investigacion_y_desarrollo_de_procesos_biotecnologicos_agroindustriales_y_ambientales"
+								>
 									<span className="checkmark"></span>
 									Investigación y desarrollo de procesos
 									biotecnológicos agroindustriales y
@@ -1313,7 +1360,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="grupo_de_investigacion_en_recursos_geneticos">
+									for="grupo_de_investigacion_en_recursos_geneticos"
+								>
 									<span className="checkmark"></span>Grupo de
 									investigación en recursos genéticos
 								</label>
@@ -1328,7 +1376,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="recursos_naturales_y_bioactivos">
+									for="recursos_naturales_y_bioactivos"
+								>
 									<span className="checkmark"></span>Recursos
 									naturales y bioactivos
 								</label>
@@ -1343,7 +1392,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="restauracion_ecologica_de_ecosistemas_terrestres_y_acuaticas_del_peru">
+									for="restauracion_ecologica_de_ecosistemas_terrestres_y_acuaticas_del_peru"
+								>
 									<span className="checkmark"></span>
 									Restauración ecológica de ecosistemas
 									terrestres y acuáticas del Perú
@@ -1359,7 +1409,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="grupo_de_investigacion_en_toxinas_de_origen_animal_y_sus_antivenenos">
+									for="grupo_de_investigacion_en_toxinas_de_origen_animal_y_sus_antivenenos"
+								>
 									<span className="checkmark"></span>Grupo de
 									investigación en toxinas de origen animal y
 									sus antivenenos
@@ -1375,7 +1426,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="inmunologia_parasitaria_en_humanos_y_animales_de_importancia_en_salud_publica">
+									for="inmunologia_parasitaria_en_humanos_y_animales_de_importancia_en_salud_publica"
+								>
 									<span className="checkmark"></span>
 									Inmunología parasitaria en humanos y
 									animales de importancia en salud pública
@@ -1391,7 +1443,8 @@ export default function Proyectos() {
 								/>
 								<label
 									className="mb-0"
-									for="virologia_clinica_molecular_inmunopatogenesis_y_antivirales">
+									for="virologia_clinica_molecular_inmunopatogenesis_y_antivirales"
+								>
 									<span className="checkmark"></span>Virología
 									clínica molecular inmunopatogénesis y
 									antivirales

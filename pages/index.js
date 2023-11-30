@@ -183,7 +183,8 @@ export default function Home() {
 										className="bg-home-video"
 										loop
 										autoPlay={true}
-										muted>
+										muted
+									>
 										{/* <source src="/assets/video/facu_bio.mp4" type="video/mp4" /> */}
 										<source
 											src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/facu_bio_2fc88ec75f.mp4"
@@ -205,7 +206,8 @@ export default function Home() {
 								className="wrapper-title-home"
 								initial={{ opacity: 0 }}
 								animate={{ opacity: 1 }}
-								transition={{ duration: 2.5 }}>
+								transition={{ duration: 2.5 }}
+							>
 								<Container fluid>
 									<Row>
 										{/* <Col></Col> */}
@@ -232,12 +234,14 @@ export default function Home() {
 									className="wrapper-eventos"
 									initial={{ left: '100vw', opacity: 0 }}
 									animate={{ left: 0, opacity: 1 }}
-									transition={{ duration: 1.5 }}>
+									transition={{ duration: 1.5 }}
+								>
 									<Container fluid>
 										<Row>
 											<Col
 												md={{ span: 11, offset: 1 }}
-												className="p-0">
+												className="p-0"
+											>
 												<div className="ml-0 ml-md-2 pad-extra-left">
 													<div className="d-flex mb-2 mb-md-0">
 														<h2 className="subtitle-green mr-1 mb-0">
@@ -248,20 +252,23 @@ export default function Home() {
 															whileHover={{
 																scale: 1.1,
 															}}
-															className="d-inline-block">
+															className="d-inline-block"
+														>
 															<img src="/assets/img/iconos/boton_vermas.png" />
 														</motion.a>
 													</div>
 													<div className="wrapper-just-events">
 														<Container
 															fluid
-															className="px-0">
+															className="px-0"
+														>
 															<Row>
 																{eventos[0] ? (
 																	<Col className="col-12 col-md mb-3 mb-md-0">
 																		<a
 																			className="color-inherit"
-																			href={`eventos/evento?nombre=${eventos[0]?.url_nombre}`}>
+																			href={`eventos/evento?nombre=${eventos[0]?.url_nombre}`}
+																		>
 																			<p className="fecha-evento">
 																				<span>
 																					{new Date(
@@ -313,7 +320,8 @@ export default function Home() {
 																	<Col className="col-12 col-md mb-3 mb-md-0">
 																		<a
 																			className="color-inherit"
-																			href={`eventos/evento?nombre=${eventos[1]?.url_nombre}`}>
+																			href={`eventos/evento?nombre=${eventos[1]?.url_nombre}`}
+																		>
 																			<p className="fecha-evento">
 																				<span>
 																					{new Date(
@@ -365,7 +373,8 @@ export default function Home() {
 																	<Col className="col-12 col-md mb-3 mb-md-0">
 																		<a
 																			className="color-inherit"
-																			href={`eventos/evento?nombre=${eventos[2]?.url_nombre}`}>
+																			href={`eventos/evento?nombre=${eventos[2]?.url_nombre}`}
+																		>
 																			<p className="fecha-evento">
 																				<span>
 																					{new Date(
@@ -417,7 +426,8 @@ export default function Home() {
 																	<Col className="col-12 col-md mb-3 mb-md-0">
 																		<a
 																			className="color-inherit"
-																			href={`eventos/evento?nombre=${eventos[3]?.url_nombre}`}>
+																			href={`eventos/evento?nombre=${eventos[3]?.url_nombre}`}
+																		>
 																			<p className="fecha-evento">
 																				<span>
 																					{new Date(
@@ -521,14 +531,16 @@ export default function Home() {
 													md={{
 														span: 10,
 														offset: 1,
-													}}>
+													}}
+												>
 													<div className="d-flex justify-content-start justify-content-md-end">
 														<h2 className="subtitle-green mr-1 mb-0">
 															Noticias
 														</h2>
 														<a
 															href="/noticias"
-															className="d-inline-block">
+															className="d-inline-block"
+														>
 															<img src="/assets/img/iconos/boton_vermas.png" />
 														</a>
 													</div>
@@ -542,12 +554,14 @@ export default function Home() {
 											{/* <Col className="d-flex flex-column position-relative" md={{ span: 4, offset: 1 }}> */}
 											<Col
 												className="d-flex flex-column position-relative mb-2 mb-md-0"
-												md={{ span: 4, offset: 0 }}>
+												md={{ span: 4, offset: 0 }}
+											>
 												<motion.p
 													className="d-none d-md-block mb-0 txt-noticias-bg"
 													style={{
 														opacity: intro_noticias,
-													}}>
+													}}
+												>
 													Entérate de
 													<br />
 													las últimas
@@ -566,7 +580,8 @@ export default function Home() {
 															duration: 0.2,
 														}}
 														href={`noticias/noticia?titulo=${novedades[0].slug}`}
-														className="position-relative box-shadow mt-auto">
+														className="position-relative box-shadow mt-auto"
+													>
 														<div className="position-relative">
 															<img
 																className="w-100 img-fluid"
@@ -577,7 +592,8 @@ export default function Home() {
 																				.banner
 																				.url
 																		: ''
-																}></img>
+																}
+															></img>
 															<div className="dark-filter"></div>
 														</div>
 														<div className="caption-img">
@@ -593,11 +609,13 @@ export default function Home() {
 											</Col>
 											<Col
 												className="mb-2 mb-md-0"
-												md="2">
+												md="2"
+											>
 												{novedades[1] ? (
 													<a
 														className="color-inherit"
-														href={`noticias/noticia?titulo=${novedades[1].slug}`}>
+														href={`noticias/noticia?titulo=${novedades[1].slug}`}
+													>
 														<motion.div
 															style={{
 																y: noticia_dos,
@@ -608,7 +626,8 @@ export default function Home() {
 															}}
 															transition={{
 																duration: 0.2,
-															}}>
+															}}
+														>
 															<div className="part-img position-relative">
 																<div className="position-relative">
 																	<img
@@ -620,7 +639,8 @@ export default function Home() {
 																						.banner
 																						.url
 																				: ''
-																		}></img>
+																		}
+																	></img>
 																	<div className="dark-filter"></div>
 																</div>
 																<div className="badge-tag">
@@ -641,7 +661,8 @@ export default function Home() {
 																		768
 																			? 'line-clamp-9 mb-0'
 																			: 'line-clamp-11 mb-0'
-																	}>
+																	}
+																>
 																	<span className="title-card mb-2">
 																		{
 																			novedades[1]
@@ -666,11 +687,13 @@ export default function Home() {
 											</Col>
 											<Col
 												className="mb-2 mb-md-0"
-												md="2">
+												md="2"
+											>
 												{novedades[2] ? (
 													<a
 														className="color-inherit"
-														href={`noticias/noticia?titulo=${novedades[2].slug}`}>
+														href={`noticias/noticia?titulo=${novedades[2].slug}`}
+													>
 														<motion.div
 															style={{
 																y: noticia_tres,
@@ -681,7 +704,8 @@ export default function Home() {
 															}}
 															transition={{
 																duration: 0.2,
-															}}>
+															}}
+														>
 															<div className="part-img position-relative">
 																<div className="position-relative">
 																	<img
@@ -693,7 +717,8 @@ export default function Home() {
 																						.banner
 																						.url
 																				: ''
-																		}></img>
+																		}
+																	></img>
 																	<div className="dark-filter"></div>
 																</div>
 																<div className="badge-tag">
@@ -714,7 +739,8 @@ export default function Home() {
 																		768
 																			? 'line-clamp-9 mb-0'
 																			: 'line-clamp-11 mb-0'
-																	}>
+																	}
+																>
 																	<span className="title-card mb-2">
 																		{
 																			novedades[2]
@@ -739,11 +765,13 @@ export default function Home() {
 											</Col>
 											<Col
 												className="mb-2 mb-md-0"
-												md="2">
+												md="2"
+											>
 												{novedades[3] ? (
 													<a
 														className="color-inherit"
-														href={`noticias/noticia?titulo=${novedades[3].slug}`}>
+														href={`noticias/noticia?titulo=${novedades[3].slug}`}
+													>
 														<motion.div
 															style={{
 																y: noticia_cuatro,
@@ -754,7 +782,8 @@ export default function Home() {
 															transition={{
 																duration: 0.2,
 															}}
-															className="card-bio">
+															className="card-bio"
+														>
 															<div className="part-img position-relative">
 																<div className="position-relative">
 																	<img
@@ -766,7 +795,8 @@ export default function Home() {
 																						.banner
 																						.url
 																				: ''
-																		}></img>
+																		}
+																	></img>
 																	<div className="dark-filter"></div>
 																</div>
 																<div className="badge-tag">
@@ -787,7 +817,8 @@ export default function Home() {
 																		768
 																			? 'line-clamp-9 mb-0'
 																			: 'line-clamp-11 mb-0'
-																	}>
+																	}
+																>
 																	<span className="title-card mb-2">
 																		{
 																			novedades[3]
@@ -824,7 +855,8 @@ export default function Home() {
 													style={{
 														opacity: intro_carreras,
 													}}
-													className="big-text text-right">
+													className="big-text text-right"
+												>
 													Encuentra tu vocación
 												</motion.div>
 											</Col>
@@ -838,14 +870,16 @@ export default function Home() {
 												className={
 													width < 768 ? 'p-0' : ''
 												}
-												md={{ span: 10, offset: 1 }}>
+												md={{ span: 10, offset: 1 }}
+											>
 												<div className="d-flex">
 													<h2 className="subtitle-green mr-1 mb-0">
 														Carreras
 													</h2>
 													<a
 														href="/formacion-academica/pregrado"
-														className="d-inline-block">
+														className="d-inline-block"
+													>
 														<img src="/assets/img/iconos/boton_vermas.png" />
 													</a>
 												</div>
@@ -863,7 +897,8 @@ export default function Home() {
 															<a className="d-block wrapper-caption">
 																<img
 																	className="w-100 img-fluid"
-																	src="/assets/img/carreras/home/microbiologia_parasitologia_color.png"></img>
+																	src="/assets/img/carreras/home/microbiologia_parasitologia_color.png"
+																></img>
 																<div className="caption-hover">
 																	<div className="caption text-shadow">
 																		EP.
@@ -880,7 +915,8 @@ export default function Home() {
 															<a className="d-block wrapper-caption">
 																<img
 																	className="w-100 img-fluid"
-																	src="/assets/img/carreras/home/genetica_biotecnologia_color.png"></img>
+																	src="/assets/img/carreras/home/genetica_biotecnologia_color.png"
+																></img>
 																<div className="caption-hover">
 																	<div className="caption text-shadow">
 																		EP.
@@ -897,7 +933,8 @@ export default function Home() {
 															<a className="d-block wrapper-caption">
 																<img
 																	className="w-100 img-fluid"
-																	src="/assets/img/carreras/home/ciencias_biologicas_color.png"></img>
+																	src="/assets/img/carreras/home/ciencias_biologicas_color.png"
+																></img>
 																<div className="caption-hover">
 																	<div className="caption text-shadow">
 																		EP.
@@ -926,7 +963,8 @@ export default function Home() {
 													md={{
 														span: 10,
 														offset: 1,
-													}}>
+													}}
+												>
 													<div className="d-flex justify-content-start justify-content-md-end">
 														<h2 className="subtitle-green mr-1 mb-0">
 															Producción
@@ -934,7 +972,8 @@ export default function Home() {
 														</h2>
 														<a
 															href="/investigacion/proyectos"
-															className="d-inline-block">
+															className="d-inline-block"
+														>
 															<img src="/assets/img/iconos/boton_vermas.png" />
 														</a>
 													</div>
@@ -948,7 +987,8 @@ export default function Home() {
 											{/* <Col className="d-flex flex-column position-relative" md={{ span: 4, offset: 1 }}> */}
 											<Col
 												className="d-flex flex-column position-relative mb-2 mb-md-0"
-												md={{ span: 4, offset: 0 }}>
+												md={{ span: 4, offset: 0 }}
+											>
 												{width >= 768 && (
 													<>
 														<motion.p
@@ -956,11 +996,16 @@ export default function Home() {
 															style={{
 																opacity:
 																	intro_proyectos,
-															}}>
+															}}
+														>
 															Descubre el trabajo
+															de
 															<br />
-															de alumnos, docentes
-															<br />y egresados
+															docentes
+															investigadores,
+															<br />
+															tesistas
+															y estudiantes
 														</motion.p>
 													</>
 												)}
@@ -968,8 +1013,9 @@ export default function Home() {
 													<>
 														<p>
 															Descubre el trabajo
-															de alumnos, docentes
-															y egresados
+															de docentes
+															investigadores,
+															tesistas y estudiantes
 														</p>
 													</>
 												)}
@@ -986,7 +1032,8 @@ export default function Home() {
 															duration: 0.2,
 														}}
 														href={`investigacion/proyectos/proyecto?nombre=${proyectos[0].url_nombre}`}
-														className="position-relative box-shadow mt-auto">
+														className="position-relative box-shadow mt-auto"
+													>
 														<div className="position-relative">
 															<div className="position-relative">
 																<img
@@ -998,7 +1045,8 @@ export default function Home() {
 																					.imagen
 																					.url
 																			: ''
-																	}></img>
+																	}
+																></img>
 																<div className="dark-filter"></div>
 															</div>
 															<div className="caption-img">
@@ -1028,11 +1076,13 @@ export default function Home() {
 											</Col>
 											<Col
 												className="mb-2 mb-md-0"
-												md="2">
+												md="2"
+											>
 												{proyectos[1] ? (
 													<a
 														className="color-inherit"
-														href={`investigacion/proyectos/proyecto?nombre=${proyectos[1].url_nombre}`}>
+														href={`investigacion/proyectos/proyecto?nombre=${proyectos[1].url_nombre}`}
+													>
 														<motion.div
 															style={{
 																y: proyecto_dos,
@@ -1043,7 +1093,8 @@ export default function Home() {
 															}}
 															transition={{
 																duration: 0.2,
-															}}>
+															}}
+														>
 															<div className="part-img position-relative">
 																<div className="position-relative">
 																	<img
@@ -1055,7 +1106,8 @@ export default function Home() {
 																						.imagen
 																						.url
 																				: ''
-																		}></img>
+																		}
+																	></img>
 																	<div className="dark-filter"></div>
 																</div>
 															</div>
@@ -1096,11 +1148,13 @@ export default function Home() {
 											</Col>
 											<Col
 												className="mb-2 mb-md-0"
-												md="2">
+												md="2"
+											>
 												{proyectos[2] ? (
 													<a
 														className="color-inherit"
-														href={`investigacion/proyectos/proyecto?nombre=${proyectos[2].url_nombre}`}>
+														href={`investigacion/proyectos/proyecto?nombre=${proyectos[2].url_nombre}`}
+													>
 														<motion.div
 															style={{
 																y: proyecto_tres,
@@ -1111,7 +1165,8 @@ export default function Home() {
 															}}
 															transition={{
 																duration: 0.2,
-															}}>
+															}}
+														>
 															<div className="part-img position-relative">
 																<div className="position-relative">
 																	<img
@@ -1123,7 +1178,8 @@ export default function Home() {
 																						.imagen
 																						.url
 																				: ''
-																		}></img>
+																		}
+																	></img>
 																	<div className="dark-filter"></div>
 																</div>
 															</div>
@@ -1164,11 +1220,13 @@ export default function Home() {
 											</Col>
 											<Col
 												className="mb-2 mb-md-0"
-												md="2">
+												md="2"
+											>
 												{proyectos[3] ? (
 													<a
 														className="color-inherit"
-														href={`investigacion/proyectos/proyecto?nombre=${proyectos[3].url_nombre}`}>
+														href={`investigacion/proyectos/proyecto?nombre=${proyectos[3].url_nombre}`}
+													>
 														<motion.div
 															style={{
 																y: proyecto_cuatro,
@@ -1179,7 +1237,8 @@ export default function Home() {
 															}}
 															transition={{
 																duration: 0.2,
-															}}>
+															}}
+														>
 															<div className="part-img position-relative">
 																<div className="position-relative">
 																	<img
@@ -1191,7 +1250,8 @@ export default function Home() {
 																						.imagen
 																						.url
 																				: ''
-																		}></img>
+																		}
+																	></img>
 																	<div className="dark-filter"></div>
 																</div>
 															</div>
@@ -1351,14 +1411,16 @@ export default function Home() {
 										</Col>
 										<Col
 											className="mb-5 mb-md-0"
-											md={{ span: 4 }}>
+											md={{ span: 4 }}
+										>
 											<div className="section-mision">
 												<Carousel
 													fade
 													indicators={false}
 													controls={false}
 													interval={5000}
-													className="text-right carousel-text">
+													className="text-right carousel-text"
+												>
 													<Carousel.Item>
 														<h3 className="semi-big-text">
 															Nuestra misión
