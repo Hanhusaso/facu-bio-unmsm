@@ -58,7 +58,7 @@ const mencionBotanicaEconomica = () => {
 
 	return (
 		<>
-			<Layout title="Maestría en Botánica Tropical con mención en Botánica económica">
+			<Layout title="Maestría en Bioinformática y Ciencias Ómicas">
 				<div>
 					<div>
 						<Container>
@@ -80,8 +80,8 @@ const mencionBotanicaEconomica = () => {
 											</Link>
 										</li>
 										<Breadcrumb.Item active>
-											Maestría en Botánica Tropical con
-											mención en Botánica económica
+											Maestría en Bioinformática y
+											Ciencias Ómicas
 										</Breadcrumb.Item>
 									</Breadcrumb>
 								</Col>
@@ -95,8 +95,8 @@ const mencionBotanicaEconomica = () => {
 								<Col md="1"></Col>
 								<Col>
 									<div className="title-page text-center">
-										Maestría en Botánica Tropical con
-										mención en Botánica económica
+										Maestría en Bioinformática y Ciencias
+										Ómicas
 									</div>
 								</Col>
 								<Col md="1"></Col>
@@ -107,7 +107,7 @@ const mencionBotanicaEconomica = () => {
 					<div className="mb-4">
 						<img
 							className="w-100"
-							src="/assets/img/posgrado/maestria botanica tropical/banner-maestria-botanica-tropical-unmsm.png"
+							src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/maestria_bioinformatica_ciencias_omicas_2_70dbe431da.jpg"
 							alt=""
 						/>
 					</div>
@@ -237,9 +237,8 @@ const mencionBotanicaEconomica = () => {
 														<Icon.GradoTituloIcon className="mr-2 position-relative bot-2px" />
 													</span>
 													<strong>Título:</strong>{' '}
-													Magíster en Botánica
-													Tropical con mención en
-													Botánica económica
+													Magíster en Bioinformática y
+													Ciencias Ómicas
 												</p>
 												<p className="mb-0">
 													<span>
@@ -250,229 +249,209 @@ const mencionBotanicaEconomica = () => {
 													año)
 												</p>
 											</div>
-											<p className="mb-4">
-												Este programa académico busca
-												consolidar la formación de
-												profesionales e investigadores
-												de alto nivel, con capacidad de
-												buscar la ampliación del
-												conocimiento de las plantas
-												útiles y el mejoramiento de
-												cultivos de importancia
-												económica en aspectos de
-												alimentación, colorantes,
-												perfumes, medicinas, textiles.
-											</p>
-											<p className="mb-3">
-												<strong>Objetivos:</strong>
-											</p>
-											<p className="mb-4">
-												Formar personas capaces de
-												contribuir al conocimiento de la
-												flora, con el fin de resaltar
-												las especies útiles al ser
-												humano, para sentar las bases de
-												su determinación botánica:
-												establecer su origen,
-												domesticación y mejoramiento;
-												así como, el establecimiento de
-												variedades, cultivos,
-												conservación y manejo sostenible
-												de los mismos.
-											</p>
 											<p className="mb-3">
 												<strong>
-													Perfil del ingresante:
+													Objetivos de la maestría
 												</strong>
 											</p>
 											<p className="mb-4">
-												Dirigido a profesionales con
-												grado de bachiller en ciencias
-												biológicas o disciplinas afines,
-												otorgado por universidades
-												nacionales o extranjeras que
-												aseguren una formación acorde al
-												perfil del programa. Haber
-												aprobado, durante sus estudios
-												de pregrado, los siguientes
-												cursos básicos o sus
-												equivalentes: Botánica,
-												Genética, Citología, Fisiología,
-												Bioquímica, Ecología, Física,
-												Química y Estadística.
+												Este programa busca formar
+												investigadores de alto nivel con
+												capacidades para realizar
+												estudios de avanzada en ciencias
+												ómicas y computacionales. Los
+												graduados tendrán las
+												habilidades y conocimientos que
+												les permitan generar nuevos
+												conocimientos o procesos
+												tecnológicos aplicados a la
+												resolución de problemas con
+												datos a gran escala.
 											</p>
-											<p className="mb-3">
+											<p className="mb-2">
 												<strong>
-													Perfil del egresado:
+													Objetivos específicos
+												</strong>
+											</p>
+											<ul className="mb-4 mt-2 pl-4">
+												<li className="mb-1">
+													Aplicar herramientas
+													bioinformáticas para
+													solucionar problemas
+													referentes al análisis de
+													datos ómicos a larga escala.
+												</li>
+												<li className="mb-1">
+													Formar investigadores de
+													alto nivel científico que
+													propongan soluciones basadas
+													en conocimiento, a preguntas
+													de investigación que
+													requieran de un lenguaje
+													común entre las ciencias
+													ómicas y computacionales.
+												</li>
+												<li className="mb-1">
+													Formar investigadores de
+													alto nivel científico que
+													tengan un desempeño ético y
+													eficiente en su aporte de
+													soluciones al desarrollo del
+													Perú.
+												</li>
+											</ul>
+											<p className="mb-2">
+												<strong>
+													Perfil del ingresante
+												</strong>
+											</p>
+											<p className="mb-2">
+												El ingresante a la Maestría en
+												Bioinformática y Ciencias
+												Ómicas, posee el Grado Académico
+												de Bachiller en Ciencias
+												Biológicas, Bachiller en
+												Genética y Biotecnología,
+												Bachiller en Microbiología y
+												Parasitología y otras ciencias
+												básicas, o Grado Académico de
+												Medicina Veterinaria, Farmacia y
+												Bioquímica o Grado Académico de
+												Física o Química, o Ciencias de
+												la Computación y tiene el
+												siguiente perfil:
+											</p>
+											<p className="mb-4">
+												<ul className="mb-0 mt-2 pl-4">
+													<li className="mb-1">
+														Conoce conceptos básicos
+														y actuales de
+														Bioquímica, Genética,
+														Introducción a
+														informática y Ciencias
+														de la Computación.
+													</li>
+													<li className="mb-1">
+														Analiza información
+														científica en idiomas
+														distintos al castellano.
+													</li>
+													<li>
+														Muestra interés en una
+														de las líneas de
+														investigación afines al
+														programa.
+													</li>
+												</ul>
+											</p>
+											<p className="mb-2">
+												<strong>
+													Perfil del egresado
 												</strong>
 											</p>
 											<p className="mb-4">
-												El graduado realizará
-												investigación y docencia
-												universitaria de calidad
-												aplicando metodologías
-												pedagógicas innovadoras, acordes
-												con el avance de la ciencia.
-												Liderará investigaciones básicas
-												o aplicadas en los campos
-												diversos de la botánica y
-												ciencias afines, con la
-												posibilidad de trabajar, por su
-												capacitación, en muchos campos
-												donde la disciplina se requiera,
-												con valores éticos profesionales
-												destacables.
+												El graduado de la Maestría en
+												Bioinformática y Ciencias
+												Ómicas:
 											</p>
-											{/* <p className="mb-3">
+											<p className="mb-4">
+												<ul className="mb-0 mt-2 pl-4">
+													<li className="mb-1">
+														Aplica metodologías
+														actualizadas en el campo
+														de la Bioinformática y
+														Ciencias Ómicas para la
+														resolución de
+														problemáticas de interés
+														nacional e
+														internacional, con
+														criterio científico y
+														responsabilidad social.
+													</li>
+													<li className="mb-1">
+														Gestiona y lidera
+														proyectos de
+														investigación básica y
+														aplicada, a nivel inter
+														y multidisciplinarias
+														para resolver problemas
+														en Bioinformática y
+														ciencias ómicas, con
+														principios éticos,
+														trabajo en equipo y
+														demostrando autonomía.
+													</li>
+													<li>
+														Publica los productos de
+														su investigación en
+														revistas indizadas con
+														la finalidad de difundir
+														los conocimientos
+														generados en beneficio
+														de la sociedad, con
+														transparencia.
+													</li>
+												</ul>
+											</p>
+											<p className="mb-2">
 												<strong>
 													¿Por qué estudiar con
 													nosotros?
 												</strong>
 											</p>
-											<p className="mb-4"></p>
-											<p>
+											<p className="mb-4">
+												Somos el único programa de
+												maestría de Bioinformática y
+												Ciencias Ómicas en el país y
+												contamos con una plana docente
+												interna y externa constituida
+												por especialistas reconocidos.
+												Estas disciplinas constituyen el
+												Avant Garde de la investigación
+												en Ciencias Biológicas y afines.
+												Estas Ciencias son por
+												naturaleza
+												interdisciplinariarias
+												aplicándose además a una enorme
+												cantidad de campos
+												profesionales. La necesidad de
+												Bioinformáticos en el Perú
+												garantiza interesantes campos
+												laborales en Agricultura,
+												estudios de la biodiversidad,
+												medicina, veterinaria,
+												ganadería, pesquería e
+												industria.
+											</p>
+											<p className="mb-2">
 												<strong>Campo Laboral:</strong>
 											</p>
-											<ul className="pl-3">
-												<li aria-level="1"></li>
-											</ul> */}
+											<p className="mb-4">
+												<ul className="mb-0 mt-2 pl-4">
+													<li className="mb-1">
+														Investigador en
+														proyectos tecnológicos y
+														científicos en los
+														sectores de agricultura,
+														ganadería, pesquería e
+														industria.
+													</li>
+													<li className="mb-1">
+														Docencia e investigación
+														en instituciones de
+														educación superior.
+													</li>
+													<li className="mb-1">
+														Asesorías y
+														consultorías.
+													</li>
+													<li className="mb-1">
+														Evaluación y gestión de
+														impacto ambiental.
+													</li>
+												</ul>
+											</p>
 										</div>
-										{/* <div
-											className="mb-3 tab-pane fade"
-											id="v-pills-perfil"
-											role="tabpanel"
-											aria-labelledby="v-pills-perfil-tab">
-											<p>
-												<strong>
-													PERFIL DEL INGRESANTE
-												</strong>
-											</p>
-											<p>
-												El ingresante a la
-												Maestr&iacute;a en
-												Bot&aacute;nica Tropical:
-											</p>
-											<ul>
-												<li aria-level="1">
-													Poseer&aacute; el grado
-													acad&eacute;mico de
-													bachiller en Ciencias
-													biol&oacute;gicas o
-													disciplinas afines,
-													otorgados por universidades
-													nacionales o extranjeras que
-													aseguren una
-													formaci&oacute;n acorde a
-													los fines del Programa.
-												</li>
-												<li aria-level="1">
-													Haber aprobado durante sus
-													estudios de pregrado los
-													siguientes cursos
-													b&aacute;sicos o sus
-													equivalentes:
-													Bot&aacute;nica,
-													Gen&eacute;tica,
-													Citolog&iacute;a,
-													Fisiolog&iacute;a,
-													Bioqu&iacute;mica,
-													Ecolog&iacute;a,
-													F&iacute;sica,
-													Qu&iacute;mica y
-													Estad&iacute;stica.
-												</li>
-											</ul>
-											<p>
-												<strong>
-													PERFIL DEL EGRESADO
-												</strong>
-											</p>
-											<p>
-												El mag&iacute;ster en cualquiera
-												de las tres menciones que opte
-												por el tema de su tesis,
-												ejercer&aacute;
-												investigaci&oacute;n y docencia
-												universitaria de calidad
-												aplicando metodolog&iacute;as
-												pedag&oacute;gicas innovadoras y
-												acordes con el avance de la
-												ciencia. Liderar&aacute; y
-												desarrollar&aacute;
-												investigaciones b&aacute;sicas y
-												/o aplicadas en los campos
-												diversos de la bot&aacute;nica y
-												ciencias afines, pudiendo
-												trabajar por su
-												capacitaci&oacute;n en muchos
-												campos donde la disciplina se
-												requiera; cumpliendo con valores
-												&eacute;ticos profesionales,
-												entre sus funciones y/o
-												actividades podemos
-												se&ntilde;alar:
-											</p>
-											<ul>
-												<li aria-level="1">
-													Realizar la
-													determinaci&oacute;n de las
-													especies de los diversos
-													grupos de la flora peruana.
-												</li>
-												<li aria-level="1">
-													Solucionar los problemas de
-													inventarios y
-													evaluaci&oacute;n de los
-													ecosistemas con criterio de
-													conservaci&oacute;n de la
-													diversidad
-													flor&iacute;stica.
-												</li>
-												<li aria-level="1">
-													Tener conocimientos de las
-													especies vegetales de valor
-													econ&oacute;mico en las
-													diversas regiones
-													geogr&aacute;ficas: de valor
-													alimenticio, forrajera, de
-													uso industrial, medicinal,
-													ornamental y considerar sus
-													cualidades, cantidades y
-													factibilidad de uso para
-													contribuir a mejorar el
-													nivel de vida del ser
-													humano.
-												</li>
-												<li aria-level="1">
-													Realizar investigaciones
-													sobre biotecnolog&iacute;a
-													de especies vegetales.
-												</li>
-												<li aria-level="1">
-													Ser capaz de realizar la
-													revalorizaci&oacute;n y
-													rescate de la riqueza del
-													conocimiento de la flora
-													silvestre y cultivada,
-													propio de las diversas
-													etnias de nuestro vasto
-													territorio.
-												</li>
-												<li aria-level="1">
-													Formular estrategias de
-													protecci&oacute;n a la
-													cultura bot&aacute;nica
-													tradicional y su uso
-													sostenible.
-												</li>
-												<li aria-level="1">
-													Asesorar trabajos de
-													investigaci&oacute;n de
-													estudiantes de pre y
-													posgrado.
-												</li>
-											</ul>
-										</div> */}
 										<div
 											className="mb-3 tab-pane fade"
 											id="v-pills-admision"
@@ -503,8 +482,8 @@ const mencionBotanicaEconomica = () => {
 													title="Cuadro de Vacantes"
 												>
 													<CuadroVacantesMaestria
-														vacantesNumber={14}
-														programaName="Maestría en Botánica Tropical con mención en Botánica económica"
+														vacantesNumber={15}
+														programaName="Maestría en Bioinformática y Ciencias Ómicas"
 													/>
 												</Tab>
 												<Tab

@@ -5,7 +5,7 @@ const ProcesoEvaluacionMaestria = () => {
 		<div>
 			<p>
 				Para ingresar a los programas de maestrías correspondientes al
-				ciclo 2023-I, el postulante deberá atravesar por un proceso de 3
+				ciclo 2024-I, el postulante deberá atravesar por un proceso de 3
 				evaluaciones, las cuales son las siguientes:
 			</p>
 			<ol className="pl-3">
@@ -15,11 +15,11 @@ const ProcesoEvaluacionMaestria = () => {
 							Examen virtual:
 						</span>{' '}
 						Evalúa competencias cognitivas superiores y conocimiento
-						básico del idioma inglés. Tiene un peso de 50 % en la
-						evaluación final y es de carácter eliminatorio. El
-						puntaje mínimo para aprobar el examen de aptitud, en su
-						modalidad virtual, es de 27.5 puntos. El temario
-						comprenderá los siguientes rubros:
+						mínimo de nivel A2 del idioma inglés . Tiene un peso de
+						50 % en la evaluación final y es de carácter
+						eliminatorio. El puntaje mínimo para aprobar el examen
+						de aptitud, en su modalidad virtual, es de 27.5 puntos.
+						El temario comprenderá los siguientes rubros:
 					</p>
 					<ul className="chevron-green-dark">
 						<li>Cultura general (10 puntos).</li>
@@ -42,6 +42,38 @@ const ProcesoEvaluacionMaestria = () => {
 					</span>{' '}
 					La entrevista se llevará a cabo mediante la plataforma
 					Google Meet. Tiene un peso del 30 % en la evaluación final.
+				</li>
+				<li className="mb-2">
+					<p>
+						<span className="font-weight-bold">
+							Examen virtual:
+						</span>{' '}
+						Evalúa competencias cognitivas superiores y conocimiento
+						mínimo de nivel A2 del idioma inglés . Tiene un peso de
+						50 % en la evaluación final y es de carácter
+						eliminatorio. El puntaje mínimo para aprobar el examen
+						de aptitud, en su modalidad virtual, es de 27.5 puntos.
+						El temario comprenderá los siguientes rubros:
+					</p>
+					<ul className="chevron-green-dark">
+						<li>
+							Conocer conceptos básicos y actuales de Bioquímica,
+							Genética, Informática y Ciencias de la Computación.
+						</li>
+						<li>
+							Mostrar competencia en analizar información
+							científica en idiomas distintos al castellano.
+						</li>
+						<li>
+							Haber hecho coordinaciones y establecido contacto
+							con profesores de la maestría o grupos de
+							investigación internos o externos para determinar un
+							tema de tesis, posible asesor, y tener datos para
+							analizar, será un plus.
+						</li>
+						<li>Tener conocimientos de informática.</li>
+						<li>Tener buena redacción.</li>
+					</ul>
 				</li>
 			</ol>
 		</div>
