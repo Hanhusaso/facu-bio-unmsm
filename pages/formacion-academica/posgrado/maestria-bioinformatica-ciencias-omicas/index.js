@@ -24,7 +24,7 @@ const mencionBotanicaEconomica = () => {
 	useEffect(() => {
 		(async () => {
 			const response = await getDocenteByIdInformacionAcademicaApi(
-				'maestria_en_botanica_tropical'
+				'maestria_bioinformatica_ciencias_omicas'
 			);
 			setDocentes(response);
 		})();
