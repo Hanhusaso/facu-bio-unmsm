@@ -104,7 +104,7 @@ const InversionEconomicaDoctorado = () => {
 					<div>
 						<p className="sub-text mb-0 text-center">
 							*Los costos corresponden al proceso de admisión
-							2023-I, sujetos a variaciones.
+							2024-I, sujetos a variaciones.
 						</p>
 					</div>
 				</div>
@@ -132,7 +132,7 @@ const InversionEconomicaDoctorado = () => {
 				</p>
 				<ul className="mb-3 pl-4">
 					<li>
-						El costo por ciclo es de <b>S/ 3400.00</b>
+						El costo por ciclo es de <b>S/ 3,400.00</b>
 					</li>
 				</ul>
 				<div className="info-box mb-3">
@@ -141,12 +141,28 @@ const InversionEconomicaDoctorado = () => {
 						para la obtención del grado.
 					</p>
 				</div>
-				<div>
+				<div className="mb-3">
 					<p className="sub-text mb-0">
-						*Los costos corresponden al proceso de admisión 2023-I,
+						*Los costos corresponden al proceso de admisión 2024-I,
 						sujetos a variaciones.
 					</p>
 				</div>
+				<p className="mb-3">
+					Consulta la información sobre las{' '}
+					<b>
+						BECAS EN PROGRAMAS DE DOCTORADO EN ALIANZAS
+						INTERINSTITUCIONALES DE PROCIENCIA
+					</b>{' '}
+					haciendo{' '}
+					<a
+						href="https://prociencia.gob.pe/2023/12/prociencia-financia-8-programas-doctorales-y-304-becas-para-transformar-el-futuro-del-pais/?fbclid=IwAR3SUbn2jFQXm1YPFtBrmKx6xwFzLYsXb1bk-_RAx7zpa416fYgmpQ3maz0"
+						target="_blank"
+						className="color-green-bright"
+					>
+						clic aquí
+					</a>
+					.
+				</p>
 			</div>
 
 			<div>
@@ -162,8 +178,8 @@ const InversionEconomicaDoctorado = () => {
 					<span>
 						<Icon.telefonoIcon className="mr-2" />
 					</span>
-					<span className="font-weight-bold">Teléfono: </span> Escuela
-					de 990 090 886 (Sra. Dora Aguilar)
+					<span className="font-weight-bold">Teléfono: </span>
+					(+51) 914 033 256
 				</p>
 			</div>
 		</div>

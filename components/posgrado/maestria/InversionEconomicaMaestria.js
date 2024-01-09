@@ -104,7 +104,7 @@ const InversionEconomicaMaestria = () => {
 					<div>
 						<p className="sub-text mb-0 text-center">
 							*Los costos corresponden al proceso de admisión
-							2023-I, sujetos a variaciones.
+							2024-I, sujetos a variaciones.
 						</p>
 					</div>
 				</div>
@@ -122,7 +122,7 @@ const InversionEconomicaMaestria = () => {
 				</div>
 			</div>
 
-			{/* <div className="mb-4">
+			<div className="mb-4">
 				<p className="font-weight-bold">3. Costo por ciclo:</p>
 				<p className="mb-3">
 					Cada curso tiene una cantidad determinada de creditaje por
@@ -132,7 +132,7 @@ const InversionEconomicaMaestria = () => {
 				</p>
 				<ul className="mb-3 pl-4">
 					<li>
-						El costo por ciclo es de <b>S/ 2000.00</b>
+						El costo por ciclo es de <b>S/ 2,500.00</b>
 					</li>
 				</ul>
 				<div className="info-box mb-3">
@@ -143,11 +143,11 @@ const InversionEconomicaMaestria = () => {
 				</div>
 				<div>
 					<p className="sub-text mb-0">
-						*Los costos corresponden al proceso de admisión 2023-I,
+						*Los costos corresponden al proceso de admisión 2024-I,
 						sujetos a variaciones.
 					</p>
 				</div>
-			</div> */}
+			</div>
 
 			<div>
 				<p className="font-weight-bold">Más información</p>
@@ -162,8 +162,8 @@ const InversionEconomicaMaestria = () => {
 					<span>
 						<Icon.telefonoIcon className="mr-2" />
 					</span>
-					<span className="font-weight-bold">Teléfono: </span> Escuela
-					de 990 090 886 (Sra. Dora Aguilar)
+					<span className="font-weight-bold">Teléfono: </span>
+					(+51) 914 033 256
 				</p>
 			</div>
 		</div>

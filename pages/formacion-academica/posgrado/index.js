@@ -127,23 +127,12 @@ const posgrado = () => {
 							</div>
 						</div> */}
 						<Container className="mb-4 mb-md-5">
-							<Row className="reverse-responsive">
+							<Row>
 								<Col md="2"></Col>
-								<Col md="4" className="text-center">
-									{/* <Link href="/formacion-academica/pregrado/ciencias-biologicas"> */}
-									<Link href="/formacion-academica/posgrado/doctorado-ciencias-biologicas">
-										<a>
-											<img
-												className="img-fluid"
-												src="/assets/img/posgrado/doctorado-ciencias-biologicas-unmsm-minihome.png"
-												alt=""
-											/>
-										</a>
-									</Link>
-								</Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4">
+									md="4"
+								>
 									<div className="text-center mb-3">
 										{/* <Link href="/formacion-academica/pregrado/ciencias-biologicas"> */}
 										<Link href="/formacion-academica/posgrado/doctorado-ciencias-biologicas">
@@ -152,8 +141,9 @@ const posgrado = () => {
 											</a>
 										</Link>
 									</div>
-									<div className="d-none d-md-block">
-										<p className="mb-0">
+									{/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
+									<div>
+										<p className="mb-2 d-none d-md-block">
 											El Doctorado en Ciencias Biológicas
 											forma especialistas de los más altos
 											niveles capaces de evaluar e
@@ -165,6 +155,64 @@ const posgrado = () => {
 										</p>
 									</div>
 								</Col>
+								<Col md="4" className="text-center">
+									<Link href="/formacion-academica/posgrado/doctorado-ciencias-biologicas">
+										<a>
+											<img
+												className="img-fluid"
+												src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/doctorado_ciencias_biologicas_unmsm_minihome_0595be75c5.jpg"
+												alt="botanica tropical"
+											/>
+										</a>
+									</Link>
+								</Col>
+								<Col md="2"></Col>
+							</Row>
+						</Container>
+						<Container className="mb-4 mb-md-5">
+							<Row className="reverse-responsive">
+								<Col md="2"></Col>
+								<Col md="4" className="text-center">
+									{/* <Link href="/formacion-academica/pregrado/ciencias-biologicas"> */}
+									<Link href="/formacion-academica/posgrado/maestria-bioinformatica-ciencias-omicas">
+										<a>
+											<img
+												className="img-fluid"
+												src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/maestria_bioinformatica_ciencias_omicas_minihome_548bccaf79.jpg"
+												alt=""
+											/>
+										</a>
+									</Link>
+								</Col>
+								<Col
+									className="d-flex flex-column justify-content-center"
+									md="4"
+								>
+									<div className="text-center mb-3">
+										{/* <Link href="/formacion-academica/pregrado/ciencias-biologicas"> */}
+										<Link href="/formacion-academica/posgrado/maestria-bioinformatica-ciencias-omicas">
+											<a className="title-green">
+												Maestría en Bioinformática y
+												Ciencias Ómicas
+											</a>
+										</Link>
+									</div>
+									<div className="d-none d-md-block">
+										<p className="mb-0">
+											Esta maestría tiene como objetivo
+											formar investigadores de alto nivel
+											con capacidades para realizar
+											estudios de avanzada en ciencias
+											ómicas y computacionales. Los
+											graduados tendrán las habilidades y
+											conocimientos que les permitan
+											generar nuevos conocimientos o
+											procesos tecnológicos aplicados a la
+											resolución de problemas con datos a
+											gran escala.
+										</p>
+									</div>
+								</Col>
 								<Col md="2"></Col>
 							</Row>
 						</Container>
@@ -173,7 +221,8 @@ const posgrado = () => {
 								<Col md="2"></Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4">
+									md="4"
+								>
 									<div className="text-center mb-3">
 										{/* <Link href="/formacion-academica/posgrado/maestria-botanica-tropical">
 											<a className="title-green"> */}
@@ -250,7 +299,8 @@ const posgrado = () => {
 								</Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4">
+									md="4"
+								>
 									<div className="text-center mb-3">
 										{/* <Link href="/formacion-academica/posgrado/maestria-ecosistemas">
 											<a className="title-green"> */}
@@ -307,7 +357,8 @@ const posgrado = () => {
 								<Col md="2"></Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4">
+									md="4"
+								>
 									<div className="text-center mb-3">
 										{/* <Link href="/formacion-academica/posgrado/maestria-zoologia">
 											<a className="title-green"> */}
@@ -379,7 +430,8 @@ const posgrado = () => {
 								</Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4">
+									md="4"
+								>
 									<div className="text-center mb-3">
 										<Link href="/formacion-academica/posgrado/maestria-biologia-molecular">
 											<a className="title-green">
@@ -409,7 +461,8 @@ const posgrado = () => {
 								<Col md="2"></Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4">
+									md="4"
+								>
 									<div className="text-center mb-3">
 										<Link href="/formacion-academica/posgrado/maestria-genetica">
 											<a className="title-green">
@@ -466,7 +519,8 @@ const posgrado = () => {
 								</Col>
 								<Col
 									className="d-flex flex-column justify-content-center"
-									md="4">
+									md="4"
+								>
 									<div className="text-center mb-3">
 										<Link href="/formacion-academica/posgrado/maestria-biodiversidad">
 											<a className="title-green">

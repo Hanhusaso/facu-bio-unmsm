@@ -8,7 +8,7 @@ const CuadroVacantesMaestria = ({ programaName = '', vacantesNumber = 0 }) => {
 				de Posgrado de la facultad de Ciencias Biológicas se desarrolla
 				semestralmente, según cronograma aprobado por el VRIP. A
 				continuación, el cuadro de vacantes correspondiente al ciclo
-				2023-I:
+				2024-I:
 			</p>
 			<div className="table-responsive mb-3">
 				<table className="striped m-auto table-cuadro-vacante">

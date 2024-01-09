@@ -64,7 +64,7 @@ const CostosAdmisionMaestria = () => {
 				</div>
 				<div>
 					<p className="sub-text mb-0 text-center">
-						*Los costos corresponden al proceso de admisión 2023-I,
+						*Los costos corresponden al proceso de admisión 2024-I,
 						sujetos a variaciones.
 					</p>
 				</div>
@@ -110,7 +110,7 @@ const CostosAdmisionMaestria = () => {
 				</div>
 				<div>
 					<p className="sub-text mb-0 text-center">
-						*Los costos corresponden al proceso de admisión 2023-I,
+						*Los costos corresponden al proceso de admisión 2024-I,
 						sujetos a variaciones.
 					</p>
 				</div>
@@ -153,7 +153,7 @@ const CostosAdmisionMaestria = () => {
 				</div>
 				<div>
 					<p className="sub-text mb-0 text-center">
-						*Los costos corresponden al proceso de admisión 2023-I,
+						*Los costos corresponden al proceso de admisión 2024-I,
 						sujetos a variaciones.
 					</p>
 				</div>

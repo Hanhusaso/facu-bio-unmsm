@@ -6,7 +6,7 @@ const GuiaProcesoAdmisionMaestria = () => {
 	return (
 		<div>
 			<p className="mb-4">
-				El proceso de admisión 2023-I a los programas de maestrías de la
+				El proceso de admisión 2024-I a los programas de maestrías de la
 				Unidad de Posgrado de la facultad de Ciencias Biológicas se
 				desarrolla según cronograma aprobado por el VRIP.
 			</p>
@@ -72,7 +72,8 @@ const GuiaProcesoAdmisionMaestria = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/documentos/resumen-hv-postulante.pdf"
-								target="_blank">
+								target="_blank"
+							>
 								hoja de vida
 							</a>
 						</p>
@@ -88,7 +89,8 @@ const GuiaProcesoAdmisionMaestria = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/pago-inscripcion/"
-								target="_blank">
+								target="_blank"
+							>
 								Realiza el pago de inscripción
 							</a>{' '}
 							en el Banco de Crédito del Perú o en el Banco de la
@@ -114,7 +116,8 @@ const GuiaProcesoAdmisionMaestria = () => {
 							<a
 								className="font-weight-bold"
 								href="https://posgrado.unmsm.edu.pe/admision/inscripcion/"
-								target="_blank">
+								target="_blank"
+							>
 								plataforma virtual
 							</a>{' '}
 							<span className="font-weight-bold">

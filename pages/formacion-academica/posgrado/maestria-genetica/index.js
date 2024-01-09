@@ -119,7 +119,7 @@ const index = () => {
 							<div>
 								<p>
 									Este programa no se encuentra en el actual
-									proceso de admisión 2023-I.
+									proceso de admisión 2024-I.
 								</p>
 								{/* <a
 									href="#v-pills-tabContent"
@@ -558,7 +558,7 @@ const index = () => {
 											<b>
 												Este programa no se encuentra en
 												el actual proceso de admisión
-												2023-I.
+												2024-I.
 											</b>
 											{/* <Tabs
 												defaultActiveKey="guia"
