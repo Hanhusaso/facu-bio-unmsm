@@ -219,8 +219,7 @@ const GuiaProcesoAdmisionDoctorado = () => {
 				<span>
 					<Icon.telefonoIcon className="mr-2" />
 				</span>
-				<span className="font-weight-bold">Teléfono: </span>990 090 886
-				(Sra. Dora Aguilar)
+				<span className="font-weight-bold">Teléfono: </span>914 033 256
 			</p>
 		</div>
 	);

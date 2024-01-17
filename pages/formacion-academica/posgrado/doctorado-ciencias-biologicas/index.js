@@ -228,7 +228,7 @@ const index = () => {
 													<span>
 														<Icon.GradoTituloIcon className="mr-2 position-relative bot-2px" />
 													</span>
-													<strong>Título:</strong>{' '}
+													<strong>Grado:</strong>{' '}
 													Doctor/a en Ciencias
 													Biológicas
 												</p>

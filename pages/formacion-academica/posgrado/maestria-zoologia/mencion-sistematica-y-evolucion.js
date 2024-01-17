@@ -239,7 +239,7 @@ const mencionSistematicaYEvolucion = () => {
 													<span>
 														<Icon.GradoTituloIcon className="mr-2 position-relative bot-2px" />
 													</span>
-													<strong>Título:</strong>{' '}
+													<strong>Grado:</strong>{' '}
 													Magíster en Zoología con
 													mención en Sistemática y
 													Evolución
