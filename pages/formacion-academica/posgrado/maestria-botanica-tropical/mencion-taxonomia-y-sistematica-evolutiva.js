@@ -19,6 +19,7 @@ import RequisitosMaestria from '../../../../components/posgrado/maestria/Requisi
 import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/CostosAdmisionMaestria';
 import ProcesoEvaluacionMaestria from '../../../../components/posgrado/maestria/ProcesoEvaluacionMaestria';
 import InversionEconomicaMaestria from '../../../../components/posgrado/maestria/InversionEconomicaMaestria';
+import PlanDeEstudio from '../../../../components/posgrado/PlanDeEstudio';
 
 const mencionTaxonomiaYSistematicaEvolutiva = () => {
 	const { width, height } = useWindowSize();
@@ -209,6 +210,20 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 													<Icon.inversionEconomicaIcon className="mr-3" />
 												</div>
 												<span>Inversión económica</span>
+											</a>
+											<a
+												className="tab d-flex"
+												id="v-pills-plan-tab"
+												data-toggle="pill"
+												href="#v-pills-plan"
+												role="tab"
+												aria-controls="v-pills-plan"
+												aria-selected="false"
+											>
+												<div>
+													<Icon.PlanEstudioIcon className="mr-3" />
+												</div>
+												<span>Plan de estudio</span>
 											</a>
 										</div>
 									</div>
@@ -615,6 +630,14 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 											aria-labelledby="v-pills-inversion-tab"
 										>
 											<InversionEconomicaMaestria />
+										</div>
+										<div
+											className="mb-3 tab-pane fade"
+											id="v-pills-plan"
+											role="tabpanel"
+											aria-labelledby="v-pills-plan-tab"
+										>
+											<PlanDeEstudio />
 										</div>
 									</div>
 									{width < 768 && (

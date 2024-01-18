@@ -19,6 +19,7 @@ import RequisitosDoctorado from '../../../../components/posgrado/doctorado/Requi
 import CostosAdmisionDoctorado from '../../../../components/posgrado/doctorado/CostosAdmisionDoctorado';
 import ProcesoEvaluacionDoctorado from '../../../../components/posgrado/doctorado/ProcesoEvaluacionDoctorado';
 import InversionEconomicaDoctorado from '../../../../components/posgrado/doctorado/InversionEconomicaDoctorado';
+import PlanDeEstudio from '../../../../components/posgrado/PlanDeEstudio';
 
 const index = () => {
 	const { width, height } = useWindowSize();
@@ -203,6 +204,20 @@ const index = () => {
 													<Icon.inversionEconomicaIcon className="mr-3" />
 												</div>
 												<span>Inversión económica</span>
+											</a>
+											<a
+												className="tab d-flex"
+												id="v-pills-plan-tab"
+												data-toggle="pill"
+												href="#v-pills-plan"
+												role="tab"
+												aria-controls="v-pills-plan"
+												aria-selected="false"
+											>
+												<div>
+													<Icon.PlanEstudioIcon className="mr-3" />
+												</div>
+												<span>Plan de estudio</span>
 											</a>
 										</div>
 									</div>
@@ -680,6 +695,14 @@ const index = () => {
 											aria-labelledby="v-pills-inversion-tab"
 										>
 											<InversionEconomicaDoctorado />
+										</div>
+										<div
+											className="mb-3 tab-pane fade"
+											id="v-pills-plan"
+											role="tabpanel"
+											aria-labelledby="v-pills-plan-tab"
+										>
+											<PlanDeEstudio />
 										</div>
 									</div>
 									{width < 768 && (

@@ -1,0 +1,7 @@
+.list-inside {
+	list-style-position: inside;
+}
+
+li.marker-bold::marker {
+	font-weight: 700;
+}
