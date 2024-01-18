@@ -241,7 +241,7 @@ const mencionEvaluacionYManejoDeRecursosPesqueros = () => {
 													<span>
 														<Icon.GradoTituloIcon className="mr-2 position-relative bot-2px" />
 													</span>
-													<strong>Título:</strong>{' '}
+													<strong>Grado:</strong>{' '}
 													Magíster en Ecosistemas y
 													Recursos Acuáticos con
 													mención en Evaluación y

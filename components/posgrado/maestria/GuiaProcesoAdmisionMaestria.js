@@ -159,8 +159,8 @@ const GuiaProcesoAdmisionMaestria = () => {
 							Tendrás que rendir las evaluaciones para el programa
 							de maestría:{' '}
 							<span className="font-weight-bold">
-								Examen de aptitud virtual, evaluación de
-								expediente y entrevista personal.
+								Examen de aptitud, evaluación de expediente y
+								entrevista personal.
 							</span>
 						</p>
 					</div>
@@ -220,8 +220,7 @@ const GuiaProcesoAdmisionMaestria = () => {
 				<span>
 					<Icon.telefonoIcon className="mr-2" />
 				</span>
-				<span className="font-weight-bold">Teléfono: </span>990 090 886
-				(Sra. Dora Aguilar)
+				<span className="font-weight-bold">Teléfono: </span>914 033 256
 			</p>
 		</div>
 	);

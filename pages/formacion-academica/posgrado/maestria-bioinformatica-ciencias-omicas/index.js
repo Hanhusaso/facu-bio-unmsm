@@ -236,7 +236,7 @@ const mencionBotanicaEconomica = () => {
 													<span>
 														<Icon.GradoTituloIcon className="mr-2 position-relative bot-2px" />
 													</span>
-													<strong>Título:</strong>{' '}
+													<strong>Grado:</strong>{' '}
 													Magíster en Bioinformática y
 													Ciencias Ómicas
 												</p>
@@ -321,7 +321,7 @@ const mencionBotanicaEconomica = () => {
 												la Computación y tiene el
 												siguiente perfil:
 											</p>
-											<p className="mb-4">
+											<p className="mb-2">
 												<ul className="mb-0 mt-2 pl-4">
 													<li className="mb-1">
 														Conoce conceptos básicos
@@ -343,6 +343,16 @@ const mencionBotanicaEconomica = () => {
 														programa.
 													</li>
 												</ul>
+											</p>
+											<p className="mb-4">
+												Se apreciará que los postulantes
+												tengan ya una idea o título de
+												tesis. Para ello se pueden
+												contactar con los profesores de
+												la maestría, de la facultad de
+												CCBB u otras facultades afines
+												en la UNMSM o venir con temas de
+												sus instituciones.
 											</p>
 											<p className="mb-2">
 												<strong>
@@ -505,7 +515,77 @@ const mencionBotanicaEconomica = () => {
 													eventKey="proceso"
 													title="Proceso de evaluación"
 												>
-													<ProcesoEvaluacionMaestria />
+													<>
+														<ProcesoEvaluacionMaestria />
+														<div>
+															<p>
+																Para la maestría
+																en
+																bioinformática y
+																ciencias ómicas
+																se requiere:
+															</p>
+															<ul className="chevron-green-dark">
+																<li>
+																	Conocer
+																	conceptos
+																	básicos y
+																	actuales de
+																	Bioquímica,
+																	Genética,
+																	Informática
+																	y Ciencias
+																	de la
+																	Computación.
+																</li>
+																<li>
+																	Mostrar
+																	competencia
+																	en analizar
+																	información
+																	científica
+																	en idiomas
+																	distintos al
+																	castellano.
+																</li>
+																<li>
+																	Haber hecho
+																	coordinaciones
+																	y
+																	establecido
+																	contacto con
+																	profesores
+																	de la
+																	maestría o
+																	grupos de
+																	investigación
+																	internos o
+																	externos
+																	para
+																	determinar
+																	un tema de
+																	tesis,
+																	posible
+																	asesor, y
+																	tener datos
+																	para
+																	analizar,
+																	será un
+																	plus.
+																</li>
+																<li>
+																	Tener
+																	conocimientos
+																	de
+																	informática.
+																</li>
+																<li>
+																	Tener buena
+																	redacción.
+																</li>
+															</ul>
+														</div>
+													</>
 												</Tab>
 											</Tabs>
 										</div>
