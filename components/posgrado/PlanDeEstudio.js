@@ -2,7 +2,10 @@ import React from 'react';
 import * as AiIcons from 'react-icons/ai';
 import { Row, Col, Container, Breadcrumb, Tabs, Tab } from 'react-bootstrap';
 
-const PlanDeEstudio = ({ asignaturas_obligatorias, asignaturas_electivas }) => {
+const PlanDeEstudio = ({
+	asignaturas_obligatorias = [],
+	asignaturas_electivas = [],
+}) => {
 	return (
 		<div>
 			<p className="mb-2">
