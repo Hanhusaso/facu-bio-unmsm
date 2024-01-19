@@ -1,6 +1,7 @@
 import React from 'react';
 import * as AiIcons from 'react-icons/ai';
 import { Row, Col, Container, Breadcrumb, Tabs, Tab } from 'react-bootstrap';
+import wrapInParagraphAndItalicize from '../../helpers/formaters';
 
 const PlanDeEstudio = ({
 	asignaturas_obligatorias = [],
@@ -91,20 +92,50 @@ const PlanDeEstudio = ({
 											{asignatura.label3}
 										</p>
 									</div>
-									<p>{asignatura.porpouse}</p>
+									<p
+										dangerouslySetInnerHTML={{
+											__html: wrapInParagraphAndItalicize(
+												asignatura.porpouse
+											),
+										}}
+									/>
 									<p>Las unidades son:</p>
 									<ol className="pl-0 list-inside">
 										{asignatura.unity1 && (
-											<li>{asignatura.unity1}</li>
+											<li
+												dangerouslySetInnerHTML={{
+													__html: wrapInParagraphAndItalicize(
+														asignatura.unity1
+													),
+												}}
+											/>
 										)}
 										{asignatura.unity2 && (
-											<li>{asignatura.unity2}</li>
+											<li
+												dangerouslySetInnerHTML={{
+													__html: wrapInParagraphAndItalicize(
+														asignatura.unity2
+													),
+												}}
+											/>
 										)}
 										{asignatura.unity3 && (
-											<li>{asignatura.unity3}</li>
+											<li
+												dangerouslySetInnerHTML={{
+													__html: wrapInParagraphAndItalicize(
+														asignatura.unity3
+													),
+												}}
+											/>
 										)}
 										{asignatura.unity4 && (
-											<li>{asignatura.unity4}</li>
+											<li
+												dangerouslySetInnerHTML={{
+													__html: wrapInParagraphAndItalicize(
+														asignatura.unity4
+													),
+												}}
+											/>
 										)}
 									</ol>
 								</li>
@@ -134,20 +165,50 @@ const PlanDeEstudio = ({
 											{asignatura.label3}
 										</p>
 									</div>
-									<p>{asignatura.porpouse}</p>
+									<p
+										dangerouslySetInnerHTML={{
+											__html: wrapInParagraphAndItalicize(
+												asignatura.porpouse
+											),
+										}}
+									/>
 									<p>Las unidades son:</p>
 									<ol className="pl-0 list-inside">
 										{asignatura.unity1 && (
-											<li>{asignatura.unity1}</li>
+											<li
+												dangerouslySetInnerHTML={{
+													__html: wrapInParagraphAndItalicize(
+														asignatura.unity1
+													),
+												}}
+											/>
 										)}
 										{asignatura.unity2 && (
-											<li>{asignatura.unity2}</li>
+											<li
+												dangerouslySetInnerHTML={{
+													__html: wrapInParagraphAndItalicize(
+														asignatura.unity2
+													),
+												}}
+											/>
 										)}
 										{asignatura.unity3 && (
-											<li>{asignatura.unity3}</li>
+											<li
+												dangerouslySetInnerHTML={{
+													__html: wrapInParagraphAndItalicize(
+														asignatura.unity3
+													),
+												}}
+											/>
 										)}
 										{asignatura.unity4 && (
-											<li>{asignatura.unity4}</li>
+											<li
+												dangerouslySetInnerHTML={{
+													__html: wrapInParagraphAndItalicize(
+														asignatura.unity4
+													),
+												}}
+											/>
 										)}
 									</ol>
 								</li>
