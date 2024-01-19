@@ -85,17 +85,7 @@ const PlanDeEstudio = ({
 											{asignatura.label3}
 										</p>
 									</div>
-									<p>
-										Tiene por propósito evaluar la
-										diversidad de organismos y su evolución,
-										usando diferentes tipos de datos
-										sistemáticos, resaltando los aspectos
-										funcionales de la biodiversidad y su
-										importancia en el escenario ecológico,
-										proporcionando principios básicos del
-										manejo y conservación de la
-										biodiversidad.
-									</p>
+									<p>{asignatura.porpouse}</p>
 									<p>Las unidades son:</p>
 									<ol className="pl-0 list-inside">
 										{asignatura.unity1 && (
@@ -138,17 +128,7 @@ const PlanDeEstudio = ({
 											{asignatura.label3}
 										</p>
 									</div>
-									<p>
-										Tiene por propósito evaluar la
-										diversidad de organismos y su evolución,
-										usando diferentes tipos de datos
-										sistemáticos, resaltando los aspectos
-										funcionales de la biodiversidad y su
-										importancia en el escenario ecológico,
-										proporcionando principios básicos del
-										manejo y conservación de la
-										biodiversidad.
-									</p>
+									<p>{asignatura.porpouse}</p>
 									<p>Las unidades son:</p>
 									<ol className="pl-0 list-inside">
 										{asignatura.unity1 && (
