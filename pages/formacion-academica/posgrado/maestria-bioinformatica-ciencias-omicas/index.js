@@ -17,8 +17,22 @@ import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/Cos
 import ProcesoEvaluacionMaestria from '../../../../components/posgrado/maestria/ProcesoEvaluacionMaestria';
 import InversionEconomicaMaestria from '../../../../components/posgrado/maestria/InversionEconomicaMaestria';
 import PlanDeEstudio from '../../../../components/posgrado/PlanDeEstudio';
+import planEstudiosMaestrias from '../../../../data/posgrado/plan-estudios-maestrias';
 
 const mencionBotanicaEconomica = () => {
+	const asignaturas_obligatorias = planEstudiosMaestrias.filter(
+		(plan) =>
+			plan.program_name ===
+				'maestria-en-bioinformatica-y-ciencias-omicas' &&
+			plan.course_type === 'obligatorio'
+	);
+	const asignaturas_electivas = planEstudiosMaestrias.filter(
+		(plan) =>
+			plan.program_name ===
+				'maestria-en-bioinformatica-y-ciencias-omicas' &&
+			plan.course_type === 'electivo'
+	);
+
 	const { width } = useWindowSize();
 	const [docentes, setDocentes] = useState([]);
 
@@ -697,7 +711,14 @@ const mencionBotanicaEconomica = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-plan-tab"
 										>
-											<PlanDeEstudio />
+											<PlanDeEstudio
+												asignaturas_obligatorias={
+													asignaturas_obligatorias
+												}
+												asignaturas_electivas={
+													asignaturas_electivas
+												}
+											/>
 										</div>
 									</div>
 									{width < 768 && (

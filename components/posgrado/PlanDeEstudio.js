@@ -2,7 +2,7 @@ import React from 'react';
 import * as AiIcons from 'react-icons/ai';
 import { Row, Col, Container, Breadcrumb, Tabs, Tab } from 'react-bootstrap';
 
-const PlanDeEstudio = () => {
+const PlanDeEstudio = ({ asignaturas_obligatorias, asignaturas_electivas }) => {
 	return (
 		<div>
 			<p className="mb-2">
@@ -63,160 +63,106 @@ const PlanDeEstudio = () => {
 				>
 					<div>
 						<ol className="pl-0 list-inside">
-							<li className="mb-5 marker-bold">
-								<p className="d-inline-block font-weight-bold">
-									Biodiversidad y Conservación
-								</p>
-								<div className="badge-sm-wrapper mb-3">
-									<p className="badge-sm-green-dark">
-										P. Profundización
+							{asignaturas_obligatorias.map((asignatura) => (
+								<li
+									className="mb-5 marker-bold"
+									key={asignatura.id}
+								>
+									<p className="d-inline-block font-weight-bold">
+										{asignatura.course_name}
 									</p>
-									<p className="badge-sm-green">Teórica</p>
-									<p className="badge-sm-green">Presencial</p>
-								</div>
-								<p>
-									Tiene por propósito evaluar la diversidad de
-									organismos y su evolución, usando diferentes
-									tipos de datos sistemáticos, resaltando los
-									aspectos funcionales de la biodiversidad y
-									su importancia en el escenario ecológico,
-									proporcionando principios básicos del manejo
-									y conservación de la biodiversidad.
-								</p>
-								<p>Las unidades son:</p>
-								<ol className="pl-0 list-inside">
-									<li>
-										Introducción a la biodiversidad y
-										evolución
-									</li>
-									<li>Diversidad vegetal y animal</li>
-									<li>
-										Biodiversidad y conservación de
-										ambientes acuáticos
-									</li>
-									<li>
-										Principios del manejo y conservación de
-										la biodiversidad
-									</li>
-								</ol>
-							</li>
-							<li className="mb-5 marker-bold">
-								<p className="d-inline-block font-weight-bold">
-									Herramientas Estadísticas
-								</p>
-								<div className="badge-sm-wrapper mb-3">
-									<p className="badge-sm-green-dark">
-										P. Profundización
+									<div className="badge-sm-wrapper mb-3">
+										<p className="badge-sm-green-dark">
+											{asignatura.label1}
+										</p>
+										<p className="badge-sm-green">
+											{asignatura.label2}
+										</p>
+										<p className="badge-sm-green">
+											{asignatura.label3}
+										</p>
+									</div>
+									<p>
+										Tiene por propósito evaluar la
+										diversidad de organismos y su evolución,
+										usando diferentes tipos de datos
+										sistemáticos, resaltando los aspectos
+										funcionales de la biodiversidad y su
+										importancia en el escenario ecológico,
+										proporcionando principios básicos del
+										manejo y conservación de la
+										biodiversidad.
 									</p>
-									<p className="badge-sm-green">
-										Teórico-práctica
-									</p>
-									<p className="badge-sm-green">Presencial</p>
-								</div>
-								<p>
-									Tiene por propósito evaluar el uso de
-									técnicas probabilísticas y estadísticas para
-									la toma de muestra, análisis de datos y toma
-									de decisiones en problemas biológicos y
-									ambientales.
-								</p>
-								<p>Las unidades son:</p>
-								<ol className="pl-0 list-inside">
-									<li>
-										Introducción a la biodiversidad y
-										evolución
-									</li>
-									<li>Diversidad vegetal y animal</li>
-									<li>
-										Biodiversidad y conservación de
-										ambientes acuáticos
-									</li>
-									<li>
-										Principios del manejo y conservación de
-										la biodiversidad
-									</li>
-								</ol>
-							</li>
+									<p>Las unidades son:</p>
+									<ol className="pl-0 list-inside">
+										{asignatura.unity1 && (
+											<li>{asignatura.unity1}</li>
+										)}
+										{asignatura.unity2 && (
+											<li>{asignatura.unity2}</li>
+										)}
+										{asignatura.unity3 && (
+											<li>{asignatura.unity3}</li>
+										)}
+										{asignatura.unity4 && (
+											<li>{asignatura.unity4}</li>
+										)}
+									</ol>
+								</li>
+							))}
 						</ol>
 					</div>
 				</Tab>
 				<Tab className="pt-2" eventKey="electivas" title="Electivas">
 					<div>
 						<ol className="pl-0 list-inside">
-							<li className="mb-5 marker-bold">
-								<p className="d-inline-block font-weight-bold">
-									Biodiversidad y Conservación
-								</p>
-								<div className="badge-sm-wrapper mb-3">
-									<p className="badge-sm-green-dark">
-										P. Profundización
+							{asignaturas_electivas.map((asignatura) => (
+								<li
+									className="mb-5 marker-bold"
+									key={asignatura.id}
+								>
+									<p className="d-inline-block font-weight-bold">
+										{asignatura.course_name}
 									</p>
-									<p className="badge-sm-green">Teórica</p>
-									<p className="badge-sm-green">Presencial</p>
-								</div>
-								<p>
-									Tiene por propósito evaluar la diversidad de
-									organismos y su evolución, usando diferentes
-									tipos de datos sistemáticos, resaltando los
-									aspectos funcionales de la biodiversidad y
-									su importancia en el escenario ecológico,
-									proporcionando principios básicos del manejo
-									y conservación de la biodiversidad.
-								</p>
-								<p>Las unidades son:</p>
-								<ol className="pl-0 list-inside">
-									<li>
-										Introducción a la biodiversidad y
-										evolución
-									</li>
-									<li>Diversidad vegetal y animal</li>
-									<li>
-										Biodiversidad y conservación de
-										ambientes acuáticos
-									</li>
-									<li>
-										Principios del manejo y conservación de
-										la biodiversidad
-									</li>
-								</ol>
-							</li>
-							<li className="mb-5 marker-bold">
-								<p className="d-inline-block font-weight-bold">
-									Herramientas Estadísticas
-								</p>
-								<div className="badge-sm-wrapper mb-3">
-									<p className="badge-sm-green-dark">
-										P. Profundización
+									<div className="badge-sm-wrapper mb-3">
+										<p className="badge-sm-green-dark">
+											{asignatura.label1}
+										</p>
+										<p className="badge-sm-green">
+											{asignatura.label2}
+										</p>
+										<p className="badge-sm-green">
+											{asignatura.label3}
+										</p>
+									</div>
+									<p>
+										Tiene por propósito evaluar la
+										diversidad de organismos y su evolución,
+										usando diferentes tipos de datos
+										sistemáticos, resaltando los aspectos
+										funcionales de la biodiversidad y su
+										importancia en el escenario ecológico,
+										proporcionando principios básicos del
+										manejo y conservación de la
+										biodiversidad.
 									</p>
-									<p className="badge-sm-green">
-										Teórico-práctica
-									</p>
-									<p className="badge-sm-green">Presencial</p>
-								</div>
-								<p>
-									Tiene por propósito evaluar el uso de
-									técnicas probabilísticas y estadísticas para
-									la toma de muestra, análisis de datos y toma
-									de decisiones en problemas biológicos y
-									ambientales.
-								</p>
-								<p>Las unidades son:</p>
-								<ol className="pl-0 list-inside">
-									<li>
-										Introducción a la biodiversidad y
-										evolución
-									</li>
-									<li>Diversidad vegetal y animal</li>
-									<li>
-										Biodiversidad y conservación de
-										ambientes acuáticos
-									</li>
-									<li>
-										Principios del manejo y conservación de
-										la biodiversidad
-									</li>
-								</ol>
-							</li>
+									<p>Las unidades son:</p>
+									<ol className="pl-0 list-inside">
+										{asignatura.unity1 && (
+											<li>{asignatura.unity1}</li>
+										)}
+										{asignatura.unity2 && (
+											<li>{asignatura.unity2}</li>
+										)}
+										{asignatura.unity3 && (
+											<li>{asignatura.unity3}</li>
+										)}
+										{asignatura.unity4 && (
+											<li>{asignatura.unity4}</li>
+										)}
+									</ol>
+								</li>
+							))}
 						</ol>
 					</div>
 				</Tab>
