@@ -718,6 +718,7 @@ const mencionBotanicaEconomica = () => {
 												asignaturas_electivas={
 													asignaturas_electivas
 												}
+												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/maestria-en-bioinformatica-y-ciencias-omicas-plan-2023.pdf"
 											/>
 										</div>
 									</div>

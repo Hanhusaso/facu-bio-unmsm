@@ -5,6 +5,7 @@ import { Row, Col, Container, Breadcrumb, Tabs, Tab } from 'react-bootstrap';
 const PlanDeEstudio = ({
 	asignaturas_obligatorias = [],
 	asignaturas_electivas = [],
+	plan_estudio = '',
 }) => {
 	return (
 		<div>
@@ -12,7 +13,12 @@ const PlanDeEstudio = ({
 				Puedes revisar el plan de estudios completo en el siguiente
 				enlace:
 			</p>
-			<a className="btn-green-bright mb-4" href="#" target="_blank">
+			<a
+				className="btn-green-bright mb-4"
+				href={plan_estudio}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				Revisar plan de estudios
 			</a>
 			<p className="mb-3">
