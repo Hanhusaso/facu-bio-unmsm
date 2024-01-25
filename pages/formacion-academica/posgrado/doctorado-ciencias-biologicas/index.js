@@ -683,7 +683,7 @@ const index = () => {
 															<HiIcons.HiExternalLink className="mb-1 icon" />
 														</a>
 													</p> */}
-													<p className="mb-2">
+													<p className="mb-3">
 														<span className="mr-2">
 															Contacto:
 														</span>
@@ -695,6 +695,19 @@ const index = () => {
 														<span className="text-break">
 															{docente.contacto}
 														</span>
+													</p>
+													<p className="mb-2">
+														<span className="font-weight-bold">
+															Línea de
+															investigación:{' '}
+														</span>
+														{docente?.lineaInvestigacion && (
+															<span className="mr-2">
+																{
+																	docente?.lineaInvestigacion
+																}
+															</span>
+														)}
 													</p>
 												</div>
 											))}
