@@ -26,6 +26,17 @@ const index = () => {
 	const [docentes, setDocentes] = useState([]);
 
 	useEffect(() => {
+		let hash = window.location.hash;
+		if (hash) {
+			// show the tab
+			$('#tab a[href="' + hash + '"]').tab('show');
+
+			//clear the hash
+			hash = null;
+		}
+	}, []); // dejamos las dependencias vacías para que sólo se ejecute la primera vez
+
+	useEffect(() => {
 		(async () => {
 			const response = await getDocenteByIdInformacionAcademicaApi(
 				'doctorado_en_ciencias_biologicas'
@@ -120,17 +131,17 @@ const index = () => {
 									<div className="mb-4">
 										<div
 											className="nav flex-column tabs-wrapper nav-pills"
-											id="v-pills-tab"
+											id="tab"
 											role="tablist"
 											aria-orientation="vertical"
 										>
 											<a
 												className="tab d-flex active"
-												id="v-pills-presentacion-tab"
+												id="presentacion-tab"
 												data-toggle="pill"
-												href="#v-pills-presentacion"
+												href="#presentacion"
 												role="tab"
-												aria-controls="v-pills-presentacion"
+												aria-controls="presentacion"
 												aria-selected="true"
 											>
 												<div>
@@ -140,11 +151,11 @@ const index = () => {
 											</a>
 											{/* <a
 												className="tab d-flex"
-												id="v-pills-perfil-tab"
+												id="perfil-tab"
 												data-toggle="pill"
-												href="#v-pills-perfil"
+												href="#perfil"
 												role="tab"
-												aria-controls="v-pills-perfil"
+												aria-controls="perfil"
 												aria-selected="false">
 												<div>
 													<Icon.perfilIcon className="mr-3" />
@@ -156,11 +167,11 @@ const index = () => {
 											</a> */}
 											<a
 												className="tab d-flex"
-												id="v-pills-admision-tab"
+												id="admision-tab"
 												data-toggle="pill"
-												href="#v-pills-admision"
+												href="#admision"
 												role="tab"
-												aria-controls="v-pills-admision"
+												aria-controls="admision"
 												aria-selected="false"
 											>
 												<div>
@@ -170,11 +181,11 @@ const index = () => {
 											</a>
 											<a
 												className="tab d-flex"
-												id="v-pills-docente-tab"
+												id="plana-docente-tab"
 												data-toggle="pill"
-												href="#v-pills-docente"
+												href="#plana-docente"
 												role="tab"
-												aria-controls="v-pills-docente"
+												aria-controls="plana-docente"
 												aria-selected="false"
 											>
 												<div>
@@ -193,11 +204,11 @@ const index = () => {
 											</a> */}
 											<a
 												className="tab d-flex"
-												id="v-pills-inversion-tab"
+												id="inversion-tab"
 												data-toggle="pill"
-												href="#v-pills-inversion"
+												href="#inversion"
 												role="tab"
-												aria-controls="v-pills-inversion"
+												aria-controls="inversion"
 												aria-selected="false"
 											>
 												<div>
@@ -207,11 +218,11 @@ const index = () => {
 											</a>
 											<a
 												className="tab d-flex"
-												id="v-pills-plan-tab"
+												id="plan-tab"
 												data-toggle="pill"
-												href="#v-pills-plan"
+												href="#plan"
 												role="tab"
-												aria-controls="v-pills-plan"
+												aria-controls="plan"
 												aria-selected="false"
 											>
 												<div>
@@ -230,13 +241,13 @@ const index = () => {
 								<Col md="7" lg="8">
 									<div
 										className="mb-3 tab-content"
-										id="v-pills-tabContent"
+										id="tabContent"
 									>
 										<div
 											className="mb-3 tab-pane fade show active"
-											id="v-pills-presentacion"
+											id="presentacion"
 											role="tabpanel"
-											aria-labelledby="v-pills-presentacion-tab"
+											aria-labelledby="presentacion-tab"
 										>
 											<div className="info-box mb-4">
 												<p className="mb-3">
@@ -428,9 +439,9 @@ const index = () => {
 										</div>
 										{/* <div
 											className="mb-3 tab-pane fade"
-											id="v-pills-perfil"
+											id="perfil"
 											role="tabpanel"
-											aria-labelledby="v-pills-perfil-tab">
+											aria-labelledby="perfil-tab">
 											<p>
 												<strong>
 													PERFIL DEL INGRESANTE
@@ -557,9 +568,9 @@ const index = () => {
 										</div> */}
 										<div
 											className="mb-3 tab-pane fade"
-											id="v-pills-admision"
+											id="admision"
 											role="tabpanel"
-											aria-labelledby="v-pills-admision-tab"
+											aria-labelledby="admision-tab"
 										>
 											<Tabs
 												defaultActiveKey="guia"
@@ -611,9 +622,9 @@ const index = () => {
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
-											id="v-pills-docente"
+											id="plana-docente"
 											role="tabpanel"
-											aria-labelledby="v-pills-docente-tab"
+											aria-labelledby="plana-docente-tab"
 										>
 											<div className="divisor mt-0"></div>
 											{docentes.map((docente, index) => (
@@ -690,17 +701,17 @@ const index = () => {
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
-											id="v-pills-inversion"
+											id="inversion"
 											role="tabpanel"
-											aria-labelledby="v-pills-inversion-tab"
+											aria-labelledby="inversion-tab"
 										>
 											<InversionEconomicaDoctorado />
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
-											id="v-pills-plan"
+											id="plan"
 											role="tabpanel"
-											aria-labelledby="v-pills-plan-tab"
+											aria-labelledby="plan-tab"
 										>
 											<PlanDeEstudio />
 										</div>
