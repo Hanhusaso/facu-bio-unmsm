@@ -20,8 +20,19 @@ import CostosAdmisionDoctorado from '../../../../components/posgrado/doctorado/C
 import ProcesoEvaluacionDoctorado from '../../../../components/posgrado/doctorado/ProcesoEvaluacionDoctorado';
 import InversionEconomicaDoctorado from '../../../../components/posgrado/doctorado/InversionEconomicaDoctorado';
 import PlanDeEstudio from '../../../../components/posgrado/PlanDeEstudio';
+import planEstudios from '../../../../data/posgrado/plan-estudios-biologia.json';
 
 const index = () => {
+	const asignaturas_obligatorias = planEstudios.filter(
+		(plan) =>
+			plan.program_name === 'doctorado-en-ciencias-biologicas' &&
+			plan.course_type === 'obligatorio'
+	);
+	const asignaturas_electivas = planEstudios.filter(
+		(plan) =>
+			plan.program_name === 'doctorado-en-ciencias-biologicas' &&
+			plan.course_type === 'electivo'
+	);
 	const { width, height } = useWindowSize();
 	const [docentes, setDocentes] = useState([]);
 
@@ -726,7 +737,15 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="plan-tab"
 										>
-											<PlanDeEstudio />
+											<PlanDeEstudio
+												asignaturas_obligatorias={
+													asignaturas_obligatorias
+												}
+												asignaturas_electivas={
+													asignaturas_electivas
+												}
+												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/maestria-en-bioinformatica-y-ciencias-omicas-plan-2023.pdf"
+											/>
 										</div>
 									</div>
 									{width < 768 && (

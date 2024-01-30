@@ -17,16 +17,16 @@ import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/Cos
 import ProcesoEvaluacionMaestria from '../../../../components/posgrado/maestria/ProcesoEvaluacionMaestria';
 import InversionEconomicaMaestria from '../../../../components/posgrado/maestria/InversionEconomicaMaestria';
 import PlanDeEstudio from '../../../../components/posgrado/PlanDeEstudio';
-import planEstudiosMaestrias from '../../../../data/posgrado/plan-estudios-maestrias';
+import planEstudios from '../../../../data/posgrado/plan-estudios-biologia.json';
 
 const mencionBotanicaEconomica = () => {
-	const asignaturas_obligatorias = planEstudiosMaestrias.filter(
+	const asignaturas_obligatorias = planEstudios.filter(
 		(plan) =>
 			plan.program_name ===
 				'maestria-en-bioinformatica-y-ciencias-omicas' &&
 			plan.course_type === 'obligatorio'
 	);
-	const asignaturas_electivas = planEstudiosMaestrias.filter(
+	const asignaturas_electivas = planEstudios.filter(
 		(plan) =>
 			plan.program_name ===
 				'maestria-en-bioinformatica-y-ciencias-omicas' &&
