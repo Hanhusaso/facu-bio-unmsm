@@ -5,6 +5,7 @@ import Link from 'next/link';
 import LoaderPage from '../components/LoaderPage';
 import Footer from '../components/Footer';
 import Menu from '../components/Menu';
+import { Announcement } from '../components/home/Announcement';
 import SocialMedia from '../components/SocialMedia';
 import { Row, Col, Container, Carousel, Modal } from 'react-bootstrap';
 import { getEventosHomeApi } from './api/eventos';
@@ -15,6 +16,7 @@ import useNovedades from '../hooks/useNovedades';
 
 export default function Home() {
 	const [loadingPage, setLoadingPage] = useState(true);
+	const [isOpenHeader, setIsOpenHeader] = useState(true);
 	const { width, height } = useWindowSize();
 	const { data: novedades, loading: novedadesLoading } = useNovedades();
 	const [noticias, setNoticias] = useState([]);
@@ -173,7 +175,10 @@ export default function Home() {
 						<title>Facultad de Ciencias Biológicas</title>
 						<link rel="icon" href="/assets/img/favicon/logo.ico" />
 					</Head>
-					<Menu />
+					{isOpenHeader && (
+						<Announcement setIsOpenHeader={setIsOpenHeader} />
+					)}
+					<Menu isOpenHeader={isOpenHeader} />
 					<SocialMedia />
 					<main className={width < 768 ? 'bg-green-png' : ''}>
 						<section className="section-principal-home section-eventos">

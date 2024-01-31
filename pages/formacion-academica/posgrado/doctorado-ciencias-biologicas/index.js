@@ -744,7 +744,7 @@ const index = () => {
 												asignaturas_electivas={
 													asignaturas_electivas
 												}
-												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/maestria-en-bioinformatica-y-ciencias-omicas-plan-2023.pdf"
+												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/Plan-Estudios-2023-DOCTORADO-EN-CIENCIAS-BIOLOGICAS.pdf"
 											/>
 										</div>
 									</div>
