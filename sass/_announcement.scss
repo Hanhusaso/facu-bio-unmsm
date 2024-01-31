@@ -74,3 +74,10 @@
 		}
 	}
 }
+
+.announcement-wrapper.banner-in-page {
+	position: relative;
+	.announcement {
+		box-shadow: none;
+	}
+}
