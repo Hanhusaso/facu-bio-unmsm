@@ -21,6 +21,7 @@ import ProcesoEvaluacionDoctorado from '../../../../components/posgrado/doctorad
 import InversionEconomicaDoctorado from '../../../../components/posgrado/doctorado/InversionEconomicaDoctorado';
 import PlanDeEstudio from '../../../../components/posgrado/PlanDeEstudio';
 import planEstudios from '../../../../data/posgrado/plan-estudios-biologia.json';
+import { Announcement } from '../../../../components/posgrado/Announcement';
 
 const index = () => {
 	const asignaturas_obligatorias = planEstudios.filter(
@@ -126,12 +127,13 @@ const index = () => {
 						</Container>
 					</div>
 					{/* IMAGE */}
-					<div className="mb-4">
+					<div className="mb-4 relative">
 						<img
 							className="w-100"
 							src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/doctorado_ciencias_biologicas_banner_e8a3542f1b.jpg"
 							alt=""
 						/>
+						<Announcement />
 					</div>
 
 					<div>
