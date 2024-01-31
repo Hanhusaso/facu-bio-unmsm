@@ -7,7 +7,7 @@ import * as Io5Icons from 'react-icons/io5';
 import * as HiIcons from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
-const Menu = () => {
+const Menu = ({ isOpenHeader }) => {
 	const [sidebar, setSidebar] = useState(false);
 	const [sectionSideBar, setSectionSideBar] = useState('SectionMenu');
 
@@ -859,11 +859,18 @@ const Menu = () => {
 					<div className="menu-btn-bars"></div>
 				</button>
 			</div>
-			<nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+			<nav
+				className={sidebar ? 'nav-menu active' : 'nav-menu'}
+				// className={`${sidebar ? 'nav-menu active' : 'nav-menu'} ${
+				// 	isOpenHeader ? 'isOpenHeader' : 'isCloseHeader'
+				// }`}
+			>
 				<motion.div
-					className="navbar-toogle"
+					className={`navbar-toogle ${
+						isOpenHeader ? 'isOpenHeader' : 'isCloseHeader'
+					}`}
 					initial={{ top: '-25vh' }}
-					animate={{ top: 0 }}
+					animate={{ top: '80px' }}
 					transition={{ duration: 0.5 }}
 				>
 					<button
