@@ -639,20 +639,32 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="plana-docente-tab"
 										>
-											<div className="divisor mt-0"></div>
-											{docentes.map((docente, index) => (
-												<div
-													key={index}
-													className="block-divider mb-3 pb-2 position-relative"
+											{/* <div className="divisor mt-0"></div> */}
+											<Tabs
+												defaultActiveKey="plana-docente-UNMSM"
+												id="plana-docente-in-tab"
+											>
+												<Tab
+													className="pt-3"
+													eventKey="plana-docente-UNMSM"
+													title="Plana Docente UNMSM"
 												>
-													<h3 className="title">
-														{docente.nombre}
-													</h3>
-													<p className="mb-2">
-														<span className="mr-2">
-															Documentación:
-														</span>
-														{/* <a
+													{docentes.map(
+														(docente, index) => (
+															<div
+																key={index}
+																className="block-divider mb-3 pb-2 position-relative"
+															>
+																<h3 className="title">
+																	{
+																		docente.nombre
+																	}
+																</h3>
+																<p className="mb-2">
+																	<span className="mr-2">
+																		Documentación:
+																	</span>
+																	{/* <a
 															href={docente.link_resolucion_rectoral}
 															target="_blank"
 															className="d-inline-block color-inherit mr-3"
@@ -660,24 +672,26 @@ const index = () => {
 															<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
 															<span className="">Resolución rectoral</span>
 														</a> */}
-														<a
-															href={
-																docente.link_hoja_vida
-															}
-															target="_blank"
-															className="d-inline-block color-inherit mr-3"
-														>
-															<img
-																className="mr-2"
-																src="/assets/img/iconos/pdf.svg"
-																alt=""
-															/>
-															<span className="">
-																Hoja de vida
-															</span>
-														</a>
-													</p>
-													{/* <p className="mb-2">
+																	<a
+																		href={
+																			docente.link_hoja_vida
+																		}
+																		target="_blank"
+																		className="d-inline-block color-inherit mr-3"
+																	>
+																		<img
+																			className="mr-2"
+																			src="/assets/img/iconos/pdf.svg"
+																			alt=""
+																		/>
+																		<span className="">
+																			Hoja
+																			de
+																			vida
+																		</span>
+																	</a>
+																</p>
+																{/* <p className="mb-2">
 														<span className="mr-2">Investigación:</span>
 														<a
 															href={docente.link_rais}
@@ -696,34 +710,137 @@ const index = () => {
 															<HiIcons.HiExternalLink className="mb-1 icon" />
 														</a>
 													</p> */}
-													<p className="mb-3">
-														<span className="mr-2">
-															Contacto:
-														</span>
-														<img
-															className="icon mr-2"
-															src="/assets/img/iconos/correo.svg"
-															alt=""
-														/>
-														<span className="text-break">
-															{docente.contacto}
-														</span>
-													</p>
-													<p className="mb-2">
-														<span className="font-weight-bold">
-															Línea de
-															investigación:{' '}
-														</span>
-														{docente?.lineaInvestigacion && (
-															<span className="mr-2">
-																{
-																	docente?.lineaInvestigacion
-																}
-															</span>
-														)}
-													</p>
-												</div>
-											))}
+																<p className="mb-3">
+																	<span className="mr-2">
+																		Contacto:
+																	</span>
+																	<img
+																		className="icon mr-2"
+																		src="/assets/img/iconos/correo.svg"
+																		alt=""
+																	/>
+																	<span className="text-break">
+																		{
+																			docente.contacto
+																		}
+																	</span>
+																</p>
+																<p className="mb-2">
+																	<span className="font-weight-bold">
+																		Línea de
+																		investigación:{' '}
+																	</span>
+																	{docente?.lineaInvestigacion && (
+																		<span className="mr-2">
+																			{
+																				docente?.lineaInvestigacion
+																			}
+																		</span>
+																	)}
+																</p>
+															</div>
+														)
+													)}
+												</Tab>
+												<Tab
+													className="pt-3"
+													eventKey="plana-docente-alianza-interinstitucional"
+													title="Plana Docente Alianza Interinstitucional"
+												>
+													{docentes.map(
+														(docente, index) => (
+															<div
+																key={index}
+																className="block-divider mb-3 pb-2 position-relative"
+															>
+																<h3 className="title">
+																	{
+																		docente.nombre
+																	}
+																</h3>
+																<p className="mb-2">
+																	<span className="mr-2">
+																		Documentación:
+																	</span>
+																	{/* <a
+															href={docente.link_resolucion_rectoral}
+															target="_blank"
+															className="d-inline-block color-inherit mr-3"
+														>
+															<img className="mr-2" src="/assets/img/iconos/pdf.svg" alt="" />
+															<span className="">Resolución rectoral</span>
+														</a> */}
+																	<a
+																		href={
+																			docente.link_hoja_vida
+																		}
+																		target="_blank"
+																		className="d-inline-block color-inherit mr-3"
+																	>
+																		<img
+																			className="mr-2"
+																			src="/assets/img/iconos/pdf.svg"
+																			alt=""
+																		/>
+																		<span className="">
+																			Hoja
+																			de
+																			vida
+																		</span>
+																	</a>
+																</p>
+																{/* <p className="mb-2">
+														<span className="mr-2">Investigación:</span>
+														<a
+															href={docente.link_rais}
+															target="_blank"
+															className="d-inline-block color-inherit mr-2"
+														>
+															<span className="mr-1">RAIS</span>
+															<HiIcons.HiExternalLink className="mb-1 icon" />
+														</a>
+														<a
+															href={docente.link_siis}
+															target="_blank"
+															className="d-inline-block color-inherit mr-2"
+														>
+															<span className="mr-1">SIIS</span>
+															<HiIcons.HiExternalLink className="mb-1 icon" />
+														</a>
+													</p> */}
+																<p className="mb-3">
+																	<span className="mr-2">
+																		Contacto:
+																	</span>
+																	<img
+																		className="icon mr-2"
+																		src="/assets/img/iconos/correo.svg"
+																		alt=""
+																	/>
+																	<span className="text-break">
+																		{
+																			docente.contacto
+																		}
+																	</span>
+																</p>
+																<p className="mb-2">
+																	<span className="font-weight-bold">
+																		Línea de
+																		investigación:{' '}
+																	</span>
+																	{docente?.lineaInvestigacion && (
+																		<span className="mr-2">
+																			{
+																				docente?.lineaInvestigacion
+																			}
+																		</span>
+																	)}
+																</p>
+															</div>
+														)
+													)}
+												</Tab>
+											</Tabs>
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
