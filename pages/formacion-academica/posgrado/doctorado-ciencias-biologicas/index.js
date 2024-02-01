@@ -36,6 +36,7 @@ const index = () => {
 	);
 	const { width, height } = useWindowSize();
 	const [docentes, setDocentes] = useState([]);
+	const [docentesExt, setDocentesExt] = useState([]);
 
 	useEffect(() => {
 		let hash = window.location.hash;
@@ -53,7 +54,15 @@ const index = () => {
 			const response = await getDocenteByIdInformacionAcademicaApi(
 				'doctorado_en_ciencias_biologicas'
 			);
-			setDocentes(response);
+			setDocentes(
+				response.filter((docente) => docente.tipoPlana === 'unmsm')
+			);
+			setDocentesExt(
+				response.filter(
+					(docente) => docente.tipoPlana === 'interinstitucional'
+				)
+			);
+			console.log('La respuesta de docentes es: ', response);
 		})();
 	}, []);
 
@@ -747,7 +756,7 @@ const index = () => {
 													eventKey="plana-docente-alianza-interinstitucional"
 													title="Plana Docente Alianza Interinstitucional"
 												>
-													{docentes.map(
+													{docentesExt.map(
 														(docente, index) => (
 															<div
 																key={index}
@@ -867,11 +876,7 @@ const index = () => {
 											/>
 										</div>
 									</div>
-									{width < 768 && (
-										<>
-											<Contact />
-										</>
-									)}
+									{width < 768 && <Contact />}
 								</Col>
 								<Col md="1" lg="1"></Col>
 							</Row>
