@@ -402,11 +402,18 @@ const antonioRaimondi = () => {
 												RD No 000290-DGA-2022 Tarifario
 											</a>
 										</p>
-										<p>
+										{/* <p>
 											<a
 												href="https://drive.google.com/file/d/1QtOilSArUbPCsNe2KLFcgn-n5X5NFLp6/view?usp=share_link"
 												target="_blank">
 												Cronograma de reuniones 2023
+											</a>
+										</p> */}
+										<p>
+											<a
+												href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/CRONOGRAMA+DE+REUNIONES+COMIT%C3%89+2024.pdf"
+												target="_blank">
+												Cronograma de reuniones 2024
 											</a>
 										</p>
 									</div>
