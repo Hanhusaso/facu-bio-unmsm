@@ -20,8 +20,21 @@ import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/Cos
 import ProcesoEvaluacionMaestria from '../../../../components/posgrado/maestria/ProcesoEvaluacionMaestria';
 import InversionEconomicaMaestria from '../../../../components/posgrado/maestria/InversionEconomicaMaestria';
 import PlanDeEstudio from '../../../../components/posgrado/PlanDeEstudio';
+import planEstudios from '../../../../data/posgrado/plan-estudios-biologia.json';
 
 const mencionSistematicaYEvolucion = () => {
+	const asignaturas_obligatorias = planEstudios.filter(
+		(plan) =>
+			plan.program_name ===
+				'maestria-en-zoologia-con-mencion-en-sistematica-y-evolucion' &&
+			plan.course_type === 'obligatorio'
+	);
+	const asignaturas_electivas = planEstudios.filter(
+		(plan) =>
+			plan.program_name ===
+				'maestria-en-zoologia-con-mencion-en-sistematica-y-evolucion' &&
+			plan.course_type === 'electivo'
+	);
 	const { width, height } = useWindowSize();
 	const [docentes, setDocentes] = useState([]);
 
@@ -695,7 +708,15 @@ const mencionSistematicaYEvolucion = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-plan-tab"
 										>
-											<PlanDeEstudio />
+											<PlanDeEstudio
+												asignaturas_obligatorias={
+													asignaturas_obligatorias
+												}
+												asignaturas_electivas={
+													asignaturas_electivas
+												}
+												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/Plan-Estudios-2023-DOCTORADO-EN-CIENCIAS-BIOLOGICAS.pdf"
+											/>
 										</div>
 									</div>
 									{width < 768 && (
