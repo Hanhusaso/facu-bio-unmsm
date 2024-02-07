@@ -251,19 +251,18 @@ const index = () => {
 												<div className="img-fr">
 													<img
 														className="w-100 img-fluid"
-														src="/assets/img/carreras/genetica/directora.png"
-														alt=""
+														src="https://unmsm-web-static-files.s3.sa-east-1.amazonaws.com/no-person.webp"
+														alt="director(a)"
 													/>
 													<div className="caption">
 														<div className="mb-2 font-weight-bold">
-															Directora
+															Director (e)
 														</div>
 														<div className="mb-1">
-															Mónica Yolanda
-															Paredes Anaya
+															Gustavo Adolfo Sandoval Peña
 														</div>
 														<div className="mb-0">
-															mparedesa1@unmsm.edu.pe
+															gsandovalp@unmsm.edu.pe
 														</div>
 													</div>
 												</div>
