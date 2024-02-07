@@ -711,7 +711,7 @@ const mencionEcologiaYConservacion = () => {
 												asignaturas_electivas={
 													asignaturas_electivas
 												}
-												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/Plan-Estudios-2023-DOCTORADO-EN-CIENCIAS-BIOLOGICAS.pdf"
+												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/Plan+de+estudio+M+Zoolog%C3%ADa+menci%C3%B3n+en+Ecolog%C3%ADa+y+Conservaci%C3%B3n.pdf"
 											/>
 										</div>
 									</div>
