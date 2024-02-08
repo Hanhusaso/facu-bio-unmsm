@@ -132,8 +132,8 @@ const index = () => {
 					<div className="mb-4 relative">
 						<img
 							className="w-100"
-							src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/doctorado_ciencias_biologicas_banner_e8a3542f1b.jpg"
-							alt=""
+							src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/parasitologia-banner.jpg"
+							alt="segunda especialidad parasitologia"
 						/>
 						{/* <Announcement /> */}
 					</div>
@@ -217,7 +217,7 @@ const index = () => {
 												</div>
 												<span>Malla curricular</span>
 											</a> */}
-											{/* <a
+											<a
 												className="tab d-flex"
 												id="inversion-tab"
 												data-toggle="pill"
@@ -230,7 +230,7 @@ const index = () => {
 													<Icon.inversionEconomicaIcon className="mr-3" />
 												</div>
 												<span>Inversión económica</span>
-											</a> */}
+											</a>
 											<a
 												className="tab d-flex"
 												id="plan-tab"
@@ -795,14 +795,75 @@ const index = () => {
 												</div>
 											))}
 										</div>
-										{/* <div
+										<div
 											className="mb-3 tab-pane fade"
 											id="inversion"
 											role="tabpanel"
 											aria-labelledby="inversion-tab"
 										>
-											<InversionEconomicaDoctorado />
-										</div> */}
+											<div>
+												<div className="mb-4">
+													<p className="font-weight-bold">
+														1. Admisión:
+													</p>
+													<ul className="mb-3 pl-4">
+														<li>
+															El costo para los
+															postulantes es de{' '}
+															<b>S/ 160.00</b>
+														</li>
+													</ul>
+												</div>
+
+												<div className="mb-4">
+													<p className="font-weight-bold">
+														2. Costo por ciclo:
+													</p>
+													<p className="mb-3">
+														Cada curso tiene una
+														cantidad determinada de
+														creditaje por lo que un
+														alumno, al matricularse
+														en el semestre
+														académico, realizará el
+														pago correspondiente al
+														total de números de
+														créditos.
+													</p>
+													<ul className="mb-3 pl-4">
+														<li>
+															El costo por ciclo
+															es de{' '}
+															<b>S/ 2,000.00</b>
+														</li>
+													</ul>
+												</div>
+
+												<div>
+													<p className="font-weight-bold">
+														Más información
+													</p>
+													<p>
+														<span>
+															<Icon.CorreoIcon className="mr-2" />
+														</span>
+														<span className="font-weight-bold">
+															Correo:
+														</span>{' '}
+														upg.biologia@unmsm.edu.pe
+													</p>
+													<p>
+														<span>
+															<Icon.telefonoIcon className="mr-2" />
+														</span>
+														<span className="font-weight-bold">
+															Teléfono:{' '}
+														</span>
+														(+51) 914 033 256
+													</p>
+												</div>
+											</div>
+										</div>
 										<div
 											className="mb-3 tab-pane fade"
 											id="plan"
