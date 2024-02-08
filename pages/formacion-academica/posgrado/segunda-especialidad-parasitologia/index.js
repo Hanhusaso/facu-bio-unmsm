@@ -12,16 +12,16 @@ import { useWindowSize } from '../../../../utils/useWindowSize';
 
 import * as Icon from '../../../../components/Icons';
 
-import GuiaProcesoAdmisionDoctorado from '../../../../components/posgrado/doctorado/GuiaProcesoAdmisionDoctorado';
-import CronogramaDoctorado from '../../../../components/posgrado/doctorado/CronogramaDoctorado';
-import CuadroVacantesDoctorado from '../../../../components/posgrado/doctorado/CuadroVacantesDoctorado';
-import RequisitosDoctorado from '../../../../components/posgrado/doctorado/RequisitosDoctorado';
-import CostosAdmisionDoctorado from '../../../../components/posgrado/doctorado/CostosAdmisionDoctorado';
-import ProcesoEvaluacionDoctorado from '../../../../components/posgrado/doctorado/ProcesoEvaluacionDoctorado';
-import InversionEconomicaDoctorado from '../../../../components/posgrado/doctorado/InversionEconomicaDoctorado';
+import GuiaProcesoAdmisionSegEspec from '../../../../components/posgrado/segunda-especialidad/GuiaProcesoAdmisionSegEspec';
+import CronogramaSegEspec from '../../../../components/posgrado/segunda-especialidad/CronogramaSegEspec';
+import CuadroVacantesSegEspec from '../../../../components/posgrado/segunda-especialidad/CuadroVacantesSegEspec';
+import RequisitosSegEspec from '../../../../components/posgrado/segunda-especialidad/RequisitosSegEspec';
+import CostosAdmisionSegEspec from '../../../../components/posgrado/segunda-especialidad/CostosAdmisionSegEspec';
+import ProcesoEvaluacionSegEspec from '../../../../components/posgrado/segunda-especialidad/ProcesoEvaluacionSegEspec';
+// import InversionEconomicaDoctorado from '../../../../components/posgrado/doctorado/InversionEconomicaDoctorado';
 import PlanDeEstudio from '../../../../components/posgrado/PlanDeEstudio';
 import planEstudios from '../../../../data/posgrado/plan-estudios-biologia.json';
-import { Announcement } from '../../../../components/posgrado/Announcement';
+// import { Announcement } from '../../../../components/posgrado/Announcement';
 
 const index = () => {
 	const asignaturas_obligatorias = planEstudios.filter(
@@ -180,7 +180,7 @@ const index = () => {
 													egresado
 												</span>
 											</a> */}
-											{/* <a
+											<a
 												className="tab d-flex"
 												id="admision-tab"
 												data-toggle="pill"
@@ -193,7 +193,7 @@ const index = () => {
 													<Icon.admisionIcon className="mr-3" />
 												</div>
 												<span>Admisión</span>
-											</a> */}
+											</a>
 											<a
 												className="tab d-flex"
 												id="plana-docente-tab"
@@ -662,60 +662,64 @@ const index = () => {
 												</li>
 											</ul>
 										</div> */}
-										{/* <div
+										<div
 											className="mb-3 tab-pane fade"
 											id="admision"
 											role="tabpanel"
 											aria-labelledby="admision-tab"
 										>
 											<Tabs
-												defaultActiveKey="guia"
+												// defaultActiveKey="guia"
+												// defaultActiveKey="cuadro"
 												id="admision-tab"
 											>
-												<Tab
+												{/* <Tab
 													className="pt-3"
 													eventKey="guia"
 													title="Guía de proceso de Admisión"
 												>
-													<GuiaProcesoAdmisionDoctorado />
-												</Tab>
-												<Tab
+													<GuiaProcesoAdmisionSegEspec />
+												</Tab> */}
+												{/* <Tab
 													className="pt-3"
 													eventKey="cronograma"
 													title="Cronograma"
 												>
-													<CronogramaDoctorado />
-												</Tab>
+													<CronogramaSegEspec />
+												</Tab> */}
 												<Tab
 													className="pt-3"
 													eventKey="cuadro"
 													title="Cuadro de Vacantes"
 												>
-													<CuadroVacantesDoctorado />
+													<CuadroVacantesSegEspec
+														programaName=" Segunda Especialidad en Parasitología"
+														vacantesNumber="15"
+													/>
 												</Tab>
 												<Tab
 													className="pt-3"
 													eventKey="requisitos"
 													title="Requisitos"
 												>
-													<RequisitosDoctorado />
+													<RequisitosSegEspec />
 												</Tab>
-												<Tab
+												{/* <Tab
 													className="pt-3"
 													eventKey="costos"
 													title="Costos de Admisión"
 												>
-													<CostosAdmisionDoctorado />
-												</Tab>
+													<CostosAdmisionSegEspec />
+												</Tab> */}
 												<Tab
 													className="pt-3"
 													eventKey="proceso"
 													title="Proceso de evaluación"
 												>
-													<ProcesoEvaluacionDoctorado />
+													<ProcesoEvaluacionSegEspec />
 												</Tab>
 											</Tabs>
-										</div> */}
+										</div>
 										<div
 											className="mb-3 tab-pane fade"
 											id="plana-docente"
