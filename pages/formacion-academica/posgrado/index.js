@@ -503,7 +503,7 @@ const posgrado = () => {
 								<Col md="2"></Col>
 							</Row>
 						</Container>
-						<Container>
+						<Container className="mb-4 mb-md-5">
 							<Row className="reverse-responsive">
 								<Col md="2"></Col>
 								<Col md="4" className="text-center">
@@ -544,6 +544,54 @@ const posgrado = () => {
 											regiones del país.
 										</p>
 									</div>
+								</Col>
+								<Col md="2"></Col>
+							</Row>
+						</Container>
+						<Container>
+							<Row>
+								<Col md="2"></Col>
+								<Col
+									className="d-flex flex-column justify-content-center"
+									md="4"
+								>
+									<div className="text-center mb-3">
+										<Link href="/formacion-academica/posgrado/segunda-especialidad-parasitologia">
+											<a className="title-green">
+												Segunda Especialidad en
+												Parasitología
+											</a>
+										</Link>
+									</div>
+									{/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
+									<div className="d-none d-md-block">
+										<p className="mb-0">
+											El objetivo de la Maestría en
+											Genética es formar investigadores y
+											docentes calificados para conocer
+											los genes, su estructura, su
+											organización, los mecanismos de
+											transferencia y expresión y su
+											alteración espontánea e inducida en
+											función del tiempo y las condiciones
+											ambientales. Así mismo, utilizar las
+											herramientas moleculares para su
+											aislamiento, conservación y empleo
+											en el mejoramiento genético a través
+											de librerías y bancos genéticos.
+										</p>
+									</div>
+								</Col>
+								<Col md="4" className="text-center">
+									<Link href="/formacion-academica/posgrado/segunda-especialidad-parasitologia">
+										<a>
+											<img
+												className="img-fluid"
+												src="/assets/img/posgrado/maestria-genetica-unmsm-minihome.png"
+												alt="Segunda Especialidad en Parasitología"
+											/>
+										</a>
+									</Link>
 								</Col>
 								<Col md="2"></Col>
 							</Row>
