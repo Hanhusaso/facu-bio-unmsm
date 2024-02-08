@@ -566,19 +566,27 @@ const posgrado = () => {
 									{/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
 									<div className="d-none d-md-block">
 										<p className="mb-0">
-											El objetivo de la Maestría en
-											Genética es formar investigadores y
-											docentes calificados para conocer
-											los genes, su estructura, su
-											organización, los mecanismos de
-											transferencia y expresión y su
-											alteración espontánea e inducida en
-											función del tiempo y las condiciones
-											ambientales. Así mismo, utilizar las
-											herramientas moleculares para su
-											aislamiento, conservación y empleo
-											en el mejoramiento genético a través
-											de librerías y bancos genéticos.
+											Los objetivos del Programa de la
+											Segunda Especialidad en
+											Parasitología son: Fortalecer las
+											competencias y habilidades de los
+											profesionales en el ámbito de la
+											salud humana y animal para aplicar
+											con idoneidad las herramientas
+											diagnósticas y de control. Evaluar
+											la diversidad parasitaria en la
+											interrelación
+											hospedero-parásito-ambiente con la
+											finalidad de identificar el causante
+											de las parasitosis y proponer
+											estrategias de control con sentido
+											crítico. Promover la investigación
+											científica básica y aplicada para
+											solucionar las zoonosis y
+											parasitosis emergentes en nuestro
+											país con el fin aportar al bienestar
+											de la sociedad, con responsabilidad
+											social.
 										</p>
 									</div>
 								</Col>
@@ -587,7 +595,7 @@ const posgrado = () => {
 										<a>
 											<img
 												className="img-fluid"
-												src="/assets/img/posgrado/maestria-genetica-unmsm-minihome.png"
+												src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/parasitologia-minihome.jpg"
 												alt="Segunda Especialidad en Parasitología"
 											/>
 										</a>
