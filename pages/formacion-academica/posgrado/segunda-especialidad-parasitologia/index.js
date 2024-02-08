@@ -264,24 +264,24 @@ const index = () => {
 											role="tabpanel"
 											aria-labelledby="presentacion-tab"
 										>
-											{/* <div className="info-box mb-4">
+											<div className="info-box mb-4">
 												<p className="mb-3">
 													<span>
 														<Icon.GradoTituloIcon className="mr-2 position-relative bot-2px" />
 													</span>
-													<strong>Grado:</strong>{' '}
-													Doctor/a en Ciencias
-													Biológicas
+													<strong>Título:</strong>{' '}
+													Segunda Especialidad en
+													Parasitología
 												</p>
 												<p className="mb-0">
 													<span>
 														<Icon.DuracionIcon className="mr-08rem position-relative bot-2px left-3px" />
 													</span>
 													<strong>Duración:</strong>{' '}
-													Tres años (dos semestres por
+													Dos años (dos semestres por
 													año)
 												</p>
-											</div> */}
+											</div>
 											{/* <p className="mb-4">
 												Este programa académico forma
 												especialistas capaces de evaluar
