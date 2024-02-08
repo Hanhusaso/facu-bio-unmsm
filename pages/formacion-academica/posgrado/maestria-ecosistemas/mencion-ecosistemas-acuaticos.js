@@ -665,7 +665,7 @@ const mencionEcosistemasAcuaticos = () => {
 												asignaturas_electivas={
 													asignaturas_electivas
 												}
-												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/Plan-Estudios-2023-DOCTORADO-EN-CIENCIAS-BIOLOGICAS.pdf"
+												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/MAESTR%C3%8DA+EN+ECOSISTEMAS+Y+RECURSOS+ACU%C3%81TICOS+CON+MENCI%C3%93N+EN+ECOSISTEMAS+ACU%C3%81TICOS+F++F+.pdf"
 											/>
 										</div>
 									</div>

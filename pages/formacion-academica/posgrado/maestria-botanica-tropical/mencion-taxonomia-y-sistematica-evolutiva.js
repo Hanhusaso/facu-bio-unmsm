@@ -657,7 +657,7 @@ const mencionTaxonomiaYSistematicaEvolutiva = () => {
 												asignaturas_electivas={
 													asignaturas_electivas
 												}
-												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/Plan-Estudios-2023-DOCTORADO-EN-CIENCIAS-BIOLOGICAS.pdf"
+												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/Plan+estudios+BT+con+menci%C3%B3n+en+Taxonom%C3%ADa+y+Sistem%C3%A1tica+Evolutiva.pdf"
 											/>
 										</div>
 									</div>

@@ -664,7 +664,7 @@ const mencionEvaluacionYManejoDeRecursosPesqueros = () => {
 												asignaturas_electivas={
 													asignaturas_electivas
 												}
-												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/Plan-Estudios-2023-DOCTORADO-EN-CIENCIAS-BIOLOGICAS.pdf"
+												plan_estudio="https://biologia-unmsm.s3.us-east-2.amazonaws.com/plan-estudio/Plan+estudios+MAESTR%C3%8DA+EN+ECOSISTEMAS+Y+RECURSOS+ACU%C3%81TICOS+CON+MENCI%C3%93N+EN+EVALUACI%C3%93N+Y+MANEJO+R++1++F++F.pdf"
 											/>
 										</div>
 									</div>
