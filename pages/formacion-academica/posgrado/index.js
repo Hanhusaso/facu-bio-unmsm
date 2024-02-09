@@ -503,7 +503,7 @@ const posgrado = () => {
 								<Col md="2"></Col>
 							</Row>
 						</Container>
-						<Container>
+						<Container className="mb-4 mb-md-5">
 							<Row className="reverse-responsive">
 								<Col md="2"></Col>
 								<Col md="4" className="text-center">
@@ -544,6 +544,62 @@ const posgrado = () => {
 											regiones del país.
 										</p>
 									</div>
+								</Col>
+								<Col md="2"></Col>
+							</Row>
+						</Container>
+						<Container>
+							<Row>
+								<Col md="2"></Col>
+								<Col
+									className="d-flex flex-column justify-content-center"
+									md="4"
+								>
+									<div className="text-center mb-3">
+										<Link href="/formacion-academica/posgrado/segunda-especialidad-parasitologia">
+											<a className="title-green">
+												Segunda Especialidad en
+												Parasitología
+											</a>
+										</Link>
+									</div>
+									{/* <div className="title-green text-center">E.P Genética y Biotecnología</div> */}
+									<div className="d-none d-md-block">
+										<p className="mb-0">
+											Los objetivos del Programa de la
+											Segunda Especialidad en
+											Parasitología son: Fortalecer las
+											competencias y habilidades de los
+											profesionales en el ámbito de la
+											salud humana y animal para aplicar
+											con idoneidad las herramientas
+											diagnósticas y de control. Evaluar
+											la diversidad parasitaria en la
+											interrelación
+											hospedero-parásito-ambiente con la
+											finalidad de identificar el causante
+											de las parasitosis y proponer
+											estrategias de control con sentido
+											crítico. Promover la investigación
+											científica básica y aplicada para
+											solucionar las zoonosis y
+											parasitosis emergentes en nuestro
+											país con el fin aportar al bienestar
+											de la sociedad, con responsabilidad
+											social.
+										</p>
+									</div>
+								</Col>
+								<Col md="4" className="text-center">
+									<Link href="/formacion-academica/posgrado/segunda-especialidad-parasitologia">
+										<a>
+											<img
+												className="img-fluid"
+												src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/parasitologia-minihome.jpg"
+												alt="Segunda Especialidad en Parasitología"
+											/>
+										</a>
+									</Link>
 								</Col>
 								<Col md="2"></Col>
 							</Row>
