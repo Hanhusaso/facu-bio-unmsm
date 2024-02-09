@@ -52,7 +52,7 @@ const index = () => {
 	useEffect(() => {
 		(async () => {
 			const response = await getDocenteByIdInformacionAcademicaApi(
-				'maestria_bioinformatica_ciencias_omicas'
+				'segunda_especialidad_parasitologia'
 			);
 			setDocentes(response);
 		})();
