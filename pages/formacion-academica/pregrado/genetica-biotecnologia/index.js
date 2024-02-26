@@ -251,7 +251,8 @@ const index = () => {
 												<div className="img-fr">
 													<img
 														className="w-100 img-fluid"
-														src="https://unmsm-web-static-files.s3.sa-east-1.amazonaws.com/no-person.webp"
+														// src="https://unmsm-web-static-files.s3.sa-east-1.amazonaws.com/no-person.webp"
+														src="https://biologia-unmsm.s3.us-east-2.amazonaws.com/gustavo-adolfo-sandoval-pena.jpg"
 														alt="director(a)"
 													/>
 													<div className="caption">
