@@ -808,13 +808,17 @@ const index = () => {
 											<div>
 												<div className="mb-4">
 													<p className="font-weight-bold">
-														1. Admisión:
+														1. Inscripción
+														(Admisión):
 													</p>
 													<ul className="mb-3 pl-4">
 														<li>
-															El costo para los
-															postulantes es de{' '}
-															<b>S/ 160.00</b>
+															El costo de
+															inscripción es de{' '}
+															<b>S/ 160.00</b> |
+															Código de pago:
+															Inscripción (
+															<b>102-337</b>)
 														</li>
 													</ul>
 												</div>
@@ -826,19 +830,22 @@ const index = () => {
 													<p className="mb-3">
 														Cada curso tiene una
 														cantidad determinada de
-														creditaje por lo que un
+														créditos por lo que un
 														alumno, al matricularse
-														en el semestre
-														académico, realizará el
-														pago correspondiente al
-														total de números de
-														créditos.
+														realizará el pago
+														correspondiente al total
+														de números de créditos
+														por semestre académico:
 													</p>
 													<ul className="mb-3 pl-4">
 														<li>
 															El costo por ciclo
 															es de{' '}
-															<b>S/ 2,000.00</b>
+															<b>S/ 2,000.00</b> |
+															Código de pago:
+															Perfeccionamiento (
+															<b>102-011</b>)
+															Banco Pichincha
 														</li>
 													</ul>
 												</div>
