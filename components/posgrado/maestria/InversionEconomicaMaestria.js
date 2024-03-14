@@ -125,22 +125,23 @@ const InversionEconomicaMaestria = () => {
 			<div className="mb-4">
 				<p className="font-weight-bold">3. Costo por ciclo:</p>
 				<p className="mb-3">
-					Cada curso tiene una cantidad determinada de creditaje por
-					lo que un alumno, al matricularse en el semestre académico,
-					realizará el pago correspondiente al total de números de
-					créditos.
+					Cada asignatura tiene una cantidad determinada de créditos,
+					por lo que un estudiante al matricularse realizará el pago
+					correspondiente al total de créditos por semestre académico
+					(4 semestres y 72 créditos para obtener el grado).
 				</p>
 				<ul className="mb-3 pl-4">
 					<li>
-						El costo por ciclo es de <b>S/ 2,500.00</b>
+						El costo por ciclo es de <b>S/ 3,000.00</b> | Código de
+						pago: Perfeccionamiento (<b>102-011</b>) Banco Pichincha
 					</li>
 				</ul>
-				<div className="info-box mb-3">
+				{/* <div className="info-box mb-3">
 					<p className="mb-0">
 						Se debe completar un mínimo de 72 créditos aprobatorios
 						para la obtención del grado.
 					</p>
-				</div>
+				</div> */}
 				<div>
 					<p className="sub-text mb-0">
 						*Los costos corresponden al proceso de admisión 2024-I,
