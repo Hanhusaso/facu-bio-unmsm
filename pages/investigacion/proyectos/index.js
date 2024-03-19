@@ -394,7 +394,8 @@ export default function Proyectos() {
 											</a>
 										</div> */}
 										<a
-											href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/LISTADO_FINAL_PCONFIGI_2024.pdf"
+											// href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/LISTADO_FINAL_PCONFIGI_2024.pdf"
+											href="https://drive.google.com/file/d/1AV9EWxmON3PLPREOnI1T62DWS-J2wdPT/view?usp=sharing"
 											target="_blank"
 											rel="noopener noreferrer"
 											className="btn-green-bright"
