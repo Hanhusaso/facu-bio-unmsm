@@ -377,10 +377,10 @@ export default function Proyectos() {
 											<br /> ganadores
 										</strong>{' '}
 										del concurso de financiamiento
-										<br /> del VRIP 2023
+										<br /> del VRIP 2024
 									</h5>
 									<div>
-										<div
+										{/* <div
 											onClick={() => {
 												window.open(
 													'https://drive.google.com/file/d/14O1EeDHATJTaDwLeG4htjlj6bw9--9_U/view?usp=sharing',
@@ -392,7 +392,15 @@ export default function Proyectos() {
 											<a className="btn-green-bright">
 												Ver lista de proyectos
 											</a>
-										</div>
+										</div> */}
+										<a
+											href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/LISTADO_FINAL_PCONFIGI_2024.pdf"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="btn-green-bright"
+										>
+											Ver lista de proyectos
+										</a>
 									</div>
 								</div>
 								<img
