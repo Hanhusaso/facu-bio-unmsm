@@ -13,7 +13,8 @@ import { useWindowSize } from '../../../../utils/useWindowSize';
 import * as Icon from '../../../../components/Icons';
 
 import GuiaProcesoAdmisionMaestria from '../../../../components/posgrado/maestria/GuiaProcesoAdmisionMaestria';
-import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+// import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+import CronogramaPosgrado from '../../../../components/posgrado/CronogramaPosgrado';
 import CuadroVacantesMaestria from '../../../../components/posgrado/maestria/CuadroVacantesMaestria';
 import RequisitosMaestria from '../../../../components/posgrado/maestria/RequisitosMaestria';
 import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/CostosAdmisionMaestria';
@@ -424,90 +425,6 @@ const mencionEcosistemasAcuaticos = () => {
 												</li>
 											</ul>
 										</div>
-										{/* <div
-											className="mb-3 tab-pane fade"
-											id="v-pills-perfil"
-											role="tabpanel"
-											aria-labelledby="v-pills-perfil-tab">
-											<p>
-												<strong>
-													PERFIL DEL INGRESANTE
-												</strong>
-											</p>
-											<p>
-												El ingresante a la
-												maestr&iacute;a en Ecosistemas y
-												Recursos Acu&aacute;ticos:
-											</p>
-											<p>
-												Poseer&aacute; grado
-												acad&eacute;mico de bachiller en
-												Ciencias Biol&oacute;gicas o
-												&aacute;reas afines. otorgados
-												por universidades nacionales o
-												extranjeras que aseguren una
-												formaci&oacute;n acorde a los
-												fines del Programa.
-											</p>
-											<p>
-												<strong>
-													PERFIL DEL EGRESADO
-												</strong>
-											</p>
-											<p>
-												El egresado de la
-												maestr&iacute;a en Ecosistemas y
-												Recursos Acu&aacute;ticos,
-												estar&aacute; capacitado para
-												desarrollar investigaci&oacute;n
-												orientada al estudio de los
-												ecosistemas marinos y
-												continentales, dirigir
-												actividades de
-												conservaci&oacute;n y manejo de
-												los recursos con enfoque
-												ecosist&eacute;mico. El graduado
-												tendr&aacute; las bases
-												te&oacute;ricas y
-												pr&aacute;cticas que le permitan
-												interactuar eficientemente en
-												estudios multi e
-												interdisciplinarios. Asimismo,
-												podr&aacute; ejercer docencia
-												universitaria de calidad
-												aplicando metodolog&iacute;as
-												pedag&oacute;gicas innovadoras.
-											</p>
-											<p>
-												&Aacute;mbito de
-												desempe&ntilde;o y mercado
-												laboral.
-											</p>
-											<ul>
-												<li aria-level="1">
-													Centros e Institutos de
-													investigaci&oacute;n
-												</li>
-												<li aria-level="1">
-													Industria alimentaria
-												</li>
-												<li aria-level="1">
-													Acuicultura, piscicultura y
-													pesquer&iacute;a
-												</li>
-												<li aria-level="1">
-													Centros de ense&ntilde;anza
-													superior
-												</li>
-												<li aria-level="1">
-													Dise&ntilde;o de proyectos
-												</li>
-												<li aria-level="1">
-													Asesor&iacute;as y
-													consultor&iacute;as
-												</li>
-											</ul>
-										</div> */}
 										<div
 											className="mb-3 tab-pane fade"
 											id="v-pills-admision"
@@ -530,7 +447,8 @@ const mencionEcosistemasAcuaticos = () => {
 													eventKey="cronograma"
 													title="Cronograma"
 												>
-													<CronogramaMaestria />
+													{/* <CronogramaMaestria /> */}
+													<CronogramaPosgrado />
 												</Tab>
 												<Tab
 													className="pt-3"

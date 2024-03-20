@@ -13,7 +13,8 @@ import { useWindowSize } from '../../../../utils/useWindowSize';
 import * as Icon from '../../../../components/Icons';
 
 import GuiaProcesoAdmisionMaestria from '../../../../components/posgrado/maestria/GuiaProcesoAdmisionMaestria';
-import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+// import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+import CronogramaPosgrado from '../../../../components/posgrado/CronogramaPosgrado';
 import CuadroVacantesMaestria from '../../../../components/posgrado/maestria/CuadroVacantesMaestria';
 import RequisitosMaestria from '../../../../components/posgrado/maestria/RequisitosMaestria';
 import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/CostosAdmisionMaestria';
@@ -419,158 +420,6 @@ const index = () => {
 												</li>
 											</ul>
 										</div>
-										{/* <div
-											className="mb-3 tab-pane fade"
-											id="v-pills-perfil"
-											role="tabpanel"
-											aria-labelledby="v-pills-perfil-tab">
-											<p>
-												<strong>
-													PERFIL DEL INGRESANTE
-												</strong>
-											</p>
-											<p>
-												El ingresante a la
-												Maestr&iacute;a en Biodiversidad
-												y Gesti&oacute;n de Ecosistemas:
-											</p>
-											<p>
-												- Estar&aacute; en
-												posesi&oacute;n del Grado
-												Acad&eacute;mico de Bachiller en
-												Ciencias Biol&oacute;gicas,
-												Ciencias Ambientales, Ingeniero
-												Agr&oacute;nomo, Veterinaria o
-												disciplinas afines, otorgados
-												por universidades nacionales o
-												extranjeras que aseguren una
-												formaci&oacute;n acorde a los
-												fines del programa.
-											</p>
-											<p>
-												<strong>
-													PERFIL DEL EGRESADO
-												</strong>
-											</p>
-											<p>
-												El egresado de la
-												maestr&iacute;a de Biodiversidad
-												y gesti&oacute;n de ecosistemas
-												estar&aacute; plenamente
-												capacitado para trabajar en
-												campos diversos como la
-												investigaci&oacute;n pura en
-												Bot&aacute;nica, en
-												Zoolog&iacute;a y en la
-												Hidrobiolog&iacute;a,
-												adem&aacute;s de numerosos
-												campos de ciencia aplicada, como
-												planificaci&oacute;n del
-												aprovechamiento de recursos
-												(pesquer&iacute;as, acuicultura,
-												silvicultura, etc.),
-												muse&iacute;stica,
-												conservaci&oacute;n y
-												gesti&oacute;n de especies
-												vegetales o animales, plagas
-												agr&iacute;colas o forestales,
-												entomolog&iacute;a aplicada,
-												divulgaci&oacute;n
-												cient&iacute;fica, y otros.
-											</p>
-											<p>
-												Adem&aacute;s, estar&aacute; en
-												condiciones de:
-											</p>
-											<ul>
-												<li aria-level="1">
-													Identificar taxones animales
-													y vegetales, conocer los
-													fundamentos
-													biol&oacute;gicos de la
-													taxonom&iacute;a y su
-													aplicabilidad a la
-													gesti&oacute;n sostenible de
-													ecosistemas terrestres y
-													marinos, la ciencia
-													forestal, la
-													arqueolog&iacute;a, etc.
-												</li>
-												<li aria-level="1">
-													Tener las habilidades que
-													les permitir&aacute;n
-													ejercer sus actividades en
-													empresas, organizaciones e
-													instituciones que
-													desarrollen inventarios de
-													la biodiversidad, desarrollo
-													de planes territoriales,
-													auditor&iacute;a ambiental,
-													dise&ntilde;o y
-													gesti&oacute;n de
-													&aacute;reas protegidas,
-													entre otros.
-												</li>
-												<li aria-level="1">
-													Trabajar en numerosos campos
-													de ciencia b&aacute;sica y
-													aplicada, como
-													planificaci&oacute;n del
-													aprovechamiento de recursos
-													(pesquer&iacute;as,
-													acuicultura,
-													forester&iacute;a, fauna
-													silvestre, silvicultura,
-													etc.), muse&iacute;stica,
-													conservaci&oacute;n y
-													gesti&oacute;n de especies
-													vegetales o animales, plagas
-													agr&iacute;colas o
-													forestales,
-													entomolog&iacute;a aplicada,
-													divulgaci&oacute;n
-													cient&iacute;fica, y otros.
-												</li>
-												<li aria-level="1">
-													Tener la capacidad de
-													realizar un an&aacute;lisis
-													cr&iacute;tico, evaluaciones
-													y s&iacute;ntesis de ideas
-													nuevas y complejas.
-												</li>
-												<li aria-level="1">
-													Comprender de manera
-													sistem&aacute;tica el campo
-													de estudio y el dominio de
-													las habilidades y
-													m&eacute;todos de
-													investigaci&oacute;n
-													relacionados con la
-													biodiversidad y
-													biolog&iacute;a de la
-													conservaci&oacute;n.
-												</li>
-												<li aria-level="1">
-													Contribuir a la ciencia a
-													trav&eacute;s de una
-													investigaci&oacute;n
-													original del conocimiento
-													que ampl&iacute;e las
-													fronteras que se plasme en
-													publicaciones
-													cient&iacute;ficas.
-												</li>
-												<li aria-level="1">
-													Capacidad de fomentar en
-													contextos acad&eacute;micos
-													y profesionales, el avance
-													tecnol&oacute;gico, social o
-													cultural dentro de una
-													sociedad basada en el
-													conocimiento.
-												</li>
-											</ul>
-										</div> */}
 										<div
 											className="mb-3 tab-pane fade"
 											id="v-pills-admision"
@@ -593,7 +442,8 @@ const index = () => {
 													eventKey="cronograma"
 													title="Cronograma"
 												>
-													<CronogramaMaestria />
+													{/* <CronogramaMaestria /> */}
+													<CronogramaPosgrado />
 												</Tab>
 												<Tab
 													className="pt-3"

@@ -14,6 +14,7 @@ import * as Icon from '../../../../components/Icons';
 
 import GuiaProcesoAdmisionDoctorado from '../../../../components/posgrado/doctorado/GuiaProcesoAdmisionDoctorado';
 import CronogramaDoctorado from '../../../../components/posgrado/doctorado/CronogramaDoctorado';
+// import CronogramaPosgrado from '../../../../components/posgrado/CronogramaPosgrado';
 import CuadroVacantesDoctorado from '../../../../components/posgrado/doctorado/CuadroVacantesDoctorado';
 import RequisitosDoctorado from '../../../../components/posgrado/doctorado/RequisitosDoctorado';
 import CostosAdmisionDoctorado from '../../../../components/posgrado/doctorado/CostosAdmisionDoctorado';
@@ -459,135 +460,6 @@ const index = () => {
 												</li>
 											</ul>
 										</div>
-										{/* <div
-											className="mb-3 tab-pane fade"
-											id="perfil"
-											role="tabpanel"
-											aria-labelledby="perfil-tab">
-											<p>
-												<strong>
-													PERFIL DEL INGRESANTE
-												</strong>
-											</p>
-											<p>
-												El ingresante al programa de
-												Doctorado en Ciencias
-												Biol&oacute;gicas es:
-											</p>
-											<p>
-												Graduado que haya concluido los
-												estudios de Maestr&iacute;a o
-												est&eacute; en posesi&oacute;n
-												del Grado de Mag&iacute;ster en
-												&aacute;reas de las Ciencias
-												Biol&oacute;gicas o en
-												disciplinas afines, otorgados
-												por universidades nacionales o
-												extranjeras que aseguren una
-												formaci&oacute;n acorde a los
-												fines del Programa.
-											</p>
-											<p>
-												<strong>
-													PERFIL DEL EGRESADO
-												</strong>
-											</p>
-											<p>
-												El egresado del Programa de
-												Doctorado en Ciencias
-												Biol&oacute;gicas de la Facultad
-												de Ciencias
-											</p>
-											<p>
-												Biol&oacute;gicas ser&aacute;
-												capaz de:
-											</p>
-											<ul>
-												<li aria-level="1">
-													Generar nuevos conocimientos
-													cient&iacute;ficos y
-													t&eacute;cnicos en las
-													Ciencias Biol&oacute;gicas a
-													trav&eacute;s de la
-													realizaci&oacute;n de
-													trabajos originales.
-												</li>
-												<li aria-level="1">
-													Estar&aacute; capacitado
-													para manejar y aplicar las
-													metodolog&iacute;as que
-													permitan resolver problemas
-													de investigaci&oacute;n en
-													las diversas &aacute;reas
-													del conocimiento
-													biol&oacute;gico con
-													especial &eacute;nfasis en
-													los campos de la
-													biodiversidad y
-													biolog&iacute;a molecular.
-												</li>
-												<li aria-level="1">
-													Desarrollar nuevas
-													tecnolog&iacute;as para
-													resolver problemas, detectar
-													necesidades y oportunidades
-													inherentes a su &aacute;rea
-													de investigaci&oacute;n.
-												</li>
-												<li aria-level="1">
-													En particular, conocer y
-													utilizar aproximaciones
-													estad&iacute;sticas
-													contempor&aacute;neas.
-												</li>
-												<li aria-level="1">
-													Formular, gestionar y
-													liderar proyectos de
-													investigaci&oacute;n,
-													trabajando en equipo y en
-													redes interdisciplinarias.
-													Como consecuencia,
-													ser&aacute; capaz de
-													plantear y ejecutar
-													hip&oacute;tesis de trabajo,
-													describir e interpretar
-													resultados experimentales y
-													analizar de forma
-													cr&iacute;tica los
-													descubrimientos presentados
-													en las publicaciones
-													cient&iacute;ficas.
-												</li>
-												<li aria-level="1">
-													Manejar nuevas
-													tecnolog&iacute;as de
-													informaci&oacute;n y
-													comunicaciones que le
-													permitan difundir en forma
-													eficiente sus
-													investigaciones y resultados
-													en revistas de la
-													especialidad,
-													c&iacute;rculos
-													especializados y la
-													comunidad social con el fin
-													de participar
-													satisfactoriamente en la
-													educaci&oacute;n superior y
-													de Posgrado a trav&eacute;s
-													de la experiencia adquirida
-													en las actividades
-													acad&eacute;micas del
-													doctorado.
-												</li>
-												<li aria-level="1">
-													Asesorar los trabajos de
-													investigaci&oacute;n de
-													estudiantes de pre y
-													posgrado.
-												</li>
-											</ul>
-										</div> */}
 										<div
 											className="mb-3 tab-pane fade"
 											id="admision"
@@ -611,6 +483,7 @@ const index = () => {
 													title="Cronograma"
 												>
 													<CronogramaDoctorado />
+													{/* <CronogramaPosgrado /> */}
 												</Tab>
 												<Tab
 													className="pt-3"

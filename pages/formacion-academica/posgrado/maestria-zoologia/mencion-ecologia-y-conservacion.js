@@ -13,7 +13,8 @@ import { useWindowSize } from '../../../../utils/useWindowSize';
 import * as Icon from '../../../../components/Icons';
 
 import GuiaProcesoAdmisionMaestria from '../../../../components/posgrado/maestria/GuiaProcesoAdmisionMaestria';
-import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+// import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+import CronogramaPosgrado from '../../../../components/posgrado/CronogramaPosgrado';
 import CuadroVacantesMaestria from '../../../../components/posgrado/maestria/CuadroVacantesMaestria';
 import RequisitosMaestria from '../../../../components/posgrado/maestria/RequisitosMaestria';
 import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/CostosAdmisionMaestria';
@@ -447,113 +448,6 @@ const mencionEcologiaYConservacion = () => {
 												</li>
 											</ul>
 										</div>
-										{/* <div
-											className="mb-3 tab-pane fade"
-											id="v-pills-perfil"
-											role="tabpanel"
-											aria-labelledby="v-pills-perfil-tab">
-											<p>
-												<strong>
-													PERFIL DEL INGRESANTE
-												</strong>
-											</p>
-											<p>
-												Poseer el grado acad&eacute;mico
-												de bachiller en Ciencias
-												biol&oacute;gicas o &aacute;reas
-												afines.
-											</p>
-											<p>
-												Haber aprobado durante los
-												estudios de pregrado las
-												siguientes asignaturas:
-												Zoolog&iacute;a,
-												Ecolog&iacute;a,
-												Gen&eacute;tica,
-												Fisiolog&iacute;a,
-												Qu&iacute;mica org&aacute;nica e
-												inorg&aacute;nica,
-												F&iacute;sica, Matem&aacute;tica
-												y Estad&iacute;stica.
-											</p>
-											<p>
-												<strong>
-													PERFIL DEL EGRESADO
-												</strong>
-											</p>
-											<p>
-												En las tres menciones, el
-												graduado de la Maestr&iacute;a
-												en Zoolog&iacute;a tendr&aacute;
-												la capacidad de
-												desempe&ntilde;arse en la
-												investigaci&oacute;n, docencia
-												universitaria y en la
-												ejecuci&oacute;n de proyectos en
-												sistem&aacute;tica,
-												biolog&iacute;a evolutiva,
-												ecolog&iacute;a y
-												conservaci&oacute;n en
-												investigaci&oacute;n
-												b&aacute;sica y/o aplicada que
-												requieran la correcta
-												identificaci&oacute;n de
-												especies de fauna silvestre.
-												Tambi&eacute;n podr&aacute;:
-											</p>
-											<ul>
-												<li aria-level="1">
-													Identificar mediante el uso
-													de t&eacute;cnicas modernas
-													grupos naturales en el reino
-													animal que garantice la
-													conservaci&oacute;n de 1)
-													linajes amenazados por
-													extinci&oacute;n o
-													vulnerables, 2)
-													end&eacute;micos, 3) de
-													inter&eacute;s
-													econ&oacute;mico, etc. y
-													evaluar su estado de
-													conservaci&oacute;n para
-													prever/mitigar los impactos,
-													naturales o
-													antr&oacute;picos, sobre sus
-													poblaciones.
-												</li>
-												<li aria-level="1">
-													Promover el desarrollo y
-													buen mantenimiento de
-													colecciones
-													cient&iacute;ficas que
-													sirvan de referencia para
-													estudios de &iacute;ndole
-													diversa tanto b&aacute;sicos
-													como aplicados.
-												</li>
-												<li aria-level="1">
-													Conocer mediante el uso de
-													t&eacute;cnicas modernas el
-													comportamiento,
-													ecolog&iacute;a y
-													distribuci&oacute;n de
-													especies de inter&eacute;s
-													cient&iacute;fico,
-													comercial, salud
-													p&uacute;blica, etc.
-												</li>
-												<li aria-level="1">
-													Promover el desarrollo y
-													buen mantenimiento de bases
-													de datos ecol&oacute;gicos
-													de especies animales que
-													sirva como referencia para
-													estudios de &iacute;ndole
-													diversa tanto b&aacute;sicos
-													como aplicados.
-												</li>
-											</ul>
-										</div> */}
 										<div
 											className="mb-3 tab-pane fade"
 											id="v-pills-admision"
@@ -576,7 +470,8 @@ const mencionEcologiaYConservacion = () => {
 													eventKey="cronograma"
 													title="Cronograma"
 												>
-													<CronogramaMaestria />
+													{/* <CronogramaMaestria /> */}
+													<CronogramaPosgrado />
 												</Tab>
 												<Tab
 													className="pt-3"

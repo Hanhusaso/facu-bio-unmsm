@@ -10,7 +10,8 @@ import { useWindowSize } from '../../../../utils/useWindowSize';
 import * as Icon from '../../../../components/Icons';
 
 import GuiaProcesoAdmisionMaestria from '../../../../components/posgrado/maestria/GuiaProcesoAdmisionMaestria';
-import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+// import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+import CronogramaPosgrado from '../../../../components/posgrado/CronogramaPosgrado';
 import CuadroVacantesMaestria from '../../../../components/posgrado/maestria/CuadroVacantesMaestria';
 import RequisitosMaestria from '../../../../components/posgrado/maestria/RequisitosMaestria';
 import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/CostosAdmisionMaestria';
@@ -365,142 +366,6 @@ const mencionBotanicaEconomica = () => {
 												<li aria-level="1"></li>
 											</ul> */}
 										</div>
-										{/* <div
-											className="mb-3 tab-pane fade"
-											id="v-pills-perfil"
-											role="tabpanel"
-											aria-labelledby="v-pills-perfil-tab">
-											<p>
-												<strong>
-													PERFIL DEL INGRESANTE
-												</strong>
-											</p>
-											<p>
-												El ingresante a la
-												Maestr&iacute;a en
-												Bot&aacute;nica Tropical:
-											</p>
-											<ul>
-												<li aria-level="1">
-													Poseer&aacute; el grado
-													acad&eacute;mico de
-													bachiller en Ciencias
-													biol&oacute;gicas o
-													disciplinas afines,
-													otorgados por universidades
-													nacionales o extranjeras que
-													aseguren una
-													formaci&oacute;n acorde a
-													los fines del Programa.
-												</li>
-												<li aria-level="1">
-													Haber aprobado durante sus
-													estudios de pregrado los
-													siguientes cursos
-													b&aacute;sicos o sus
-													equivalentes:
-													Bot&aacute;nica,
-													Gen&eacute;tica,
-													Citolog&iacute;a,
-													Fisiolog&iacute;a,
-													Bioqu&iacute;mica,
-													Ecolog&iacute;a,
-													F&iacute;sica,
-													Qu&iacute;mica y
-													Estad&iacute;stica.
-												</li>
-											</ul>
-											<p>
-												<strong>
-													PERFIL DEL EGRESADO
-												</strong>
-											</p>
-											<p>
-												El mag&iacute;ster en cualquiera
-												de las tres menciones que opte
-												por el tema de su tesis,
-												ejercer&aacute;
-												investigaci&oacute;n y docencia
-												universitaria de calidad
-												aplicando metodolog&iacute;as
-												pedag&oacute;gicas innovadoras y
-												acordes con el avance de la
-												ciencia. Liderar&aacute; y
-												desarrollar&aacute;
-												investigaciones b&aacute;sicas y
-												/o aplicadas en los campos
-												diversos de la bot&aacute;nica y
-												ciencias afines, pudiendo
-												trabajar por su
-												capacitaci&oacute;n en muchos
-												campos donde la disciplina se
-												requiera; cumpliendo con valores
-												&eacute;ticos profesionales,
-												entre sus funciones y/o
-												actividades podemos
-												se&ntilde;alar:
-											</p>
-											<ul>
-												<li aria-level="1">
-													Realizar la
-													determinaci&oacute;n de las
-													especies de los diversos
-													grupos de la flora peruana.
-												</li>
-												<li aria-level="1">
-													Solucionar los problemas de
-													inventarios y
-													evaluaci&oacute;n de los
-													ecosistemas con criterio de
-													conservaci&oacute;n de la
-													diversidad
-													flor&iacute;stica.
-												</li>
-												<li aria-level="1">
-													Tener conocimientos de las
-													especies vegetales de valor
-													econ&oacute;mico en las
-													diversas regiones
-													geogr&aacute;ficas: de valor
-													alimenticio, forrajera, de
-													uso industrial, medicinal,
-													ornamental y considerar sus
-													cualidades, cantidades y
-													factibilidad de uso para
-													contribuir a mejorar el
-													nivel de vida del ser
-													humano.
-												</li>
-												<li aria-level="1">
-													Realizar investigaciones
-													sobre biotecnolog&iacute;a
-													de especies vegetales.
-												</li>
-												<li aria-level="1">
-													Ser capaz de realizar la
-													revalorizaci&oacute;n y
-													rescate de la riqueza del
-													conocimiento de la flora
-													silvestre y cultivada,
-													propio de las diversas
-													etnias de nuestro vasto
-													territorio.
-												</li>
-												<li aria-level="1">
-													Formular estrategias de
-													protecci&oacute;n a la
-													cultura bot&aacute;nica
-													tradicional y su uso
-													sostenible.
-												</li>
-												<li aria-level="1">
-													Asesorar trabajos de
-													investigaci&oacute;n de
-													estudiantes de pre y
-													posgrado.
-												</li>
-											</ul>
-										</div> */}
 										<div
 											className="mb-3 tab-pane fade"
 											id="v-pills-admision"
@@ -523,7 +388,8 @@ const mencionBotanicaEconomica = () => {
 													eventKey="cronograma"
 													title="Cronograma"
 												>
-													<CronogramaMaestria />
+													{/* <CronogramaMaestria /> */}
+													<CronogramaPosgrado />
 												</Tab>
 												<Tab
 													className="pt-3"

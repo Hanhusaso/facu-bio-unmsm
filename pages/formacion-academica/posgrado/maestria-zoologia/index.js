@@ -13,7 +13,8 @@ import { useWindowSize } from '../../../../utils/useWindowSize';
 import * as Icon from '../../../../components/Icons';
 
 import GuiaProcesoAdmisionMaestria from '../../../../components/posgrado/maestria/GuiaProcesoAdmisionMaestria';
-import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+// import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+import CronogramaPosgrado from '../../../../components/posgrado/CronogramaPosgrado';
 import CuadroVacantesMaestria from '../../../../components/posgrado/maestria/CuadroVacantesMaestria';
 import RequisitosMaestria from '../../../../components/posgrado/maestria/RequisitosMaestria';
 import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/CostosAdmisionMaestria';
@@ -534,7 +535,8 @@ const index = () => {
 													eventKey="cronograma"
 													title="Cronograma"
 												>
-													<CronogramaMaestria />
+													{/* <CronogramaMaestria /> */}
+													<CronogramaPosgrado />
 												</Tab>
 												<Tab
 													className="pt-3"

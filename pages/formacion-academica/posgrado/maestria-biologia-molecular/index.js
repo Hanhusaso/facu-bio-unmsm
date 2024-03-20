@@ -13,7 +13,8 @@ import { useWindowSize } from '../../../../utils/useWindowSize';
 import * as Icon from '../../../../components/Icons';
 
 import GuiaProcesoAdmisionMaestria from '../../../../components/posgrado/maestria/GuiaProcesoAdmisionMaestria';
-import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+// import CronogramaMaestria from '../../../../components/posgrado/maestria/CronogramaMaestria';
+import CronogramaPosgrado from '../../../../components/posgrado/CronogramaPosgrado';
 import CuadroVacantesMaestria from '../../../../components/posgrado/maestria/CuadroVacantesMaestria';
 import RequisitosMaestria from '../../../../components/posgrado/maestria/RequisitosMaestria';
 import CostosAdmisionMaestria from '../../../../components/posgrado/maestria/CostosAdmisionMaestria';
@@ -430,145 +431,6 @@ const index = () => {
 												</li>
 											</ul>
 										</div>
-										{/* <div
-											className="mb-3 tab-pane fade"
-											id="v-pills-perfil"
-											role="tabpanel"
-											aria-labelledby="v-pills-perfil-tab">
-											<p>
-												<strong>
-													PERFIL DEL INGRESANTE
-												</strong>
-											</p>
-											<p>
-												El ingresante a la
-												Maestr&iacute;a en
-												Biolog&iacute;a Molecular:
-											</p>
-											<ul>
-												<li aria-level="1">
-													Poseer&aacute; el Grado
-													Acad&eacute;mico de
-													Bachiller en Ciencias
-													Biol&oacute;gicas, Bachiller
-													en Gen&eacute;tica y
-													Biotecnolog&iacute;a,
-													Bachiller en
-													Microbiolog&iacute;a y
-													Parasitolog&iacute;a y otras
-													ciencias b&aacute;sicas, o
-													Grado Acad&eacute;mico de
-													Bachiller en Medicina
-													Humana, Medicina Veterinaria
-													y Farmacia y
-													Bioqu&iacute;mica.
-												</li>
-												<li aria-level="1">
-													Deber&aacute;n acreditar
-													haber aprobado durante sus
-													estudios de pregrado los
-													siguientes cursos o sus
-													equivalentes:
-													Bioqu&iacute;mica,
-													Gen&eacute;tica Microbiana,
-													Fisiolog&iacute;a General,
-													Gen&eacute;tica Humana.
-												</li>
-												<li aria-level="1">
-													Leer y comprender el idioma
-													ingl&eacute;s.
-												</li>
-												<li aria-level="1">
-													Haber obtenido la
-													calificaci&oacute;n
-													requerida en el
-													&ldquo;Examen de Aptitud
-													para Estudios de
-													Posgrado&rdquo; con una
-													antig&uuml;edad no mayor de
-													dos a&ntilde;os calendario.
-												</li>
-												<li aria-level="1">
-													Haber aprobado y alcanzado
-													vacante en el proceso de
-													admisi&oacute;n respectivo.
-												</li>
-												<li aria-level="1">
-													Deber&aacute; contar con una
-													l&iacute;nea de
-													investigaci&oacute;n.
-												</li>
-											</ul>
-											<p>
-												<strong>
-													PERFIL DEL EGRESADO
-												</strong>
-											</p>
-											<p>
-												El graduado de la
-												maestr&iacute;a de
-												Biolog&iacute;a Molecular debe:
-											</p>
-											<ul>
-												<li aria-level="1">
-													Ser un profundo conocedor de
-													los conceptos y
-													metodolog&iacute;as
-													actualizadas en el campo de
-													la biolog&iacute;a
-													molecular.
-												</li>
-												<li aria-level="1">
-													Demostrar capacidad y
-													autonom&iacute;a en la
-													formulaci&oacute;n y en la
-													gesti&oacute;n de proyectos
-													de investigaci&oacute;n en
-													biolog&iacute;a molecular.
-												</li>
-												<li aria-level="1">
-													Ser capaz de trabajar en
-													equipo y redes en forma
-													interdisciplinaria.
-												</li>
-												<li aria-level="1">
-													Presentar una actitud
-													comprometida con la
-													actualizaci&oacute;n
-													permanente y con el
-													desarrollo de la
-													biolog&iacute;a molecular en
-													su quehacer profesional,
-													docencia e
-													investigaci&oacute;n.
-												</li>
-												<li aria-level="1">
-													Asumir liderazgo en la
-													investigaci&oacute;n
-													b&aacute;sica y aplicada,
-													dirigiendo investigaciones
-													inter y multidisciplinarias.
-												</li>
-												<li aria-level="1">
-													Ser capaz de analizar
-													problemas y establecer
-													preguntas relevantes a nivel
-													celular y molecular.
-												</li>
-												<li aria-level="1">
-													Tener libertad de
-													pensamiento, ejercer su
-													actividad con principios
-													&eacute;ticos de
-													investigaci&oacute;n y saber
-													trabajar en equipo, escribir
-													propuestas de proyectos y
-													publicar el producto de su
-													investigaci&oacute;n en
-													revistas indizadas.
-												</li>
-											</ul>
-										</div> */}
 										<div
 											className="mb-3 tab-pane fade"
 											id="v-pills-admision"
@@ -591,7 +453,8 @@ const index = () => {
 													eventKey="cronograma"
 													title="Cronograma"
 												>
-													<CronogramaMaestria />
+													{/* <CronogramaMaestria /> */}
+													<CronogramaPosgrado />
 												</Tab>
 												<Tab
 													className="pt-3"
