@@ -116,7 +116,8 @@ const antonioRaimondi = () => {
 												<tr>
 													<th
 														colSpan="3"
-														className="text-center">
+														className="text-center"
+													>
 														Integrantes del comité
 													</th>
 												</tr>
@@ -145,7 +146,8 @@ const antonioRaimondi = () => {
 																'https://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=17'
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-2">
+															className="d-inline-block color-inherit mr-2"
+														>
 															<HiExternalLink className="mb-1 icon" />
 															{/* <span className="mr-1">Concytec</span> */}
 														</a>
@@ -163,7 +165,8 @@ const antonioRaimondi = () => {
 																'https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=3591'
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-2">
+															className="d-inline-block color-inherit mr-2"
+														>
 															<HiExternalLink className="mb-1 icon" />
 															{/* <span className="mr-1">Concytec</span> */}
 														</a>
@@ -181,7 +184,8 @@ const antonioRaimondi = () => {
 																'https://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=355'
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-2">
+															className="d-inline-block color-inherit mr-2"
+														>
 															<HiExternalLink className="mb-1 icon" />
 															{/* <span className="mr-1">Concytec</span> */}
 														</a>
@@ -199,7 +203,8 @@ const antonioRaimondi = () => {
 																'https://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=427'
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-2">
+															className="d-inline-block color-inherit mr-2"
+														>
 															<HiExternalLink className="mb-1 icon" />
 															{/* <span className="mr-1">Concytec</span> */}
 														</a>
@@ -211,16 +216,17 @@ const antonioRaimondi = () => {
 												</tr>
 												<tr>
 													<td>
-														Aldo Santiago Pacheco
-														Velásquez{' '}
+														Carmen Rosario Yamashiro
+														Guinoza
 													</td>
 													<td className="text-center">
 														<a
 															href={
-																'http://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do;jsessionid=b9304f59e3ca460836d0d30a9f10?id_investigador=10079'
+																'https://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=1784'
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-2">
+															className="d-inline-block color-inherit mr-2"
+														>
 															<HiExternalLink className="mb-1 icon" />
 															{/* <span className="mr-1">Concytec</span> */}
 														</a>
@@ -241,7 +247,8 @@ const antonioRaimondi = () => {
 																'https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=99125'
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-2">
+															className="d-inline-block color-inherit mr-2"
+														>
 															<HiExternalLink className="mb-1 icon" />
 															{/* <span className="mr-1">Concytec</span> */}
 														</a>
@@ -261,7 +268,8 @@ const antonioRaimondi = () => {
 																'https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=169793'
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-2">
+															className="d-inline-block color-inherit mr-2"
+														>
 															<HiExternalLink className="mb-1 icon" />
 															{/* <span className="mr-1">Concytec</span> */}
 														</a>
@@ -281,7 +289,8 @@ const antonioRaimondi = () => {
 																'https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=83729'
 															}
 															target="_blank"
-															className="d-inline-block color-inherit mr-2">
+															className="d-inline-block color-inherit mr-2"
+														>
 															<HiExternalLink className="mb-1 icon" />
 															{/* <span className="mr-1">Concytec</span> */}
 														</a>
@@ -354,7 +363,8 @@ const antonioRaimondi = () => {
 										<p>
 											<a
 												href="https://docs.google.com/document/d/1teAcBGln0QUgDiS4kG-yHJZJSeePyyKB/edit?usp=sharing&ouid=118328492379645100483&rtpof=true&sd=true"
-												target="_blank">
+												target="_blank"
+											>
 												Clic Aquí para descargar el
 												Formato 1
 											</a>
@@ -362,7 +372,8 @@ const antonioRaimondi = () => {
 										<p>
 											<a
 												href="https://docs.google.com/document/d/1Xd7n3VkyWsTwMip0kZZUh7ixrozQKn49/edit?usp=sharing&ouid=101422116687096379104&rtpof=true&sd=true"
-												target="_blank">
+												target="_blank"
+											>
 												Clic Aquí para descargar el
 												Formato 3 &#40;Seguimiento
 												periódico de proyectos
@@ -372,7 +383,8 @@ const antonioRaimondi = () => {
 										<p>
 											<a
 												href="https://drive.google.com/file/d/1rCZAc39iqD4hlVzY7e8TLtKSyF6BBZHr/view?usp=sharing"
-												target="_blank">
+												target="_blank"
+											>
 												Clic Aquí para descargar el
 												reglamento vigente del Comité de
 												Bioética de la Facultad de
@@ -382,7 +394,8 @@ const antonioRaimondi = () => {
 										<p>
 											<a
 												href="https://drive.google.com/file/d/1T3oz2nypY_CHGrRbwLGISLEPKipOiSl2/view?usp=sharing"
-												target="_blank">
+												target="_blank"
+											>
 												Clic Aquí para descargar RD N°
 												000153-2021-D-FCB/UNMSM
 											</a>
@@ -390,7 +403,8 @@ const antonioRaimondi = () => {
 										<p>
 											<a
 												href="https://drive.google.com/file/d/1bpLH1eTDBNm-Hw1bqv-asQDAPBWsg41H/view?usp=sharing"
-												target="_blank">
+												target="_blank"
+											>
 												Clic Aquí para descargar RD N°
 												000178/ 2021-D-FCB/UNMSM
 											</a>
@@ -398,7 +412,8 @@ const antonioRaimondi = () => {
 										<p>
 											<a
 												href="https://drive.google.com/file/d/1i8Mfw6jA0Nm_Y9yXnJpoIcXV8dJQu2sU/view?usp=sharing"
-												target="_blank">
+												target="_blank"
+											>
 												RD No 000290-DGA-2022 Tarifario
 											</a>
 										</p>
@@ -412,7 +427,8 @@ const antonioRaimondi = () => {
 										<p>
 											<a
 												href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/CRONOGRAMA+DE+REUNIONES+COMIT%C3%89+2024.pdf"
-												target="_blank">
+												target="_blank"
+											>
 												Cronograma de reuniones 2024
 											</a>
 										</p>
