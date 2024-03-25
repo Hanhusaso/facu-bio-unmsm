@@ -705,7 +705,7 @@ const mencionBotanicaEconomica = () => {
 											role="tabpanel"
 											aria-labelledby="v-pills-inversion-tab"
 										>
-											<InversionEconomicaMaestria />
+											<InversionEconomicaMaestria costo_por_ciclo="S/ 3,000.00" />
 										</div>
 										<div
 											className="mb-3 tab-pane fade"

@@ -2,7 +2,7 @@ import React from 'react';
 import * as AiIcons from 'react-icons/ai';
 import * as Icon from '../../Icons';
 
-const InversionEconomicaMaestria = () => {
+const InversionEconomicaMaestria = ({ costo_por_ciclo = 'S/ 2,500.00' }) => {
 	return (
 		<div>
 			<div className="info-box mb-4">
@@ -132,8 +132,9 @@ const InversionEconomicaMaestria = () => {
 				</p>
 				<ul className="mb-3 pl-4">
 					<li>
-						El costo por ciclo es de <b>S/ 3,000.00</b> | Código de
-						pago: Perfeccionamiento (<b>102-011</b>) Banco Pichincha
+						El costo por ciclo es de <b>{costo_por_ciclo}</b> |
+						Código de pago: Perfeccionamiento (<b>102-011</b>) Banco
+						Pichincha
 					</li>
 				</ul>
 				{/* <div className="info-box mb-3">
