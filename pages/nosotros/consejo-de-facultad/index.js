@@ -271,8 +271,8 @@ const index = () => {
 													{'<caguilarp@unmsm.edu.pe>'}
 												</li>
 												<li>
-													Jerry Omar Arana Maestre{' '}
-													{'<jaranam@unmsm.edu.pe>'}
+													Jorge Luis Peralta Argomeda{' '}
+													{'<jperaltaa@unmsm.edu.pe>'}
 												</li>
 											</ul>
 
