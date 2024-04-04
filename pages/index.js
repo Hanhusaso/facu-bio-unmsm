@@ -16,7 +16,7 @@ import useNovedades from '../hooks/useNovedades';
 
 export default function Home() {
 	const [loadingPage, setLoadingPage] = useState(true);
-	const [isOpenHeader, setIsOpenHeader] = useState(true);
+	const [isOpenHeader, setIsOpenHeader] = useState(false);
 	const { width, height } = useWindowSize();
 	const { data: novedades, loading: novedadesLoading } = useNovedades();
 	const [noticias, setNoticias] = useState([]);
