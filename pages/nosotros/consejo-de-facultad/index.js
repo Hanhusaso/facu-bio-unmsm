@@ -16,18 +16,26 @@ import {
 	getTransparencia2019,
 	getTransparencia2020,
 	getTransparencia2021,
+	getTransparencia2022,
+	getTransparencia2023,
 } from '../../api/transparencia';
 import moment from 'moment';
 
 const index = () => {
+	const [transparencia2023, setTransparencia2023] = useState([]);
+	const [transparencia2022, setTransparencia2022] = useState([]);
 	const [transparencia2021, setTransparencia2021] = useState([]);
 	const [transparencia2020, setTransparencia2020] = useState([]);
 	const [transparencia2019, setTransparencia2019] = useState([]);
 	useEffect(() => {
 		(async () => {
+			const response_transparencia2023 = await getTransparencia2023();
+			const response_transparencia2022 = await getTransparencia2022();
 			const response_transparencia2021 = await getTransparencia2021();
 			const response_transparencia2020 = await getTransparencia2020();
 			const response_transparencia2019 = await getTransparencia2019();
+			setTransparencia2023(response_transparencia2023);
+			setTransparencia2022(response_transparencia2022);
 			setTransparencia2021(response_transparencia2021);
 			setTransparencia2020(response_transparencia2020);
 			setTransparencia2019(response_transparencia2019);
@@ -363,9 +371,135 @@ const index = () => {
 											aria-labelledby="v-pills-actas-tab"
 										>
 											<Tabs
-												defaultActiveKey="2021"
+												defaultActiveKey="2023"
 												id="resoluciones-tab"
 											>
+												<Tab
+													className="pt-3"
+													eventKey="2023"
+													title="2023"
+												>
+													<div>
+														<div className="table-responsive">
+															<table className="bordered">
+																<tbody>
+																	{transparencia2023.length ===
+																	0 ? (
+																		<div className="d-flex align-items-center justify-content-center my-5">
+																			<div className="d-inline-flex flex-column justify-content-center align-items-center">
+																				<Spinner
+																					size="sm"
+																					animation="border"
+																					role="status"
+																					className="mb-2"
+																				/>
+																				<span>
+																					Buscando
+																					registros...
+																				</span>
+																			</div>
+																		</div>
+																	) : (
+																		transparencia2023.map(
+																			function (
+																				doc
+																			) {
+																				return (
+																					<tr>
+																						<td>
+																							{moment(
+																								doc.fecha
+																							).format(
+																								'D MMMM'
+																							)}
+																						</td>
+																						<td>
+																							{
+																								doc.titulo
+																							}
+																						</td>
+																						<td>
+																							<a
+																								href={`${doc.link}`}
+																								target="_blank"
+																							>
+																								Ver
+																								documento
+																							</a>
+																						</td>
+																					</tr>
+																				);
+																			}
+																		)
+																	)}
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</Tab>
+												<Tab
+													className="pt-3"
+													eventKey="2022"
+													title="2022"
+												>
+													<div>
+														<div className="table-responsive">
+															<table className="bordered">
+																<tbody>
+																	{transparencia2022.length ===
+																	0 ? (
+																		<div className="d-flex align-items-center justify-content-center my-5">
+																			<div className="d-inline-flex flex-column justify-content-center align-items-center">
+																				<Spinner
+																					size="sm"
+																					animation="border"
+																					role="status"
+																					className="mb-2"
+																				/>
+																				<span>
+																					Buscando
+																					registros...
+																				</span>
+																			</div>
+																		</div>
+																	) : (
+																		transparencia2022.map(
+																			function (
+																				doc
+																			) {
+																				return (
+																					<tr>
+																						<td>
+																							{moment(
+																								doc.fecha
+																							).format(
+																								'D MMMM'
+																							)}
+																						</td>
+																						<td>
+																							{
+																								doc.titulo
+																							}
+																						</td>
+																						<td>
+																							<a
+																								href={`${doc.link}`}
+																								target="_blank"
+																							>
+																								Ver
+																								documento
+																							</a>
+																						</td>
+																					</tr>
+																				);
+																			}
+																		)
+																	)}
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</Tab>
 												<Tab
 													className="pt-3"
 													eventKey="2021"
