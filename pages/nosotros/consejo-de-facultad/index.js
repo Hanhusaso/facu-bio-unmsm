@@ -18,6 +18,7 @@ import {
 	getTransparencia2021,
 	getTransparencia2022,
 	getTransparencia2023,
+	comisiones
 } from '../../api/transparencia';
 import moment from 'moment';
 
@@ -363,7 +364,31 @@ const index = () => {
 											id="v-pills-comisiones"
 											role="tabpanel"
 											aria-labelledby="v-pills-comisiones-tab"
-										></div>
+										>
+											<ul>
+												{comisiones.map(
+													function (doc) {
+														return (
+															<li key={doc.id}>
+																<p>
+																	{doc.titulo}
+																	.&nbsp;
+																	<a
+																		href={
+																			doc.link
+																		}
+																		target="_blank"
+																	>
+																		(Descargar
+																		aquí)
+																	</a>
+																</p>
+															</li>
+														);
+													}
+												)}
+											</ul>
+										</div>
 										<div
 											className="mb-3 tab-pane fade"
 											id="v-pills-actas"
