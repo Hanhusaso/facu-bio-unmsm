@@ -318,7 +318,7 @@ const index = () => {
 												</li>
 											</ul>
 
-											<p className="title-dark">
+											{/* <p className="title-dark">
 												Autoridades
 											</p>
 											<ul className="chevron-green-dark">
@@ -357,7 +357,7 @@ const index = () => {
 													profesional de Ciencias
 													Biológicas
 												</li>
-											</ul>
+											</ul> */}
 										</div>
 										<div
 											className="mb-3 tab-pane fade"
