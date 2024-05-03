@@ -445,25 +445,25 @@ const index = () => {
 										</span>
 										<span className="c14">,&nbsp;</span>
 										<span className="c34">
-											lee.fcb.unmsm@gmail.com
+											lequipamientoe.biologia@unmsm.edu.pe
 										</span>
 									</p>
 									<p className="c4">
 										<span className="c14">
-											Victor Alejandro Barnechea
+											Danayra Cruz Espinoza
 										</span>
 									</p>
 									<p className="c4">
 										<span className="c14">
-											Celular: 945007001 | Correo
+											Celular: 944555515 | Correo
 											electr&oacute;nico:&nbsp;
 										</span>
 										<span className="c34">
-											vbarrenecheal@unmsm.edu.pe
+											danayra.cruz@unmsm.edu.pe
 										</span>
 										<span className="c14">,&nbsp;</span>
 										<span className="c34">
-											lee.fcb.unmsm@gmail.com
+											lequipamientoe.biologia@unmsm.edu.pe   
 										</span>
 										<span className="c6">&nbsp;</span>
 									</p>
