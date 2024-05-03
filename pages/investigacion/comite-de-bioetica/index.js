@@ -360,78 +360,89 @@ const antonioRaimondi = () => {
 												(ver tarifario).
 											</li>
 										</ol>
-										<p>
-											<a
-												href="https://docs.google.com/document/d/1teAcBGln0QUgDiS4kG-yHJZJSeePyyKB/edit?usp=sharing&ouid=118328492379645100483&rtpof=true&sd=true"
-												target="_blank"
-											>
-												Clic Aquí para descargar el
-												Formato 1
-											</a>
-										</p>
-										<p>
-											<a
-												href="https://docs.google.com/document/d/1Xd7n3VkyWsTwMip0kZZUh7ixrozQKn49/edit?usp=sharing&ouid=101422116687096379104&rtpof=true&sd=true"
-												target="_blank"
-											>
-												Clic Aquí para descargar el
-												Formato 3 &#40;Seguimiento
-												periódico de proyectos
-												aprobados&#41;
-											</a>
-										</p>
-										<p>
-											<a
-												href="https://drive.google.com/file/d/1rCZAc39iqD4hlVzY7e8TLtKSyF6BBZHr/view?usp=sharing"
-												target="_blank"
-											>
-												Clic Aquí para descargar el
-												reglamento vigente del Comité de
-												Bioética de la Facultad de
-												Ciencias Biológicas.
-											</a>
-										</p>
-										<p>
-											<a
-												href="https://drive.google.com/file/d/1T3oz2nypY_CHGrRbwLGISLEPKipOiSl2/view?usp=sharing"
-												target="_blank"
-											>
-												Clic Aquí para descargar RD N°
-												000153-2021-D-FCB/UNMSM
-											</a>
-										</p>
-										<p>
-											<a
-												href="https://drive.google.com/file/d/1bpLH1eTDBNm-Hw1bqv-asQDAPBWsg41H/view?usp=sharing"
-												target="_blank"
-											>
-												Clic Aquí para descargar RD N°
-												000178/ 2021-D-FCB/UNMSM
-											</a>
-										</p>
-										<p>
-											<a
-												href="https://drive.google.com/file/d/1i8Mfw6jA0Nm_Y9yXnJpoIcXV8dJQu2sU/view?usp=sharing"
-												target="_blank"
-											>
-												RD No 000290-DGA-2022 Tarifario
-											</a>
-										</p>
-										{/* <p>
-											<a
-												href="https://drive.google.com/file/d/1QtOilSArUbPCsNe2KLFcgn-n5X5NFLp6/view?usp=share_link"
-												target="_blank">
-												Cronograma de reuniones 2023
-											</a>
-										</p> */}
-										<p>
-											<a
-												href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/CRONOGRAMA+DE+REUNIONES+COMIT%C3%89+2024.pdf"
-												target="_blank"
-											>
-												Cronograma de reuniones 2024
-											</a>
-										</p>
+										<ul>
+											<li>
+												<a
+													href="https://d20cra10nhu74a.cloudfront.net/ciencias-biologicas/Formato_1_COMITE_DE_BIOETICA_FCB_UNMSM_ccb8c1aa73.docx"
+													target="_blank"
+													className="title "
+												>
+													Clic Aquí para descargar el
+													Formato 1
+												</a>
+											</li>
+											<li>
+												<a
+													href="https://docs.google.com/document/d/1Xd7n3VkyWsTwMip0kZZUh7ixrozQKn49/edit?usp=sharing&ouid=101422116687096379104&rtpof=true&sd=true"
+													target="_blank"
+													className="title"
+												>
+													Clic Aquí para descargar el
+													Formato 3 &#40;Seguimiento
+													periódico de proyectos
+													aprobados&#41;
+												</a>
+											</li>
+											<li>
+												<a
+													href="https://drive.google.com/file/d/1rCZAc39iqD4hlVzY7e8TLtKSyF6BBZHr/view?usp=sharing"
+													target="_blank"
+													className="title"
+												>
+													Clic Aquí para descargar el
+													reglamento vigente del
+													Comité de Bioética de la
+													Facultad de Ciencias
+													Biológicas.
+												</a>
+											</li>
+											<li>
+												<a
+													href="https://d20cra10nhu74a.cloudfront.net/ciencias-biologicas/RESOLUCION_DECANAL_000153_2021_D_FCB_34a925af1d.pdf"
+													target="_blank"
+													className="title"
+												>
+													Clic Aquí para descargar RD
+													N° 000153-2021-D-FCB/UNMSM
+												</a>
+											</li>
+											<li>
+												<a
+													href="https://d20cra10nhu74a.cloudfront.net/ciencias-biologicas/RESOLUCION_DECANAL_000178_2021_D_FCB_PRESIDENCIA_Y_SECRETARIA_865162dca5.pdf"
+													target="_blank"
+													className="title"
+												>
+													Clic Aquí para descargar RD
+													N° 000178/ 2021-D-FCB/UNMSM
+												</a>
+											</li>
+											<li>
+												<a
+													href="https://drive.google.com/file/d/1i8Mfw6jA0Nm_Y9yXnJpoIcXV8dJQu2sU/view?usp=sharing"
+													target="_blank"
+													className="title"
+												>
+													RD No 000290-DGA-2022
+													Tarifario
+												</a>
+											</li>
+											{/* <p>
+												<a
+													href="https://drive.google.com/file/d/1QtOilSArUbPCsNe2KLFcgn-n5X5NFLp6/view?usp=share_link"
+													target="_blank" className="title">
+													Cronograma de reuniones 2023
+												</a>
+											</p> */}
+											<li>
+												<a
+													href="https://biologia-unmsm.s3.us-east-2.amazonaws.com/CRONOGRAMA+DE+REUNIONES+COMIT%C3%89+2024.pdf"
+													target="_blank"
+													className="title"
+												>
+													Cronograma de reuniones 2024
+												</a>
+											</li>
+										</ul>
 									</div>
 								</Col>
 								<Col md="3" lg="2">
