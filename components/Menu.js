@@ -918,6 +918,19 @@ const Menu = ({ isOpenHeader }) => {
 								{/* </Link> */}
 							</li>
 							<li className="nav-item">
+								<a
+									href="/concursos-publicos"
+									className="d-flex align-items-center nav-link"
+								>
+									<img
+										className="mr-3"
+										src="/assets/img/iconos/icono-concursos-publicos.svg"
+										alt=""
+									/>
+									<span>Concursos públicos</span>
+								</a>
+							</li>
+							<li className="nav-item">
 								{/* <Link href="/informacion-academica"> */}
 								{/* <a className="nav-link">Información académica</a> */}
 								<a
